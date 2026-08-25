@@ -1,0 +1,1120 @@
+... logging to /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[31mWARNING: disk usage in log directory [/data/ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+[1mstarted roslaunch server http://openmower:42567/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/bind_ip: 172.16.78.1
+ * /ll/services/diff_drive/ticks_per_m: 2400
+ * /ll/services/diff_drive/wheel_distance_m: 0.325
+ * /ll/services/gps/absolute_coords: True
+ * /ll/services/gps/baud_rate: 921600
+ * /ll/services/gps/datum_height: 522
+ * /ll/services/gps/datum_lat: 48.xxxxxxx
+ * /ll/services/gps/datum_long: 10xxxxxx
+ * /ll/services/gps/port_index: 8
+ * /ll/services/gps/protocol: NMEA
+ * /ll/services/imu/axis_config: +X-Y-Z
+ * /ll/services/input/config_file: /data/params/inpu...
+ * /ll/services/power/battery_critical_high_voltage: 33.7
+ * /ll/services/power/battery_critical_voltage: 22
+ * /ll/services/power/battery_empty_voltage: 24
+ * /ll/services/power/battery_full_voltage: 33.4
+ * /ll/services/power/charge_critical_high_current: 2.5
+ * /ll/services/power/charge_critical_high_voltage: 35.5
+ * /ll/services/power/charge_current: 1.5
+ * /ll/services/power/charge_termination_current: 0.5
+ * /ll/services/power/log_debug: True
+ * /ll/services/power/re_charge_voltage: 1
+ * /ll/services/sound/language: en
+ * /ll/services/sound/volume: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_flex/recovery_behaviors: [{'name': 'Backwa...
+ * /move_base_flex/recovery_enabled: True
+ * /move_base_flex/recovery_patience: 7.0
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/docking_approach_distance: 0.7
+ * /mower_logic/docking_extra_time: 0.5
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 3
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 15.0
+ * /mower_logic/gps_wait_time: 15.0
+ * /mower_logic/mow_angle_increment: 110
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 1.0
+ * /mower_logic/undock_distance: 0.5
+ * /mower_logic/undock_fixed_angle: False
+ * /mower_logic/undock_use_curve: False
+ * /ntrip_client/host: 192.168.3.199
+ * /ntrip_client/mountpoint: spgps
+ * /ntrip_client/password: gps
+ * /ntrip_client/port: 2101
+ * /ntrip_client/username: gps
+ * /recovery_behaviors: [{'name': 'conser...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_monitoring/external_mqtt_enable: True
+ * /xbot_monitoring/external_mqtt_hostname: 192.168.3.191
+ * /xbot_monitoring/external_mqtt_password: openmower
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: openmower
+ * /xbot_monitoring/external_mqtt_username: openmower
+ * /xbot_positioning/antenna_offset_x: -0.075
+ * /xbot_positioning/antenna_offset_y: 0.12
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ros_ntrip_client/ntrip_client_node)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+[1mprocess[master]: started with pid [51][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311
+[1msetting /run_id to d305d8ba-77b0-11f1-9004-2ccf674aa0eb[0m
+[1mprocess[rosout-1]: started with pid [61][0m
+started core service [/rosout]
+[1mprocess[mower_comms_v2-2]: started with pid [68][0m
+[1mprocess[ntrip_client-3]: started with pid [69][0m
+[1mprocess[move_base_flex-4]: started with pid [74][0m
+[0m[INFO] [1783173678.943364949]: Bind IP (Robot Internal): 172.16.78.1[0m
+[1mprocess[move_base_legacy_relay-5]: started with pid [80][0m
+[0m[INFO] [1783173678.973468853]: Wheel ticks [1/m]: 2400[0m
+[0m[INFO] [1783173678.973635907]: Wheel distance [m]: 0.325[0m
+[0m[INFO] [1783173678.990715454]: IMU axis config: +X-Y-Z[0m
+[1mprocess[xbot_positioning-6]: started with pid [85][0m
+[1mprocess[joy-7]: started with pid [89][0m
+[1mprocess[joy_teleop-8]: started with pid [92][0m
+[1mprocess[map_service-9]: started with pid [98][0m
+[1mprocess[mower_logic-10]: started with pid [102][0m
+[1mprocess[slic3r_coverage_planner-11]: started with pid [105][0m
+[1mprocess[twist_mux-12]: started with pid [109][0m
+[1mprocess[xbot_monitoring-13]: started with pid [112][0m
+[0m[INFO] [1783173679.288331153]: GPS protocol: NMEA, baud rate: 921600, gps port index:8[0m
+[1mprocess[xbot_remote-14]: started with pid [122][0m
+[0m[INFO] [1783173679.309747201]: Antenna offset: -0.075, 0.12[0m
+[0m[INFO] [1783173679.333396324]: Datum: 48.xxxx, 10.xxxx, 522[0m
+[1mprocess[monitoring-15]: started with pid [123][0m
+[0m[INFO] [1783173679.427899373]: Restoring checkpoint for plan (8EDAE38F75F64531D7E31F0C6224F5378428A2C461EB2DD2A1999576B31FEAF4) job: BQl8TJw1cUy7L3O7m2dhBIKw8GN0wVGj area: 2 path: 0 index: 1309 angle increment sum: 0[0m
+[0m[INFO] [1783173679.508775014]: Teleop enable button 0.[0m
+[0m[INFO] [1783173679.544727907]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10[0m
+[31m[ERROR] [1783173679.559281808]: Couldn't open joystick /dev/input/js0. Will retry every second.[0m
+[0m[INFO] [1783173679.563534385]: Turbo on button 4.[0m
+[0m[INFO] [1783173679.563633476]: Linear axis x on 1 at scale 0.500000.[0m
+[0m[INFO] [1783173679.563686661]: Turbo for linear axis x is scale 1.000000.[0m
+[0m[INFO] [1783173679.563731364]: Angular axis yaw on 0 at scale 1.500000.[0m
+[0m[INFO] [1783173679.564056103]: Turbo for angular axis yaw is scale 3.000000.[0m
+[0m[INFO] [1783173679.614284288]: PositionHistory: loaded existing file position_history/1782751106_BQl8TJw1cUy7L3O7m2dhBIKw8GN0wVGj.jsonl[0m
+[0m[INFO] [1783173679.643287553]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50[0m
+[0m[INFO] [1783173679.680749045]: NTRIP: connection attempt 1[0m
+[0m[INFO] [1783173679.706329764]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100[0m
+[0m[INFO] [1783173679.715353839]: Using external MQTT broker: 192.168.3.191:1883 with topic prefix: openmower/[0m
+[31m[FATAL] [1783173679.821525571]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)[0m
+[0m[INFO] [1783173679.832089430]: All mower_comms_v2 services started[0m
+[0m[INFO] [1783173679.833348975]: MQTT Connected[0m
+[0m[INFO] [1783173679.945099180]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...[0m
+[0m[INFO] [1783173680.213431061]: waitForService: Service [/xbot/rpc/register] is now available.[0m
+[0m[INFO] [1783173680.220532633]: new methods registered: mower_map_service registered 1 methods.[0m
+[0m[INFO] [1783173680.224653933]: Loaded 5 areas from: map.json[0m
+[0m[INFO] [1783173680.225384593]: Map Position: x=12.2328, y=9.54256[0m
+[0m[INFO] [1783173680.225952607]: Map Size: x=24.4449, y=28.474[0m
+[0m[INFO] [1783173680.288970856]: new methods registered: xbot_monitoring registered 8 methods.[0m
+[0m[INFO] [1783173680.308230329]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[INFO] [1783173680.339507353]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info[0m
+[0m[INFO] [1783173680.371601297]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[INFO] [1783173680.400282175]: docking pose: position: 
+  x: 1.42063
+
+  y: -1.32
+
+  z: 0
+
+orientation: 
+  x: 0
+
+  y: 0
+
+  z: -0.991827
+
+  w: 0.127592
+[0m
+[0m[INFO] [1783173680.418677952]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[INFO] [1783173680.422249775]: om_mower_logic: Setting mower_logic config[0m
+[0m[INFO] [1783173680.453540651]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[INFO] [1783173680.494530022]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[INFO] [1783173680.530867617]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+[0m[INFO] [1783173680.555135827]: MQTT Connected[0m
+[0m[INFO] [1783173680.562063882]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[INFO] [1783173680.579135448]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[INFO] [1783173680.600534367]: Monitoring received new mower_logic config[0m
+[0m[INFO] [1783173680.604853258]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[INFO] [1783173680.623468607]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[INFO] [1783173680.720228322]: Monitoring received new mower_logic config[0m
+[0m[INFO] [1783173680.992219340]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[INFO] [1783173680.994022695]: Subscribing to sensor data for sensor with name: Charge Current[0m
+[0m[INFO] [1783173681.006154486]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info[0m
+[0m[INFO] [1783173681.007192015]: Subscribing to sensor data for sensor with name: Charge State[0m
+[0m[INFO] [1783173681.019835060]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[INFO] [1783173681.020096540]: Waiting for emergency message[0m
+[0m[INFO] [1783173681.020938514]: Subscribing to sensor data for sensor with name: GPS Accuracy[0m
+[0m[INFO] [1783173681.029080837]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[INFO] [1783173681.029193910]: Subscribing to sensor data for sensor with name: Left ESC Temp[0m
+[0m[INFO] [1783173681.037590176]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[INFO] [1783173681.037974006]: Subscribing to sensor data for sensor with name: Mow Motor Current[0m
+[0m[INFO] [1783173681.045891182]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[INFO] [1783173681.046222920]: Subscribing to sensor data for sensor with name: Mow ESC Temp[0m
+[0m[INFO] [1783173681.055879990]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+[0m[INFO] [1783173681.055997804]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions[0m
+[0m[INFO] [1783173681.063905259]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[INFO] [1783173681.064022850]: Subscribing to sensor data for sensor with name: Mow Motor Temp[0m
+[0m[INFO] [1783173681.071955860]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[INFO] [1783173681.072303450]: Subscribing to sensor data for sensor with name: V Charge[0m
+[0m[INFO] [1783173681.080460161]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[INFO] [1783173681.080568697]: Subscribing to sensor data for sensor with name: Right ESC Temp[0m
+[0m[INFO] [1783173681.088676780]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[INFO] [1783173681.089036092]: Subscribing to sensor data for sensor with name: V Battery[0m
+[33m[WARN] [1783173685.284218784]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100679 timeout was 0.1.[0m
+[33m[WARN] [1783173690.328980028]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100849 timeout was 0.1.[0m
+[33m[WARN] [1783173695.373330327]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100917 timeout was 0.1.[0m
+[33m[WARN] [1783173700.419433847]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100858 timeout was 0.1.[0m
+[33m[WARN] [1783173705.461976614]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100915 timeout was 0.1.[0m
+[33m[WARN] [1783173710.501083663]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100773 timeout was 0.1.[0m
+[33m[WARN] [1783173715.540305021]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100173 timeout was 0.1.[0m
+[33m[WARN] [1783173720.579667096]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100751 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 80, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783173725.618576651]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100763 timeout was 0.1.[0m
+[33m[WARN] [1783173730.662179034]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100926 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [181][0m
+[33m[WARN] [1783173735.702499124]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100746 timeout was 0.1.[0m
+[33m[WARN] [1783173740.742220252]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100824 timeout was 0.1.[0m
+[33m[WARN] [1783173745.782920516]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100955 timeout was 0.1.[0m
+[33m[WARN] [1783173750.825590834]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100833 timeout was 0.1.[0m
+[33m[WARN] [1783173755.867965538]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100768 timeout was 0.1.[0m
+[33m[WARN] [1783173760.910573348]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100906 timeout was 0.1.[0m
+[33m[WARN] [1783173765.949431906]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100969 timeout was 0.1.[0m
+[33m[WARN] [1783173770.989903687]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100718 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 181, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783173776.029418028]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100727 timeout was 0.1.[0m
+[33m[WARN] [1783173781.068056705]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101014 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [190][0m
+[33m[WARN] [1783173786.111707707]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100738 timeout was 0.1.[0m
+[33m[WARN] [1783173791.154647767]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100965 timeout was 0.1.[0m
+[33m[WARN] [1783173796.195400007]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100111 timeout was 0.1.[0m
+[33m[WARN] [1783173801.234017428]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100798 timeout was 0.1.[0m
+[33m[WARN] [1783173806.272098812]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100722 timeout was 0.1.[0m
+[33m[WARN] [1783173811.314454064]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100937 timeout was 0.1.[0m
+[33m[WARN] [1783173816.360385544]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100822 timeout was 0.1.[0m
+[33m[WARN] [1783173821.402865584]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.1009 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 190, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783173826.442988751]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100765 timeout was 0.1.[0m
+[33m[WARN] [1783173831.480357159]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100809 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [199][0m
+[33m[WARN] [1783173836.517674119]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100706 timeout was 0.1.[0m
+[33m[WARN] [1783173841.562313312]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100815 timeout was 0.1.[0m
+[33m[WARN] [1783173846.605032388]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100782 timeout was 0.1.[0m
+[33m[WARN] [1783173851.648835655]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100901 timeout was 0.1.[0m
+[33m[WARN] [1783173856.695403877]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100684 timeout was 0.1.[0m
+[33m[WARN] [1783173861.734991431]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100788 timeout was 0.1.[0m
+[33m[WARN] [1783173866.775180217]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100843 timeout was 0.1.[0m
+[33m[WARN] [1783173871.820959010]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101017 timeout was 0.1.[0m
+[33m[WARN] [1783173876.863003885]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100935 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 199, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783173881.901066844]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100724 timeout was 0.1.[0m
+[33m[WARN] [1783173886.942759660]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100192 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [208][0m
+[33m[WARN] [1783173891.981544404]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100739 timeout was 0.1.[0m
+[33m[WARN] [1783173897.022653958]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100689 timeout was 0.1.[0m
+[33m[WARN] [1783173902.062526372]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100887 timeout was 0.1.[0m
+[33m[WARN] [1783173907.105795143]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100904 timeout was 0.1.[0m
+[33m[WARN] [1783173912.149299428]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100916 timeout was 0.1.[0m
+[33m[WARN] [1783173917.194441474]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10106 timeout was 0.1.[0m
+[33m[WARN] [1783173922.237223500]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100712 timeout was 0.1.[0m
+[33m[WARN] [1783173927.279423823]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100976 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 208, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783173932.321593625]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100717 timeout was 0.1.[0m
+[33m[WARN] [1783173937.361011613]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100828 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [217][0m
+[33m[WARN] [1783173942.400328395]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100897 timeout was 0.1.[0m
+[33m[WARN] [1783173947.441401030]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100836 timeout was 0.1.[0m
+[33m[WARN] [1783173952.482240090]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100749 timeout was 0.1.[0m
+[33m[WARN] [1783173957.522030841]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100766 timeout was 0.1.[0m
+[33m[WARN] [1783173962.565021471]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100887 timeout was 0.1.[0m
+[33m[WARN] [1783173967.607472602]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100605 timeout was 0.1.[0m
+[33m[WARN] [1783173972.647313214]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100818 timeout was 0.1.[0m
+[33m[WARN] [1783173977.687406304]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100821 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[33m[WARN] [1783173982.723711736]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101037 timeout was 0.1.[0m
+[31m[move_base_legacy_relay-5] process has died [pid 217, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/d305d8ba-77b0-11f1-9004-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[monitoring-15] killing on exit
+[xbot_remote-14] killing on exit
+[xbot_monitoring-13] killing on exit
+[twist_mux-12] killing on exit
+[mower_logic-10] killing on exit
+[slic3r_coverage_planner-11] killing on exit
+[map_service-9] killing on exit
+[joy_teleop-8] killing on exit
+[xbot_positioning-6] killing on exit
+[joy-7] killing on exit
+[move_base_legacy_relay-5] killing on exit
+[move_base_flex-4] killing on exit
+[0m[INFO] [1783173983.627493184]: Shutdown costmap navigation server.[0m
+[ntrip_client-3] killing on exit
+[mower_comms_v2-2] killing on exit
+[0m[INFO] [1783173984.036798829]: Shutting Down[0m
+[0m[INFO] [1783173984.037041716]: Shutting down ServiceDiscovery[0m
+[0m[INFO] [1783173984.108446541]: ServiceDiscovery Stopped.[0m
+[0m[INFO] [1783173984.108709261]: Shutting down ServiceIO[0m
+[0m[INFO] [1783173985.104391571]: ServiceIO Stopped.[0m
+[0m[INFO] [1783173985.104576033]: Shutting down RemoteLoggingReceiver[0m
+[0m[INFO] [1783173986.128349965]: RemoteLoggingReceiver Stopped.[0m
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+... logging to /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+[1mstarted roslaunch server http://openmower:37295/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/bind_ip: 172.16.78.1
+ * /ll/services/diff_drive/ticks_per_m: 2400
+ * /ll/services/diff_drive/wheel_distance_m: 0.325
+ * /ll/services/gps/absolute_coords: True
+ * /ll/services/gps/baud_rate: 921600
+ * /ll/services/gps/datum_height: 522
+ * /ll/services/gps/datum_lat: 48.xxxx
+ * /ll/services/gps/datum_long: 10.xxxx
+ * /ll/services/gps/port_index: 8
+ * /ll/services/gps/protocol: NMEA
+ * /ll/services/imu/axis_config: +X-Y-Z
+ * /ll/services/input/config_file: /data/params/inpu...
+ * /ll/services/power/battery_critical_high_voltage: 33.7
+ * /ll/services/power/battery_critical_voltage: 22
+ * /ll/services/power/battery_empty_voltage: 24
+ * /ll/services/power/battery_full_voltage: 33.4
+ * /ll/services/power/charge_critical_high_current: 2.5
+ * /ll/services/power/charge_critical_high_voltage: 35.5
+ * /ll/services/power/charge_current: 1.5
+ * /ll/services/power/charge_termination_current: 0.5
+ * /ll/services/power/log_debug: True
+ * /ll/services/power/re_charge_voltage: 1
+ * /ll/services/sound/language: en
+ * /ll/services/sound/volume: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_flex/recovery_behaviors: [{'name': 'Backwa...
+ * /move_base_flex/recovery_enabled: True
+ * /move_base_flex/recovery_patience: 7.0
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/docking_approach_distance: 0.7
+ * /mower_logic/docking_extra_time: 0.5
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 3
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 15.0
+ * /mower_logic/gps_wait_time: 15.0
+ * /mower_logic/mow_angle_increment: 110
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 1.0
+ * /mower_logic/undock_distance: 0.5
+ * /mower_logic/undock_fixed_angle: False
+ * /mower_logic/undock_use_curve: False
+ * /ntrip_client/host: 192.168.3.199
+ * /ntrip_client/mountpoint: spgps
+ * /ntrip_client/password: gps
+ * /ntrip_client/port: 2101
+ * /ntrip_client/username: gps
+ * /recovery_behaviors: [{'name': 'conser...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_monitoring/external_mqtt_enable: True
+ * /xbot_monitoring/external_mqtt_hostname: 192.168.3.191
+ * /xbot_monitoring/external_mqtt_password: openmower
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: openmower
+ * /xbot_monitoring/external_mqtt_username: openmower
+ * /xbot_positioning/antenna_offset_x: -0.075
+ * /xbot_positioning/antenna_offset_y: 0.12
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ros_ntrip_client/ntrip_client_node)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+[1mprocess[master]: started with pid [50][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311
+[1msetting /run_id to 9930c540-77b1-11f1-b7f0-2ccf674aa0eb[0m
+[1mprocess[rosout-1]: started with pid [60][0m
+started core service [/rosout]
+[1mprocess[mower_comms_v2-2]: started with pid [63][0m
+[1mprocess[ntrip_client-3]: started with pid [64][0m
+[1mprocess[move_base_flex-4]: started with pid [65][0m
+[1mprocess[move_base_legacy_relay-5]: started with pid [66][0m
+[1mprocess[xbot_positioning-6]: started with pid [67][0m
+[0m[INFO] [1783174012.466420800]: Bind IP (Robot Internal): 172.16.78.1[0m
+[1mprocess[joy-7]: started with pid [82][0m
+[0m[INFO] [1783174012.521153004]: Wheel ticks [1/m]: 2400[0m
+[0m[INFO] [1783174012.522498818]: Wheel distance [m]: 0.325[0m
+[0m[INFO] [1783174012.549403800]: IMU axis config: +X-Y-Z[0m
+[1mprocess[joy_teleop-8]: started with pid [87][0m
+[1mprocess[map_service-9]: started with pid [96][0m
+[1mprocess[mower_logic-10]: started with pid [102][0m
+[0m[INFO] [1783174012.732963133]: Antenna offset: -0.075, 0.12[0m
+[0m[INFO] [1783174012.742162578]: GPS protocol: NMEA, baud rate: 921600, gps port index:8[0m
+[0m[INFO] [1783174012.760052559]: Datum: 48.xxxx, 10.xxxx, 522[0m
+[1mprocess[slic3r_coverage_planner-11]: started with pid [104][0m
+[31m[ERROR] [1783174012.815150596]: Couldn't open joystick /dev/input/js0. Will retry every second.[0m
+[0m[INFO] [1783174012.869615929]: NTRIP: connection attempt 1[0m
+[0m[INFO] [1783174012.873661003]: Teleop enable button 0.[0m
+[1mprocess[twist_mux-12]: started with pid [105][0m
+[0m[INFO] [1783174012.892118003]: Turbo on button 4.[0m
+[0m[INFO] [1783174012.892211318]: Linear axis x on 1 at scale 0.500000.[0m
+[0m[INFO] [1783174012.893479948]: Turbo for linear axis x is scale 1.000000.[0m
+[0m[INFO] [1783174012.894585855]: Angular axis yaw on 0 at scale 1.500000.[0m
+[0m[INFO] [1783174012.895011078]: Turbo for angular axis yaw is scale 3.000000.[0m
+[1mprocess[xbot_monitoring-13]: started with pid [117][0m
+[0m[INFO] [1783174012.994178466]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10[0m
+[0m[INFO] [1783174013.030271263]: All mower_comms_v2 services started[0m
+[1mprocess[xbot_remote-14]: started with pid [125][0m
+[0m[INFO] [1783174013.067102244]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50[0m
+[1mprocess[monitoring-15]: started with pid [129][0m
+[0m[INFO] [1783174013.094941374]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100[0m
+[31m[FATAL] [1783174013.132447985]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)[0m
+[0m[INFO] [1783174013.267231466]: PositionHistory: loaded existing file position_history/1782751106_BQl8TJw1cUy7L3O7m2dhBIKw8GN0wVGj.jsonl[0m
+[0m[INFO] [1783174013.298063577]: Restoring checkpoint for plan (8EDAE38F75F64531D7E31F0C6224F5378428A2C461EB2DD2A1999576B31FEAF4) job: BQl8TJw1cUy7L3O7m2dhBIKw8GN0wVGj area: 2 path: 0 index: 1309 angle increment sum: 0[0m
+[0m[INFO] [1783174013.347428225]: Using external MQTT broker: 192.168.3.191:1883 with topic prefix: openmower/[0m
+[0m[INFO] [1783174013.470900077]: MQTT Connected[0m
+[0m[INFO] [1783174013.909022966]: new methods registered: xbot_monitoring registered 8 methods.[0m
+[0m[INFO] [1783174013.920490151]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[INFO] [1783174013.953285984]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info[0m
+[0m[INFO] [1783174013.972574169]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[INFO] [1783174013.994814373]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[INFO] [1783174014.021695855]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[INFO] [1783174014.058872281]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[INFO] [1783174014.079228151]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[INFO] [1783174014.079431762]: Subscribing to sensor data for sensor with name: Charge Current[0m
+[0m[INFO] [1783174014.120178095]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+[0m[INFO] [1783174014.132772151]: om_mower_logic: Setting mower_logic config[0m
+[0m[INFO] [1783174014.173072095]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[INFO] [1783174014.208390780]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[INFO] [1783174014.253908725]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[INFO] [1783174014.285838262]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[INFO] [1783174014.299457984]: Monitoring received new mower_logic config[0m
+[0m[INFO] [1783174014.372500966]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[INFO] [1783174014.372701780]: Subscribing to sensor data for sensor with name: GPS Accuracy[0m
+[0m[INFO] [1783174014.389437614]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[INFO] [1783174014.390167558]: Subscribing to sensor data for sensor with name: Mow ESC Temp[0m
+[0m[INFO] [1783174014.410372743]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info[0m
+[0m[INFO] [1783174014.411225280]: Subscribing to sensor data for sensor with name: Charge State[0m
+[0m[INFO] [1783174014.428397984]: Monitoring received new mower_logic config[0m
+[0m[INFO] [1783174014.431739410]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[INFO] [1783174014.431839910]: Subscribing to sensor data for sensor with name: Left ESC Temp[0m
+[0m[INFO] [1783174014.441346114]: MQTT Connected[0m
+[0m[INFO] [1783174014.943123836]: Waiting for emergency message[0m
+[0m[INFO] [1783174015.038483224]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+[0m[INFO] [1783174015.038628761]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions[0m
+[0m[INFO] [1783174015.050719335]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[INFO] [1783174015.051251187]: Subscribing to sensor data for sensor with name: Mow Motor Current[0m
+[0m[INFO] [1783174015.064568687]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[INFO] [1783174015.064746206]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info[0m
+[0m[INFO] [1783174015.064807891]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[INFO] [1783174015.065006465]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[INFO] [1783174015.065463447]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[INFO] [1783174015.068447428]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[INFO] [1783174015.068580391]: Subscribing to sensor data for sensor with name: Mow Motor Temp[0m
+[0m[INFO] [1783174015.080182280]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[INFO] [1783174015.080720743]: Subscribing to sensor data for sensor with name: Right ESC Temp[0m
+[0m[INFO] [1783174015.093811798]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[INFO] [1783174015.093916798]: Subscribing to sensor data for sensor with name: V Battery[0m
+[0m[INFO] [1783174015.104157780]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[INFO] [1783174015.104262113]: Subscribing to sensor data for sensor with name: V Charge[0m
+[0m[INFO] [1783174015.228426502]: new methods registered: mower_map_service registered 1 methods.[0m
+[0m[INFO] [1783174015.234746780]: Loaded 5 areas from: map.json[0m
+[0m[INFO] [1783174015.243355669]: Map Position: x=12.2328, y=9.54256[0m
+[0m[INFO] [1783174015.243841761]: Map Size: x=24.4449, y=28.474[0m
+[0m[INFO] [1783174015.412690539]: docking pose: position: 
+  x: 1.42063
+
+  y: -1.32
+
+  z: 0
+
+orientation: 
+  x: 0
+
+  y: 0
+
+  z: -0.991827
+
+  w: 0.127592
+[0m
+[33m[WARN] [1783174018.863150241]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100665 timeout was 0.1.[0m
+[33m[WARN] [1783174033.495029666]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 11.704 timeout was 0.1.[0m
+[33m[WARN] [1783174038.533326478]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100836 timeout was 0.1.[0m
+[33m[WARN] [1783174043.572416827]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.1008 timeout was 0.1.[0m
+[33m[WARN] [1783174048.612219268]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100763 timeout was 0.1.[0m
+[33m[WARN] [1783174053.651892321]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10076 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 66, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174058.691496373]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10072 timeout was 0.1.[0m
+[33m[WARN] [1783174063.732107722]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100802 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [181][0m
+[33m[WARN] [1783174068.775159452]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100705 timeout was 0.1.[0m
+[33m[WARN] [1783174073.817128449]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100699 timeout was 0.1.[0m
+[33m[WARN] [1783174078.863677908]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101105 timeout was 0.1.[0m
+[33m[WARN] [1783174083.903293664]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100732 timeout was 0.1.[0m
+[33m[WARN] [1783174088.948293315]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100949 timeout was 0.1.[0m
+[33m[WARN] [1783174093.995427160]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100473 timeout was 0.1.[0m
+[33m[WARN] [1783174099.034252112]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100191 timeout was 0.1.[0m
+[33m[WARN] [1783174104.076673125]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100802 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 181, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174109.115595118]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100723 timeout was 0.1.[0m
+[33m[WARN] [1783174114.155722315]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100095 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [190][0m
+[33m[WARN] [1783174119.196786209]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100937 timeout was 0.1.[0m
+[33m[WARN] [1783174124.237536326]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100921 timeout was 0.1.[0m
+[33m[WARN] [1783174129.277610718]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100756 timeout was 0.1.[0m
+[33m[WARN] [1783174134.320898930]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10094 timeout was 0.1.[0m
+[33m[WARN] [1783174139.363839673]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100524 timeout was 0.1.[0m
+[33m[WARN] [1783174144.403015288]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100102 timeout was 0.1.[0m
+[33m[WARN] [1783174149.447012804]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100075 timeout was 0.1.[0m
+[33m[WARN] [1783174154.488740245]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100814 timeout was 0.1.[0m
+[33m[WARN] [1783174159.529949731]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100977 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 190, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174164.567497642]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100774 timeout was 0.1.[0m
+[33m[WARN] [1783174169.604721710]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100793 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [199][0m
+[33m[WARN] [1783174174.638805353]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100916 timeout was 0.1.[0m
+[33m[WARN] [1783174179.679573951]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101104 timeout was 0.1.[0m
+[33m[WARN] [1783174184.721842817]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101071 timeout was 0.1.[0m
+[33m[WARN] [1783174189.764843772]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100876 timeout was 0.1.[0m
+[33m[WARN] [1783174194.809704030]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100823 timeout was 0.1.[0m
+[33m[WARN] [1783174199.849131276]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100821 timeout was 0.1.[0m
+[33m[WARN] [1783174204.894071036]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10073 timeout was 0.1.[0m
+[33m[WARN] [1783174209.941996894]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101103 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 199, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174214.980631990]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100707 timeout was 0.1.[0m
+[33m[WARN] [1783174220.019754115]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100837 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [208][0m
+[33m[WARN] [1783174225.060249773]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100621 timeout was 0.1.[0m
+[33m[WARN] [1783174230.097799395]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10081 timeout was 0.1.[0m
+[33m[WARN] [1783174235.138269467]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101022 timeout was 0.1.[0m
+[33m[WARN] [1783174240.183555110]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101003 timeout was 0.1.[0m
+[33m[WARN] [1783174245.224730732]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100862 timeout was 0.1.[0m
+[33m[WARN] [1783174250.269497538]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100917 timeout was 0.1.[0m
+[33m[WARN] [1783174255.311687416]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100724 timeout was 0.1.[0m
+[33m[WARN] [1783174260.354088360]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100779 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 208, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174265.393567914]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100826 timeout was 0.1.[0m
+[33m[WARN] [1783174270.439112978]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100826 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [217][0m
+[33m[WARN] [1783174275.480628766]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100969 timeout was 0.1.[0m
+[33m[WARN] [1783174280.518007612]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100959 timeout was 0.1.[0m
+[33m[WARN] [1783174285.562180688]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100952 timeout was 0.1.[0m
+[33m[WARN] [1783174290.607082897]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10076 timeout was 0.1.[0m
+[33m[WARN] [1783174295.647172937]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100914 timeout was 0.1.[0m
+[33m[WARN] [1783174300.691459408]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100855 timeout was 0.1.[0m
+[33m[WARN] [1783174305.735299808]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100939 timeout was 0.1.[0m
+[33m[WARN] [1783174310.779579639]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100828 timeout was 0.1.[0m
+[33m[WARN] [1783174315.823908632]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100968 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 217, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174320.861160910]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100741 timeout was 0.1.[0m
+[33m[WARN] [1783174325.905298364]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100831 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [226][0m
+[33m[WARN] [1783174330.944347858]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100775 timeout was 0.1.[0m
+[33m[WARN] [1783174335.987407597]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100798 timeout was 0.1.[0m
+[33m[WARN] [1783174341.027824321]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.1009 timeout was 0.1.[0m
+[33m[WARN] [1783174346.068362274]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100245 timeout was 0.1.[0m
+[33m[WARN] [1783174351.108320844]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100852 timeout was 0.1.[0m
+[33m[WARN] [1783174356.148505506]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100822 timeout was 0.1.[0m
+[33m[WARN] [1783174361.192943615]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101106 timeout was 0.1.[0m
+[33m[WARN] [1783174366.237703867]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10081 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 226, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174371.278701550]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100788 timeout was 0.1.[0m
+[33m[WARN] [1783174376.316220328]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101047 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [235][0m
+[33m[WARN] [1783174381.353504172]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100729 timeout was 0.1.[0m
+[33m[WARN] [1783174386.396701355]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100752 timeout was 0.1.[0m
+[33m[WARN] [1783174391.440283673]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100705 timeout was 0.1.[0m
+[33m[WARN] [1783174396.479766547]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100749 timeout was 0.1.[0m
+[33m[WARN] [1783174401.521314011]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100219 timeout was 0.1.[0m
+[33m[WARN] [1783174406.563317366]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100847 timeout was 0.1.[0m
+[33m[WARN] [1783174411.605625131]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100874 timeout was 0.1.[0m
+[33m[WARN] [1783174416.647817270]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100917 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 235, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174421.688377231]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100638 timeout was 0.1.[0m
+[33m[WARN] [1783174426.726843312]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100867 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [244][0m
+[33m[WARN] [1783174431.769988768]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100947 timeout was 0.1.[0m
+[33m[WARN] [1783174436.810826215]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100059 timeout was 0.1.[0m
+[33m[WARN] [1783174441.855600484]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100678 timeout was 0.1.[0m
+[33m[WARN] [1783174446.895375584]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100677 timeout was 0.1.[0m
+[33m[WARN] [1783174451.938591619]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101111 timeout was 0.1.[0m
+[33m[WARN] [1783174456.979331719]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10073 timeout was 0.1.[0m
+[33m[WARN] [1783174462.017625771]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100771 timeout was 0.1.[0m
+[33m[WARN] [1783174467.059096221]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101021 timeout was 0.1.[0m
+[33m[WARN] [1783174472.101185318]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100756 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 244, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174477.142692491]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100882 timeout was 0.1.[0m
+[33m[WARN] [1783174482.191015235]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100779 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [253][0m
+[33m[WARN] [1783174487.228982957]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100772 timeout was 0.1.[0m
+[33m[WARN] [1783174492.274496340]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100813 timeout was 0.1.[0m
+[33m[WARN] [1783174497.315626886]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100776 timeout was 0.1.[0m
+[33m[WARN] [1783174502.358926258]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100697 timeout was 0.1.[0m
+[33m[WARN] [1783174507.399080492]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10098 timeout was 0.1.[0m
+[33m[WARN] [1783174512.443380084]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100932 timeout was 0.1.[0m
+[33m[WARN] [1783174517.482873265]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100697 timeout was 0.1.[0m
+[33m[WARN] [1783174522.525227400]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100883 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 253, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174527.565951707]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100834 timeout was 0.1.[0m
+[33m[WARN] [1783174532.604609318]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100771 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [262][0m
+[33m[WARN] [1783174537.644626201]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100736 timeout was 0.1.[0m
+[33m[WARN] [1783174542.684295160]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100771 timeout was 0.1.[0m
+[33m[WARN] [1783174547.726223667]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100985 timeout was 0.1.[0m
+[33m[WARN] [1783174552.765504479]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100737 timeout was 0.1.[0m
+[33m[WARN] [1783174557.804255552]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100912 timeout was 0.1.[0m
+[33m[WARN] [1783174562.847920980]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100747 timeout was 0.1.[0m
+[33m[WARN] [1783174567.889803765]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100976 timeout was 0.1.[0m
+[33m[WARN] [1783174572.932445140]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100884 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 262, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174577.972309450]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10066 timeout was 0.1.[0m
+[33m[WARN] [1783174583.011625892]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100123 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [271][0m
+[33m[WARN] [1783174588.051667850]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100845 timeout was 0.1.[0m
+[33m[WARN] [1783174593.085340254]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100113 timeout was 0.1.[0m
+[33m[WARN] [1783174598.127863945]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100976 timeout was 0.1.[0m
+[33m[WARN] [1783174603.172443314]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100936 timeout was 0.1.[0m
+[33m[WARN] [1783174608.213279121]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100847 timeout was 0.1.[0m
+[33m[WARN] [1783174613.254517742]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100803 timeout was 0.1.[0m
+[33m[WARN] [1783174618.293378037]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10096 timeout was 0.1.[0m
+[33m[WARN] [1783174623.333190588]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100807 timeout was 0.1.[0m
+[33m[WARN] [1783174628.375674353]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100886 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 271, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174633.412976635]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100691 timeout was 0.1.[0m
+[33m[WARN] [1783174638.451458153]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100791 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [280][0m
+[33m[WARN] [1783174643.491985498]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100758 timeout was 0.1.[0m
+[33m[WARN] [1783174648.535435908]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100969 timeout was 0.1.[0m
+[33m[WARN] [1783174653.578816744]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100819 timeout was 0.1.[0m
+[33m[WARN] [1783174658.620681826]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100872 timeout was 0.1.[0m
+[33m[WARN] [1783174663.660672228]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100829 timeout was 0.1.[0m
+[33m[WARN] [1783174668.706220280]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100791 timeout was 0.1.[0m
+[33m[WARN] [1783174673.748970099]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101047 timeout was 0.1.[0m
+[33m[WARN] [1783174678.792830971]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100896 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 280, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174683.831791969]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100683 timeout was 0.1.[0m
+[33m[WARN] [1783174688.870193951]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100833 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [289][0m
+[33m[WARN] [1783174693.911263646]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100689 timeout was 0.1.[0m
+[33m[WARN] [1783174698.953145246]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100931 timeout was 0.1.[0m
+[33m[WARN] [1783174703.995087254]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100612 timeout was 0.1.[0m
+[33m[WARN] [1783174709.036676984]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100182 timeout was 0.1.[0m
+[33m[WARN] [1783174714.079029583]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10086 timeout was 0.1.[0m
+[33m[WARN] [1783174719.120513758]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100762 timeout was 0.1.[0m
+[33m[WARN] [1783174724.163280300]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100809 timeout was 0.1.[0m
+[33m[WARN] [1783174729.205599676]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100303 timeout was 0.1.[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[31m[move_base_legacy_relay-5] process has died [pid 289, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5.log].
+log file: /data/ros/log/9930c540-77b1-11f1-b7f0-2ccf674aa0eb/move_base_legacy_relay-5*.log[0m
+[33m[WARN] [1783174734.247084389]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100659 timeout was 0.1.[0m
+[33m[WARN] [1783174739.285723370]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100873 timeout was 0.1.[0m
+[move_base_legacy_relay-5] restarting process
+[1mprocess[move_base_legacy_relay-5]: started with pid [298][0m
+[33m[WARN] [1783174744.326392141]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100928 timeout was 0.1.[0m
+[33m[WARN] [1783174749.366231710]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100898 timeout was 0.1.[0m
+[33m[WARN] [1783174754.412705073]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10086 timeout was 0.1.[0m

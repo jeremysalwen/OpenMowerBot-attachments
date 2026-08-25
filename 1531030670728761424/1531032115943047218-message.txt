@@ -1,0 +1,114 @@
+NOTICE:  Welcome to Horizon X5 ASIC BOOTROM - V4.1
+NOTICE:  		OTP config:
+NOTICE:  			otp exist: true
+NOTICE:  			test region size: 304
+NOTICE:  			secure region size: 120
+NOTICE:  			none secure region size: 56
+NOTICE:   Enable MMU 
+NOTICE:  Booting Trusted Firmware
+NOTICE:  BL1: v2.8(release):
+NOTICE:  BL1: Built : 17:42:12, Oct 19 2023
+NOTICE:  Enter eMMC Mode......
+NOTICE:  USER AREA. 
+NOTICE:   eMMC clk_rate = CLK_12M 
+NOTICE:   eMMC emmc_data_width == WIDTH_DATA_1 
+NOTICE:   eMMC emmc_cfg.emmc_clk_latch == CLK_FALLING 
+NOTICE:  Enter media_source_select process(1).
+NOTICE:  Get S1PK
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [auth_decrypt] pass.
+NOTICE:  BL1: BL2 memory layout address = 0x1fe9f000
+NOTICE:  BL1: Booting BL2
+NOTICE:  		OTP config:
+NOTICE:  			otp exist: true
+NOTICE:  			test region size: 304
+NOTICE:  			secure region size: 120
+NOTICE:  			none secure region size: 56
+NOTICE:  BL2: v2.8(release):v1.0.8-82-g1b5b0a694
+NOTICE:  BL2: Built : 15:32:06, Nov  3 2025
+NOTICE:  Enter eMMC Mode......
+NOTICE:  eMMC partition: User
+NOTICE:  Enter media_source_select process(1).
+NOTICE:  BL2 config file
+NOTICE:  ab slot is : 1
+NOTICE:  fip index:0
+NOTICE:  GET BL2 ROTPK FROM OTP
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_signature] pass.
+NOTICE:  start to load bl2 cfg image
+NOTICE:  [verify_hash] pass.
+NOTICE:  BL2 CFG ADDR:0x1ff00000, MAGIC:0x474643324c424248
+NOTICE:  start to check efuse result
+NOTICE:  check efuse success
+NOTICE:  calibration_offset 4
+NOTICE:  trimming_value 9
+NOTICE:  ADC read channel[1]: 1229mv
+NOTICE:  ddr info:[LPDDR4]-[SINGLE_RANK]-[DIE: 1 GB]-[ECC OFF]-[DVFS ON]-[4266M]-[ALTERNATIVE: 0]
+NOTICE:  JTAG ENABLE
+NOTICE:  disable wdt
+NOTICE:  Get S1PK
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_signature] pass.
+NOTICE:  start to load ddr image
+NOTICE:  [verify_hash] pass.
+NOTICE:  run ddr Fw
+NOTICE:  matching profile: profile_10 from aon config
+NOTICE:  type: LP4, freq: 4266, ecc: 0(0x7f), rank: 1, dvfs: 1, die_dencity: 1 GB, alternative: 0, version: 11.00
+NOTICE:  ddr cost: 87767 us, ddr size: 2 GB, manuid: 0x13
+NOTICE:  ddr ready
+NOTICE:  Get S1PK
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_signature] pass.
+NOTICE:  start to load bl31 image
+NOTICE:  [verify_hash] pass.
+NOTICE:  Get S1PK
+NOTICE:  [verify_signature] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_signature] pass.
+NOTICE:  start to load optee image
+NOTICE:  [verify_hash] pass.
+NOTICE:  [verify_hash] pass.
+NOTICE:  start to load uboot image
+NOTICE:  [verify_hash] pass.
+NOTICE:  BL1: Booting BL31
+NOTICE:  multicore_init: sec_entrypoint = 0x2000010c
+NOTICE:  BL31: v2.8(release):v1.0.8-82-g1b5b0a694
+NOTICE:  BL31: Built : 15:33:21, Nov  3 2025
+NOTICE:  plat_setup_psci_ops: sec_entrypoint = 0x2000010c
+I/TC: 
+I/TC: OP-TEE version: a3b654620 (gcc version 11.3.1 20220712 (Arm GNU Toolchain 11.3.Rel1)) #3 Mon Mar 10 03:49:24 UTC 2025 aarch64
+I/TC: WARNING: This OP-TEE configuration might be insecure!
+I/TC: WARNING: Please check https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html
+I/TC: Primary CPU initializing
+MBEDTLS_CORE  Select regular OTP
+MBEDTLS_CORE  SRAM Pool Base: 0x80000000, size: 0x2000, alignment: 0x10
+MBEDTLS_CORE   ACA driver init success!
+MBEDTLS_CORE  set sw_init_done!
+I/TC: Primary CPU switching to normal world boot
+
+
+U-Boot 2022.10-gcd27efdf (May 15 2026 - 18:24:23 +0800), Build: jenkins-GOAT_release_X5-2027
+
+Model: Horizon X5
+DRAM:  1.9 GiB
+console out start addr:0x0000000087ffc000, end addr:0x0000000087ffe000
+horizon_lsio_pinctrl lsio_iomuxc@34180000: Initialized D-Robotics pinctrl driver
+horizon_hsio_pinctrl hsio_iomuxc@35050000: Initialized D-Robotics pinctrl driver
+horizon_dsp_pinctrl dsp_iomuxc@31040014: Initialized D-Robotics pinctrl driver
+Core:  131 devices, 25 uclasses, devicetree: separate
+WDT:   Started watchdog@34250000 with servicing (10s timeout)
+stop watchdog
+MMC:   sdio-host@35040000: 0, sdio-host@35020000: 1
+Loading Environment from MMC... (Tuning Ok!) *** Warning - bad CRC, using default environment
+
+Error: Invalid number format in buffer
+read log lelver=0
+GPIO 'gpio@dsp_21' value is 1
+gpio@dsp_21 = 1
+Hobot>

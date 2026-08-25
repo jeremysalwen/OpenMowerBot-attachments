@@ -1,0 +1,117 @@
+Mosquitto  | 1782734136: Info: running mosquitto as user: mosquitto.
+Mosquitto  | 1782734142: New connection from 172.19.0.1:51086 on port 1883.
+Mosquitto  | 1782734142: New client connected from 172.19.0.1:51086 as xbot_monitoring (p4, c1, k1000).
+Mosquitto  | 1782734162: New connection from 192.168.1.134:61068 on port 9001.
+Mosquitto  | 1782734162: New client connected from 192.168.1.134:61068 as om-client-43768 (p5, c0, k0).
+Mosquitto  | 1782734175: New connection from 192.168.1.134:61071 on port 9001.
+Mosquitto  | 1782734175: New client connected from 192.168.1.134:61071 as om-client-35075 (p5, c0, k0).
+Mosquitto  | 1782734179: Client om-client-43768 [192.168.1.134:61068] disconnected: connection closed by client.
+Mosquitto  | 1782734362: New connection from 192.168.1.134:61076 on port 9001.
+Mosquitto  | 1782734362: New client connected from 192.168.1.134:61076 as om-client-87762 (p5, c0, k0).
+Mosquitto  | 1782734365: Client om-client-35075 [192.168.1.134:61071] disconnected: connection closed by client.
+Mosquitto  | 1782735682: Outgoing messages are being dropped for client om-client-87762.
+OpenMowerApp  | 192.168.1.134 - - [29/Jun/2026:11:56:13 +0000] "GET / HTTP/1.1" 200 654 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15"
+OpenMowerApp  | 192.168.1.134 - - [29/Jun/2026:11:56:13 +0000] "GET /main.dart.js HTTP/1.1" 304 0 "http://192.168.1.217:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15"
+OpenMowerApp  | 192.168.1.134 - - [29/Jun/2026:11:59:20 +0000] "GET / HTTP/1.1" 200 654 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15"
+OpenMowerApp  | 192.168.1.134 - - [29/Jun/2026:11:59:20 +0000] "GET /manifest.json HTTP/1.1" 200 309 "http://192.168.1.217:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15"
+OpenMowerApp  | 192.168.1.134 - - [29/Jun/2026:11:59:20 +0000] "GET /assets/FontManifest.json HTTP/1.1" 200 226 "http://192.168.1.217:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15"
+open_mower_ros  | [INFO] [1782734142.285368532]: PJB: Service Connected! ID: 5
+open_mower_ros  | [INFO] [1782734142.285881709]: [ID=6] Successfully claimed service
+open_mower_ros  | [INFO] [1782734142.286421349]: PJB: Service Connected! ID: 6
+open_mower_ros  | [INFO] [1782734142.288072303]: [ID=7] Successfully claimed service
+open_mower_ros  | [INFO] [1782734142.288226097]: PJB: Service Connected! ID: 7
+open_mower_ros  | [INFO] [1782734142.288706460]: [ID=8] Successfully claimed service
+open_mower_ros  | [INFO] [1782734142.288758700]: PJB: Service Connected! ID: 8
+open_mower_ros  | [INFO] [1782734142.392794693]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+open_mower_ros  | [INFO] [1782734142.539723619]: waitForService: Service [/xbot/rpc/register] is now available.
+open_mower_ros  | [WARN] [1782734142.562909020]: Could not open map file: map.json
+open_mower_ros  | [INFO] [1782734142.562029923]: new methods registered: mower_map_service registered 1 methods.
+open_mower_ros  | [INFO] [1782734142.563162386]: Map Position: x=0, y=0
+open_mower_ros  | [INFO] [1782734142.563229551]: Map Size: x=10, y=10
+open_mower_ros  | [INFO] [1782734142.909286332]: om_mower_logic: Setting mower_logic config
+open_mower_ros  | [INFO] [1782734143.019369209]: new methods registered: xbot_monitoring registered 2 methods.
+open_mower_ros  | [INFO] [1782734143.030365641]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1782734143.044938589]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1782734143.060653537]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1782734143.073624215]: >>> [ID=6] Requesting Configuration
+open_mower_ros  | [INFO] [1782734143.074488405]: >>> [ID=6] Received Configuration
+open_mower_ros  | [INFO] [1782734143.074602496]: >>> [ID=6] Service started after successful configuration
+open_mower_ros  | [INFO] [1782734143.081290091]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.091991787]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1782734143.101676870]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.125498446]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1782734143.134276692]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [ERROR] [1782734143.134501188]: Input config file not specified
+open_mower_ros  | [INFO] [1782734143.134661871]: Input config JSON has 2 bytes, compressed to 3 bytes
+open_mower_ros  | [INFO] [1782734143.135940017]: >>> [ID=7] Received Configuration
+open_mower_ros  | [INFO] [1782734143.136622783]: >>> [ID=7] Service started after successful configuration
+open_mower_ros  | [INFO] [1782734143.143907147]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1782734143.155154853]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [INFO] [1782734143.156564181]: >>> [ID=5] Received Configuration
+open_mower_ros  | [INFO] [1782734143.156778197]: >>> [ID=5] Service started after successful configuration
+open_mower_ros  | [INFO] [1782734143.159130306]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1782734143.190300392]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1782734143.214402000]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.230230132]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1782734143.231955122]: Subscribing to sensor data for sensor with name: GPS Accuracy
+open_mower_ros  | [INFO] [1782734143.253527901]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1782734143.265616130]: >>> [ID=4] Requesting Configuration
+open_mower_ros  | [INFO] [1782734143.266310064]: >>> [ID=4] Received Configuration
+open_mower_ros  | [INFO] [1782734143.267484785]: >>> [ID=4] Service started after successful configuration
+open_mower_ros  | [INFO] [1782734143.269764563]: Started gyro calibration
+open_mower_ros  | [INFO] [1782734143.282920645]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1782734143.283260677]: Subscribing to sensor data for sensor with name: Charge State
+open_mower_ros  | [INFO] [1782734143.300618746]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1782734143.316953573]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1782734143.317494176]: Subscribing to sensor data for sensor with name: Charge Current
+open_mower_ros  | [INFO] [1782734143.359808191]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.360232240]: Subscribing to sensor data for sensor with name: Left ESC Temp
+open_mower_ros  | [INFO] [1782734143.374206235]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.374459379]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+open_mower_ros  | [INFO] [1782734143.387225]: Connected to http://crtk.net:2101/AURAY
+open_mower_ros  | [INFO] [1782734143.388507614]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1782734143.388634593]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+open_mower_ros  | [INFO] [1782734143.411397204]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1782734143.411913344]: Subscribing to sensor data for sensor with name: Mow Motor Current
+open_mower_ros  | [INFO] [1782734143.430223028]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1782734143.430697872]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+open_mower_ros  | [INFO] [1782734143.450663918]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1782734143.450953228]: Subscribing to sensor data for sensor with name: Right ESC Temp
+open_mower_ros  | [INFO] [1782734143.468283298]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1782734143.469053304]: Subscribing to sensor data for sensor with name: V Battery
+open_mower_ros  | [INFO] [1782734143.482877987]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1782734143.483551790]: Subscribing to sensor data for sensor with name: V Charge
+open_mower_ros  | [INFO] [1782734143.493670478]: Waiting for emergency message
+open_mower_ros  | [INFO] [1782734143.732895958]: >>> [ID=5] Successfully Configured Charger
+open_mower_ros  | [WARN] [1782734147.887466866]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101039 timeout was 0.1.
+open_mower_ros  | [INFO] [1782734148.276112991]: Calibrated gyro offset: 0.0161836
+open_mower_ros  | [INFO] [1782734148.505488446]: local_costmap: Using plugin "static_layer"
+open_mower_ros  | [INFO] [1782734148.526978059]: Requesting the map...
+open_mower_ros  | [INFO] [1782734148.735907940]: Resizing static layer to 200 X 200 at 0.050000 m/pix
+open_mower_ros  | [INFO] [1782734148.835708187]: Received a 200 X 200 map at 0.050000 m/pix
+open_mower_ros  | [INFO] [1782734148.847540328]: local_costmap: Using plugin "obstacle_layer"
+open_mower_ros  | [INFO] [1782734148.855113927]:     Subscribed to Topics:
+open_mower_ros  | [INFO] [1782734148.877322251]: local_costmap: Using plugin "inflation_layer"
+open_mower_ros  | [INFO] [1782734148.990531207]: global_costmap: Using plugin "static_layer"
+open_mower_ros  | [INFO] [1782734149.004267002]: Requesting the map...
+open_mower_ros  | [INFO] [1782734149.009978428]: Resizing costmap to 200 X 200 at 0.050000 m/pix
+open_mower_ros  | [INFO] [1782734149.109963561]: Received a 200 X 200 map at 0.050000 m/pix
+open_mower_ros  | [INFO] [1782734149.120456428]: global_costmap: Using plugin "obstacle_layer"
+open_mower_ros  | [INFO] [1782734149.129442967]:     Subscribed to Topics:
+open_mower_ros  | [INFO] [1782734149.177408150]: global_costmap: Using plugin "inflation_layer"
+open_mower_ros  | [INFO] [1782734149.412790081]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+open_mower_ros  | [INFO] [1782734149.576962227]: FTCLocalPlannerROS: Version 2 Init.
+open_mower_ros  | [INFO] [1782734149.577135520]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+open_mower_ros  | [INFO] [1782734149.727395651]: FTCLocalPlannerROS: Version 2 Init.
+open_mower_ros  | [INFO] [1782734149.727567315]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+open_mower_ros  | [WARN] [1782734149.729689836]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+open_mower_ros  | [INFO] [1782734150.521867195]: Found new service (Type: DiffDriveService, ID: 2, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1782734150.521996748]: Found matching service, registering callbacks
+open_mower_ros  | [INFO] [1782734151.319146415]: [ID=2] Sending Service Claim
+open_mower_ros  | [INFO] [1782734151.320829962]: [ID=2] Successfully claimed service
+open_mower_ros  | [INFO] [1782734151.320916739]: PJB: Service Connected! ID: 2
+open_mower_ros  | [INFO] [1782734151.321088958]: >>> [ID=2] Received claim message
+open_mower_ros  | [INFO] [1782734151.321406508]: >>> [ID=2] service claimed successfully.
+open_mower_ros  | [INFO] [1782734152.317983840]: >>> [ID=2] Requesting Configuration
+open_mower_ros  | [INFO] [1782734152.318318112]: >>> [ID=2] Received Configuration
+open_mower_ros  | [INFO] [1782734152.318475165]: >>> [ID=2] Service started after successful configuration

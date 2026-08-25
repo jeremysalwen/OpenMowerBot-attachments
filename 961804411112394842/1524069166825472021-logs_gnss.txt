@@ -1,0 +1,899 @@
+osquitto  | 1783436589: Info: running mosquitto as user: mosquitto.
+Mosquitto  | 1783436591: New connection from 192.168.0.114:63266 on port 9001.
+Mosquitto  | 1783436591: New client connected from 192.168.0.114:63266 as mqttjs_4e2f506f (p4, c1, k60).
+app        | ▲ Next.js 16.2.1
+app        | - Local:         http://localhost:3000
+app        | - Network:       http://0.0.0.0:3000
+app        | ✓ Ready in 0ms
+open_mower_ros  | ... logging to /data/ros/log/fa94ef04-7a14-11f1-9def-e45f01ac3832/roslaunch-openmower-1.log
+open_mower_ros  | Checking log directory for disk usage. This may take a while.
+open_mower_ros  | Press Ctrl-C to interrupt
+open_mower_ros  | Done checking log file disk usage. Usage is <1GB.
+open_mower_ros  | 
+open_mower_ros  | started roslaunch server http://openmower:40129/
+open_mower_ros  | 
+open_mower_ros  | SUMMARY
+open_mower_ros  | ========
+open_mower_ros  | 
+open_mower_ros  | PARAMETERS
+open_mower_ros  |  * /joy/autorepeat_rate: 10.0
+open_mower_ros  |  * /joy/coalesce_interval: 0.06
+open_mower_ros  |  * /joy_teleop/enable_turbo_button: 4
+open_mower_ros  |  * /joy_teleop/scale_angular: 1.5
+open_mower_ros  |  * /joy_teleop/scale_angular_turbo: 3.0
+open_mower_ros  |  * /joy_teleop/scale_linear: 0.5
+open_mower_ros  |  * /joy_teleop/scale_linear_turbo: 1.0
+open_mower_ros  |  * /ll/bind_ip: 172.16.78.1
+open_mower_ros  |  * /ll/ll_serial_port: /dev/ttyAMA0
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/has_motor_temp: False
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/serial_port: /dev/ttyAMA5
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/has_motor_temp: True
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/max_motor_rpm: 3800
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/min_motor_rpm: 2800
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/min_motor_rpm_critical: 2300
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/serial_port: /dev/ttyAMA4
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/has_motor_temp: False
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/serial_port: /dev/ttyAMA3
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/ticks_per_m: 1600.0
+open_mower_ros  |  * /ll/services/diff_drive/wheel_distance_m: 0.325
+open_mower_ros  |  * /ll/services/gps/absolute_coords: True
+open_mower_ros  |  * /ll/services/gps/baud_rate: 921600
+open_mower_ros  |  * /ll/services/gps/baudrate: 921600
+open_mower_ros  |  * /ll/services/gps/datum_height: 0
+open_mower_ros  |  * /ll/services/gps/datum_lat: 55.44347
+open_mower_ros  |  * /ll/services/gps/datum_long: 11.5594
+open_mower_ros  |  * /ll/services/gps/protocol: UBX
+open_mower_ros  |  * /ll/services/gps/serial_port: /dev/ttyAMA2
+open_mower_ros  |  * /ll/services/imu/axis_config: +X-Y-Z
+open_mower_ros  |  * /ll/services/input/config_file: /opt/open_mower_r...
+open_mower_ros  |  * /ll/services/power/battery_critical_high_voltage: 29.5
+open_mower_ros  |  * /ll/services/power/battery_critical_voltage: 23.0
+open_mower_ros  |  * /ll/services/power/battery_empty_voltage: 24.0
+open_mower_ros  |  * /ll/services/power/battery_full_voltage: 28.5
+open_mower_ros  |  * /ll/services/power/charge_critical_high_current: 3
+open_mower_ros  |  * /ll/services/power/charge_critical_high_voltage: 32
+open_mower_ros  |  * /ll/services/power/charge_current: 2.0
+open_mower_ros  |  * /ll/services/sound/language: en
+open_mower_ros  |  * /ll/services/sound/volume: -1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/forward_only: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/acceleration: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/debug_pid: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/forward_only: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+open_mower_ros  |  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+open_mower_ros  |  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+open_mower_ros  |  * /move_base_flex/controller_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/controller_patience: 30.0
+open_mower_ros  |  * /move_base_flex/controllers: [{'name': 'FTCPla...
+open_mower_ros  |  * /move_base_flex/global_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/global_costmap/publish_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/resolution: 0.1
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/global_costmap/rolling_window: False
+open_mower_ros  |  * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/global_costmap/update_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/local_costmap/height: 1.5
+open_mower_ros  |  * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/local_costmap/publish_frequency: 2.0
+open_mower_ros  |  * /move_base_flex/local_costmap/resolution: 0.15
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/rolling_window: True
+open_mower_ros  |  * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/local_costmap/update_frequency: 5.0
+open_mower_ros  |  * /move_base_flex/local_costmap/width: 1.5
+open_mower_ros  |  * /move_base_flex/oscillation_distance: 0.2
+open_mower_ros  |  * /move_base_flex/oscillation_timeout: 10.0
+open_mower_ros  |  * /move_base_flex/planner_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/planner_patience: 5.0
+open_mower_ros  |  * /move_base_flex/planners: [{'name': 'Global...
+open_mower_ros  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+open_mower_ros  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+open_mower_ros  |  * /mower_logic/automatic_mode: 1
+open_mower_ros  |  * /mower_logic/cu_rain_threshold: -1
+open_mower_ros  |  * /mower_logic/docking_approach_distance: 1.0
+open_mower_ros  |  * /mower_logic/docking_extra_time: 1.0
+open_mower_ros  |  * /mower_logic/docking_redock: False
+open_mower_ros  |  * /mower_logic/docking_retry_count: 3
+open_mower_ros  |  * /mower_logic/emergency_input_config: !L, !L, !S, !S
+open_mower_ros  |  * /mower_logic/emergency_lift_period: 4000
+open_mower_ros  |  * /mower_logic/emergency_tilt_period: 10000
+open_mower_ros  |  * /mower_logic/enable_mower: True
+open_mower_ros  |  * /mower_logic/gps_timeout: 5.0
+open_mower_ros  |  * /mower_logic/gps_wait_time: 5.0
+open_mower_ros  |  * /mower_logic/ignore_charging_current: False
+open_mower_ros  |  * /mower_logic/mow_angle_increment: 90
+open_mower_ros  |  * /mower_logic/mow_angle_offset: 50
+open_mower_ros  |  * /mower_logic/mow_angle_offset_is_absolute: False
+open_mower_ros  |  * /mower_logic/outline_count: 3
+open_mower_ros  |  * /mower_logic/outline_overlap_count: 1
+open_mower_ros  |  * /mower_logic/rain_check_seconds: 20
+open_mower_ros  |  * /mower_logic/rain_delay_minutes: 30
+open_mower_ros  |  * /mower_logic/rain_mode: 0
+open_mower_ros  |  * /mower_logic/undock_angle: 0.0
+open_mower_ros  |  * /mower_logic/undock_angled_distance: 0.0
+open_mower_ros  |  * /mower_logic/undock_distance: 1.0
+open_mower_ros  |  * /mower_logic/undock_fixed_angle: False
+open_mower_ros  |  * /mower_logic/undock_use_curve: True
+open_mower_ros  |  * /ntrip_client/authenticate: True
+open_mower_ros  |  * /ntrip_client/ca_cert: 
+open_mower_ros  |  * /ntrip_client/cert: 
+open_mower_ros  |  * /ntrip_client/host: 192.168.0.156
+open_mower_ros  |  * /ntrip_client/key: 
+open_mower_ros  |  * /ntrip_client/mountpoint: Lasse-RTK
+open_mower_ros  |  * /ntrip_client/nmea_max_length: 82
+open_mower_ros  |  * /ntrip_client/nmea_min_length: 3
+open_mower_ros  |  * /ntrip_client/ntrip_version: 
+open_mower_ros  |  * /ntrip_client/password: openmower
+open_mower_ros  |  * /ntrip_client/port: 2101
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_max: 5
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_wait_seconds: 99999
+open_mower_ros  |  * /ntrip_client/rtcm_frame_id: odom
+open_mower_ros  |  * /ntrip_client/rtcm_message_package: rtcm_msgs
+open_mower_ros  |  * /ntrip_client/rtcm_timeout_seconds: 30
+open_mower_ros  |  * /ntrip_client/ssl: False
+open_mower_ros  |  * /ntrip_client/username: openmower
+open_mower_ros  |  * /rosdistro: noetic
+open_mower_ros  |  * /rosversion: 1.17.4
+open_mower_ros  |  * /twist_mux/topics: [{'name': 'naviga...
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_enable: True
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_hostname: 192.168.0.141
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_password: BrondByFtw1
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_port: 1883
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_topic_prefix: openmower
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_username: ladk1919
+open_mower_ros  |  * /xbot_positioning/antenna_offset_x: 0.3
+open_mower_ros  |  * /xbot_positioning/antenna_offset_y: 0.0
+open_mower_ros  |  * /xbot_positioning/debug: False
+open_mower_ros  |  * /xbot_positioning/max_gps_accuracy: 0.2
+open_mower_ros  | 
+open_mower_ros  | NODES
+open_mower_ros  |   /
+open_mower_ros  |     joy (joy/joy_node)
+open_mower_ros  |     joy_teleop (teleop_twist_joy/teleop_node)
+open_mower_ros  |     ll (mower_comms_v1/mower_comms_v1)
+open_mower_ros  |     map_service (mower_map/mower_map_service)
+open_mower_ros  |     monitoring (mower_logic/monitoring)
+open_mower_ros  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+open_mower_ros  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+open_mower_ros  |     mower_logic (mower_logic/mower_logic)
+open_mower_ros  |     ntrip_client (ntrip_client/ntrip_ros.py)
+open_mower_ros  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+open_mower_ros  |     twist_mux (twist_mux/twist_mux)
+open_mower_ros  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+open_mower_ros  |     xbot_positioning (xbot_positioning/xbot_positioning)
+open_mower_ros  |     xbot_remote (xbot_remote/xbot_remote)
+open_mower_ros  |   /ll/services/
+open_mower_ros  |     gps (xbot_driver_gps/driver_gps_node)
+open_mower_ros  | 
+open_mower_ros  | auto-starting new master
+open_mower_ros  | process[master]: started with pid [50]
+open_mower_ros  | ROS_MASTER_URI=http://localhost:11311
+open_mower_ros  | 
+open_mower_ros  | setting /run_id to fa94ef04-7a14-11f1-9def-e45f01ac3832
+open_mower_ros  | process[rosout-1]: started with pid [60]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | process[ll-2]: started with pid [63]
+open_mower_ros  | process[ll/services/gps-3]: started with pid [64]
+open_mower_ros  | process[ntrip_client-4]: started with pid [65]
+open_mower_ros  | process[move_base_flex-5]: started with pid [66]
+open_mower_ros  | process[move_base_legacy_relay-6]: started with pid [67]
+open_mower_ros  | process[xbot_positioning-7]: started with pid [79]
+open_mower_ros  | process[joy-8]: started with pid [83]
+open_mower_ros  | process[joy_teleop-9]: started with pid [88]
+open_mower_ros  | process[map_service-10]: started with pid [96]
+open_mower_ros  | [WARN] [1783436597.298791401]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | process[mower_logic-11]: started with pid [103]
+open_mower_ros  | [WARN] [1783436597.398325155]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436597.420879523]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | process[slic3r_coverage_planner-12]: started with pid [108]
+open_mower_ros  | [WARN] [1783436597.497981871]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | process[twist_mux-13]: started with pid [110]
+open_mower_ros  | [WARN] [1783436597.596996539]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | process[xbot_monitoring-14]: started with pid [120]
+open_mower_ros  | [WARN] [1783436597.699205528]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [FATAL] [1783436597.725266428]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+open_mower_ros  | process[xbot_remote-15]: started with pid [128]
+open_mower_ros  | [WARN] [1783436597.797409599]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | process[monitoring-16]: started with pid [133]
+open_mower_ros  | [WARN] [1783436597.898600912]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.000027077]: [driver_gps] invalid gnssFix - dropping message
+Mosquitto       | 1783436598: New connection from 172.19.0.1:35146 on port 1883.
+Mosquitto       | 1783436598: New client connected from 172.19.0.1:35146 as xbot_monitoring (p4, c1, k1000).
+open_mower_ros  | [WARN] [1783436598.097202193]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.196805950]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.296964545]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.397852636]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.496927939]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.597510523]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.697288586]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.796763456]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436598.896934457]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.002016589]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.096989308]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.197598816]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [INFO] [1783436599.204035]: Connected to http://192.168.0.156:2101/Lasse-RTK
+open_mower_ros  | [WARN] [1783436599.296493879]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.397640801]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.497312590]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.596445022]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.696262381]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.796226771]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436599.897077370]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.001869703]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.096615696]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.196836912]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.298179147]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.396886260]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.497494060]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.598382462]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.698051917]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.797502964]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436600.897865489]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.001586054]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.096750318]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.197979482]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.296165084]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.396145440]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.496018999]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.595815664]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.695947290]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.795937904]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.896093934]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436601.999708086]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.095924888]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.196065734]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436602.246188222]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1783436602.296289251]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.395758731]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.495680134]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.595974917]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.696151535]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436602.767216677]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436602.795886229]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436602.896135760]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.000508419]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.096123491]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.196346110]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.233693950]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100362 timeout was 0.1.
+open_mower_ros  | [WARN] [1783436603.296034729]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.396069732]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.496098570]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.596237407]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.695997477]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436603.787054860]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436603.796465868]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.895599102]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436603.999067581]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.095629169]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.195749843]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.295705823]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.395683892]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.496090922]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.595761546]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.696148358]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436604.787043667]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436604.796147812]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.895467202]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436604.999302050]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.095798297]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.195105479]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.295747623]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.395484782]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.495865622]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.595944701]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.695255826]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.795383211]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436605.807062514]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436605.895942296]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436605.999428650]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.095092177]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.195619989]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.295710677]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.395516713]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.495486183]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.595406161]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.695559430]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.797113313]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436606.807197709]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436606.897146956]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436606.998655829]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.095957111]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.196154713]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.295124321]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.396914054]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.497757352]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.595309427]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.695819378]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.796306649]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436607.807210644]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436607.895045337]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436607.998970896]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.097557033]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.195007077]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.294914861]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.396609384]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.496599431]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.594727032]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.695713077]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.794444064]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436608.827115377]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1783436608.895096264]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436608.998895613]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.096479285]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.196911754]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.239176783]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+open_mower_ros  | [WARN] [1783436609.295407982]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.395926805]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.494892887]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.594843300]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436609.615620022]: We don't have a docking point configured. Starting Area Recorder!
+open_mower_ros  | [WARN] [1783436609.695915740]: [driver_gps] invalid gnssFix - dropping message
+^C
+openmower@openmower:~ $ openmower logs
+Mosquitto  | 1783436589: Info: running mosquitto as user: mosquitto.
+Mosquitto  | 1783436591: New connection from 192.168.0.114:63266 on port 9001.
+Mosquitto  | 1783436591: New client connected from 192.168.0.114:63266 as mqttjs_4e2f506f (p4, c1, k60).
+Mosquitto  | 1783436598: New connection from 172.19.0.1:35146 on port 1883.
+Mosquitto  | 1783436598: New client connected from 172.19.0.1:35146 as xbot_monitoring (p4, c1, k1000).
+app        | ▲ Next.js 16.2.1
+open_mower_ros  | [WARN] [1783436611.294268239]: [driver_gps] invalid gnssFix - dropping message
+app             | - Local:         http://localhost:3000
+app             | - Network:       http://0.0.0.0:3000
+app             | ✓ Ready in 0ms
+open_mower_ros  | [WARN] [1783436611.394212708]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.493782363]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.594461022]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.596874754]: Low quality GPS
+open_mower_ros  | [WARN] [1783436611.596964255]: GPS timeout
+open_mower_ros  | [WARN] [1783436611.694130046]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.794196733]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.894154422]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436611.997530517]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.094421653]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.194171080]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.294067385]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.393586043]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.493981047]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.594243909]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.693912352]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.794004915]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.893840918]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436612.997582648]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.094309933]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.096904136]: Low quality GPS
+open_mower_ros  | [WARN] [1783436613.097363563]: GPS timeout
+open_mower_ros  | [WARN] [1783436613.193782472]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436613.252503850]: [driver_gps] waited 18 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1783436613.293444250]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.393856249]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.493885602]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.593769798]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.694494160]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.793885382]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.893903830]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436613.997610984]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.093678620]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.096932739]: Low quality GPS
+open_mower_ros  | [WARN] [1783436614.097299480]: GPS timeout
+open_mower_ros  | [WARN] [1783436614.193775725]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.293769907]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.393673569]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.493629740]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.593681743]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.693981011]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.793621431]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.893666362]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436614.997322654]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.093224846]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.096983226]: Low quality GPS
+open_mower_ros  | [WARN] [1783436615.193890904]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.293489865]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.393507426]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.493612635]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.593730268]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.596910914]: GPS timeout
+open_mower_ros  | [WARN] [1783436615.693408046]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.793581593]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.893774322]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436615.996577813]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.093383718]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.193730731]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.293486051]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.393457215]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.493508807]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.593842082]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.596967030]: Low quality GPS
+open_mower_ros  | [WARN] [1783436616.597755163]: GPS timeout
+open_mower_ros  | [WARN] [1783436616.693300482]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.793319692]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.892869943]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436616.997271359]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.093276110]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.193492083]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.294026620]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.393218991]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.493487379]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.593240022]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.693608408]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.792700430]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.893054726]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436617.996903053]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.092952743]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.096933480]: Low quality GPS
+open_mower_ros  | [WARN] [1783436618.097067803]: GPS timeout
+open_mower_ros  | [WARN] [1783436618.192945147]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.293090703]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.393179309]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.492938058]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.592924871]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.692488495]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.792916436]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.892711141]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436618.997326906]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.093084072]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.097145933]: Low quality GPS
+open_mower_ros  | [WARN] [1783436619.097493563]: GPS timeout
+open_mower_ros  | [WARN] [1783436619.193447677]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436619.255221872]: [driver_gps] waited 19 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1783436619.293111392]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.393539724]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.492769439]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.592575513]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.693210523]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.792820768]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.892629472]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436619.997402345]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.092550896]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.192490060]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.292862947]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.392429654]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.492145866]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.592491443]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.596865841]: Low quality GPS
+open_mower_ros  | [WARN] [1783436620.596949231]: GPS timeout
+open_mower_ros  | [WARN] [1783436620.693035700]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.792428963]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.892778243]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436620.996181167]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.092388865]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.192308546]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.292179682]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.391940953]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.492340383]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.592147903]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.596879587]: Low quality GPS
+open_mower_ros  | [WARN] [1783436621.596960533]: GPS timeout
+open_mower_ros  | [WARN] [1783436621.692230901]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.792223197]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.892057822]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436621.995762632]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.092114256]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.192007683]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.291679214]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.392022026]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.492053386]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.591933168]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.596884019]: Low quality GPS
+open_mower_ros  | [WARN] [1783436622.596970500]: GPS timeout
+open_mower_ros  | [WARN] [1783436622.692093427]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.792109198]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.892170830]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436622.996020805]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.092174167]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.191747762]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.292115035]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.391892881]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.491866685]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.592084435]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.691850525]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.791831679]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.891796188]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436623.995712426]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.091323904]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.096964586]: Low quality GPS
+open_mower_ros  | [WARN] [1783436624.097173466]: GPS timeout
+open_mower_ros  | [WARN] [1783436624.191996563]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.292020033]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.392592029]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.491765963]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.591979039]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.691800293]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.791940181]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.891419567]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436624.994567588]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.091829408]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.191612186]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.291902277]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.391600889]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.491743717]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.591595553]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.596875604]: Low quality GPS
+open_mower_ros  | [WARN] [1783436625.596997873]: GPS timeout
+open_mower_ros  | [WARN] [1783436625.691676228]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.791641447]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.891219086]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436625.995393130]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.091345999]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.191389849]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.291367344]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.391187171]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.491258756]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.591227605]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.596904244]: Low quality GPS
+open_mower_ros  | [WARN] [1783436626.597131600]: GPS timeout
+open_mower_ros  | [WARN] [1783436626.691091051]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.791073693]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.891152703]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436626.994703103]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.091350568]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.191093511]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.291292184]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.391329578]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.491312189]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.590937583]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.690670158]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.790954145]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.890804285]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436627.994608981]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.090776402]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.096865377]: Low quality GPS
+open_mower_ros  | [WARN] [1783436628.096954227]: GPS timeout
+open_mower_ros  | [WARN] [1783436628.190983546]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.290780616]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.391238851]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.490849704]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.590613522]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.690700842]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.791022108]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.890711980]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436628.994490519]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.090631003]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.190523381]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.290712450]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.390504018]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.490393951]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.590609792]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.596868998]: Low quality GPS
+open_mower_ros  | [WARN] [1783436629.597012650]: GPS timeout
+open_mower_ros  | [WARN] [1783436629.690872364]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.790822895]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.890826266]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436629.994203591]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.090722401]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.190736269]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.290371872]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.389964023]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.490340586]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.590361064]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.596954314]: Low quality GPS
+open_mower_ros  | [WARN] [1783436630.597096467]: GPS timeout
+open_mower_ros  | [WARN] [1783436630.690271382]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.790387135]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.890609289]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436630.993914459]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.090489580]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.190172343]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.289904391]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.390346517]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.490174803]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.590132447]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.690171629]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.790054069]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.890015509]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436631.993824749]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.090131591]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.096934850]: Low quality GPS
+open_mower_ros  | [WARN] [1783436632.097059266]: GPS timeout
+open_mower_ros  | [WARN] [1783436632.189529873]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [ERROR] [1783436632.249129381]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1783436632.289919759]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.390291890]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.490265650]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.590467783]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.690134725]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.790622810]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.889903509]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436632.993498283]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.089371908]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.096951924]: Low quality GPS
+open_mower_ros  | [WARN] [1783436633.097090910]: GPS timeout
+open_mower_ros  | [WARN] [1783436633.190081602]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.289840461]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.389815195]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.490095377]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.589840406]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.689946166]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.789738072]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.890143818]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436633.992644206]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.089651513]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.189492646]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.289544323]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.389530459]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.489312810]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.589921411]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.596877360]: Low quality GPS
+open_mower_ros  | [WARN] [1783436634.597012236]: GPS timeout
+open_mower_ros  | [WARN] [1783436634.689372191]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.789303748]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.889084414]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436634.993354715]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.089322177]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.189228536]: [driver_gps] invalid gnssFix - dropping message
+OpenMowerApp    | 192.168.0.114 - - [07/Jul/2026:15:03:55 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+open_mower_ros  | [WARN] [1783436635.289366026]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.389194459]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.489107002]: [driver_gps] invalid gnssFix - dropping message
+Mosquitto       | 1783436635: Client mqttjs_4e2f506f [192.168.0.114:63266] disconnected: connection closed by client.
+open_mower_ros  | [WARN] [1783436635.589115004]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.596879533]: Low quality GPS
+open_mower_ros  | [WARN] [1783436635.689184455]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.788916133]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.889076617]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436635.992902427]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.089332917]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.096885747]: GPS timeout
+open_mower_ros  | [WARN] [1783436636.189233578]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.289198409]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.389120583]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.489188964]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.588906001]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.688636795]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.789054556]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436636.888719476]: [driver_gps] invalid gnssFix - dropping message
+Mosquitto       | 1783436636: New connection from 192.168.0.114:59356 on port 9001.
+Mosquitto       | 1783436636: New client connected from 192.168.0.114:59356 as om-client-77982 (p5, c0, k0).
+open_mower_ros  | [WARN] [1783436636.992258501]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.088883586]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.096862344]: Low quality GPS
+open_mower_ros  | [WARN] [1783436637.096944029]: GPS timeout
+open_mower_ros  | [WARN] [1783436637.188978912]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.289092678]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.388997901]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.488692562]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.588278712]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.688737008]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.788988870]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.888520385]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436637.992435788]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.088897999]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.096874565]: Low quality GPS
+open_mower_ros  | [WARN] [1783436638.097045080]: GPS timeout
+open_mower_ros  | [WARN] [1783436638.188934812]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.288560297]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.388468382]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.488035196]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.588436922]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.688392199]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.788723331]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.888648078]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436638.992376921]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.088461110]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.096944731]: Low quality GPS
+open_mower_ros  | [WARN] [1783436639.097103953]: GPS timeout
+open_mower_ros  | [WARN] [1783436639.188448078]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.288341439]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.388410795]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.488321078]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.588308009]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.688618771]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.788568692]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.888351487]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436639.992232562]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.088274989]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.096998841]: Low quality GPS
+open_mower_ros  | [WARN] [1783436640.097640817]: GPS timeout
+open_mower_ros  | [WARN] [1783436640.188533631]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.287688501]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.388426306]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.488219800]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.588536428]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.688251775]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.788286749]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.887979026]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436640.991858911]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.087968012]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.187476484]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.288193053]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.388302492]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.488083379]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.588157419]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.596929474]: Low quality GPS
+open_mower_ros  | [WARN] [1783436641.597069033]: GPS timeout
+open_mower_ros  | [WARN] [1783436641.687813244]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.788115302]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.888171013]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436641.991145113]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.087467022]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.188638004]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.288350431]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.388462020]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.488306082]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.588427929]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.596933614]: Low quality GPS
+open_mower_ros  | [WARN] [1783436642.597082097]: GPS timeout
+open_mower_ros  | [WARN] [1783436642.688440579]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.788256500]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.887458680]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436642.991149108]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.087476003]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.187935571]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.287418875]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.388208289]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.487402367]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.587952431]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.596954804]: Low quality GPS
+open_mower_ros  | [WARN] [1783436643.597100417]: GPS timeout
+open_mower_ros  | [WARN] [1783436643.687425090]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.787774129]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.886838812]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436643.991504730]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.087957884]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.187559077]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.287368534]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.389094118]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.487648436]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.587983617]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.687959570]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.787107984]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.887112894]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436644.993227243]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.088815066]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.096940915]: Low quality GPS
+open_mower_ros  | [WARN] [1783436645.097091564]: GPS timeout
+open_mower_ros  | [WARN] [1783436645.187028795]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.288275969]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.387918608]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.486859771]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.587441978]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.688235133]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.787223062]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.886855593]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436645.992435783]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.088457388]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.096967434]: Low quality GPS
+open_mower_ros  | [WARN] [1783436646.097110325]: GPS timeout
+open_mower_ros  | [WARN] [1783436646.187354448]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.287833231]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.386674119]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.486622643]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.586438088]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.688635765]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.786707064]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.887750412]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436646.992410282]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.086925092]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.186542344]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.287831038]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.388281418]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.485973088]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.587363608]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.596984171]: Low quality GPS
+open_mower_ros  | [WARN] [1783436647.597126543]: GPS timeout
+open_mower_ros  | [WARN] [1783436647.687353658]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.786899150]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.888155980]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436647.992457878]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.086189015]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.187205590]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.287057563]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.387400953]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.486733239]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.588615416]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.596961711]: Low quality GPS
+open_mower_ros  | [WARN] [1783436648.597144814]: GPS timeout
+open_mower_ros  | [WARN] [1783436648.686065314]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.786326649]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.886032936]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436648.989921007]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.086169883]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.185984776]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.285581612]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.386208286]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.485865514]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.585863510]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.596977301]: Low quality GPS
+open_mower_ros  | [WARN] [1783436649.686677749]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.785953460]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.886146130]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436649.992232659]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.086190571]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.096966494]: GPS timeout
+open_mower_ros  | [WARN] [1783436650.186509012]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.287636789]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.385735872]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.486762525]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.586612785]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.596981494]: Low quality GPS
+open_mower_ros  | [WARN] [1783436650.685939416]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.787456781]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.888273506]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436650.991531551]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.085846905]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.186698350]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.286935762]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.385444567]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.487891949]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.587377140]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.596951743]: GPS timeout
+open_mower_ros  | [WARN] [1783436651.685345450]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.786640655]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.887186324]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436651.990162629]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.085963424]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.096949780]: Low quality GPS
+open_mower_ros  | [WARN] [1783436652.187092809]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.285220682]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.385750567]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.486318647]: [driver_gps] invalid gnssFix - dropping message
+open_mower_ros  | [WARN] [1783436652.587021972]: [driver_gps] invalid gnssFix - dropping message

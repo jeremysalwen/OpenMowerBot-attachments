@@ -1,0 +1,152 @@
+Hobot>dm tree
+dm tree
+ Class     Index  Probed  Driver                Name
+-----------------------------------------------------------
+ root          0  [ + ]   root_driver           root_driver
+ firmware      0  [ + ]   hobot_board_btype     |-- board_type
+ pinctrl       0  [ + ]   horizon_lsio_pinctrl  |-- lsio_iomuxc@34180000
+ pinconfig     0  [   ]   pinconfig             |   |-- pconf-bias-disabled
+ pinconfig     1  [   ]   pinconfig             |   |-- pconf-spi
+ pinconfig     2  [   ]   pinconfig             |   |-- pconf-dev-pu
+ pinconfig     3  [   ]   pinconfig             |   |-- pconf-dev-pu-normal
+ pinconfig     4  [   ]   pinconfig             |   |-- pconf-dev-pu-max
+ pinconfig     5  [   ]   pinconfig             |   |-- pconf-dev-pd
+ pinconfig     6  [   ]   pinconfig             |   |-- pconf-dev-pd-max
+ pinconfig     7  [   ]   pinconfig             |   |-- pconf-dev-od
+ pinconfig     8  [   ]   pinconfig             |   |-- pconf-input-en
+ pinconfig     9  [   ]   pinconfig             |   |-- pconf-output-en
+ pinconfig    10  [   ]   pinconfig             |   |-- pconf-dev-pu-ipvol
+ pinconfig    11  [   ]   pinconfig             |   |-- pconf-dev-pu-max-high
+ pinconfig    12  [   ]   pinconfig             |   |-- pconf-dev-pu-max-low
+ pinconfig    13  [   ]   pinconfig             |   |-- pconf-dev-pu-max-normal
+ pinconfig    14  [   ]   pinconfig             |   |-- pconf-dev-pd-ds2-1v8
+ pinconfig    15  [   ]   pinconfig             |   |-- pconf-dev-pu-ds2-1v8
+ pinconfig    16  [   ]   pinconfig             |   |-- pconf-dev-pad-3v3-pu-max-high
+ pinconfig    17  [   ]   pinconfig             |   |-- pconf-dev-pad-1v8-pu-max-low
+ pinconfig    18  [   ]   pinconfig             |   |-- pconf-dev-pad-3v3-pu-max-normal
+ pinconfig    19  [   ]   pinconfig             |   |-- pconf-dev-pad-1v8-pu-max-normal
+ pinconfig    20  [   ]   pinconfig             |   |-- pconf-output-high
+ pinconfig    21  [   ]   pinconfig             |   |-- pconf-output-normal
+ pinconfig    22  [   ]   pinconfig             |   |-- pconf-output-low
+ pinconfig    23  [   ]   pinconfig             |   |-- uart7grp
+ pinconfig    24  [   ]   pinconfig             |   |-- uart1grp
+ pinconfig    25  [   ]   pinconfig             |   |-- uart2grp
+ pinconfig    26  [   ]   pinconfig             |   |-- uart3grp
+ pinconfig    27  [   ]   pinconfig             |   |-- uart4grp
+ pinconfig    28  [   ]   pinconfig             |   |-- spi0grp
+ pinconfig    29  [   ]   pinconfig             |   |-- spi1grp
+ pinconfig    30  [   ]   pinconfig             |   |-- spi2grp
+ pinconfig    31  [   ]   pinconfig             |   |-- spi3grp
+ pinconfig    32  [   ]   pinconfig             |   |-- spi4grp
+ pinconfig    33  [   ]   pinconfig             |   |-- spi5grp
+ pinconfig    34  [   ]   pinconfig             |   |-- pwm0grp
+ pinconfig    35  [   ]   pinconfig             |   |-- pwm1grp
+ pinconfig    36  [   ]   pinconfig             |   |-- pwm2grp
+ pinconfig    37  [   ]   pinconfig             |   |-- pwm3grp
+ pinconfig    38  [   ]   pinconfig             |   |-- lpwm0grp
+ pinconfig    39  [   ]   pinconfig             |   |-- lpwm1grp
+ pinconfig    40  [   ]   pinconfig             |   |-- i2c0grp
+ pinconfig    41  [   ]   pinconfig             |   |-- i2c1grp
+ pinconfig    42  [   ]   pinconfig             |   |-- i2c2grp
+ pinconfig    43  [   ]   pinconfig             |   |-- i2c3grp
+ pinconfig    44  [   ]   pinconfig             |   |-- i2c4grp
+ pinconfig    45  [   ]   pinconfig             |   |-- uart5grp
+ pinconfig    46  [   ]   pinconfig             |   |-- uart6grp
+ pinconfig    47  [   ]   pinconfig             |   |-- i2c5grp
+ pinconfig    48  [   ]   pinconfig             |   |-- i2c6grp
+ pinconfig    49  [   ]   pinconfig             |   |-- lsiogpio0grp0
+ pinconfig    50  [   ]   pinconfig             |   |-- lsiogpio0grp1
+ pinconfig    51  [   ]   pinconfig             |   |-- lsiogpio0grp2
+ pinconfig    52  [   ]   pinconfig             |   |-- lsiogpio0grp3
+ pinconfig    53  [   ]   pinconfig             |   |-- lsiogpio0grp4
+ pinconfig    54  [   ]   pinconfig             |   |-- lsiogpio0grp5
+ pinconfig    55  [   ]   pinconfig             |   |-- lsiogpio0grp6
+ pinconfig    56  [   ]   pinconfig             |   |-- lsiogpio0grp7
+ pinconfig    57  [   ]   pinconfig             |   |-- lsiogpio0grp8
+ pinconfig    58  [   ]   pinconfig             |   |-- lsiogpio0grp9
+ pinconfig    59  [   ]   pinconfig             |   |-- lsiogpio0grp10
+ pinconfig    60  [   ]   pinconfig             |   |-- lsiogpio0grp11
+ pinconfig    61  [ + ]   pinconfig             |   |-- lsiogpio0grp12
+ pinconfig    62  [   ]   pinconfig             |   |-- lsiogpio0grp13
+ pinconfig    63  [   ]   pinconfig             |   |-- lsiogpio1grp0
+ pinconfig    64  [   ]   pinconfig             |   |-- lsiogpio1grp1
+ pinconfig    65  [   ]   pinconfig             |   |-- lsiogpio1grp2
+ pinconfig    66  [   ]   pinconfig             |   |-- lsiogpio1grp3
+ pinconfig    67  [   ]   pinconfig             |   |-- lsiogpio1grp4
+ pinconfig    68  [   ]   pinconfig             |   |-- lsiogpio1grp5
+ pinconfig    69  [   ]   pinconfig             |   `-- lsiogpio1grp6
+ pinctrl       1  [ + ]   horizon_hsio_pinctrl  |-- hsio_iomuxc@35050000
+ pinconfig    70  [ + ]   pinconfig             |   |-- enetgrp
+ pinconfig    71  [   ]   pinconfig             |   |-- enetrmiigrp
+ pinconfig    72  [ + ]   pinconfig             |   |-- sdgrp
+ pinconfig    73  [   ]   pinconfig             |   |-- sdiogrp
+ pinconfig    74  [   ]   pinconfig             |   |-- qspigrp
+ pinconfig    75  [ + ]   pinconfig             |   |-- emmcgrp
+ pinconfig    76  [   ]   pinconfig             |   |-- hsiogpio0grp0
+ pinconfig    77  [   ]   pinconfig             |   |-- hsiogpio0grp1
+ pinconfig    78  [   ]   pinconfig             |   |-- hsiogpio0grp2
+ pinconfig    79  [   ]   pinconfig             |   |-- hsiogpio1grp0
+ pinconfig    80  [   ]   pinconfig             |   `-- hsiogpio1grp1
+ gpio          0  [ + ]   gpio-dwapb            |-- gpio@32150000
+ gpio          1  [ + ]   gpio-dwapb            |   `-- gpio@dsp_
+ pinctrl       2  [ + ]   horizon_dsp_pinctrl   |-- dsp_iomuxc@31040014
+ pinconfig    81  [   ]   pinconfig             |   |-- i2s0grp
+ pinconfig    82  [   ]   pinconfig             |   `-- i2s1grp
+ syscon        0  [   ]   syscon                |-- syscon@34180000
+ regulator     0  [ + ]   regulator_fixed       |-- regulator-1v8
+ btype_bus     0  [ + ]   simple_bus            |-- clocks
+ clk           0  [ + ]   fixed_clock           |   |-- ref
+ clk           1  [ + ]   fixed_clock           |   |-- sdclk
+ clk           2  [   ]   fixed_clock           |   |-- qspiclk
+ clk           3  [ + ]   fixed_clock           |   |-- adcclk
+ clk           4  [ + ]   fixed_clock           |   `-- wdtclk
+ serial        0  [ + ]   ns16550_serial        |-- serial@32120000
+ watchdog      0  [ + ]   designware_wdt        |-- watchdog@34250000
+ tee           0  [ + ]   optee                 |-- optee
+ syscon        1  [ + ]   syscon                |-- syscon@34210000
+ adc           0  [ + ]   guc_adc               |-- adc@34190000
+ btype_bus     1  [ + ]   simple_bus            |-- board_dts
+ btype_bus     2  [   ]   board_type_btype_bus  |   |-- board_x5_fpga
+ btype_bus     3  [   ]   board_type_btype_bus  |   |-- board_x5_svb
+ btype_bus     4  [ + ]   board_type_btype_bus  |   `-- board_x5_soc
+ spi           0  [   ]   dw_spi                |       |-- spi@35000000
+ mtd           0  [   ]   spi_nand              |       |   `-- spi-flash@0
+ mmc           0  [ + ]   x5_sdhci              |       |-- sdio-host@35040000
+ blk           0  [ + ]   mmc_blk               |       |   |-- sdio-host@35040000.blk
+ partition     0  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:1
+ partition     1  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:2
+ partition     2  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:3
+ partition     3  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:4
+ partition     4  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:5
+ partition     5  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:6
+ partition     6  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:7
+ partition     7  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:8
+ partition     8  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:9
+ partition     9  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:10
+ partition    10  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:11
+ partition    11  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:12
+ partition    12  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:13
+ partition    13  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:14
+ partition    14  [ + ]   blk_partition         |       |   |   |-- sdio-host@35040000.blk:15
+ partition    15  [ + ]   blk_partition         |       |   |   `-- sdio-host@35040000.blk:16
+ bootdev       0  [   ]   mmc_bootdev           |       |   `-- sdio-host@35040000.bootdev
+ mmc           1  [ + ]   x5_sdhci              |       |-- sdio-host@35020000
+ blk           1  [   ]   mmc_blk               |       |   |-- sdio-host@35020000.blk
+ bootdev       1  [   ]   mmc_bootdev           |       |   `-- sdio-host@35020000.bootdev
+ ethernet      0  [ + ]   eth_eqos              |       |-- gmac-tsn@35010000
+ eth_phy_ge    0  [ + ]   eth_phy_generic_drv   |       |   |-- ethernet-phy@1
+ bootdev       2  [   ]   eth_bootdev           |       |   `-- gmac-tsn@35010000.bootdev
+ nop           0  [   ]   dwc3-generic-wrapper  |       |-- usb@35300000
+ usb           0  [   ]   dwc3-generic-periphe  |       |   `-- usb_otg@35300000
+ nop           1  [ + ]   dwc3-generic-wrapper  |       `-- usb@35100000
+ usb           0  [ + ]   dwc3-generic-host     |           |-- usb_otg@35100000
+ usb_hub       0  [ + ]   usb_hub               |           |   `-- usb_hub
+ usb           1  [   ]   dwc3-generic-periphe  |           `-- usb_otg@35100000
+ clk           5  [   ]   fixed_clock           |-- ref
+ clk           6  [   ]   fixed_clock           |-- sdclk
+ clk           7  [   ]   fixed_clock           |-- qspiclk
+ clk           8  [   ]   fixed_clock           |-- adcclk
+ clk           9  [   ]   fixed_clock           |-- wdtclk
+ bootstd       0  [   ]   bootstd_drv           `-- bootstd
+ bootmeth      0  [   ]   bootmeth_distro           |-- distro
+ bootmeth      1  [   ]   vbe_simple                `-- vbe_simple

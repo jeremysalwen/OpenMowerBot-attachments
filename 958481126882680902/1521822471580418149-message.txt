@@ -1,0 +1,39 @@
+Sometimes when it time to dock i get Emergency. See log below.
+In this case i have Hardware v1 and edge ros. Any idea why this happens?
+
+=== Log output ===
+[INFO] [1782900705.762289384]: --------------------------------------
+[INFO] [1782900705.762436920]: - Entered state: DOCKING
+[INFO] [1782900705.762522420]: --------------------------------------
+[INFO] [1782900705.765659781]: Getting Docking Point
+[INFO] [1782900705.769092270]: new actions registered: mower_logic:docking registered 1 actions.
+[INFO] [1782900705.770274545]: successfully registered actions for mower_logic:docking
+[WARN] [1782900705.770366785]: Waiting for good GPS
+[ERROR] [1782900706.222207051]: Low Level Emergency. Bitmask was: 1
+[INFO] [1782900706.770531485]: Calculating approach path
+[INFO] [1782900706.959446297]: FTCLocalPlannerROS: Got new global plan with 1838 points.
+[INFO] [1782900706.960056572]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[INFO] [1782900706.960203146]: FTCLocalPlannerROS: Switching to state 1
+[ERROR] [1782900707.242202710]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900708.242437891]: Low Level Emergency. Bitmask was: 1
+[INFO] [1782900708.877520449]: GPS quality: 0.93
+[ERROR] [1782900709.262314569]: Low Level Emergency. Bitmask was: 1
+[INFO] [1782900710.252390893]: FTCLocalPlannerROS: Switching to state 4
+[ERROR] [1782900710.252082542]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.00198) > config.max_follow_distance (1) It probably has crashed.
+[WARN] [1782900710.252876595]: No velocity command received from controller! 
+[ERROR] [1782900710.262416788]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900711.282372188]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900712.302873512]: Low Level Emergency. Bitmask was: 1
+[WARN] [1782900713.302027271]: No velocity command received from controller! 
+[ERROR] [1782900713.322370950]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900714.342359646]: Low Level Emergency. Bitmask was: 1
+[WARN] [1782900715.252192308]: The controller has been aborted after it exceeded the patience time
+[WARN] [1782900715.253827470]: Running Backward/Forward recovery behavior
+[ERROR] [1782900715.342384162]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900716.342507160]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1782900717.362333005]: Low Level Emergency. Bitmask was: 1
+[INFO] [1782900717.406844665]: Got action: mower_logic/reset_emergency
+[WARN] [1782900717.407955106]: Got reset emergency action.
+[INFO] [1782900717.414964807]: successfully set emergency enabled to 0
+[WARN] [1782900718.254987739]: Backward movement timed out after 3.00 seconds
+[INFO] [1782900719.377500566]: GPS quality: 0.93

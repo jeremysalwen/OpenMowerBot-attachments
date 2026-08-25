@@ -1,0 +1,81 @@
+ll:
+  # eth0 IP of your CM4
+  bind_ip: "172.16.78.1"
+      # port_index: 8
+  services:
+    input:
+      config_file: /data/params/inputs.yaml
+    diff_drive:
+      wheel_distance_m: 0.325
+      ticks_per_m: 2400
+    sound:
+      language: "en"
+      volume: -1
+    gps:
+      baud_rate: 921600
+      protocol: "NMEA"
+      datum_height: 0
+      absolute_coords: true
+      # Set to coordinates near your docking station, this will be your map origin
+      datum_lat: 00.0
+      datum_long: 00.0
+      port_index: 8
+    imu:
+      # TODO: Set according to your mainboard orientation. This value is correct for "flat mainboard"
+      axis_config: "+X-Y-Z"
+    power:
+      # TODO: Set these to values for your battery
+      battery_full_voltage: 33.6
+      battery_empty_voltage: 24
+      battery_critical_voltage: 22
+      battery_critical_high_voltage: 33.8
+      charge_critical_high_voltage: 35.5
+      charge_critical_high_current: 3
+      charge_current: 2.5
+ntrip_client:
+  host: "192.168.3.199"
+  port: 2101
+  username: "xxx"
+  password: "xxx"
+  mountpoint: "xxxxx"
+
+mower_logic:
+  automatic_mode: 0
+  docking_approach_distance: 0.7
+  docking_extra_time: 0.50
+  docking_retry_count: 3
+  docking_redock: false
+  outline_overlap_count: 1
+  mow_angle_offset: 0
+  mow_angle_offset_is_absolute: false
+  mow_angle_increment: 110
+  gps_wait_time: 10.0
+  gps_timeout: 5.0
+  rain_mode: 0
+  rain_delay_minutes: 30
+  rain_check_seconds: 20
+  undock_distance: 0.5
+  undock_angled_distance: 1.0
+  undock_angle: 45.0
+  undock_fixed_angle: false
+  undock_use_curve: false
+  # Once you validated the functionality of your emergency sensors,
+  # set this to true to enable the mow-motor
+  enable_mower: true
+xbot_positioning:
+  antenna_offset_x: -0.075
+  antenna_offset_y: 0.12
+xbot_monitoring:
+  external_mqtt_enable: True
+  external_mqtt_hostname: 192.168.3.191
+  external_mqtt_port: 1883
+  external_mqtt_username: yyyyyy
+  external_mqtt_password: zzzzzz
+  external_mqtt_topic_prefix: openmower
+recovery_behaviors:
+  - name: 'conservative_reset'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
+  - name: 'aggressive_reset'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'

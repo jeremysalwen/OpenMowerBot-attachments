@@ -1,0 +1,379 @@
+open_mower_ros  | [INFO] [1776132704.211092903]: GPS quality: 0.84
+open_mower_ros  | [INFO] [1776132706.671574235]: MowingBehavior: (MOW) Progress: 310/2046
+open_mower_ros  | [INFO] [1776132709.211181011]: Docking: Battery average voltage low: 23.9725
+open_mower_ros  | [INFO] [1776132709.211324215]: - Behaviour.h: abort() called
+open_mower_ros  | [INFO] [1776132709.265580066]: MowingBehavior: (MOW) ABORT was requested - stopping path execution.
+open_mower_ros  | [INFO] [1776132709.265786455]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 315 of 2046
+open_mower_ros  | [INFO] [1776132709.265893011]: >>> State: Active <<<
+open_mower_ros  | [INFO] [1776132709.265996085]: MowingBehavior: (MOW) PAUSED due to MBF Error at 315
+open_mower_ros  | [INFO] [1776132709.268531307]: Cancel action "exe_path"
+open_mower_ros  | [WARN] [1776132709.270263770]: FTCLocalPlannerROS: FTC planner was cancelled.
+open_mower_ros  | [INFO] [1776132709.271881270]: Controller will take care of stopping
+open_mower_ros  | [INFO] [1776132709.274232715]: new actions registered: mower_logic:mowing registered 5 actions.
+open_mower_ros  | [INFO] [1776132709.276989159]: successfully registered actions for mower_logic:mowing
+open_mower_ros  | [INFO] [1776132709.284360992]: new actions registered: mower_logic:mowing registered 5 actions.
+open_mower_ros  | [INFO] [1776132709.285706363]: successfully registered actions for mower_logic:mowing
+open_mower_ros  | [INFO] [1776132709.285839900]:
+open_mower_ros  | [INFO] [1776132709.285917529]:
+open_mower_ros  | [INFO] [1776132709.286002326]: --------------------------------------
+open_mower_ros  | [INFO] [1776132709.286067252]: - Entered state: DOCKING
+open_mower_ros  | [INFO] [1776132709.286815252]: --------------------------------------
+open_mower_ros  | [INFO] [1776132709.292206233]: Getting Docking Point
+open_mower_ros  | [INFO] [1776132709.297514844]: new actions registered: mower_logic:docking registered 1 actions.
+open_mower_ros  | [INFO] [1776132709.298628918]: successfully registered actions for mower_logic:docking
+open_mower_ros  | [WARN] [1776132709.298828215]: Waiting for good GPS
+open_mower_ros  | [WARN] [1776132709.711127844]: #### om_mower_logic: setMowerEnabled(0, 1) call
+open_mower_ros  | [INFO] [1776132709.717033307]: Setting mow enabled to 0
+open_mower_ros  | [WARN] [1776132709.718215548]: #### om_mower_logic: setMowerEnabled(0, 1) call completed within 0.00712382s
+open_mower_ros  | [INFO] [1776132709.718009214]: successfully set mower enabled to 0 (direction 1)
+open_mower_ros  | [INFO] [1776132710.299076047]: Calculating approach path
+open_mower_ros  | [INFO] [1776132710.368193621]: FTCLocalPlannerROS: Got new global plan with 631 points.
+open_mower_ros  | [INFO] [1776132713.056210064]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1776132713.056318805]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1776132714.711034730]: GPS quality: 0.845
+open_mower_ros  | [INFO] [1776132724.711120409]: GPS quality: 0.82
+open_mower_ros  | [INFO] [1776132735.211088792]: GPS quality: 0.815
+open_mower_ros  | [INFO] [1776132745.211122323]: GPS quality: 0.855
+open_mower_ros  | [ERROR] [1776132749.662705468]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776132755.711124983]: GPS quality: 0.815
+open_mower_ros  | [INFO] [1776132761.706329813]: FTCLocalPlannerROS: switching planner to position mode
+open_mower_ros  | [INFO] [1776132761.706526720]: FTCLocalPlannerROS: Switching to state 2
+open_mower_ros  | [INFO] [1776132761.756321980]: FTCLocalPlannerROS: Reached goal position.
+open_mower_ros  | [INFO] [1776132761.756506294]: FTCLocalPlannerROS: Switching to state 3
+open_mower_ros  | [INFO] [1776132763.056317016]: FTCLocalPlannerROS: POST_ROTATE finished.
+open_mower_ros  | [INFO] [1776132763.056500220]: FTCLocalPlannerROS: Switching to state 4
+open_mower_ros  | [INFO] [1776132763.106546460]: Action "move_base" succeeded!
+open_mower_ros  | [INFO] [1776132763.199552053]: Executing Docking Approach
+open_mower_ros  | [INFO] [1776132763.231669960]: FTCLocalPlannerROS: Got new global plan with 11 points.
+open_mower_ros  | [INFO] [1776132763.231971682]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1776132763.232205720]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1776132765.711152366]: GPS quality: 0.81
+open_mower_ros  | [INFO] [1776132769.917416993]: FTCLocalPlannerROS: switching planner to position mode
+open_mower_ros  | [INFO] [1776132769.917624734]: FTCLocalPlannerROS: Switching to state 2
+open_mower_ros  | [INFO] [1776132769.967293678]: FTCLocalPlannerROS: Reached goal position.
+open_mower_ros  | [INFO] [1776132769.967487308]: FTCLocalPlannerROS: Switching to state 3
+open_mower_ros  | [INFO] [1776132770.017595530]: FTCLocalPlannerROS: POST_ROTATE finished.
+open_mower_ros  | [INFO] [1776132770.017795438]: FTCLocalPlannerROS: Switching to state 4
+open_mower_ros  | [INFO] [1776132770.104479734]: successfully set GPS to 0
+open_mower_ros  | [INFO] [1776132770.133181123]: FTCLocalPlannerROS: Got new global plan with 20 points.
+open_mower_ros  | [INFO] [1776132770.133442475]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1776132770.133578660]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1776132782.804939189]: Got a voltage of 25.9931 V. Cancelling docking.
+open_mower_ros  | [INFO] [1776132783.005850874]: Cancel action "exe_path"
+open_mower_ros  | [INFO] [1776132783.006195541]: Controller will take care of stopping
+open_mower_ros  | [WARN] [1776132783.006072078]: FTCLocalPlannerROS: FTC planner was cancelled.
+open_mower_ros  | [INFO] [1776132783.011400078]: new actions registered: mower_logic:docking registered 1 actions.
+open_mower_ros  | [INFO] [1776132783.013229226]: successfully registered actions for mower_logic:docking
+open_mower_ros  | [INFO] [1776132783.013410393]:
+open_mower_ros  | [INFO] [1776132783.013478189]:
+open_mower_ros  | [INFO] [1776132783.013541189]: --------------------------------------
+open_mower_ros  | [INFO] [1776132783.013603485]: - Entered state: IDLE
+open_mower_ros  | [INFO] [1776132783.013667541]: --------------------------------------
+open_mower_ros  | [INFO] [1776132783.019170023]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776132783.021059152]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776132783.028091134]: Got getMowingArea call with index: 0
+open_mower_ros  | [INFO] [1776132783.034376578]: Getting Docking Point
+open_mower_ros  | [INFO] [1776132783.040189948]: successfully set GPS to 0
+open_mower_ros  | [ERROR] [1776132816.146283021]: [driver_gps] waited 18 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776132835.776932176]: NTRIP: socket read failed: Connection reset by peer
+open_mower_ros  | [INFO] [1776132846.787982077]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776132858.198931089]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776132870.610815637]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776132884.322955333]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776132894.258968345]: NTRIP: connected to caster
+open_mower_ros  | [INFO] [1776132905.191758950]: NTRIP: connection attempt 17
+open_mower_ros  | [INFO] [1776132927.236631844]: NTRIP: connection attempt 18
+open_mower_ros  | [INFO] [1776132967.056156635]: NTRIP: connection attempt 19
+open_mower_ros  | [INFO] [1776133142.487718605]: NTRIP: socket read failed: Connection reset by peer
+open_mower_ros  | [INFO] [1776133153.498947542]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776133164.909225887]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776133177.120054695]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776133190.530967650]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776133195.635380480]: NTRIP: connection attempt 24
+open_mower_ros  | [INFO] [1776133205.644435308]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776133212.949959544]: NTRIP: connection attempt 25
+open_mower_ros  | [INFO] [1776133224.368137408]: NTRIP: connection attempt 26
+open_mower_ros  | [INFO] [1776133238.737872084]: NTRIP: connection attempt 27
+open_mower_ros  | [INFO] [1776133250.958157021]: NTRIP: connection attempt 28
+open_mower_ros  | [INFO] [1776133272.708453138]: NTRIP: connection attempt 29
+open_mower_ros  | [ERROR] [1776133283.184407576]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133303.378279731]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133366.201088008]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133393.301012733]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133394.305976454]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133441.262589241]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133444.211261721]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133445.255313276]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133454.161307882]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133505.245019814]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133534.397070093]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133543.357795847]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133544.521552254]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133562.407980558]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133582.307150139]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133599.617871573]: [driver_gps] waited 25 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133633.420572164]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133634.334821626]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133639.596976493]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133648.133159470]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133665.299195923]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133685.203546059]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133694.344425831]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133695.363366053]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133724.260363091]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133736.259300695]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133785.334861147]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133815.253932018]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133843.357851168]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133844.345140149]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133873.343959799]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133895.694851841]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133905.335747742]: [driver_gps] waited 16 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133910.272136314]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133935.346399021]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133949.290326161]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133955.397130805]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776133963.241887152]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134023.308632320]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134034.192355536]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134054.279325802]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134068.203074219]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134085.344142728]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134089.333343003]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134105.377214771]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776134141.628053157]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776134152.036920003]: NTRIP: connection attempt 30
+open_mower_ros  | [ERROR] [1776134185.927875316]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134193.156150867]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134198.189218364]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134205.329311934]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134207.639038322]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134222.036390480]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134223.523950775]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134225.427996163]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134258.064983069]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134264.502440639]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776134321.657201494]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776134331.064210359]: NTRIP: connection attempt 31
+open_mower_ros  | [ERROR] [1776134383.468333439]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134401.378046484]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134415.613799105]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134435.743951260]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134474.686739959]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134495.393575391]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134505.236498440]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134509.234421420]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134531.304319795]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134544.214286899]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134555.508045244]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134564.714610905]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134569.389492699]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134599.388667866]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134659.208878534]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134685.326766111]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134689.439163812]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134772.361045429]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134774.607543169]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134795.714828601]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134835.308084670]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134839.340260556]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134853.325115474]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134898.315612280]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134914.577330956]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134933.360537000]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134959.406172577]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134974.277603550]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776134989.358042207]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135026.598826796]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135030.341810627]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135038.148567752]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135045.375818785]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135074.426529527]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135079.417143487]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135095.711747700]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135139.441782599]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135223.376707975]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135231.255791563]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135276.186241407]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135284.352105217]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135289.590113843]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135294.245827026]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135296.403653802]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135313.339552422]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135335.442849223]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135349.282845826]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776135380.374817993]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776135389.882746746]: NTRIP: connection attempt 32
+open_mower_ros  | [ERROR] [1776135413.249094918]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135439.157692643]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776135456.218858170]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776135466.627708608]: NTRIP: connection attempt 33
+open_mower_ros  | [ERROR] [1776135499.323907255]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135533.266561513]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135563.663209143]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776135580.611778485]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776135590.320183646]: NTRIP: connection attempt 34
+open_mower_ros  | [ERROR] [1776135593.341789940]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135613.364873039]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135635.506234137]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135643.595707521]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135654.152022978]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135714.151053961]: [driver_gps] waited 16 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135725.369620824]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135735.234460337]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135739.322393964]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135744.477308183]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135799.236239799]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135859.277784633]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135903.306486311]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135946.878055452]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135949.657343005]: [driver_gps] waited 26 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135954.415970169]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776135969.110142216]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136016.620347799]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136093.354625420]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136104.321158691]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136145.335310241]: [driver_gps] waited 16 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136159.317651103]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136163.427731045]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136164.283475766]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136175.421825278]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136265.350680928]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136293.309036449]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136313.404382955]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136314.272889881]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136333.512808721]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136344.289984122]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776136350.204871100]: NTRIP: socket read failed: Connection reset by peer
+open_mower_ros  | [INFO] [1776136361.315323501]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776136372.826825272]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776136385.238937635]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776136398.950936923]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776136404.874279142]: NTRIP: connected to caster
+open_mower_ros  | [INFO] [1776136414.833241339]: NTRIP: connection attempt 40
+open_mower_ros  | [INFO] [1776136437.250944696]: NTRIP: connection attempt 41
+open_mower_ros  | [INFO] [1776136480.649283837]: NTRIP: connection attempt 42
+open_mower_ros  | [ERROR] [1776136505.397216804]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136620.251941513]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776136703.319242723]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776136838.283360624]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776136848.091132581]: NTRIP: connection attempt 43
+open_mower_ros  | [ERROR] [1776137023.411097699]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137025.215553661]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137039.185010467]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137069.366927245]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137093.654779749]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137113.406183478]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137199.043337816]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137221.187823859]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137250.456703675]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137251.358707063]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137260.335794224]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137263.780922389]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137285.433085913]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137295.327285592]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137323.392734261]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137353.647215798]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137371.361404306]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137502.371927710]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137563.744571840]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137616.236932623]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137764.288166035]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137774.633159640]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137803.535340382]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137816.509061263]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776137855.469472703]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776137900.054918454]: NTRIP: socket read failed: Connection reset by peer
+open_mower_ros  | [INFO] [1776137911.065252947]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776137922.474813885]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776137934.886680785]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776137948.297885481]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776137962.911010602]: NTRIP: unable to connect to any resolved address
+open_mower_ros  | [INFO] [1776137971.217852875]: NTRIP: connection attempt 49
+open_mower_ros  | [INFO] [1776137984.694568552]: NTRIP: connection attempt 50
+open_mower_ros  | [INFO] [1776138004.909208466]: NTRIP: connection attempt 51
+open_mower_ros  | [INFO] [1776138043.868308924]: NTRIP: connection attempt 52
+open_mower_ros  | [INFO] [1776138057.360293490]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776138067.768291039]: NTRIP: connection attempt 53
+open_mower_ros  | [INFO] [1776138098.431720910]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776138108.539632015]: NTRIP: connection attempt 54
+open_mower_ros  | [ERROR] [1776138133.511380167]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138163.403800260]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138187.315838061]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138189.239812411]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138253.389172873]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138275.489658934]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138305.309510064]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138395.383299214]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138402.350718451]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138405.382452375]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138447.333587350]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138464.411359099]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138473.391574372]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138485.468365827]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138695.569098702]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138815.395627983]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138882.373480202]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138943.644935425]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776138945.481586905]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139025.718129468]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139063.392397557]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139065.396627722]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139084.350604007]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139125.417028372]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139185.641482151]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139195.508715404]: [driver_gps] waited 25 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139268.350743175]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139323.352945476]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139326.299027363]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139351.335151385]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139357.482296030]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139366.391469543]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139386.416712309]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139427.346246377]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139477.561983069]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139483.784985751]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139485.539776805]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139545.264988714]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139655.279207797]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139664.653833532]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139704.323116823]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139719.716531481]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139725.362487699]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139753.495000183]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139785.561900349]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1776139790.470969883]: NTRIP: RTCM data not received for 4.00 seconds
+open_mower_ros  | [INFO] [1776139800.279233895]: NTRIP: connection attempt 55
+open_mower_ros  | [ERROR] [1776139824.508367714]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139840.479155890]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139860.449820952]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139933.403524909]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776139950.402885399]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140072.464564733]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140083.430956764]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140182.298562575]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140184.390708500]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140193.451899791]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140201.557759897]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140233.438194119]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140244.379037334]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140273.438092910]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140389.667990544]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140544.365332804]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140625.346670607]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140639.360951192]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140648.432189371]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140715.314761943]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140863.499512484]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140895.387533761]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776140985.362036319]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141045.549869487]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141046.218399357]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141157.505373753]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141165.336316360]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141271.654239981]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141379.504126676]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141433.463911181]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141444.533777193]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141520.356281444]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1776141547.672887280]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested!

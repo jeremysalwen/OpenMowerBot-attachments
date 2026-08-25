@@ -1,0 +1,36 @@
+ly registered actions for mower_logic:mowing
+[ INFO][2026-07-03 9:40:11.747 PM CEST][/mower_logic]: MowingBehavior: Path segment length: 1633 poses.
+[ INFO][2026-07-03 9:40:11.747 PM CEST][/mower_logic]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO][2026-07-03 9:40:11.794 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Got new global plan with 53 points.
+[ INFO][2026-07-03 9:40:14.208 PM CEST][/mower_logic]: GPS quality: 0.929289
+[ INFO][2026-07-03 9:40:24.208 PM CEST][/mower_logic]: GPS quality: 0.929289
+[ERROR][2026-07-03 9:40:31.835 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[ INFO][2026-07-03 9:40:31.835 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 4
+[ WARN][2026-07-03 9:40:31.836 PM CEST][/move_base_flex]: No velocity command received from controller! 
+[ INFO][2026-07-03 9:40:34.708 PM CEST][/mower_logic]: GPS quality: 0.929289
+[ WARN][2026-07-03 9:40:34.885 PM CEST][/move_base_flex]: No velocity command received from controller! 
+[ WARN][2026-07-03 9:40:36.835 PM CEST][/move_base_flex]: The controller has been aborted after it exceeded the patience time
+[ WARN][2026-07-03 9:40:36.838 PM CEST][/move_base_flex]: Running Backward/Forward recovery behavior
+[ WARN][2026-07-03 9:40:39.839 PM CEST][/move_base_flex]: Backward movement timed out after 3.00 seconds
+[ WARN][2026-07-03 9:40:39.839 PM CEST][/move_base_flex]: Obstacle too close after moving 0.00 meters
+[ WARN][2026-07-03 9:40:39.840 PM CEST][/move_base_flex]: Backward/Forward recovery behavior failed to move in either direction
+[ INFO][2026-07-03 9:40:39.869 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Got new global plan with 34 points.
+[ INFO][2026-07-03 9:40:41.362 PM CEST][/move_base_flex]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO][2026-07-03 9:40:41.363 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 1
+[ INFO][2026-07-03 9:40:44.708 PM CEST][/mower_logic]: GPS quality: 0.858579
+[ INFO][2026-07-03 9:40:47.162 PM CEST][/move_base_flex]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO][2026-07-03 9:40:47.163 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 2
+[ INFO][2026-07-03 9:40:47.212 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Reached goal position.
+[ INFO][2026-07-03 9:40:47.213 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 3
+[ INFO][2026-07-03 9:40:47.662 PM CEST][/move_base_flex]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO][2026-07-03 9:40:47.663 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 4
+[ INFO][2026-07-03 9:40:47.713 PM CEST][/move_base_flex]: Action "move_base" succeeded!
+[ INFO][2026-07-03 9:40:47.748 PM CEST][/mower_logic]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO][2026-07-03 9:40:47.755 PM CEST][/map_service]: Clearing Nav Point
+[ INFO][2026-07-03 9:40:47.759 PM CEST][/mower_logic]: MowingBehavior: (MOW) First point reached - Executing mow path with 1633 poses, from index 87
+[ INFO][2026-07-03 9:40:47.788 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Got new global plan with 1546 points.
+[ INFO][2026-07-03 9:40:47.788 PM CEST][/move_base_flex]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO][2026-07-03 9:40:47.788 PM CEST][/move_base_flex]: FTCLocalPlannerROS: Switching to state 1
+[ WARN][2026-07-03 9:40:48.208 PM CEST][/mower_logic]: #### om_mower_logic: setMowerEnabled(1, 0) call
+[ INFO][2026-07-03 9:40:48.212 PM CEST][/mower_logic]: successfully set mower enabled to 1 (direction 0)
+[ WARN][2026-07-03 9:40:48.212 PM CEST][/mower_logic]: #### om_mower_logic: setMowerEnabled(1, 0) call completed within 0.00458869s

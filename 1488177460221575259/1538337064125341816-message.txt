@@ -1,0 +1,407 @@
+root@goat:/var/openmower/OpenMowerGOATO600# ./chroot_devenv.sh run
+ * Starting nginx nginx                                                                                                                                                                [ OK ] 
+ * Starting network daemon: mosquitto                                                                                                                                                  [ OK ] 
+... logging to /data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/roslaunch-goat-550557.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+[INFO] [1786838369.051831]: ecovacs_bridge: initialized
+started roslaunch server http://localhost:35777/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/bind_ip: 0.0.0.0
+ * /ll/services/diff_drive/ticks_per_m: 1600.0
+ * /ll/services/diff_drive/wheel_distance_m: 0.325
+ * /ll/services/gps/absolute_coords: False
+ * /ll/services/gps/baud_rate: 921600
+ * /ll/services/gps/datum_height: 0
+ * /ll/services/gps/datum_lat: 53.457452
+ * /ll/services/gps/datum_long: 10.014737
+ * /ll/services/gps/port_index: 8
+ * /ll/services/gps/protocol: NMEA
+ * /ll/services/imu/axis_config: +X-Y-Z
+ * /ll/services/power/battery_critical_high_voltage: 30.0
+ * /ll/services/power/battery_critical_voltage: 22.0
+ * /ll/services/power/battery_empty_voltage: 22.4
+ * /ll/services/power/battery_full_voltage: 29.26
+ * /ll/services/power/charge_critical_high_current: 3.0
+ * /ll/services/power/charge_critical_high_voltage: 34.0
+ * /ll/services/sound/language: en
+ * /ll/services/sound/volume: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/lateral_priority_distance: 0.1
+ * /move_base_flex/DockingFTCPlanner/lateral_priority_min_gain: 0.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/lateral_priority_distance: 0.1
+ * /move_base_flex/FTCPlanner/lateral_priority_min_gain: 0.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 1.0
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_flex/recovery_behaviors: [{'name': 'Backwa...
+ * /move_base_flex/recovery_enabled: True
+ * /move_base_flex/recovery_patience: 7.0
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/cu_rain_threshold: -1
+ * /mower_logic/docking_approach_distance: 1.0
+ * /mower_logic/docking_extra_time: 1.0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 3
+ * /mower_logic/emergency_lift_period: -1
+ * /mower_logic/emergency_tilt_period: -1
+ * /mower_logic/enable_mower: False
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 1.0
+ * /mower_logic/ignore_charging_current: False
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 0.0
+ * /mower_logic/undock_fixed_angle: True
+ * /mower_logic/undock_use_curve: False
+ * /ntrip_client/host: www.your-ntrip-ca...
+ * /ntrip_client/mountpoint: ntripmount
+ * /ntrip_client/password: ntrippass
+ * /ntrip_client/port: 2101
+ * /ntrip_client/reconnect_attempt_max: 5
+ * /ntrip_client/reconnect_attempt_wait_seconds: 99999
+ * /ntrip_client/username: ntripuser
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/debug: False
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[move_base_flex-1]: started with pid [550653]
+process[move_base_legacy_relay-2]: started with pid [550654]
+process[xbot_positioning-3]: started with pid [550655]
+process[joy-4]: started with pid [550660]
+process[joy_teleop-5]: started with pid [550666]
+process[map_service-6]: started with pid [550673]
+process[mower_logic-7]: started with pid [550679]
+Error in XmlRpcClient::writeRequest: write error (Connection refused).
+process[slic3r_coverage_planner-8]: started with pid [550682]
+[INFO] [1786838369.866105131]: Antenna offset: 0.3, 0
+process[twist_mux-9]: started with pid [550683]
+process[xbot_monitoring-10]: started with pid [550689]
+process[xbot_remote-11]: started with pid [550694]
+process[monitoring-12]: started with pid [550699]
+[ERROR] [1786838370.030587590]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1786838370.087193256]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[2026-08-15 23:59:30] [info] asio listen error: system:97 (Address family not supported by protocol)
+Underlying Transport Error
+[INFO] [1786838370.170078548]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1786838370.195546673]: MQTT Connected
+[INFO] [1786838370.222862048]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[FATAL] [1786838370.317565048]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[WARN] [1786838370.347220631]: Last GPS was 1.78684e+09 seconds ago.
+[xbot_remote-11] process has died [pid 550694, exit code 1, cmd /workspace/devel/lib/xbot_remote/xbot_remote /xbot_remote/cmd_vel:=/joy_vel __name:=xbot_remote __log:=/data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11.log].
+log file: /data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11*.log
+[INFO] [1786838370.607032715]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+[INFO] [1786838370.701398798]: waitForService: Service [/xbot/rpc/register] is now available.
+[INFO] [1786838370.718686840]: new methods registered: mower_map_service registered 1 methods.
+[WARN] [1786838370.719215173]: Could not open map file: map.json
+[INFO] [1786838370.719453590]: Map Position: x=0, y=0
+[INFO] [1786838370.719535090]: Map Size: x=10, y=10
+[INFO] [1786838370.851686257]: om_mower_logic: Setting mower_logic config
+[INFO] [1786838371.089812299]: Monitoring received new mower_logic config
+[INFO] [1786838371.153860424]: Monitoring received new mower_logic config
+[INFO] [1786838371.154415257]: new methods registered: xbot_monitoring registered 8 methods.
+[INFO] [1786838371.173141340]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1786838371.193230340]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1786838371.206329465]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1786838371.216989174]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1786838371.229892174]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1786838371.249349549]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1786838371.262076257]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1786838371.275438840]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1786838371.285616299]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1786838371.297350340]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1786838371.318609757]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1786838371.364445382]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1786838371.364605757]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1786838371.382157715]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1786838371.382278549]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1786838371.400602215]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1786838371.400724882]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1786838371.419655674]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1786838371.419794715]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1786838371.444845757]: GPS data now valid
+[INFO] [1786838371.445095549]: First GPS data, moving kalman filter to [Hey look this is where I live!]
+[INFO] [1786838371.468787174]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1786838371.468935340]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1786838371.482997674]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1786838371.483217257]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1786838371.498463674]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1786838371.498665882]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1786838371.511457465]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1786838371.511582257]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1786838371.516696924]: Waiting for emergency message
+[INFO] [1786838371.520865965]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1786838371.520980674]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1786838371.528860382]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1786838371.528972174]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1786838371.536603799]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1786838371.536714924]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[WARN] [1786838375.844719259]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist.. canTransform returned after 0.100896 timeout was 0.1.
+[INFO] [1786838377.722306260]: Started gyro calibration
+[INFO] [1786838377.129960333]: Waiting for a power message
+[INFO] [1786838377.130116166]: Waiting for a status message
+[INFO] [1786838378.130354125]: Waiting for a pose message
+[INFO] [1786838378.130521417]: Waiting for left ESC status message
+[INFO] [1786838378.130623250]: Waiting for right ESC status message
+[INFO] [1786838378.130678750]: Waiting for emergency service
+[INFO] [1786838378.204980875]: Waiting for path server
+[INFO] [1786838378.321540042]: Waiting for mower service
+[INFO] [1786838378.405521334]: Waiting for gps service
+[INFO] [1786838378.486763334]: Waiting for positioning service
+[INFO] [1786838378.570481375]: Waiting for map server
+[INFO] [1786838378.673380042]: Waiting for docking point server
+[INFO] [1786838378.740978167]: Waiting for nav point server
+[INFO] [1786838378.784399000]: Waiting for clear nav point server
+[INFO] [1786838378.837633792]: Waiting for move base flex
+[xbot_remote-11] restarting process
+process[xbot_remote-11]: started with pid [551412]
+[2026-08-15 23:59:40] [info] asio listen error: system:97 (Address family not supported by protocol)
+Underlying Transport Error
+[WARN] [1786838380.884678001]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist.. canTransform returned after 0.100352 timeout was 0.1.
+[xbot_remote-11] process has died [pid 551412, exit code 1, cmd /workspace/devel/lib/xbot_remote/xbot_remote /xbot_remote/cmd_vel:=/joy_vel __name:=xbot_remote __log:=/data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11.log].
+log file: /data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11*.log
+[INFO] [1786838382.736126127]: Calibrated gyro offset: -0.00835529
+[INFO] [1786838382.999146627]: local_costmap: Using plugin "static_layer"
+[INFO] [1786838383.046386919]: Requesting the map...
+[INFO] [1786838383.265451419]: Resizing static layer to 200 X 200 at 0.050000 m/pix
+[INFO] [1786838383.365311628]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1786838383.391900211]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1786838383.409880836]:     Subscribed to Topics: 
+[INFO] [1786838383.475093544]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1786838383.954902878]: global_costmap: Using plugin "static_layer"
+[INFO] [1786838384.001923420]: Requesting the map...
+[INFO] [1786838384.027569336]: Resizing costmap to 200 X 200 at 0.050000 m/pix
+[INFO] [1786838384.127547295]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1786838384.151363920]: global_costmap: Using plugin "obstacle_layer"
+[INFO] [1786838384.169516003]:     Subscribed to Topics: 
+[INFO] [1786838384.209151045]: global_costmap: Using plugin "inflation_layer"
+[INFO] [1786838384.510983211]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1786838384.736962003]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1786838384.737194045]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1786838384.939219420]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1786838384.939419128]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+[INFO] [1786838384.949443503]: The plugin with the type "ftc_local_planner/BackwardForwardRecovery" has been loaded successfully under the name "BackwardForwardRecovery".
+[INFO] [1786838385.396709754]: Waiting for mowing path progress server
+[INFO] [1786838385.399424254]: Waiting for an emergency status message
+[INFO] [1786838385.399587754]: Waiting for an emergency status message
+[INFO] [1786838386.399692754]: Waiting for an emergency status message
+[INFO] [1786838387.399693046]: Waiting for an emergency status message
+[INFO] [1786838388.399690297]: Waiting for an emergency status message
+[INFO] [1786838389.399692839]: Waiting for an emergency status message
+[INFO] [1786838390.399689839]: Waiting for an emergency status message
+[INFO] [1786838391.399688465]: Waiting for an emergency status message
+[xbot_remote-11] restarting process
+process[xbot_remote-11]: started with pid [551814]
+[2026-08-15 23:59:51] [info] asio listen error: system:97 (Address family not supported by protocol)
+Underlying Transport Error
+[xbot_remote-11] process has died [pid 551814, exit code 1, cmd /workspace/devel/lib/xbot_remote/xbot_remote /xbot_remote/cmd_vel:=/joy_vel __name:=xbot_remote __log:=/data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11.log].
+log file: /data/log/roslog/d13cb0ae-98cf-11f1-8055-ec308e84e6ec/xbot_remote-11*.log
+[INFO] [1786838392.399700257]: Waiting for an emergency status message
+[INFO] [1786838393.399689674]: Waiting for an emergency status message
+[INFO] [1786838394.399693174]: Waiting for an emergency status message
+[WARN] [1786838396.059346250]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 1.4946 seconds
+[WARN] [1786838396.829148083]: Map update loop missed its desired rate of 1.0000Hz... the loop actually took 1.4947 seconds
+[INFO] [1786838396.894172708]: registering actions
+[INFO] [1786838396.896961583]: new actions registered: mower_logic registered 1 actions.
+[INFO] [1786838396.897532208]: successfully registered actions for mower_logic
+[INFO] [1786838396.897634583]: om_mower_logic: Got all servers, we can mow
+[WARN] [1786838396.898261083]: #### om_mower_logic: setMowerEnabled(0, 0) call
+[ERROR] [1786838396.902192792]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838396.902376417]: Error setting mower enabled to 0. Retrying.
+[WARN] [1786838397.398375084]: #### om_mower_logic: setMowerEnabled(0, 1) call
+[ERROR] [1786838397.402012250]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838397.402171417]: Error setting mower enabled to 0. Retrying.
+[ERROR] [1786838397.901980959]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838397.902368875]: Error setting mower enabled to 0. Retrying.
+[ERROR] [1786838398.402275917]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838398.402445167]: Error setting mower enabled to 0. Retrying.
+[ERROR] [1786838398.901996876]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838398.902159251]: Error setting mower enabled to 0. Retrying.
+[ERROR] [1786838399.402630418]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838399.402792459]: Error setting mower enabled to 0. Retrying.
+[ERROR] [1786838399.902511168]: Service call failed: service [/ll/_service/mow_enabled] responded with an error: service cannot process request: handler returned wrong number of values: Invalid number of arguments, args should be [] args are(False,)
+[ERROR] [1786838399.902685210]: Error setting mower enabled to 0. Retrying.
+^C[monitoring-12] killing on exit
+[xbot_monitoring-10] killing on exit
+[xbot_remote-11] killing on exit
+[twist_mux-9] killing on exit
+[map_service-6] killing on exit
+[joy-4] killing on exit
+[ERROR] [1786838400.282898]: bad callback: <bound method EcovacsBridgeNode.on_wheel_speed of <__main__.EcovacsBridgeNode object at 0xffffa9b30400>>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/workspace/src/ecovacs_bridge/scripts/bridge_node.py", line 216, in on_wheel_speed
+    self.pub_twist.publish(t)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 882, in publish
+    self.impl.publish(data)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 1041, in publish
+    raise ROSException("publish() to a closed topic")
+rospy.exceptions.ROSException: publish() to a closed topic
+
+[slic3r_coverage_planner-8] killing on exit
+[joy_teleop-5] killing on exit
+[mower_logic-7] killing on exit
+[xbot_positioning-3] killing on exit
+[move_base_legacy_relay-2] killing on exit
+[ERROR] [1786838400.291993]: bad callback: <bound method EcovacsBridgeNode.on_imu of <__main__.EcovacsBridgeNode object at 0xffffa9b30400>>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/workspace/src/ecovacs_bridge/scripts/bridge_node.py", line 333, in on_imu
+    self.pub_imu.publish(imu)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 882, in publish
+    self.impl.publish(data)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 1041, in publish
+    raise ROSException("publish() to a closed topic")
+rospy.exceptions.ROSException: publish() to a closed topic
+
+[move_base_flex-1] killing on exit
+[INFO] [1786838400.595776918]: Shutdown costmap navigation server.
+[INFO] [1786838400.596016002]: Cancel all goals for "get_path".
+[INFO] [1786838400.596192793]: Cancel all goals for "exe_path".
+[INFO] [1786838400.596306793]: Cancel all goals for "recovery".
+[INFO] [1786838400.596431752]: Stopping local and global costmap for shutdown
+ * Stopping nginx nginx                                                                                                                                                                [ OK ] 
+ * Stopping network daemon: mosquitto                                                                                                                                                  [ OK ] 
+Goodbye!
+umount: /var/ros-noetic-chroot/workspace: target is busy.
+umount: /var/ros-noetic-chroot/dev: target is busy.
+root@goat:/var/openmower/OpenMowerGOATO600# [mower_logic-7] escalating to SIGTERM
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
