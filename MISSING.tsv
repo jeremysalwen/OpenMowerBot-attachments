@@ -1,6 +1,7 @@
 # Attachments still stranded in the old repo's Git LFS store.
 # Their Discord CDN URLs have expired, so GitHub LFS holds the only copy.
-# Recover with: node ./bin/discord-history.mjs backfill-lfs (see repo README).
+# Recovered automatically by the nightly job, or manually with:
+#   node ./bin/discord-history.mjs recover-attachments --manifest MISSING.tsv --out .
 #oid	size	path
 b34cc22519eb1e7db4f48e90bbe1ad8d312f10d68a7e9fd12320afc791e42f24	2871832	1001921766924488774/1135571836571238461-rn_image_picker_lib_temp_0e15513f-18c3-470c-ae50-a2ff11aa8d82.jpg
 d734cd27806e0a8b999b22f4f36d653060a733a6ae60f5fbee6d616f51984ae0	575577	1001921766924488774/1135861162588782602-image.png
