@@ -1,0 +1,40 @@
+kevinmce@openmower:~/mowgli-docker $ sudo docker ps
+CONTAINER ID   IMAGE                                         COMMAND                  CREATED        STATUS                  PORTS                                                                                  NAMES
+4eaf4d8d3508   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-openmower
+e113650abc1e   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-rosserial
+0df5bd5f3a7e   ghcr.io/cedbossneo/openmower-gui:master       "/app/openmower-gui"     26 hours ago   Up 17 hours                                                                                                    openmower-gui
+9ed69143326a   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-roscore
+f930ecd440c9   nginx                                         "/docker-entrypoint.…"   26 hours ago   Up 17 hours             0.0.0.0:4005->80/tcp, :::4005->80/tcp                                                  mowgli-web
+249d0f02ea48   eclipse-mosquitto:latest                      "/docker-entrypoint.…"   26 hours ago   Up 17 hours             0.0.0.0:1883->1883/tcp, :::1883->1883/tcp, 0.0.0.0:9001->9001/tcp, :::9001->9001/tcp   mowgli-mqtt
+a8a8831b5ac0   containrrr/watchtower                         "/watchtower"            26 hours ago   Up 17 hours (healthy)   8080/tcp                                                                               mowgli-docker-watchtower-1
+kevinmce@openmower:~/mowgli-docker $ sudo docker exec -it wgli-roscore sh
+Error response from daemon: No such container: wgli-roscore
+kevinmce@openmower:~/mowgli-docker $ sudo docker ps
+CONTAINER ID   IMAGE                                         COMMAND                  CREATED        STATUS                  PORTS                                                                                  NAMES
+4eaf4d8d3508   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-openmower
+e113650abc1e   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-rosserial
+0df5bd5f3a7e   ghcr.io/cedbossneo/openmower-gui:master       "/app/openmower-gui"     26 hours ago   Up 17 hours                                                                                                    openmower-gui
+9ed69143326a   ghcr.io/cedbossneo/mowgli-docker:cedbossneo   "/openmower_entrypoi…"   26 hours ago   Up 17 hours                                                                                                    mowgli-roscore
+f930ecd440c9   nginx                                         "/docker-entrypoint.…"   26 hours ago   Up 17 hours             0.0.0.0:4005->80/tcp, :::4005->80/tcp                                                  mowgli-web
+249d0f02ea48   eclipse-mosquitto:latest                      "/docker-entrypoint.…"   26 hours ago   Up 17 hours             0.0.0.0:1883->1883/tcp, :::1883->1883/tcp, 0.0.0.0:9001->9001/tcp, :::9001->9001/tcp   mowgli-mqtt
+a8a8831b5ac0   containrrr/watchtower                         "/watchtower"            26 hours ago   Up 17 hours (healthy)   8080/tcp                                                                               mowgli-docker-watchtower-1
+kevinmce@openmower:~/mowgli-docker $ sudo docker exec -it 9ed69143326a sh
+# rosrun dynamic_reconfigure dynparam get /mower_logic
+sh: 1: rosrun: not found
+# exit
+kevinmce@openmower:~/mowgli-docker $ sudo docker exec -it 4eaf4d8d3508 sh
+# rosrun dynamic_reconfigure dynparam get /mower_logic
+sh: 1: rosrun: not found
+# ls
+Dockerfile  LICENSE  README.md  VERSION  assets  build  devel  img  src  utils  web
+# exit
+kevinmce@openmower:~/mowgli-docker $ sudo docker exec -it 9ed69143326a sh
+# ls
+Dockerfile  LICENSE  README.md  VERSION  assets  build  devel  img  src  utils  web
+# ./start_ros_bash.sh
+sh: 2: ./start_ros_bash.sh: not found
+# exit
+kevinmce@openmower:~/mowgli-docker $ sudo docker exec -it 4eaf4d8d3508 sh
+# ./start_ros_bash.sh
+sh: 1: ./start_ros_bash.sh: not found
+# exit

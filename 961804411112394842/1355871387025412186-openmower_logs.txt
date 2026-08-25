@@ -1,0 +1,97 @@
+ * /mower_logic/automatic_mode: 2
+ * /mower_logic/battery_critical_high_voltage: -1
+ * /mower_logic/battery_critical_voltage: 25.0
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/charge_critical_high_current: -1
+ * /mower_logic/charge_critical_high_voltage: -1
+ * /mower_logic/cu_rain_threshold: -1
+ * /mower_logic/docking_approach_distance: 1.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/emergency_input_config: 
+ * /mower_logic/emergency_lift_period: -1
+ * /mower_logic/emergency_tilt_period: -1
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/ignore_charging_current: False
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/perimeter_signal: False
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 0.0
+ * /mower_logic/undock_distance: 2.0
+ * /mower_logic/undock_fixed_angle: True
+ * /mower_logic/undock_use_curve: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 48.069777
+ * /xbot_driver_gps/datum_long: 2.095444
+ * /xbot_driver_gps/device_type: serial
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/serial/by-id...
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+ * /xbot_monitoring/external_mqtt_password: 
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: 
+ * /xbot_monitoring/external_mqtt_username: 
+ * /xbot_monitoring/software_version: 57c9588
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+auto-starting new master
+process[master]: started with pid [91]
+ROS_MASTER_URI=http://localhost:11311
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311 
+setting /run_id to 8759edfc-0d58-11f0-9b6d-344b50000000
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [105]
+process[xbot_driver_gps-3]: started with pid [110]
+process[move_base_flex-4]: started with pid [111]
+process[move_base_legacy_relay-5]: started with pid [112]
+process[xbot_positioning-6]: started with pid [117]
+process[joy-7]: started with pid [124]
+process[joy_teleop-8]: started with pid [127]
+process[map_service-9]: started with pid [137]
+process[mower_logic-10]: started with pid [153]
+process[slic3r_coverage_planner-11]: started with pid [157]
+process[twist_mux-12]: started with pid [161]
+process[xbot_monitoring-13]: started with pid [162]
+process[xbot_remote-14]: started with pid [169]
+process[monitoring-15]: started with pid [170]
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'

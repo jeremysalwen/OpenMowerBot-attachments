@@ -1,0 +1,42 @@
+May 03 16:21:39 Dolly openmower_launch[111187]: [ INFO] [1714746099.669230517]: MowingBehavior: (MOW) Progress: 1158/1193
+May 03 16:21:42 Dolly openmower_launch[111187]: [ INFO] [1714746102.899568233]: GPS quality: 0.891833
+May 03 16:21:44 Dolly openmower_launch[111187]: [ INFO] [1714746104.767322233]: MowingBehavior: (MOW) Progress: 1167/1193
+May 03 16:21:49 Dolly openmower_launch[111187]: [ INFO] [1714746109.767398320]: MowingBehavior: (MOW) Progress: 1174/1193
+May 03 16:21:53 Dolly openmower_launch[111187]: [ INFO] [1714746113.399560999]: GPS quality: 0.869616
+May 03 16:21:54 Dolly openmower_launch[111187]: [ INFO] [1714746114.867350010]: MowingBehavior: (MOW) Progress: 1178/1193
+May 03 16:21:59 Dolly openmower_launch[111187]: [ INFO] [1714746119.867751316]: MowingBehavior: (MOW) Progress: 1184/1193
+May 03 16:22:03 Dolly openmower_launch[111187]: [ INFO] [1714746123.899552884]: GPS quality: 0.871938
+May 03 16:22:04 Dolly openmower_launch[111187]: [ INFO] [1714746124.967404329]: MowingBehavior: (MOW) Progress: 1190/1193
+May 03 16:22:07 Dolly openmower_launch[111155]: [ INFO] [1714746127.278509998]: FTCLocalPlannerROS: switching planner to position mode
+May 03 16:22:07 Dolly openmower_launch[111155]: [ INFO] [1714746127.278720328]: FTCLocalPlannerROS: Switching to state 2
+May 03 16:22:07 Dolly openmower_launch[111155]: [ INFO] [1714746127.328088629]: FTCLocalPlannerROS: Reached goal position.
+May 03 16:22:07 Dolly openmower_launch[111155]: [ INFO] [1714746127.328289459]: FTCLocalPlannerROS: Switching to state 3
+May 03 16:22:10 Dolly openmower_launch[111187]: [ INFO] [1714746130.069052274]: MowingBehavior: (MOW) Progress: 1192/1193
+May 03 16:22:13 Dolly openmower_launch[111155]: [ INFO] [1714746133.627883300]: FTCLocalPlannerROS: POST_ROTATE finished.
+May 03 16:22:13 Dolly openmower_launch[111155]: [ INFO] [1714746133.628027539]: FTCLocalPlannerROS: Switching to state 4
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764294723]: MowingBehavior: (MOW)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764422592]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 1192 of 1193
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764475665]: >>> State: Succeeded <<<
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764523460]: MowingBehavior: (MOW) Mow path finished, skipping to next mow path.
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764687310]: MowingBehavior: Path segment length: 15 poses.
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.764753198]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+May 03 16:22:13 Dolly openmower_launch[111155]: [ERROR] [1714746133.766643334]: getElem() should not see invalid handles
+May 03 16:22:13 Dolly openmower_launch[111187]: [ INFO] [1714746133.899596016]: GPS quality: 0.855778
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680681.014163]: Exception: timed out
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680681.018682]: Reconnect to http://www.sapos-ni-ntrip.de:2101 failed. Retrying in 5 seconds
+May 03 16:22:20 Dolly openmower_launch[111149]: [WARN] [1714680688.031059]: NMEA sent before client was connected, discarding NMEA
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680691.055267]: Unable to read response from server at http://www.sapos-ni-ntrip.de:2101
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680691.058706]: Exception: timed out
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680691.062546]: Reconnect to http://www.sapos-ni-ntrip.de:2101 failed. Retrying in 5 seconds
+May 03 16:22:20 Dolly openmower_launch[111149]: [WARN] [1714680698.031502]: NMEA sent before client was connected, discarding NMEA
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680701.100584]: Unable to read response from server at http://www.sapos-ni-ntrip.de:2101
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680701.106561]: Exception: timed out
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680701.112343]: Reconnect to http://www.sapos-ni-ntrip.de:2101 failed. Retrying in 5 seconds
+May 03 16:22:20 Dolly openmower_launch[111149]: [WARN] [1714680708.034332]: NMEA sent before client was connected, discarding NMEA
+May 03 16:22:20 Dolly openmower_launch[111149]: [WARN] [1714680710.986048]: Received unauthorized response from the server. Check your username, password, and mountpoint to make >
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680710.989628]: Invalid response received from http://www.sapos-ni-ntrip.de:2101/VRS_3_4G_NI
+May 03 16:22:20 Dolly openmower_launch[111149]: [ERROR] [1714680710.992918]: Response: HTTP/1.1 401 Unauthorized
+May 03 16:22:20 Dolly openmower_launch[111149]: Server: GN_Caster/1.0
+May 03 16:22:20 Dolly openmower_launch[111149]: WWW-Authenticate: Basic realm="/VRS_3_4G_NI"
+May 03 16:22:20 Dolly openmower_launch[111149]: Connection: close
+May 03 16:22:20 Dolly openmower_launch[111149]: Content-Length:      0

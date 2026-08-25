@@ -1,0 +1,1485 @@
+OpenMowerApp  | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET / HTTP/1.1" 200 654 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+OpenMowerApp  | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /flutter_bootstrap.js HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+OpenMowerApp  | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /main.dart.js HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+Mosquitto     | 1779469366: Info: running mosquitto as user: mosquitto.
+Mosquitto     | 1779525949: New connection from 172.19.0.1:44428 on port 1883.
+Mosquitto     | 1779525949: New client connected from 172.19.0.1:44428 as xbot_monitoring (p4, c1, k1000).
+Mosquitto     | 1779526419: New connection from 192.168.1.24:51944 on port 9001.
+Mosquitto     | 1779526419: New client connected from 192.168.1.24:51944 as om-client-18240 (p5, c0, k0).
+Mosquitto     | 1779526475: Client om-client-18240 [192.168.1.24:51944] disconnected: connection closed by client.
+Mosquitto     | 1779527491: New connection from 172.19.0.1:54042 on port 9001.
+Mosquitto     | 1779527492: New client connected from 172.19.0.1:54042 as om-client-18240 (p5, c0, k0).
+open_mower_ros  | [33m[WARN] [1779527488.293413800]: GPS timeout[0m
+OpenMowerApp    | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /assets/FontManifest.json HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+open_mower_ros  | [0m[INFO] [1779527489.081526159]: dropping GPS update, since gps_enabled = false.[0m
+OpenMowerApp    | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /favicon.png HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+OpenMowerApp    | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /icons/Icon-192.png HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+OpenMowerApp    | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /assets/fonts/MaterialIcons-Regular.otf HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+open_mower_ros  | [33m[WARN] [1779527489.293303348]: Low quality GPS[0m
+OpenMowerApp    | 192.168.1.24 - - [23/May/2026:08:53:37 +0000] "GET /assets/packages/cupertino_icons/assets/CupertinoIcons.ttf HTTP/1.1" 304 0 "http://openmower:8080/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+open_mower_ros  | [33m[WARN] [1779527489.293458475]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527490.280044093]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [33m[WARN] [1779527490.793315079]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527490.793479094]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527491.454652351]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [33m[WARN] [1779527492.293312740]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527492.293866008]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527492.654435694]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [0m[INFO] [1779527493.655824640]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [33m[WARN] [1779527493.793277199]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527493.793409937]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527494.657251756]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [33m[WARN] [1779527495.293302030]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527495.293449546]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527495.659825540]: dropping GPS update, since gps_enabled = false.[0m
+open_mower_ros  | [0m[INFO] [1779527496.104524896]: Got action: mower_logic:idle/start_area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527496.105247919]: Got start_area_recording command[0m
+open_mower_ros  | [0m[INFO] [1779527496.118086088]: new actions registered: mower_logic:idle registered 2 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527496.119699781]: successfully registered actions for mower_logic:idle[0m
+open_mower_ros  | [0m[INFO] [1779527496.120358731]: [0m
+open_mower_ros  | [0m[INFO] [1779527496.120430637]: [0m
+open_mower_ros  | [0m[INFO] [1779527496.120488710]: --------------------------------------[0m
+open_mower_ros  | [0m[INFO] [1779527496.120541006]: - Entered state: AREA_RECORDING[0m
+open_mower_ros  | [0m[INFO] [1779527496.120595282]: --------------------------------------[0m
+open_mower_ros  | [0m[INFO] [1779527496.126416767]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527496.128045700]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527496.136080013]: Starting recording area[0m
+open_mower_ros  | [0m[INFO] [1779527496.136209363]: Subscribing to /joy for user input[0m
+open_mower_ros  | [0m[INFO] [1779527496.212518260]: successfully set GPS to 1[0m
+open_mower_ros  | [0m[INFO] [1779527496.279744030]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527496.793203104]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527496.793296806]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527497.459864370]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527497.793208433]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527497.793309412]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527498.654979025]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527498.793207247]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527499.293206142]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527499.661352035]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527500.293204963]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527500.293291720]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527500.856329910]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527501.293304155]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527501.293457671]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527501.863796972]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [2026-05-23 09:11:41] [connect] WebSocket Connection [2a01:cb1d:c10:2c00:58a6:1892:2917:dad2]:42040 v13 "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36" / 101
+open_mower_ros  | [0m[INFO] [1779527502.063721543]: vx:0 vr: 0[0m
+open_mower_ros  | [33m[WARN] [1779527502.293388778]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527502.293736086]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527502.665798304]: vx:0.37688934326171875 vr: -0.29582226562499997[0m
+open_mower_ros  | [0m[INFO] [1779527503.082093306]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527503.257571764]: vx:0.26666717529296874 vr: -0.42666674804687504[0m
+open_mower_ros  | [33m[WARN] [1779527503.793300966]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527503.793459963]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527503.857429330]: vx:0.22400054931640626 vr: -0.637156005859375[0m
+open_mower_ros  | [0m[INFO] [1779527504.279785451]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527504.470735299]: vx:0.23466705322265624 vr: -0.73386669921875[0m
+open_mower_ros  | [0m[INFO] [1779527504.985489554]: vx:0.27377838134765625 vr: -0.762311279296875[0m
+open_mower_ros  | [33m[WARN] [1779527505.293295764]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527505.293449872]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527505.458809454]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527505.552942295]: vx:0.30933380126953125 vr: -0.768[0m
+open_mower_ros  | [0m[INFO] [1779527506.159258465]: vx:0.312889404296875 vr: -0.762311279296875[0m
+open_mower_ros  | [0m[INFO] [1779527506.656999404]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527506.662427287]: vx:0.31644500732421876 vr: -0.762311279296875[0m
+open_mower_ros  | [33m[WARN] [1779527506.793280002]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527506.793414777]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527507.271260995]: vx:0.31644500732421876 vr: -0.73386669921875[0m
+open_mower_ros  | [0m[INFO] [1779527507.663853100]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527507.793301772]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527507.793861669]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527508.857461626]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527509.293289957]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527509.293562878]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527509.858467330]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527510.793206934]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527510.793305284]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527511.032287481]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527512.033288882]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527512.293200628]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527512.293286849]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527513.033308747]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527513.293210152]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527513.293296669]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527514.033381316]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527514.793311285]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527514.793469023]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527515.033666514]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527515.793340350]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527515.793501328]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527516.034057192]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527516.280039671]: Last GPS was 1.77953e+09 seconds ago.[0m
+open_mower_ros  | [0m[INFO] [1779527517.258570673]: GPS data now valid[0m
+open_mower_ros  | [0m[INFO] [1779527517.259414047]: First GPS data, moving kalman filter to 18.1697, -47.4707[0m
+open_mower_ros  | [0m[INFO] [1779527517.293329094]: GPS quality: 0.858402[0m
+open_mower_ros  | [33m[WARN] [1779527517.293478813]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527527.793225620]: GPS quality: 0.872524[0m
+open_mower_ros  | [0m[INFO] [1779527537.793505803]: GPS quality: 0.876206[0m
+Mosquitto       | 1779527543: Client om-client-18240 [172.19.0.1:54042] disconnected: connection closed by client.
+open_mower_ros  | [2026-05-23 09:12:23] [error] handle_read_frame error: websocketpp.transport:7 (End of File)
+open_mower_ros  | [2026-05-23 09:12:23] [control] Control frame received with opcode 8
+open_mower_ros  | [2026-05-23 09:12:23] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 2 payload bytes
+open_mower_ros  | [2026-05-23 09:12:23] [frame_header] Header Bytes: 
+open_mower_ros  | [0] (2) 88 02 
+open_mower_ros  | 
+open_mower_ros  | [2026-05-23 09:12:23] [disconnect] Disconnect close local:[1006,End of File] remote:[1001]
+open_mower_ros  | [0m[INFO] [1779527547.793621032]: GPS quality: 0.883274[0m
+open_mower_ros  | [0m[INFO] [1779527558.293336262]: GPS quality: 0.883274[0m
+OpenMowerApp    | 172.19.0.1 - - [23/May/2026:09:12:47 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
+open_mower_ros  | [0m[INFO] [1779527568.293520261]: GPS quality: 0.883274[0m
+Mosquitto       | 1779527569: New connection from 172.19.0.1:52900 on port 9001.
+Mosquitto       | 1779527569: New client connected from 172.19.0.1:52900 as om-client-90188 (p5, c0, k0).
+open_mower_ros  | [0m[INFO] [1779527578.793306430]: GPS quality: 0.832892[0m
+open_mower_ros  | [0m[INFO] [1779527589.293300887]: GPS quality: 0.886642[0m
+open_mower_ros  | [0m[INFO] [1779527597.853628699]: Got action: mower_logic:area_recording/start_recording[0m
+open_mower_ros  | [0m[INFO] [1779527597.854795608]: Got start recording[0m
+open_mower_ros  | [0m[INFO] [1779527597.861378878]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527597.863474921]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527597.917061425]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527597.919097432]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527597.919255429]: recordNewPolygon[0m
+open_mower_ros  | [0m[INFO] [1779527599.293307310]: GPS quality: 0.893699[0m
+open_mower_ros  | [2026-05-23 09:13:21] [connect] WebSocket Connection [2a01:cb1d:c10:2c00:58a6:1892:2917:dad2]:47732 v13 "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36" / 101
+open_mower_ros  | [0m[INFO] [1779527601.154725955]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527601.698684069]: vx:0.2986669921875 vr: 0.091022216796875[0m
+open_mower_ros  | [0m[INFO] [1779527602.199353653]: vx:0.34488922119140625 vr: 0.045511474609375005[0m
+open_mower_ros  | [0m[INFO] [1779527602.789461424]: vx:0.43377777099609377 vr: -0.38115527343750005[0m
+open_mower_ros  | [0m[INFO] [1779527603.406673040]: vx:0.43377777099609377 vr: -0.38115527343750005[0m
+open_mower_ros  | [0m[INFO] [1779527604.127449765]: vx:0.40533355712890623 vr: -0.512[0m
+open_mower_ros  | [0m[INFO] [1779527604.700931446]: vx:0.6293338012695312 vr: -0.250310791015625[0m
+open_mower_ros  | [0m[INFO] [1779527605.205047594]: vx:0.6151113891601563 vr: -0.5176884765625[0m
+open_mower_ros  | [0m[INFO] [1779527605.797420897]: vx:0.6542227172851562 vr: -0.43235522460937503[0m
+open_mower_ros  | [0m[INFO] [1779527606.441508220]: vx:0.7324447631835938 vr: -0.32426635742187504[0m
+open_mower_ros  | [0m[INFO] [1779527607.023745673]: vx:0.6542227172851562 vr: 0.187733642578125[0m
+open_mower_ros  | [0m[INFO] [1779527607.599276370]: vx:0.50844482421875 vr: 0.893156005859375[0m
+open_mower_ros  | [0m[INFO] [1779527608.137744416]: vx:0.39822265625 vr: 1.097955810546875[0m
+open_mower_ros  | [0m[INFO] [1779527608.692912523]: vx:0.72888916015625 vr: 0.051200439453125[0m
+open_mower_ros  | [0m[INFO] [1779527609.209283025]: vx:0.6897781372070313 vr: -0.19911083984375[0m
+open_mower_ros  | [0m[INFO] [1779527609.714952212]: vx:0.43733367919921873 vr: -0.142221923828125[0m
+open_mower_ros  | [0m[INFO] [1779527609.793323478]: GPS quality: 0.897409[0m
+open_mower_ros  | [0m[INFO] [1779527610.299365982]: vx:0.2808892822265625 vr: -0.466488525390625[0m
+open_mower_ros  | [0m[INFO] [1779527610.800043664]: vx:0.2275555419921875 vr: -0.512[0m
+open_mower_ros  | [0m[INFO] [1779527611.416406925]: vx:0.5297781372070313 vr: 0.147911376953125[0m
+open_mower_ros  | [0m[INFO] [1779527611.992286271]: vx:0.5368893432617188 vr: -0.164977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527612.593597479]: vx:0.48 vr: -0.32995556640625[0m
+open_mower_ros  | [0m[INFO] [1779527613.122252075]: vx:0.44800048828125 vr: -0.40959960937500006[0m
+open_mower_ros  | [0m[INFO] [1779527613.755621070]: vx:0.3875555419921875 vr: -0.5461330566406251[0m
+open_mower_ros  | [0m[INFO] [1779527614.332656974]: vx:0.41244476318359374 vr: -0.386843994140625[0m
+open_mower_ros  | [0m[INFO] [1779527614.891530966]: vx:0.45511138916015625 vr: 0.35271142578125003[0m
+open_mower_ros  | [0m[INFO] [1779527615.477799217]: vx:0.44800048828125 vr: 0.34702221679687506[0m
+open_mower_ros  | [0m[INFO] [1779527616.002736257]: vx:0.4764447021484375 vr: 0.21617822265625[0m
+open_mower_ros  | [0m[INFO] [1779527616.512549050]: vx:0.4266668701171875 vr: 0.477866943359375[0m
+open_mower_ros  | [0m[INFO] [1779527617.107274513]: vx:0.3626669311523438 vr: 0.23893359375[0m
+open_mower_ros  | [0m[INFO] [1779527617.627207746]: vx:0.2311114501953125 vr: -0.69973291015625[0m
+open_mower_ros  | [0m[INFO] [1779527618.217125316]: vx:0.20266693115234374 vr: 0.733866943359375[0m
+open_mower_ros  | [0m[INFO] [1779527618.799401822]: vx:0.27377777099609374 vr: 0.022755859375000003[0m
+open_mower_ros  | [0m[INFO] [1779527619.305715626]: vx:0.20266693115234374 vr: -0.466488525390625[0m
+open_mower_ros  | [0m[INFO] [1779527619.893419771]: vx:0.24533355712890625 vr: -0.38115527343750005[0m
+open_mower_ros  | [0m[INFO] [1779527620.293343393]: GPS quality: 0.897409[0m
+open_mower_ros  | [0m[INFO] [1779527620.397146906]: vx:0.15288909912109375 vr: -0.364088623046875[0m
+open_mower_ros  | [0m[INFO] [1779527620.898877276]: vx:0.3555560302734375 vr: 0.15928930664062502[0m
+open_mower_ros  | [0m[INFO] [1779527621.439871699]: vx:0.23822265625 vr: 0.7224892578125001[0m
+open_mower_ros  | [0m[INFO] [1779527622.045371007]: vx:0.4266668701171875 vr: -0.096710693359375[0m
+open_mower_ros  | [0m[INFO] [1779527622.658212056]: vx:0.3662222290039063 vr: -0.284444091796875[0m
+open_mower_ros  | [0m[INFO] [1779527623.196968218]: vx:0.30222259521484374 vr: -0.386843994140625[0m
+open_mower_ros  | [0m[INFO] [1779527623.706785380]: vx:0.18844482421875 vr: 0.18204443359375[0m
+open_mower_ros  | [0m[INFO] [1779527624.308322597]: vx:0.3662222290039063 vr: 0.051200439453125[0m
+open_mower_ros  | [0m[INFO] [1779527624.916681204]: vx:0.43022247314453127 vr: -0.07395556640624999[0m
+open_mower_ros  | [0m[INFO] [1779527625.436822704]: vx:0.483555908203125 vr: -0.284444091796875[0m
+open_mower_ros  | [0m[INFO] [1779527626.029647551]: vx:0.48711151123046875 vr: -0.32995556640625[0m
+open_mower_ros  | [0m[INFO] [1779527626.609940018]: vx:0.4160003662109375 vr: -0.77937744140625[0m
+open_mower_ros  | [0m[INFO] [1779527627.191058885]: vx:0.4408892822265625 vr: -0.22755517578125[0m
+open_mower_ros  | [0m[INFO] [1779527627.801435435]: vx:0.4657781982421875 vr: -0.36977734375000004[0m
+open_mower_ros  | [0m[INFO] [1779527628.301556998]: vx:0.44444488525390624 vr: -0.568888916015625[0m
+open_mower_ros  | [0m[INFO] [1779527628.903513220]: vx:0.4408892822265625 vr: -0.5233774414062501[0m
+open_mower_ros  | [0m[INFO] [1779527629.493212705]: vx:0.4693338012695312 vr: -0.614399658203125[0m
+open_mower_ros  | [0m[INFO] [1779527630.001699684]: vx:0.44444488525390624 vr: -0.6940441894531251[0m
+open_mower_ros  | [0m[INFO] [1779527630.549783612]: vx:0.4160003662109375 vr: -0.7395551757812501[0m
+open_mower_ros  | [0m[INFO] [1779527630.793229697]: GPS quality: 0.897409[0m
+open_mower_ros  | [0m[INFO] [1779527632.394950222]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527632.899168966]: vx:0.28800048828125 vr: 0.045511230468750004[0m
+open_mower_ros  | [0m[INFO] [1779527633.431276214]: vx:0.39822265625 vr: -0.056888916015625006[0m
+open_mower_ros  | [0m[INFO] [1779527634.006201690]: vx:0.5048892211914062 vr: -0.409599853515625[0m
+open_mower_ros  | [0m[INFO] [1779527634.529850646]: vx:0.5511114501953125 vr: -0.739555419921875[0m
+open_mower_ros  | [0m[INFO] [1779527635.103078551]: vx:0.3911114501953125 vr: -0.9329775390625001[0m
+open_mower_ros  | [0m[INFO] [1779527635.618485841]: vx:0.5048892211914062 vr: -0.46648876953125007[0m
+open_mower_ros  | [0m[INFO] [1779527636.210978508]: vx:0.44800048828125 vr: -0.779377685546875[0m
+open_mower_ros  | [0m[INFO] [1779527636.714570329]: vx:0.44800048828125 vr: -0.8305776367187501[0m
+open_mower_ros  | [0m[INFO] [1779527637.221912527]: vx:0.4586669921875 vr: -0.819199951171875[0m
+open_mower_ros  | [0m[INFO] [1779527637.805888912]: vx:0.49777801513671877 vr: -0.6655998535156251[0m
+open_mower_ros  | [0m[INFO] [1779527638.313391919]: vx:0.5048892211914062 vr: -0.5518225097656251[0m
+open_mower_ros  | [0m[INFO] [1779527638.910570336]: vx:0.49422271728515627 vr: -0.768[0m
+open_mower_ros  | [0m[INFO] [1779527639.462993653]: vx:0.46222259521484377 vr: -0.8817783203125[0m
+open_mower_ros  | [0m[INFO] [1779527640.002925536]: vx:0.44444488525390624 vr: -0.9614223632812501[0m
+open_mower_ros  | [0m[INFO] [1779527640.606946182]: vx:0.44444488525390624 vr: -0.8817783203125[0m
+open_mower_ros  | [0m[INFO] [1779527640.793326644]: GPS quality: 0.897409[0m
+open_mower_ros  | [0m[INFO] [1779527641.205776609]: vx:0.45511138916015625 vr: -0.341333251953125[0m
+open_mower_ros  | [0m[INFO] [1779527641.706308087]: vx:0.2915557861328125 vr: 0.273066650390625[0m
+open_mower_ros  | [0m[INFO] [1779527642.212133774]: vx:0.4515557861328125 vr: -0.4494221191406251[0m
+open_mower_ros  | [0m[INFO] [1779527642.830714023]: vx:0.373333740234375 vr: 0.05119970703125[0m
+open_mower_ros  | [0m[INFO] [1779527643.422606024]: vx:0.43733367919921873 vr: -0.534755859375[0m
+open_mower_ros  | [0m[INFO] [1779527644.005016532]: vx:0.43377777099609377 vr: -0.6655998535156251[0m
+open_mower_ros  | [0m[INFO] [1779527644.538398181]: vx:0.44800048828125 vr: -0.301510986328125[0m
+open_mower_ros  | [0m[INFO] [1779527645.123820071]: vx:0.4728890991210937 vr: -0.512[0m
+open_mower_ros  | [0m[INFO] [1779527645.667002836]: vx:0.43733367919921873 vr: -0.8647109374999999[0m
+open_mower_ros  | [0m[INFO] [1779527646.206970188]: vx:0.43022247314453127 vr: -0.58595556640625[0m
+open_mower_ros  | [0m[INFO] [1779527646.710592663]: vx:0.43377777099609377 vr: -0.597333251953125[0m
+open_mower_ros  | [0m[INFO] [1779527647.335312614]: vx:0.33422271728515623 vr: -0.568888916015625[0m
+open_mower_ros  | [0m[INFO] [1779527647.920929132]: vx:-0.04977752685546875 vr: 0.932977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527648.428259484]: vx:0.2560003662109375 vr: -0.21048876953125004[0m
+open_mower_ros  | [0m[INFO] [1779527649.012037707]: vx:0.1066668701171875 vr: 0.420977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527649.603178472]: vx:0.15288909912109375 vr: 0.5916445312499999[0m
+open_mower_ros  | [0m[INFO] [1779527650.208378399]: vx:0.3413336181640625 vr: 0.119466796875[0m
+open_mower_ros  | [0m[INFO] [1779527650.803780210]: vx:0.23822265625 vr: 0.44942236328125[0m
+open_mower_ros  | [0m[INFO] [1779527651.293328376]: GPS quality: 0.900753[0m
+open_mower_ros  | [0m[INFO] [1779527651.322912543]: vx:0.09955596923828125 vr: 0.7452446289062501[0m
+open_mower_ros  | [0m[INFO] [1779527651.927399373]: vx:0.36977813720703123 vr: 0.2673779296875[0m
+open_mower_ros  | [0m[INFO] [1779527652.528367411]: vx:0.2808892822265625 vr: 0.676977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527653.109114953]: vx:0.4408892822265625 vr: -0.273066650390625[0m
+open_mower_ros  | [0m[INFO] [1779527653.609650884]: vx:0.41955596923828126 vr: -0.91022216796875[0m
+open_mower_ros  | [0m[INFO] [1779527654.130243358]: vx:0.40533355712890623 vr: -0.8988442382812502[0m
+open_mower_ros  | [0m[INFO] [1779527654.713185949]: vx:0.3626669311523438 vr: -0.23893334960937498[0m
+open_mower_ros  | [0m[INFO] [1779527655.218639551]: vx:0.41244476318359374 vr: -0.0284443359375[0m
+open_mower_ros  | [0m[INFO] [1779527655.808183324]: vx:0.49777801513671877 vr: -0.517688720703125[0m
+open_mower_ros  | [0m[INFO] [1779527656.309110742]: vx:0.4728890991210937 vr: -0.8647109374999999[0m
+open_mower_ros  | [0m[INFO] [1779527656.830637457]: vx:0.41955596923828126 vr: -0.9329775390625001[0m
+open_mower_ros  | [0m[INFO] [1779527657.344668615]: vx:0.49777801513671877 vr: -0.60871142578125[0m
+open_mower_ros  | [0m[INFO] [1779527657.904369376]: vx:0.5653335571289062 vr: -0.6030222167968751[0m
+open_mower_ros  | [0m[INFO] [1779527658.456543380]: vx:0.5226669311523438 vr: -0.8703999023437501[0m
+open_mower_ros  | [0m[INFO] [1779527659.010044128]: vx:0.45511138916015625 vr: -1.00693310546875[0m
+open_mower_ros  | [0m[INFO] [1779527659.610856078]: vx:0.6293338012695312 vr: -0.80213330078125[0m
+open_mower_ros  | [0m[INFO] [1779527660.210093831]: vx:0.6916095612653815 vr: -1.1556345052834585[0m
+open_mower_ros  | [0m[INFO] [1779527660.724217470]: vx:0.6093942559256121 vr: -1.2685877662041625[0m
+open_mower_ros  | [0m[INFO] [1779527661.328259230]: vx:0.569564690439252 vr: -1.3151144141542928[0m
+open_mower_ros  | [0m[INFO] [1779527661.793230249]: GPS quality: 0.886642[0m
+open_mower_ros  | [0m[INFO] [1779527661.908535429]: vx:0.40450618958910695 vr: -1.4632564167005384[0m
+open_mower_ros  | [0m[INFO] [1779527662.427805537]: vx:0.43733367919921873 vr: -1.416533203125[0m
+open_mower_ros  | [0m[INFO] [1779527663.018239445]: vx:0.583111572265625 vr: -1.143466796875[0m
+open_mower_ros  | [0m[INFO] [1779527663.619444108]: vx:0.5409246282795479 vr: -1.3457137136452242[0m
+open_mower_ros  | [0m[INFO] [1779527664.226311589]: vx:0.5547004642005385 vr: -1.3312801851001204[0m
+open_mower_ros  | [0m[INFO] [1779527664.815312060]: vx:0.60800048828125 vr: -1.15484423828125[0m
+open_mower_ros  | [0m[INFO] [1779527665.340502879]: vx:0.54556602665956 vr: -1.3409085498349784[0m
+open_mower_ros  | [0m[INFO] [1779527665.899444230]: vx:0.5507953490955835 vr: -1.3354245308296409[0m
+open_mower_ros  | [0m[INFO] [1779527666.410255218]: vx:0.5386619741225139 vr: -1.3480351593130488[0m
+open_mower_ros  | [0m[INFO] [1779527666.982547902]: vx:0.5018172807316702 vr: -1.3839578414472116[0m
+open_mower_ros  | [0m[INFO] [1779527668.018780227]: vx:0.5315910530935526 vr: -1.355201843938191[0m
+open_mower_ros  | [0m[INFO] [1779527671.793331133]: GPS quality: 0.869137[0m
+open_mower_ros  | [0m[INFO] [1779527682.293294271]: GPS quality: 0.893934[0m
+open_mower_ros  | [0m[INFO] [1779527682.353408743]: vx:0.4764447021484375 vr: -0.43235546874999997[0m
+open_mower_ros  | [0m[INFO] [1779527692.793244802]: GPS quality: 0.893934[0m
+open_mower_ros  | [0m[INFO] [1779527702.793297173]: GPS quality: 0.890341[0m
+open_mower_ros  | [ERROR] [1779527704.338345]: RTCM data not received for 30 seconds, reconnecting
+open_mower_ros  | [ERROR] [1779527704.349421]: Reconnecting in 300.0 seconds
+open_mower_ros  | [WARN] [1779527705.662760]: NMEA sent before client was connected, discarding NMEA
+Mosquitto       | 1779527709: Client om-client-90188 [172.19.0.1:52900] disconnected: connection closed by client.
+open_mower_ros  | [2026-05-23 09:15:09] [info] asio async_read_at_least error: system:104 (Connection reset by peer)
+open_mower_ros  | [2026-05-23 09:15:09] [error] handle_read_frame error: websocketpp.transport:2 (Underlying Transport Error)
+open_mower_ros  | [2026-05-23 09:15:09] [disconnect] Disconnect close local:[1006,Underlying Transport Error] remote:[1006]
+open_mower_ros  | [0m[INFO] [1779527712.793317726]: GPS quality: 0.886863[0m
+Mosquitto       | 1779527715: New connection from 172.19.0.1:49802 on port 9001.
+Mosquitto       | 1779527715: New client connected from 172.19.0.1:49802 as om-client-90188 (p5, c0, k0).
+open_mower_ros  | [2026-05-23 09:15:15] [connect] WebSocket Connection [2a01:cb1d:c10:2c00:58a6:1892:2917:dad2]:34980 v13 "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36" / 101
+open_mower_ros  | [WARN] [1779527715.863525]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527715.909796390]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527716.439170956]: vx:-0.20977752685546874 vr: 0.10239990234375002[0m
+open_mower_ros  | [0m[INFO] [1779527716.955192283]: vx:-0.20977752685546874 vr: 0.10239990234375002[0m
+open_mower_ros  | [0m[INFO] [1779527717.537358851]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527718.062000784]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527718.875802687]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527719.429211334]: vx:0.05688873291015625 vr: 0.44373339843750004[0m
+open_mower_ros  | [0m[INFO] [1779527720.048628979]: vx:0.184888916015625 vr: 0.18204443359375[0m
+open_mower_ros  | [0m[INFO] [1779527720.633601172]: vx:0.295111083984375 vr: -0.466489013671875[0m
+open_mower_ros  | [0m[INFO] [1779527721.146640371]: vx:0.2986666870117187 vr: -0.352711181640625[0m
+open_mower_ros  | [0m[INFO] [1779527721.648345512]: vx:0.355555419921875 vr: -0.119466796875[0m
+open_mower_ros  | [0m[INFO] [1779527722.226627580]: vx:0.455111083984375 vr: -0.574577880859375[0m
+open_mower_ros  | [0m[INFO] [1779527722.885650008]: vx:0.48711090087890624 vr: -0.967111328125[0m
+open_mower_ros  | [0m[INFO] [1779527723.293213364]: GPS quality: 0.883274[0m
+open_mower_ros  | [0m[INFO] [1779527723.431798523]: vx:0.30933319091796874 vr: -1.240177734375[0m
+open_mower_ros  | [0m[INFO] [1779527723.933138149]: vx:0.44444427490234373 vr: -0.26168896484375004[0m
+open_mower_ros  | [0m[INFO] [1779527724.526506019]: vx:0.2773333740234375 vr: 0.637155517578125[0m
+open_mower_ros  | [0m[INFO] [1779527725.037852734]: vx:0.32711090087890626 vr: 0.056888916015625006[0m
+open_mower_ros  | [0m[INFO] [1779527725.630766324]: vx:0.38044403076171873 vr: -0.119466796875[0m
+open_mower_ros  | [WARN] [1779527726.038105]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527726.230789793]: vx:0.36977783203125 vr: -0.0682666015625[0m
+open_mower_ros  | [0m[INFO] [1779527726.775213841]: vx:0.2026666259765625 vr: 0.41528857421875004[0m
+open_mower_ros  | [0m[INFO] [1779527727.322184511]: vx:0.18133331298828126 vr: 0.51768896484375[0m
+open_mower_ros  | [0m[INFO] [1779527727.828621090]: vx:0.28444427490234375 vr: 0.27875561523437503[0m
+open_mower_ros  | [0m[INFO] [1779527728.437512752]: vx:0.305777587890625 vr: 0.23324438476562503[0m
+open_mower_ros  | [0m[INFO] [1779527729.033618852]: vx:0.2631109619140625 vr: -0.6997333984375[0m
+open_mower_ros  | [0m[INFO] [1779527729.627564173]: vx:0.2524444580078125 vr: 0.18773339843750003[0m
+open_mower_ros  | [0m[INFO] [1779527730.142030450]: vx:0.35911102294921876 vr: -0.5575112304687501[0m
+open_mower_ros  | [0m[INFO] [1779527730.774786510]: vx:0.34844451904296875 vr: -1.0126220703125[0m
+open_mower_ros  | [0m[INFO] [1779527731.325565318]: vx:0.2986666870117187 vr: -0.8647109374999999[0m
+open_mower_ros  | [0m[INFO] [1779527731.926022412]: vx:0.3982220458984375 vr: -0.13084448242187502[0m
+open_mower_ros  | [0m[INFO] [1779527732.523750474]: vx:0.40177764892578127 vr: -0.386844482421875[0m
+open_mower_ros  | [0m[INFO] [1779527733.063953611]: vx:0.4124444580078125 vr: -0.8760888671875[0m
+open_mower_ros  | [0m[INFO] [1779527733.293313780]: GPS quality: 0.879584[0m
+open_mower_ros  | [0m[INFO] [1779527733.616930932]: vx:0.45866668701171875 vr: -0.682666748046875[0m
+open_mower_ros  | [0m[INFO] [1779527734.133816233]: vx:0.5439999389648438 vr: -0.32995556640625[0m
+open_mower_ros  | [0m[INFO] [1779527734.660597178]: vx:0.44088897705078123 vr: 0.21048876953125004[0m
+open_mower_ros  | [0m[INFO] [1779527735.233518585]: vx:0.08888885498046875 vr: 0.6997333984375[0m
+open_mower_ros  | [0m[INFO] [1779527735.843522381]: vx:0.34844451904296875 vr: 0.20480004882812503[0m
+open_mower_ros  | [WARN] [1779527736.038687]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527736.424941549]: vx:0.35911102294921876 vr: 0.136533203125[0m
+open_mower_ros  | [0m[INFO] [1779527736.929255173]: vx:0.34844451904296875 vr: 0.022755615234375002[0m
+open_mower_ros  | [0m[INFO] [1779527737.441301007]: vx:0.295111083984375 vr: 0.14791113281249998[0m
+open_mower_ros  | [33m[WARN] [1779527737.770992421]: Costmap2DROS transform timeout. Current time: 1779527737.7708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [0m[INFO] [1779527738.028817484]: vx:-0.02133331298828125 vr: 0.8590222167968751[0m
+open_mower_ros  | [0m[INFO] [1779527738.441130366]: PJB: OnServiceDisconnected. ID: 1[0m
+open_mower_ros  | [33m[WARN] [1779527738.440946702]: [ID=1] Service timed out, removing service.[0m
+open_mower_ros  | [33m[WARN] [1779527738.441269106]: [ID=2] Service timed out, removing service.[0m
+open_mower_ros  | [33m[WARN] [1779527738.441467825]: [ID=3] Service timed out, removing service.[0m
+open_mower_ros  | [33m[WARN] [1779527738.441624861]: [ID=4] Service timed out, removing service.[0m
+open_mower_ros  | [33m[WARN] [1779527738.441779877]: [ID=7] Service timed out, removing service.[0m
+open_mower_ros  | [33m[WARN] [1779527738.441938394]: [ID=8] Service timed out, removing service.[0m
+open_mower_ros  | [0m[INFO] [1779527738.441377234]: PJB: OnServiceDisconnected. ID: 2[0m
+open_mower_ros  | [0m[INFO] [1779527738.441551047]: PJB: OnServiceDisconnected. ID: 3[0m
+open_mower_ros  | [0m[INFO] [1779527738.441701100]: PJB: OnServiceDisconnected. ID: 4[0m
+open_mower_ros  | [0m[INFO] [1779527738.441858987]: PJB: OnServiceDisconnected. ID: 7[0m
+open_mower_ros  | [0m[INFO] [1779527738.442020689]: PJB: OnServiceDisconnected. ID: 8[0m
+open_mower_ros  | [33m[WARN] [1779527738.457009637]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.461126847]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.486618890]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.493118571]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.493623639]: [ID=3] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527738.565407419]: vx:0 vr: 0[0m
+open_mower_ros  | [33m[WARN] [1779527738.567342969]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.793367513]: om_mower_logic: EMERGENCY pose values stopped. dt was: 1.379264288[0m
+open_mower_ros  | [33m[WARN] [1779527738.794316983]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527738.970975865]: Costmap2DROS transform timeout. Current time: 1779527738.9708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527738.993147726]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527739.176573103]: vx:0.0071112060546875 vr: 0.278755859375[0m
+open_mower_ros  | [33m[WARN] [1779527739.179459327]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.274608344]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.294104165]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.294603196]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.295161411]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.295975605]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.296108714]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.296189695]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.297310107]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.297802175]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.365670670]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.464924101]: [ID=5] Service timed out, removing service.[0m
+open_mower_ros  | [0m[INFO] [1779527739.466031032]: PJB: OnServiceDisconnected. ID: 5[0m
+open_mower_ros  | [33m[WARN] [1779527739.467592272]: [ID=6] Service timed out, removing service.[0m
+open_mower_ros  | [0m[INFO] [1779527739.467819307]: PJB: OnServiceDisconnected. ID: 6[0m
+open_mower_ros  | [33m[WARN] [1779527739.491590797]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.493120797]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.571482295]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527739.682385678]: vx:0 vr: 0.989866943359375[0m
+open_mower_ros  | [33m[WARN] [1779527739.683999195]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.769561902]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.794047829]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.870085596]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.971219374]: Costmap2DROS transform timeout. Current time: 1779527739.9710, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527739.971665868]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527739.993127665]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.072398727]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.172946940]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527740.271346623]: vx:-0.1777777099609375 vr: 1.4336002197265625[0m
+open_mower_ros  | [33m[WARN] [1779527740.273411505]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.294390678]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295131410]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295274945]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295363444]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295434980]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295504535]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295576812]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.295644145]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.430276372]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.448999054]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.490078669]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.493145892]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.503509007]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.510302777]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.579663533]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.663388097]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.794248018]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527740.840694995]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.841730094]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.867318989]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.900395701]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.940181906]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.953820352]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527740.971285845]: Costmap2DROS transform timeout. Current time: 1779527740.9711, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527740.993131526]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.046372366]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.116162099]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.290694571]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.291731873]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.294599894]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295115740]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295260849]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295347515]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295433402]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295513920]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295584401]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.295656900]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.317359657]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.350383888]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.390104465]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.404669438]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.493142465]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.496357537]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.568971940]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.740816203]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.741766821]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.767337606]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.794218634]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527741.801835060]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.840200487]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.854702757]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.962908916]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527741.993130682]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.022287775]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.170987967]: Costmap2DROS transform timeout. Current time: 1779527742.1708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527742.190667619]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.191846476]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [0m[INFO] [1779527742.206132878]: vx:0 vr: 0[0m
+open_mower_ros  | [33m[WARN] [1779527742.208086280]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.217283947]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.253511511]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.290084256]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.294265391]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.294794811]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.295245842]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.295344934]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.295420748]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.296484309]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.296693621]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.297064006]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.305539256]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.347301624]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.389831538]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.412901871]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.475091290]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.483481670]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.493119128]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.594016433]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.640957831]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.641988559]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.667273625]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.704893932]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [0m[INFO] [1779527742.712848595]: vx:0.764444580078125 vr: 0.18204443359375[0m
+open_mower_ros  | [33m[WARN] [1779527742.714662833]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.740178267]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.755497453]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.794111266]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.857952201]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.858157236]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.863345599]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.927920711]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527742.961892432]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527742.993209463]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.012610526]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.035217421]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.090693495]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.091734168]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.117291972]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.119539685]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.156263059]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.190450592]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.205456653]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.294404399]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295130594]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295277018]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295392720]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295469016]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295541515]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.295621218]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.296261173]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.330599149]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.370986256]: Costmap2DROS transform timeout. Current time: 1779527743.3708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527743.380650066]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.493123289]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.494091833]: [ID=3] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.540809179]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.541908517]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.567303286]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.608475754]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.640548869]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.655499356]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.780565353]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.793379884]: om_mower_logic: EMERGENCY pose values stopped. dt was: 6.379282788[0m
+open_mower_ros  | [33m[WARN] [1779527743.794422150]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527743.833561901]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.990773420]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.992068126]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527743.993150613]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.017337156]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.059896053]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.090459094]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.105482784]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.247216527]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.286370983]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.294410961]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.294605921]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.294722883]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.294833030]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.294921047]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.295003787]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.295543984]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.295731556]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.370989079]: Costmap2DROS transform timeout. Current time: 1779527744.3708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527744.441693434]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.442716051]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.467326737]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.493137502]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.511678372]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.540550062]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.555705677]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.697197757]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.739263548]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.794248870]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527744.891669830]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.892796631]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.917333726]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.963080362]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.990473663]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527744.993111335]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.005652666]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.163776104]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.191952192]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.294303836]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.294500389]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.294601055]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.295287213]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.295430915]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.295512544]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.295591228]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.295669801]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.341790230]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.342770292]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.367262425]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.370978232]: Costmap2DROS transform timeout. Current time: 1779527745.3708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527745.415133036]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.440915486]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.455668495]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.493133823]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.613773618]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.644810950]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.791668912]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.792852472]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.794361046]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527745.817285846]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.865479046]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.891562048]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.905660379]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527745.993136238]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.080366990]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.097456934]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.241765447]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.243046191]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.267280883]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.294219856]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.294891756]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.295094809]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.295672987]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.295784208]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.295866226]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.295941669]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.296277906]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.317044583]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.341660048]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.355649103]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.432491405]: Costmap2DROS transform timeout. Current time: 1779527746.4323, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527746.493151457]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.530419474]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.550260736]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.691658321]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.692764512]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.717289144]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.769078135]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.791537422]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.794090392]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.805624050]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527746.993147268]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527746.996938778]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.002408250]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.141748158]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.142792035]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.167283372]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.220441310]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.242096551]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.255636686]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.294178725]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.294851661]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.294981771]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.295075400]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.295155417]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.296849249]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.296972766]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.297052265]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.446978417]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.455882440]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.493086458]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.570983824]: Costmap2DROS transform timeout. Current time: 1779527747.5708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527747.591646873]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.592666620]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.617352214]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.671839451]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.691930970]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.705633399]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.794253877]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527747.908800304]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.913919261]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527747.993144647]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.042015767]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.043314344]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.067325187]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.124137139]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.142037129]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.155648855]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294177868]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294392643]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294484624]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294565382]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294644585]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294717843]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294785213]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.294853341]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.361553434]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.364018664]: [ID=5] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.492080024]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.493248862]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.494597068]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.495470502]: [ID=3] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.517202409]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.575492361]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.592758007]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.606480825]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [0m[INFO] [1779527748.719315459]: Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [33m[WARN] [1779527748.770989935]: Costmap2DROS transform timeout. Current time: 1779527748.7708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [33m[WARN] [1779527748.793376168]: om_mower_logic: EMERGENCY pose values stopped. dt was: 11.379282923[0m
+open_mower_ros  | [33m[WARN] [1779527748.795096999]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527748.815005446]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.941993449]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.943218490]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.967232685]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527748.993133338]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.027824591]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.042821042]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.056529508]: [ID=6] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.267854414]: [ID=2] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.294373024]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.294559892]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.295352179]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.295675416]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.296269335]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.296843291]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.297514505]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.298191053]: [ID=8] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527749.339007622]: Got action: mower_logic/reset_emergency[0m
+open_mower_ros  | [33m[WARN] [1779527749.340221107]: Got reset emergency action.[0m
+open_mower_ros  | [33m[WARN] [1779527749.342063900]: [ID=2] no endpoint for service[0m
+open_mower_ros  | [33m[WARN] [1779527749.347934941]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527749.349185352]: successfully set emergency enabled to 0[0m
+open_mower_ros  | [33m[WARN] [1779527749.391903769]: [ID=4] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.393020200]: [ID=8] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.417273966]: [ID=7] Received heartbeat from an unknown service[0m
+open_mower_ros  | [0m[INFO] [1779527749.418417156]: Found new service (Type: InputService, ID: 7, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [0m[INFO] [1779527749.437391023]: Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [0m[INFO] [1779527749.442552591]: Found new service (Type: HighLevelService, ID: 8, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [0m[INFO] [1779527749.447652085]: Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [33m[WARN] [1779527749.479243561]: [ID=3] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.492734326]: [ID=1] Received heartbeat from an unknown service[0m
+open_mower_ros  | [33m[WARN] [1779527749.493115469]: [ID=1] no endpoint for service[0m
+open_mower_ros  | [0m[INFO] [1779527749.498073947]: Found new service (Type: EmergencyService, ID: 1, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [0m[INFO] [1779527749.506530124]: [ID=1] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.506810362]: [ID=4] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.506970008]: [ID=5] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.507107488]: [ID=6] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.507244190]: [ID=7] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.507382966]: [ID=8] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527749.507504927]: >>> [ID=1] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.507639111]: >>> [ID=1] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.507732665]: >>> [ID=1] Service started without requiring configuration[0m
+open_mower_ros  | [0m[INFO] [1779527749.507850275]: >>> [ID=4] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.507986107]: [ID=1] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508092106]: PJB: Service Connected! ID: 1[0m
+open_mower_ros  | [0m[INFO] [1779527749.508183234]: [ID=4] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508254159]: PJB: Service Connected! ID: 4[0m
+open_mower_ros  | [0m[INFO] [1779527749.508338640]: [ID=5] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508415898]: PJB: Service Connected! ID: 5[0m
+open_mower_ros  | [0m[INFO] [1779527749.508512971]: [ID=6] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508582618]: PJB: Service Connected! ID: 6[0m
+open_mower_ros  | [0m[INFO] [1779527749.508665228]: [ID=7] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508809504]: PJB: Service Connected! ID: 7[0m
+open_mower_ros  | [0m[INFO] [1779527749.508907374]: [ID=8] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527749.508982039]: PJB: Service Connected! ID: 8[0m
+open_mower_ros  | [0m[INFO] [1779527749.509988676]: >>> [ID=4] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.510147303]: >>> [ID=5] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.510264876]: >>> [ID=5] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.510353745]: >>> [ID=6] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.510442355]: >>> [ID=6] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.510530262]: >>> [ID=7] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.510625538]: >>> [ID=7] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.510701982]: >>> [ID=8] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527749.510782388]: >>> [ID=8] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527749.510859869]: >>> [ID=8] Service started without requiring configuration[0m
+open_mower_ros  | [0m[INFO] [1779527749.534017834]: Found new service (Type: MowerService, ID: 3, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [0m[INFO] [1779527749.576481346]: Found new service (Type: DiffDriveService, ID: 2, endpoint: 172.16.78.150:49153)[0m
+open_mower_ros  | [33m[WARN] [1779527749.661922401]: Last GPS was 12.403 seconds ago.[0m
+open_mower_ros  | [WARN] [1779527749.662869]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527749.770988527]: Costmap2DROS transform timeout. Current time: 1779527749.7708, global_pose stamp: 1779527737.4134, tolerance: 0.3000[0m
+open_mower_ros  | [0m[INFO] [1779527750.379482055]: >>> [ID=5] Requesting Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.379712793]: >>> [ID=5] Received Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.379819662]: >>> [ID=5] Service started after successful configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.500318820]: >>> [ID=4] Requesting Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.500489410]: >>> [ID=4] Received Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.500594650]: >>> [ID=4] Service started after successful configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.506630745]: >>> [ID=6] Requesting Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.506812853]: >>> [ID=6] Received Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.506919593]: >>> [ID=6] Service started after successful configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.507533641]: [ID=2] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527750.507838267]: [ID=3] Sending Service Claim[0m
+open_mower_ros  | [0m[INFO] [1779527750.508299095]: >>> [ID=7] Requesting Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.508479241]: >>> [ID=2] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527750.508583147]: >>> [ID=2] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527750.508676757]: >>> [ID=3] Received claim message[0m
+open_mower_ros  | [0m[INFO] [1779527750.508825589]: >>> [ID=3] service claimed successfully.[0m
+open_mower_ros  | [0m[INFO] [1779527750.508919421]: >>> [ID=3] Service started without requiring configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.510910545]: Input config JSON has 422 bytes, compressed to 134 bytes[0m
+open_mower_ros  | [0m[INFO] [1779527750.511352651]: [ID=2] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527750.511591871]: PJB: Service Connected! ID: 2[0m
+open_mower_ros  | [0m[INFO] [1779527750.511817424]: [ID=3] Successfully claimed service[0m
+open_mower_ros  | [0m[INFO] [1779527750.512004125]: PJB: Service Connected! ID: 3[0m
+open_mower_ros  | [0m[INFO] [1779527750.512131253]: >>> [ID=7] Received Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.512256752]: >>> [ID=7] Service started after successful configuration[0m
+open_mower_ros  | [0m[INFO] [1779527750.657275988]: GPS data now valid[0m
+open_mower_ros  | [0m[INFO] [1779527750.657462115]: First GPS data, moving kalman filter to 10.4527, -32.0795[0m
+open_mower_ros  | [0m[INFO] [1779527750.797036249]: successfully set emergency enabled to 1[0m
+open_mower_ros  | [33m[WARN] [1779527750.797135137]: om_mower_logic: EMERGENCY /mower/status values stopped. dt was: 13.430653409[0m
+open_mower_ros  | [0m[INFO] [1779527751.015772349]: >>> [ID=5] Successfully Configured Charger[0m
+open_mower_ros  | [33m[WARN] [1779527751.293320937]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527751.293229586]: GPS quality: 0.872524[0m
+open_mower_ros  | [0m[INFO] [1779527751.485507947]: >>> [ID=2] Requesting Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527751.486067070]: >>> [ID=2] Received Configuration[0m
+open_mower_ros  | [0m[INFO] [1779527751.486175810]: >>> [ID=2] Service started after successful configuration[0m
+open_mower_ros  | [0m[INFO] [1779527756.170881372]: Got action: mower_logic/reset_emergency[0m
+open_mower_ros  | [33m[WARN] [1779527756.173444657]: Got reset emergency action.[0m
+open_mower_ros  | [0m[INFO] [1779527756.179719823]: successfully set emergency enabled to 0[0m
+open_mower_ros  | [WARN] [1779527759.667581]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527761.293321177]: GPS quality: 0.868756[0m
+open_mower_ros  | [0m[INFO] [1779527764.790597484]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527765.347738897]: vx:-0.024888916015625 vr: 0.420977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527765.851452122]: vx:0.0995556640625 vr: 0.5063115234375001[0m
+open_mower_ros  | [0m[INFO] [1779527766.525069703]: vx:0.17066680908203125 vr: 0.603022705078125[0m
+open_mower_ros  | [0m[INFO] [1779527767.048389634]: vx:0.2026666259765625 vr: 0.48924487304687503[0m
+open_mower_ros  | [0m[INFO] [1779527767.549919066]: vx:0.295111083984375 vr: 0.39253369140625005[0m
+open_mower_ros  | [0m[INFO] [1779527768.159449112]: vx:0.3271112060546875 vr: 0.341333740234375[0m
+open_mower_ros  | [0m[INFO] [1779527768.792499464]: vx:0.46933349609375 vr: -0.216177490234375[0m
+open_mower_ros  | [0m[INFO] [1779527769.343124485]: vx:0.44800018310546874 vr: 0.10808935546875001[0m
+open_mower_ros  | [0m[INFO] [1779527769.844796615]: vx:0.4266668701171875 vr: 0.2503115234375[0m
+open_mower_ros  | [WARN] [1779527769.861158]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527770.522919645]: vx:0.43377777099609377 vr: 0.233244873046875[0m
+open_mower_ros  | [0m[INFO] [1779527771.046908486]: vx:0.38399993896484375 vr: 0.49493359375[0m
+open_mower_ros  | [0m[INFO] [1779527771.293429349]: GPS quality: 0.865464[0m
+open_mower_ros  | [0m[INFO] [1779527771.547714511]: vx:0.4764443969726562 vr: 0.17066699218750003[0m
+open_mower_ros  | [0m[INFO] [1779527772.143823988]: vx:0.5368890380859375 vr: -0.3015107421875[0m
+open_mower_ros  | [0m[INFO] [1779527772.658092308]: vx:0.55111083984375 vr: -0.5461330566406251[0m
+open_mower_ros  | [0m[INFO] [1779527773.248813431]: vx:0.38399993896484375 vr: -1.188977294921875[0m
+open_mower_ros  | [0m[INFO] [1779527773.846781179]: vx:0.08888885498046875 vr: -1.2174221191406251[0m
+open_mower_ros  | [0m[INFO] [1779527774.394939008]: vx:0.18133331298828126 vr: 0.318578125[0m
+open_mower_ros  | [0m[INFO] [1779527774.943673166]: vx:0.30933349609375 vr: -0.2218662109375[0m
+open_mower_ros  | [0m[INFO] [1779527775.453058323]: vx:0.34488861083984373 vr: -0.256[0m
+open_mower_ros  | [0m[INFO] [1779527776.042482390]: vx:0.34844451904296875 vr: 0.449422607421875[0m
+open_mower_ros  | [0m[INFO] [1779527776.708577952]: vx:0.44088897705078123 vr: -0.10808862304687501[0m
+open_mower_ros  | [0m[INFO] [1779527777.241579514]: vx:0.4835552978515625 vr: -0.5461330566406251[0m
+open_mower_ros  | [0m[INFO] [1779527777.753462471]: vx:0.5013333129882812 vr: -0.8021330566406251[0m
+open_mower_ros  | [0m[INFO] [1779527778.287917006]: vx:0.3662222290039063 vr: -0.5973330078125[0m
+open_mower_ros  | [0m[INFO] [1779527778.848842369]: vx:0.43377777099609377 vr: 0.11377807617187502[0m
+open_mower_ros  | [0m[INFO] [1779527779.352222288]: vx:0.3271112060546875 vr: 0.5063115234375001[0m
+open_mower_ros  | [0m[INFO] [1779527779.852770260]: vx:0.18488861083984376 vr: 0.711111572265625[0m
+open_mower_ros  | [WARN] [1779527779.861552]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527780.440747586]: vx:0.21333343505859376 vr: 0.65422265625[0m
+open_mower_ros  | [0m[INFO] [1779527780.950073871]: vx:0.27022216796875 vr: 0.30720043945312503[0m
+open_mower_ros  | [0m[INFO] [1779527781.542339787]: vx:0.295111083984375 vr: 0.375467041015625[0m
+open_mower_ros  | [0m[INFO] [1779527781.793229263]: GPS quality: 0.861707[0m
+open_mower_ros  | [0m[INFO] [1779527782.076638461]: vx:0.3306668090820313 vr: 0.14222265625[0m
+open_mower_ros  | [0m[INFO] [1779527782.607929157]: vx:0.4017779541015625 vr: -0.250310791015625[0m
+open_mower_ros  | [0m[INFO] [1779527783.146023240]: vx:0.4017779541015625 vr: -0.017066650390625[0m
+open_mower_ros  | [0m[INFO] [1779527783.646860014]: vx:0.4195556640625 vr: 0.119467041015625[0m
+open_mower_ros  | [0m[INFO] [1779527784.174155246]: vx:0.43733306884765627 vr: 0.07395556640624999[0m
+open_mower_ros  | [0m[INFO] [1779527784.746595043]: vx:0.44088897705078123 vr: 0.017067138671875003[0m
+open_mower_ros  | [0m[INFO] [1779527785.352577423]: vx:0.519111328125 vr: -0.318577392578125[0m
+open_mower_ros  | [0m[INFO] [1779527785.969888012]: vx:0.5368890380859375 vr: -0.30719970703125[0m
+open_mower_ros  | [0m[INFO] [1779527786.496353976]: vx:0.5404446411132813 vr: -0.67128857421875[0m
+open_mower_ros  | [0m[INFO] [1779527787.048008951]: vx:0.2631112670898437 vr: -0.859021728515625[0m
+open_mower_ros  | [0m[INFO] [1779527787.549243543]: vx:0.27733306884765624 vr: -0.8647106933593751[0m
+open_mower_ros  | [0m[INFO] [1779527788.140861016]: vx:0.37333343505859373 vr: 0.438044921875[0m
+open_mower_ros  | [0m[INFO] [1779527788.655833162]: vx:0.5262222290039063 vr: -0.26737744140625[0m
+open_mower_ros  | [0m[INFO] [1779527789.246989298]: vx:0.49066680908203125 vr: -0.40391064453125003[0m
+open_mower_ros  | [0m[INFO] [1779527789.860007857]: vx:0.4835552978515625 vr: -0.43235522460937503[0m
+open_mower_ros  | [WARN] [1779527789.862786]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527790.380404990]: vx:0.44800018310546874 vr: -0.62577734375[0m
+open_mower_ros  | [0m[INFO] [1779527790.945180604]: vx:0.444444580078125 vr: 0.125156005859375[0m
+open_mower_ros  | [0m[INFO] [1779527791.548767563]: vx:0.45866668701171875 vr: -0.10239965820312501[0m
+open_mower_ros  | [0m[INFO] [1779527791.793289626]: GPS quality: 0.857873[0m
+open_mower_ros  | [0m[INFO] [1779527792.061273814]: vx:0.48 vr: -0.31288842773437503[0m
+open_mower_ros  | [0m[INFO] [1779527792.647032316]: vx:0.4835552978515625 vr: -0.392532958984375[0m
+open_mower_ros  | [0m[INFO] [1779527793.151311390]: vx:0.44800018310546874 vr: -0.6087106933593751[0m
+open_mower_ros  | [0m[INFO] [1779527793.750723875]: vx:0.46933349609375 vr: -0.34702221679687506[0m
+open_mower_ros  | [0m[INFO] [1779527794.256786696]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527794.258268791]: vx:0.4764443969726562 vr: -0.5916440429687501[0m
+open_mower_ros  | [0m[INFO] [1779527794.844793133]: vx:0.455111083984375 vr: -0.6599111328125[0m
+open_mower_ros  | [0m[INFO] [1779527795.261323341]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527795.346320679]: vx:0.455111083984375 vr: -0.654221923828125[0m
+open_mower_ros  | [0m[INFO] [1779527795.853144298]: vx:0.44800018310546874 vr: -0.6371552734375001[0m
+open_mower_ros  | [0m[INFO] [1779527796.280950033]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527796.434692802]: vx:0.40533355712890623 vr: -0.10239965820312501[0m
+open_mower_ros  | [0m[INFO] [1779527796.950975172]: vx:0.42311126708984376 vr: -0.068266357421875[0m
+open_mower_ros  | [0m[INFO] [1779527797.460501051]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527797.545725740]: vx:0.44800018310546874 vr: -0.39822192382812505[0m
+open_mower_ros  | [0m[INFO] [1779527798.069090057]: vx:0.34488861083984373 vr: -0.756621826171875[0m
+open_mower_ros  | [0m[INFO] [1779527798.653915355]: vx:0.28800018310546877 vr: -0.5916440429687501[0m
+open_mower_ros  | [0m[INFO] [1779527798.659168926]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527799.254509184]: vx:0.20977783203125 vr: -0.7907551269531251[0m
+open_mower_ros  | [0m[INFO] [1779527799.664063531]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527799.865278]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527799.893523770]: vx:0.2275555419921875 vr: -0.648532958984375[0m
+open_mower_ros  | [0m[INFO] [1779527800.859198886]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527801.793315794]: GPS quality: 0.857873[0m
+open_mower_ros  | [0m[INFO] [1779527801.862292095]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527803.084848844]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527804.281343181]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527804.293290733]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527805.293295352]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527805.459945087]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527806.657330523]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527806.793280842]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527807.661454959]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527807.793438620]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527808.858289340]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527809.293288102]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527809.293435230]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527809.755369028]: vx:0.0177777099609375 vr: 0.16497802734375[0m
+open_mower_ros  | [0m[INFO] [1779527809.861689737]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527810.038510]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527810.293291987]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527810.293441022]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527810.339547270]: vx:0.02844451904296875 vr: 0.739555908203125[0m
+open_mower_ros  | [0m[INFO] [1779527811.006343284]: vx:0.16 vr: 0.967111572265625[0m
+open_mower_ros  | [0m[INFO] [1779527811.083347857]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527811.542348439]: vx:0.426666259765625 vr: 0.4437336425781251[0m
+open_mower_ros  | [33m[WARN] [1779527811.793206050]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527811.793294049]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527812.142117317]: vx:0.5937777709960937 vr: 0.563200439453125[0m
+open_mower_ros  | [0m[INFO] [1779527812.255719930]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527812.743346350]: vx:0.49066650390625 vr: 1.063822509765625[0m
+open_mower_ros  | [33m[WARN] [1779527812.793206094]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527813.249250644]: vx:0.4871112060546875 vr: 1.149156005859375[0m
+open_mower_ros  | [0m[INFO] [1779527813.261424954]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527813.293252028]: GPS timeout[0m
+open_mower_ros  | [33m[WARN] [1779527813.793220521]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527813.842416292]: vx:0.515555419921875 vr: 0.278755859375[0m
+open_mower_ros  | [0m[INFO] [1779527814.281965586]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527814.346708482]: vx:0.625777587890625 vr: 0.21617822265625[0m
+open_mower_ros  | [33m[WARN] [1779527814.793247867]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527814.793336681]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527814.941603859]: vx:0.47288848876953127 vr: 0.90453369140625[0m
+open_mower_ros  | [0m[INFO] [1779527815.461481995]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527815.561431911]: vx:0.40177764892578127 vr: 0.9614226074218751[0m
+open_mower_ros  | [0m[INFO] [1779527816.176546278]: vx:0.47288848876953127 vr: 0.8590227050781251[0m
+open_mower_ros  | [33m[WARN] [1779527816.293295140]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527816.293454953]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527816.657320185]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527816.733641048]: vx:0.45866668701171875 vr: 0.967111572265625[0m
+open_mower_ros  | [0m[INFO] [1779527817.279696443]: vx:0.36977783203125 vr: 1.09226708984375[0m
+open_mower_ros  | [0m[INFO] [1779527817.660437253]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527817.793534196]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527817.793683972]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527817.837621248]: vx:0.49066650390625 vr: 0.43235595703125[0m
+open_mower_ros  | [0m[INFO] [1779527818.344793411]: vx:0.45866668701171875 vr: 0.267378173828125[0m
+open_mower_ros  | [0m[INFO] [1779527818.858655837]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527818.890359025]: vx:0.4373333740234375 vr: 0.028444824218749998[0m
+open_mower_ros  | [33m[WARN] [1779527819.293277099]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527819.293408153]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527819.505187957]: vx:0.2275555419921875 vr: -0.130843994140625[0m
+open_mower_ros  | [0m[INFO] [1779527819.861222066]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527820.038974]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527820.043742785]: vx:0.565333251953125 vr: 0.39253369140625005[0m
+open_mower_ros  | [33m[WARN] [1779527820.293288640]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527820.293436231]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527820.551843915]: vx:0.6471112060546875 vr: -0.130843994140625[0m
+open_mower_ros  | [0m[INFO] [1779527821.086086426]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527821.087483040]: vx:0.6542221069335937 vr: -0.11946630859375001[0m
+open_mower_ros  | [33m[WARN] [1779527821.293342636]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527821.293542468]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527821.647353813]: vx:0.7075555419921875 vr: -0.233244140625[0m
+open_mower_ros  | [0m[INFO] [1779527822.234901229]: vx:0.5973333740234374 vr: -0.614399658203125[0m
+open_mower_ros  | [0m[INFO] [1779527822.283147460]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527822.742063548]: vx:0.4231109619140625 vr: -0.6655996093750001[0m
+open_mower_ros  | [33m[WARN] [1779527822.793269080]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527822.793414690]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527823.249331591]: vx:0.3875555419921875 vr: -0.69973291015625[0m
+open_mower_ros  | [0m[INFO] [1779527823.459927510]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527823.837993784]: vx:0.7324444580078125 vr: 0.03982250976562501[0m
+open_mower_ros  | [33m[WARN] [1779527824.293277568]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527824.293411789]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527824.438872496]: vx:0.75022216796875 vr: -0.11377734375[0m
+open_mower_ros  | [0m[INFO] [1779527824.658437468]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527824.961472954]: vx:0.746666259765625 vr: -0.38115527343750005[0m
+open_mower_ros  | [33m[WARN] [1779527825.293288092]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527825.293972677]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527825.498746239]: vx:0.6862222290039063 vr: -0.682666259765625[0m
+open_mower_ros  | [0m[INFO] [1779527825.662030976]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527826.040110444]: vx:0.59022216796875 vr: -0.8647109374999999[0m
+open_mower_ros  | [0m[INFO] [1779527826.642238158]: vx:0.5475555419921875 vr: -0.7623105468750001[0m
+open_mower_ros  | [33m[WARN] [1779527826.793259919]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527826.793389418]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527826.858605300]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527827.232470579]: vx:0.554666748046875 vr: -0.7395551757812501[0m
+open_mower_ros  | [0m[INFO] [1779527827.748398220]: vx:0.43377777099609377 vr: -0.8533330078125[0m
+open_mower_ros  | [33m[WARN] [1779527827.793266528]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527827.793398045]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527827.863152637]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527828.362661998]: vx:0.6613333129882812 vr: -0.44373291015625[0m
+open_mower_ros  | [33m[WARN] [1779527828.793287111]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527828.793410776]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527828.956506668]: vx:0.6791107177734375 vr: -0.48355517578124996[0m
+open_mower_ros  | [0m[INFO] [1779527829.085851077]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527829.546892141]: vx:0.6577777099609375 vr: -0.58595556640625[0m
+open_mower_ros  | [WARN] [1779527830.039018]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527830.133213642]: vx:0.6328884887695313 vr: -0.682666259765625[0m
+open_mower_ros  | [0m[INFO] [1779527830.280939539]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527830.293294534]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527830.293435384]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527830.633437953]: vx:0.5475555419921875 vr: -0.8248886718750001[0m
+open_mower_ros  | [0m[INFO] [1779527831.136006740]: vx:0.5475555419921875 vr: -0.81919970703125[0m
+open_mower_ros  | [0m[INFO] [1779527831.460132817]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527831.657890729]: vx:0.5191107177734375 vr: -0.8760883789062501[0m
+open_mower_ros  | [33m[WARN] [1779527831.793248001]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527831.793368871]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527832.243334105]: vx:0.344888916015625 vr: -0.9784887695312501[0m
+open_mower_ros  | [0m[INFO] [1779527832.658826845]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527832.793266240]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527832.793399535]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527832.839636349]: vx:0.6613333129882812 vr: -0.011377441406250001[0m
+open_mower_ros  | [0m[INFO] [1779527833.431530942]: vx:0.5475555419921875 vr: 0.46648925781250006[0m
+open_mower_ros  | [0m[INFO] [1779527833.663268749]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527833.793337230]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527833.793480025]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527834.089429564]: vx:0.20977783203125 vr: 0.955733642578125[0m
+open_mower_ros  | [0m[INFO] [1779527834.630121978]: vx:0.41600006103515624 vr: -0.7224887695312501[0m
+open_mower_ros  | [0m[INFO] [1779527834.858718877]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527835.132460382]: vx:0.48 vr: -0.38115527343750005[0m
+open_mower_ros  | [33m[WARN] [1779527835.293275016]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527835.293411329]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527835.632781960]: vx:0.5760000610351562 vr: -0.096710693359375[0m
+open_mower_ros  | [0m[INFO] [1779527835.861701692]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527836.133469184]: vx:0.586666259765625 vr: -0.204799560546875[0m
+open_mower_ros  | [33m[WARN] [1779527836.293288608]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527836.293433532]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527836.654876355]: vx:0.5724444580078125 vr: -0.278755126953125[0m
+open_mower_ros  | [0m[INFO] [1779527837.085626857]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527837.236525916]: vx:0.49422210693359375 vr: -0.466488525390625[0m
+open_mower_ros  | [33m[WARN] [1779527837.793282360]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527837.793549412]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527837.915285156]: vx:0.49422210693359375 vr: -0.466488525390625[0m
+open_mower_ros  | [0m[INFO] [1779527838.281135105]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527838.427557176]: vx:0.49066650390625 vr: -0.472177490234375[0m
+open_mower_ros  | [33m[WARN] [1779527838.793309498]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527838.794031231]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527838.929189387]: vx:0.49066650390625 vr: -0.386843994140625[0m
+open_mower_ros  | [0m[INFO] [1779527839.442980970]: vx:0.504888916015625 vr: -0.392532958984375[0m
+open_mower_ros  | [0m[INFO] [1779527839.461097887]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527839.944129450]: vx:0.515555419921875 vr: -0.26737744140625[0m
+open_mower_ros  | [WARN] [1779527840.040883]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527840.293267995]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527840.293400530]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527840.546830214]: vx:0.515555419921875 vr: -0.03982177734375[0m
+open_mower_ros  | [0m[INFO] [1779527840.658947899]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527841.132124704]: vx:0.5191107177734375 vr: -0.07964404296875[0m
+open_mower_ros  | [0m[INFO] [1779527841.649037545]: vx:0.52977783203125 vr: -0.07964404296875[0m
+open_mower_ros  | [0m[INFO] [1779527841.664923374]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527841.793203312]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527841.793300774]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527842.288590442]: vx:0.504888916015625 vr: -0.256[0m
+open_mower_ros  | [33m[WARN] [1779527842.793207993]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527842.793303566]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527842.835263746]: vx:0.4479998779296875 vr: -0.682666259765625[0m
+open_mower_ros  | [0m[INFO] [1779527842.858623106]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527843.338943126]: vx:0.35199981689453125 vr: -0.81919970703125[0m
+open_mower_ros  | [0m[INFO] [1779527843.863233602]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527843.929346505]: vx:0.49422210693359375 vr: -0.11377734375[0m
+open_mower_ros  | [33m[WARN] [1779527844.293206980]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527844.293292090]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527844.458418508]: vx:0.47288848876953127 vr: -0.5233774414062501[0m
+open_mower_ros  | [0m[INFO] [1779527845.054414963]: vx:0.39111114501953126 vr: -0.676977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527845.086119569]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527845.671689067]: vx:0.4231109619140625 vr: -0.6371552734375001[0m
+open_mower_ros  | [33m[WARN] [1779527845.793558579]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527845.793768855]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527846.241489792]: vx:0.44444427490234373 vr: -0.5575107421875[0m
+open_mower_ros  | [0m[INFO] [1779527846.282450114]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527846.835796870]: vx:0.45155548095703124 vr: -0.034133056640625[0m
+open_mower_ros  | [33m[WARN] [1779527847.293268820]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527847.293402504]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527847.340684647]: vx:0.45866668701171875 vr: 0.062578125[0m
+open_mower_ros  | [0m[INFO] [1779527847.461635301]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527847.847676182]: vx:0.24888885498046875 vr: 0.6940449218750001[0m
+open_mower_ros  | [33m[WARN] [1779527848.293281763]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527848.293430688]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527848.362478729]: vx:0.4622222900390625 vr: -0.11377734375[0m
+open_mower_ros  | [0m[INFO] [1779527848.658614628]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527848.987313550]: vx:0.4977777099609375 vr: -0.34133300781250003[0m
+open_mower_ros  | [33m[WARN] [1779527849.293271254]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527849.663292536]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527849.793297133]: GPS timeout[0m
+open_mower_ros  | [WARN] [1779527850.039946]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527850.293282089]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527850.859972522]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527851.293284119]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527851.293435469]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527851.865818515]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527852.293306215]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527852.293468954]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527853.063010246]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527853.293322469]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527853.293471282]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527854.282211203]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527854.793297916]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527854.793617042]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527855.462212757]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527856.293290257]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527856.293646309]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527856.658262230]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527857.293347737]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527857.663604324]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527857.793262268]: GPS timeout[0m
+open_mower_ros  | [33m[WARN] [1779527858.793359152]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527858.793500965]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527858.860281797]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527859.793291343]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527859.866839197]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527860.039565]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527860.293268665]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527861.084105499]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527861.293302815]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527861.293608571]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527862.281369119]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527862.793262976]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527862.793410215]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527863.463070805]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527863.793273502]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527863.793406797]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527864.658740544]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527864.793284205]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527864.793442463]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527865.663509502]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527866.293285381]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527866.293634007]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527866.858128055]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527867.293289275]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527867.793267726]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527867.862941700]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527868.293302586]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527868.793290042]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527869.085435802]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527869.793284331]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527869.793436107]: GPS timeout[0m
+open_mower_ros  | [WARN] [1779527870.040243]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527870.281815414]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527871.293189321]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527871.293277431]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527871.461261530]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527872.293208485]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527872.293295447]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527872.657146767]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527873.293232955]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527873.293338991]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527873.660590186]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527874.793224698]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527874.793321197]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527874.859438416]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527875.793254636]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527875.793353227]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527875.862505805]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527876.793289028]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527876.793907966]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527877.085550420]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527877.793319689]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527877.793854331]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527878.257804409]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527879.263227935]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527879.293277495]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527879.293423123]: GPS timeout[0m
+open_mower_ros  | [WARN] [1779527880.039799]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527880.281699854]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527880.793278413]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527880.793419412]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527881.460478403]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527881.793394240]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527881.793748680]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527882.481236467]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527882.793365688]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527883.293294231]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527883.663695613]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527884.293264008]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527884.293395321]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527884.860611103]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527885.293313108]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527885.293472643]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527885.865168921]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527886.293431142]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527886.293728509]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527887.086944606]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527887.793285269]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527887.793558247]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527888.258019215]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527889.261672739]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527889.293305025]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527889.293641448]: GPS timeout[0m
+open_mower_ros  | [WARN] [1779527890.040935]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527890.459049193]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527890.793283117]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527890.793441227]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527891.464694735]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527891.793276313]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527892.293300877]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527892.658561582]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527893.293328919]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527893.294117503]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527893.664319512]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527894.793292656]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527894.793436284]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527894.858566600]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527895.863028267]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527896.293306820]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527896.293668612]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527897.086283192]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527897.793285540]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527897.793450131]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527898.257812751]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527899.264163299]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527899.293297354]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527899.293443075]: GPS timeout[0m
+open_mower_ros  | [WARN] [1779527900.040355]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527900.281957869]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527900.293333142]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527900.293477474]: GPS timeout[0m
+open_mower_ros  | [33m[WARN] [1779527901.293356142]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527901.293536881]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527901.459398307]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527902.657862191]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527902.793205150]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527902.793306945]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527903.662274777]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527903.793207912]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527904.293205528]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527904.859133681]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527905.293210525]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527905.293470763]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527905.863014921]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527906.793482561]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527906.793663318]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527907.083383980]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527908.281387611]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527908.293322435]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527908.293485748]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527909.462514443]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527909.793289400]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527909.794251502]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527909.988658891]: vx:0.5262222290039063 vr: -0.5973330078125[0m
+open_mower_ros  | [WARN] [1779527910.040421]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527910.658335063]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527911.293304440]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527911.293468568]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527911.662873271]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527912.051595743]: vx:0 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527912.665955279]: vx:0.32355560302734376 vr: -0.14791113281249998[0m
+open_mower_ros  | [33m[WARN] [1779527912.793274645]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527912.793466088]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527912.858056271]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527913.237731450]: vx:0.34844451904296875 vr: -0.23324438476562503[0m
+open_mower_ros  | [0m[INFO] [1779527913.772377571]: vx:0.433778076171875 vr: -0.05119995117187501[0m
+open_mower_ros  | [33m[WARN] [1779527913.793279175]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527913.863756411]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527914.293275943]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527914.327643098]: vx:0.6933331298828125 vr: -0.26168896484375004[0m
+open_mower_ros  | [0m[INFO] [1779527915.084823357]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527915.120778088]: vx:0.72888916015625 vr: -0.39822216796875004[0m
+open_mower_ros  | [33m[WARN] [1779527915.293319763]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527915.293455669]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527915.636784516]: vx:0.7004446411132812 vr: -0.551822265625[0m
+open_mower_ros  | [0m[INFO] [1779527916.206006800]: vx:0.5617779541015625 vr: -0.819199951171875[0m
+open_mower_ros  | [0m[INFO] [1779527916.281703707]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527916.793284665]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527916.793428219]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527916.806991546]: vx:0.4017779541015625 vr: -0.9045334472656251[0m
+open_mower_ros  | [0m[INFO] [1779527917.400144263]: vx:0.6684445190429688 vr: 0.045510986328125[0m
+open_mower_ros  | [0m[INFO] [1779527917.459350521]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527917.963340874]: vx:0.44088897705078123 vr: 0.51768896484375[0m
+open_mower_ros  | [33m[WARN] [1779527918.293290900]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527918.293463324]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527918.487833821]: vx:0.124444580078125 vr: 0.568888916015625[0m
+open_mower_ros  | [0m[INFO] [1779527918.657491714]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527919.010483047]: vx:0.4728890991210937 vr: -0.7850666503906251[0m
+open_mower_ros  | [0m[INFO] [1779527919.564111800]: vx:0.5795553588867187 vr: -0.358400390625[0m
+open_mower_ros  | [0m[INFO] [1779527919.659615806]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527919.793267912]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527919.793410115]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527920.225289551]: vx:0.6577780151367187 vr: -0.19911108398437502[0m
+open_mower_ros  | [WARN] [1779527920.282191]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527920.682727252]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527920.736667694]: vx:0.6755557250976563 vr: -0.551822265625[0m
+open_mower_ros  | [0m[INFO] [1779527921.278325925]: vx:0.679111328125 vr: -0.6200888671875[0m
+open_mower_ros  | [33m[WARN] [1779527921.293267813]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527921.293402108]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527921.864433066]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527921.897611253]: vx:0.6222222900390625 vr: -0.768[0m
+open_mower_ros  | [33m[WARN] [1779527922.293291373]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527922.293769998]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527922.519461096]: vx:0.56888916015625 vr: -0.9386667480468751[0m
+open_mower_ros  | [0m[INFO] [1779527923.084993484]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527923.101407894]: vx:0.6684445190429688 vr: -0.8305778808593751[0m
+open_mower_ros  | [0m[INFO] [1779527923.615457393]: vx:0.6115557861328125 vr: -1.069510986328125[0m
+open_mower_ros  | [33m[WARN] [1779527923.793261748]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527923.793395024]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527924.145229532]: vx:0.5155557250976562 vr: -1.132089111328125[0m
+open_mower_ros  | [0m[INFO] [1779527924.282233165]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527924.659171165]: vx:0.48711090087890624 vr: -0.9045334472656251[0m
+open_mower_ros  | [33m[WARN] [1779527924.793261365]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527924.793398271]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527925.233535550]: vx:0.6755557250976563 vr: -0.341333740234375[0m
+open_mower_ros  | [0m[INFO] [1779527925.461999347]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527925.768608495]: vx:0.704000244140625 vr: -0.40960009765625005[0m
+open_mower_ros  | [33m[WARN] [1779527925.793284286]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527925.793435895]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527926.320305906]: vx:0.7395553588867188 vr: -0.420977783203125[0m
+open_mower_ros  | [0m[INFO] [1779527926.660469852]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527926.855254820]: vx:0.753778076171875 vr: -0.47786669921874997[0m
+open_mower_ros  | [33m[WARN] [1779527927.293278368]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527927.293413977]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527927.535643512]: vx:0.7502224731445313 vr: -0.48924438476562504[0m
+open_mower_ros  | [0m[INFO] [1779527927.665524108]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527928.130990792]: vx:0.7466668701171875 vr: -0.705422607421875[0m
+open_mower_ros  | [0m[INFO] [1779527928.736253015]: vx:0.6471112060546875 vr: -1.035377685546875[0m
+open_mower_ros  | [33m[WARN] [1779527928.793279244]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527928.793419372]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527928.861569065]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527929.279697095]: vx:0.753778076171875 vr: -0.9784890136718751[0m
+open_mower_ros  | [0m[INFO] [1779527929.865765235]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527929.875209863]: vx:0.604444580078125 vr: -1.177599853515625[0m
+open_mower_ros  | [WARN] [1779527930.284265]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527930.293401063]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527930.293534580]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527930.485508267]: vx:0.4373333740234375 vr: -1.291377685546875[0m
+open_mower_ros  | [0m[INFO] [1779527931.053536276]: vx:0.5973333740234374 vr: -0.568888916015625[0m
+open_mower_ros  | [0m[INFO] [1779527931.087105184]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527931.604765956]: vx:0.5724444580078125 vr: -1.080888916015625[0m
+open_mower_ros  | [33m[WARN] [1779527931.793202660]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527931.793291900]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527932.153516865]: vx:0.444444580078125 vr: -1.245866943359375[0m
+open_mower_ros  | [0m[INFO] [1779527932.281711113]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527932.660639449]: vx:0.625777587890625 vr: -0.392533447265625[0m
+open_mower_ros  | [33m[WARN] [1779527932.793205635]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527932.793293523]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527933.184752570]: vx:0.5333331298828125 vr: -0.017066650390625[0m
+open_mower_ros  | [0m[INFO] [1779527933.462065379]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527933.799272483]: vx:0.444444580078125 vr: 0.10239990234375002[0m
+open_mower_ros  | [33m[WARN] [1779527934.293344165]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527934.293435164]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527934.321498479]: vx:0.40533355712890623 vr: 0.062577392578125[0m
+open_mower_ros  | [0m[INFO] [1779527934.660759510]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527934.876354969]: vx:0.344888916015625 vr: 0.11377783203125001[0m
+open_mower_ros  | [0m[INFO] [1779527935.394873932]: vx:0.27022247314453124 vr: 0.34702221679687506[0m
+open_mower_ros  | [0m[INFO] [1779527935.663650144]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527935.793204956]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527935.793291603]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527935.934017544]: vx:0.49777801513671877 vr: -0.5802666015625001[0m
+open_mower_ros  | [0m[INFO] [1779527936.485677759]: vx:0.3022222900390625 vr: 0.22186669921875002[0m
+open_mower_ros  | [33m[WARN] [1779527936.793249737]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527936.793394032]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527936.859160179]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527937.075322524]: vx:0.46933349609375 vr: 0.022755615234375002[0m
+open_mower_ros  | [0m[INFO] [1779527937.648413994]: vx:0.5368890380859375 vr: -0.22186669921875002[0m
+open_mower_ros  | [33m[WARN] [1779527937.793265694]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527937.793598468]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527937.862343789]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527938.160507142]: vx:0.544000244140625 vr: -0.6940444335937501[0m
+open_mower_ros  | [0m[INFO] [1779527938.670646793]: vx:0.4764447021484375 vr: -1.183288818359375[0m
+open_mower_ros  | [33m[WARN] [1779527938.793273342]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527939.086801224]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527939.173741904]: vx:0.305777587890625 vr: -1.274311767578125[0m
+open_mower_ros  | [33m[WARN] [1779527939.293306984]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527939.759592979]: vx:0.48355560302734374 vr: -0.6087111816406251[0m
+open_mower_ros  | [33m[WARN] [1779527939.793275480]: Low quality GPS[0m
+open_mower_ros  | [0m[INFO] [1779527940.282897858]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527940.293296385]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527940.320814243]: vx:0.40888916015625 vr: -1.348266845703125[0m
+open_mower_ros  | [WARN] [1779527940.459229]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527940.853761881]: vx:0.4124444580078125 vr: -0.6428444824218751[0m
+open_mower_ros  | [33m[WARN] [1779527941.293325126]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527941.293459680]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527941.404854380]: vx:0.16711090087890626 vr: 0.534755615234375[0m
+open_mower_ros  | [0m[INFO] [1779527941.460915068]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527941.964108669]: vx:0.394666748046875 vr: -0.15928881835937503[0m
+open_mower_ros  | [0m[INFO] [1779527942.468895240]: vx:0.384000244140625 vr: 0.039822265625[0m
+open_mower_ros  | [0m[INFO] [1779527942.482606123]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527942.793298474]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527942.793441454]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527942.972520692]: vx:0.234666748046875 vr: 0.483555419921875[0m
+open_mower_ros  | [0m[INFO] [1779527943.486670415]: vx:0.45511138916015625 vr: -0.65422216796875[0m
+open_mower_ros  | [0m[INFO] [1779527943.665610322]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527944.053302437]: vx:0.444444580078125 vr: -0.745244384765625[0m
+open_mower_ros  | [33m[WARN] [1779527944.293274894]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527944.293407355]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527944.712193574]: vx:0.39822235107421877 vr: -0.32995556640625[0m
+open_mower_ros  | [0m[INFO] [1779527944.858998428]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527945.287343204]: vx:0.06044464111328125 vr: 0.728177734375[0m
+open_mower_ros  | [33m[WARN] [1779527945.293296164]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527945.293622846]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527945.818597766]: vx:0.35555572509765626 vr: -0.40960009765625005[0m
+open_mower_ros  | [0m[INFO] [1779527945.862815110]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527946.414187866]: vx:0.1564447021484375 vr: 0.34702221679687506[0m
+open_mower_ros  | [33m[WARN] [1779527946.793267592]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527946.793401368]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527946.863598031]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527946.973620378]: vx:0.2773333740234375 vr: 0[0m
+open_mower_ros  | [0m[INFO] [1779527947.570878523]: vx:0.31288909912109375 vr: -0.039822265625[0m
+open_mower_ros  | [33m[WARN] [1779527947.793314268]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527947.793451433]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527947.865856224]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527948.078595953]: vx:0.234666748046875 vr: 0.20480004882812503[0m
+open_mower_ros  | [0m[INFO] [1779527948.582629923]: vx:0.06755584716796875 vr: 0.648533203125[0m
+open_mower_ros  | [0m[INFO] [1779527949.084063530]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527949.157191203]: vx:0.1066668701171875 vr: 0.6200888671875[0m
+open_mower_ros  | [33m[WARN] [1779527949.293264334]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527949.293397407]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527949.770456737]: vx:0.19555572509765626 vr: 0.22186669921875002[0m
+open_mower_ros  | [0m[INFO] [1779527950.282499486]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527950.293288806]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527950.293439194]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527950.406333071]: vx:0.23111114501953126 vr: 0.056888916015625006[0m
+open_mower_ros  | [WARN] [1779527950.460118]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527950.961785897]: vx:-0.11733306884765625 vr: 0.6997333984375[0m
+open_mower_ros  | [0m[INFO] [1779527951.464604796]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527951.524657950]: vx:-0.17422210693359375 vr: 0.77368896484375[0m
+open_mower_ros  | [33m[WARN] [1779527951.793258158]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527951.793389916]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527952.058994449]: vx:0.1564447021484375 vr: 0.523377685546875[0m
+open_mower_ros  | [0m[INFO] [1779527952.659656508]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527952.700568497]: vx:0.344888916015625 vr: -0.31857788085937505[0m
+open_mower_ros  | [33m[WARN] [1779527952.793270647]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527952.793404461]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527953.303241168]: vx:0.10311126708984375 vr: 0.523377685546875[0m
+open_mower_ros  | [0m[INFO] [1779527953.663262765]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527953.793292033]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527953.793697288]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527953.866498577]: vx:0.23111114501953126 vr: 0.29582226562499997[0m
+open_mower_ros  | [0m[INFO] [1779527954.560348031]: vx:0.2915557861328125 vr: -0.011378173828125001[0m
+open_mower_ros  | [33m[WARN] [1779527954.793358276]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527954.793645792]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527954.859532131]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527955.865764285]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527956.293281360]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527956.293724986]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527956.899389660]: Got action: mower_logic:area_recording/stop_recording[0m
+open_mower_ros  | [0m[INFO] [1779527956.900955367]: Got stop recording[0m
+open_mower_ros  | [0m[INFO] [1779527956.906894161]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527956.909115825]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527956.919511224]: Finished Recording polygon[0m
+open_mower_ros  | [0m[INFO] [1779527956.938182227]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527956.941446843]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527957.085559329]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527957.293460305]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527957.793289755]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527958.282516828]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527958.793269453]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527958.793421914]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527959.463970136]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527959.793283916]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527959.793432563]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527960.659232856]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527960.660519]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527960.793495218]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527960.793648643]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527961.008512426]: Got action: mower_logic:area_recording/finish_mowing_area[0m
+open_mower_ros  | [0m[INFO] [1779527961.010242391]: Got save mowing area[0m
+open_mower_ros  | [0m[INFO] [1779527961.016511774]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527961.018834770]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527961.041783288]: Area recording completed. Adding mowing area.[0m
+open_mower_ros  | [0m[INFO] [1779527961.047654768]: Got addMowingArea call[0m
+open_mower_ros  | [0m[INFO] [1779527961.055080937]: Map saved to JSON file[0m
+open_mower_ros  | [0m[INFO] [1779527961.055935040]: Map Position: x=17.8407, y=-39.4366[0m
+open_mower_ros  | [0m[INFO] [1779527961.056079631]: Map Size: x=38.4864, y=35.902[0m
+open_mower_ros  | [0m[INFO] [1779527961.662167063]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527962.293269606]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527962.293365068]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527962.335034219]: Resizing static layer to 770 X 718 at 0.050000 m/pix[0m
+open_mower_ros  | [0m[INFO] [1779527962.335957580]: docking pose: position: 
+open_mower_ros  |   x: 21.4048
+open_mower_ros  | 
+open_mower_ros  |   y: -41.2029
+open_mower_ros  | 
+open_mower_ros  |   z: 0
+open_mower_ros  | 
+open_mower_ros  | orientation: 
+open_mower_ros  |   x: 0
+open_mower_ros  | 
+open_mower_ros  |   y: 0
+open_mower_ros  | 
+open_mower_ros  |   z: -0.512608
+open_mower_ros  | 
+open_mower_ros  |   w: 0.858623
+open_mower_ros  | [0m
+open_mower_ros  | [0m[INFO] [1779527962.336928978]: Area added successfully[0m
+open_mower_ros  | [0m[INFO] [1779527962.344922845]: Resizing costmap to 770 X 718 at 0.050000 m/pix[0m
+open_mower_ros  | [0m[INFO] [1779527962.356187643]: new actions registered: mower_logic:area_recording registered 12 actions.[0m
+open_mower_ros  | [0m[INFO] [1779527962.357518482]: successfully registered actions for mower_logic:area_recording[0m
+open_mower_ros  | [0m[INFO] [1779527962.859964220]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527963.793225890]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527963.793329203]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527963.864300225]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527965.086116622]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527965.293220000]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527965.293392474]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527966.283098081]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527966.293268391]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527966.293410478]: GPS timeout[0m
+open_mower_ros  | [33m[WARN] [1779527967.293284121]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527967.293435207]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527967.463849641]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527968.293303965]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527968.293553159]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527968.659006970]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527969.664599865]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527969.793286872]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527969.793557713]: GPS timeout[0m
+open_mower_ros  | [33m[WARN] [1779527970.793296218]: Low quality GPS[0m
+open_mower_ros  | [WARN] [1779527970.859217]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [0m[INFO] [1779527970.858367055]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527971.293315839]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527971.863715758]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527972.293280682]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527972.293436564]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527972.884156665]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527973.293304507]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527973.293467019]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527974.042775831]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527974.293322021]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527974.293491255]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527975.088160161]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527975.793293718]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527975.793452026]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527976.287263924]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527977.293292400]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527977.293447504]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527977.466534464]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [0m[INFO] [1779527978.661274663]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527978.793283970]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527978.793507479]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527979.667208671]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527980.293296747]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527980.293646602]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527980.864351420]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [WARN] [1779527980.865474]: NMEA sent before client was connected, discarding NMEA
+open_mower_ros  | [33m[WARN] [1779527981.293304132]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527981.793286467]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527981.866424661]: Dropped GPS update, since it's not RTK Fixed[0m
+open_mower_ros  | [33m[WARN] [1779527982.793334753]: Low quality GPS[0m
+open_mower_ros  | [33m[WARN] [1779527982.794248456]: GPS timeout[0m
+open_mower_ros  | [0m[INFO] [1779527983.087536297]: Dropped GPS update, since it's not RTK Fixed[0m

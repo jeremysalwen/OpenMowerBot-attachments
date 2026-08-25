@@ -1,0 +1,67 @@
+[INFO] [1750791656.429200805]: --------------------------------------
+[INFO] [1750791656.429379859]: - Entered state: MOWING
+[INFO] [1750791656.429553876]: --------------------------------------
+[INFO] [1750791656.433297394]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1750791656.434476679]: successfully registered actions for mower_logic:mowing
+[INFO] [1750791656.434816157]: MowingBehavior: Creating mowing plan for area: 2
+[INFO] [1750791656.438593324]: Got getMowingArea call with index: 2
+[INFO] [1750791656.439103948]: MowingBehavior: Detected mow angle: -2.63157
+[INFO] [1750791656.439466963]: MowingBehavior: mowing angle offset (deg): -30
+[INFO] [1750791656.439659258]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: -3.15517
+[INFO] [1750791656.444079344]: generating 5 outlines
+[INFO] [1750791656.473005060]: Starting Fill. Poly size:309
+[INFO] [1750791656.484025692]: Fill Complete. Polyline count: 3
+[INFO] [1750791656.484558780]: Polyline 0 has point count: 534
+[INFO] [1750791656.485131441]: Polyline 1 has point count: 12
+[INFO] [1750791656.485472493]: Polyline 2 has point count: 45
+[INFO] [1750791656.486164597]: Got 467 points
+[INFO] [1750791656.487617361]: Got 480 points
+[INFO] [1750791656.489372140]: Got 493 points
+[INFO] [1750791656.492335777]: Got 505 points
+[INFO] [1750791656.494141889]: Got 520 points
+[INFO] [1750791656.498176442]: Got 26 points
+[INFO] [1750791656.498894194]: Got 34 points
+[INFO] [1750791656.499614706]: Got 42 points
+[INFO] [1750791656.500192756]: Got 49 points
+[INFO] [1750791656.500751380]: Got 57 points
+[INFO] [1750791656.505411852]: Got 8046 points
+[INFO] [1750791656.527292267]: Got 15 points
+[INFO] [1750791656.527815706]: Got 505 points
+[INFO] [1750791656.575961270]: MowingBehavior: Ignoring checkpoint for plan (58C2353CF6B2F44EF9AEE24952B25D78CEB55B0C87ADBB4A921FDB656B0FA08D) current mowing plan is (9C71D5FAE6C2C46A5C7344A19F883BB016226DF93ACD4FCEE6EA525A915D099B)
+[INFO] [1750791656.577739901]: MowingBehavior: Executing mowing plan
+[INFO] [1750791656.578209100]: MowingBehavior: Path segment length: 2465 poses.
+[INFO] [1750791656.579625586]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1750791656.620641905]: Failed to get a plan.
+[INFO] [1750791661.588933681]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1750791661.589136494]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1750791661.607247408]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1750791661.609069335]: Clearing both costmaps outside a square (3.00m) large centered on the robot.
+[ERROR] [1750791661.622511055]: Failed to get a plan.
+[INFO] [1750791662.022566383]: GPS quality: 0.93
+[INFO] [1750791666.616023360]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1750791666.616197617]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1750791666.616862037]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1750791666.618822702]: Rotate recovery behavior started.
+[ERROR] [1750791666.619713675]: Rotate recovery can't rotate in place because there is a potential collision. Cost: -3.00
+[ERROR] [1750791666.632016591]: Failed to get a plan.
+[INFO] [1750791671.627319915]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1750791671.627511635]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1750791671.628599902]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1750791671.629324654]: Running Backward/Forward recovery behavior
+[INFO] [1750791672.522456878]: GPS quality: 0.93
+[ERROR] [1750791674.150643028]: [driver_gps] waited 15 ms to write to the tx buffer, serial port is probably congested!
+[WARN] [1750791674.629798190]: Backward movement timed out after 3.00 seconds
+[WARN] [1750791677.630404113]: Forward movement timed out after 3.00 seconds
+[WARN] [1750791677.630791646]: Backward/Forward recovery behavior failed to move in either direction
+[ERROR] [1750791677.639872242]: Failed to get a plan.
+[INFO] [1750791682.522485078]: GPS quality: 0.93
+[INFO] [1750791682.637372986]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1750791682.637550188]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ERROR] [1750791682.640534770]: Failed to get a plan.
+[INFO] [1750791682.640737842]: Planning patience (5s) has been exceeded; planner canceled!
+[INFO] [1750791689.191809876]: Successfully moved backwards.
+================================================================================REQUIRED process [move_base_flex-5] has died!
+process has died [pid 132, exit code -11, cmd /opt/ros/noetic/lib/mbf_costmap_nav/mbf_costmap_nav cmd_vel:=/nav_vel __name:=move_base_flex __log:=/root/.ros/log/56404164-512b-11f0-95c1-40ae30abac3a/move_base_flex-5.log].
+log file: /root/.ros/log/56404164-512b-11f0-95c1-40ae30abac3a/move_base_flex-5*.log
+Initiating shutdown!
+================================================================================

@@ -1,0 +1,85 @@
+[ INFO] [1688410116.100144168]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688410116.144248079]: Got action: mower_logic:idle/start_mowing
+[ INFO] [1688410116.144706443]: Got start_mowing command
+[ INFO] [1688410116.163643775]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1688410116.168182897]: successfully set pose to position:
+  x: -0.69894
+  y: -0.0079925
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: -0.58986
+  w: 0.807506
+
+[ INFO] [1688410116.171874791]: new actions registered: mower_logic:idle registered 2 actions.
+[ INFO] [1688410116.173408640]: successfully registered actions for mower_logic:idle
+[ INFO] [1688410116.173568545]:
+[ INFO] [1688410116.173646896]:
+[ INFO] [1688410116.174229610]: --------------------------------------
+[ INFO] [1688410116.174340257]: - Entered state: UNDOCKING
+[ INFO] [1688410116.174421737]: --------------------------------------
+[ INFO] [1688410116.179803996]: Getting Docking Point
+[ INFO] [1688410116.180225194]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1688410116.184475395]: successfully set pose to position:
+  x: -0.69894
+  y: -0.0079925
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: -0.58986
+  w: 0.807506
+
+[ INFO] [1688410116.200551432]: Got new global plan with 50 points.
+[ WARN] [1688410117.052123026]: Low quality GPS
+[ WARN] [1688410117.052268117]: GPS timeout
+[ WARN] [1688410118.052124702]: Low quality GPS
+[ INFO] [1688410118.092668310]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410118.552124123]: GPS timeout
+[ WARN] [1688410119.052127470]: Low quality GPS
+[ WARN] [1688410120.052120700]: GPS timeout
+[ INFO] [1688410120.093238892]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410120.552138120]: Low quality GPS
+[ WARN] [1688410121.552125090]: Low quality GPS
+[ WARN] [1688410121.552230477]: GPS timeout
+[ INFO] [1688410122.093323608]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410123.052139422]: Low quality GPS
+[ WARN] [1688410123.052288086]: GPS timeout
+[ INFO] [1688410123.097078746]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410124.552130104]: Low quality GPS
+[ WARN] [1688410124.552478988]: GPS timeout
+[ INFO] [1688410125.090593288]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410126.052127396]: Low quality GPS
+[ WARN] [1688410126.052233968]: GPS timeout
+[ INFO] [1688410126.103016916]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410127.052127990]: Low quality GPS
+[ WARN] [1688410127.052236526]: GPS timeout
+[ WARN] [1688410128.052347803]: Low quality GPS
+[ WARN] [1688410128.052560134]: GPS timeout
+[ INFO] [1688410128.100065126]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410129.552125260]: Low quality GPS
+[ WARN] [1688410129.552231814]: GPS timeout
+[ INFO] [1688410130.089294979]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410131.052188230]: Low quality GPS
+[ WARN] [1688410131.052340876]: GPS timeout
+[ INFO] [1688410131.096785504]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688410132.099309800]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410132.552123940]: Low quality GPS
+[ WARN] [1688410132.552269253]: GPS timeout
+[ WARN] [1688410133.552123992]: Low quality GPS
+[ WARN] [1688410134.052283387]: GPS timeout
+[ INFO] [1688410134.099704010]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688410135.052125440]: Low quality GPS
+[ WARN] [1688410135.052233586]: GPS timeout
+[ WARN] [1688410136.052305524]: Low quality GPS
+[ WARN] [1688410136.052553595]: GPS timeout
+[ INFO] [1688410136.092750522]: dropping GPS update, since gps_enabled = false.
+[ERROR] [1688410136.245092141]: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[ INFO] [1688410136.245500913]: Switching to state 4
+[ WARN] [1688410136.247100225]: No velocity command received from controller!
+[ INFO] [1688410136.295257875]: Undock success. Waiting for GPS.
+[ INFO] [1688410136.301788266]: successfully set GPS to 1
+[ INFO] [1688410136.301942727]: waiting for gps. current accuracy: 999
+[ INFO] [1688410137.090399363]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1688410137.302065682]: waiting for gps. current accuracy: 999

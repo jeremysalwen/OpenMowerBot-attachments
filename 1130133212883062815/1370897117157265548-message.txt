@@ -1,0 +1,63 @@
+          - type: custom:apexcharts-card
+            header:
+              title: OpenMower Battery Monitor
+              show: true
+            update_interval: 10min
+            yaxis:
+              - id: voltage
+                show: true
+                min: 20
+                max: 29
+                opposite: false
+                decimals: 1
+              - id: current
+                show: true
+                min: -3
+                max: 2
+                opposite: true
+                decimals: 1
+            apex_config:
+              tooltip:
+                enabled: true
+                shared: true
+                intersect: false
+                followCursor: true
+                hideEmptySeries: false
+                x:
+                  show: true
+                  format: dd MMM HH:mm
+                'y':
+                  formatter: |
+                    function(val, opts) {
+                      const name = opts.seriesName;
+                      if (name === 'Voltage') return val.toFixed(1) + ' V';
+                      if (name === 'Current') return val.toFixed(1) + ' A';
+                      if (name === 'Battery %') return val.toFixed(0) + ' %';
+                      return val;
+                    }
+              legend:
+                show: true
+                onItemClick:
+                  toggleDataSeries: false
+                onItemHover:
+                  highlightDataSeries: true
+              stroke:
+                curve: smooth
+                width: 2
+            series:
+              - entity: sensor.openmower_voltage_1m_average
+                name: Voltage
+                yaxis_id: voltage
+                type: line
+                color: '#FFA500'
+                group_by:
+                  duration: 5min
+                  func: avg
+              - entity: sensor.openmower_charge_current_1m_average
+                name: Current
+                yaxis_id: current
+                type: line
+                color: '#00BFFF'
+                group_by:
+                  duration: 5min
+                  func: avg

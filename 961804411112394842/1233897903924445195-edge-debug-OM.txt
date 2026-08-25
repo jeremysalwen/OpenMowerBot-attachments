@@ -1,0 +1,753 @@
+root@openmower:/home/PI# sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/fa9875e4-04db-11ef-801d-e45f015f1ffe/roslaunch-openmower-81.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:34887/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/acceleration: 20.0
+ * /mower_comms/left_xesc/hall_table_0: 255
+ * /mower_comms/left_xesc/hall_table_1: 5
+ * /mower_comms/left_xesc/hall_table_2: 3
+ * /mower_comms/left_xesc/hall_table_3: 4
+ * /mower_comms/left_xesc/hall_table_4: 1
+ * /mower_comms/left_xesc/hall_table_5: 6
+ * /mower_comms/left_xesc/hall_table_6: 2
+ * /mower_comms/left_xesc/hall_table_7: 255
+ * /mower_comms/left_xesc/has_motor_temp: False
+ * /mower_comms/left_xesc/max_motor_temp: 0
+ * /mower_comms/left_xesc/max_pcb_temp: 60
+ * /mower_comms/left_xesc/min_motor_temp: 0
+ * /mower_comms/left_xesc/min_pcb_temp: 0
+ * /mower_comms/left_xesc/motor_current_limit: 0.5
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_2040
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/acceleration: 5.0
+ * /mower_comms/mower_xesc/hall_table_0: 255
+ * /mower_comms/mower_xesc/hall_table_1: 3
+ * /mower_comms/mower_xesc/hall_table_2: 1
+ * /mower_comms/mower_xesc/hall_table_3: 2
+ * /mower_comms/mower_xesc/hall_table_4: 5
+ * /mower_comms/mower_xesc/hall_table_5: 4
+ * /mower_comms/mower_xesc/hall_table_6: 6
+ * /mower_comms/mower_xesc/hall_table_7: 255
+ * /mower_comms/mower_xesc/has_motor_temp: True
+ * /mower_comms/mower_xesc/max_motor_temp: 60
+ * /mower_comms/mower_xesc/max_pcb_temp: 60
+ * /mower_comms/mower_xesc/min_motor_temp: 0
+ * /mower_comms/mower_xesc/min_pcb_temp: 0
+ * /mower_comms/mower_xesc/motor_current_limit: 1.0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_2040
+ * /mower_comms/right_xesc/acceleration: 20.0
+ * /mower_comms/right_xesc/hall_table_0: 255
+ * /mower_comms/right_xesc/hall_table_1: 5
+ * /mower_comms/right_xesc/hall_table_2: 3
+ * /mower_comms/right_xesc/hall_table_3: 4
+ * /mower_comms/right_xesc/hall_table_4: 1
+ * /mower_comms/right_xesc/hall_table_5: 6
+ * /mower_comms/right_xesc/hall_table_6: 2
+ * /mower_comms/right_xesc/hall_table_7: 255
+ * /mower_comms/right_xesc/has_motor_temp: False
+ * /mower_comms/right_xesc/max_motor_temp: 0
+ * /mower_comms/right_xesc/max_pcb_temp: 60
+ * /mower_comms/right_xesc/min_motor_temp: 0
+ * /mower_comms/right_xesc/min_pcb_temp: 0
+ * /mower_comms/right_xesc/motor_current_limit: 0.5
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_2040
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: 192.168.1.179
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: belashtitsa
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: gps
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: gps
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/mode: relative
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [89]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to fa9875e4-04db-11ef-801d-e45f015f1ffe
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [109]
+process[ntrip_client/ntrip_client_node-3]: started with pid [110]
+process[xbot_driver_gps-4]: started with pid [111]
+[ INFO] [1714252834.501171416]: Wheel ticks [1/m]: 1600
+process[move_base_flex-5]: started with pid [116]
+[ INFO] [1714252834.505530480]: Wheel distance [m]: 0.325
+[ INFO] [1714252834.511026194]: DFP is set to 5V [boolean]: 0, language: 'en', volume: -1
+[ INFO] [1714252834.513255950]: Starting xesc driver
+[ INFO] [1714252834.515579639]: Starting xesc 2040 driver
+process[move_base_legacy_relay-6]: started with pid [118]
+[ INFO] [1714252834.599604026]: Using UBX mode for GPS
+[ INFO] [1714252834.611167859]: Starting xesc driver
+[ INFO] [1714252834.614201317]: Starting xesc 2040 driver
+process[xbot_positioning-7]: started with pid [123]
+[ INFO] [1714252834.627710148]: Using relative mode for GPS
+[ INFO] [1714252834.693059106]: Starting xesc driver
+process[joy-8]: started with pid [126]
+[ INFO] [1714252834.696422309]: Starting xesc 2040 driver
+process[joy_teleop-9]: started with pid [129]
+[ INFO] [1714252834.798125707]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+process[map_service-10]: started with pid [137]
+[ INFO] [1714252834.936895073]: Antenna offset: 0.3, 0
+process[mower_logic-11]: started with pid [145]
+[ INFO] [1714252835.034419821]: connecting serial interface: /dev/ttyAMA0
+process[slic3r_coverage_planner-12]: started with pid [151]
+process[twist_mux-13]: started with pid [159]
+[ERROR] [1714252835.298272663]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[xbot_monitoring-14]: started with pid [161]
+[ INFO] [1714252835.380122471]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+process[xbot_remote-15]: started with pid [167]
+[ INFO] [1714252835.448584076]: Teleop enable button 0.
+[ INFO] [1714252835.478945569]: Turbo on button 4.
+[ INFO] [1714252835.479105295]: Linear axis x on 1 at scale 0.500000.
+[ INFO] [1714252835.479169367]: Turbo for linear axis x is scale 1.000000.
+[ INFO] [1714252835.479230866]: Angular axis yaw on 0 at scale 1.500000.
+[ INFO] [1714252835.479284164]: Turbo for angular axis yaw is scale 3.000000.
+[ INFO] [1714252835.521742999]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100
+process[monitoring-16]: started with pid [176]
+[FATAL] [1714252835.590830013]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[ERROR] [1714252835.614516917]: Got invalid checksum from xESC on Port:/dev/ttyAMA3
+[ERROR] [1714252835.814385934]: Motor controller fault code: 2
+[ INFO] [1714252836.061927822]: found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1714252836.102501769]: found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1714252836.106928632]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252836.173020891]: found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1714252836.201809065]: om_mower_logic: Setting mower_logic config
+[ INFO] [1714252836.205856513]: found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1714252836.226963345]: found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1714252836.251384452]: found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1714252836.345100220]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1714252836.412010384]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1714252836.433252302]: MQTT Connected
+[ INFO] [1714252836.500740411]: found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1714252836.770334665]: got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1714252836.777593883]: Subscribing to sensor data for sensor with name: V Charge
+[ INFO] [1714252836.828836478]: got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1714252836.844588909]: Subscribing to sensor data for sensor with name: V Battery
+[ INFO] [1714252836.935503738]: got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1714252836.943101589]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[ INFO] [1714252836.992162066]: got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1714252837.001007833]: Subscribing to sensor data for sensor with name: Charge Current
+[ WARN] [1714252837.066327269]: Error opening stored mowing areas.
+[ INFO] [1714252837.107238075]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252837.110681984]: Map Position: x=0, y=0
+[ INFO] [1714252837.111092354]: Map Size: x=10, y=10
+[ INFO] [1714252837.143553225]: got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1714252837.156771151]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[ INFO] [1714252837.164535896]: Waiting for a status message
+[ INFO] [1714252837.260040027]: docking pose: position:
+  x: 0
+  y: 0
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: 0
+  w: 0
+
+[ INFO] [1714252837.296724894]: got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1714252837.299593911]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[ INFO] [1714252837.403069667]: got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1714252837.413236503]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[ INFO] [1714252837.446376492]: got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1714252837.460351956]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[ INFO] [1714252837.520428915]: got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1714252837.524251520]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[ INFO] [1714252838.164561041]: Waiting for a pose message
+[INFO] [1714252838.616270]: Connected to http://192.168.1.179:2101/belashtitsa
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1714252839.106353647]: Dropped GPS update, since it's not RTK Fixed
+root@openmower:/home/PI# sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/02e3cc3a-04dc-11ef-a6d4-e45f015f1ffe/roslaunch-openmower-81.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:43671/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/acceleration: 20.0
+ * /mower_comms/left_xesc/hall_table_0: 255
+ * /mower_comms/left_xesc/hall_table_1: 5
+ * /mower_comms/left_xesc/hall_table_2: 3
+ * /mower_comms/left_xesc/hall_table_3: 4
+ * /mower_comms/left_xesc/hall_table_4: 1
+ * /mower_comms/left_xesc/hall_table_5: 6
+ * /mower_comms/left_xesc/hall_table_6: 2
+ * /mower_comms/left_xesc/hall_table_7: 255
+ * /mower_comms/left_xesc/has_motor_temp: False
+ * /mower_comms/left_xesc/max_motor_temp: 0
+ * /mower_comms/left_xesc/max_pcb_temp: 60
+ * /mower_comms/left_xesc/min_motor_temp: 0
+ * /mower_comms/left_xesc/min_pcb_temp: 0
+ * /mower_comms/left_xesc/motor_current_limit: 0.5
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_2040
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/acceleration: 5.0
+ * /mower_comms/mower_xesc/hall_table_0: 255
+ * /mower_comms/mower_xesc/hall_table_1: 3
+ * /mower_comms/mower_xesc/hall_table_2: 1
+ * /mower_comms/mower_xesc/hall_table_3: 2
+ * /mower_comms/mower_xesc/hall_table_4: 5
+ * /mower_comms/mower_xesc/hall_table_5: 4
+ * /mower_comms/mower_xesc/hall_table_6: 6
+ * /mower_comms/mower_xesc/hall_table_7: 255
+ * /mower_comms/mower_xesc/has_motor_temp: True
+ * /mower_comms/mower_xesc/max_motor_temp: 60
+ * /mower_comms/mower_xesc/max_pcb_temp: 60
+ * /mower_comms/mower_xesc/min_motor_temp: 0
+ * /mower_comms/mower_xesc/min_pcb_temp: 0
+ * /mower_comms/mower_xesc/motor_current_limit: 1.0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_2040
+ * /mower_comms/right_xesc/acceleration: 20.0
+ * /mower_comms/right_xesc/hall_table_0: 255
+ * /mower_comms/right_xesc/hall_table_1: 5
+ * /mower_comms/right_xesc/hall_table_2: 3
+ * /mower_comms/right_xesc/hall_table_3: 4
+ * /mower_comms/right_xesc/hall_table_4: 1
+ * /mower_comms/right_xesc/hall_table_5: 6
+ * /mower_comms/right_xesc/hall_table_6: 2
+ * /mower_comms/right_xesc/hall_table_7: 255
+ * /mower_comms/right_xesc/has_motor_temp: False
+ * /mower_comms/right_xesc/max_motor_temp: 0
+ * /mower_comms/right_xesc/max_pcb_temp: 60
+ * /mower_comms/right_xesc/min_motor_temp: 0
+ * /mower_comms/right_xesc/min_pcb_temp: 0
+ * /mower_comms/right_xesc/motor_current_limit: 0.5
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_2040
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: 192.168.1.179
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: belashtitsa
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: gps
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: gps
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/mode: relative
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [89]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 02e3cc3a-04dc-11ef-a6d4-e45f015f1ffe
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [109]
+process[ntrip_client/ntrip_client_node-3]: started with pid [110]
+process[xbot_driver_gps-4]: started with pid [111]
+[ INFO] [1714252848.432860357]: Wheel ticks [1/m]: 1600
+[ INFO] [1714252848.438060327]: Wheel distance [m]: 0.325
+process[move_base_flex-5]: started with pid [117]
+[ INFO] [1714252848.444380475]: DFP is set to 5V [boolean]: 0, language: 'en', volume: -1
+[ INFO] [1714252848.446816442]: Starting xesc driver
+[ INFO] [1714252848.449438726]: Starting xesc 2040 driver
+process[move_base_legacy_relay-6]: started with pid [120]
+[ INFO] [1714252848.492251061]: Using UBX mode for GPS
+[ INFO] [1714252848.504109378]: Starting xesc driver
+[ INFO] [1714252848.507602023]: Starting xesc 2040 driver
+process[xbot_positioning-7]: started with pid [124]
+[ INFO] [1714252848.531659633]: Using relative mode for GPS
+process[joy-8]: started with pid [126]
+[ INFO] [1714252848.579878175]: Starting xesc driver
+[ INFO] [1714252848.595774573]: Starting xesc 2040 driver
+process[joy_teleop-9]: started with pid [128]
+[ INFO] [1714252848.701368545]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+process[map_service-10]: started with pid [140]
+process[mower_logic-11]: started with pid [147]
+[ INFO] [1714252848.893820649]: Antenna offset: 0.3, 0
+[ INFO] [1714252848.969601979]: connecting serial interface: /dev/ttyAMA0
+process[slic3r_coverage_planner-12]: started with pid [151]
+[ERROR] [1714252849.085370920]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[twist_mux-13]: started with pid [158]
+[ INFO] [1714252849.232433785]: Teleop enable button 0.
+process[xbot_monitoring-14]: started with pid [161]
+[ INFO] [1714252849.283895009]: Turbo on button 4.
+[ INFO] [1714252849.284592847]: Linear axis x on 1 at scale 0.500000.
+[ INFO] [1714252849.285548150]: Turbo for linear axis x is scale 1.000000.
+[ INFO] [1714252849.286492529]: Angular axis yaw on 0 at scale 1.500000.
+[ INFO] [1714252849.287333216]: Turbo for angular axis yaw is scale 3.000000.
+process[xbot_remote-15]: started with pid [167]
+[ERROR] [1714252849.509465011]: Motor controller fault code: 2
+process[monitoring-16]: started with pid [173]
+[ERROR] [1714252849.598350861]: Got invalid checksum from xESC on Port:/dev/ttyAMA4
+[ INFO] [1714252849.709398570]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[ INFO] [1714252849.819784318]: MQTT Connected
+[ INFO] [1714252849.831486673]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100
+[FATAL] [1714252849.937668637]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[ INFO] [1714252850.032489922]: found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1714252850.078611726]: found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1714252850.103978312]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252850.141997735]: found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1714252850.160978492]: om_mower_logic: Setting mower_logic config
+[ INFO] [1714252850.211301167]: found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1714252850.313972131]: found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1714252850.391180037]: found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1714252850.452203990]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1714252850.519888582]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1714252850.545662145]: found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1714252850.830667750]: got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1714252850.848726137]: Subscribing to sensor data for sensor with name: V Charge
+[ WARN] [1714252850.900653822]: Error opening stored mowing areas.
+[ INFO] [1714252850.916552689]: got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1714252850.927858611]: Map Position: x=0, y=0
+[ INFO] [1714252850.928050335]: Map Size: x=10, y=10
+[ INFO] [1714252850.928716462]: Subscribing to sensor data for sensor with name: V Battery
+[ INFO] [1714252850.969954015]: got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1714252850.989321848]: Subscribing to sensor data for sensor with name: Charge Current
+[ INFO] [1714252851.079569651]: got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1714252851.084720082]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[ INFO] [1714252851.103371793]: got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1714252851.105080852]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252851.111766465]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[ INFO] [1714252851.183251591]: docking pose: position:
+  x: 0
+  y: 0
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: 0
+  w: 0
+
+[ INFO] [1714252851.317762578]: Waiting for a status message
+[ INFO] [1714252851.417629454]: got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1714252851.420847703]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[ INFO] [1714252851.550941055]: got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1714252851.557170609]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[ INFO] [1714252851.690199104]: got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1714252851.702359722]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[ INFO] [1714252851.723699608]: got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1714252851.728410865]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[ INFO] [1714252852.317847078]: Waiting for a pose message
+[INFO] [1714252852.622872]: Connected to http://192.168.1.179:2101/belashtitsa
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1714252853.099297133]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252854.103693500]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252855.480759496]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100519 timeout was 0.1.
+[ INFO] [1714252856.101297557]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252857.101882412]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252859.100926041]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252860.101346354]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252860.519822299]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100322 timeout was 0.1.
+[ INFO] [1714252862.096077516]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252863.099206663]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252865.098906623]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252865.554081943]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100788 timeout was 0.1.
+[ INFO] [1714252866.099575815]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252868.097702019]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252869.099690073]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252870.585913989]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100766 timeout was 0.1.
+[ INFO] [1714252871.094410929]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252872.099563490]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252874.097713886]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252875.619542728]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101071 timeout was 0.1.
+[ INFO] [1714252876.095855731]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252878.095713683]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252880.090710565]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252880.657602469]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100801 timeout was 0.1.
+[ INFO] [1714252881.095523419]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252883.094457241]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252884.095101937]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252885.687189591]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100439 timeout was 0.1.
+[ INFO] [1714252886.093882828]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252887.094007448]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252889.089940651]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252890.093453552]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252890.722201499]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100941 timeout was 0.1.
+[ INFO] [1714252891.093459181]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252893.092530241]: Dropped GPS update, since it's not RTK Fixed
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[move_base_legacy_relay-6] process has died [pid 120, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/02e3cc3a-04dc-11ef-a6d4-e45f015f1ffe/move_base_legacy_relay-6.log].
+log file: /root/.ros/log/02e3cc3a-04dc-11ef-a6d4-e45f015f1ffe/move_base_legacy_relay-6*.log
+[ INFO] [1714252895.092382749]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252895.754413157]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100206 timeout was 0.1.
+[ INFO] [1714252896.092385921]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252898.086837721]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252899.092266979]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252900.785777271]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100129 timeout was 0.1.
+[ INFO] [1714252901.090617890]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252902.091152962]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252904.090912965]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252905.094406742]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252905.816045381]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100137 timeout was 0.1.
+[ INFO] [1714252907.085686230]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252908.090682311]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1714252910.089473467]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1714252910.853392677]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100984 timeout was 0.1.
+[ INFO] [1714252911.091168109]: Dropped GPS update, since it's not RTK Fixed
+^Croot@openmower:/home/PI# ^C

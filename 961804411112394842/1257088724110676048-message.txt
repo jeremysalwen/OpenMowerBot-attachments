@@ -1,0 +1,353 @@
+dev@447cddc912e5:/workspace$ OM_NO_GPS=True OM_NO_COMMS=True roslaunch open_mower open_mower.launch
+... logging to /home/dev/.ros/log/72a74952-3727-11ef-8726-98ded00a228e/roslaunch-447cddc912e5-638947.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://447cddc912e5:36507/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /heatmap_generator/sensor_ids: om_gps_accuracy
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 1
+ * /mower_logic/battery_critical_voltage: 23.0
+ * /mower_logic/battery_empty_voltage: 23.0
+ * /mower_logic/battery_full_voltage: 27.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0.25
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 72.81
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: True
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal: False
+ * /mower_logic/tool_width: 0.12
+ * /mower_logic/undock_distance: 2
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+ * /xbot_monitoring/external_mqtt_password: 
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: 
+ * /xbot_monitoring/external_mqtt_username: 
+ * /xbot_monitoring/software_version: 
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    heatmap_generator (xbot_monitoring/heatmap_generator)
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+ROS_MASTER_URI=http://192.168.1.115:11311
+
+process[move_base_flex-1]: started with pid [638971]
+process[move_base_legacy_relay-2]: started with pid [638972]
+process[xbot_positioning-3]: started with pid [638973]
+process[joy-4]: started with pid [638974]
+process[joy_teleop-5]: started with pid [638978]
+process[map_service-6]: started with pid [638986]
+process[mower_logic-7]: started with pid [638987]
+process[slic3r_coverage_planner-8]: started with pid [638992]
+process[twist_mux-9]: started with pid [638996]
+process[xbot_monitoring-10]: started with pid [638998]
+[ INFO] [1719783496.819931748]: Antenna offset: 0.3, 0
+[ERROR] [1719783496.851274994]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[heatmap_generator-11]: started with pid [639002]
+process[xbot_remote-12]: started with pid [639010]
+process[monitoring-13]: started with pid [639014]
+[ INFO] [1719783496.901545746]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[ INFO] [1719783496.976739680]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100
+[ INFO] [1719783497.057629213]: Started gyro calibration
+[FATAL] [1719783497.069271893]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[ WARN] [1719783497.163287679]: Error opening stored mowing areas.
+[ INFO] [1719783497.178742076]: Map Position: x=0, y=0
+[ INFO] [1719783497.178818548]: Map Size: x=10, y=10
+[ INFO] [1719783497.183087013]: Generating heatmap for sensor id: om_gps_accuracy
+[ INFO] [1719783497.192429696]: found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1719783497.216632860]: docking pose: position: 
+  x: 0
+  y: 0
+  z: 0
+orientation: 
+  x: 0
+  y: 0
+  z: 0
+  w: 0
+
+[ INFO] [1719783497.223140187]: found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1719783497.243479296]: found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1719783497.257978143]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783497.264225967]: found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1719783497.284207837]: found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1719783497.312734554]: Updated heatmap geometry.
+[ INFO] [1719783497.323480572]: found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1719783497.327902706]: om_mower_logic: Setting mower_logic config
+[ INFO] [1719783497.350161703]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1719783497.386530005]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1719783497.400634437]: got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ INFO] [1719783497.418487994]: found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1719783497.484642146]: Subscribing to sensor data for sensor with name: V Charge
+[ INFO] [1719783497.512182547]: got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1719783497.516447995]: Subscribing to sensor data for sensor with name: V Battery
+[ INFO] [1719783497.536146589]: got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1719783497.540228448]: Subscribing to sensor data for sensor with name: Charge Current
+[ INFO] [1719783497.558805486]: got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1719783497.563356330]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[ INFO] [1719783497.580606766]: got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1719783497.583370211]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[ INFO] [1719783497.604811565]: got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1719783497.608705138]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[ INFO] [1719783497.626084664]: got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1719783497.629499021]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[ INFO] [1719783497.662937752]: got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1719783497.666360220]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[ INFO] [1719783497.688086440]: got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[ INFO] [1719783497.691955665]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[ INFO] [1719783497.771101947]: Waiting for a status message
+[ INFO] [1719783498.359870448]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783498.771192547]: Waiting for a pose message
+[ INFO] [1719783499.460338072]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783500.460975494]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783501.559847265]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783502.075432498]: Calibrated gyro offset: 0.00040793
+[ WARN] [1719783502.375020290]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100858 timeout was 0.1.
+[ INFO] [1719783502.657273107]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783502.771228159]: Waiting for emergency service
+[ INFO] [1719783502.776228192]: Waiting for path server
+[ INFO] [1719783502.780428039]: Waiting for mower service
+[ INFO] [1719783502.784556456]: Waiting for gps service
+[ INFO] [1719783502.791827390]: Waiting for positioning service
+[ INFO] [1719783502.799268514]: Waiting for map server
+[ INFO] [1719783502.802677547]: Waiting for docking point server
+[ INFO] [1719783502.805845496]: Waiting for nav point server
+[ INFO] [1719783502.808753919]: Waiting for clear nav point server
+[ INFO] [1719783502.811971156]: Waiting for move base flex
+[ INFO] [1719783503.760845481]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783504.859933644]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783505.861073886]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783506.960138540]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783507.411669398]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100443 timeout was 0.1.
+[ INFO] [1719783508.065086912]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783509.158943609]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783510.168968792]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783511.259289776]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783512.261112605]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783512.444486716]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100582 timeout was 0.1.
+[ INFO] [1719783513.365270449]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783514.367366443]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783515.463682097]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783516.560088297]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783517.474179072]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10026 timeout was 0.1.
+[ INFO] [1719783517.657049055]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783518.657863589]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783519.658407823]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783520.660227286]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783521.758244110]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783522.507192909]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100277 timeout was 0.1.
+[ INFO] [1719783522.760522264]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783523.761164685]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783524.859701585]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783525.861960876]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783526.957172728]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783527.537901652]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100631 timeout was 0.1.
+[ INFO] [1719783528.069148830]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783529.163115697]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783530.259827868]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783531.260101056]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783532.264839185]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783532.569228236]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100162 timeout was 0.1.
+[ INFO] [1719783533.363908050]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783534.366209660]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783535.462005376]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783536.464278990]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783537.562652466]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783537.600732959]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100455 timeout was 0.1.
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[move_base_legacy_relay-2] process has died [pid 638972, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/home/dev/.ros/log/72a74952-3727-11ef-8726-98ded00a228e/move_base_legacy_relay-2.log].
+log file: /home/dev/.ros/log/72a74952-3727-11ef-8726-98ded00a228e/move_base_legacy_relay-2*.log
+[ INFO] [1719783538.563127237]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783539.654735205]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783540.660461837]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783541.759911407]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783542.633199876]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100421 timeout was 0.1.
+[ INFO] [1719783542.859770243]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783543.861340410]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783544.959715677]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783546.069159659]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783547.160646358]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783547.663481710]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100071 timeout was 0.1.
+[ INFO] [1719783548.171870388]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783549.267000597]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783550.369955459]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783551.464973107]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783552.464999952]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783552.692842554]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100971 timeout was 0.1.
+[ INFO] [1719783553.466114344]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783554.563183597]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783555.563258738]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783556.563818108]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783557.656622617]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783557.723336604]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100476 timeout was 0.1.
+[ INFO] [1719783558.660740614]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783559.762249369]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783560.859102801]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783561.859234229]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783562.756426382]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100316 timeout was 0.1.
+[ERROR] [1719783562.812118140]: Move base flex not found.
+[ INFO] [1719783562.959263124]: Dropped GPS update, since it's not RTK Fixed
+[mower_logic-7] process has died [pid 638987, exit code 3, cmd /workspace/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/home/dev/.ros/log/72a74952-3727-11ef-8726-98ded00a228e/mower_logic-7.log].
+log file: /home/dev/.ros/log/72a74952-3727-11ef-8726-98ded00a228e/mower_logic-7*.log
+[ INFO] [1719783564.071071425]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783565.163643823]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783566.170841142]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783567.261753336]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783567.787627051]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100865 timeout was 0.1.
+[ INFO] [1719783568.263336294]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783569.358202075]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783570.364786089]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783571.463046698]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783572.558259970]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783572.815531344]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100029 timeout was 0.1.
+[ INFO] [1719783573.560220728]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783574.658425645]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783575.759722705]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783576.765104392]: Dropped GPS update, since it's not RTK Fixed
+[ WARN] [1719783577.846543612]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100584 timeout was 0.1.
+[ INFO] [1719783577.860119904]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783578.861984770]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1719783579.862171494]: Dropped GPS update, since it's not RTK Fixed

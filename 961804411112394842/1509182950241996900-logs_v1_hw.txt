@@ -1,0 +1,372 @@
+Mosquitto       | 1779887450: Info: running mosquitto as user: mosquitto.
+app             | ▲ Next.js 16.2.1
+app             | - Local:         http://localhost:3000
+app             | - Network:       http://0.0.0.0:3000
+app             | ✓ Ready in 0ms
+open_mower_ros  | ... logging to /data/ros/log/7d2f6650-59cd-11f1-8f7a-e45f01ac3832/roslaunch-openmower-1.log
+open_mower_ros  | Checking log directory for disk usage. This may take a while.
+open_mower_ros  | Press Ctrl-C to interrupt
+open_mower_ros  | Done checking log file disk usage. Usage is <1GB.
+open_mower_ros  | 
+open_mower_ros  | started roslaunch server http://openmower:45911/
+open_mower_ros  | 
+open_mower_ros  | SUMMARY
+open_mower_ros  | ========
+open_mower_ros  | 
+open_mower_ros  | PARAMETERS
+open_mower_ros  |  * /joy/autorepeat_rate: 10.0
+open_mower_ros  |  * /joy/coalesce_interval: 0.06
+open_mower_ros  |  * /joy_teleop/enable_turbo_button: 4
+open_mower_ros  |  * /joy_teleop/scale_angular: 1.5
+open_mower_ros  |  * /joy_teleop/scale_angular_turbo: 3.0
+open_mower_ros  |  * /joy_teleop/scale_linear: 0.5
+open_mower_ros  |  * /joy_teleop/scale_linear_turbo: 1.0
+open_mower_ros  |  * /ll/bind_ip: 172.16.78.1
+open_mower_ros  |  * /ll/ll_serial_port: /dev/ttyAMA0
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/has_motor_temp: False
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/serial_port: /dev/ttyAMA5
+open_mower_ros  |  * /ll/services/diff_drive/left_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/has_motor_temp: True
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/max_motor_rpm: 3800
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/min_motor_rpm: 2800
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/min_motor_rpm_critical: 2300
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/serial_port: /dev/ttyAMA4
+open_mower_ros  |  * /ll/services/diff_drive/mower_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/has_motor_temp: False
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/motor_pole_pairs: 4
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/serial_port: /dev/ttyAMA3
+open_mower_ros  |  * /ll/services/diff_drive/right_xesc/xesc_type: xesc_mini
+open_mower_ros  |  * /ll/services/diff_drive/ticks_per_m: 1600.0
+open_mower_ros  |  * /ll/services/diff_drive/wheel_distance_m: 0.325
+open_mower_ros  |  * /ll/services/gps/absolute_coords: True
+open_mower_ros  |  * /ll/services/gps/baud_rate: 921600
+open_mower_ros  |  * /ll/services/gps/baudrate: 921600
+open_mower_ros  |  * /ll/services/gps/datum_height: 0
+open_mower_ros  |  * /ll/services/gps/datum_lat: 55.44347
+open_mower_ros  |  * /ll/services/gps/datum_long: 11.5594
+open_mower_ros  |  * /ll/services/gps/protocol: UBX
+open_mower_ros  |  * /ll/services/gps/serial_port: /dev/ttyAMA2
+open_mower_ros  |  * /ll/services/imu/axis_config: +X-Y-Z
+open_mower_ros  |  * /ll/services/input/config_file: /opt/open_mower_r...
+open_mower_ros  |  * /ll/services/power/battery_critical_high_voltage: 29.5
+open_mower_ros  |  * /ll/services/power/battery_critical_voltage: 23.0
+open_mower_ros  |  * /ll/services/power/battery_empty_voltage: 24.0
+open_mower_ros  |  * /ll/services/power/battery_full_voltage: 29.4
+open_mower_ros  |  * /ll/services/power/charge_critical_high_current: 3
+open_mower_ros  |  * /ll/services/power/charge_critical_high_voltage: 30.5
+open_mower_ros  |  * /ll/services/power/charge_current: 2
+open_mower_ros  |  * /ll/services/sound/language: en
+open_mower_ros  |  * /ll/services/sound/volume: -1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/forward_only: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/acceleration: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/debug_pid: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/forward_only: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+open_mower_ros  |  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+open_mower_ros  |  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+open_mower_ros  |  * /move_base_flex/controller_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/controller_patience: 30.0
+open_mower_ros  |  * /move_base_flex/controllers: [{'name': 'FTCPla...
+open_mower_ros  |  * /move_base_flex/global_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/global_costmap/publish_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/resolution: 0.1
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/global_costmap/rolling_window: False
+open_mower_ros  |  * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/global_costmap/update_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/local_costmap/height: 1.5
+open_mower_ros  |  * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/local_costmap/publish_frequency: 2.0
+open_mower_ros  |  * /move_base_flex/local_costmap/resolution: 0.15
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/rolling_window: True
+open_mower_ros  |  * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/local_costmap/update_frequency: 5.0
+open_mower_ros  |  * /move_base_flex/local_costmap/width: 1.5
+open_mower_ros  |  * /move_base_flex/oscillation_distance: 0.2
+open_mower_ros  |  * /move_base_flex/oscillation_timeout: 10.0
+open_mower_ros  |  * /move_base_flex/planner_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/planner_patience: 5.0
+open_mower_ros  |  * /move_base_flex/planners: [{'name': 'Global...
+open_mower_ros  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+open_mower_ros  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+open_mower_ros  |  * /mower_logic/automatic_mode: 1
+open_mower_ros  |  * /mower_logic/cu_rain_threshold: -1
+open_mower_ros  |  * /mower_logic/docking_approach_distance: 1.0
+open_mower_ros  |  * /mower_logic/docking_extra_time: 1.0
+open_mower_ros  |  * /mower_logic/docking_redock: False
+open_mower_ros  |  * /mower_logic/docking_retry_count: 3
+open_mower_ros  |  * /mower_logic/emergency_lift_period: 4000
+open_mower_ros  |  * /mower_logic/emergency_tilt_period: 10000
+open_mower_ros  |  * /mower_logic/enable_mower: True
+open_mower_ros  |  * /mower_logic/gps_timeout: 5.0
+open_mower_ros  |  * /mower_logic/gps_wait_time: 5.0
+open_mower_ros  |  * /mower_logic/ignore_charging_current: False
+open_mower_ros  |  * /mower_logic/mow_angle_increment: 90
+open_mower_ros  |  * /mower_logic/mow_angle_offset: 50
+open_mower_ros  |  * /mower_logic/mow_angle_offset_is_absolute: False
+open_mower_ros  |  * /mower_logic/outline_overlap_count: 1
+open_mower_ros  |  * /mower_logic/rain_check_seconds: 20
+open_mower_ros  |  * /mower_logic/rain_delay_minutes: 30
+open_mower_ros  |  * /mower_logic/rain_mode: 0
+open_mower_ros  |  * /mower_logic/undock_angle: 0.0
+open_mower_ros  |  * /mower_logic/undock_angled_distance: 2.0
+open_mower_ros  |  * /mower_logic/undock_distance: 1.0
+open_mower_ros  |  * /mower_logic/undock_fixed_angle: False
+open_mower_ros  |  * /mower_logic/undock_use_curve: True
+open_mower_ros  |  * /ntrip_client/authenticate: True
+open_mower_ros  |  * /ntrip_client/ca_cert: 
+open_mower_ros  |  * /ntrip_client/cert: 
+open_mower_ros  |  * /ntrip_client/host: 192.168.0.156
+open_mower_ros  |  * /ntrip_client/key: 
+open_mower_ros  |  * /ntrip_client/mountpoint: Lasse-RTK
+open_mower_ros  |  * /ntrip_client/nmea_max_length: 82
+open_mower_ros  |  * /ntrip_client/nmea_min_length: 3
+open_mower_ros  |  * /ntrip_client/ntrip_version: 
+open_mower_ros  |  * /ntrip_client/password: openmower
+open_mower_ros  |  * /ntrip_client/port: 2101
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_max: 5
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_wait_seconds: 99999
+open_mower_ros  |  * /ntrip_client/rtcm_frame_id: odom
+open_mower_ros  |  * /ntrip_client/rtcm_message_package: rtcm_msgs
+open_mower_ros  |  * /ntrip_client/rtcm_timeout_seconds: 30
+open_mower_ros  |  * /ntrip_client/ssl: False
+open_mower_ros  |  * /ntrip_client/username: openmower
+open_mower_ros  |  * /rosdistro: noetic
+open_mower_ros  |  * /rosversion: 1.17.4
+open_mower_ros  |  * /twist_mux/topics: [{'name': 'naviga...
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_enable: False
+open_mower_ros  |  * /xbot_positioning/antenna_offset_x: 0.3
+open_mower_ros  |  * /xbot_positioning/antenna_offset_y: 0.0
+open_mower_ros  |  * /xbot_positioning/debug: False
+open_mower_ros  |  * /xbot_positioning/max_gps_accuracy: 0.2
+open_mower_ros  | 
+open_mower_ros  | NODES
+open_mower_ros  |   /
+open_mower_ros  |     joy (joy/joy_node)
+open_mower_ros  |     joy_teleop (teleop_twist_joy/teleop_node)
+open_mower_ros  |     ll (mower_comms_v1/mower_comms_v1)
+open_mower_ros  |     map_service (mower_map/mower_map_service)
+open_mower_ros  |     monitoring (mower_logic/monitoring)
+open_mower_ros  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+open_mower_ros  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+open_mower_ros  |     mower_logic (mower_logic/mower_logic)
+open_mower_ros  |     ntrip_client (ntrip_client/ntrip_ros.py)
+open_mower_ros  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+open_mower_ros  |     twist_mux (twist_mux/twist_mux)
+open_mower_ros  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+open_mower_ros  |     xbot_positioning (xbot_positioning/xbot_positioning)
+open_mower_ros  |     xbot_remote (xbot_remote/xbot_remote)
+open_mower_ros  |   /ll/services/
+open_mower_ros  |     gps (xbot_driver_gps/driver_gps_node)
+open_mower_ros  | 
+open_mower_ros  | auto-starting new master
+open_mower_ros  | process[master]: started with pid [49]
+open_mower_ros  | ROS_MASTER_URI=http://localhost:11311
+open_mower_ros  | 
+open_mower_ros  | setting /run_id to 7d2f6650-59cd-11f1-8f7a-e45f01ac3832
+open_mower_ros  | process[rosout-1]: started with pid [59]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | process[ll-2]: started with pid [66]
+open_mower_ros  | process[ll/services/gps-3]: started with pid [67]
+open_mower_ros  | process[ntrip_client-4]: started with pid [72]
+open_mower_ros  | process[move_base_flex-5]: started with pid [78]
+open_mower_ros  | process[move_base_legacy_relay-6]: started with pid [80]
+open_mower_ros  | process[xbot_positioning-7]: started with pid [81]
+open_mower_ros  | process[joy-8]: started with pid [86]
+open_mower_ros  | process[joy_teleop-9]: started with pid [90]
+open_mower_ros  | process[map_service-10]: started with pid [97]
+open_mower_ros  | process[mower_logic-11]: started with pid [99]
+open_mower_ros  | process[slic3r_coverage_planner-12]: started with pid [103]
+open_mower_ros  | process[twist_mux-13]: started with pid [107]
+open_mower_ros  | process[xbot_monitoring-14]: started with pid [114]
+open_mower_ros  | process[xbot_remote-15]: started with pid [120]
+open_mower_ros  | process[monitoring-16]: started with pid [128]
+Mosquitto       | 1779887455: New connection from 172.19.0.1:34762 on port 1883.
+Mosquitto       | 1779887455: New client connected from 172.19.0.1:34762 as xbot_monitoring (p4, c1, k1000).
+open_mower_ros  | [ERROR] [1779887455.670738639]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | [ERROR] [1779887456.005703842]: [driver_gps] gps time diff was: 100, host time diff was: 225
+open_mower_ros  | [FATAL] [1779887456.028584710]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+open_mower_ros  | [INFO] [1779887456.770218]: Connected to http://192.168.0.156:2101/Lasse-RTK
+open_mower_ros  | [ERROR] [1779887456.998548117]: [driver_gps] gps time diff was: 100, host time diff was: 224
+open_mower_ros  | [ERROR] [1779887458.001210371]: [driver_gps] gps time diff was: 100, host time diff was: 221
+open_mower_ros  | [ERROR] [1779887458.997548245]: [driver_gps] gps time diff was: 100, host time diff was: 222
+open_mower_ros  | [ERROR] [1779887460.001202104]: [driver_gps] gps time diff was: 100, host time diff was: 217
+open_mower_ros  | [ERROR] [1779887460.993753664]: [driver_gps] gps time diff was: 100, host time diff was: 218
+open_mower_ros  | [WARN] [1779887461.450163058]: Could not set configuration
+open_mower_ros  | [ERROR] [1779887461.457866822]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1779887461.643246945]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100114 timeout was 0.1.
+open_mower_ros  | [ERROR] [1779887462.045444859]: [driver_gps] gps time diff was: 100, host time diff was: 270
+open_mower_ros  | [ERROR] [1779887462.233593736]: [driver_gps] gps time diff was: 300, host time diff was: 188
+open_mower_ros  | [ERROR] [1779887462.477779905]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [ERROR] [1779887463.047444268]: [driver_gps] gps time diff was: 100, host time diff was: 274
+open_mower_ros  | [ERROR] [1779887463.232186668]: [driver_gps] gps time diff was: 300, host time diff was: 184
+open_mower_ros  | [ERROR] [1779887463.477796593]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [ERROR] [1779887463.998790131]: [driver_gps] gps time diff was: 100, host time diff was: 221
+open_mower_ros  | [ERROR] [1779887464.477907371]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [ERROR] [1779887464.997288855]: [driver_gps] gps time diff was: 100, host time diff was: 225
+open_mower_ros  | [ERROR] [1779887465.497778852]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [ERROR] [1779887466.056185804]: [driver_gps] gps time diff was: 100, host time diff was: 279
+open_mower_ros  | [ERROR] [1779887466.238380893]: [driver_gps] gps time diff was: 300, host time diff was: 182
+open_mower_ros  | [ERROR] [1779887466.497802014]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [ERROR] [1779887466.992584353]: [driver_gps] gps time diff was: 100, host time diff was: 218
+open_mower_ros  | [ERROR] [1779887467.497847543]: Low Level Emergency. Bitmask was: 1
+open_mower_ros  | [WARN] [1779887467.733791315]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+open_mower_ros  | [ERROR] [1779887467.996968373]: [driver_gps] gps time diff was: 100, host time diff was: 221
+open_mower_ros  | [ERROR] [1779887468.113669168]: No mowing area with index: 0
+open_mower_ros  | [WARN] [1779887468.118567715]: We don't have a map configured. Starting Area Recorder!
+open_mower_ros  | [WARN] [1779887468.599903242]: Low quality GPS
+open_mower_ros  | [WARN] [1779887468.599995297]: GPS timeout
+open_mower_ros  | [ERROR] [1779887469.048337585]: [driver_gps] gps time diff was: 100, host time diff was: 278
+open_mower_ros  | [ERROR] [1779887469.285373762]: [driver_gps] gps time diff was: 400, host time diff was: 237
+open_mower_ros  | [ERROR] [1779887470.046314426]: [driver_gps] gps time diff was: 100, host time diff was: 269
+open_mower_ros  | [WARN] [1779887470.099807517]: Low quality GPS
+open_mower_ros  | [WARN] [1779887470.099976276]: GPS timeout
+open_mower_ros  | [ERROR] [1779887470.234531724]: [driver_gps] gps time diff was: 300, host time diff was: 188
+open_mower_ros  | [ERROR] [1779887470.333308254]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [ERROR] [1779887471.037548979]: [driver_gps] gps time diff was: 100, host time diff was: 268
+open_mower_ros  | [ERROR] [1779887471.223564818]: [driver_gps] gps time diff was: 300, host time diff was: 186
+open_mower_ros  | [WARN] [1779887471.599781452]: Low quality GPS
+open_mower_ros  | [WARN] [1779887471.599862377]: GPS timeout
+open_mower_ros  | [ERROR] [1779887472.041035656]: [driver_gps] gps time diff was: 100, host time diff was: 267
+open_mower_ros  | [ERROR] [1779887472.239749157]: [driver_gps] gps time diff was: 300, host time diff was: 198
+open_mower_ros  | [WARN] [1779887472.599791041]: Low quality GPS
+open_mower_ros  | [WARN] [1779887472.599872466]: GPS timeout
+open_mower_ros  | [ERROR] [1779887472.996356730]: [driver_gps] gps time diff was: 100, host time diff was: 222
+open_mower_ros  | [ERROR] [1779887474.004111709]: [driver_gps] gps time diff was: 100, host time diff was: 227
+open_mower_ros  | [WARN] [1779887474.099786558]: Low quality GPS
+open_mower_ros  | [WARN] [1779887474.100067743]: GPS timeout
+open_mower_ros  | [ERROR] [1779887475.001043797]: [driver_gps] gps time diff was: 100, host time diff was: 224
+open_mower_ros  | [WARN] [1779887475.599850180]: Low quality GPS
+open_mower_ros  | [WARN] [1779887475.600130161]: GPS timeout
+open_mower_ros  | [ERROR] [1779887476.010652230]: [driver_gps] gps time diff was: 100, host time diff was: 226
+open_mower_ros  | [WARN] [1779887477.099777464]: Low quality GPS
+open_mower_ros  | [WARN] [1779887477.100035389]: GPS timeout
+open_mower_ros  | [ERROR] [1779887478.060191516]: [driver_gps] gps time diff was: 100, host time diff was: 280
+open_mower_ros  | [WARN] [1779887478.099787816]: Low quality GPS
+open_mower_ros  | [ERROR] [1779887478.237606404]: [driver_gps] gps time diff was: 300, host time diff was: 177
+open_mower_ros  | [WARN] [1779887478.599781815]: GPS timeout
+open_mower_ros  | [ERROR] [1779887478.997435274]: [driver_gps] gps time diff was: 100, host time diff was: 221
+open_mower_ros  | [WARN] [1779887479.099785943]: Low quality GPS
+open_mower_ros  | [WARN] [1779887479.599781978]: GPS timeout
+open_mower_ros  | [WARN] [1779887480.099855179]: Low quality GPS
+open_mower_ros  | [WARN] [1779887480.599787676]: GPS timeout
+open_mower_ros  | [ERROR] [1779887481.047014470]: [driver_gps] gps time diff was: 100, host time diff was: 269
+open_mower_ros  | [ERROR] [1779887481.227088685]: [driver_gps] gps time diff was: 300, host time diff was: 180
+open_mower_ros  | [WARN] [1779887481.599779037]: Low quality GPS
+open_mower_ros  | [WARN] [1779887481.599859926]: GPS timeout
+open_mower_ros  | [ERROR] [1779887482.002266003]: [driver_gps] gps time diff was: 100, host time diff was: 224
+open_mower_ros  | [WARN] [1779887482.599782525]: Low quality GPS
+open_mower_ros  | [WARN] [1779887482.599864248]: GPS timeout
+open_mower_ros  | [ERROR] [1779887482.997412554]: [driver_gps] gps time diff was: 100, host time diff was: 224
+open_mower_ros  | [ERROR] [1779887484.019296852]: [driver_gps] gps time diff was: 100, host time diff was: 233
+open_mower_ros  | [WARN] [1779887484.099783318]: Low quality GPS
+open_mower_ros  | [WARN] [1779887484.099863781]: GPS timeout
+open_mower_ros  | [ERROR] [1779887484.995688488]: [driver_gps] gps time diff was: 100, host time diff was: 221
+open_mower_ros  | [WARN] [1779887485.099782856]: Low quality GPS
+open_mower_ros  | [WARN] [1779887485.099868097]: GPS timeout
+open_mower_ros  | [ERROR] [1779887486.002165530]: [driver_gps] gps time diff was: 100, host time diff was: 222
+open_mower_ros  | [ERROR] [1779887486.334304265]: [driver_gps] waited 14 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1779887486.599841953]: Low quality GPS
+open_mower_ros  | [WARN] [1779887486.599978453]: GPS timeout
+open_mower_ros  | [ERROR] [1779887487.050295772]: [driver_gps] gps time diff was: 100, host time diff was: 275
+open_mower_ros  | [ERROR] [1779887487.283312518]: [driver_gps] gps time diff was: 400, host time diff was: 233
+open_mower_ros  | [ERROR] [1779887488.000445651]: [driver_gps] gps time diff was: 100, host time diff was: 219
+open_mower_ros  | [WARN] [1779887488.099791638]: Low quality GPS
+open_mower_ros  | [WARN] [1779887488.099873194]: GPS timeout
+open_mower_ros  | [ERROR] [1779887488.987082092]: [driver_gps] gps time diff was: 100, host time diff was: 216
+open_mower_ros  | [WARN] [1779887489.099808592]: Low quality GPS
+open_mower_ros  | [WARN] [1779887489.099900943]: GPS timeout
+open_mower_ros  | [ERROR] [1779887490.052533517]: [driver_gps] gps time diff was: 100, host time diff was: 269
+open_mower_ros  | [WARN] [1779887490.100039005]: Low quality GPS
+open_mower_ros  | [WARN] [1779887490.100133060]: GPS timeout
+open_mower_ros  | [ERROR] [1779887490.243043653]: [driver_gps] gps time diff was: 300, host time diff was: 189
+open_mower_ros  | [ERROR] [1779887490.993919183]: [driver_gps] gps time diff was: 100, host time diff was: 219
+open_mower_ros  | [WARN] [1779887491.599781084]: Low quality GPS
+open_mower_ros  | [WARN] [1779887491.599861010]: GPS timeout
+open_mower_ros  | [ERROR] [1779887491.994263646]: [driver_gps] gps time diff was: 100, host time diff was: 217
+Mosquitto       | 1779887492: New connection from 192.168.0.114:63591 on port 9001.
+Mosquitto       | 1779887492: New client connected from 192.168.0.114:63591 as om-client-79921 (p5, c0, k0).
+open_mower_ros  | [WARN] [1779887492.599801769]: Low quality GPS
+open_mower_ros  | [WARN] [1779887492.599883269]: GPS timeout
+open_mower_ros  | [ERROR] [1779887493.057026642]: [driver_gps] gps time diff was: 100, host time diff was: 274
+open_mower_ros  | [ERROR] [1779887493.242605138]: [driver_gps] gps time diff was: 300, host time diff was: 185
+open_mower_ros  | [ERROR] [1779887494.015023808]: [driver_gps] gps time diff was: 100, host time diff was: 230
+open_mower_ros  | [WARN] [1779887494.099786209]: Low quality GPS
+open_mower_ros  | [WARN] [1779887494.099866468]: GPS timeout
+open_mower_ros  | [ERROR] [1779887495.000203384]: [driver_gps] gps time diff was: 100, host time diff was: 224
+open_mower_ros  | [WARN] [1779887495.599780347]: Low quality GPS
+open_mower_ros  | [WARN] [1779887495.599860569]: GPS timeout
+open_mower_ros  | [ERROR] [1779887496.056450218]: [driver_gps] gps time diff was: 100, host time diff was: 276
+open_mower_ros  | [ERROR] [1779887496.234260671]: [driver_gps] gps time diff was: 300, host time diff was: 177
+open_mower_ros  | [WARN] [1779887496.599787689]: Low quality GPS
+open_mower_ros  | [WARN] [1779887496.599869763]: GPS timeout
+open_mower_ros  | [ERROR] [1779887496.993288859]: [driver_gps] gps time diff was: 100, host time diff was: 218
+open_mower_ros  | [WARN] [1779887497.599825639]: Low quality GPS
+open_mower_ros  | [WARN] [1779887497.599925583]: GPS timeout

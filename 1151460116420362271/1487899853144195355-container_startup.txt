@@ -1,0 +1,96 @@
+root@RPi-CM4:/opt/docker/configs/openmower_ros2# docker ps -a
+CONTAINER ID   IMAGE                                          COMMAND                  CREATED         STATUS         PORTS     NAMES
+0d772dbf4256   ghcr.io/cedbossneo/openmower-gui:v2-messages   "/app/openmower-gui"     5 seconds ago   Up 4 seconds             openmower_ros2-gui-1
+3b20b3726053   eclipse-mosquitto:2.1.2-alpine                 "/docker-entrypoint.…"   5 seconds ago   Up 4 seconds             openmower_ros2-mosquitto-1
+16cc2aa04fe4   ghcr.io/rs64-ctrl/open_mower_ros:ros2-jazzy    "/openmower_entrypoi…"   5 seconds ago   Up 4 seconds             openmower_ros2-ros-1
+9c27aeb69a90   nginx:1.29.7                                   "/docker-entrypoint.…"   5 seconds ago   Up 4 seconds             openmower_ros2-nginx-1
+root@RPi-CM4:/opt/docker/configs/openmower_ros2# 
+root@RPi-CM4:/opt/docker/configs/openmower_ros2# 
+root@RPi-CM4:/opt/docker/configs/openmower_ros2# docker logs openmower_ros2-ros-1
+[INFO] [launch]: All log files can be found below /home/openmower/.ros/log/2026-03-29-21-29-02-647294-RPi-CM4-1
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mower_comms_v2-1]: process started with pid [51]
+[INFO] [mbf_costmap_nav_node-2]: process started with pid [52]
+[INFO] [xbot_positioning_node-3]: process started with pid [53]
+[INFO] [joy_linux_node-4]: process started with pid [54]
+[INFO] [teleop_node-5]: process started with pid [55]
+[INFO] [mower_map_service-6]: process started with pid [56]
+[INFO] [mower_logic_node-7]: process started with pid [57]
+[INFO] [slic3r_coverage_planner_node-8]: process started with pid [58]
+[INFO] [twist_mux-9]: process started with pid [59]
+[INFO] [xbot_monitoring-10]: process started with pid [60]
+[INFO] [xbot_remote-11]: process started with pid [61]
+[INFO] [monitoring-12]: process started with pid [62]
+[mower_comms_v2-1] [INFO] [1774812543.562996859] [mower_comms_v2]: Bind IP (Robot Internal): 10.0.99.10
+[mower_comms_v2-1] [INFO] [1774812543.668741689] [mower_comms_v2]: Wheel ticks [1/m]: 1195.000000
+[mower_comms_v2-1] [INFO] [1774812543.668965057] [mower_comms_v2]: Wheel distance [m]: 0.450000
+[mower_comms_v2-1] [INFO] [1774812543.669424960] [mower_comms_v2]: GPS protocol: NMEA, baud rate: 921600, gps port index: 8
+[mower_comms_v2-1] [INFO] [1774812543.711765125] [mower_comms_v2]: IMU axis config: +X-Y-Z
+[mower_comms_v2-1] [INFO] [1774812543.802663968] [mower_comms_v2]: Datum: XX.XXXXXXX, XX.XXXXXXX, XX.XX
+[teleop_node-5] [INFO] [1774812544.214092305] [TeleopTwistJoy]: Teleop enable button 5.
+[teleop_node-5] [INFO] [1774812544.214345136] [TeleopTwistJoy]: Turbo on button 4.
+[teleop_node-5] [INFO] [1774812544.214375228] [TeleopTwistJoy]: Linear axis x on 5 at scale 0.500000.
+[teleop_node-5] [INFO] [1774812544.214408246] [TeleopTwistJoy]: Turbo for linear axis x is scale 1.000000.
+[teleop_node-5] [INFO] [1774812544.214426931] [TeleopTwistJoy]: Angular axis yaw on 2 at scale 0.500000.
+[teleop_node-5] [INFO] [1774812544.214443727] [TeleopTwistJoy]: Turbo for angular axis yaw is scale 1.000000.
+[joy_linux_node-4] [ERROR] [1774812544.480964928] [joy]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[twist_mux-9] [INFO] [1774812544.611275464] [twist_mux]: Topic handler 'topics.logic' subscribed to topic 'logic_vel': timeout = 0.500000s , priority = 50.
+[twist_mux-9] [INFO] [1774812544.622507318] [twist_mux]: Topic handler 'topics.navigation' subscribed to topic 'nav_vel': timeout = 0.500000s , priority = 10.
+[twist_mux-9] [INFO] [1774812544.626472410] [twist_mux]: Topic handler 'topics.override' subscribed to topic 'override_vel': timeout = 0.500000s , priority = 100.
+[xbot_monitoring-10] [INFO] [1774812544.750488284] [xbot_monitoring]: MQTT Connected
+[xbot_positioning_node-3] [INFO] [1774812544.823722928] [xbot_positioning]: Antenna offset: 0.000000, 0.000000
+[mower_logic_node-7] [INFO] [1774812544.928299121] [mower_logic]: om_mower_logic: Setting mower_logic config
+[mower_logic_node-7] [INFO] [1774812544.929117483] [mower_logic]: om_mower_logic: Setting mower_logic config
+[mower_logic_node-7] [INFO] [1774812544.935694345] [mower_logic]: om_mower_logic: Setting mower_logic config
+[mower_logic_node-7] [INFO] [1774812544.940775722] [mower_logic]: om_mower_logic: Setting mower_logic config
+[mower_logic_node-7] [INFO] [1774812544.941359087] [mower_logic]: om_mower_logic: Setting mower_logic config
+[mower_logic_node-7] [INFO] [1774812544.941807397] [mower_logic]: om_mower_logic: Setting mower_logic config
+[xbot_monitoring-10] [INFO] [1774812544.994803829] [xbot_monitoring]: new methods registered: xbot_monitoring registered 2 methods.
+[xbot_monitoring-10] [INFO] [1774812545.117703937] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[mbf_costmap_nav_node-2] [WARN] [1774812545.119417513] [move_base_flex]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of strings with plugin names. For each plugin_name, also define plugin_name.type with the respective type that shall be loaded via pluginlib.
+[xbot_monitoring-10] [INFO] [1774812545.135229527] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[xbot_monitoring-10] [INFO] [1774812545.151710256] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[xbot_monitoring-10] [INFO] [1774812545.169429659] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[xbot_monitoring-10] [INFO] [1774812545.185426782] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[xbot_monitoring-10] [INFO] [1774812545.198680246] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[xbot_monitoring-10] [INFO] [1774812545.204842613] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[mower_map_service-6] [ERROR] [1774812545.209109627] [map_service]: Failed to parse map.json: [json.exception.parse_error.101] parse error at line 1, column 1: attempting to parse an empty input; check that your input string or stream contains the expected JSON
+[mower_map_service-6] [INFO] [1774812545.214775535] [map_service]: Map Position: x=0.000000, y=0.000000
+[mower_map_service-6] [INFO] [1774812545.214949052] [map_service]: Map Size: x=10.000000, y=10.000000
+[xbot_monitoring-10] [INFO] [1774812545.232442883] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[xbot_monitoring-10] [INFO] [1774812545.241997346] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[xbot_monitoring-10] [INFO] [1774812545.269505932] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[xbot_monitoring-10] [INFO] [1774812545.289126612] [xbot_monitoring]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[mower_logic_node-7] [INFO] [1774812545.460993432] [mower_logic]: Waiting for emergency message
+[xbot_monitoring-10] [INFO] [1774812545.518214027] [xbot_monitoring]: new methods registered: mower_map_service registered 1 methods.
+[mower_comms_v2-1] [INFO] [1774812551.776919212] [mower_comms_v2]: Found new service (Type: GpsService, ID: 6, endpoint: 10.0.99.100:49153)
+[mower_comms_v2-1] [INFO] [1774812551.777249450] [mower_comms_v2]: Found matching service, registering callbacks
+[mower_comms_v2-1] [INFO] [1774812551.778186126] [mower_comms_v2]: Found new service (Type: ImuService, ID: 4, endpoint: 10.0.99.100:49153)
+[mower_comms_v2-1] [INFO] [1774812551.778333476] [mower_comms_v2]: Found matching service, registering callbacks
+[mower_comms_v2-1] [INFO] [1774812551.780432271] [mower_comms_v2]: Found new service (Type: EmergencyService, ID: 1, endpoint: 10.0.99.100:49153)
+[mower_comms_v2-1] [INFO] [1774812551.780630547] [mower_comms_v2]: Found matching service, registering callbacks
+[mower_comms_v2-1] [INFO] [1774812551.784539064] [mower_comms_v2]: Found new service (Type: MowerService, ID: 3, endpoint: 10.0.99.100:49153)
+[mower_comms_v2-1] [INFO] [1774812551.784943542] [mower_comms_v2]: Found matching service, registering callbacks
+[mower_comms_v2-1] [INFO] [1774812551.806098263] [mower_comms_v2]: [ID=1] Sending Service Claim
+[mower_comms_v2-1] [INFO] [1774812551.806465111] [mower_comms_v2]: [ID=3] Sending Service Claim
+[mower_comms_v2-1] [INFO] [1774812551.806616073] [mower_comms_v2]: [ID=4] Sending Service Claim
+[mower_comms_v2-1] [INFO] [1774812551.806756164] [mower_comms_v2]: [ID=6] Sending Service Claim
+[mower_comms_v2-1] [INFO] [1774812551.806958940] [mower_comms_v2]: [ID=1] Successfully claimed service
+[mower_comms_v2-1] [INFO] [1774812551.807040995] [mower_comms_v2]: PJB: Service Connected! ID: 1
+[mower_comms_v2-1] [INFO] [1774812551.807193104] [mower_comms_v2]: >>> [ID=1] Received claim message
+[mower_comms_v2-1] [INFO] [1774812551.807390769] [mower_comms_v2]: >>> [ID=1] service claimed successfully.
+[mower_comms_v2-1] [INFO] [1774812551.807500064] [mower_comms_v2]: >>> [ID=1] Service started without requiring configuration
+[mower_comms_v2-1] [INFO] [1774812551.807589008] [mower_comms_v2]: >>> [ID=3] Received claim message
+[mower_comms_v2-1] [INFO] [1774812551.807677137] [mower_comms_v2]: >>> [ID=3] service claimed successfully.
+[mower_comms_v2-1] [INFO] [1774812551.807765321] [mower_comms_v2]: >>> [ID=3] Service started without requiring configuration
+[mower_comms_v2-1] [INFO] [1774812551.807937245] [mower_comms_v2]: [ID=3] Successfully claimed service
+[mower_comms_v2-1] [INFO] [1774812551.808094725] [mower_comms_v2]: PJB: Service Connected! ID: 3
+[mower_comms_v2-1] [INFO] [1774812551.808299705] [mower_comms_v2]: >>> [ID=4] Received claim message
+[mower_comms_v2-1] [INFO] [1774812551.808499981] [mower_comms_v2]: >>> [ID=4] service claimed successfully.
+[mower_comms_v2-1] [INFO] [1774812551.808634183] [mower_comms_v2]: >>> [ID=6] Received claim message
+[mower_comms_v2-1] [INFO] [1774812551.808797422] [mower_comms_v2]: >>> [ID=6] service claimed successfully.
+[mower_comms_v2-1] [INFO] [1774812551.809306047] [mower_comms_v2]: [ID=4] Successfully claimed service
+[mower_comms_v2-1] [INFO] [1774812551.809442749] [mower_comms_v2]: PJB: Service Connected! ID: 4
+[mower_comms_v2-1] [INFO] [1774812551.809569841] [mower_comms_v2]: [ID=6] Successfully claimed service
+[mower_comms_v2-1] [INFO] [1774812551.809645914] [mower_comms_v2]: PJB: Service Connected! ID: 6
+[mower_logic_node-7] [INFO] [1774812552.459859083] [mower_logic]: Waiting for a power message

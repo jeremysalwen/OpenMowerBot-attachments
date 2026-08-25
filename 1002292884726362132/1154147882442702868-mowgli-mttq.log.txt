@@ -1,0 +1,14 @@
+?chown: /mosquitto/config/mosquitto.conf: Read-only file system
+.1695240079: mosquitto version 2.0.18 starting
+A1695240079: Config loaded from /mosquitto/config/mosquitto.conf.
+51695240079: Opening ipv4 listen socket on port 1883.
+51695240079: Opening ipv6 listen socket on port 1883.
+;1695240079: Opening websockets listen socket on port 9001.
+-1695240079: mosquitto version 2.0.18 running
+?chown: /mosquitto/config/mosquitto.conf: Read-only file system
+.1695240136: mosquitto version 2.0.18 starting
+A1695240136: Config loaded from /mosquitto/config/mosquitto.conf.
+51695240136: Opening ipv4 listen socket on port 1883.
+51695240136: Opening ipv6 listen socket on port 1883.
+;1695240136: Opening websockets listen socket on port 9001.
+-1695240136: mosquitto version 2.0.18 running

@@ -1,0 +1,204 @@
+
+------> Cloning repository https://github.com/Nekraus/Mowgli@yardforce-500b...
+Enumerating objects: 3742, done.
+Counting objects:   0% (1/1253)\rCounting objects:   1% (13/1253)\rCounting objects:   2% (26/1253)\rCounting objects:   3% (38/1253)\rCounting objects:   4% (51/1253)\rCounting objects:   5% (63/1253)\rCounting objects:   6% (76/1253)\rCounting objects:   7% (88/1253)\rCounting objects:   8% (101/1253)\rCounting objects:   9% (113/1253)\rCounting objects:  10% (126/1253)\rCounting objects:  11% (138/1253)\rCounting objects:  12% (151/1253)\rCounting objects:  13% (163/1253)\rCounting objects:  14% (176/1253)\rCounting objects:  15% (188/1253)\rCounting objects:  16% (201/1253)\rCounting objects:  17% (214/1253)\rCounting objects:  18% (226/1253)\rCounting objects:  19% (239/1253)\rCounting objects:  20% (251/1253)\rCounting objects:  21% (264/1253)\rCounting objects:  22% (276/1253)\rCounting objects:  23% (289/1253)\rCounting objects:  24% (301/1253)\rCounting objects:  25% (314/1253)\rCounting objects:  26% (326/1253)\rCounting objects:  27% (339/1253)\rCounting objects:  28% (351/1253)\rCounting objects:  29% (364/1253)\rCounting objects:  30% (376/1253)\rCounting objects:  31% (389/1253)\rCounting objects:  32% (401/1253)\rCounting objects:  33% (414/1253)\rCounting objects:  34% (427/1253)\rCounting objects:  35% (439/1253)\rCounting objects:  36% (452/1253)\rCounting objects:  37% (464/1253)\rCounting objects:  38% (477/1253)\rCounting objects:  39% (489/1253)\rCounting objects:  40% (502/1253)\rCounting objects:  41% (514/1253)\rCounting objects:  42% (527/1253)\rCounting objects:  43% (539/1253)\rCounting objects:  44% (552/1253)\rCounting objects:  45% (564/1253)\rCounting objects:  46% (577/1253)\rCounting objects:  47% (589/1253)\rCounting objects:  48% (602/1253)\rCounting objects:  49% (614/1253)\rCounting objects:  50% (627/1253)\rCounting objects:  51% (640/1253)\rCounting objects:  52% (652/1253)\rCounting objects:  53% (665/1253)\rCounting objects:  54% (677/1253)\rCounting objects:  55% (690/1253)\rCounting objects:  56% (702/1253)\rCounting objects:  57% (715/1253)\rCounting objects:  58% (727/1253)\rCounting objects:  59% (740/1253)\rCounting objects:  60% (752/1253)\rCounting objects:  61% (765/1253)\rCounting objects:  62% (777/1253)\rCounting objects:  63% (790/1253)\rCounting objects:  64% (802/1253)\rCounting objects:  65% (815/1253)\rCounting objects:  66% (827/1253)\rCounting objects:  67% (840/1253)\rCounting objects:  68% (853/1253)\rCounting objects:  69% (865/1253)\rCounting objects:  70% (878/1253)\rCounting objects:  71% (890/1253)\rCounting objects:  72% (903/1253)\rCounting objects:  73% (915/1253)\rCounting objects:  74% (928/1253)\rCounting objects:  75% (940/1253)\rCounting objects:  76% (953/1253)\rCounting objects:  77% (965/1253)\rCounting objects:  78% (978/1253)\rCounting objects:  79% (990/1253)\rCounting objects:  80% (1003/1253)\rCounting objects:  81% (1015/1253)\rCounting objects:  82% (1028/1253)\rCounting objects:  83% (1040/1253)\rCounting objects:  84% (1053/1253)\rCounting objects:  85% (1066/1253)\rCounting objects:  86% (1078/1253)\rCounting objects:  87% (1091/1253)\rCounting objects:  88% (1103/1253)\rCounting objects:  89% (1116/1253)\rCounting objects:  90% (1128/1253)\rCounting objects:  91% (1141/1253)\rCounting objects:  92% (1153/1253)\rCounting objects:  93% (1166/1253)\rCounting objects:  94% (1178/1253)\rCounting objects:  95% (1191/1253)\rCounting objects:  96% (1203/1253)\rCounting objects:  97% (1216/1253)\rCounting objects:  98% (1228/1253)\rCounting objects:  99% (1241/1253)\rCounting objects: 100% (1253/1253)\rCounting objects: 100% (1253/1253), done.
+Compressing objects:   0% (1/146)\rCompressing objects:   1% (2/146)\rCompressing objects:   2% (3/146)\rCompressing objects:   3% (5/146)\rCompressing objects:   4% (6/146)\rCompressing objects:   5% (8/146)\rCompressing objects:   6% (9/146)\rCompressing objects:   7% (11/146)\rCompressing objects:   8% (12/146)\rCompressing objects:   9% (14/146)\rCompressing objects:  10% (15/146)\rCompressing objects:  11% (17/146)\rCompressing objects:  12% (18/146)\rCompressing objects:  13% (19/146)\rCompressing objects:  14% (21/146)\rCompressing objects:  15% (22/146)\rCompressing objects:  16% (24/146)\rCompressing objects:  17% (25/146)\rCompressing objects:  18% (27/146)\rCompressing objects:  19% (28/146)\rCompressing objects:  20% (30/146)\rCompressing objects:  21% (31/146)\rCompressing objects:  22% (33/146)\rCompressing objects:  23% (34/146)\rCompressing objects:  24% (36/146)\rCompressing objects:  25% (37/146)\rCompressing objects:  26% (38/146)\rCompressing objects:  27% (40/146)\rCompressing objects:  28% (41/146)\rCompressing objects:  29% (43/146)\rCompressing objects:  30% (44/146)\rCompressing objects:  31% (46/146)\rCompressing objects:  32% (47/146)\rCompressing objects:  33% (49/146)\rCompressing objects:  34% (50/146)\rCompressing objects:  35% (52/146)\rCompressing objects:  36% (53/146)\rCompressing objects:  37% (55/146)\rCompressing objects:  38% (56/146)\rCompressing objects:  39% (57/146)\rCompressing objects:  40% (59/146)\rCompressing objects:  41% (60/146)\rCompressing objects:  42% (62/146)\rCompressing objects:  43% (63/146)\rCompressing objects:  44% (65/146)\rCompressing objects:  45% (66/146)\rCompressing objects:  46% (68/146)\rCompressing objects:  47% (69/146)\rCompressing objects:  48% (71/146)\rCompressing objects:  49% (72/146)\rCompressing objects:  50% (73/146)\rCompressing objects:  51% (75/146)\rCompressing objects:  52% (76/146)\rCompressing objects:  53% (78/146)\rCompressing objects:  54% (79/146)\rCompressing objects:  55% (81/146)\rCompressing objects:  56% (82/146)\rCompressing objects:  57% (84/146)\rCompressing objects:  58% (85/146)\rCompressing objects:  59% (87/146)\rCompressing objects:  60% (88/146)\rCompressing objects:  61% (90/146)\rCompressing objects:  62% (91/146)\rCompressing objects:  63% (92/146)\rCompressing objects:  64% (94/146)\rCompressing objects:  65% (95/146)\rCompressing objects:  66% (97/146)\rCompressing objects:  67% (98/146)\rCompressing objects:  68% (100/146)\rCompressing objects:  69% (101/146)\rCompressing objects:  70% (103/146)\rCompressing objects:  71% (104/146)\rCompressing objects:  72% (106/146)\rCompressing objects:  73% (107/146)\rCompressing objects:  74% (109/146)\rCompressing objects:  75% (110/146)\rCompressing objects:  76% (111/146)\rCompressing objects:  77% (113/146)\rCompressing objects:  78% (114/146)\rCompressing objects:  79% (116/146)\rCompressing objects:  80% (117/146)\rCompressing objects:  81% (119/146)\rCompressing objects:  82% (120/146)\rCompressing objects:  83% (122/146)\rCompressing objects:  84% (123/146)\rCompressing objects:  85% (125/146)\rCompressing objects:  86% (126/146)\rCompressing objects:  87% (128/146)\rCompressing objects:  88% (129/146)\rCompressing objects:  89% (130/146)\rCompressing objects:  90% (132/146)\rCompressing objects:  91% (133/146)\rCompressing objects:  92% (135/146)\rCompressing objects:  93% (136/146)\rCompressing objects:  94% (138/146)\rCompressing objects:  95% (139/146)\rCompressing objects:  96% (141/146)\rCompressing objects:  97% (142/146)\rCompressing objects:  98% (144/146)\rCompressing objects:  99% (145/146)\rCompressing objects: 100% (146/146)\rCompressing objects: 100% (146/146), done.
+Total 3742 (delta 1165), reused 1107 (delta 1107), pack-reused 2489 (from 3)
+------> Repository cloned
+------> Building board.h...
+------> board.h built
+------> Building and uploading firmware...
+Processing Yardforce500B (board: genericSTM32F401VC; platform: ststm32; framework: stm32cube)
+--------------------------------------------------------------------------------
+Tool Manager: Installing platformio/toolchain-gccarmnoneeabi @ ~1.90301.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: toolchain-gccarmnoneeabi@1.90301.200702 has been installed!
+Tool Manager: Installing platformio/framework-stm32cubef4 @ ^1.26.2
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-stm32cubef4@1.28.1 has been installed!
+Tool Manager: Installing platformio/tool-stm32duino @ ^1.0.1
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-stm32duino@1.0.1 has been installed!
+Tool Manager: Installing platformio/tool-openocd @ ^2.1100.211028
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-openocd@2.1100.211028 has been installed!
+Tool Manager: Installing platformio/tool-dfuutil @ ^1.11.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-dfuutil@1.11.0 has been installed!
+Tool Manager: Installing platformio/tool-dfuutil-arduino @ ~1.11.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20%
+Tool Manager: tool-dfuutil-arduino@1.11.0 has been installed!
+Tool Manager: Installing platformio/tool-ldscripts-ststm32 @ ~0.2.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-ldscripts-ststm32@0.2.0 has been installed!
+Tool Manager: Installing platformio/tool-scons @ ~4.40801.0
+Downloading 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: tool-scons@4.40801.0 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/genericSTM32F401VC.html
+PLATFORM: ST STM32 (19.1.0) > STM32F401VC (48k RAM, 256k Flash)
+HARDWARE: STM32F401VCT6 84MHz, 48KB RAM, 256KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, jlink)
+PACKAGES: 
+- framework-stm32cubef4 @ 1.28.1 
+- tool-dfuutil @ 1.11.0 
+- tool-dfuutil-arduino @ 1.11.0 
+- tool-ldscripts-ststm32 @ 0.2.0 
+- tool-openocd @ 2.1100.211028 (11.0) 
+- tool-stm32duino @ 1.0.1 
+- toolchain-gccarmnoneeabi @ 1.90301.200702 (9.3.1)
+Warning! Cannot find the default startup file for `stm32f401vct6`. Ignore this warning if the startup code is part of your project.
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 59 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- STM32_USB_Device_Library-CDC
+|-- STM32_USB_Device_Library-Core
+Building in release mode
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
+Compiling .pio/build/Yardforce500B/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
+Compiling .pio/build/Yardforce500B/src/adc.o
+Compiling .pio/build/Yardforce500B/src/battery.o
+Compiling .pio/build/Yardforce500B/src/blademotor.o
+Compiling .pio/build/Yardforce500B/src/charger.o
+Compiling .pio/build/Yardforce500B/src/drivemotor.o
+In file included from src/blademotor.c:22:
+include/board.h:65:2: error: #error "No board selection"
+  65 | #error "No board selection"
+     |  ^~~~~
+In file included from src/charger.c:17:
+include/board.h:65:2: error: #error "No board selection"
+  65 | #error "No board selection"
+     |  ^~~~~
+src/blademotor.c:59:43: error: 'BLADEMOTOR_LENGTH_RECEIVED_MSG' undeclared here (not in a function); did you mean 'BLADEMOTOR_LENGTH_INIT_MSG'?
+  59 | static uint8_t blademotor_pu8ReceivedData[BLADEMOTOR_LENGTH_RECEIVED_MSG] = {0};
+     |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     |                                           BLADEMOTOR_LENGTH_INIT_MSG
+In file included from src/blademotor.c:22:
+src/blademotor.c: In function 'BLADEMOTOR_Init':
+include/board.h:238:35: error: 'USART3' undeclared (first use in this function); did you mean 'USART6'?
+ 238 | #define BLADEMOTOR_USART_INSTANCE USART3
+     |                                   ^~~~~~
+src/blademotor.c:133:41: note: in expansion of macro 'BLADEMOTOR_USART_INSTANCE'
+ 133 |     BLADEMOTOR_USART_Handler.Instance = BLADEMOTOR_USART_INSTANCE;
+     |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+include/board.h:238:35: note: each undeclared identifier is reported only once for each function it appears in
+ 238 | #define BLADEMOTOR_USART_INSTANCE USART3
+     |                                   ^~~~~~
+src/blademotor.c:133:41: note: in expansion of macro 'BLADEMOTOR_USART_INSTANCE'
+ 133 |     BLADEMOTOR_USART_Handler.Instance = BLADEMOTOR_USART_INSTANCE;
+     |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+*** [.pio/build/Yardforce500B/src/charger.o] Error 1
+src/blademotor.c:59:16: warning: 'blademotor_pu8ReceivedData' defined but not used [-Wunused-variable]
+  59 | static uint8_t blademotor_pu8ReceivedData[BLADEMOTOR_LENGTH_RECEIVED_MSG] = {0};
+     |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+*** [.pio/build/Yardforce500B/src/blademotor.o] Error 1
+In file included from src/drivemotor.c:23:
+include/board.h:65:2: error: #error "No board selection"
+  65 | #error "No board selection"
+     |  ^~~~~
+*** [.pio/build/Yardforce500B/src/drivemotor.o] Error 1
+========================= [FAILED] Took 807.84 seconds =========================
+Environment    Status    Duration
+-------------  --------  ------------
+Yardforce500B  FAILED    00:13:27.839
+==================== 1 failed, 0 succeeded in 00:13:27.839 ====================
+------> Error while building and uploading firmware: exit status 1

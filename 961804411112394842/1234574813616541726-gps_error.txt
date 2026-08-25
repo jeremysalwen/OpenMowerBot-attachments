@@ -1,0 +1,38 @@
+auto-starting new master
+process[master]: started with pid [91]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 142d49e2-0655-11ef-a796-955b247de19e
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [105]
+process[ntrip_client/ntrip_client_node-3]: started with pid [110]
+process[xbot_driver_gps-4]: started with pid [111]
+process[move_base_flex-5]: started with pid [112]
+process[move_base_legacy_relay-6]: started with pid [117]
+process[xbot_positioning-7]: started with pid [129]
+process[joy-8]: started with pid [131]
+process[joy_teleop-9]: started with pid [140]
+process[map_service-10]: started with pid [150]
+process[mower_logic-11]: started with pid [154]
+process[slic3r_coverage_planner-12]: started with pid [157]
+process[twist_mux-13]: started with pid [163]
+process[xbot_monitoring-14]: started with pid [169]
+process[xbot_remote-15]: started with pid [180]
+process[monitoring-16]: started with pid [182]
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[INFO] [1714414802.866750]: Connected to http://192.168.137.112:2101/SRTK
+[ERROR] [1714414957.053480]: RTCM data not received for 30 seconds, reconnecting
+[INFO] [1714414957.068666]: Connected to http://192.168.137.112:2101/SRTK
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[move_base_legacy_relay-6] process has died [pid 117, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/142d49e2-0655-11ef-a796-955b247de19e/move_base_legacy_relay-6.log].
+log file: /root/.ros/log/142d49e2-0655-11ef-a796-955b247de19e/move_base_legacy_relay-6*.log

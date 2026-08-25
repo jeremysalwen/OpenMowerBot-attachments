@@ -1,0 +1,288 @@
+[ INFO] [1717086046.381644140]: COMMAND_S2
+[ INFO] [1717086046.459746992]: MowingBehavior: (FIRST POINT) SKIP AREA was requested.
+[ INFO] [1717086046.461033670]: Cancel action "exe_path"
+[ INFO] [1717086046.461063799]: MowingBehavior: Executing mowing plan - finished
+[ WARN] [1717086046.461203592]: FTCLocalPlannerROS: FTC planner was cancelled.
+[ INFO] [1717086046.461479568]: Controller will take care of stopping
+[ INFO] [1717086046.461711045]: MowingBehavior: Creating mowing plan for area: 2
+[ INFO] [1717086046.465327918]: Got getMowingArea call with index: 2
+[ INFO] [1717086046.466156012]: MowingBehavior: Detected mow angle: 1.85143
+[ INFO] [1717086046.466427544]: MowingBehavior: mowing angle offset (deg): 30
+[ INFO] [1717086046.466715020]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 2.37503
+[ INFO] [1717086046.470949250]: generating 4 outlines
+[ INFO] [1717086046.487536272]: Starting Fill. Poly size:37
+[ INFO] [1717086046.489820282]: Fill Complete. Polyline count: 2
+[ INFO] [1717086046.489973167]: Polyline 0 has point count: 85
+[ INFO] [1717086046.490025037]: Polyline 1 has point count: 23
+[ INFO] [1717086046.490099943]: Starting Fill. Poly size:157
+[ INFO] [1717086046.491518081]: Action "move_base" succeeded!
+[ INFO] [1717086046.500590697]: Fill Complete. Polyline count: 12
+[ INFO] [1717086046.501075206]: Polyline 0 has point count: 19
+[ INFO] [1717086046.501504734]: Polyline 1 has point count: 166
+[ INFO] [1717086046.501988743]: Polyline 2 has point count: 19
+[ INFO] [1717086046.502453289]: Polyline 3 has point count: 39
+[ INFO] [1717086046.502857318]: Polyline 4 has point count: 3
+[ INFO] [1717086046.503224700]: Polyline 5 has point count: 41
+[ INFO] [1717086046.503595692]: Polyline 6 has point count: 123
+[ INFO] [1717086046.504510804]: Polyline 7 has point count: 15
+[ INFO] [1717086046.504614005]: Polyline 8 has point count: 5
+[ INFO] [1717086046.504669338]: Polyline 9 has point count: 54
+[ INFO] [1717086046.504718207]: Polyline 10 has point count: 52
+[ INFO] [1717086046.504772576]: Polyline 11 has point count: 9
+[ INFO] [1717086046.504849316]: Starting Fill. Poly size:4
+[ INFO] [1717086046.505996330]: Fill Complete. Polyline count: 2
+[ INFO] [1717086046.506100605]: Polyline 0 has point count: 5
+[ INFO] [1717086046.506149123]: Polyline 1 has point count: 6
+[ INFO] [1717086046.506226955]: Got 10 points
+[ INFO] [1717086046.506338230]: Got 21 points
+[ INFO] [1717086046.506460672]: Got 34 points
+[ INFO] [1717086046.507331303]: Got 772 points
+[ INFO] [1717086046.509130378]: Got 827 points
+[ INFO] [1717086046.510710625]: Got 174 points
+[ INFO] [1717086046.511194282]: Got 221 points
+[ INFO] [1717086046.512332704]: Got 871 points
+[ INFO] [1717086046.513984485]: Got 822 points
+[ INFO] [1717086046.515647989]: Got 35 points
+[ INFO] [1717086046.515922077]: Got 43 points
+[ INFO] [1717086046.516099295]: Got 52 points
+[ INFO] [1717086046.516680339]: Got 60 points
+[ INFO] [1717086046.516911242]: Got 62 points
+[ INFO] [1717086046.517487045]: Got 72 points
+[ INFO] [1717086046.517928129]: Got 64 points
+[ INFO] [1717086046.518192235]: Got 74 points
+[ INFO] [1717086046.518752131]: Got 133 points
+[ INFO] [1717086046.519239529]: Got 142 points
+[ INFO] [1717086046.519680224]: Got 29 points
+[ INFO] [1717086046.519830369]: Got 38 points
+[ INFO] [1717086046.519977792]: Got 47 points
+[ INFO] [1717086046.520332044]: Got 55 points
+[ INFO] [1717086046.520558651]: Got 54 points
+[ INFO] [1717086046.520850386]: Got 62 points
+[ INFO] [1717086046.521200027]: Got 70 points
+[ INFO] [1717086046.521469651]: Got 85 points
+[ INFO] [1717086046.522211433]: Got 774 points
+[ INFO] [1717086046.523290393]: Got 73 points
+[ INFO] [1717086046.523502370]: Got 22 points
+[ INFO] [1717086046.525279298]: Got 3798 points
+[ INFO] [1717086046.530155478]: Got 89 points
+[ INFO] [1717086046.530546656]: Got 149 points
+[ INFO] [1717086046.531061960]: Got 9 points
+[ INFO] [1717086046.531282437]: Got 229 points
+[ INFO] [1717086046.533345026]: Got 3048 points
+[ INFO] [1717086046.537270762]: Got 27 points
+[ INFO] [1717086046.537494628]: Got 5 points
+[ INFO] [1717086046.538361796]: Got 1192 points
+[ INFO] [1717086046.540500217]: Got 355 points
+[ INFO] [1717086046.541203443]: Got 7 points
+[ INFO] [1717086046.541355107]: Skipping single dot
+[ INFO] [1717086046.541462531]: Got 22 points
+[ INFO] [1717086046.604639309]: MowingBehavior: Ignoring checkpoint for plan (015A60B565F6B7BA7AF816778B2E657F6A75B63E5F61652AF017ECCF3700F309) current mowing plan is (31AD0C78FDB53103C7D9D782A5DC20CD471FC8494FF65193B45F3D0967078646)
+[ INFO] [1717086046.605744084]: MowingBehavior: Executing mowing plan
+[ INFO] [1717086046.606386163]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086046.606542827]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1717086046.648541990]: GPS quality: 0.868756
+[ERROR] [1717086046.658921895]: Failed to get a plan.
+[ INFO] [1717086051.614593478]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086051.614754049]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086051.622372249]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086051.622840943]: No Recovery Behaviors loaded!
+[ WARN] [1717086051.623608428]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086051.707235062]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086051.707389578]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086051.707647998]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1717086051.711266038]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086051.712799859]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086051.712978448]: MowingBehavior: CONTINUING
+[ INFO] [1717086051.717162439]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086051.718551689]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086051.718834517]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086051.719165473]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086051.767735100]: Failed to get a plan.
+[ INFO] [1717086056.726547369]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086056.726715051]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086056.754207302]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086056.754575721]: No Recovery Behaviors loaded!
+[ WARN] [1717086056.754683848]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086056.820071755]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086056.820185105]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086056.820242252]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1717086056.823466928]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086056.824995102]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086056.825470611]: MowingBehavior: CONTINUING
+[ INFO] [1717086056.829937856]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086056.831772708]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086056.831907465]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086056.831965389]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086056.886095556]: Failed to get a plan.
+[ INFO] [1717086057.148542093]: GPS quality: 0.890341
+[ INFO] [1717086061.841840651]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086061.842268420]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086061.867694547]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086061.868329831]: No Recovery Behaviors loaded!
+[ WARN] [1717086061.868755748]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086061.932469561]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086061.932580485]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086061.932663613]: MowingBehavior: (FIRST POINT) - Attempt 0 / 3 Trimming first point off the beginning of the mow path.
+[ INFO] [1717086061.935976732]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086061.937741827]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086061.937929027]: MowingBehavior: CONTINUING
+[ INFO] [1717086061.941593973]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086061.942972205]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086061.943623766]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086061.944182033]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086061.996786732]: Failed to get a plan.
+[ INFO] [1717086066.952561626]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086066.952852343]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086066.974523285]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086066.974869556]: No Recovery Behaviors loaded!
+[ WARN] [1717086066.974983368]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086067.045968707]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086067.046081279]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086067.046137871]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1717086067.049683486]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086067.050932628]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086067.051112494]: MowingBehavior: CONTINUING
+[ INFO] [1717086067.054718997]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086067.056657718]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086067.056786845]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086067.056860288]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086067.112387896]: Failed to get a plan.
+[ INFO] [1717086067.648513976]: GPS quality: 0.875803
+[ INFO] [1717086072.067863389]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086072.068343435]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086072.069183863]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086072.069684538]: No Recovery Behaviors loaded!
+[ WARN] [1717086072.069837035]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086072.157467309]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086072.157580084]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086072.157637565]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1717086072.160906500]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086072.162475377]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086072.162622411]: MowingBehavior: CONTINUING
+[ INFO] [1717086072.167278800]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086072.169628402]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086072.169787658]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086072.169916360]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086072.225483246]: Failed to get a plan.
+[ INFO] [1717086077.177990279]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086077.178142109]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086077.210464473]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086077.210996574]: No Recovery Behaviors loaded!
+[ WARN] [1717086077.211105313]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086077.270436590]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086077.270549310]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086077.270607439]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Trimming first point off the beginning of the mow path.
+[ INFO] [1717086077.273745248]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086077.274978112]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086077.275091351]: MowingBehavior: CONTINUING
+[ INFO] [1717086077.278894165]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086077.280089160]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086077.280198139]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086077.280255675]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086077.334484979]: Failed to get a plan.
+[ INFO] [1717086078.148813762]: GPS quality: 0.893699
+[ INFO] [1717086082.287538554]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086082.287967212]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086082.323336425]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086082.323948913]: No Recovery Behaviors loaded!
+[ WARN] [1717086082.324060448]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086082.380690614]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086082.380845148]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086082.381032089]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1717086082.384753183]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086082.386058324]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086082.386252987]: MowingBehavior: CONTINUING
+[ INFO] [1717086082.390959209]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086082.393156314]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086082.393458808]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086082.393657082]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086082.446668653]: Failed to get a plan.
+[ INFO] [1717086087.402384837]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086087.402573778]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086087.431556265]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086087.432192790]: No Recovery Behaviors loaded!
+[ WARN] [1717086087.432312214]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086087.494211483]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086087.494329758]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086087.494386016]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1717086087.498460640]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086087.499700486]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086087.499836354]: MowingBehavior: CONTINUING
+[ INFO] [1717086087.505578297]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086087.506873661]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086087.506986807]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086087.507039287]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086087.562561329]: Failed to get a plan.
+[ INFO] [1717086088.648612284]: GPS quality: 0.893699
+[ INFO] [1717086092.514347935]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086092.514548469]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086092.520119563]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086092.520687404]: No Recovery Behaviors loaded!
+[ WARN] [1717086092.520825216]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086092.607525095]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086092.607766998]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086092.607864644]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Trimming first point off the beginning of the mow path.
+[ INFO] [1717086092.611562813]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086092.612733697]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086092.612887880]: MowingBehavior: CONTINUING
+[ INFO] [1717086092.616358923]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086092.617475012]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086092.617664842]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086092.617751618]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086092.670974744]: Failed to get a plan.
+[ INFO] [1717086097.623975040]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086097.624130852]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086097.652849254]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086097.653208451]: No Recovery Behaviors loaded!
+[ WARN] [1717086097.653322301]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086097.718311162]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086097.718443475]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086097.718503066]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1717086097.722346639]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086097.724008718]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086097.724177492]: MowingBehavior: CONTINUING
+[ INFO] [1717086097.728201118]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086097.729443723]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086097.729685070]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086097.729838549]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086097.782078103]: Failed to get a plan.
+[ INFO] [1717086099.148692895]: GPS quality: 0.893699
+[ INFO] [1717086102.737698875]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086102.737904111]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086102.739748094]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086102.740123550]: No Recovery Behaviors loaded!
+[ WARN] [1717086102.740899016]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086102.830838616]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086102.830955596]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086102.831013150]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1717086102.834244383]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086102.835620412]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086102.835738465]: MowingBehavior: CONTINUING
+[ INFO] [1717086102.839454652]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086102.843016379]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086102.843301226]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086102.843486963]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086102.895490821]: Failed to get a plan.
+[ INFO] [1717086107.851729141]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086107.851905027]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086107.880757910]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086107.881305937]: No Recovery Behaviors loaded!
+[ WARN] [1717086107.881904203]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086107.944444821]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086107.944557411]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ERROR] [1717086107.944626243]: MowingBehavior: (FIRST POINT) Max retries reached, we are unable to reach any of the first points - aborting at index: 3 path: 0 area: 2
+[ INFO] [1717086107.944677131]: - Behaviour.h: abort() called
+[ INFO] [1717086107.947971308]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086107.950090507]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086107.950223820]: 
+[ INFO] [1717086107.950276541]: 
+[ INFO] [1717086107.950324484]: --------------------------------------
+[ INFO] [1717086107.950372928]: - Entered state: DOCKING
+[ INFO] [1717086107.950418371]: --------------------------------------
+[ INFO] [1717086107.954159336]: Getting Docking Point
+[ WARN] [1717086107.955021560]: Waiting for good GPS
+[ INFO] [1717086108.955629009]: Calculating approach path
+[ INFO] [1717086109.035062744]: FTCLocalPlannerROS: Got new global plan with 1012 points.
+[ INFO] [1717086109.648471591]: GPS quality: 0.897409
+[ INFO] [1717086111.227861968]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086111.228274589]: FTCLocalPlannerROS: Switching to state 1

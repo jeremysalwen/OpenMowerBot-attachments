@@ -1,0 +1,33 @@
+[ERROR] [1753365561.044513198]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[INFO] [1753365561.044652234]: FTCLocalPlannerROS: Switching to state 4
+[WARN] [1753365561.044828788]: No velocity command received from controller! 
+[INFO] [1753365562.084953054]: MowingBehavior: (MOW) Progress: 2529/10368
+[WARN] [1753365564.094542885]: No velocity command received from controller! 
+[INFO] [1753365565.750144908]: GPS quality: 0.93
+[WARN] [1753365566.044970075]: The controller has been aborted after it exceeded the patience time
+[INFO] [1753365566.080764754]: MowingBehavior: (MOW)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[INFO] [1753365566.080878475]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 2529 of 10368
+[INFO] [1753365566.080947141]: >>> State: Aborted <<<
+[INFO] [1753365566.081007233]: MowingBehavior: (MOW) PAUSED due to MBF Error at 2529
+[INFO] [1753365566.085074435]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1753365566.086120981]: successfully registered actions for mower_logic:mowing
+[INFO] [1753365566.087274544]: MowingBehavior: CONTINUING
+[INFO] [1753365566.091276710]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1753365566.092334329]: successfully registered actions for mower_logic:mowing
+[INFO] [1753365566.092447273]: MowingBehavior: Path segment length: 10368 poses.
+[INFO] [1753365566.092503569]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[WARN] [1753365566.120431970]: FTCLocalPlannerROS: Global plan was too short. Need a minimum of 3 poses - Cancelling.
+[INFO] [1753365566.120745782]: FTCLocalPlannerROS: Got new global plan with 2 points.
+[INFO] [1753365566.121874105]: Action "move_base" succeeded!
+[INFO] [1753365567.092834064]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[INFO] [1753365567.096393493]: Clearing Nav Point
+[INFO] [1753365567.098924655]: MowingBehavior: (MOW) First point reached - Executing mow path with 10368 poses, from index 2529
+[INFO] [1753365567.129739918]: FTCLocalPlannerROS: Got new global plan with 7839 points.
+[INFO] [1753365568.105270723]: MowingBehavior: (MOW) Progress: 2529/10368
+[INFO] [1753365573.105751659]: MowingBehavior: (MOW) Progress: 2529/10368
+[INFO] [1753365576.249983884]: GPS quality: 0.93
+[INFO] [1753365578.107169164]: MowingBehavior: (MOW) Progress: 2529/10368
+[INFO] [1753365583.206023341]: MowingBehavior: (MOW) Progress: 2529/10368
+[INFO] [1753365586.250102889]: GPS quality: 0.93
+[ERROR] [1753365587.166443887]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+And so on, over and over again in one place :)

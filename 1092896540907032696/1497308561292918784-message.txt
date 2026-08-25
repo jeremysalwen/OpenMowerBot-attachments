@@ -1,0 +1,43 @@
+[INFO] [1777056287.281484830]: >>> [ID=8] Service started without requiring configuration
+[INFO] [1777056287.931520660]: >>> [ID=2] Requesting Configuration
+[ERROR] [1777056287.931866492]: Input config file not specified
+[INFO] [1777056287.931587586]: >>> [ID=7] Requesting Configuration
+[INFO] [1777056287.931754381]: >>> [ID=6] Requesting Configuration
+[INFO] [1777056287.931778918]: >>> [ID=4] Requesting Configuration
+[INFO] [1777056287.931799288]: >>> [ID=2] Received Configuration
+[INFO] [1777056287.931822325]: >>> [ID=2] Service started after successful configuration
+[INFO] [1777056287.932048268]: Input config JSON has 2 bytes, compressed to 3 bytes
+[INFO] [1777056287.932460562]: >>> [ID=7] Received Configuration
+[INFO] [1777056287.932496192]: >>> [ID=7] Service started after successful configuration
+[INFO] [1777056287.932527858]: >>> [ID=6] Received Configuration
+[INFO] [1777056287.932572024]: >>> [ID=6] Service started after successful configuration
+[INFO] [1777056287.932613765]: >>> [ID=4] Received Configuration
+[INFO] [1777056287.932635413]: >>> [ID=4] Service started after successful configuration
+[INFO] [1777056287.932989263]: Calibrated gyro offset: 0
+[WARN] [1777056288.874383094]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100399 timeout was 0.1.
+[WARN] [1777056288.955716600]: [ID=1] Service timed out, removing service.
+[INFO] [1777056288.955770007]: PJB: OnServiceDisconnected. ID: 1
+[WARN] [1777056288.955809470]: [ID=2] Service timed out, removing service.
+[WARN] [1777056288.955855766]: [ID=3] Service timed out, removing service.
+[INFO] [1777056288.955833100]: PJB: OnServiceDisconnected. ID: 2
+[INFO] [1777056288.955875747]: PJB: OnServiceDisconnected. ID: 3
+[INFO] [1777056288.955985988]: PJB: OnServiceDisconnected. ID: 4
+[INFO] [1777056288.956045783]: PJB: OnServiceDisconnected. ID: 5
+[INFO] [1777056288.956079302]: PJB: OnServiceDisconnected. ID: 6
+[INFO] [1777056288.956117598]: PJB: OnServiceDisconnected. ID: 7
+[WARN] [1777056288.955945951]: [ID=4] Service timed out, removing service.
+[WARN] [1777056288.956008821]: [ID=5] Service timed out, removing service.
+[WARN] [1777056288.956062857]: [ID=6] Service timed out, removing service.
+[INFO] [1777056288.956161375]: PJB: OnServiceDisconnected. ID: 8
+[WARN] [1777056288.956096950]: [ID=7] Service timed out, removing service.
+[WARN] [1777056288.956136005]: [ID=8] Service timed out, removing service.
+[WARN] [1777056291.344121919]: [ID=1] no endpoint for service
+[WARN] [1777056291.844111108]: [ID=1] no endpoint for service
+[WARN] [1777056292.344108668]: [ID=1] no endpoint for service
+[ERROR] [1777056296.030040758]: Input config file not specified
+[WARN] [1777056332.425609577]: [ID=2] no endpoint for service
+[INFO] [1777056332.427254771]: successfully set emergency enabled to 1
+[ERROR] [1777056332.427303586]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+[WARN] [1777056332.925532769]: [ID=2] no endpoint for service
+[INFO] [1777056332.927385962]: successfully set emergency enabled to 1
+[ERROR] [1777056332.927431055]: EMERGENCY: at least one motor control errored. errors left: c, status right: c

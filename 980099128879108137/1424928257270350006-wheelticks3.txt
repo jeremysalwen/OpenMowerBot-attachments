@@ -1,0 +1,84 @@
+import gpiod
+import serial
+import time
+import struct
+from datetime import datetime
+
+# --- CONFIGURATION ---
+INPUT_PIN = 17                   # GPIO pin for tick input
+SERIAL_PORT = "/dev/ttyAMA0"     # or ttyAMA0 or whichever worked for you
+SERIAL_BAUDRATE = 230400
+MEASUREMENT_INTERVAL = 0.1       # 10Hz
+
+# UBX constants
+UBX_SYNC_CHARS = b'\xB5\x62'
+UBX_CLASS_ESF = 0x10
+UBX_ID_ESF_MEAS = 0x02
+
+# --- INITIALIZATION ---
+chip = gpiod.Chip("gpiochip0")
+input_line = chip.get_line(INPUT_PIN)
+input_line.request(consumer="wheel-tick", type=gpiod.LINE_REQ_EV_BOTH_EDGES)
+
+ser = serial.Serial(SERIAL_PORT, SERIAL_BAUDRATE)
+
+tick_counter = 0        # <== Absolute tick count
+last_send_time = time.monotonic()
+
+print("Started absolute tick count loop...")
+
+try:
+    while True:
+        now = time.monotonic()
+
+        # Poll GPIO events without blocking
+        if input_line.event_wait(0):
+            event = input_line.event_read()
+            tick_counter += 1
+
+        # Send a packet every interval
+        if now - last_send_time >= MEASUREMENT_INTERVAL:
+            timestamp_ms = int(now * 1000) & 0xFFFFFFFF
+
+            # UBX ESF-MEAS payload
+            flags = 0
+            sensor_id = 0
+            payload = struct.pack("<IHH", timestamp_ms, flags, sensor_id)
+
+            # Pack the tick counter as an absolute count
+            # Bits 0-22: tick count, Bit 23: direction=0 (forward), Bits 24-31: type=10
+            data_field = (tick_counter & 0x7FFFFF) | (10 << 24)
+            payload += struct.pack("<I", data_field)
+
+            # Build UBX frame
+            length = len(payload)
+            header = UBX_SYNC_CHARS + bytes([UBX_CLASS_ESF, UBX_ID_ESF_MEAS]) + struct.pack("<H", length)
+
+            # Checksum
+            ck_a = 0
+            ck_b = 0
+            for b in header[2:] + payload:
+                ck_a = (ck_a + b) & 0xFF
+                ck_b = (ck_b + ck_a) & 0xFF
+
+            frame = header + payload + bytes([ck_a, ck_b])
+
+            # UTC timestamp for consistent logging
+            log_timestamp = datetime.utcnow().isoformat()
+
+            # Debug output
+            print("UBX Frame:", " ".join(f"{b:02X}" for b in frame))
+            print(f"[{log_timestamp} UTC] Sent UBX-ESF-MEAS with absolute count {tick_counter}\n")
+
+            # Send to UART
+            ser.write(frame)
+            ser.flush()
+
+            # Advance timestamp (fixed increment to avoid drift)
+            last_send_time += MEASUREMENT_INTERVAL
+
+except KeyboardInterrupt:
+    print("\nExiting cleanly.")
+finally:
+    input_line.release()
+    ser.close()

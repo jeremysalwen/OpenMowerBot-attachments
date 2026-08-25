@@ -1,0 +1,32 @@
+open_mower_ros  | [INFO] [1776766959.318743140]: Got action: mower_logic:idle/start_area_recording
+open_mower_ros  | [INFO] [1776766959.319803204]: Got start_area_recording command
+open_mower_ros  | [INFO] [1776766959.342687730]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776766959.347848459]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776766959.348258325]:
+open_mower_ros  | [INFO] [1776766959.349631516]:
+open_mower_ros  | [INFO] [1776766959.349781589]: --------------------------------------
+open_mower_ros  | [INFO] [1776766959.349857680]: - Entered state: AREA_RECORDING
+open_mower_ros  | [INFO] [1776766959.349923754]: --------------------------------------
+open_mower_ros  | [INFO] [1776766959.361056408]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776766959.363648865]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776766959.376946481]: Starting recording area
+open_mower_ros  | [INFO] [1776766959.378698964]: Subscribing to /joy for user input
+open_mower_ros  | [INFO] [1776766959.461765552]: successfully set GPS to 1
+open_mower_ros  | [WARN] [1776766959.476289730]: Last GPS was 147.202 seconds ago.
+open_mower_ros  | [INFO] [1776766959.603894656]: Docking: Manual pause
+open_mower_ros  | [INFO] [1776766959.604150580]: - Behaviour.h: abort() called
+open_mower_ros  | [INFO] [1776766959.669765313]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776766959.671207929]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776766959.683349593]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776766959.684589007]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776766959.708183303]:
+open_mower_ros  | [INFO] [1776766959.708274617]:
+open_mower_ros  | [INFO] [1776766959.708312172]: --------------------------------------
+open_mower_ros  | [INFO] [1776766959.708351987]: - Entered state: IDLE
+open_mower_ros  | [INFO] [1776766959.708386801]: --------------------------------------
+open_mower_ros  | [INFO] [1776766959.718169672]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776766959.719487289]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776766959.730273687]: Got getMowingArea call with index: 0
+open_mower_ros  | [INFO] [1776766959.738978142]: Getting Docking Point
+open_mower_ros  | [INFO] [1776766959.746346962]: successfully set GPS to 0
+open_mower_ros  | [INFO] [1776766959.776936914]: dropping GPS update, since gps_enabled = false.

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMS — Spannung & Strom</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0f14;
+    --surface: #13161e;
+    --border: #1e2330;
+    --volt-color: #4af0c4;
+    --curr-pos-color: #60a5fa;
+    --curr-neg-color: #f87171;
+    --text-primary: #e2e8f0;
+    --text-muted: #64748b;
+    --grid: #1a1f2e;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--text-primary);
+  }
+
+  header .sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .metrics {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .metric-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .metric-value {
+    font-size: 1.05rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+  }
+
+  .metric-value.volt { color: var(--volt-color); }
+  .metric-value.curr-pos { color: var(--curr-pos-color); }
+  .metric-value.curr-neg { color: var(--curr-neg-color); }
+  .metric-value.neutral { color: var(--text-primary); }
+
+  .chart-container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .chart-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+  }
+
+  .legend-line {
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  canvas {
+    display: block;
+    width: 100%;
+  }
+
+  .tooltip {
+    position: fixed;
+    background: #1e2433;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 100;
+    line-height: 1.8;
+  }
+
+  .crosshair {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.12);
+    pointer-events: none;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BMS Monitor</h1>
+  <span class="sub" id="duration-label">—</span>
+</header>
+
+<div class="metrics" id="metrics-bar">
+  <div class="metric"><span class="metric-label">∅ Spannung</span><span class="metric-value volt" id="m-vavg">—</span></div>
+  <div class="metric"><span class="metric-label">V min / max</span><span class="metric-value volt" id="m-vrange">—</span></div>
+  <div class="metric"><span class="metric-label">I max (Laden)</span><span class="metric-value curr-pos" id="m-imax">—</span></div>
+  <div class="metric"><span class="metric-label">I min (Entladen)</span><span class="metric-value curr-neg" id="m-imin">—</span></div>
+  <div class="metric"><span class="metric-label">SOC</span><span class="metric-value neutral">99.0 %</span></div>
+  <div class="metric"><span class="metric-label">Datenpunkte</span><span class="metric-value neutral" id="m-n">—</span></div>
+</div>
+
+<div class="chart-container" id="box-volt">
+  <div class="chart-title">
+    <span>Spannung</span>
+    <span class="legend-item"><span class="legend-line" style="background:var(--volt-color)"></span>V (Volt)</span>
+  </div>
+  <div style="position:relative">
+    <canvas id="cv-volt" height="200"></canvas>
+    <div class="crosshair" id="ch-volt"></div>
+  </div>
+</div>
+
+<div class="chart-container" id="box-curr">
+  <div class="chart-title">
+    <span>Strom</span>
+    <span class="legend-item"><span class="legend-line" style="background:var(--curr-pos-color)"></span>+ Laden</span>
+    <span class="legend-item"><span class="legend-line" style="background:var(--curr-neg-color)"></span>− Entladen</span>
+  </div>
+  <div style="position:relative">
+    <canvas id="cv-curr" height="200"></canvas>
+    <div class="crosshair" id="ch-curr"></div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const RAW = `291764897,29.34,0.040,4.4
+291824908,29.33,0.040,4.4
+291884918,29.34,0.030,4.4
+291944930,29.33,0.040,4.4
+292004942,29.33,0.050,4.4
+292064952,29.33,0.070,4.4
+292124962,29.19,0.040,4.4
+292184972,29.28,-0.040,4.4
+292244980,29.28,-0.060,4.4
+292304990,29.28,-0.050,4.3
+292365003,29.28,-0.060,4.4
+292425019,29.29,-0.050,4.3
+292485031,29.28,-0.050,4.3
+292545037,29.33,0.030,4.3
+292605047,29.29,-0.050,4.3
+292665056,29.33,0.040,4.3
+292725069,29.33,0.040,4.3
+292785078,29.33,0.040,4.3
+292845090,29.33,0.040,4.3
+292905099,29.33,0.040,4.3
+292965106,29.33,0.040,4.3
+293025118,29.33,0.040,4.3
+293085126,29.33,0.040,4.3
+293145138,29.33,0.060,4.3
+293205147,29.33,0.050,4.3
+293265154,29.22,0.120,4.3
+293325163,29.29,-0.210,4.3
+293385174,29.27,-0.060,4.3
+293445180,29.27,-0.050,4.3
+293505189,29.27,-0.050,4.3
+293565200,29.33,0.030,4.2
+293625212,29.28,-0.060,4.2
+293685219,29.33,0.030,4.2
+293745226,29.29,-0.060,4.2
+293805238,29.33,0.030,4.2
+293865252,29.30,-0.060,4.2
+293925265,29.33,0.030,4.2
+293985279,29.33,0.030,4.2
+294045292,29.33,0.030,4.2
+294105300,29.33,0.030,4.2
+294165314,29.33,0.040,4.2
+294225322,29.33,0.040,4.2
+294285332,29.33,0.040,4.2
+294345338,29.33,0.060,4.2
+294405345,29.25,0.080,4.2
+294465353,29.23,-0.280,4.2
+294525364,29.27,-0.060,4.2
+294585374,29.28,-0.050,4.2
+294645383,29.28,-0.050,4.2
+294705390,29.29,-0.050,4.2
+294765403,29.34,0.030,4.2
+294825410,29.29,-0.050,4.2
+294885418,29.33,0.030,4.2
+294945432,29.33,0.030,4.2
+295005442,29.33,0.040,4.2
+295065452,29.34,0.040,4.1
+295125463,29.33,0.030,4.1
+295185474,29.33,0.030,4.1
+295245483,29.33,0.040,4.1
+295305493,29.33,0.040,4.1
+295365505,29.33,0.040,4.1
+295425513,29.33,0.040,4.1
+295485526,29.33,0.060,4.1
+295545536,29.29,0.080,4.1
+295605549,29.20,-0.280,4.1
+295665558,29.27,-0.050,4.1
+295725567,29.28,-0.060,4.2
+295785580,29.28,-0.060,4.2
+295845591,29.34,0.030,4.2
+295905598,29.29,-0.050,4.2
+295965605,29.33,0.030,4.2
+296025618,29.29,-0.050,4.2
+296085627,29.33,0.040,4.2
+296145639,29.33,0.030,4.2
+296205650,29.34,0.030,4.2
+296265661,29.33,0.040,4.2
+296325670,29.33,0.030,4.2
+296385682,29.33,0.030,4.2
+296445695,29.33,0.050,4.2
+296505705,29.33,0.040,4.2
+296565719,29.33,0.050,4.2
+296625726,29.33,0.050,4.2
+296685735,29.30,0.070,4.2
+296745746,29.19,-0.280,4.2
+296805756,29.28,-0.060,4.2
+296865766,29.27,-0.060,4.2
+296925774,29.29,-0.050,4.2
+296985783,29.28,-0.050,4.2
+297045790,29.33,0.030,4.2
+297105798,29.34,0.000,4.2
+297165809,29.32,-0.050,4.2
+297225822,29.33,-0.030,4.2
+297285832,29.33,0.030,4.3
+297345841,29.33,0.030,4.3
+297405850,29.33,0.030,4.3
+297465860,29.33,0.030,4.3
+297525876,29.33,0.040,4.3
+297585888,29.33,0.040,4.3
+297645900,29.33,0.040,4.3
+297705909,29.33,0.050,4.3
+297765919,29.32,0.050,4.3
+297825930,29.31,0.060,4.3
+297885942,29.18,-0.280,4.3
+297945947,29.28,-0.050,4.3
+298005959,29.28,-0.040,4.3
+298065968,29.28,-0.040,4.3
+298125976,29.28,-0.060,4.3
+298185982,29.33,0.030,4.3
+298245992,29.28,-0.050,4.3
+298306002,29.33,0.030,4.4
+298366012,29.33,0.030,4.4
+298426021,29.34,0.040,4.4
+298486031,29.33,0.030,4.4
+298546043,29.33,0.030,4.4
+298606056,29.33,0.040,4.4
+298666067,29.33,0.040,4.4
+298726077,29.33,0.040,4.4
+298786085,29.33,0.040,4.4
+298846098,29.33,0.050,4.5
+298906109,29.33,0.050,4.5
+298966119,29.32,0.060,4.5
+299026130,29.17,-0.270,4.5
+299086143,29.28,-0.050,4.5
+299146152,29.27,-0.050,4.5
+299206166,29.29,-0.060,4.5
+299266176,29.27,-0.060,4.5
+299326187,29.33,0.030,4.5
+299386193,29.29,-0.060,4.5
+299446205,29.33,0.030,4.5
+299506214,29.33,0.030,4.5
+299566229,29.33,0.030,4.5
+299626237,29.33,0.030,4.5
+299686247,29.34,0.040,4.5
+299746257,29.33,0.010,4.5
+299806265,29.33,0.030,4.5
+299866276,29.33,0.020,4.5
+299926282,29.32,0.040,4.5
+299986292,29.33,0.040,4.6
+300046301,29.33,0.050,4.6
+300106313,29.32,0.060,4.6
+300166323,29.17,0.070,4.6
+300226332,29.28,-0.060,4.6
+300286341,29.27,-0.050,4.6
+300346351,29.28,-0.060,4.6
+300406367,29.29,-0.050,4.6
+300466379,29.32,-0.060,4.7
+300526392,29.29,-0.060,4.7
+300586399,29.33,0.030,4.7
+300646408,29.32,-0.050,4.7
+300706419,29.33,0.030,4.7
+300766426,29.33,0.040,4.7
+300826438,29.33,0.030,4.8
+300886446,29.33,0.040,4.8
+300946457,29.33,0.040,4.8
+301006466,29.33,0.040,4.8
+301066476,29.33,0.050,4.8
+301126486,29.34,0.040,4.9
+301186498,29.33,0.060,4.9
+301246506,29.33,0.070,4.9
+301306518,29.24,0.100,4.9
+301366528,29.24,-0.260,4.9
+301426533,29.31,-0.040,4.9
+301486539,29.28,-0.050,5.0
+301546551,29.30,-0.060,5.0
+301606560,29.29,-0.040,5.0
+301666572,29.34,0.040,5.0
+301726586,29.29,-0.040,5.0
+301786594,29.33,0.030,5.0
+301846604,29.33,0.030,5.0
+301906616,29.33,0.040,5.0
+301966623,29.33,0.030,5.0
+302026631,29.33,0.050,5.1
+302086645,29.33,0.040,5.1
+302146653,29.33,0.050,5.1
+302206664,29.33,0.050,5.1
+302266674,29.34,0.060,5.1
+302326682,29.33,0.050,5.2
+302386690,29.33,0.060,5.2
+302446705,29.27,0.100,5.2
+302506713,29.24,-0.270,5.2
+302566722,29.29,-0.050,5.2
+302626732,29.28,-0.060,5.2
+302686741,29.29,-0.050,5.2
+302746747,29.29,-0.050,5.2
+302806753,29.29,-0.040,5.3
+302866766,29.30,-0.050,5.3
+302926773,29.33,0.030,5.3
+302986786,29.30,-0.050,5.3
+303046806,29.33,0.040,5.3
+303106820,29.34,0.030,5.4
+303166835,29.34,0.040,5.4
+303226848,29.33,0.030,5.4
+303286858,29.34,0.040,5.4
+303346869,29.33,0.050,5.4
+303406879,29.33,0.050,5.4
+303466887,29.33,0.060,5.4
+303526898,29.32,0.070,5.4
+303586905,29.28,0.100,5.5
+303646914,29.23,-0.270,5.5
+303706924,29.28,-0.040,5.5
+303766938,29.29,-0.040,5.5
+303826947,29.29,-0.050,5.5
+303886963,29.29,-0.060,5.5
+303946970,29.29,-0.060,5.6
+304006979,29.34,0.030,5.6
+304066991,29.29,-0.060,5.6
+304127001,29.34,0.030,5.6
+304187011,29.33,0.040,5.6
+304247021,29.34,0.040,5.6
+304307028,29.33,0.040,5.6
+304367038,29.33,0.040,5.6
+304427053,29.33,0.040,5.6
+304487064,29.33,0.040,5.6
+304547076,29.32,0.040,5.6
+304607089,29.33,0.050,5.6
+304667101,29.33,0.070,5.6
+304727113,29.29,0.080,5.7
+304787121,29.22,-0.280,5.7
+304847132,29.28,-0.050,5.7
+304907144,29.29,-0.050,5.7
+304967153,29.28,-0.050,5.7
+305027167,29.29,-0.060,5.7
+305087175,29.29,-0.060,5.8
+305147187,29.28,-0.050,5.8
+305207198,29.33,0.040,5.8
+305267209,29.29,-0.040,5.8
+305327221,29.34,0.040,5.9
+305387232,29.33,0.030,5.9
+305447241,29.33,0.040,5.9
+305507250,29.33,0.040,5.9
+305567261,29.33,0.040,6.0
+305627269,29.33,0.030,6.0
+305687282,29.33,0.040,6.0
+305747291,29.33,0.030,6.1
+305807300,29.33,0.060,6.1
+305867314,29.30,0.070,6.1
+305927327,29.20,-0.280,6.1
+305987336,29.28,-0.050,6.2
+306047349,29.29,-0.060,6.2
+306107356,29.28,-0.050,6.2
+306167370,29.29,-0.050,6.2
+306227381,29.29,-0.060,6.2
+306287389,29.30,-0.050,6.2
+306347399,29.33,0.040,6.2
+306407408,29.33,0.040,6.2
+306467420,29.33,0.040,6.2
+306527434,29.33,0.040,6.2
+306587442,29.34,0.040,6.2
+306647453,29.33,0.040,6.3
+306707460,29.33,0.040,6.3
+306767465,29.33,0.050,6.3
+306827474,29.32,0.040,6.4
+306887481,29.33,0.050,6.4
+306947491,29.33,0.060,6.4
+307007504,29.31,0.080,6.4
+307067511,29.20,-0.270,6.5
+307127521,29.29,-0.040,6.5
+307187532,29.28,-0.040,6.5
+307247539,29.29,-0.050,6.6
+307307546,29.30,-0.050,6.6
+307367557,29.29,-0.060,6.6
+307427565,29.33,0.030,6.6
+307487573,29.33,0.030,6.7
+307547584,29.32,0.040,6.7
+307607592,29.34,0.030,6.7
+307667599,29.34,0.030,6.7
+307727608,29.33,0.040,6.7
+307787622,29.33,0.050,6.7
+307847631,29.34,0.040,6.8
+307907641,29.33,0.050,6.8
+307967650,29.34,0.040,6.8
+308027656,29.33,0.060,6.8
+308087667,29.33,0.060,6.9
+308147670,29.31,0.090,6.9
+308207681,29.22,-0.260,6.9
+308267691,29.28,-0.030,7.0
+308327703,29.29,-0.040,7.0
+308387715,29.29,-0.040,7.1
+308447724,29.29,-0.040,7.1
+308507734,29.29,-0.040,7.1
+308567742,29.34,0.040,7.2
+308627755,29.29,-0.040,7.2
+308687766,29.33,0.040,7.2
+308747777,29.33,0.040,7.2
+308807789,29.34,0.040,7.2
+308867801,29.33,0.050,7.3
+308927814,29.33,0.040,7.3
+308987824,29.33,0.050,7.3
+309047831,29.33,0.040,7.4
+309107842,29.33,0.060,7.4
+309167849,29.33,0.060,7.5
+309227862,29.33,0.070,7.5
+309287869,29.31,0.080,7.5
+309347882,29.21,-0.270,7.6
+309407894,29.28,-0.050,7.7
+309467903,29.29,-0.060,7.7
+309527910,29.29,-0.050,7.8
+309587918,29.28,-0.040,7.8
+309647928,29.32,-0.050,7.8
+309707935,29.33,-0.040,7.8
+309767943,29.33,0.040,7.8
+309827955,29.34,0.050,7.9
+309887966,29.33,0.040,8.0
+309947973,29.33,0.040,8.0
+310007986,29.34,0.050,8.1
+310067999,29.34,0.040,8.1
+310128009,29.33,0.050,8.2
+310188021,29.33,0.050,8.2
+310248024,29.33,0.050,8.3
+310308035,29.33,0.070,8.3
+310368045,29.33,0.070,8.4
+310428058,29.28,0.090,8.4
+310488067,29.24,-0.270,8.4
+310548078,29.29,-0.040,8.4
+310608092,29.29,-0.040,8.5
+310668104,29.29,-0.050,8.5
+310728117,29.30,-0.040,8.6
+310788128,29.33,0.040,8.6
+310848135,29.30,-0.040,8.7
+310908142,29.34,0.040,8.7
+310968148,29.32,0.040,8.8
+311028154,29.33,0.040,8.8
+311088165,29.34,0.050,8.9
+311148175,29.34,0.050,8.9
+311208185,29.34,0.060,9.0
+311268194,29.34,0.040,9.0
+311328201,29.33,0.070,9.0
+311388212,29.34,0.060,9.1
+311448224,29.34,0.080,9.2
+311508229,29.33,0.080,9.2
+311568239,29.27,0.120,9.3
+311628247,29.28,-0.200,9.4
+311688255,29.29,-0.040,9.4
+311748261,29.29,-0.040,9.5
+311808269,29.30,-0.040,9.5
+311868280,29.31,-0.040,9.6
+311928289,29.30,-0.030,9.6
+311988298,29.33,0.040,9.7
+312048308,29.34,0.050,9.8
+312108321,29.34,0.060,9.8
+312168328,29.34,0.050,10.0
+312228336,29.34,0.040,10.0
+312288345,29.34,0.040,10.1
+312348357,29.34,0.050,10.2
+312408368,29.33,0.060,10.2
+312468376,29.34,0.060,10.3
+312528387,29.33,0.060,10.3
+312588397,29.34,0.070,10.5
+312648408,29.33,0.070,10.5
+312708414,29.23,-0.260,10.6
+312768427,29.29,-0.040,10.6
+312828437,29.30,-0.020,10.7
+312888445,29.31,-0.040,10.7
+312948456,29.31,-0.040,10.8
+313008467,29.34,0.050,10.8
+313068474,29.32,-0.040,11.0
+313128486,29.34,0.040,11.0
+313188493,29.34,0.060,11.0
+313248502,29.34,0.040,11.1
+313308517,29.34,0.050,11.1
+313368534,29.34,0.050,11.1
+313428550,29.35,0.050,11.2
+313488563,29.33,0.060,11.2
+313548571,29.34,0.060,11.2
+313608583,29.34,0.060,11.2
+313668593,29.33,0.060,11.3
+313728599,29.34,0.070,11.3
+313788610,29.32,0.090,11.3
+313848618,29.24,-0.270,11.3
+313908631,29.30,-0.050,11.3
+313968639,29.30,-0.040,11.3
+314028647,29.31,-0.040,11.5
+314088658,29.31,-0.040,11.5
+314148663,29.30,-0.040,11.5
+314208673,29.33,0.050,11.5
+314268687,29.31,-0.040,11.5
+314328697,29.34,0.040,11.5
+314388708,29.34,0.040,11.5
+314448721,29.34,0.050,11.5
+314508735,29.34,0.060,11.6
+314568751,29.34,0.070,11.6
+314628760,29.34,0.070,11.6
+314688767,29.33,0.070,11.6
+314748774,29.33,0.080,11.6
+314808782,29.34,0.090,11.6
+314868793,29.33,0.080,11.6
+314928803,29.30,0.110,11.6
+314988811,29.26,-0.260,11.6
+315048821,29.32,-0.030,11.6
+315108831,29.30,-0.030,11.6
+315168841,29.32,-0.030,11.6
+315228853,29.31,-0.030,11.6
+315288858,29.34,0.050,11.6
+315348869,29.31,-0.030,11.6
+315408885,29.33,0.050,11.6
+315468894,29.32,-0.030,11.6
+315528908,29.34,0.060,11.6
+315588916,29.34,0.060,11.6
+315648924,29.35,0.050,11.6
+315708933,29.33,0.060,11.6
+315768946,29.34,0.050,11.6
+315828954,29.34,0.070,11.6
+315888964,29.34,0.070,11.6
+315948974,29.34,0.070,11.7
+316008985,29.33,0.080,11.7
+316068997,29.25,0.090,11.7
+316129008,29.31,-0.090,11.7
+316189013,29.30,-0.040,11.7
+316249026,29.31,-0.040,11.7
+316309034,29.32,-0.030,11.7
+316369049,29.31,-0.030,11.7
+316429066,29.34,0.050,11.7`;
+
+const rows = RAW.trim().split('\n').map(l => {
+  const [t,v,i,temp] = l.split(',');
+  return { t: parseInt(t), v: parseFloat(v), i: parseFloat(i), temp: parseFloat(temp) };
+});
+
+const t0 = rows[0].t;
+const xs = rows.map(r => (r.t - t0) / 1000);
+const vs = rows.map(r => r.v);
+const is = rows.map(r => r.i);
+const n = rows.length;
+const dur = xs[n-1];
+
+// metrics
+document.getElementById('duration-label').textContent = `${(dur/60).toFixed(1)} min · ${n} Punkte · Δt≈60s`;
+document.getElementById('m-n').textContent = n;
+document.getElementById('m-vavg').textContent = (vs.reduce((a,b)=>a+b,0)/n).toFixed(3) + ' V';
+document.getElementById('m-vrange').textContent = Math.min(...vs).toFixed(2) + ' / ' + Math.max(...vs).toFixed(2) + ' V';
+document.getElementById('m-imax').textContent = '+' + Math.max(...is).toFixed(3) + ' A';
+document.getElementById('m-imin').textContent = Math.min(...is).toFixed(3) + ' A';
+
+// --- canvas chart engine ---
+function drawChart(canvasId, data, opts) {
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth;
+  const H = canvas.offsetHeight || 200;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const PAD = { top: 12, right: 20, bottom: 36, left: 56 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+
+  const xMin = 0, xMax = xs[xs.length-1];
+  const rawYMin = Math.min(...data), rawYMax = Math.max(...data);
+  const yPad = (rawYMax - rawYMin) * 0.15 || 0.02;
+  const yMin = opts.yMin !== undefined ? opts.yMin : rawYMin - yPad;
+  const yMax = opts.yMax !== undefined ? opts.yMax : rawYMax + yPad;
+
+  const px = x => PAD.left + ((x - xMin) / (xMax - xMin)) * pw;
+  const py = y => PAD.top + ph - ((y - yMin) / (yMax - yMin)) * ph;
+
+  // grid
+  ctx.strokeStyle = '#1a1f2e';
+  ctx.lineWidth = 1;
+  const yTicks = 5;
+  for (let i = 0; i <= yTicks; i++) {
+    const yv = yMin + (yMax - yMin) * (i / yTicks);
+    const yp = py(yv);
+    ctx.beginPath(); ctx.moveTo(PAD.left, yp); ctx.lineTo(PAD.left + pw, yp); ctx.stroke();
+    ctx.fillStyle = '#4a5568';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(yv.toFixed(opts.decimals || 2), PAD.left - 6, yp + 3.5);
+  }
+
+  // x ticks every ~5 min
+  const xStep = 300;
+  for (let xv = 0; xv <= xMax; xv += xStep) {
+    const xp = px(xv);
+    ctx.beginPath(); ctx.strokeStyle = '#1a1f2e'; ctx.moveTo(xp, PAD.top); ctx.lineTo(xp, PAD.top + ph); ctx.stroke();
+    ctx.fillStyle = '#4a5568';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText((xv/60).toFixed(0) + ' min', xp, PAD.top + ph + 20);
+  }
+
+  // zero line for current
+  if (opts.zeroLine) {
+    const zp = py(0);
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4,4]);
+    ctx.beginPath(); ctx.moveTo(PAD.left, zp); ctx.lineTo(PAD.left + pw, zp); ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  // fill area
+  if (opts.fillPositive || opts.fillNegative) {
+    const zp = py(0);
+    // positive fill
+    ctx.beginPath();
+    ctx.moveTo(px(xs[0]), zp);
+    xs.forEach((x, i) => { if (data[i] >= 0) ctx.lineTo(px(x), py(data[i])); else ctx.lineTo(px(x), zp); });
+    ctx.lineTo(px(xs[n-1]), zp);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(96,165,250,0.07)';
+    ctx.fill();
+    // negative fill
+    ctx.beginPath();
+    ctx.moveTo(px(xs[0]), zp);
+    xs.forEach((x, i) => { if (data[i] <= 0) ctx.lineTo(px(x), py(data[i])); else ctx.lineTo(px(x), zp); });
+    ctx.lineTo(px(xs[n-1]), zp);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(248,113,113,0.07)';
+    ctx.fill();
+  } else {
+    // simple fill below
+    ctx.beginPath();
+    ctx.moveTo(px(xs[0]), py(data[0]));
+    xs.forEach((x, i) => ctx.lineTo(px(x), py(data[i])));
+    ctx.lineTo(px(xs[n-1]), PAD.top + ph);
+    ctx.lineTo(px(xs[0]), PAD.top + ph);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(74,240,196,0.04)';
+    ctx.fill();
+  }
+
+  // line — colored by sign for current
+  if (opts.colorBySign) {
+    for (let i = 1; i < n; i++) {
+      const color = data[i] >= 0 ? '#60a5fa' : '#f87171';
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.5;
+      ctx.moveTo(px(xs[i-1]), py(data[i-1]));
+      ctx.lineTo(px(xs[i]), py(data[i]));
+      ctx.stroke();
+    }
+  } else {
+    ctx.beginPath();
+    ctx.strokeStyle = opts.color;
+    ctx.lineWidth = 1.5;
+    ctx.lineJoin = 'round';
+    xs.forEach((x, i) => i === 0 ? ctx.moveTo(px(x), py(data[i])) : ctx.lineTo(px(x), py(data[i])));
+    ctx.stroke();
+  }
+
+  // axes labels
+  ctx.fillStyle = '#4a5568';
+  ctx.font = '10px JetBrains Mono, monospace';
+  ctx.textAlign = 'right';
+  ctx.save(); ctx.translate(14, PAD.top + ph/2); ctx.rotate(-Math.PI/2);
+  ctx.textAlign = 'center'; ctx.fillText(opts.unit, 0, 0); ctx.restore();
+
+  ctx.textAlign = 'center';
+  ctx.fillText('Zeit (min)', PAD.left + pw/2, H - 4);
+
+  // store layout info for tooltip
+  canvas._chart = { px, py, PAD, pw, ph, yMin, yMax, data };
+}
+
+function drawBoth() {
+  drawChart('cv-volt', vs, { color: '#4af0c4', unit: 'V', decimals: 2, yMin: 29.10, yMax: 29.42 });
+  drawChart('cv-curr', is, { colorBySign: true, fillPositive: true, fillNegative: true, unit: 'A', decimals: 3, zeroLine: true });
+}
+
+drawBoth();
+window.addEventListener('resize', drawBoth);
+
+// tooltip + crosshair
+const tooltip = document.getElementById('tooltip');
+
+function setupHover(canvasId, crosshairId, dataArr, unit, label) {
+  const canvas = document.getElementById(canvasId);
+  const ch = document.getElementById(crosshairId);
+
+  canvas.addEventListener('mousemove', e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const c = canvas._chart;
+    if (!c) return;
+    const fracX = (mx - c.PAD.left) / c.pw;
+    if (fracX < 0 || fracX > 1) { tooltip.style.opacity=0; ch.style.display='none'; return; }
+    const xi = Math.round(fracX * (xs.length-1));
+    const xv = xs[xi];
+    const val = dataArr[xi];
+
+    ch.style.display = 'block';
+    ch.style.left = (c.PAD.left + fracX * c.pw) + 'px';
+
+    const color = unit === 'A' ? (val >= 0 ? '#60a5fa' : '#f87171') : '#4af0c4';
+    tooltip.innerHTML = `<span style="color:#64748b">t</span> <span style="color:#e2e8f0">${(xv/60).toFixed(2)} min</span><br><span style="color:#64748b">${label}</span> <span style="color:${color}">${val >= 0 ? '+' : ''}${val.toFixed(3)} ${unit}</span><br><span style="color:#64748b">T</span> <span style="color:#e2e8f0">${rows[xi].temp.toFixed(1)} °C</span>`;
+    tooltip.style.opacity = 1;
+    tooltip.style.left = (e.clientX + 14) + 'px';
+    tooltip.style.top = (e.clientY - 20) + 'px';
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    tooltip.style.opacity = 0;
+    ch.style.display = 'none';
+  });
+}
+
+setupHover('cv-volt', 'ch-volt', vs, 'V', 'U');
+setupHover('cv-curr', 'ch-curr', is, 'A', 'I');
+</script>
+</body>
+</html>

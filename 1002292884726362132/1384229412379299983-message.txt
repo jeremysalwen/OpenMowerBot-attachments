@@ -1,0 +1,182 @@
+Processing Yardforce500 (platform: ststm32; framework: stm32cube; board: genericSTM32F103VC)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/genericSTM32F103VC.html
+PLATFORM: ST STM32 (19.2.0) > STM32F103VC (48k RAM. 256k Flash)
+HARDWARE: STM32F103VCT6 72MHz, 48KB RAM, 256KB Flash
+DEBUG: Current (stlink) External (blackmagic, cmsis-dap, jlink, stlink)
+PACKAGES: 
+ - framework-stm32cubef1 @ 1.8.6 
+ - tool-dfuutil @ 1.11.241029 
+ - tool-ldscripts-ststm32 @ 0.2.0 
+ - tool-openocd @ 2.1100.211028 (11.0) 
+ - tool-stm32duino @ 1.0.1 
+ - toolchain-gccarmnoneeabi @ 1.90301.200702 (9.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 28 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- STM32_USB_Device_Library-CDC
+|-- STM32_USB_Device_Library-Core
+Building in release mode
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_adc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_adc_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_can.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_cec.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_cortex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_crc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_dac.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_dac_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_dma.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_eth.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_exti.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_flash.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_flash_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_gpio.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_gpio_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_hcd.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_i2c.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_i2s.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_irda.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_iwdg.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_mmc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_nand.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_nor.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_pccard.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_pcd.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_pcd_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_pwr.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_rcc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_rcc_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_rtc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_rtc_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_sd.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_smartcard.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_spi.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_sram.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_tim.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_tim_ex.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_uart.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_usart.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_hal_wwdg.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_adc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_crc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_dac.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_dma.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_exti.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_fsmc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_gpio.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_i2c.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_pwr.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_rcc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_rtc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_sdmmc.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_spi.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_tim.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_usart.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_usb.o
+Compiling .pio/build/Yardforce500/FrameworkHALDriver/Src/stm32f1xx_ll_utils.o
+Compiling .pio/build/Yardforce500/src/adc.o
+Compiling .pio/build/Yardforce500/src/battery.o
+Compiling .pio/build/Yardforce500/src/blademotor.o
+Compiling .pio/build/Yardforce500/src/charger.o
+Compiling .pio/build/Yardforce500/src/drivemotor.o
+Compiling .pio/build/Yardforce500/src/emergency.o
+Compiling .pio/build/Yardforce500/src/i2c.o
+Compiling .pio/build/Yardforce500/src/i2c_lis3dh.o
+Compiling .pio/build/Yardforce500/src/imu/imu.o
+Compiling .pio/build/Yardforce500/src/imu/imu_mag_trans.o
+Compiling .pio/build/Yardforce500/src/imu/lsm6.o
+Compiling .pio/build/Yardforce500/src/imu/mpu6050.o
+Compiling .pio/build/Yardforce500/src/imu/wt901.o
+Compiling .pio/build/Yardforce500/src/main.o
+Compiling .pio/build/Yardforce500/src/panel.o
+Compiling .pio/build/Yardforce500/src/perimeter.o
+Compiling .pio/build/Yardforce500/src/ros/ros_custom/cpp_main.o
+Compiling .pio/build/Yardforce500/src/ros/ros_custom/nbt.o
+src/main.c: In function 'main':
+src/main.c:117:3: warning: implicit declaration of function 'Perimeter_vInit'; did you mean 'Perimeter_vApp'? [-Wimplicit-function-declaration]
+  117 |   Perimeter_vInit();
+      |   ^~~~~~~~~~~~~~~
+      |   Perimeter_vApp
+Compiling .pio/build/Yardforce500/src/ros/ros_custom/ringbuffer.o
+Compiling .pio/build/Yardforce500/src/ros/ros_lib/duration.o
+Compiling .pio/build/Yardforce500/src/ros/ros_lib/time.o
+Compiling .pio/build/Yardforce500/src/soft_i2c.o
+Compiling .pio/build/Yardforce500/src/stm32f1xx_it.o
+Compiling .pio/build/Yardforce500/src/ultrasonic_sensor.o
+Compiling .pio/build/Yardforce500/src/usb_device.o
+Compiling .pio/build/Yardforce500/src/usbd_cdc_if.o
+Compiling .pio/build/Yardforce500/src/usbd_conf.o
+Compiling .pio/build/Yardforce500/src/usbd_desc.o
+In file included from src/ros/ros_lib/tf/transform_broadcaster.h:39,
+                 from src/ros/ros_custom/cpp_main.cpp:33:
+src/ros/ros_lib/tf/tfMessage.h: In member function 'virtual int tf::tfMessage::deserialize(unsigned char*)':
+src/ros/ros_lib/tf/tfMessage.h:49:148: warning: 'void* realloc(void*, size_t)' moving an object of non-trivially copyable type 'tf::tfMessage::_transforms_type' {aka 'class geometry_msgs::TransformStamped'}; use 'new' and 'delete' instead [-Wclass-memaccess]
+   49 |         this->transforms = (geometry_msgs::TransformStamped*)realloc(this->transforms, transforms_lengthT * sizeof(geometry_msgs::TransformStamped));
+      |                                                                                                                                                    ^
+In file included from src/ros/ros_lib/tf/tf.h:38,
+                 from src/ros/ros_custom/cpp_main.cpp:32:
+src/ros/ros_lib/geometry_msgs/TransformStamped.h:14:9: note: 'tf::tfMessage::_transforms_type' {aka 'class geometry_msgs::TransformStamped'} declared here
+   14 |   class TransformStamped : public ros::Msg
+      |         ^~~~~~~~~~~~~~~~
+In file included from src/ros/ros_lib/tf/transform_broadcaster.h:39,
+                 from src/ros/ros_custom/cpp_main.cpp:33:
+src/ros/ros_lib/tf/tfMessage.h:53:104: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'tf::tfMessage::_transforms_type' {aka 'class geometry_msgs::TransformStamped'} with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+   53 |         memcpy( &(this->transforms[i]), &(this->st_transforms), sizeof(geometry_msgs::TransformStamped));
+      |                                                                                                        ^
+In file included from src/ros/ros_lib/tf/tf.h:38,
+                 from src/ros/ros_custom/cpp_main.cpp:32:
+src/ros/ros_lib/geometry_msgs/TransformStamped.h:14:9: note: 'tf::tfMessage::_transforms_type' {aka 'class geometry_msgs::TransformStamped'} declared here
+   14 |   class TransformStamped : public ros::Msg
+      |         ^~~~~~~~~~~~~~~~
+Compiling .pio/build/Yardforce500/lib2e0/Core/usbd_core.o
+In file included from src/ros/ros_lib/std_msgs/Int16MultiArray.h:8,
+                 from src/ros/ros_custom/cpp_main.cpp:41:
+src/ros/ros_lib/std_msgs/MultiArrayLayout.h: In member function 'virtual int std_msgs::MultiArrayLayout::deserialize(unsigned char*)':
+src/ros/ros_lib/std_msgs/MultiArrayLayout.h:57:123: warning: 'void* realloc(void*, size_t)' moving an object of non-trivially copyable type 'std_msgs::MultiArrayLayout::_dim_type' {aka 'class std_msgs::MultiArrayDimension'}; use 'new' and 'delete' instead [-Wclass-memaccess]
+   57 |         this->dim = (std_msgs::MultiArrayDimension*)realloc(this->dim, dim_lengthT * sizeof(std_msgs::MultiArrayDimension));
+      |                                                                                                                           ^
+In file included from src/ros/ros_lib/std_msgs/MultiArrayLayout.h:8,
+                 from src/ros/ros_lib/std_msgs/Int16MultiArray.h:8,
+                 from src/ros/ros_custom/cpp_main.cpp:41:
+src/ros/ros_lib/std_msgs/MultiArrayDimension.h:12:9: note: 'std_msgs::MultiArrayLayout::_dim_type' {aka 'class std_msgs::MultiArrayDimension'} declared here
+   12 |   class MultiArrayDimension : public ros::Msg
+      |         ^~~~~~~~~~~~~~~~~~~
+In file included from src/ros/ros_lib/std_msgs/Int16MultiArray.h:8,
+                 from src/ros/ros_custom/cpp_main.cpp:41:
+src/ros/ros_lib/std_msgs/MultiArrayLayout.h:61:88: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'std_msgs::MultiArrayLayout::_dim_type' {aka 'class std_msgs::MultiArrayDimension'} with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+   61 |         memcpy( &(this->dim[i]), &(this->st_dim), sizeof(std_msgs::MultiArrayDimension));
+      |                                                                                        ^
+In file included from src/ros/ros_lib/std_msgs/MultiArrayLayout.h:8,
+                 from src/ros/ros_lib/std_msgs/Int16MultiArray.h:8,
+                 from src/ros/ros_custom/cpp_main.cpp:41:
+src/ros/ros_lib/std_msgs/MultiArrayDimension.h:12:9: note: 'std_msgs::MultiArrayLayout::_dim_type' {aka 'class std_msgs::MultiArrayDimension'} declared here
+   12 |   class MultiArrayDimension : public ros::Msg
+      |         ^~~~~~~~~~~~~~~~~~~
+Compiling .pio/build/Yardforce500/lib2e0/Core/usbd_ctlreq.o
+Compiling .pio/build/Yardforce500/lib2e0/Core/usbd_ioreq.o
+Compiling .pio/build/Yardforce500/lib090/CDC/usbd_cdc.o
+Compiling .pio/build/Yardforce500/FrameworkCMSISDevice/gcc/startup_stm32f103xe.o
+Compiling .pio/build/Yardforce500/FrameworkCMSISDevice/system_stm32f1xx.o
+Archiving .pio/build/Yardforce500/lib2e0/libCore.a
+Archiving .pio/build/Yardforce500/lib090/libCDC.a
+Archiving .pio/build/Yardforce500/libFrameworkCMSISDevice.a
+Indexing .pio/build/Yardforce500/lib090/libCDC.a
+Indexing .pio/build/Yardforce500/libFrameworkCMSISDevice.a
+Indexing .pio/build/Yardforce500/lib2e0/libCore.a
+Linking .pio/build/Yardforce500/firmware.elf
+Checking size .pio/build/Yardforce500/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [====      ]  44.2% (used 21708 bytes from 49152 bytes)
+Flash: [===       ]  28.6% (used 75056 bytes from 262144 bytes)
+Building .pio/build/Yardforce500/firmware.bin
+========================================================================================= [SUCCESS] Took 9.16 seconds =========================================================================================
+
+Environment    Status    Duration
+-------------  --------  ------------
+Yardforce500   SUCCESS   00:00:09.157
+========================================================================================= 1 succeeded in 00:00:09.157 =========================================================================================
+ *  Terminal will be reused by tasks, press any key to close it. 

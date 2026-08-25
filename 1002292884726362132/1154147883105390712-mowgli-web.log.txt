@@ -1,0 +1,37 @@
+a/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+J/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+V/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+^10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+`10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+N/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+R/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+R/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+B/docker-entrypoint.sh: Configuration complete; ready for start up
+A2023/09/20 20:01:19 [notice] 1#1: using the "epoll" event method
+/2023/09/20 20:01:19 [notice] 1#1: nginx/1.25.2
+J2023/09/20 20:01:19 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+72023/09/20 20:01:19 [notice] 1#1: OS: Linux 6.1.21-v8+
+L2023/09/20 20:01:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+92023/09/20 20:01:19 [notice] 1#1: start worker processes
+:2023/09/20 20:01:19 [notice] 1#1: start worker process 28
+:2023/09/20 20:01:19 [notice] 1#1: start worker process 29
+:2023/09/20 20:01:19 [notice] 1#1: start worker process 30
+:2023/09/20 20:01:19 [notice] 1#1: start worker process 31
+a/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+J/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+V/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+C10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+N/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+R/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+R/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+B/docker-entrypoint.sh: Configuration complete; ready for start up
+A2023/09/20 20:02:17 [notice] 1#1: using the "epoll" event method
+/2023/09/20 20:02:17 [notice] 1#1: nginx/1.25.2
+J2023/09/20 20:02:17 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+72023/09/20 20:02:17 [notice] 1#1: OS: Linux 6.1.21-v8+
+L2023/09/20 20:02:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+92023/09/20 20:02:17 [notice] 1#1: start worker processes
+:2023/09/20 20:02:17 [notice] 1#1: start worker process 23
+:2023/09/20 20:02:17 [notice] 1#1: start worker process 24
+:2023/09/20 20:02:17 [notice] 1#1: start worker process 25
+:2023/09/20 20:02:17 [notice] 1#1: start worker process 26

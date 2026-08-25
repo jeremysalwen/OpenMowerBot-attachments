@@ -1,0 +1,35 @@
+
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+Traceback (most recent call last):
+  File "/opt/ros/noetic/bin/roslaunch", line 34, in <module>
+    import roslaunch
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 62, in <module>
+    from .scriptapi import ROSLaunch
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/scriptapi.py", line 42, in <module>
+    import roslaunch.parent
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 54, in <module>
+    import roslaunch.server
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/server.py", line 80, in <module>
+    from rosgraph_msgs.msg import Log
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph_msgs/msg/__init__.py", line 1, in <module>
+    from ._Clock import *
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosgraph_msgs/msg/_Clock.py", line 6, in <module>
+    import genpy
+  File "/opt/ros/noetic/lib/python3/dist-packages/genpy/__init__.py", line 34, in <module>
+    from . message import Message, SerializationError, DeserializationError, MessageException, struct_I
+  File "/opt/ros/noetic/lib/python3/dist-packages/genpy/message.py", line 64, in <module>
+    import numpy as np
+  File "/usr/lib/python3/dist-packages/numpy/__init__.py", line 145, in <module>
+    from . import lib
+  File "/usr/lib/python3/dist-packages/numpy/lib/__init__.py", line 24, in <module>
+    from .npyio import *
+  File "/usr/lib/python3/dist-packages/numpy/lib/npyio.py", line 20, in <module>
+    from ._iotools import (
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+ValueError: bad marshal data (unknown type code)

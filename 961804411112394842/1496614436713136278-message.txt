@@ -1,0 +1,258 @@
+auto-starting new master
+process[master]: started with pid [50]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to e4d334ee-3e89-11f1-ae62-d83addb87ed7
+process[rosout-1]: started with pid [60]
+started core service [/rosout]
+process[ll-2]: started with pid [67]
+process[ll/services/gps-3]: started with pid [68]
+process[move_base_flex-4]: started with pid [72]
+process[move_base_legacy_relay-5]: started with pid [79]
+[INFO] [1776889741.641806836]: Using NMEA mode for GPS
+process[xbot_positioning-6]: started with pid [81]
+process[joy-7]: started with pid [82]
+[INFO] [1776889741.688611599]: Using absolute mode for GPS
+process[joy_teleop-8]: started with pid [88]
+process[map_service-9]: started with pid [96]
+process[mower_logic-10]: started with pid [101]
+process[slic3r_coverage_planner-11]: started with pid [103]
+process[twist_mux-12]: started with pid [106]
+process[xbot_monitoring-13]: started with pid [111]
+[INFO] [1776889742.005313632]: Restoring checkpoint for plan (771FE8AAC3A271B7726C3E01A62AC771C16A7A6E9508DA3D92CC09A7D35E9131) area: 0 path: 0 index>
+process[xbot_remote-14]: started with pid [118]
+process[monitoring-15]: started with pid [128]
+[INFO] [1776889742.078843461]: Antenna offset: -0.065, 0.07
+[INFO] [1776889742.145263367]: [driver_gps] connecting to 127.0.0.1:2102
+[ERROR] [1776889742.149499699]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1776889742.170177804]: Teleop enable button 0.
+[INFO] [1776889742.176441524]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1776889742.211708439]: Turbo on button 4.
+[INFO] [1776889742.211797532]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1776889742.211833884]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1776889742.211871310]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1776889742.211906384]: Turbo for angular axis yaw is scale 3.000000.
+[INFO] [1776889742.233943044]: Wheel ticks [1/m]: 1600
+[WARN] [1776889742.236076784]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.269353403]: Wheel distance [m]: 0.325
+[INFO] [1776889742.272365476]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1776889742.322131869]: Starting xesc driver
+[WARN] [1776889742.326724256]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.327672571]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1776889742.348947786]: Starting xesc driver
+[INFO] [1776889742.421303690]: Starting xesc driver
+[FATAL] [1776889742.423908838]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[WARN] [1776889742.428503873]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.465107140]: Using external MQTT broker: 192.168.1.100:1883 with topic prefix: openmower/
+[INFO] [1776889742.476363859]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+[INFO] [1776889742.509142849]: MQTT Connected
+[WARN] [1776889742.530460824]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[WARN] [1776889742.632406422]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[WARN] [1776889742.725115598]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.770119140]: connecting serial interface: /dev/ttyAMA0
+[WARN] [1776889742.825336993]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.925221907]: waitForService: Service [/xbot/rpc/register] is now available.
+[WARN] [1776889742.928719906]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776889742.947506771]: new methods registered: mower_map_service registered 1 methods.
+[INFO] [1776889742.964452488]: Loaded 9 areas from: map.json
+[INFO] [1776889742.965423099]: Map Position: x=0.401861, y=-4.83395
+[INFO] [1776889742.965545524]: Map Size: x=32.3397, y=25.7985
+[INFO] [1776889742.972099967]: om_mower_logic: Setting mower_logic config
+[INFO] [1776889742.972941411]: mower_comms received new mower_logic config
+[INFO] [1776889743.024560155]: new methods registered: xbot_monitoring registered 4 methods.
+[WARN] [1776889743.028400413]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[WARN] [1776889743.030884838]: Last GPS was 1.77689e+09 seconds ago.
+[INFO] [1776889743.037551928]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1776889743.051127239]: GPS data now valid
+[INFO] [1776889743.051248443]: First GPS data, moving kalman filter to -14.4034, -4.10905
+[INFO] [1776889743.063145180]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1776889743.088132024]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1776889743.109377147]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1776889743.124540476]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1776889743.152828060]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1776889743.175625942]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1776889743.207234488]: MQTT Connected
+[INFO] [1776889743.211226376]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1776889743.211554746]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1776889743.232950017]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1776889743.266158100]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1776889743.292786499]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1776889743.327659563]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1776889743.333504894]: Monitoring received new mower_logic config
+[INFO] [1776889743.337484893]: mower_comms received new mower_logic config
+[INFO] [1776889743.354300481]: docking pose: position:
+x: -14.3939
+
+y: -3.99061
+
+z: 0
+
+orientation:
+x: 0
+
+y: 0
+
+z: 0.896779
+
+w: 0.442478
+
+[INFO] [1776889743.388927600]: Monitoring received new mower_logic config
+[INFO] [1776889743.601990220]: Waiting for emergency message
+[INFO] [1776889743.645379392]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1776889743.645534133]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1776889743.658734388]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1776889743.658829296]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1776889743.667458867]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1776889743.668666107]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1776889743.676220568]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1776889743.676310661]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1776889743.683901418]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1776889743.683989158]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1776889743.704497393]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1776889743.704619559]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1776889743.704671893]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1776889743.713154890]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1776889743.713244557]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1776889743.720511981]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1776889743.720604444]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1776889743.728216830]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1776889743.728307700]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1776889743.735886865]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1776889743.735976809]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1776889744.602058288]: Waiting for a power message
+[INFO] [1776889744.602149288]: Waiting for a status message
+[INFO] [1776889744.602182011]: Waiting for a pose message
+[INFO] [1776889744.602221696]: Waiting for left ESC status message
+[INFO] [1776889744.602265881]: Waiting for right ESC status message
+[INFO] [1776889744.602294103]: Waiting for emergency service
+[INFO] [1776889744.605061843]: Waiting for path server
+[INFO] [1776889744.608204842]: Waiting for mower service
+[INFO] [1776889744.611483748]: Waiting for gps service
+[INFO] [1776889744.614319174]: Waiting for positioning service
+[INFO] [1776889744.616866395]: Waiting for map server
+[INFO] [1776889744.619523839]: Waiting for docking point server
+[INFO] [1776889744.622488153]: Waiting for nav point server
+[INFO] [1776889744.625144855]: Waiting for clear nav point server
+[INFO] [1776889744.627623818]: Waiting for move base flex
+[INFO] [1776889747.790047835]: Send ll_high_level_config packet 0x11
+options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+lift_period=65535, tilt_period=65535,
+shutdown_esc_max_pitch=0,
+language="en", volume=255
+hall_configs="I, I, I, I, I, I, I, I, U, U"
+[INFO] [1776889747.799367388]: Received ll_high_level_config packet 0x12
+options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+lift_period=100, tilt_period=2500,
+shutdown_esc_max_pitch=0,
+language="en", volume=80
+hall_configs="I, I, I, I, I, I, I, I, I, I"
+[INFO] [1776889747.803139165]: om_mower_logic: Setting mower_logic config
+[INFO] [1776889747.860193648]: mower_comms received new mower_logic config
+[INFO] [1776889747.860508333]: Monitoring received new mower_logic config
+[INFO] [1776889747.861866629]: Started gyro calibration
+[INFO] [1776889747.864111758]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1776889747.864226980]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1776889747.864268035]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1776889747.866137868]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1776889747.867700053]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1776889747.869292534]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1776889747.873405996]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1776889747.875036365]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1776889747.876687328]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1776889747.876894124]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1776889747.877181383]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[ERROR] [1776889747.889907306]: Low Level Emergency. Bitmask was: 1
+[WARN] [1776889747.920435889]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransfo>
+[ERROR] [1776889748.890023066]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776889749.890039253]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776889750.890031850]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776889751.909978386]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776889752.863122407]: Calibrated gyro offset: 0.0102909
+[ERROR] [1776889752.910077338]: Low Level Emergency. Bitmask was: 1
+[WARN] [1776889752.953396381]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransfo>
+[INFO] [1776889753.111347965]: local_costmap: Using plugin "static_layer"
+[INFO] [1776889753.144434456]: Requesting the map...
+[INFO] [1776889753.356974043]: Resizing static layer to 647 X 516 at 0.050000 m/pix
+[INFO] [1776889753.456069792]: Received a 647 X 516 map at 0.050000 m/pix
+[INFO] [1776889753.471126676]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1776889753.482867840]:     Subscribed to Topics:
+[INFO] [1776889753.516628274]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1776889753.634124796]: global_costmap: Using plugin "static_layer"
+[INFO] [1776889753.646611496]: Requesting the map...
+[INFO] [1776889753.654231753]: Resizing costmap to 647 X 516 at 0.050000 m/pix
+[INFO] [1776889753.753820114]: Received a 647 X 516 map at 0.050000 m/pix
+[INFO] [1776889753.762492445]: global_costmap: Using plugin "obstacle_layer"
+[INFO] [1776889753.770568479]:     Subscribed to Topics:
+[INFO] [1776889753.789478252]: global_costmap: Using plugin "inflation_layer"
+[ERROR] [1776889753.929962322]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776889754.305859881]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1776889754.453345580]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1776889754.453497839]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1776889754.596420280]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1776889754.596907094]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner>
+[WARN] [1776889754.598650464]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a >
+[ERROR] [1776889754.929978981]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776889755.025615676]: Waiting for mowing path progress server
+[INFO] [1776889755.028627915]: Waiting for an emergency status message
+[INFO] [1776889755.029144193]: Got emergency, resetting it
+[INFO] [1776889755.035582265]: successfully set emergency enabled to 0
+[INFO] [1776889755.036015617]: registering actions
+[INFO] [1776889755.041626671]: new actions registered: mower_logic registered 1 actions.
+[INFO] [1776889755.043079152]: successfully registered actions for mower_logic
+[INFO] [1776889755.043274689]: om_mower_logic: Got all servers, we can mow
+[INFO] [1776889755.051819168]: successfully set emergency enabled to 0
+[INFO] [1776889755.052264372]:
+[INFO] [1776889755.052925983]:
+[INFO] [1776889755.053446890]: --------------------------------------
+[INFO] [1776889755.053810742]: - Entered state: IDLE
+[INFO] [1776889755.054272316]: --------------------------------------
+[INFO] [1776889755.060431314]: new actions registered: mower_logic:idle registered 2 actions.
+[INFO] [1776889755.061575073]: successfully registered actions for mower_logic:idle
+[INFO] [1776889755.065499090]: Got getMowingArea call with index: 0
+[INFO] [1776889755.070078867]: Getting Docking Point
+[INFO] [1776889755.075823550]: successfully set GPS to 0
+[INFO] [1776889755.080995697]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889755.544295861]: GPS quality: 0.917994
+[WARN] [1776889755.544460658]: GPS timeout
+[INFO] [1776889756.087029855]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889757.132283819]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889758.231484807]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889759.232696897]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889760.235681545]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889761.329917094]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889762.331249578]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889763.431716074]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889764.532799720]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889765.544168558]: Low quality GPS
+[INFO] [1776889765.627897202]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889766.044171905]: GPS timeout
+[INFO] [1776889766.632464081]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889767.044169082]: Low quality GPS
+[WARN] [1776889767.044255434]: GPS timeout
+[INFO] [1776889767.728927437]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889768.544170017]: Low quality GPS
+[WARN] [1776889768.544254906]: GPS timeout
+[INFO] [1776889768.826831943]: dropping GPS update, since gps_enabled = false.
+[INFO] [1776889769.925089154]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889770.044240104]: Low quality GPS
+[WARN] [1776889770.044837381]: GPS timeout
+[INFO] [1776889770.933488538]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889771.044259435]: Low quality GPS
+[WARN] [1776889771.044404750]: GPS timeout
+[INFO] [1776889772.033584141]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889772.044262990]: Low quality GPS
+[WARN] [1776889772.544243342]: GPS timeout
+[INFO] [1776889773.035194956]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889773.544253529]: Low quality GPS
+[WARN] [1776889773.544392122]: GPS timeout
+[INFO] [1776889774.040295976]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889774.544250773]: Low quality GPS
+[WARN] [1776889775.044250775]: GPS timeout
+[INFO] [1776889775.049674607]: dropping GPS update, since gps_enabled = false.
+[WARN] [1776889776.044261502]: Low quality GPS
+[WARN] [1776889776.045094724]: GPS timeout
+[INFO] [1776889776.050189464]: dropping GPS update, since gps_enabled = false.

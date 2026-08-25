@@ -1,0 +1,88 @@
+############################# MQTT sensors ###########################
+sensor:
+  - state_topic: "openmower/robot_state/json"
+    name: "Gps"
+    device_class: distance
+    unique_id: "OM/sensors/om_gps_accuracy"
+    value_template: "{{ value_json.pose.pos_accuracy }}"
+    json_attributes_topic: "pos_accuracy"
+    unit_of_measurement: "m"
+  
+  - state_topic: "openmower/sensors/om_mow_esc_temp/data"
+    name: "Mow ESC Temp"
+    unique_id: "OM/sensors/om_mow_esc_temp"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "°C"
+  
+  - state_topic: "openmower/sensors/om_mow_motor_temp/data"
+    name: "Mow Motor Temp"
+    unique_id: "OM/sensors/om_mow_esc_temp/data"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "°C"
+  
+  - state_topic: "openmower/sensors/om_left_esc_temp/data"
+    name: "Left ESC Temp"
+    unique_id: "OM/sensors/om_left_esc_temp"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "°C"
+  
+  - state_topic: "openmower/sensors/om_right_esc_temp/data"
+    name: "Right ESC Temp"
+    unique_id: "OM/sensors/om_right_esc_temp"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "°C"
+  
+  - state_topic: "openmower/sensors/om_charge_current/data"
+    name: "Charge Current"
+    device_class: current
+    unique_id: "OM/sensors/om_charge_current"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "A"
+  
+  - state_topic: "openmower/sensors/om_v_battery/data"
+    name: "V Battery"
+    device_class: voltage
+    unique_id: "OM/sensors/om_v_battery"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "V"
+  
+  - state_topic: "openmower/sensors/om_v_charge/data"
+    name: "V Charge"
+    device_class: voltage
+    unique_id: "OM/sensors/om_v_charge"
+    value_template: "{{ value  | round(2) }}"
+    unit_of_measurement: "V"
+  
+  - state_topic: "openmower/robot_state/json"
+    name: "Battery %"
+    device_class: battery
+    value_template: "{{ value_json.battery_percentage |  round(2) | float * 100 }}"
+    json_attributes_topic: "battery_percentage"
+    unique_id: "OM/robot_state/battery_percentage"
+    unit_of_measurement: "%"
+  
+  - state_topic: "openmower/robot_state/json"
+    name: "Current State"
+    value_template: "{{ value_json.current_state }}"
+    unique_id: "OM/robot_state/current_state"
+    json_attributes_topic: "current_state"
+
+binary_sensor:
+  - state_topic: "openmower/robot_state/json"
+    name: "Emergency"
+    device_class: safety
+    unique_id: "OM/sensors/om_emergency"
+    value_template: "{{ value_json.emergency }}"
+    payload_on: "1"
+    payload_off: "0"
+    json_attributes_topic: "emergency"
+    
+
+  - state_topic: "openmower/robot_state/json"
+    name: "is Charging"
+    device_class: battery_charging
+    value_template: "{{ value_json.is_charging }}"
+    payload_on: "1"
+    payload_off: "0"
+    unique_id: "OM/robot_state/is_charging"
+    json_attributes_topic: "is charging"

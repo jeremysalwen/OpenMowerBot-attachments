@@ -1,0 +1,50 @@
+```
+#define BOARD_PHY_RESET()                      \
+  do {                                         \
+    uint16_t tries = 0;                        \
+    uint32_t i = 0;                            \
+    while (1) {                                \
+      i = STM32_SYS_CK / 10;                   \
+      while (i-- > 0) {                        \
+        asm("nop");                            \
+      };                                       \
+      mii_write(&ETHD1, 0x1f, 0xFA00);         \
+      uint32_t value = mii_read(&ETHD1, 0x00); \
+      if (value & 0x1) {                       \
+        break;                                 \
+      }                                        \
+      i = STM32_SYS_CK / 100;                  \
+      while (i-- > 0) {                        \
+        asm("nop");                            \
+      };                                       \
+      tries++;                                 \
+      if (tries == 200) {                      \
+        mii_write(&ETHD1, 0x1F, 0xFA00);       \
+        mii_write(&ETHD1, 0x01, 0xFFFF);       \
+        i = STM32_SYS_CK / 10;                 \
+        while (i-- > 0) {                      \
+          asm("nop");                          \
+        };                                     \
+      }                                        \
+      if (tries > 400) {                       \
+        palClearLine(LINE_RESET_PHY);          \
+        i = STM32_SYS_CK / 10;                 \
+        while (i-- > 0) {                      \
+          asm("nop");                          \
+        };                                     \
+        palSetLine(LINE_RESET_PHY);            \
+        tries = 0;                             \
+      }                                        \
+    }                                          \
+    i = STM32_SYS_CK / 10;                     \
+    while (i-- > 0) {                          \
+      asm("nop");                              \
+    };                                         \
+                                               \
+    mii_write(&ETHD1, 0x1F, 0xF100);           \
+    mii_write(&ETHD1, 0x00, 0x40B3);           \
+    mii_write(&ETHD1, 0x1F, 0xF410);           \
+    mii_write(&ETHD1, 0x00, 0x2A05);           \
+  } while (0)
+```
+and debugged in hal_max_lid.c. It doesn't lock up in `BOARD_PHY_RESET()` 🤔

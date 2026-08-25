@@ -1,0 +1,200 @@
+[ INFO] [1723188886.061403591]: --------------------------------------
+[ INFO] [1723188886.061787163]: - Entered state: MOWING
+[ INFO] [1723188886.062029606]: --------------------------------------
+[ INFO] [1723188886.066893390]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1723188886.068907747]: successfully registered actions for mower_logic:mowing
+[ INFO] [1723188886.069333134]: MowingBehavior: Creating mowing plan for area: 0
+[ INFO] [1723188886.074661840]: Got getMowingArea call with index: 0
+[ INFO] [1723188886.075919666]: MowingBehavior: Detected mow angle: -0.394164
+[ INFO] [1723188886.076250071]: MowingBehavior: mowing angle offset (deg): 30
+[ INFO] [1723188886.076517903]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 0
+129435
+[ INFO] [1723188886.082697882]: generating 3 outlines
+[ INFO] [1723188886.144690136]: Starting Fill. Poly size:820
+[ INFO] [1723188886.165811058]: Fill Complete. Polyline count: 13
+[ INFO] [1723188886.165927816]: Polyline 0 has point count: 46
+[ INFO] [1723188886.165977853]: Polyline 1 has point count: 9
+[ INFO] [1723188886.166023334]: Polyline 2 has point count: 63
+[ INFO] [1723188886.166075408]: Polyline 3 has point count: 72
+[ INFO] [1723188886.166121574]: Polyline 4 has point count: 17
+[ INFO] [1723188886.166166278]: Polyline 5 has point count: 43
+[ INFO] [1723188886.166210500]: Polyline 6 has point count: 291
+[ INFO] [1723188886.166258036]: Polyline 7 has point count: 55
+[ INFO] [1723188886.166301758]: Polyline 8 has point count: 422
+[ INFO] [1723188886.166346665]: Polyline 9 has point count: 15
+[ INFO] [1723188886.166469257]: Polyline 10 has point count: 33
+[ INFO] [1723188886.166720570]: Polyline 11 has point count: 27
+[ INFO] [1723188886.166785385]: Polyline 12 has point count: 91
+[ INFO] [1723188886.166857162]: Starting Fill. Poly size:26
+[ INFO] [1723188886.167772416]: Fill Complete. Polyline count: 1
+[ INFO] [1723188886.167852619]: Polyline 0 has point count: 29
+[ INFO] [1723188886.167915100]: Starting Fill. Poly size:120
+[ INFO] [1723188886.170571194]: Fill Complete. Polyline count: 2
+[ INFO] [1723188886.170663342]: Polyline 0 has point count: 138
+[ INFO] [1723188886.170708971]: Polyline 1 has point count: 5
+[ INFO] [1723188886.170875581]: Got 146 points
+[ INFO] [1723188886.171209597]: Got 28 points
+[ INFO] [1723188886.172000833]: Got 1037 points
+[ INFO] [1723188886.174783501]: Got 1036 points
+[ INFO] [1723188886.177814259]: Got 1051 points
+[ INFO] [1723188886.180640815]: Got 114 points
+[ INFO] [1723188886.181142756]: Got 124 points
+[ INFO] [1723188886.181791993]: Got 100 points
+[ INFO] [1723188886.182062788]: Got 110 points
+[ INFO] [1723188886.182639599]: Got 22 points
+[ INFO] [1723188886.182780431]: Got 32 points
+[ INFO] [1723188886.183168373]: Got 52 points
+[ INFO] [1723188886.183350242]: Got 61 points
+[ INFO] [1723188886.183759703]: Got 20 points
+[ INFO] [1723188886.183887387]: Got 30 points
+[ INFO] [1723188886.184024016]: Got 39 points
+[ INFO] [1723188886.184519272]: Got 173 points
+[ INFO] [1723188886.184826270]: Got 7 points
+[ INFO] [1723188886.185087361]: Got 348 points
+[ INFO] [1723188886.185670802]: Got 116 points
+[ INFO] [1723188886.185909745]: Got 19 points
+[ INFO] [1723188886.186067984]: Got 102 points
+[ INFO] [1723188886.187273273]: Got 1789 points
+[ INFO] [1723188886.190418383]: Got 108 points
+[ INFO] [1723188886.191366414]: Got 1510 points
+[ INFO] [1723188886.194191025]: Got 25 points
+[ INFO] [1723188886.194430079]: Got 49 points
+[ INFO] [1723188886.194596819]: Got 47 points
+[ INFO] [1723188886.194825170]: Got 215 points
+[ INFO] [1723188886.195175315]: Got 20 points
+[ INFO] [1723188886.195502573]: Got 406 points
+[ INFO] [1723188886.196040977]: Got 2 points
+[ INFO] [1723188886.237470528]: MowingBehavior: Ignoring checkpoint for plan () current mowing plan
+is (861569E491E6F21261925A740D69B02315719043C3A395FEA40AABC2723CB3E3)
+[ INFO] [1723188886.238111469]: MowingBehavior: Executing mowing plan
+[ INFO] [1723188886.238347560]: MowingBehavior: Path segment length: 146 poses.
+[ INFO] [1723188886.238490948]: MowingBehavior: (FIRST POINT)  Moving to path segment starting poin
+[ INFO] [1723188886.313383601]: FTCLocalPlannerROS: Got new global plan with 68 points.
+[ INFO] [1723188887.751381894]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1723188887.751534041]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1723188895.223454531]: GPS quality: 0.904475
+[ INFO] [1723188895.352091643]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1723188895.352260994]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1723188895.401376443]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1723188895.401522331]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1723188895.551548956]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1723188895.551946232]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1723188895.601322345]: Action "move_base" succeeded!
+[ INFO] [1723188895.639037496]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner ->
+topping path execution.
+[ INFO] [1723188895.642911305]: Clearing Nav Point
+[ INFO] [1723188895.643347098]: MowingBehavior: (MOW) First point reached - Executing mow path with
+146 poses, from index 0
+[ INFO] [1723188895.659212405]: FTCLocalPlannerROS: Got new global plan with 146 points.
+[ INFO] [1723188895.660681489]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1723188895.660820951]: FTCLocalPlannerROS: Switching to state 1
+[ WARN] [1723188895.723453259]: #### om_mower_logic: setMowerEnabled(1, 1) call
+[ INFO] [1723188895.727429122]: Setting mow enabled to 1
+[ INFO] [1723188895.727818935]: successfully set mower enabled to 1 (direction 1)
+[ WARN] [1723188895.728190617]: #### om_mower_logic: setMowerEnabled(1, 1) call completed within 0.
+0478084s
+[ INFO] [1723188896.651103211]: MowingBehavior: (MOW) Progress: 1/146
+[ INFO] [1723188901.748218940]: MowingBehavior: (MOW) Progress: 9/146
+[ INFO] [1723188905.723498419]: GPS quality: 0.913977
+[ INFO] [1723188906.847972166]: MowingBehavior: (MOW) Progress: 26/146
+[ INFO] [1723188910.164098256]: COMMAND_S2
+[ INFO] [1723188910.244063458]: MowingBehavior: (MOW) SKIP AREA was requested.
+[ INFO] [1723188910.245056452]: MowingBehavior: Executing mowing plan - finished
+[ INFO] [1723188910.245164174]: MowingBehavior: Creating mowing plan for area: 1
+[ INFO] [1723188910.248910206]: Got getMowingArea call with index: 1
+[ INFO] [1723188910.250171438]: MowingBehavior: Detected mow angle: 3.1382
+[ INFO] [1723188910.250283623]: MowingBehavior: mowing angle offset (deg): 30
+[ INFO] [1723188910.250347882]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 3
+6618
+[ INFO] [1723188910.256787934]: generating 3 outlines
+[ INFO] [1723188910.336982357]: Starting Fill. Poly size:877
+[ INFO] [1723188910.370490925]: Fill Complete. Polyline count: 21
+[ INFO] [1723188910.370755127]: Polyline 0 has point count: 32
+[ INFO] [1723188910.370896589]: Polyline 1 has point count: 338
+[ INFO] [1723188910.371024810]: Polyline 2 has point count: 27
+[ INFO] [1723188910.371152587]: Polyline 3 has point count: 11
+[ INFO] [1723188910.371279512]: Polyline 4 has point count: 113
+[ INFO] [1723188910.371409567]: Polyline 5 has point count: 17
+[ INFO] [1723188910.371541159]: Polyline 6 has point count: 21
+[ INFO] [1723188910.371668825]: Polyline 7 has point count: 110
+[ INFO] [1723188910.371795824]: Polyline 8 has point count: 314
+[ INFO] [1723188910.371922119]: Polyline 9 has point count: 25
+[ INFO] [1723188910.372046748]: Polyline 10 has point count: 27
+[ INFO] [1723188910.372175266]: Polyline 11 has point count: 2
+[ INFO] [1723188910.372303395]: Polyline 12 has point count: 81
+[ INFO] [1723188910.372435283]: Polyline 13 has point count: 64
+[ INFO] [1723188910.372556152]: Polyline 14 has point count: 47
+[ INFO] [1723188910.373066705]: Polyline 15 has point count: 63
+[ INFO] [1723188910.373214834]: Polyline 16 has point count: 17
+[ INFO] [1723188910.374172142]: Polyline 17 has point count: 44
+[ INFO] [1723188910.374323493]: Polyline 18 has point count: 40
+[ INFO] [1723188910.374454696]: Polyline 19 has point count: 179
+[ INFO] [1723188910.374585992]: Polyline 20 has point count: 11
+[ INFO] [1723188910.374756305]: Starting Fill. Poly size:13
+[ INFO] [1723188910.375389987]: Fill Complete. Polyline count: 0
+[ INFO] [1723188910.375586374]: Starting Fill. Poly size:5
+[ INFO] [1723188910.375950576]: Fill Complete. Polyline count: 0
+[ INFO] [1723188910.376286444]: Starting Fill. Poly size:26
+[ INFO] [1723188910.376927218]: Fill Complete. Polyline count: 0
+[ INFO] [1723188910.377138383]: Skipping single dot
+[ERROR] [1723188910.382571923]: MowingBehavior: Error during coverage planning
+[ INFO] [1723188910.382761663]: MowingBehavior: Could not create mowing plan, docking
+[ INFO] [1723188910.389868062]: MowingBehavior: Finished semiautomatic task
+[ INFO] [1723188910.395306843]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1723188910.397335664]: successfully registered actions for mower_logic:mowing
+[ INFO] [1723188910.397461163]:
+[ INFO] [1723188910.397812642]:
+[ INFO] [1723188910.397880660]: --------------------------------------
+[ INFO] [1723188910.397935216]: - Entered state: DOCKING
+[ INFO] [1723188910.398064252]: --------------------------------------
+[ INFO] [1723188910.405473539]: Getting Docking Point
+[ WARN] [1723188910.406404144]: Waiting for good GPS
+[slic3r_coverage_planner-12] process has died [pid 153, exit code -11, cmd /opt/prebuilt/slic3r_cov
+rage_planner/lib/slic3r_coverage_planner/slic3r_coverage_planner __name:=slic3r_coverage_planner __
+og:=/root/.ros/log/7e0e6e74-5621-11ef-bf8e-d83addb11b6a/slic3r_coverage_planner-12.log].
+log file: /root/.ros/log/7e0e6e74-5621-11ef-bf8e-d83addb11b6a/slic3r_coverage_planner-12*.log
+[ WARN] [1723188910.723459193]: #### om_mower_logic: setMowerEnabled(0, 0) call
+[ INFO] [1723188910.728022127]: Setting mow enabled to 0
+[ INFO] [1723188910.728702938]: successfully set mower enabled to 0 (direction 0)
+[ WARN] [1723188910.728837492]: #### om_mower_logic: setMowerEnabled(0, 0) call completed within 0.
+0542519s
+[ INFO] [1723188911.406659539]: Calculating approach path
+[ INFO] [1723188911.502850825]: FTCLocalPlannerROS: Got new global plan with 242 points.
+[ INFO] [1723188913.953370587]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1723188913.953832769]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1723188916.223506034]: GPS quality: 0.913977
+[ INFO] [1723188926.723479664]: GPS quality: 0.913977
+[ INFO] [1723188937.223449874]: GPS quality: 0.913977
+[ INFO] [1723188941.203492289]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1723188941.203846176]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1723188941.253385018]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1723188941.253928181]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1723188941.303099748]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1723188941.303624578]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1723188941.352712146]: Action "move_base" succeeded!
+[ INFO] [1723188941.354081100]: Executing Docking Approach
+[ INFO] [1723188941.370591739]: FTCLocalPlannerROS: Got new global plan with 16 points.
+[ INFO] [1723188941.371950601]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1723188941.372105360]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1723188947.723498640]: GPS quality: 0.875803
+[ INFO] [1723188948.764969921]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1723188948.765122809]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1723188948.814721838]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1723188948.814875170]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1723188948.864690234]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1723188948.864839067]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1723188948.920296244]: successfully set GPS to 0
+[ INFO] [1723188948.936916438]: FTCLocalPlannerROS: Got new global plan with 10 points.
+[ INFO] [1723188948.937822914]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1723188948.937951154]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1723188949.084198792]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1723188950.272218141]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1723188951.469958546]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1723188952.477178716]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1723188953.478773831]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1723188954.522148175]: Got a voltage of 28.6873 V. Cancelling docking.
+[ INFO] [1723188954.522482507]:
+[ INFO] [1723188954.522565951]:
+[ INFO] [1723188954.522614098]: --------------------------------------
+[ INFO] [1723188954.522680154]: - Entered state: IDLE
+[ INFO] [1723188954.522736653]: --------------------------------------

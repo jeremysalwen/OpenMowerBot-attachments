@@ -1,0 +1,35 @@
+[INFO] [1750923299.022065356]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750923299.025293507]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750923299.027517003]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750923299.027681983]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750923299.027749389]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[WARN] [1750923299.318532320]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100395 timeout was 0.1.
+[ERROR] [1750923300.006463425]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923300.109189304]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923301.026038093]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923302.026096443]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923302.102243161]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923303.026173253]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923303.913030880]: Calibrated gyro offset: -0.000966138
+[ERROR] [1750923304.046096746]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923304.098747988]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923304.160435009]: local_costmap: Using plugin "static_layer"
+[INFO] [1750923304.207759306]: Requesting the map...
+[ERROR] [1750923305.066082326]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923305.105480427]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923306.066107583]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923306.109434591]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923307.066264810]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923308.066334584]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923308.112766842]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923309.086138593]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923310.086340711]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923310.105589835]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923311.106156620]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923311.114353206]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923312.106917624]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923313.098710496]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923313.106957348]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923314.107083430]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923315.095865716]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923315.126364515]: Low Level Emergency. Bitmask was: 1

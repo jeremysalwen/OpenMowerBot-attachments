@@ -1,0 +1,2465 @@
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, st>    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container->   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, sta>
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-o>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, sta>
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-o>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 >
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e3>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, statu>    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-ope>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e3>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e3>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0>
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmo>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0>
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmo>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4eb>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4e>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCC>    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.c>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630f>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --c>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --c>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc39>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgr>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgr>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b2>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroup>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e36>
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroup>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e36>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5f>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=n>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630f>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=n>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630f>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb7>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-con>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-con>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmo>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmo>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon >
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon >
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d5>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon ->   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5f>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d5>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon -->   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d5>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --r>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb7>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --re>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --re>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a91>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --rep>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --rep>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72c>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a911>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a91>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --repl>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --repl>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a91>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a911>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replac>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replac>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114d>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114d>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace >   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace ->   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc745>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)dman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc745>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace -->
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d>
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace -->
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7456>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc745>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace --d>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d5>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc745>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7456>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace --de>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc7456>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace --det>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f2>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace --deta>   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9>
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f>Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22>Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f2>Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-18/18 (END)
+● openmower.service - Podman container - openmower.service
+     Loaded: loaded (/etc/systemd/system/openmower.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2025-06-19 08:29:20 BST; 2min 41s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 1584 ExecStartPre=/bin/rm -f /run/container-openmower.pid /run/container-openmower.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 1585 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-openmower.pid --cidfile /run/container-openmower.ctr-id --cgroups=no-conmon --replace --detac>
+   Main PID: 1617 (conmon)
+      Tasks: 2 (limit: 9293)
+        CPU: 482ms
+     CGroup: /system.slice/openmower.service
+             └─1617 /usr/bin/conmon --api-version 1 -c c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1 -u c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a91>
+
+Jun 19 08:29:17 openmower systemd[1]: Starting Podman container - openmower.service...
+Jun 19 08:29:17 openmower podman[1585]: 2025-06-19 08:29:17.946758223 +0100 BST m=+0.312649158 container create c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f2>
+Jun 19 08:29:19 openmower podman[1585]: 2025-06-19 08:29:19.999151967 +0100 BST m=+2.365042902 container init c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f>
+Jun 19 08:29:20 openmower podman[1585]: 2025-06-19 08:29:20.027565544 +0100 BST m=+2.393456497 container start c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22>
+Jun 19 08:29:20 openmower podman[1585]: c4fcadc1e36e4ebf28e3630fc397b23a5fb72cd6a5a6d56a9114dc74567f22f1
+Jun 19 08:29:20 openmower systemd[1]: Started Podman container - openmower.service.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+[1]+  Stopped                 systemctl status openmower
+openmower@openmower:~ $ podman ps
+
+^Z^Z^Z
+[2]+  Stopped                 podman ps
+openmower@openmower:~ $ podman ps
+^Z^Z^Z
+[3]+  Stopped                 podman ps
+openmower@openmower:~ $
+openmower@openmower:~ $
+openmower@openmower:~ $ ps aux | grep roscore
+openmow+    1896  0.0  0.0   5912   556 pts/1    S+   08:35   0:00 grep --color=auto roscore
+openmower@openmower:~ $ roscore
+-bash: roscore: command not found
+openmower@openmower:~ $ dpkg -l | grep ros
+ii  firmware-atheros                                 1:20230210-5~bpo11+1+rpt1        all          Binary firmware for Qualcomm Atheros wireless cards
+ii  gir1.2-glib-2.0:arm64                            1.66.1-1+b1                      arm64        Introspection data for GLib, GObject, Gio and GModule
+ii  libgirepository-1.0-1:arm64                      1.66.1-1+b1                      arm64        Library for handling GObject introspection data (runtime library)
+ii  libgssapi-krb5-2:arm64                           1.18.3-6+deb11u3                 arm64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libk5crypto3:arm64                               1.18.3-6+deb11u3                 arm64        MIT Kerberos runtime libraries - Crypto Library
+ii  libkrb5-3:arm64                                  1.18.3-6+deb11u3                 arm64        MIT Kerberos runtime libraries
+ii  libkrb5support0:arm64                            1.18.3-6+deb11u3                 arm64        MIT Kerberos runtime libraries - Support library
+ii  libmatroska7:arm64                               1.6.2-1                          arm64        extensible open standard audio/video container format (shared library)
+ii  mkvtoolnix                                       54.0.0+really52.0.0-3            arm64        Set of command-line tools to work with Matroska files
+ii  python3-colorama                                 0.4.4-1                          all          Cross-platform colored terminal text in Python - Python 3.x
+ii  python3-gi                                       3.38.0-2                         arm64        Python 3 bindings for gobject-introspection libraries
+openmower@openmower:~ $ client_loop: send disconnect: Connection reset
+
+C:\Users\olh>
+C:\Users\olh>
+C:\Users\olh>
+C:\Users\olh>
+C:\Users\olh>ssh openmower@192.168.0.225
+openmower@192.168.0.225's password:
+Linux openmower 6.1.21-v8+ #1642 SMP PREEMPT Mon Apr  3 17:24:16 BST 2023 aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Thu Jun 19 08:18:59 2025 from 192.168.0.100
+openmower@openmower:~ $ git clone https://github.com/ClemensElflein/OMIAUH /home/openmower/openmoweros-tools
+Cloning into '/home/openmower/openmoweros-tools'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 27 (delta 9), reused 22 (delta 7), pack-reused 0 (from 0)
+Receiving objects: 100% (27/27), 6.00 KiB | 1.50 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+openmower@openmower:~ $ ~/openmoweros-tools/fetch_and_upload_firmware.sh
+-bash: /home/openmower/openmoweros-tools/fetch_and_upload_firmware.sh: No such file or directory
+openmower@openmower:~ $ ls
+fetch_and_upload_firmware.sh  openmoweros-tools  start_openocd.sh  start_ros_bash.sh  upload_firmware.sh
+openmower@openmower:~ $ cd openmoweros-tools
+openmower@openmower:~/openmoweros-tools $ ls
+omiauh.sh  README.md  start_ros_bash.sh  start_ros-debug_bash.sh  v1  xesc2tcp.sh
+openmower@openmower:~/openmoweros-tools $ cd ..
+openmower@openmower:~ $ ~/openmoweros-tools/v1/fetch_and_upload_firmware.sh
+-bash: /home/openmower/openmoweros-tools/v1/fetch_and_upload_firmware.sh: Permission denied
+openmower@openmower:~ $
+openmower@openmower:~ $
+openmower@openmower:~ $
+openmower@openmower:~ $ ~/openmoweros-tools/v1/fetch_and_upload_firmware.sh
+-bash: /home/openmower/openmoweros-tools/v1/fetch_and_upload_firmware.sh: Permission denied
+openmower@openmower:~ $ sudo ~/openmoweros-tools/v1/fetch_and_upload_firmware.sh
+sudo: /home/openmower/openmoweros-tools/v1/fetch_and_upload_firmware.sh: command not found
+openmower@openmower:~ $ cd openmoweros-tools
+openmower@openmower:~/openmoweros-tools $ cdv1
+-bash: cdv1: command not found
+openmower@openmower:~/openmoweros-tools $ cd v1
+openmower@openmower:~/openmoweros-tools/v1 $ ls
+fetch_and_upload_firmware.sh  start_openocd.sh  upload_firmware.sh
+openmower@openmower:~/openmoweros-tools/v1 $ fetch_and_upload_firmware.sh
+-bash: fetch_and_upload_firmware.sh: command not found
+openmower@openmower:~/openmoweros-tools/v1 $ ^C
+
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $ fetch_and_upload_firmware.sh
+-bash: fetch_and_upload_firmware.sh: command not found
+openmower@openmower:~/openmoweros-tools/v1 $
+
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $ ls
+fetch_and_upload_firmware.sh  start_openocd.sh  upload_firmware.sh
+openmower@openmower:~/openmoweros-tools/v1 $ cat fetch_and_upload_firmware.sh
+#!/bin/bash
+
+# Force script to exit if an error occurs
+set -e
+
+
+SRC_DIR="$(dirname -- "$(readlink -f "${BASH_SOURCE[0]}")")"
+FW_URL_BASE="https://github.com/ClemensElflein/OpenMower"
+FW_URL="$FW_URL_BASE/releases/download/latest/firmware"
+
+
+if [[ ${EUID} -eq 0 ]]
+then
+    echo ""
+    echo "ERROR: !! THIS SCRIPT MUST NOT RUN AS ROOT !!"
+    echo "       It will ask for credentials as needed."
+    echo ""
+    exit 1
+fi
+
+if [[ -f /etc/openmoweros_version ]]
+then
+    echo ""
+    echo " [✓] OpenMowerOS detected"
+    echo ""
+    source /boot/openmower/mower_config.txt
+else
+    echo ""
+    echo "ERROR: OpenMowerOS not detected!"
+    echo "This script is only supported on OpenMowerOS"
+    echo ""
+    exit 1
+fi
+
+if [[ -z "${OM_HARDWARE_VERSION}" ]]
+then
+    echo ""
+    echo "ERROR: "OM_HARDWARE_VERSION" is not specified"
+    echo "Please configure it at /boot/openmower/mower_config.txt before running this script again!"
+    echo ""
+    exit 1
+fi
+
+function download_fw() {
+  echo ""
+  echo "Downloading latest firmware.zip from \"$FW_URL_BASE\":"
+  wget --no-verbose --show-progress -O $HOME/firmware.zip ${FW_URL}.zip
+}
+
+
+if [[ -s $HOME/firmware.zip ]]
+then
+    echo ""
+    echo "Cached firmware.zip found."
+    echo "Comparing checksum with latest one from GitHub:"
+    echo ""
+    wget --no-verbose -O /tmp/firmware.sha256 ${FW_URL}.sha256
+    if sha256sum --check --status /tmp/firmware.sha256
+    then
+      echo " └> Cached firmware.zip hash matches."
+    else
+      echo " └> Cached firmware.zip hash differs."
+      download_fw
+    fi
+else
+    echo "No cached firmware.zip found."
+    download_fw
+fi
+
+FW_FILE="$HOME/firmware.elf"
+echo ""
+echo "Extrating firmware for \"$OM_HARDWARE_VERSION\""
+echo ""
+unzip -o -p $HOME/firmware.zip firmware/$OM_HARDWARE_VERSION/firmware.elf > $FW_FILE
+echo ""
+echo "Executing flash script with firmware \"$FW_FILE\":"
+sudo $SRC_DIR/upload_firmware.sh $FW_FILE
+
+echo ""
+echo " → Operation successfully completed 🎉"openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $ ~/openmoweros-tools/omiauh.sh
+
+ [✓] OpenMowerOS detected
+
+
+Updating the scripts...
+
+Fetching origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 402 bytes | 134.00 KiB/s, done.
+From https://github.com/ClemensElflein/OMIAUH
+ + 1f8193d...c3fdc6b main       -> origin/main  (forced update)
+HEAD is now at c3fdc6b feat: move v1 specific scripts to folder
+
+...done
+
+openmower@openmower:~/openmoweros-tools/v1 $ fetch_and_upload_firmware.sh
+-bash: fetch_and_upload_firmware.sh: command not found
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $
+openmower@openmower:~/openmoweros-tools/v1 $ cd ..
+openmower@openmower:~/openmoweros-tools $ cd ..
+openmower@openmower:~ $ ~/openmoweros-tools/v1/fetch_and_upload_firmware.sh
+
+ [✓] OpenMowerOS detected
+
+No cached firmware.zip found.
+
+Downloading latest firmware.zip from "https://github.com/ClemensElflein/OpenMower":
+/home/openmower/firmware.zip                100%[=========================================================================================>]   8.20M  9.72MB/s    in 0.8s
+2025-06-20 10:28:35 URL:https://objects.githubusercontent.com/github-production-release-asset-2e65be/452327893/747f9148-65f1-4101-bd43-bc91a64300a6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250620T092833Z&X-Amz-Expires=300&X-Amz-Signature=57d17c131010d206f75180e37dc4b9b0592529fd5d2eca6b324059a642ad2bb1&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dfirmware.zip&response-content-type=application%2Foctet-stream [8599726/8599726] -> "/home/openmower/firmware.zip" [1]
+
+Extrating firmware for "0_13_X"
+
+
+Executing flash script with firmware "/home/openmower/firmware.elf":
+
+ [✓] OpenMowerOS detected
+
+
+WARNING: could not find a method to set RPI power gpio
+
+Open On-Chip Debugger 0.11.0-g8e3c38f-dirty (2023-08-08-11:14)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+adapter speed: 1000 kHz
+
+Info : Hardware thread awareness created
+Info : Hardware thread awareness created
+Info : RP2040 Flash Bank Command
+Info : BCM2835 GPIO JTAG/SWD bitbang driver
+Info : clock speed 1001 kHz
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x00000001
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x10000001
+Info : rp2040.core0: hardware has 4 breakpoints, 2 watchpoints
+Info : rp2040.core1: hardware has 4 breakpoints, 2 watchpoints
+Info : starting gdb server for rp2040.core0 on 3333
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+** Programming Started **
+Info : RP2040 B0 Flash Probe: 2097152 bytes @10000000, in 512 sectors
+
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+Info : Writing 135168 bytes starting at 0x0
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Programming Finished **
+** Verify Started **
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+
+ → Operation successfully completed 🎉
+openmower@openmower:~ $ client_loop: send disconnect: Connection reset
+
+C:\Users\olh>nslookup -q=TXT gis4mobile.com
+Server:  UnKnown
+Address:  147.78.28.2
+
+Non-authoritative answer:
+gis4mobile.com  text =
+
+        "google-site-verification=itZUrhHdz1_yHitepJWEO8LjB76tcjGvyh70wf9d39I"
+gis4mobile.com  text =
+
+        "v=spf1 include:_spf.google.com include:amazonses.com ~all"
+
+C:\Users\olh>nslookup -q=TXT _dmarc.gis4mobile.com
+Server:  UnKnown
+Address:  147.78.28.2
+
+Non-authoritative answer:
+_dmarc.gis4mobile.com   text =
+
+        "v=DMARC1; p=none; rua=mailto:err@gis4mobile.com"
+
+C:\Users\olh>nslookup -q=TXT google._domainkey.gis4mobile.com
+Server:  UnKnown
+Address:  147.78.28.2
+
+Non-authoritative answer:
+google._domainkey.gis4mobile.com        text =
+
+        "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqkDUBG1XWy4vucm0z8dasJNtcNnqz4cq2k5j2NP1WvLly6RlSSxncy2kfsMuWoU8e4ffVz2q7/nOYaX0AIoP2Fya7jLl2/ifXFQIa4aWH0v4TgdW2SM6Dmjrkhc3M/HEOMTtuslYgZKEt1rObeE+gsqBF1jjuCwZH/KJkeCBoW6xhffuw6sK5vvOeGdft1ved"
+        "vEhc+kLd6GWqx8HM5t/GTJkz+8C3Z5kb1uvesW11//Ef+8wstda8hD3GgEx6b/+pcmvn16RqWTNyUhugvhw1owEKeq3FHn18ZZxV4kD5mQLygqq4vrXh4iJkj669sxfCYi/xUSh1H5DKD6q/Pe/owIDAQAB"
+
+C:\Users\olh>nslookup -q=TXT _amazonses.gis4mobile.com
+Server:  UnKnown
+Address:  147.78.28.2
+
+Non-authoritative answer:
+_amazonses.gis4mobile.com       text =
+
+        "XgFOJcng1AgQT6+shSjk0i9f1AviSUvoMJr1nOa0B1c="
+
+C:\Users\olh>
+C:\Users\olh>ssh openmower@192.168.0.225
+openmower@192.168.0.225's password:
+Linux openmower 6.1.21-v8+ #1642 SMP PREEMPT Mon Apr  3 17:24:16 BST 2023 aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jun 20 09:03:31 2025 from 192.168.0.100
+openmower@openmower:~ $
+openmower@openmower:~ $
+openmower@openmower:~ $
+openmower@openmower:~ $ shutdown
+Failed to set wall message, ignoring: Interactive authentication required.
+Failed to call ScheduleShutdown in logind, no action will be taken: Interactive authentication required.
+openmower@openmower:~ $ sudo shutdown now
+Connection to 192.168.0.225 closed by remote host.
+Connection to 192.168.0.225 closed.
+
+C:\Users\olh>ssh openmower@192.168.0.225
+openmower@192.168.0.225's password:
+Linux openmower 6.1.21-v8+ #1642 SMP PREEMPT Mon Apr  3 17:24:16 BST 2023 aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Jun 25 11:03:10 2025 from 192.168.0.100
+openmower@openmower:~ $ sudo systemctl stop openmower
+openmower@openmower:~ $ sudo systemctl start openmower-debug
+openmower@openmower:~ $ sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/roslaunch-openmower-91.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:46571/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/services/power/battery_critical_high_voltage: -1
+ * /ll/services/power/battery_critical_voltage: 25.0
+ * /ll/services/power/battery_empty_voltage: 25.0
+ * /ll/services/power/battery_full_voltage: 28.5
+ * /ll/services/power/charge_critical_high_current: -1
+ * /ll/services/power/charge_critical_high_voltage: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/background_sounds: False
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/has_motor_temp: False
+ * /mower_comms/left_xesc/motor_pole_pairs: 4
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/has_motor_temp: True
+ * /mower_comms/mower_xesc/max_motor_rpm: 3800
+ * /mower_comms/mower_xesc/min_motor_rpm: 2800
+ * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+ * /mower_comms/mower_xesc/motor_pole_pairs: 4
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/has_motor_temp: False
+ * /mower_comms/right_xesc/motor_pole_pairs: 4
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/cu_rain_threshold: -1
+ * /mower_logic/docking_approach_distance: 1.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/docking_waiting_time: 0.0
+ * /mower_logic/emergency_input_config:
+ * /mower_logic/emergency_lift_period: -1
+ * /mower_logic/emergency_tilt_period: -1
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/ignore_charging_current: False
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 0.0
+ * /mower_logic/undock_distance: 2.0
+ * /mower_logic/undock_fixed_angle: True
+ * /mower_logic/undock_use_curve: True
+ * /mower_logic/undocking_waiting_time: 0.0
+ * /ntrip_client/authenticate: True
+ * /ntrip_client/ca_cert:
+ * /ntrip_client/cert:
+ * /ntrip_client/host: tapas-rtk.space.d...
+ * /ntrip_client/key:
+ * /ntrip_client/mountpoint: VRS1
+ * /ntrip_client/nmea_max_length: 82
+ * /ntrip_client/nmea_min_length: 3
+ * /ntrip_client/ntrip_version:
+ * /ntrip_client/password: ghj5fds
+ * /ntrip_client/port: 2101
+ * /ntrip_client/reconnect_attempt_max: 99999
+ * /ntrip_client/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/rtcm_frame_id: odom
+ * /ntrip_client/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/rtcm_timeout_seconds: 30
+ * /ntrip_client/ssl: False
+ * /ntrip_client/username: g4m1
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sensor_ids:
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 56
+ * /xbot_driver_gps/datum_long: 11
+ * /xbot_driver_gps/device_type: serial
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_monitoring/software_version: 0f92243
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/debug: False
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms_v1/mower_comms_v1)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ntrip_client/ntrip_ros.py)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+process[master]: started with pid [99]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 0b0f5ad2-5260-11f0-bf3f-d83adde38c38
+process[rosout-1]: started with pid [111]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [119]
+process[xbot_driver_gps-3]: started with pid [120]
+process[ntrip_client-4]: started with pid [125]
+process[move_base_flex-5]: started with pid [131]
+[INFO] [1750923293.037329733]: Using UBX mode for GPS
+process[move_base_legacy_relay-6]: started with pid [133]
+[INFO] [1750923293.087982649]: Using absolute mode for GPS
+process[xbot_positioning-7]: started with pid [134]
+process[joy-8]: started with pid [135]
+process[joy_teleop-9]: started with pid [136]
+[INFO] [1750923293.218541702]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+process[map_service-10]: started with pid [142]
+process[mower_logic-11]: started with pid [157]
+[INFO] [1750923293.301943949]: Antenna offset: 0.3, 0
+[INFO] [1750923293.308191418]: Wheel ticks [1/m]: 1600
+[INFO] [1750923293.334394654]: Wheel distance [m]: 0.325
+process[slic3r_coverage_planner-12]: started with pid [159]
+[INFO] [1750923293.398445314]: Starting xesc driver
+process[twist_mux-13]: started with pid [162]
+[INFO] [1750923293.439996050]: Starting xesc driver
+[ERROR] [1750923293.469565897]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1750923293.484023463]: Starting xesc driver
+process[xbot_monitoring-14]: started with pid [166]
+[INFO] [1750923293.525211666]: Teleop enable button 0.
+process[xbot_remote-15]: started with pid [171]
+[INFO] [1750923293.574982388]: Turbo on button 4.
+[INFO] [1750923293.576524704]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1750923293.577892264]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1750923293.578613108]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1750923293.579626615]: Turbo for angular axis yaw is scale 3.000000.
+process[monitoring-16]: started with pid [181]
+[INFO] [1750923293.665288671]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1750923293.766389764]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1750923293.793698692]: MQTT Connected
+[INFO] [1750923293.831850298]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1750923293.866387554]: connecting serial interface: /dev/ttyAMA0
+[FATAL] [1750923293.905335856]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[INFO] [1750923294.104420971]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923294.233058923]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750923294.302919433]: Loaded 1 mowing areas and 0 navigation areas from file.
+[INFO] [1750923294.311061716]: Map Position: x=-23311.9, y=20959.8
+[INFO] [1750923294.314264459]: Map Size: x=46625.9, y=31.8867
+[INFO] [1750923294.341618184]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750923294.373510860]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750923294.374270333]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750923294.374483127]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1750923294.387738059]: om_mower_logic: Setting mower_logic config
+[INFO] [1750923294.388481329]: mower_comms received new mower_logic config
+[INFO] [1750923294.401590318]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750923294.477846036]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750923294.498564610]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750923294.518108808]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750923294.557130185]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750923294.572827572]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750923294.573117347]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1750923294.595334849]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750923294.624336223]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750923294.624545332]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1750923294.687921151]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750923294.688136649]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1750923294.706586155]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750923294.724426574]: Monitoring received new mower_logic config
+[INFO] [1750923294.750114521]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1750923294.780360733]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750923294.784447448]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1750923294.798419650]: mower_comms received new mower_logic config
+[INFO] [1750923294.833644105]: Monitoring received new mower_logic config
+[INFO] [1750923294.841492651]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750923294.842007460]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1750923294.876911363]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750923294.877673447]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[ERROR] [1750923294.885619270]: Client [/xbot_monitoring] wants topic /xbot_monitoring/sensors/om_charge_state/data to have datatype/md5sum [xbot_msgs/SensorDataString/37670eed6af64f24a40b9b9fc1cb861e], but our version has [xbot_msgs/SensorDataDouble/176463c696aec75591f61a77cde70a71]. Dropping connection.
+[INFO] [1750923294.928616567]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750923294.929446855]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750923294.930214309]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750923294.931026634]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750923294.931883143]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750923294.932340731]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750923294.933066594]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750923294.933915140]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1750923294.960472929]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750923294.967799073]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750923294.990841177]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750923294.991252191]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1750923295.021622125]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1750923295.022136287]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1750923295.047937511]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750923295.049602901]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1750923295.231722995]: Waiting for emergency message
+[INFO] [1750923295.894503]: Connected to http://tapas-rtk.space.dtu.dk:2101/VRS1
+[INFO] [1750923296.110353534]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923296.231796376]: Waiting for a power message
+[INFO] [1750923296.232250148]: Waiting for a status message
+[INFO] [1750923296.232474294]: Waiting for a pose message
+[INFO] [1750923296.232672200]: Waiting for left ESC status message
+[INFO] [1750923296.232864586]: Waiting for right ESC status message
+[INFO] [1750923296.233052288]: Waiting for emergency service
+[INFO] [1750923296.236342605]: Waiting for path server
+[INFO] [1750923296.241000463]: Waiting for mower service
+[INFO] [1750923296.244813923]: Waiting for gps service
+[INFO] [1750923296.248449754]: Waiting for positioning service
+[INFO] [1750923296.251916570]: Waiting for map server
+[INFO] [1750923296.254884779]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...
+[INFO] [1750923298.109400739]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923298.886430018]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+         v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=65535, tilt_period=65535,
+         shutdown_esc_max_pitch=255,
+         language="en", volume=255
+         hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1750923298.893557684]: Started gyro calibration
+[INFO] [1750923298.896955204]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1750923298.901998873]: om_mower_logic: Setting mower_logic config
+[INFO] [1750923298.993446859]: Monitoring received new mower_logic config
+[WARN] [1750923298.994949991]: Could not set configuration
+[INFO] [1750923298.995573503]: mower_comms received new mower_logic config
+[INFO] [1750923298.999747996]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750923298.999913346]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750923298.999986160]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750923299.001868844]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750923299.003780935]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ERROR] [1750923299.006158874]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923299.006584425]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750923299.022065356]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750923299.025293507]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750923299.027517003]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750923299.027681983]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750923299.027749389]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[WARN] [1750923299.318532320]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100395 timeout was 0.1.
+[ERROR] [1750923300.006463425]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923300.109189304]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923301.026038093]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923302.026096443]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923302.102243161]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923303.026173253]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923303.913030880]: Calibrated gyro offset: -0.000966138
+[ERROR] [1750923304.046096746]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923304.098747988]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923304.160435009]: local_costmap: Using plugin "static_layer"
+[INFO] [1750923304.207759306]: Requesting the map...
+[ERROR] [1750923305.066082326]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923305.105480427]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923306.066107583]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923306.109434591]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923307.066264810]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923308.066334584]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923308.112766842]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923309.086138593]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923310.086340711]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923310.105589835]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923311.106156620]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923311.114353206]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923312.106917624]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923313.098710496]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923313.106957348]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923314.107083430]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923315.095865716]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923315.126364515]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923316.099786145]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923316.126587938]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923317.126603178]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923318.109686959]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923318.146383906]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923319.146402911]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923320.101502228]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923320.146498191]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923321.166441239]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923322.104442061]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923322.186567727]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923323.186734777]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923324.102291738]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923324.206820174]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923325.226454624]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923326.093436886]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923326.227461411]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923327.098373188]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923327.246363365]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923328.115793963]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923328.246469984]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923329.266557644]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923330.101437408]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923330.266600626]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923331.286706722]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923332.111033138]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923332.306358693]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923333.306510043]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923334.108700787]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923334.306541994]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923335.326635201]: Low Level Emergency. Bitmask was: 1
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[INFO] [1750923336.100023724]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923336.346548037]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923337.100090246]: Dropped GPS update, since it's not RTK Fixed
+[move_base_legacy_relay-6] process has died [pid 133, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/move_base_legacy_relay-6.log].
+log file: /root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/move_base_legacy_relay-6*.log
+[ERROR] [1750923337.346612270]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923338.108407018]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923338.366543165]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923339.386368912]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923340.098620438]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923340.386397338]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923341.102610451]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923341.386408585]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923342.113883805]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923342.386647964]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923343.406354612]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923344.099951134]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923344.406414180]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923345.426392886]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923346.104490421]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923346.426622478]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923347.446331104]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923348.112575803]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923348.446432884]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923349.446508417]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923350.110248714]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923350.446582484]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923351.466620236]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923352.104142942]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923352.486359618]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923353.486627480]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923354.102423017]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923354.506317318]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923355.103593492]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923355.506567212]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923356.108255246]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923356.252971447]: Map server service not found.
+[ERROR] [1750923356.506762932]: Low Level Emergency. Bitmask was: 1
+[mower_logic-11] process has died [pid 157, exit code 2, cmd /opt/open_mower_ros/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/mower_logic-11.log].
+log file: /root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/mower_logic-11*.log
+[ERROR] [1750923357.526417000]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923358.108782386]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923358.546531947]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923359.546570321]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923360.115931565]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923360.566127693]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923361.589039798]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923362.097680838]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923362.606074620]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923363.107016858]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923363.606118728]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923364.606150214]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923365.106967760]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923365.626143631]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923366.626184453]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923367.099333148]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923367.646175821]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923368.110922900]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923368.646716101]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923369.666173971]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923370.113611562]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923370.686108084]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923371.686112051]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923372.105033034]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923372.706323245]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923373.107472201]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923373.726099274]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923374.746166474]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923375.103060902]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923375.766116078]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923376.113083397]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923376.766136211]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923377.766197625]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923378.107156602]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923378.786092417]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923379.786150755]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923380.099968962]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923380.806103805]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923381.806282394]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923382.101985006]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923382.806885890]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923383.826126222]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923384.109125890]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923384.846076860]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923385.846100776]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923386.107268738]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923386.846104317]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923387.107345705]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923387.866098669]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923388.866107954]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923389.100856642]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923389.886103366]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923390.124812215]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923390.886137745]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923391.906080108]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923392.104699087]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923392.906092621]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923393.926228262]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923394.102546493]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923394.946153325]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923395.108752766]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923395.966081244]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923396.109846902]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923396.966157643]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923397.986153477]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923398.101917083]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923399.006107674]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923399.103364145]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923400.006109143]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923400.104366754]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923401.006121901]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923401.104869538]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923402.026076027]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923402.128308081]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923403.026093949]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923404.046078166]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923404.110962953]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923405.046129535]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923406.066116681]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923406.113382718]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923407.066144205]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923408.086095695]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923408.113294740]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923409.086120823]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923410.106727881]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923410.107953735]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923411.126135217]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923412.107470368]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923412.146160481]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923413.166103522]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923414.113243711]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923414.186147331]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923415.206073524]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923416.099406863]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923416.206255005]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923417.102622609]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923417.226061595]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923418.107334420]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923418.226070278]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923419.226192558]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923420.113412809]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923420.246083890]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923421.246137297]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923422.104229231]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923422.266090586]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923423.266095569]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923424.103480087]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923424.266129085]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923425.286091484]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923426.110603046]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923426.286154503]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923427.306078946]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923428.109571282]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923428.306152238]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923429.326081195]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923430.116004542]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923430.326088845]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923431.326107009]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923432.118777070]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923432.346102060]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923433.366105015]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923434.109602977]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923434.366120459]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923435.386148900]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923436.116027657]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923436.406082372]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923437.406198720]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923438.115647441]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923438.426178904]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923439.446199961]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923440.113970398]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923440.466042968]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923441.486035100]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923442.116109910]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923442.486061107]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923443.506059524]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923444.119193476]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923444.506055975]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923445.506065376]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923446.107062973]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923446.526084465]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923447.107287291]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923447.546040931]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923448.116178948]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923448.546053895]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923449.566046680]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923450.119975098]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923450.586032927]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923451.586054421]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923452.103825289]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923452.606048384]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923453.626051101]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923454.113220946]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923454.626052220]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923455.626095752]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923456.114354077]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923456.646087311]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923457.646141945]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923458.116290003]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923458.666052035]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923459.685998813]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923460.117295805]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923460.686033397]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923461.686056515]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923462.123796335]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923462.706080309]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923463.726034585]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923464.111842557]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923464.726071245]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923465.746039732]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923466.115772519]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923466.766032176]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923467.766051163]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923468.115670991]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923468.786038811]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923469.806039392]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923470.113118111]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923470.806048657]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923471.826115415]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923472.115635602]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923472.846032273]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923473.846103803]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923474.114506803]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923474.846166333]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923475.866053787]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923476.113015932]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923476.866114646]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923477.886034855]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923478.112189958]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923478.886082372]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923479.906185848]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923480.116196012]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923480.906385164]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923481.926039673]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923482.118225149]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923482.926065920]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923483.926092897]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923484.120144490]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923484.946044818]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923485.946061216]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923486.114076331]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923486.946078027]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923487.118805374]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923487.946119841]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923488.966118858]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923489.113741608]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923489.986133490]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923491.006034573]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923491.108138896]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923492.006051712]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923492.117528506]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923493.006080369]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923494.026033843]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923494.115560444]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923495.026175013]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923495.117215516]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923496.046038245]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923497.066186637]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923497.102936542]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923498.086056919]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923498.120096657]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923499.106044289]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923500.115151065]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923500.126033561]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923501.115622146]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923501.126050837]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923502.146045893]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923503.104152001]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923503.166029498]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923504.117873640]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923504.166048009]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923505.186034930]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923506.106316843]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923506.186067958]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923507.106662553]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923507.206046378]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923508.115564054]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923508.206047216]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923509.226048520]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923510.118801271]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923510.226065832]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923511.246040278]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923512.114958822]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923512.266036506]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923513.266050589]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923514.119218383]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923514.286374819]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923515.306111526]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923516.115518709]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923516.326057249]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923517.346043808]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923518.123054034]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923518.366034034]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923519.366074069]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923520.113873070]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923520.366157732]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923520.851007565]: docking pose: position:
+  x: 0
+
+  y: 0
+
+  z: 0
+
+orientation:
+  x: 0
+
+  y: 0
+
+  z: 0
+
+  w: 1
+
+[ERROR] [1750923521.366342558]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923522.116232702]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923522.386648109]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923523.406183209]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923523.902136612]: Resizing static layer to 932517 X 638 at 0.050000 m/pix
+[INFO] [1750923524.111538729]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923524.426095096]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923525.115816145]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923525.426086063]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923526.116906781]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923526.446036295]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923527.446131213]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923528.125100133]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923528.446130165]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923529.466062401]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923529.830438240]: Received a 932517 X 638 map at 0.050000 m/pix
+[INFO] [1750923529.840492059]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1750923529.848820391]:     Subscribed to Topics:
+[INFO] [1750923529.871435708]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1750923530.000694762]: global_costmap: Using plugin "static_layer"
+[INFO] [1750923530.018195652]: Requesting the map...
+[INFO] [1750923530.122922907]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923530.466146135]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923531.435136474]: Resizing costmap to 932517 X 638 at 0.050000 m/pix
+[ERROR] [1750923531.466132846]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923532.122119962]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923532.486100618]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923533.486125480]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923534.113920025]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923534.506033498]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923535.506036954]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923536.121448143]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923536.506054308]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923537.526047817]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923538.117193413]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923538.526198778]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923538.582440877]: Received a 932517 X 638 map at 0.050000 m/pix
+[INFO] [1750923538.593369869]: global_costmap: Using plugin "obstacle_layer"
+[ERROR] [1750923539.546143602]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923539.665723400]:     Subscribed to Topics:
+[INFO] [1750923539.698192383]: global_costmap: Using plugin "inflation_layer"
+[INFO] [1750923539.990965883]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1750923540.125554493]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750923540.282945331]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1750923540.286321827]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1750923540.538875803]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1750923540.539940970]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+[WARN] [1750923540.543192820]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+[ERROR] [1750923540.546208952]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923541.546297715]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923542.103788261]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923542.566082528]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923543.106498647]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923543.586090474]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923544.114045288]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923544.586274978]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923545.586286898]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923546.120119412]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923546.606162068]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923547.606250404]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923548.626258360]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923549.160834659]: Costmap2DROS transform timeout. Current time: 1750923549.1604, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923549.579994641]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.4196 seconds
+[ERROR] [1750923549.636665025]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923550.180137367]: Costmap2DROS transform timeout. Current time: 1750923550.1800, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[ERROR] [1750923550.646105785]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923551.380126516]: Costmap2DROS transform timeout. Current time: 1750923551.3800, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[ERROR] [1750923552.306771676]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923552.380135533]: Costmap2DROS transform timeout. Current time: 1750923552.3800, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[INFO] [1750923558.960598727]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923558.962260606]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923561.319979548]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 8.7400 seconds
+[WARN] [1750923561.320535797]: Costmap2DROS transform timeout. Current time: 1750923561.3203, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923562.520329550]: Costmap2DROS transform timeout. Current time: 1750923562.5201, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923563.720245899]: Costmap2DROS transform timeout. Current time: 1750923563.7200, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923565.445755382]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 1.1257 seconds
+[WARN] [1750923565.446502036]: Costmap2DROS transform timeout. Current time: 1750923565.4463, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923569.169530002]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 3.1238 seconds
+[WARN] [1750923569.170017364]: Costmap2DROS transform timeout. Current time: 1750923569.1698, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[INFO] [1750923569.309178254]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923569.310299401]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923569.810278927]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1750923569.819562528]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1750923569.863509391]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923570.330187878]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923570.369591430]: Costmap2DROS transform timeout. Current time: 1750923570.3695, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923571.777697494]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 0.8082 seconds
+[WARN] [1750923571.777882009]: Costmap2DROS transform timeout. Current time: 1750923571.7778, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923572.977812117]: Costmap2DROS transform timeout. Current time: 1750923572.9777, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[ERROR] [1750923573.969175024]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923573.969382539]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[WARN] [1750923573.977811489]: Costmap2DROS transform timeout. Current time: 1750923573.9777, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[INFO] [1750923573.978474755]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923569.861438686]: [driver_gps] slow ros publisher: 4343 ms
+[ERROR] [1750923574.166588475]: [driver_gps] gps time diff was: 1000, host time diff was: 26049
+[ERROR] [1750923574.384671575]: [driver_gps] slow ros publisher: 217 ms
+[ERROR] [1750923574.384830462]: [driver_gps] gps time diff was: 1000, host time diff was: 218
+[ERROR] [1750923574.384967867]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385110901]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385253195]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385382878]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385478580]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385647707]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385757927]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385858574]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.385955739]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386055534]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386173828]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386274196]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386376658]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386497674]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386596635]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386719430]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386819132]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.386918574]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387041832]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387160756]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387256143]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387352289]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387440899]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923574.387536490]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[WARN] [1750923574.977882227]: Costmap2DROS transform timeout. Current time: 1750923574.9777, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[ERROR] [1750923574.988401030]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923575.105784135]: [driver_gps] gps time diff was: 1000, host time diff was: 717
+[WARN] [1750923576.177816506]: Costmap2DROS transform timeout. Current time: 1750923576.1777, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[WARN] [1750923577.377806563]: Costmap2DROS transform timeout. Current time: 1750923577.3777, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[ERROR] [1750923577.468426273]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923577.528477332]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1750923577.537642103]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923578.488347041]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923579.508414099]: Low Level Emergency. Bitmask was: 1
+[WARN] [1750923580.196396160]: Map update loop missed its desired rate of 5.0000Hz... the loop actually took 2.4180 seconds
+[WARN] [1750923580.196736746]: Costmap2DROS transform timeout. Current time: 1750923580.1966, global_pose stamp: 1750923548.8524, tolerance: 0.3000
+[INFO] [1750923580.346250411]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923580.508610322]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923581.528375728]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923582.118932188]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923582.548419403]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923583.568417648]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923584.115793257]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923584.588369074]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923585.608355698]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923586.115189909]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923586.608476094]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923587.608490801]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923588.127109198]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923588.628464389]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923589.648355991]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923590.115149823]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923590.648377326]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923591.668358562]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923592.121307341]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923592.688346791]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923593.688377402]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923594.119086340]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923594.708370246]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923595.708525303]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923596.109113012]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923596.728372950]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923597.728379568]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923598.121550816]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923598.728523842]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923599.748453538]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923600.118518846]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923600.768382930]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923601.788359961]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923602.114973923]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923602.808370927]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923603.808405827]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923604.117201658]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923604.828368738]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923605.828382878]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923606.113897700]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923606.848361352]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923607.848360502]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923608.121998025]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923608.848381366]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923609.868372845]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923610.112946456]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923610.888379041]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923611.908365158]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923612.118357262]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923612.928350954]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923628.268390561]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923628.269343128]: [driver_gps] gps time diff was: 1000, host time diff was: 10189
+[INFO] [1750923628.269803449]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923628.272691335]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923628.771255223]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1750923628.783796629]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[ERROR] [1750923629.291123823]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923630.291143727]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923630.960236565]: [driver_gps] waited 26 ms to write to the tx buffer, serial port is probably congested!
+[ERROR] [1750923631.179077968]: [driver_gps] gps time diff was: 1000, host time diff was: 7884
+[ERROR] [1750923631.179591843]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[INFO] [1750923631.179581084]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750923631.179951723]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.180313195]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.180600520]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.180958863]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.181326982]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.181745934]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.182086259]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.182411787]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.182714112]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.182989975]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.183275857]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.183539998]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.183799287]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.184126519]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.184401808]: [driver_gps] gps time diff was: 1000, host time diff was: 0
+[ERROR] [1750923631.310965937]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750923632.311095761]: Low Level Emergency. Bitmask was: 1
+================================================================================REQUIRED process [move_base_flex-5] has died!
+process has died [pid 131, exit code -9, cmd /opt/ros/noetic/lib/mbf_costmap_nav/mbf_costmap_nav cmd_vel:=/nav_vel __name:=move_base_flex __log:=/root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/move_base_flex-5.log].
+log file: /root/.ros/log/0b0f5ad2-5260-11f0-bf3f-d83adde38c38/move_base_flex-5*.log
+Initiating shutdown!
+================================================================================
+[INFO] [1750923633.115673271]: Dropped GPS update, since it's not RTK Fixed
+[xbot_remote-15] killing on exit
+[ERROR] [1750923633.331011356]: Low Level Emergency. Bitmask was: 1
+[monitoring-16] killing on exit
+[twist_mux-13] killing on exit
+[xbot_monitoring-14] killing on exit
+[joy_teleop-9] killing on exit
+[slic3r_coverage_planner-12] killing on exit
+[move_base_flex-5] killing on exit
+[joy-8] killing on exit
+[map_service-10] killing on exit
+[xbot_positioning-7] killing on exit
+[ntrip_client-4] killing on exit
+[ERROR] [1750923634.331022603]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750923634.452010]: Stopping RTCM publisher
+[INFO] [1750923634.855520]: Disconnecting NTRIP client
+[ERROR] [1750923635.351067451]: Low Level Emergency. Bitmask was: 1
+[xbot_driver_gps-3] killing on exit
+[mower_comms-2] killing on exit
+[xbot_remote-15] escalating to SIGTERM
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+openmower@openmower:~ $

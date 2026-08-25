@@ -1,0 +1,65 @@
+alias: Calculate Dew Rate (Beysens 2016 Model)
+description: >-
+  Implementation of Beysens 2016 dew model (Eq 25), updating hourly rate on
+  weather changes.
+triggers:
+  - entity_id:
+      - sensor.kvtsouth134_temperature
+      - sensor.kvtsouth134_dewpoint
+      - sensor.kvtsouth134_wind_speed
+      - sensor.pirateweather_cloud_coverage
+    trigger: state
+conditions:
+  - condition: sun
+    after: sunset
+    before: sunrise
+    enabled: false
+actions:
+  - target:
+      entity_id: input_number.dew_rate
+    data:
+      value: "{{ hourly_dew_rate | float }}"
+    action: input_number.set_value
+  - data:
+      message: >
+        Dew rate calc (Beysens 2016 Eq 25): Ta={{ Ta | float | round(1) }}°C,
+        Td={{ Td | float | round(1) }}°C, V={{ V | float | round(1) }}m/s, N={{
+        N | float | round(1) }} okta, H={{ H | float | round(3) }}km, Rate={{
+        hourly_dew_rate }} mm/h
+      level: info
+    action: system_log.write
+mode: restart
+variables:
+  Ta_f: "{{ states('sensor.kvtsouth134_temperature') | float(0) }}"
+  Td_f: "{{ states('sensor.kvtsouth134_dewpoint') | float(0) }}"
+  V_mph: "{{ states('sensor.kvtsouth134_wind_speed') | float(0) }}"
+  cc: "{{ states('sensor.pirateweather_cloud_coverage') | float(0) }}"
+  Ta: "{{ ((Ta_f | float) - 32) * 5 / 9 }}"
+  Td: "{{ ((Td_f | float) - 32) * 5 / 9 }}"
+  V: "{{ (V_mph | float) * 0.44704 }}"
+  "N": "{{ ((cc | float) / 100 * 8) if (cc | float) > 1 else ((cc | float) * 8) }}"
+  H: >
+    {% set elevation_m = state_attr('zone.home', 'elevation') %} {% if
+    elevation_m is none %}
+      {{ 0.1 | round(5) }}
+    {% else %}
+      {{ ((elevation_m | float(100)) / 1000) | round(5) }}
+    {% endif %}
+  one_minus_sky_emissivity: >
+    {% set H_km = H | float %} {% set Td_C = Td | float %} {% set coef1 =
+    0.204323 * H_km %} {% set coef2 = 0.0238893 * (H_km**2) %} {% set
+    term_in_parentheses = 18.0132 - 1.04963 * H_km + 0.21891 * (H_km**2) %} {%
+    set coef3 = term_in_parentheses * 0.001 * Td_C %} {{ 0.2422 * (1 + coef1 -
+    coef2 - coef3) }}
+  temperature_factor: "{{ (((Td | float) + 273.15) / 285)**4 }}"
+  cloud_factor: "{{ 1 - (N | float) / 8 }}"
+  V0: 4.4
+  C: |
+    {% set e = 2.718281828 %}
+    {{ 1 + 100 * (1 - e ** (-(((V | float) / V0)**20))) }}
+  hourly_dew_rate: >
+    {% set radiation_term = 0.37 * (one_minus_sky_emissivity | float) *
+    (temperature_factor | float) * (cloud_factor | float) %} {% set
+    convection_term = 0.06 * ((Td | float) - (Ta | float)) * (C | float) %} {%
+    set total_daily_rate = radiation_term + convection_term %} {{ [0,
+    (total_daily_rate / 12)] | max | round(4) }}

@@ -1,0 +1,45 @@
+NODES
+  /
+    heatmap_generator (xbot_monitoring/heatmap_generator)
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+ROS_MASTER_URI=http://192.168.1.42:11311
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://192.168.1.42:11311
+process[xbot_driver_gps-1]: started with pid [52]
+process[move_base_flex-2]: started with pid [53]
+process[move_base_legacy_relay-3]: started with pid [54]
+process[xbot_positioning-4]: started with pid [59]
+process[joy-5]: started with pid [64]
+process[joy_teleop-6]: started with pid [68]
+process[map_service-7]: started with pid [77]
+process[mower_logic-8]: started with pid [78]
+process[slic3r_coverage_planner-9]: started with pid [80]
+process[twist_mux-10]: started with pid [88]
+process[xbot_monitoring-11]: started with pid [92]
+process[heatmap_generator-12]: started with pid [94]
+process[xbot_remote-13]: started with pid [97]
+process[monitoring-14]: started with pid [98]
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in 
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[move_base_legacy_relay-3] process has died [pid 54, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/2bd30bf4-5705-11ee-be74-dca6320f8521/move_base_legacy_relay-3.log].
+log file: /root/.ros/log/2bd30bf4-5705-11ee-be74-dca6320f8521/move_base_legacy_relay-3*.log

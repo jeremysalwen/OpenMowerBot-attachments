@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenMower — Brand Identity System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#2CC76B;
+  --green-deep:#1EA856;
+  --green-pale:#E3F9EC;
+  --lime:#ACFF5A;
+  --dark:#0C1D13;
+  --surface:#111E18;
+  --surface2:#182A20;
+  --surface3:#1E3328;
+  --border:#243D2E;
+  --border2:#2F4F3C;
+  --text:#EEF9F2;
+  --text2:#79B890;
+  --text3:#4C7060;
+  --font:'DM Sans',sans-serif;
+  --mono:'DM Mono',monospace;
+  --r:12px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--dark);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:0 48px}
+
+/* ── HERO ─────────────────────────────────── */
+.hero{padding:100px 0 80px;text-align:center;position:relative;overflow:hidden}
+.hero-glow{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);width:700px;height:400px;background:radial-gradient(ellipse at 50% 100%,rgba(44,199,107,.14) 0%,transparent 68%);pointer-events:none}
+.hero-tag{display:inline-block;padding:6px 18px;border:1px solid rgba(44,199,107,.45);border-radius:20px;font-size:12px;color:var(--green);letter-spacing:.1em;text-transform:uppercase;font-weight:500;margin-bottom:36px}
+.logo-main{width:100%;max-width:540px;margin:0 auto 44px;display:block}
+.hero-tagline{font-size:clamp(1.9rem,4vw,3.2rem);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px}
+.hero-tagline em{font-style:normal;color:var(--green)}
+.hero-sub{font-size:17px;color:var(--text2);max-width:480px;margin:0 auto 52px;font-weight:400}
+.hero-meta{display:flex;justify-content:center;gap:32px;font-size:13px;color:var(--text3);letter-spacing:.04em}
+.hero-meta span{display:flex;align-items:center;gap:6px}
+.hero-meta span::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);display:block}
+.accent-bar{width:48px;height:3px;background:var(--green);border-radius:2px;margin:32px auto}
+
+/* ── SECTIONS ─────────────────────────────── */
+section{padding:88px 0}
+section+section{border-top:1px solid var(--border)}
+.section-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+.section-title{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
+.section-sub{font-size:16px;color:var(--text2);margin-bottom:52px;max-width:580px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+/* ── COLORS ───────────────────────────────── */
+.color-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
+.swatch{height:130px;position:relative}
+.swatch-inner{position:absolute;inset:0;opacity:.07;background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:8px 8px}
+.color-info{padding:16px 18px;background:var(--surface2)}
+.color-name{font-size:15px;font-weight:600;margin-bottom:3px}
+.color-hex{font-family:var(--mono);font-size:13px;color:var(--text2)}
+.color-use{font-size:12px;color:var(--text3);margin-top:6px;line-height:1.5}
+.scale-wrap{margin-top:40px}
+.scale-label{font-size:12px;color:var(--text3);margin-bottom:12px;font-weight:500}
+.scale-row{display:flex;height:44px;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
+.scale-stop{flex:1;position:relative}
+.scale-stop span{position:absolute;bottom:calc(100%+6px);left:50%;transform:translateX(-50%);font-size:10px;font-family:var(--mono);color:var(--text3);white-space:nowrap}
+
+/* ── TYPOGRAPHY ───────────────────────────── */
+.type-row{padding:28px 0;border-bottom:1px solid var(--border);display:flex;gap:40px;align-items:baseline}
+.type-row:last-child{border-bottom:none}
+.type-meta{min-width:150px;flex-shrink:0}
+.type-spec{font-size:11px;font-family:var(--mono);color:var(--text3);line-height:1.9}
+.t-display{font-size:60px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.t-h1{font-size:42px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.t-h2{font-size:30px;font-weight:600;letter-spacing:-.01em}
+.t-h3{font-size:22px;font-weight:600}
+.t-body{font-size:16px;font-weight:400;line-height:1.7;max-width:520px;color:var(--text2)}
+.t-small{font-size:13px;color:var(--text3);line-height:1.6}
+.t-code{font-family:var(--mono);font-size:14px;color:var(--lime)}
+.weight-grid{display:flex;flex-wrap:wrap;gap:40px;margin-top:48px;padding-top:40px;border-top:1px solid var(--border)}
+.weight-item .wl{font-size:11px;font-family:var(--mono);color:var(--text3);margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em}
+.weight-item .wt{font-size:28px;line-height:1.2}
+
+/* ── LOGO USAGE ───────────────────────────── */
+.logo-card{border-radius:16px;padding:44px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:210px;border:1px solid var(--border);gap:20px}
+.logo-card.on-dark{background:var(--dark)}
+.logo-card.on-green{background:var(--green);border-color:transparent}
+.logo-card.on-surface{background:var(--surface3);border-color:var(--border2)}
+.logo-card.on-white{background:#ffffff;border-color:#e0ece5}
+.logo-card svg{width:100%;max-width:340px;height:auto}
+.logo-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--text3)}
+.logo-card.on-white .logo-tag{color:#7A9E88}
+.logo-card.on-green .logo-tag{color:rgba(0,0,0,.45)}
+.logo-icon-card{border-radius:16px;padding:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:210px;gap:20px;background:var(--green);border:none}
+.logo-icon-card svg{width:90px;height:90px}
+.logo-rules{margin-top:40px}
+.rules-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rule-card{background:var(--surface2);border-radius:var(--r);padding:22px 24px;border:1px solid var(--border)}
+.rule-card.do{border-color:rgba(44,199,107,.3)}
+.rule-card.dont{border-color:rgba(255,90,90,.2)}
+.rule-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.rb-do{background:rgba(44,199,107,.15);color:var(--green)}
+.rb-dont{background:rgba(255,90,90,.1);color:#FF7070}
+.rule-text{font-size:14px;color:var(--text2);line-height:1.6}
+
+/* ── COMPONENTS ───────────────────────────── */
+.comp-group{margin-bottom:56px}
+.comp-group:last-child{margin-bottom:0}
+.comp-title{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:20px}
+.comp-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.comp-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 36px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;border-radius:8px;font-family:var(--font);font-size:15px;font-weight:500;cursor:pointer;border:none;text-decoration:none;line-height:1;transition:all .15s ease}
+.btn-primary{background:var(--green);color:#0C1D13}
+.btn-primary:hover{background:#3DD97E}
+.btn-secondary{background:transparent;border:1.5px solid var(--green);color:var(--green)}
+.btn-secondary:hover{background:rgba(44,199,107,.08)}
+.btn-ghost{background:var(--surface3);color:var(--text);border:1px solid var(--border2)}
+.btn-ghost:hover{border-color:var(--green);color:var(--text)}
+.btn-danger{background:rgba(255,70,70,.1);color:#FF7070;border:1px solid rgba(255,70,70,.2)}
+.btn-sm{padding:7px 15px;font-size:13px;border-radius:6px}
+.btn-lg{padding:14px 30px;font-size:17px;border-radius:10px}
+
+.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 11px;border-radius:20px;font-size:12px;font-weight:500;line-height:1}
+.badge-dot::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor;display:block;flex-shrink:0}
+.badge-green{background:rgba(44,199,107,.14);color:var(--green)}
+.badge-lime{background:rgba(172,255,90,.12);color:var(--lime)}
+.badge-blue{background:rgba(100,160,255,.1);color:#7AB8FF}
+.badge-amber{background:rgba(255,180,60,.1);color:#FFB85A}
+.badge-red{background:rgba(255,80,80,.1);color:#FF7070}
+.badge-gray{background:rgba(150,180,160,.08);color:var(--text3)}
+
+.tag{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:500;border:1px solid var(--border);color:var(--text2);background:var(--surface2)}
+
+.card-comp{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:20px 22px}
+.card-comp-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.card-icon{width:38px;height:38px;border-radius:9px;background:rgba(44,199,107,.14);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card-icon svg{width:18px;height:18px;fill:var(--green)}
+.card-comp-title{font-size:15px;font-weight:600}
+.card-comp-sub{font-size:12px;color:var(--text3)}
+.card-comp-body{font-size:14px;color:var(--text2);line-height:1.6;margin-bottom:16px}
+.card-comp-footer{display:flex;align-items:center;justify-content:space-between}
+.progress-bar{height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:10px}
+.progress-fill{height:100%;border-radius:2px;background:var(--green)}
+
+/* Code block */
+.code-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 26px;margin-top:20px;overflow-x:auto}
+.code-block code{font-family:var(--mono);font-size:13px;line-height:1.8}
+.ck{color:#7AB8FF}.cv{color:var(--lime)}.cs{color:#FFB85A}.cc{color:var(--text3)}
+
+/* ── EXAMPLES ─────────────────────────────── */
+.ex-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:28px}
+.ex-topbar{padding:10px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text3)}
+.ex-dot{width:10px;height:10px;border-radius:50%;display:block}
+.ex-inner{padding:32px 36px}
+
+/* GitHub Social Preview */
+.gh-social{background:var(--dark);border-radius:12px;aspect-ratio:2/1;padding:52px 56px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;border:1px solid var(--border)}
+.gh-glow{position:absolute;right:-60px;top:-60px;width:420px;height:420px;background:radial-gradient(circle,rgba(44,199,107,.09) 0%,transparent 70%);pointer-events:none}
+.gh-stripe{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 0%,var(--green) 40%,var(--lime) 60%,transparent 100%)}
+.gh-logo-wrap{width:300px}
+.gh-bottom{display:flex;align-items:flex-end;justify-content:space-between}
+.gh-tagline{font-size:16px;color:var(--text2);font-weight:400;max-width:420px;line-height:1.5}
+.gh-stats{display:flex;gap:24px}
+.gh-stat{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--text3)}
+.gh-stat strong{color:var(--text2);font-weight:500}
+.star-ico{width:14px;height:14px;fill:var(--text3)}
+
+/* README header */
+.readme-header{background:#0D1117;border-radius:12px;padding:48px;text-align:center;position:relative;overflow:hidden;border:1px solid #21262D}
+.readme-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(44,199,107,.08) 0%,transparent 60%);pointer-events:none}
+.readme-logo{width:380px;max-width:100%;margin:0 auto 28px;display:block}
+.readme-desc{font-size:15px;color:#8B949E;max-width:540px;margin:0 auto 24px;line-height:1.6}
+.readme-badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.gh-badge{display:inline-block;border-radius:4px;overflow:hidden;height:20px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;line-height:20px}
+.ghb-label{background:#555;color:#fff;padding:0 8px}
+.ghb-value{padding:0 8px}
+.ghb-license{background:#27C76A;color:#000}
+.ghb-stars{background:#ACFF5A;color:#000}
+.ghb-gps{background:#3B8BD4;color:#fff}
+
+/* App icon */
+.app-icon-grid{display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+.app-icon{border-radius:22.37%;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.app-icon-xl{width:120px;height:120px;background:var(--green);border-radius:26px}
+.app-icon-lg{width:76px;height:76px;background:var(--green);border-radius:17px}
+.app-icon-md{width:48px;height:48px;background:var(--green);border-radius:11px}
+.app-icon-sm{width:32px;height:32px;background:var(--green);border-radius:7px}
+.app-icon svg{width:62%;height:62%;fill:white}
+.icon-label{font-size:11px;color:var(--text3);text-align:center;margin-top:8px;font-family:var(--mono)}
+
+/* ── FOOTER ───────────────────────────────── */
+footer{padding:48px 0;border-top:1px solid var(--border);text-align:center}
+footer p{font-size:13px;color:var(--text3);line-height:2}
+footer a{color:var(--text2);text-decoration:none}
+footer a:hover{color:var(--green)}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-tag">Brand Identity System v1.0</div>
+
+    <!-- LOGO: White on dark background -->
+    <svg class="logo-main" viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+      <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)">
+        <g id="Layer-1">
+          <g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,898.311,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.751,-39.665C-44.99,-39.665 -57.48,-27.912 -59.498,-11.199L0,-11.199ZM-74.006,-5.507C-74.006,-31.4 -54.542,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.995,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.875,40.953 -27.177,40.953C-52.52,40.953 -74.006,22.773 -74.006,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,931.924,193.277)"><path d="M0,-87.595L13.955,-87.595L13.955,-72.353C20.2,-83.188 31.768,-89.432 44.99,-89.432C67.395,-89.432 77.311,-75.842 77.311,-52.336L77.311,1.837L63.356,1.837L63.356,-50.501C63.356,-67.027 57.296,-75.842 41.135,-75.842C25.159,-75.842 13.955,-63.355 13.955,-48.479L13.955,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,1033.48,195.115)"><path d="M0,-118.999L13.04,-118.999L42.054,-78.598C48.299,-69.783 61.337,-51.053 61.337,-51.053C61.337,-51.053 74.375,-69.599 80.619,-78.414L109.633,-118.999L122.672,-118.999L122.672,0L107.98,0L107.98,-94.208C107.98,-94.208 104.858,-88.515 99.166,-80.618L61.337,-27.363L23.324,-80.986C17.996,-88.515 14.691,-94.208 14.691,-94.208L14.691,0L0,0L0,-118.999Z" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,1257.71,150.305)"><path d="M0,0.185C0,-18.73 -14.143,-32.87 -32.689,-32.87C-51.235,-32.87 -65.378,-18.73 -65.378,0.185C-65.378,18.915 -51.235,33.056 -32.689,33.056C-14.143,33.056 0,18.915 0,0.185M-79.701,0.185C-79.701,-25.893 -58.949,-46.46 -32.689,-46.46C-6.429,-46.46 14.323,-25.893 14.323,0.185C14.323,26.077 -6.429,46.645 -32.689,46.645C-58.949,46.645 -79.701,26.077 -79.701,0.185" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,1278.65,195.665)"><path d="M0,-89.983L13.774,-89.983L33.974,-31.036C35.995,-24.975 37.096,-17.996 37.096,-17.996C37.096,-17.996 37.829,-24.975 39.666,-30.852L57.848,-89.983L70.886,-89.983L89.248,-30.852C91.085,-24.975 91.822,-17.996 91.822,-17.996C91.822,-17.996 92.739,-24.975 94.944,-31.036L115.144,-89.983L128.914,-89.983L98.063,0L85.945,0L67.396,-59.131C65.742,-64.273 64.457,-72.17 64.457,-72.17C64.457,-72.17 63.356,-64.273 61.703,-59.131L42.789,0L30.852,0L0,-89.983Z" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,1488.01,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.747,-39.665C-44.99,-39.665 -57.476,-27.912 -59.498,-11.199L0,-11.199ZM-74.005,-5.507C-74.005,-31.4 -54.538,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.993,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.872,40.953 -27.177,40.953C-52.52,40.953 -74.005,22.773 -74.005,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,1521.62,193.277)"><path d="M0,-87.595L13.958,-87.595L13.958,-68.681C19.099,-80.433 30.667,-89.432 48.481,-89.432L48.481,-74.19C27.549,-74.19 13.958,-62.437 13.958,-40.583L13.958,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -12.548,-157.189 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+        </g>
+      </g></g>
+    </svg>
+
+    <h1 class="hero-tagline">Smart.<em> Open.</em> Autonomous.</h1>
+    <p class="hero-sub">A complete brand system for the community-driven RTK GPS robotic lawn mower project.</p>
+    <div class="accent-bar"></div>
+    <div class="hero-meta">
+      <span>DM Sans typeface</span>
+      <span>Green primary palette</span>
+      <span>Open Source · CC BY-NC-SA 4.0</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ COLORS ═══════════════════ -->
+<section>
+  <div class="container">
+    <p class="section-label">01 — Color System</p>
+    <h2 class="section-title">Palette</h2>
+    <p class="section-sub">Rooted in nature, sharpened by technology. The palette evokes precision engineering and healthy growth.</p>
+
+    <div class="grid-4">
+      <div class="color-card">
+        <div class="swatch" style="background:#2CC76B"><div class="swatch-inner"></div></div>
+        <div class="color-info">
+          <div class="color-name">Mow Green</div>
+          <div class="color-hex">#2CC76B</div>
+          <div class="color-use">Primary brand color — buttons, links, highlights, icons</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="swatch" style="background:#ACFF5A"><div class="swatch-inner"></div></div>
+        <div class="color-info">
+          <div class="color-name">Electric Lime</div>
+          <div class="color-hex">#ACFF5A</div>
+          <div class="color-use">Accent color — code, special callouts, notifications</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="swatch" style="background:#0C1D13"><div class="swatch-inner"></div></div>
+        <div class="color-info">
+          <div class="color-name">Deep Forest</div>
+          <div class="color-hex">#0C1D13</div>
+          <div class="color-use">Primary background — app, dark mode, canonical surfaces</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="swatch" style="background:#E3F9EC"><div class="swatch-inner"></div></div>
+        <div class="color-info" style="background:#1A2F22">
+          <div class="color-name">Pale Meadow</div>
+          <div class="color-hex">#E3F9EC</div>
+          <div class="color-use">Light mode background — documentation, print, light UIs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scale-wrap">
+      <p class="scale-label">Green scale — full ramp</p>
+      <div class="scale-row">
+        <div class="scale-stop" style="background:#D4F7E4" title="#D4F7E4"></div>
+        <div class="scale-stop" style="background:#A8EFC5" title="#A8EFC5"></div>
+        <div class="scale-stop" style="background:#72DFA2" title="#72DFA2"></div>
+        <div class="scale-stop" style="background:#3ECF7C" title="#3ECF7C"></div>
+        <div class="scale-stop" style="background:#2CC76B" title="#2CC76B"></div>
+        <div class="scale-stop" style="background:#1EA856" title="#1EA856"></div>
+        <div class="scale-stop" style="background:#14853F" title="#14853F"></div>
+        <div class="scale-stop" style="background:#0C5E2B" title="#0C5E2B"></div>
+        <div class="scale-stop" style="background:#063A19" title="#063A19"></div>
+      </div>
+    </div>
+
+    <div class="scale-wrap" style="margin-top:16px">
+      <p class="scale-label">Dark / Neutral scale</p>
+      <div class="scale-row">
+        <div class="scale-stop" style="background:#EEF9F2"></div>
+        <div class="scale-stop" style="background:#CCDDD4"></div>
+        <div class="scale-stop" style="background:#96B4A2"></div>
+        <div class="scale-stop" style="background:#638F76"></div>
+        <div class="scale-stop" style="background:#4C7060"></div>
+        <div class="scale-stop" style="background:#2F4E3C"></div>
+        <div class="scale-stop" style="background:#1E3328"></div>
+        <div class="scale-stop" style="background:#132219"></div>
+        <div class="scale-stop" style="background:#0C1D13"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TYPOGRAPHY ═══════════════════ -->
+<section>
+  <div class="container">
+    <p class="section-label">02 — Typography</p>
+    <h2 class="section-title">DM Sans</h2>
+    <p class="section-sub">A clean, geometric sans-serif by Colophon Foundry. Legible at small sizes, expressive at display scale.</p>
+
+    <div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Display<br>70px / 700<br>-3% tracking</div></div>
+        <div class="t-display">OpenMower</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Heading 1<br>42px / 600<br>-2% tracking</div></div>
+        <div class="t-h1">RTK GPS Precision Mowing</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Heading 2<br>30px / 600<br>-1% tracking</div></div>
+        <div class="t-h2">Autonomous Navigation System</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Heading 3<br>22px / 600<br>default</div></div>
+        <div class="t-h3">Compatible Mower Hardware</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Body<br>16px / 400<br>1.7 line-height</div></div>
+        <div class="t-body">OpenMower transforms cheap off-the-shelf robotic mowers into modern, smart RTK GPS based lawn mowing robots. No perimeter wire needed — just centimeter-accurate satellite positioning and a community-built ROS stack.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Small / Caption<br>13px / 400<br>secondary color</div></div>
+        <div class="t-small">YardForce Classic 500 · Raspberry Pi CM4 · xESC mini · ublox C099-F9P module</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-spec">Code<br>DM Mono 14px<br>Electric Lime</div></div>
+        <div class="t-code">open_mower_ros --launch mowing_session.launch</div>
+      </div>
+    </div>
+
+    <div class="weight-grid">
+      <div class="weight-item">
+        <div class="wl">300 Light</div>
+        <div class="wt" style="font-weight:300">OpenMower</div>
+      </div>
+      <div class="weight-item">
+        <div class="wl">400 Regular</div>
+        <div class="wt" style="font-weight:400">OpenMower</div>
+      </div>
+      <div class="weight-item">
+        <div class="wl">500 Medium</div>
+        <div class="wt" style="font-weight:500">OpenMower</div>
+      </div>
+      <div class="weight-item">
+        <div class="wl">600 SemiBold</div>
+        <div class="wt" style="font-weight:600">OpenMower</div>
+      </div>
+      <div class="weight-item">
+        <div class="wl">700 Bold</div>
+        <div class="wt" style="font-weight:700">OpenMower</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ LOGO USAGE ═══════════════════ -->
+<section>
+  <div class="container">
+    <p class="section-label">03 — Logo Usage</p>
+    <h2 class="section-title">Variations</h2>
+    <p class="section-sub">Use the appropriate logo version based on the background. Never modify the proportions, colors, or spacing within the logo.</p>
+
+    <div class="grid-2" style="margin-bottom:24px">
+      <!-- On dark bg -->
+      <div class="logo-card on-dark">
+        <svg viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+          <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)">
+            <g><g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,898.311,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.751,-39.665C-44.99,-39.665 -57.48,-27.912 -59.498,-11.199L0,-11.199ZM-74.006,-5.507C-74.006,-31.4 -54.542,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.995,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.875,40.953 -27.177,40.953C-52.52,40.953 -74.006,22.773 -74.006,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,931.924,193.277)"><path d="M0,-87.595L13.955,-87.595L13.955,-72.353C20.2,-83.188 31.768,-89.432 44.99,-89.432C67.395,-89.432 77.311,-75.842 77.311,-52.336L77.311,1.837L63.356,1.837L63.356,-50.501C63.356,-67.027 57.296,-75.842 41.135,-75.842C25.159,-75.842 13.955,-63.355 13.955,-48.479L13.955,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1033.48,195.115)"><path d="M0,-118.999L13.04,-118.999L42.054,-78.598C48.299,-69.783 61.337,-51.053 61.337,-51.053C61.337,-51.053 74.375,-69.599 80.619,-78.414L109.633,-118.999L122.672,-118.999L122.672,0L107.98,0L107.98,-94.208C107.98,-94.208 104.858,-88.515 99.166,-80.618L61.337,-27.363L23.324,-80.986C17.996,-88.515 14.691,-94.208 14.691,-94.208L14.691,0L0,0L0,-118.999Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1257.71,150.305)"><path d="M0,0.185C0,-18.73 -14.143,-32.87 -32.689,-32.87C-51.235,-32.87 -65.378,-18.73 -65.378,0.185C-65.378,18.915 -51.235,33.056 -32.689,33.056C-14.143,33.056 0,18.915 0,0.185M-79.701,0.185C-79.701,-25.893 -58.949,-46.46 -32.689,-46.46C-6.429,-46.46 14.323,-25.893 14.323,0.185C14.323,26.077 -6.429,46.645 -32.689,46.645C-58.949,46.645 -79.701,26.077 -79.701,0.185" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1278.65,195.665)"><path d="M0,-89.983L13.774,-89.983L33.974,-31.036C35.995,-24.975 37.096,-17.996 37.096,-17.996C37.096,-17.996 37.829,-24.975 39.666,-30.852L57.848,-89.983L70.886,-89.983L89.248,-30.852C91.085,-24.975 91.822,-17.996 91.822,-17.996C91.822,-17.996 92.739,-24.975 94.944,-31.036L115.144,-89.983L128.914,-89.983L98.063,0L85.945,0L67.396,-59.131C65.742,-64.273 64.457,-72.17 64.457,-72.17C64.457,-72.17 63.356,-64.273 61.703,-59.131L42.789,0L30.852,0L0,-89.983Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1488.01,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.747,-39.665C-44.99,-39.665 -57.476,-27.912 -59.498,-11.199L0,-11.199ZM-74.005,-5.507C-74.005,-31.4 -54.538,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.993,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.872,40.953 -27.177,40.953C-52.52,40.953 -74.005,22.773 -74.005,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1521.62,193.277)"><path d="M0,-87.595L13.958,-87.595L13.958,-68.681C19.099,-80.433 30.667,-89.432 48.481,-89.432L48.481,-74.19C27.549,-74.19 13.958,-62.437 13.958,-40.583L13.958,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -12.548,-157.189 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+            </g>
+          </g></g>
+        </svg>
+        <div class="logo-tag">White — on dark background</div>
+      </div>
+
+      <!-- On green bg -->
+      <div class="logo-card on-green">
+        <svg viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+          <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)">
+            <g><g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,898.311,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.751,-39.665C-44.99,-39.665 -57.48,-27.912 -59.498,-11.199L0,-11.199ZM-74.006,-5.507C-74.006,-31.4 -54.542,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.995,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.875,40.953 -27.177,40.953C-52.52,40.953 -74.006,22.773 -74.006,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,931.924,193.277)"><path d="M0,-87.595L13.955,-87.595L13.955,-72.353C20.2,-83.188 31.768,-89.432 44.99,-89.432C67.395,-89.432 77.311,-75.842 77.311,-52.336L77.311,1.837L63.356,1.837L63.356,-50.501C63.356,-67.027 57.296,-75.842 41.135,-75.842C25.159,-75.842 13.955,-63.355 13.955,-48.479L13.955,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1033.48,195.115)"><path d="M0,-118.999L13.04,-118.999L42.054,-78.598C48.299,-69.783 61.337,-51.053 61.337,-51.053C61.337,-51.053 74.375,-69.599 80.619,-78.414L109.633,-118.999L122.672,-118.999L122.672,0L107.98,0L107.98,-94.208C107.98,-94.208 104.858,-88.515 99.166,-80.618L61.337,-27.363L23.324,-80.986C17.996,-88.515 14.691,-94.208 14.691,-94.208L14.691,0L0,0L0,-118.999Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1257.71,150.305)"><path d="M0,0.185C0,-18.73 -14.143,-32.87 -32.689,-32.87C-51.235,-32.87 -65.378,-18.73 -65.378,0.185C-65.378,18.915 -51.235,33.056 -32.689,33.056C-14.143,33.056 0,18.915 0,0.185M-79.701,0.185C-79.701,-25.893 -58.949,-46.46 -32.689,-46.46C-6.429,-46.46 14.323,-25.893 14.323,0.185C14.323,26.077 -6.429,46.645 -32.689,46.645C-58.949,46.645 -79.701,26.077 -79.701,0.185" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1278.65,195.665)"><path d="M0,-89.983L13.774,-89.983L33.974,-31.036C35.995,-24.975 37.096,-17.996 37.096,-17.996C37.096,-17.996 37.829,-24.975 39.666,-30.852L57.848,-89.983L70.886,-89.983L89.248,-30.852C91.085,-24.975 91.822,-17.996 91.822,-17.996C91.822,-17.996 92.739,-24.975 94.944,-31.036L115.144,-89.983L128.914,-89.983L98.063,0L85.945,0L67.396,-59.131C65.742,-64.273 64.457,-72.17 64.457,-72.17C64.457,-72.17 63.356,-64.273 61.703,-59.131L42.789,0L30.852,0L0,-89.983Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1488.01,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.747,-39.665C-44.99,-39.665 -57.476,-27.912 -59.498,-11.199L0,-11.199ZM-74.005,-5.507C-74.005,-31.4 -54.538,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.993,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.872,40.953 -27.177,40.953C-52.52,40.953 -74.005,22.773 -74.005,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1521.62,193.277)"><path d="M0,-87.595L13.958,-87.595L13.958,-68.681C19.099,-80.433 30.667,-89.432 48.481,-89.432L48.481,-74.19C27.549,-74.19 13.958,-62.437 13.958,-40.583L13.958,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -12.548,-157.189 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+            </g>
+          </g></g>
+        </svg>
+        <div class="logo-tag">White — on brand green</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <!-- On white bg -->
+      <div class="logo-card on-white">
+        <svg viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+          <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)">
+            <g><g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,898.311,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.751,-39.665C-44.99,-39.665 -57.48,-27.912 -59.498,-11.199L0,-11.199ZM-74.006,-5.507C-74.006,-31.4 -54.542,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.995,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.875,40.953 -27.177,40.953C-52.52,40.953 -74.006,22.773 -74.006,-5.507" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,931.924,193.277)"><path d="M0,-87.595L13.955,-87.595L13.955,-72.353C20.2,-83.188 31.768,-89.432 44.99,-89.432C67.395,-89.432 77.311,-75.842 77.311,-52.336L77.311,1.837L63.356,1.837L63.356,-50.501C63.356,-67.027 57.296,-75.842 41.135,-75.842C25.159,-75.842 13.955,-63.355 13.955,-48.479L13.955,1.837L0,1.837L0,-87.595Z" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1033.48,195.115)"><path d="M0,-118.999L13.04,-118.999L42.054,-78.598C48.299,-69.783 61.337,-51.053 61.337,-51.053C61.337,-51.053 74.375,-69.599 80.619,-78.414L109.633,-118.999L122.672,-118.999L122.672,0L107.98,0L107.98,-94.208C107.98,-94.208 104.858,-88.515 99.166,-80.618L61.337,-27.363L23.324,-80.986C17.996,-88.515 14.691,-94.208 14.691,-94.208L14.691,0L0,0L0,-118.999Z" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1257.71,150.305)"><path d="M0,0.185C0,-18.73 -14.143,-32.87 -32.689,-32.87C-51.235,-32.87 -65.378,-18.73 -65.378,0.185C-65.378,18.915 -51.235,33.056 -32.689,33.056C-14.143,33.056 0,18.915 0,0.185M-79.701,0.185C-79.701,-25.893 -58.949,-46.46 -32.689,-46.46C-6.429,-46.46 14.323,-25.893 14.323,0.185C14.323,26.077 -6.429,46.645 -32.689,46.645C-58.949,46.645 -79.701,26.077 -79.701,0.185" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1278.65,195.665)"><path d="M0,-89.983L13.774,-89.983L33.974,-31.036C35.995,-24.975 37.096,-17.996 37.096,-17.996C37.096,-17.996 37.829,-24.975 39.666,-30.852L57.848,-89.983L70.886,-89.983L89.248,-30.852C91.085,-24.975 91.822,-17.996 91.822,-17.996C91.822,-17.996 92.739,-24.975 94.944,-31.036L115.144,-89.983L128.914,-89.983L98.063,0L85.945,0L67.396,-59.131C65.742,-64.273 64.457,-72.17 64.457,-72.17C64.457,-72.17 63.356,-64.273 61.703,-59.131L42.789,0L30.852,0L0,-89.983Z" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1488.01,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.747,-39.665C-44.99,-39.665 -57.476,-27.912 -59.498,-11.199L0,-11.199ZM-74.005,-5.507C-74.005,-31.4 -54.538,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.993,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.872,40.953 -27.177,40.953C-52.52,40.953 -74.005,22.773 -74.005,-5.507" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,1521.62,193.277)"><path d="M0,-87.595L13.958,-87.595L13.958,-68.681C19.099,-80.433 30.667,-89.432 48.481,-89.432L48.481,-74.19C27.549,-74.19 13.958,-62.437 13.958,-40.583L13.958,1.837L0,1.837L0,-87.595Z" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -12.548,-157.189 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:#0C1D13;fill-rule:nonzero;"/></g>
+            </g>
+          </g></g>
+        </svg>
+        <div class="logo-tag">Dark — on white / light background</div>
+      </div>
+
+      <!-- Icon only card -->
+      <div class="logo-icon-card">
+        <svg viewBox="30 25 490 230" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+          <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -12.548,-157.189 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+          <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+        </svg>
+        <div class="logo-tag" style="color:rgba(0,40,15,.5)">Icon — standalone / avatar</div>
+      </div>
+    </div>
+
+    <!-- Rules -->
+    <div class="logo-rules">
+      <div class="rules-grid">
+        <div class="rule-card do"><span class="rule-badge rb-do">Do</span>
+          <p class="rule-text">Use the white version on any background darker than 50% value. Maintain clear space of at least ½× the logo height on all sides.</p></div>
+        <div class="rule-card dont"><span class="rule-badge rb-dont">Don't</span>
+          <p class="rule-text">Never place the logo on a busy photograph, patterned background, or any color that reduces contrast below AA accessibility standards.</p></div>
+        <div class="rule-card do"><span class="rule-badge rb-do">Do</span>
+          <p class="rule-text">Scale proportionally. Minimum display width is 120px for the full wordmark, 32px for the standalone icon.</p></div>
+        <div class="rule-card dont"><span class="rule-badge rb-dont">Don't</span>
+          <p class="rule-text">Never distort, rotate, recolor, add effects (shadows, outlines, gradients), or rearrange the icon and wordmark relationship.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ COMPONENTS ═══════════════════ -->
+<section>
+  <div class="container">
+    <p class="section-label">04 — UI Components</p>
+    <h2 class="section-title">Interface Elements</h2>
+    <p class="section-sub">Consistent building blocks for app, web, and documentation interfaces.</p>
+
+    <div class="comp-panel">
+      <div class="comp-group">
+        <p class="comp-title">Buttons</p>
+        <div class="comp-row">
+          <button class="btn btn-primary">Start Mowing</button>
+          <button class="btn btn-secondary">Configure Zone</button>
+          <button class="btn btn-ghost">View Logs</button>
+          <button class="btn btn-danger">Emergency Stop</button>
+        </div>
+        <div class="comp-row" style="margin-top:14px">
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Default</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+        </div>
+      </div>
+
+      <div class="comp-group">
+        <p class="comp-title">Status Badges</p>
+        <div class="comp-row">
+          <span class="badge badge-green badge-dot">Mowing</span>
+          <span class="badge badge-lime badge-dot">RTK Fixed</span>
+          <span class="badge badge-blue badge-dot">GPS Active</span>
+          <span class="badge badge-amber badge-dot">Charging</span>
+          <span class="badge badge-red badge-dot">Error</span>
+          <span class="badge badge-gray badge-dot">Idle</span>
+        </div>
+      </div>
+
+      <div class="comp-group">
+        <p class="comp-title">Tags</p>
+        <div class="comp-row">
+          <span class="tag">YardForce 500</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">ROS2</span>
+          <span class="tag">RTK GPS</span>
+          <span class="tag">xESC mini</span>
+        </div>
+      </div>
+
+      <div class="comp-group">
+        <p class="comp-title">Component Card</p>
+        <div class="grid-3">
+          <div class="card-comp">
+            <div class="card-comp-header">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+              <div><div class="card-comp-title">GPS Signal</div><div class="card-comp-sub">RTK Fixed · 42 sats</div></div>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:94%"></div></div>
+            <div class="card-comp-footer"><span style="font-size:13px;color:var(--text3)">Accuracy</span><span class="badge badge-green" style="font-size:11px">± 1.2 cm</span></div>
+          </div>
+          <div class="card-comp">
+            <div class="card-comp-header">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></div>
+              <div><div class="card-comp-title">Mowing Zone A</div><div class="card-comp-sub">Front lawn · 280 m²</div></div>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:67%"></div></div>
+            <div class="card-comp-footer"><span style="font-size:13px;color:var(--text3)">Progress</span><span style="font-size:13px;color:var(--text2)">67% complete</span></div>
+          </div>
+          <div class="card-comp">
+            <div class="card-comp-header">
+              <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
+              <div><div class="card-comp-title">Battery</div><div class="card-comp-sub">Estimated 48 min left</div></div>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width:72%;background:#ACFF5A"></div></div>
+            <div class="card-comp-footer"><span style="font-size:13px;color:var(--text3)">Charge level</span><span class="badge badge-lime" style="font-size:11px">72%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-group" style="margin-bottom:0">
+        <p class="comp-title">Code Snippet</p>
+        <div class="code-block">
+          <code>
+            <span class="cc"># Install OpenMower ROS stack</span><br>
+            <span class="ck">git</span> <span class="cv">clone</span> <span class="cs">https://github.com/ClemensElflein/open_mower_ros</span><br>
+            <span class="ck">cd</span> open_mower_ros <span class="cc">&amp;&amp; </span><span class="ck">docker</span> compose <span class="cv">up</span> <span class="cs">-d</span><br><br>
+            <span class="cc"># Start a mowing session</span><br>
+            <span class="ck">ros2</span> <span class="cv">launch</span> open_mower <span class="cs">mowing.launch.py</span> <span class="ck">zone:=</span><span class="cs">"front_lawn"</span>
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ EXAMPLES ═══════════════════ -->
+<section>
+  <div class="container">
+    <p class="section-label">05 — Applied Examples</p>
+    <h2 class="section-title">Brand in context</h2>
+    <p class="section-sub">How the identity looks across GitHub, README documentation, and app icon contexts.</p>
+
+    <!-- GitHub Social Preview -->
+    <div class="ex-card">
+      <div class="ex-topbar">
+        <span class="ex-dot" style="background:#FF5F57"></span>
+        <span class="ex-dot" style="background:#FFBD2E"></span>
+        <span class="ex-dot" style="background:#28C840"></span>
+        <span style="margin-left:8px">GitHub Social Preview — 1280 × 640</span>
+      </div>
+      <div class="ex-inner">
+        <div class="gh-social">
+          <div class="gh-glow"></div>
+          <div class="gh-stripe"></div>
+          <div class="gh-logo-wrap">
+            <svg viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+              <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)"><g>
+                <g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,898.311,155.997)"><path d="M0,-11.199C-1.469,-27.727 -14.139,-39.665 -29.751,-39.665C-44.99,-39.665 -57.48,-27.912 -59.498,-11.199L0,-11.199ZM-74.006,-5.507C-74.006,-31.4 -54.542,-52.152 -29.014,-52.152C-5.14,-52.152 13.774,-31.584 13.774,-6.059C13.774,-3.487 13.406,-0.733 13.406,-0.549L-59.498,-0.549C-57.296,17.265 -43.521,28.467 -26.995,28.467C-16.893,28.467 -6.793,24.977 0.552,18.916L6.613,29.2C-2.938,36.73 -14.875,40.953 -27.177,40.953C-52.52,40.953 -74.006,22.773 -74.006,-5.507" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,931.924,193.277)"><path d="M0,-87.595L13.955,-87.595L13.955,-72.353C20.2,-83.188 31.768,-89.432 44.99,-89.432C67.395,-89.432 77.311,-75.842 77.311,-52.336L77.311,1.837L63.356,1.837L63.356,-50.501C63.356,-67.027 57.296,-75.842 41.135,-75.842C25.159,-75.842 13.955,-63.355 13.955,-48.479L13.955,1.837L0,1.837L0,-87.595Z" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,1033.48,195.115)"><path d="M0,-118.999L13.04,-118.999L42.054,-78.598C48.299,-69.783 61.337,-51.053 61.337,-51.053C61.337,-51.053 74.375,-69.599 80.619,-78.414L109.633,-118.999L122.672,-118.999L122.672,0L107.98,0L107.98,-94.208L61.337,-27.363L23.324,-80.986L14.691,-94.208L14.691,0L0,0L0,-118.999Z" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -106.677,-10.152-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+              </g></g></g>
+            </svg>
+          </div>
+          <div class="gh-bottom">
+            <div>
+              <p class="gh-tagline">Upgrade off-the-shelf robotic mowers<br>to modern, smart RTK GPS lawn robots.</p>
+            </div>
+            <div class="gh-stats">
+              <div class="gh-stat">
+                <svg class="star-ico" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <strong>6.4k</strong> stars
+              </div>
+              <div class="gh-stat">
+                <svg class="star-ico" viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+                <strong>368</strong> forks
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- README Header -->
+    <div class="ex-card">
+      <div class="ex-topbar">
+        <span class="ex-dot" style="background:#FF5F57"></span>
+        <span class="ex-dot" style="background:#FFBD2E"></span>
+        <span class="ex-dot" style="background:#28C840"></span>
+        <span style="margin-left:8px">GitHub README header</span>
+      </div>
+      <div class="ex-inner">
+        <div class="readme-header">
+          <svg class="readme-logo" viewBox="0 0 1603 272" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;">
+            <g transform="matrix(1,0,0,1,-1803.38,-592.875)"><g transform="matrix(1,0,0,1,1803.38,592.875)"><g>
+              <g transform="matrix(1,0,0,1,682.34,135.614)"><path d="M0,0.001C0,-26.443 -20.203,-47.929 -46.647,-47.929C-73.274,-47.929 -93.475,-26.443 -93.475,0.001C-93.475,26.445 -73.274,47.931 -46.647,47.931C-20.203,47.931 0,26.445 0,0.001M-108.715,0.001C-108.715,-34.156 -82.088,-61.335 -46.647,-61.335C-11.388,-61.335 15.24,-34.156 15.24,0.001C15.24,34.159 -11.388,61.336 -46.647,61.336C-82.088,61.336 -108.715,34.159 -108.715,0.001" style="fill:white;fill-rule:nonzero;"/></g>
+              <g transform="matrix(1,0,0,1,793.816,174.547)"><path d="M0,-24.241C0,-43.155 -13.222,-57.112 -31.036,-57.112C-48.113,-57.112 -61.519,-42.972 -61.519,-24.241C-61.519,-5.511 -48.113,8.814 -31.036,8.814C-13.222,8.814 0,-5.142 0,-24.241M-75.477,-68.865L-62.071,-68.865L-62.071,-53.439C-55.458,-65.009 -42.42,-70.702 -27.913,-70.702C-3.122,-70.702 14.323,-50.318 14.323,-24.241C14.323,1.835 -3.122,22.403 -27.913,22.403C-42.054,22.403 -54.91,16.526 -61.519,4.957L-61.519,46.461L-75.477,46.461L-75.477,-68.865Z" style="fill:white;fill-rule:nonzero;"/></g>
+              <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+              <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+            </g></g></g>
+          </svg>
+          <p class="readme-desc">Let's upgrade cheap off-the-shelf robotic mowers to modern, smart RTK GPS based lawn mowing robots — for everyone.</p>
+          <div class="readme-badges">
+            <span class="gh-badge"><span class="ghb-label">license</span><span class="ghb-value ghb-license">CC BY-NC-SA 4.0</span></span>
+            <span class="gh-badge"><span class="ghb-label">stars</span><span class="ghb-value ghb-stars">6.4k</span></span>
+            <span class="gh-badge"><span class="ghb-label">gps</span><span class="ghb-value ghb-gps">RTK Fixed</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Icons -->
+    <div class="ex-card">
+      <div class="ex-topbar">
+        <span class="ex-dot" style="background:#FF5F57"></span>
+        <span class="ex-dot" style="background:#FFBD2E"></span>
+        <span class="ex-dot" style="background:#28C840"></span>
+        <span style="margin-left:8px">App icon — size scale</span>
+      </div>
+      <div class="ex-inner">
+        <div class="app-icon-grid">
+          <div>
+            <div class="app-icon app-icon-xl">
+              <svg viewBox="30 25 490 230" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;width:62%;height:62%;">
+                <g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g>
+                <g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g>
+              </svg>
+            </div>
+            <div class="icon-label">120px</div>
+          </div>
+          <div>
+            <div class="app-icon app-icon-lg">
+              <svg viewBox="30 25 490 230" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;width:62%;height:62%;"><g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g><g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g></svg>
+            </div>
+            <div class="icon-label">76px</div>
+          </div>
+          <div>
+            <div class="app-icon app-icon-md">
+              <svg viewBox="30 25 490 230" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;width:62%;height:62%;"><g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-23.568,-157.181 -2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g><g transform="matrix(1,0,0,1,416.751,121.094)"><path d="M0,63.847C-17.631,63.847 -31.924,49.554 -31.924,31.923C-31.924,14.292 -17.631,-0.001 0,-0.001C17.631,-0.001 31.924,14.292 31.924,31.923C31.924,49.554 17.631,63.847 0,63.847M84.791,22.474C82.795,22.474 81.074,21.034 80.763,19.062C78.71,6.077 73.604,-5.886 66.2,-16.078C65.025,-17.697 65.217,-19.931 66.632,-21.345L66.639,-21.352C68.237,-22.951 68.237,-25.544 66.639,-27.143L59.066,-34.715C57.467,-36.314 54.874,-36.314 53.275,-34.715L53.269,-34.708C51.855,-33.294 49.621,-33.101 48.002,-34.277C37.809,-41.681 25.846,-46.787 12.861,-48.839C10.889,-49.151 9.449,-50.871 9.449,-52.869C9.449,-55.13 7.616,-56.963 5.355,-56.963L-5.355,-56.963C-7.616,-56.963 -9.45,-55.13 -9.45,-52.869C-9.45,-50.871 -10.888,-49.151 -12.861,-48.839C-25.846,-46.787 -37.809,-41.681 -48.001,-34.277C-49.619,-33.101 -51.853,-33.294 -53.269,-34.708L-53.275,-34.715C-54.874,-36.314 -57.467,-36.314 -59.065,-34.715L-66.638,-27.143C-68.237,-25.544 -68.237,-22.951 -66.638,-21.352L-66.631,-21.345C-65.217,-19.931 -65.024,-17.696 -66.2,-16.078C-73.604,-5.886 -78.71,6.077 -80.763,19.062C-81.074,21.034 -82.794,22.474 -84.791,22.474C-87.053,22.474 -88.886,24.307 -88.886,26.569L-88.886,37.278C-88.886,39.539 -87.053,41.373 -84.791,41.373C-82.794,41.373 -81.074,42.812 -80.763,44.785C-78.71,57.769 -73.604,69.732 -66.2,79.925C-65.024,81.543 -65.217,83.777 -66.631,85.192L-66.638,85.199C-68.237,86.797 -68.237,89.39 -66.638,90.989L-59.065,98.562C-57.467,100.161 -54.874,100.161 -53.275,98.562L-53.269,98.555C-51.853,97.14 -49.619,96.948 -48.001,98.123C-37.809,105.527 -25.846,110.634 -12.861,112.686C-10.888,112.997 -9.45,114.718 -9.45,116.715C-9.45,118.977 -7.616,120.81 -5.355,120.81L5.355,120.81C7.616,120.81 9.449,118.977 9.449,116.715C9.449,114.718 10.889,112.997 12.861,112.686C25.846,110.634 37.809,105.527 48.002,98.123C49.621,96.948 51.855,97.14 53.269,98.555L53.275,98.562C54.874,100.161 57.467,100.161 59.066,98.562L66.639,90.989C68.237,89.39 68.237,86.798 66.639,85.199L66.632,85.192C65.217,83.777 65.025,81.543 66.2,79.925C73.604,69.732 78.71,57.769 80.763,44.785C81.074,42.812 82.795,41.373 84.791,41.373C87.053,41.373 88.886,39.539 88.886,37.278L88.886,26.569C88.886,24.307 87.053,22.474 84.791,22.474" style="fill:white;fill-rule:nonzero;"/></g></svg>
+            </div>
+            <div class="icon-label">48px</div>
+          </div>
+          <div>
+            <div class="app-icon app-icon-sm">
+              <svg viewBox="30 25 490 230" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;width:62%;height:62%;"><g transform="matrix(1,0,0,1,443.663,215.024)"><path d="M0,-168.764C-20.152,-176.383 -55.244,-184.928 -111.279,-184.928C-242.699,-184.928 -327.576,-115.467 -331.286,-106.084L-247.122,-106.084L-207.09,-146.116L-131.381,-146.116C-129.37,-150.874 -124.58,-154.172 -119.043,-153.961C-112.428,-153.71 -106.953,-148.236 -106.702,-141.621C-106.423,-134.295 -112.28,-128.269 -119.543,-128.269C-124.869,-128.269 -129.437,-131.508 -131.387,-136.124L-202.951,-136.124L-232.991,-106.084L-203.807,-106.084C-201.628,-111.243 -196.176,-114.683 -190.053,-113.801C-184.355,-112.98 -179.828,-108.277 -179.194,-102.555C-178.335,-94.801 -184.383,-88.237 -191.964,-88.237C-197.289,-88.237 -201.857,-91.476 -203.807,-96.092L-344.787,-96.092C-355.74,-90.576 -365.733,-85.284 -374.561,-80.449L-337.539,-80.449L-312.563,-55.473L-248.288,-55.473C-246.108,-60.633 -240.657,-64.072 -234.534,-63.19C-228.836,-62.369 -224.309,-57.667 -223.675,-51.945C-222.816,-44.191 -228.863,-37.626 -236.444,-37.626C-241.77,-37.626 -246.338,-40.866 -248.288,-45.481L-316.703,-45.481L-341.678,-70.457L-392.336,-70.457C-396.539,-68.031 -400.269,-65.832 -403.474,-63.913C-410.95,-59.437 -413.042,-49.556 -408.027,-42.43L-392.103,-19.8L-406.696,7.339C-408.842,11.329 -405.952,16.164 -401.422,16.164L-120.831,16.164C-114.427,4.257 -113.081,1.754 -106.677,-10.152C-116.396,-25.067 -122.044,-42.877 -122.044,-62.006C-122.044,-113.716 -80.799,-156.448 -29.394,-157.106C-2.134,-157.175C4.528,-157.166 6.231,-166.408 0,-168.764" style="fill:white;fill-rule:nonzero;"/></g></svg>
+            </div>
+            <div class="icon-label">32px</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <p>OpenMower Brand Identity System · Built with DM Sans · Mow Green <code style="font-family:monospace;color:var(--green);font-size:12px">#2CC76B</code></p>
+    <p style="margin-top:8px"><a href="https://github.com/ClemensElflein/OpenMower">github.com/ClemensElflein/OpenMower</a> · <a href="https://openmower.de">openmower.de</a> · CC BY-NC-SA 4.0</p>
+  </div>
+</footer>
+</body>
+</html>

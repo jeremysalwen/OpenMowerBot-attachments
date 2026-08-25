@@ -1,0 +1,42 @@
+[INFO] [1752045352.125994971]: MowingBehavior: (MOW) Progress: 1445/75393
+[INFO] [1752045357.127206893]: MowingBehavior: (MOW) Progress: 1464/75393
+[INFO] [1752045360.844332008]: GPS quality: 0.93
+[INFO] [1752045362.128997247]: MowingBehavior: (MOW) Progress: 1483/75393
+[INFO] [1752045367.225004342]: MowingBehavior: (MOW) Progress: 1492/75393
+[INFO] [1752045371.344204949]: GPS quality: 0.93
+[INFO] [1752045372.225280683]: MowingBehavior: (MOW) Progress: 1496/75393
+[INFO] [1752045377.327426145]: MowingBehavior: (MOW) Progress: 1516/75393
+[INFO] [1752045382.427622566]: MowingBehavior: (MOW) Progress: 1536/75393
+[INFO] [1752045387.525877370]: MowingBehavior: (MOW) Progress: 1557/75393
+[INFO] [1752045391.344216901]: GPS quality: 0.93
+[INFO] [1752045392.525933952]: MowingBehavior: (MOW) Progress: 1577/75393
+[INFO] [1752045397.526888572]: MowingBehavior: (MOW) Progress: 1592/75393
+[WARN] [1752045398.162518468]: >>> got ubx packet with invalid checksum
+[INFO] [1752045401.344228012]: GPS quality: 0.93
+[WARN] [1752045402.172300417]: >>> got ubx packet with invalid checksum
+[INFO] [1752045402.632827042]: MowingBehavior: (MOW) Progress: 1597/75393
+[INFO] [1752045407.728011168]: MowingBehavior: (MOW) Progress: 1614/75393
+[WARN] [1752045408.185238590]: >>> got ubx packet with invalid checksum
+[WARN] [1752045410.164898468]: >>> got ubx packet with invalid checksum
+[WARN] [1752045411.166003252]: Last GPS was 5.00956 seconds ago.
+[WARN] [1752045411.344194251]: Low quality GPS
+[WARN] [1752045412.344192871]: Low quality GPS
+[INFO] [1752045412.825718583]: MowingBehavior: (MOW) Progress: 1634/75393
+[WARN] [1752045413.344195259]: Low quality GPS
+[WARN] [1752045414.344252516]: Low quality GPS
+[WARN] [1752045415.134278221]: >>> got ubx packet with invalid checksum
+[WARN] [1752045415.844279938]: Low quality GPS
+[WARN] [1752045415.844951722]: GPS timeout
+[WARN] [1752045415.845045621]: #### om_mower_logic: setMowerEnabled(0, 1) call
+[INFO] [1752045415.849683234]: successfully set mower enabled to 0 (direction 1)
+[WARN] [1752045415.850223952]: #### om_mower_logic: setMowerEnabled(0, 1) call completed within 0.00513537s
+[WARN] [1752045417.344242453]: Low quality GPS
+[WARN] [1752045417.344726264]: GPS timeout
+[INFO] [1752045417.827719842]: MowingBehavior: (MOW) Progress: 1654/75393
+[ERROR] [1752045418.016923988]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.00241) > config.max_follow_distance (1) It probably has crashed.
+[INFO] [1752045418.017856708]: FTCLocalPlannerROS: Switching to state 4
+[WARN] [1752045418.018702542]: No velocity command received from controller! 
+[WARN] [1752045418.344253445]: Low quality GPS
+[WARN] [1752045418.844246792]: GPS timeout
+[WARN] [1752045419.148611561]: >>> got ubx packet with invalid checksum
+

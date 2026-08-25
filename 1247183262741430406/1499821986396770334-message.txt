@@ -1,0 +1,53 @@
+Hi everyone!
+
+I'm new here and planning to convert my Gardena R40Li to OpenMower. 
+Before I order hardware, I'd love to get some advice from the community!
+
+
+My Mower Setup
+
+• Gardena R40Li (= Husqvarna Automower 305 platform)
+• Original mower fully functional
+• 3x BLDC motors (2x drive + 1x blade) with hall sensors
+• Original ~25V Li-Ion battery
+• Original charging station available
+
+
+Hardware I already own
+
+• Raspberry Pi 4 (4GB) 
+• OpenMower OS already installed and running 
+• UM982 RTK GPS module (USB)
+• ESP32-C3 Mini
+• Multiple Arduino Nanos
+• Arduino Mega 2560
+• 3x BTS7960 H-bridges (probably useless for BLDC, but I have them)
+• SN74AHCT125N level shifter
+• Various jumper wires, breadboards, multimeter
+• Active USB hub with own power supply
+• Soldering iron + basic tools
+
+
+Questions I have:
+
+Is the Universal Board V2 (v1.1.1-beta) the right choice for a  Gardena R40Li / Husqvarna 305 platform?
+Where/how can I buy a fully assembled Universal Board V2? Should I DM Apehaenger? Is there still stock available?
+Is the v2 system mature enough for a newcomer to OpenMower, or should I wait for a more stable release?
+Has anyone already converted a Gardena R40Li or Husqvarna 305? Are there hall-tables, motor configs, or wiring diagrams available somewhere?
+Will my UM982 GPS work out-of-the-box with v2, or do I need the Ardusimple F9P instead?
+My current Pi runs the v1 OpenMower OS (ROS Noetic). Do I need a different OS image for v2 hardware? Where do I get it?
+What additional hardware should I order now? 
+   Specifically:
+   - Multiband RTK antenna recommendation?
+   - Any specific cables/connectors I'll need for the R40Li?
+   - DC-DC converter recommendations for powering the Pi from 
+     the original R40Li battery?
+Should I keep the original R40Li mainboard (for charging logic) or fully replace everything with the Universal Board?
+
+My goal:
+
+Full RTK-based autonomous mowing using OpenMower, keeping the 
+original R40Li chassis, motors, and battery. Budget is not a primary 
+concern — I want to build it RIGHT, not cheap.
+
+Thanks a lot for your help! Looking forward to joining the community!

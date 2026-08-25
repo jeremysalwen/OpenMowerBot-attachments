@@ -1,0 +1,100 @@
+INFO[0027] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0027] Subscribed to /mower_logic/current_state     
+INFO[0027] Subscribed to /xbot_positioning/xb_pose      
+INFO[0027] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0027] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0027] Subscribed to /imu/data_raw                  
+INFO[0027] Subscribed to /mower_logic/current_state     
+INFO[0027] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0027] Subscribed to /mower/wheel_ticks             
+INFO[0027] Subscribed to /xbot_positioning/xb_pose      
+INFO[0027] Subscribed to /xbot_monitoring/map           
+INFO[0027] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0027] Subscribed to /imu/data_raw                  
+INFO[0027] Subscribed to /xbot_positioning/xb_pose      
+INFO[0027] Subscribed to /mower/wheel_ticks             
+INFO[0027] Subscribed to /imu/data_raw                  
+INFO[0027] Subscribed to /mower/wheel_ticks             
+INFO[0027] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0027] Subscribed to /xbot_monitoring/map           
+INFO[0027] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0027] Subscribed to /xbot_monitoring/map           
+INFO[0027] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0027] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0027] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0027] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+[GIN] 2025/03/30 - 11:23:41 |[97;42m 200 | 50.581602208s |   192.168.0.140 |[97;44m GET      "/api/openmower/subscribe/status"
+Error #01: websocket: close 1005 (no status)
+[GIN] 2025/03/30 - 11:23:41 |[97;42m 200 | 50.597637846s |   192.168.0.140 |[97;44m GET      "/api/openmower/subscribe/ticks"
+Error #01: websocket: close 1005 (no status)
+Error #02: websocket: close sent
+Error #03: websocket: close sent
+[GIN] 2025/03/30 - 11:23:41 |[97;42m 200 | 50.737069256s |   192.168.0.140 |[97;44m GET      "/api/openmower/subscribe/imu"
+Error #01: websocket: close 1005 (no status)
+Error #02: websocket: close sent
+Error #03: websocket: close sent
+[GIN] 2025/03/30 - 11:23:41 |[97;42m 200 |   50.7700584s |   192.168.0.140 |[97;44m GET      "/api/openmower/subscribe/gps"
+Error #01: websocket: close 1005 (no status)
+[GIN] 2025/03/30 - 11:23:41 |[97;42m 200 |  298.725309ms |   192.168.0.140 |[97;44m GET      "/api/containers/"
+[GIN] 2025/03/30 - 11:24:45 |[97;42m 200 |         1m55s |   192.168.0.140 |[97;44m GET      "/api/openmower/subscribe/highLevelStatus"
+Error #01: read tcp 192.168.0.178:4006->192.168.0.140:36394: read: connection reset by peer
+2025/03/30 11:24:46 Write Error: write tcp 192.168.0.178:4006->192.168.0.140:56190: write: connection reset by peer
+[GIN] 2025/03/30 - 11:24:46 |[97;42m 200 |          1m4s |   192.168.0.140 |[97;44m GET      "/api/containers/5af862f305cb10b5716c55a9684bb6c3e110dc57a6ba2b397182efa183b11ffe/logs"
+[GIN] 2025/03/30 - 11:28:57 |[97;42m 200 |   25.464574ms |   192.168.0.169 |[97;44m GET      "/"
+[GIN] 2025/03/30 - 11:28:57 |[97;42m 200 |   90.397881ms |   192.168.0.169 |[97;44m GET      "/assets/index-Dr_VlyBo.js"
+[GIN] 2025/03/30 - 11:28:57 |[97;42m 200 |    1.152903ms |   192.168.0.169 |[97;44m GET      "/assets/index-DrhbFS9z.css"
+[GIN] 2025/03/30 - 11:29:00 |[97;42m 200 |   33.123655ms |   192.168.0.169 |[97;44m GET      "/assets/mapbox-gl-DE1t3Qfi.js"
+[GIN] 2025/03/30 - 11:29:00 |[97;42m 200 |      518.56Âµs |   192.168.0.169 |[97;46m POST     "/api/config/keys/get"
+[GIN] 2025/03/30 - 11:29:00 |[97;42m 200 |     848.074Âµs |   192.168.0.169 |[97;44m GET      "/api/settings"
+INFO[0396] Subscribed to /mower_logic/current_state     
+INFO[0396] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0396] Subscribed to /xbot_positioning/xb_pose      
+INFO[0396] Subscribed to /imu/data_raw                  
+INFO[0396] Subscribed to /mower/wheel_ticks             
+INFO[0396] Subscribed to /xbot_monitoring/map           
+INFO[0396] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0396] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0396] Subscribed to /mower_logic/current_state     
+INFO[0396] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0396] Subscribed to /xbot_positioning/xb_pose      
+INFO[0396] Subscribed to /imu/data_raw                  
+INFO[0396] Subscribed to /mower/wheel_ticks             
+INFO[0396] Subscribed to /xbot_monitoring/map           
+INFO[0396] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0396] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0396] Subscribed to /mower_logic/current_state     
+INFO[0396] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0396] Subscribed to /xbot_positioning/xb_pose      
+INFO[0396] Subscribed to /imu/data_raw                  
+INFO[0396] Subscribed to /mower/wheel_ticks             
+INFO[0396] Subscribed to /xbot_monitoring/map           
+INFO[0396] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0396] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0396] Subscribed to /mower_logic/current_state     
+INFO[0396] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0396] Subscribed to /xbot_positioning/xb_pose      
+INFO[0396] Subscribed to /imu/data_raw                  
+INFO[0396] Subscribed to /mower/wheel_ticks             
+INFO[0396] Subscribed to /xbot_monitoring/map           
+INFO[0396] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0396] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+INFO[0396] Subscribed to /mower_logic/current_state     
+INFO[0396] Subscribed to /xbot_driver_gps/xb_pose       
+INFO[0396] Subscribed to /xbot_positioning/xb_pose      
+INFO[0396] Subscribed to /imu/data_raw                  
+INFO[0396] Subscribed to /mower/wheel_ticks             
+INFO[0396] Subscribed to /xbot_monitoring/map           
+INFO[0396] Subscribed to /slic3r_coverage_planner/path_marker_array 
+INFO[0396] Subscribed to /move_base_flex/FTCPlanner/global_plan 
+[GIN] 2025/03/30 - 11:29:01 |[90;43m 404 |      85.726Âµs |   192.168.0.169 |[97;44m GET      "/favicon.ico"
+[GIN] 2025/03/30 - 11:29:05 |[97;42m 200 |  4.333145823s |   192.168.0.169 |[97;44m GET      "/api/openmower/subscribe/status"
+Error #01: websocket: close 1005 (no status)
+[GIN] 2025/03/30 - 11:29:05 |[97;42m 200 |  4.328263495s |   192.168.0.169 |[97;44m GET      "/api/openmower/subscribe/imu"
+Error #01: websocket: close 1005 (no status)
+Error #02: websocket: close sent
+[GIN] 2025/03/30 - 11:29:05 |[97;42m 200 |   4.32452794s |   192.168.0.169 |[97;44m GET      "/api/openmower/subscribe/gps"
+Error #01: websocket: close 1005 (no status)
+[GIN] 2025/03/30 - 11:29:05 |[97;42m 200 |  4.333656197s |   192.168.0.169 |[97;44m GET      "/api/openmower/subscribe/ticks"
+Error #01: websocket: close 1005 (no status)
+Error #02: websocket: close sent
+[GIN] 2025/03/30 - 11:29:05 |[97;42m 200 |   285.46616ms |   192.168.0.169 |[97;44m GET      "/api/containers/"

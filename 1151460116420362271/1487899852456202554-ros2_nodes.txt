@@ -1,0 +1,18 @@
+openmower@RPi-CM4:/opt/open_mower_ros$ ros2 node list
+/global_costmap
+/joy
+/joy_teleop
+/local_costmap
+/map_service
+/monitoring
+/move_base_flex
+/mower_comms_v2
+/mower_logic
+/slic3r_coverage_planner
+/transform_listener_impl_aaaae40e5e00
+/transform_listener_impl_aaaae49afa70
+/transform_listener_impl_ffffe29d0e18
+/twist_mux
+/xbot_monitoring
+/xbot_positioning
+/xbot_remote

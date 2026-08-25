@@ -1,0 +1,43 @@
+```open_mower_ros  | process[rosout-1]: started with pid [60]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | load_parameters: unable to set parameters (last param was [/mower_logic/enable_mower=True]): cannot marshal None unless allow_none is enabled
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+open_mower_ros  |     p.start()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 316, in start
+open_mower_ros  |     self.runner.launch()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 676, in launch
+open_mower_ros  |     self._setup()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 663, in _setup
+open_mower_ros  |     self._load_parameters()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 354, in _load_parameters
+open_mower_ros  |     r  = param_server_multi()
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 879, in __call__
+open_mower_ros  |     return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+open_mower_ros  |     return self.__send(self.__name, args)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1447, in __request
+open_mower_ros  |     request = dumps(params, methodname, encoding=self.__encoding,
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 968, in dumps
+open_mower_ros  |     data = m.dumps(params)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 501, in dumps
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 594, in dump_struct
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 527, in dump_nil
+open_mower_ros  |     raise TypeError("cannot marshal None unless allow_none is enabled")
+open_mower_ros  | TypeError: cannot marshal None unless allow_none is enabled
+open_mower_ros  | [rosout-1] killing on exit
+open_mower_ros  | [master] killing on exit```

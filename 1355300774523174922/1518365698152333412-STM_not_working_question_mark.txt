@@ -1,0 +1,153 @@
+openmower@jd:~ $ openmower logs
+open_mower_ros  |  * /move_base_flex/planner_patience: 5.0
+open_mower_ros  |  * /move_base_flex/planners: [{'name': 'Global...
+open_mower_ros  |  * /move_base_flex/recovery_behaviors: [{'name': 'Backwa...
+open_mower_ros  |  * /move_base_flex/recovery_enabled: True
+open_mower_ros  |  * /move_base_flex/recovery_patience: 7.0
+open_mower_ros  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+open_mower_ros  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+open_mower_ros  |  * /mower_logic/automatic_mode: 1
+open_mower_ros  |  * /mower_logic/cu_rain_threshold: -1
+open_mower_ros  |  * /mower_logic/docking_approach_distance: 1.0
+open_mower_ros  |  * /mower_logic/docking_extra_time: 1.0
+open_mower_ros  |  * /mower_logic/docking_redock: False
+open_mower_ros  |  * /mower_logic/docking_retry_count: 3
+open_mower_ros  |  * /mower_logic/emergency_lift_period: 4000
+open_mower_ros  |  * /mower_logic/emergency_tilt_period: 10000
+open_mower_ros  |  * /mower_logic/enable_mower: True
+open_mower_ros  |  * /mower_logic/gps_timeout: 5.0
+open_mower_ros  |  * /mower_logic/gps_wait_time: 5.0
+open_mower_ros  |  * /mower_logic/ignore_charging_current: False
+open_mower_ros  |  * /mower_logic/mow_angle_increment: 0
+open_mower_ros  |  * /mower_logic/mow_angle_offset: 0
+open_mower_ros  |  * /mower_logic/mow_angle_offset_is_absolute: False
+open_mower_ros  |  * /mower_logic/outline_overlap_count: 1
+open_mower_ros  |  * /mower_logic/rain_check_seconds: 20
+open_mower_ros  |  * /mower_logic/rain_delay_minutes: 30
+open_mower_ros  |  * /mower_logic/rain_mode: 0
+open_mower_ros  |  * /mower_logic/tool_width: 0.28
+open_mower_ros  |  * /mower_logic/undock_angle: 0.0
+open_mower_ros  |  * /mower_logic/undock_angled_distance: 2.0
+open_mower_ros  |  * /mower_logic/undock_distance: 1.0
+open_mower_ros  |  * /mower_logic/undock_fixed_angle: False
+open_mower_ros  |  * /mower_logic/undock_use_curve: True
+open_mower_ros  |  * /ntrip_client/authenticate: True
+open_mower_ros  |  * /ntrip_client/ca_cert: 
+open_mower_ros  |  * /ntrip_client/cert: 
+open_mower_ros  |  * /ntrip_client/host: 192.168.1.156
+open_mower_ros  |  * /ntrip_client/key: 
+open_mower_ros  |  * /ntrip_client/mountpoint: Lasse-RTK
+open_mower_ros  |  * /ntrip_client/nmea_max_length: 82
+open_mower_ros  |  * /ntrip_client/nmea_min_length: 3
+open_mower_ros  |  * /ntrip_client/ntrip_version: 
+open_mower_ros  |  * /ntrip_client/password: openmower
+open_mower_ros  |  * /ntrip_client/port: 2101
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_max: 99999
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_wait_seconds: 5
+open_mower_ros  |  * /ntrip_client/rtcm_frame_id: odom
+open_mower_ros  |  * /ntrip_client/rtcm_message_package: rtcm_msgs
+open_mower_ros  |  * /ntrip_client/rtcm_timeout_seconds: 30
+open_mower_ros  |  * /ntrip_client/ssl: False
+open_mower_ros  |  * /ntrip_client/username: openmower
+open_mower_ros  |  * /rosdistro: noetic
+open_mower_ros  |  * /rosversion: 1.17.4
+open_mower_ros  |  * /twist_mux/topics: [{'name': 'naviga...
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_enable: False
+open_mower_ros  |  * /xbot_positioning/antenna_offset_x: 0.05
+open_mower_ros  |  * /xbot_positioning/antenna_offset_y: -0.15
+open_mower_ros  |  * /xbot_positioning/debug: False
+open_mower_ros  |  * /xbot_positioning/max_gps_accuracy: 0.2
+open_mower_ros  | 
+open_mower_ros  | NODES
+open_mower_ros  |   /
+open_mower_ros  |     joy (joy/joy_node)
+open_mower_ros  |     joy_teleop (teleop_twist_joy/teleop_node)
+open_mower_ros  |     map_service (mower_map/mower_map_service)
+open_mower_ros  |     monitoring (mower_logic/monitoring)
+Mosquitto       | 1782076318: Info: running mosquitto as user: mosquitto.
+Mosquitto       | 1782076323: New connection from 192.168.0.114:51827 on port 9001.
+Mosquitto       | 1782076323: New client connected from 192.168.0.114:51827 as om-client-40002 (p5, c0, k0).
+Mosquitto       | 1782076324: New connection from 172.19.0.1:54894 on port 1883.
+open_mower_ros  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+open_mower_ros  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+open_mower_ros  |     mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+open_mower_ros  |     mower_logic (mower_logic/mower_logic)
+Mosquitto       | 1782076324: New client connected from 172.19.0.1:54894 as xbot_monitoring (p4, c1, k1000).
+open_mower_ros  |     ntrip_client (ntrip_client/ntrip_ros.py)
+open_mower_ros  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+open_mower_ros  |     twist_mux (twist_mux/twist_mux)
+open_mower_ros  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+open_mower_ros  |     xbot_positioning (xbot_positioning/xbot_positioning)
+open_mower_ros  |     xbot_remote (xbot_remote/xbot_remote)
+open_mower_ros  | 
+open_mower_ros  | auto-starting new master
+open_mower_ros  | process[master]: started with pid [50]
+open_mower_ros  | ROS_MASTER_URI=http://localhost:11311
+open_mower_ros  | 
+open_mower_ros  | setting /run_id to d846ff52-6db5-11f1-a61c-88a29ec6a939
+open_mower_ros  | process[rosout-1]: started with pid [60]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | process[mower_comms_v2-2]: started with pid [67]
+open_mower_ros  | process[ntrip_client-3]: started with pid [68]
+open_mower_ros  | process[move_base_flex-4]: started with pid [70]
+open_mower_ros  | process[move_base_legacy_relay-5]: started with pid [75]
+open_mower_ros  | process[xbot_positioning-6]: started with pid [77]
+open_mower_ros  | process[joy-7]: started with pid [85]
+open_mower_ros  | process[joy_teleop-8]: started with pid [91]
+open_mower_ros  | process[map_service-9]: started with pid [97]
+open_mower_ros  | process[mower_logic-10]: started with pid [99]
+open_mower_ros  | process[slic3r_coverage_planner-11]: started with pid [106]
+open_mower_ros  | process[twist_mux-12]: started with pid [108]
+open_mower_ros  | process[xbot_monitoring-13]: started with pid [113]
+open_mower_ros  | [ERROR] [1782076323.853098192]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | process[xbot_remote-14]: started with pid [119]
+open_mower_ros  | process[monitoring-15]: started with pid [124]
+open_mower_ros  | [FATAL] [1782076324.336564928]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+open_mower_ros  | [WARN] [1782076324.783815039]: Could not open map file: map.json
+open_mower_ros  | [WARN] [1782076329.565205364]: Service registered with invalid endpoint. Ignoring. (ID: 9, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.569435861]: Service registered with invalid endpoint. Ignoring. (ID: 7, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.571734552]: Service registered with invalid endpoint. Ignoring. (ID: 6, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.574816842]: Service registered with invalid endpoint. Ignoring. (ID: 2, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.578259425]: Service registered with invalid endpoint. Ignoring. (ID: 5, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.579268585]: Service registered with invalid endpoint. Ignoring. (ID: 1, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.581754245]: Service registered with invalid endpoint. Ignoring. (ID: 8, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.582476719]: Service registered with invalid endpoint. Ignoring. (ID: 4, endpoint: 172.16.78.150:0)
+open_mower_ros  | [WARN] [1782076329.868574233]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101088 timeout was 0.1.
+open_mower_ros  | [ERROR] [1782076331.024336]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076331.028655]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076331.032696]: Reconnecting in 9.0 seconds
+open_mower_ros  | [WARN] [1782076334.902378582]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100656 timeout was 0.1.
+open_mower_ros  | [ERROR] [1782076345.051290]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076345.058162]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076345.068723]: Reconnecting in 16.2 seconds
+OpenMowerApp    | 192.168.0.114 - - [21/Jun/2026:21:12:28 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+Mosquitto       | 1782076348: Client om-client-40002 [192.168.0.114:51827] disconnected: connection closed by client.
+open_mower_ros  | [ERROR] [1782076349.416751276]: No mowing area with index: 0
+open_mower_ros  | [WARN] [1782076349.417744251]: We don't have a map configured. Starting Area Recorder!
+Mosquitto       | 1782076350: New connection from 192.168.0.114:50872 on port 9001.
+Mosquitto       | 1782076350: New client connected from 192.168.0.114:50872 as om-client-7720 (p5, c0, k0).
+open_mower_ros  | [ERROR] [1782076366.283368]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076366.291257]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076366.298416]: Reconnecting in 29.2 seconds
+open_mower_ros  | [ERROR] [1782076400.489657]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076400.493625]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076400.498522]: Reconnecting in 52.5 seconds
+open_mower_ros  | [WARN] [1782076409.825709289]: >>> [ID=5] Error Resetting Watchdog
+open_mower_ros  | [ERROR] [1782076409.843470539]: >>> [ID=5] Error during charging comms - reconfiguring
+Mosquitto       | 1782076456: Client om-client-7720 [192.168.0.114:50872] disconnected: connection closed by client.
+OpenMowerApp    | 192.168.0.114 - - [21/Jun/2026:21:14:16 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+Mosquitto       | 1782076457: New connection from 192.168.0.114:61805 on port 9001.
+Mosquitto       | 1782076457: New client connected from 192.168.0.114:61805 as om-client-23292 (p5, c0, k0).
+open_mower_ros  | [ERROR] [1782076458.039135]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076458.048630]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076458.054742]: Reconnecting in 94.5 seconds
+open_mower_ros  | [ERROR] [1782076557.638244]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076557.645605]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076557.655408]: Reconnecting in 170.1 seconds
+open_mower_ros  | [ERROR] [1782076732.826157]: Unable to connect socket to server at http://192.168.1.156:2101
+open_mower_ros  | [ERROR] [1782076732.832986]: Exception: timed out
+open_mower_ros  | [ERROR] [1782076732.839528]: Reconnecting in 300.0 seconds
+^C
+openmower@jd:~ $ ping 172.16.78.150:0
+ping: 172.16.78.150:0: Name or service not known
+openmower@jd:~ $ 

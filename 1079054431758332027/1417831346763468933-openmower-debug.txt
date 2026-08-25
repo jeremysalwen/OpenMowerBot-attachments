@@ -1,0 +1,260 @@
+openmower@openmower:/root/ros_home/.ros $ sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/9c491e74-93b6-11f0-bffa-dca6327f607f/roslaunch-openmower-80.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:40605/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/coalesce_interval: 0.06
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_logic/automatic_start: False
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: 192.148.213.42
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: CERCANA3M
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: REMOVED
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: scampos
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /teleop/move/axis_mappings: [{'axis': 1, 'tar...
+ * /teleop/move/deadman_buttons: [0]
+ * /teleop/move/message_type: geometry_msgs/Twist
+ * /teleop/move/topic_name: joy_vel
+ * /teleop/move/type: topic
+ * /teleop/record_dock/deadman_buttons: [2]
+ * /teleop/record_dock/message_type: std_msgs/Bool
+ * /teleop/record_dock/message_value: [{'target': 'data...
+ * /teleop/record_dock/topic_name: record_dock
+ * /teleop/record_dock/type: topic
+ * /teleop/record_mowing/deadman_buttons: [3, 14]
+ * /teleop/record_mowing/message_type: std_msgs/Bool
+ * /teleop/record_mowing/message_value: [{'target': 'data...
+ * /teleop/record_mowing/topic_name: record_mowing
+ * /teleop/record_mowing/type: topic
+ * /teleop/record_navigation/deadman_buttons: [3, 13]
+ * /teleop/record_navigation/message_type: std_msgs/Bool
+ * /teleop/record_navigation/message_value: [{'target': 'data...
+ * /teleop/record_navigation/topic_name: record_navigation
+ * /teleop/record_navigation/type: topic
+ * /teleop/record_polygon/deadman_buttons: [1]
+ * /teleop/record_polygon/message_type: std_msgs/Bool
+ * /teleop/record_polygon/message_value: [{'target': 'data...
+ * /teleop/record_polygon/topic_name: record_polygon
+ * /teleop/record_polygon/type: topic
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 40.682833333333335
+ * /xbot_driver_gps/datum_long: -4.106833333333333
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (joy_teleop/joy_teleop.py)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [90]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 9c491e74-93b6-11f0-bffa-dca6327f607f
+process[rosout-1]: started with pid [100]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [108]
+process[ntrip_client/ntrip_client_node-3]: started with pid [109]
+process[xbot_driver_gps-4]: started with pid [110]
+[ INFO] [1758107298.967429263]: Starting xesc driver
+process[move_base_flex-5]: started with pid [115]
+[ INFO] [1758107298.980680933]: Starting xesc driver
+[ INFO] [1758107298.989503923]: Starting xesc driver
+process[move_base_legacy_relay-6]: started with pid [121]
+process[xbot_positioning-7]: started with pid [128]
+[ INFO] [1758107299.081050324]: Using absolute mode for GPS
+[ INFO] [1758107299.095972819]: connecting serial interface: /dev/ttyAMA0
+process[joy-8]: started with pid [132]
+process[joy_teleop-9]: started with pid [138]
+process[map_service-10]: started with pid [144]
+[ INFO] [1758107299.360642186]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+process[mower_logic-11]: started with pid [149]
+process[slic3r_coverage_planner-12]: started with pid [154]
+process[twist_mux-13]: started with pid [157]
+[ERROR] [1758107299.654740712]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[xbot_monitoring-14]: started with pid [159]
+process[xbot_remote-15]: started with pid [169]
+[ INFO] [1758107299.923193930]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+process[monitoring-16]: started with pid [177]
+[ INFO] [1758107300.003300299]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100
+[ INFO] [1758107300.060430624]: Dropped GPS update, since it's not RTK Fixed
+[FATAL] [1758107300.118641240]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[ INFO] [1758107300.406218393]: om_mower_logic: Setting mower_logic config
+[ INFO] [1758107300.455583019]: found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1758107300.526512956]: found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1758107300.579069768]: found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1758107300.628178544]: found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ INFO] [1758107300.703121626]: found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1758107300.715924150]: MQTT Connected
+[ INFO] [1758107300.749980376]: found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[ INFO] [1758107300.815618860]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1758107301.065461251]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1758107301.121548637]: Waiting for a status message
+[ INFO] [1758107301.273643753]: got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1758107301.284678102]: Subscribing to sensor data for sensor with name: V Charge
+[ INFO] [1758107301.428580261]: got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[ WARN] [1758107301.432243056]: Error opening stored mowing areas.
+[ INFO] [1758107301.432979348]: Subscribing to sensor data for sensor with name: V Battery
+[ INFO] [1758107301.440861103]: Map Position: x=0, y=0
+[ INFO] [1758107301.441304304]: Map Size: x=10, y=10
+[ INFO] [1758107301.533871589]: got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[ INFO] [1758107301.537258052]: Subscribing to sensor data for sensor with name: Charge Current
+[ INFO] [1758107301.550652370]: docking pose: position:
+  x: 0
+  y: 0
+  z: 0
+orientation:
+  x: 0
+  y: 0

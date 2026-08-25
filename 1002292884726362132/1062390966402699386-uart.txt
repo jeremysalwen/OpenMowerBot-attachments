@@ -1,0 +1,77 @@
+    __  ___                    ___
+  /  |/  /___ _      ____ `/ / / 
+ / /  / / /_/ / |/ |/ / /_/ / / /  
+/_/  /_/\____/|__/|__/\__, /_/_/   
+                     /____/        
+
+
+ * Master USART (debug) initialized
+ * LED initialized
+ * ADC1 initialized
+ * Timer3 (Beeper) initialized
+ * 24V switched on
+ * RAIN Sensor enable
+ * HALL Sensor enabled
+ * SPI3 SPIFlash ID: 0x68 0x40 0x13
+OK
+   >> LittleFS '/' content ... 
+
+      (dir)  '.' 
+      (dir)  '..' 
+      (file) 'boot_count'     4 B
+      (file) 'mag_bias_x'     0 B
+      (file) 'mag_bias_y'     0 B
+      (file) 'mag_bias_z'     0 B
+      (file) 'mag_dist_00'     0 B
+      (file) 'mag_dist_01'     0 B
+      (file) 'mag_dist_02'     0 B
+      (file) 'mag_dist_10'     0 B
+      (file) 'mag_dist_11'     0 B
+      (file) 'mag_dist_12'     0 B
+      (file) 'mag_dist_20'     0 B
+      (file) 'mag_dist_21'     0 B
+      (file) 'mag_dist_22'     0 B
+
+   >> boot_count: 37
+ * SPIFLASH initialized
+ * Hard I2C initialized
+ * Accelerometer (onboard/tilt safety) initialized
+ * Soft I2C (J18)initialized
+ * Testing supported IMUs:
+   >> WT901 NOT FOUND at I2C addr=0x50
+   >> IMU Calibration started - make sure bot is level and standing still ...
+   >> External IMU Calibration factors accelerometer [-0.004788 -0.004788 0.000000]
+   >> External IMU Calibration accelerometer covariance diagonal [0.000000 0.000000 0.000000]
+   >> External IMU Calibration factors gyro [-0.001065 -0.001065001065]
+   >> External IMU Calibration gyro covariance diagonal [0.000000 0.000000 0.000000]
+   >> Onboard IMU Calibration factors accelerometer [-0.004788 -0.004788 0.000000]
+   >> Onboard IMU Calibration accelerometer covariance diagonal [0.000000 0.000000 0.000000]
+   >> external IMU Calibration magentometer biases (hard iron) [0.000000 2.126953 2.126953]
+   >> external IMU Calibration magentometer compensation (soft iron)
+       [ 0.000000	2.126953	2.126953
+         2.126953	2.126953	2.126953
+         2.126953	2.126953	2.126953 ]
+ * Emergecy sensors initialized
+ * Timer1 (Charge PWM) initialized
+ * USB CDC initialized
+ * Panel initialized
+ * Charge Controler PWM Timers initialized
+ * Drive Motors USART initialized
+ * Blade Motor UART initialzed
+ * NBT Main timers initialized
+
+=========================================================
+ EMERGENCY/SAFETY FEATURES ARE DISABLED IN board.h ! 
+=========================================================
+
+ * ROS serial node initialized
+
+ >>> entering main loop ...
+
+ * Drive Motor Controller initialized
+ * Blade Motor Controller initialized
+temp : 655.35 
+temp : 655.35 
+temp : 655.35 
+temp : 655.35 
+...

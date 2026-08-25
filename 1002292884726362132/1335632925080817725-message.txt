@@ -1,0 +1,39 @@
+Hey Guys, I try to build a Mowgli with a Yardforce 500B I got recently.
+I am a beginner, sorry if the questions are stupid :-)
+
+
+Followed the instructions on Github cloudn1ne/MowgliRover/help
+/InstallMowgli.md 
+https://github.com/cloudn1ne/MowgliRover/blob/main/help/InstallMowgli.md
+
+Then I got stuck on Install ROS noetic -> http://wiki.ros.org/noetic/Installation/Ubuntu, got the message „apt-keys“ are deprecated.
+I found a manual that told me how to install the keys in „keyring.gpg.“ https://discourse.ros.org/t/ros-gpg-key-expiration-incident/20669
+
+But when I tried to install (Step 1.4), the command line told me that I can not install „ros1“ on Ubuntu 20.04 jammy.
+
+So I gave it a try and followed a manual for Ros2 (bare bones), I found on the installation manual from one step before. 
+http://docs.ros.org/en/rolling/Installation/Ubuntu-Install-Debs.html#id7
+
+All worked out well and I was able to install with this command: sudo apt install ros-rolling-ros-base
+
+As I further followed InstallMowgli.md i got stuck with: Install ROS packages and other good stuff that Mowgli and OM will need 
+
+I got following output:
+
+pi@ubuntu:~$ sudo apt-get -y install g++ cpp cmake ros-noetic-tf2-eigen ros-noetic-teleop-twist-keyboard ros-noetic-robot-state-publisher ros-noetic-joint-state-publisher ros-noetic-map-server ros-noetic-rosserial-server ros-noetic-gps-common picocom libraspberrypi-bin  ros-noetic-tf2-geometry-msgs ros-noetic-robot-localization libraspberrypi-dev libraspberrypi0 libpigpiod-if-dev wavemon ros-noetic-rosserial-arduino python3-paho-mqtt openocd python3-rosdep ros-noetic-rtcm-msgs libxml2-utils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package ros-noetic-tf2-eigen
+E: Unable to locate package ros-noetic-teleop-twist-keyboard
+E: Unable to locate package ros-noetic-robot-state-publisher
+E: Unable to locate package ros-noetic-joint-state-publisher
+E: Unable to locate package ros-noetic-map-server
+E: Unable to locate package ros-noetic-rosserial-server
+E: Unable to locate package ros-noetic-gps-common
+E: Unable to locate package ros-noetic-tf2-geometry-msgs
+E: Unable to locate package ros-noetic-robot-localization
+E: Unable to locate package ros-noetic-rosserial-arduino
+E: Unable to locate package ros-noetic-rtcm-msgs
+
+I am grateful for any help!

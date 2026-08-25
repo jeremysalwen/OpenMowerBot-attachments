@@ -1,0 +1,12 @@
+openmower@openmower:~ $ docker logs open_mower_ros 2>&1 | grep Disconnect
+[2026-04-27 16:13:35] [disconnect] Disconnect close local:[1006,Underlying Transport Error] remote:[1006]
+[2026-04-27 16:18:46] [disconnect] Disconnect close local:[1006,End of File] remote:[1001]
+[INFO] [1777306765.450035567]: PJB: OnServiceDisconnected. ID: 1
+[INFO] [1777306765.450195175]: PJB: OnServiceDisconnected. ID: 2
+[INFO] [1777306765.450469782]: PJB: OnServiceDisconnected. ID: 3
+[INFO] [1777306765.450622557]: PJB: OnServiceDisconnected. ID: 4
+[INFO] [1777306765.450853016]: PJB: OnServiceDisconnected. ID: 5
+[INFO] [1777306765.450889571]: PJB: OnServiceDisconnected. ID: 6
+[INFO] [1777306765.450924793]: PJB: OnServiceDisconnected. ID: 7
+[INFO] [1777306765.450958996]: PJB: OnServiceDisconnected. ID: 8
+openmower@openmower:~ $ 

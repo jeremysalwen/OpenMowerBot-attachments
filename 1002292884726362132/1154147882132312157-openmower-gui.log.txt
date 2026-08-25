@@ -1,0 +1,36 @@
+time="2023-09-20T20:01:19Z" level=error msg="Post \"http://192.168.1.130:11311/RPC2\": dial tcp 192.168.1.130:11311: connect: connection refused"
+@DEBUG 2023/09/20 20:01:19 server.go:228: listening at [::]:8000
+g[GIN] 2023/09/20 - 20:01:27 | 200 |    7.922075ms | 2a0d:3344:838:3900::635 | GET      "/api/settings"
+v[GIN] 2023/09/20 - 20:01:30 | 200 |  2.666623015s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/gps"
+-Error #01: websocket: close 1005 (no status)
+v[GIN] 2023/09/20 - 20:01:30 | 200 |  2.688612015s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/imu"
+-Error #01: websocket: close 1005 (no status)
+y[GIN] 2023/09/20 - 20:01:30 | 200 |  2.714047579s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/status"
+-Error #01: websocket: close 1005 (no status)
+x[GIN] 2023/09/20 - 20:01:30 | 200 |   2.64769553s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/ticks"
+-Error #01: websocket: close 1005 (no status)
+j[GIN] 2023/09/20 - 20:01:30 | 200 |   29.734872ms | 2a0d:3344:838:3900::635 | GET      "/api/containers/"
+h[GIN] 2023/09/20 - 20:01:47 | 200 |     987.877Âµs | 2a0d:3344:838:3900::635 | GET      "/api/settings"
+v[GIN] 2023/09/20 - 20:01:53 | 200 |  5.551823858s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/imu"
+-Error #01: websocket: close 1005 (no status)
+x[GIN] 2023/09/20 - 20:01:53 | 200 |  5.514708235s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/ticks"
+-Error #01: websocket: close 1005 (no status)
+v[GIN] 2023/09/20 - 20:01:53 | 200 |  5.534686505s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/gps"
+-Error #01: websocket: close 1005 (no status)
+y[GIN] 2023/09/20 - 20:01:53 | 200 |  5.570186264s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/status"
+-Error #01: websocket: close 1005 (no status)
+j[GIN] 2023/09/20 - 20:01:53 | 200 |   27.044064ms | 2a0d:3344:838:3900::635 | GET      "/api/containers/"
+g[GIN] 2023/09/20 - 20:02:36 | 200 |    1.024144ms | 2a0d:3344:838:3900::635 | GET      "/api/settings"
+time="2023-09-20T20:02:16Z" level=error msg="Post \"http://192.168.1.130:11311/RPC2\": dial tcp 192.168.1.130:11311: connect: connection refused"
+@DEBUG 2023/09/20 20:02:16 server.go:228: listening at [::]:8000
+[[GIN] 2023/09/20 - 20:04:59 | 304 |    3.822158ms | 2a0d:3344:838:3900::635 | GET      "/"
+g[GIN] 2023/09/20 - 20:04:59 | 200 |    2.968363ms | 2a0d:3344:838:3900::635 | GET      "/api/settings"
+v[GIN] 2023/09/20 - 20:05:05 | 200 |  5.690973903s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/gps"
+-Error #01: websocket: close 1005 (no status)
+x[GIN] 2023/09/20 - 20:05:05 | 200 |  5.672146569s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/ticks"
+-Error #01: websocket: close 1005 (no status)
+v[GIN] 2023/09/20 - 20:05:05 | 200 |  5.712913692s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/imu"
+-Error #01: websocket: close 1005 (no status)
+y[GIN] 2023/09/20 - 20:05:05 | 200 |  5.743280611s | 2a0d:3344:838:3900::635 | GET      "/api/openmower/subscribe/status"
+-Error #01: websocket: close 1005 (no status)
+j[GIN] 2023/09/20 - 20:05:05 | 200 |   28.817793ms | 2a0d:3344:838:3900::635 | GET      "/api/containers/"

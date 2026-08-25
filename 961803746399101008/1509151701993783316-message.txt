@@ -1,0 +1,53 @@
+Hi,
+
+I have low level topics published; but it seems they contain no data
+
+docker exec open_mower_ros bash -c "source /opt/ros/noetic/setup.bash && rostopic list" | grep ll
+/ll/cmd_vel
+/ll/diff_drive/left_esc_status
+/ll/diff_drive/measured_twist
+/ll/diff_drive/right_esc_status
+/ll/emergency
+/ll/imu/data_raw
+/ll/mower_status
+/ll/position/gps
+/ll/position/gps/nmea
+/ll/position/gps/rtcm
+/ll/power
+/ll/services/gps/imu
+/ll/services/gps/pose
+/ll/services/power/parameter_descriptions
+/ll/services/power/parameter_updates
+root@panzer:~# 
+root@panzer:~# 
+root@panzer:~# for topic in $(docker exec open_mower_ros bash -c "source /opt/ros/noetic/setup.bash && rostopic list" | grep ll); do docker exec open_mower_ros bash -c "source /opt/ros/noetic/setup.bash && rostopic echo $topic -n 1"; done
+
+I tried reaching the PICO on serial port but don't know which one is used (/dev/ttyAMA0 ?)
+
+stty -F /dev/ttyAMA3 115200 raw && timeout 5 cat /dev/ttyAMA3 | xxd | head -10
+00000000: 024a 0401 adfc caff ffff f500 0000 00ff  .J..............
+00000010: ffff f6ff ffff fc00 0000 0000 0000 fd00  ................
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000030: 0000 0100 0000 0300 11cf 53a0 3000 0000  ..........S.0...
+00000040: 0000 0000 0000 4300 0000 0200 fb71 03    ......C......q.
+root@panzer:~# stty -F /dev/ttyAMA4 115200 raw && timeout 5 cat /dev/ttyAMA4 | xxd | head -10
+00000000: 0000 01ff ffff ff00 0000 0000 0000 fd00  ................
+00000010: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000020: 0000 0400 0000 0400 06c2 58c0 3000 0000  ..........X.0...
+00000030: 0000 00ff ffff d700 0000 2d00 e59c 0302  ..........-.....
+00000040: 2200 0605 7845 5343 3200 4a00 2100 06    "...xESC2.J.!..
+root@panzer:~# stty -F /dev/ttyAMA5 115200 raw && timeout 5 cat /dev/ttyAMA5 | xxd | head -10
+00000000: 024a 0401 abfd 68ff ffff f100 0000 0000  .J....h.........
+00000010: 0000 0bff ffff f600 0000 0000 0000 fe00  ................
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+root@panzer:~# stty -F /dev/ttyAMA2 115200 raw && timeout 5 cat /dev/ttyAMA2 | xxd | head -10
+Terminated
+root@panzer:~# stty -F /dev/ttyAMA1 115200 raw && timeout 5 cat /dev/ttyAMA1 | xxd | head -10
+stty: /dev/ttyAMA1: No such file or directory
+root@panzer:~# stty -F /dev/ttyAMA0 115200 raw && timeout 5 cat /dev/ttyAMA0 | xxd | head -10
+
+I'm surprised I cannot commubnicate with the pico as the "openmower update-firmware" went fine (and after the flash; the PICO status led tuened ON)
+
+I'm using this PICO as a replacement; is it compatible ? "Raspberry Pi Pico Board RP2040 Dual-Core 264KB ARM"
+
+Thank you for your help

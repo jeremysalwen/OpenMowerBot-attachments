@@ -1,0 +1,366 @@
+[ INFO] [1717086446.571371907]: - Behaviour.h: abort() called
+[ INFO] [1717086446.574830235]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086446.576302358]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086446.576425967]: 
+[ INFO] [1717086446.576476743]: 
+[ INFO] [1717086446.576529280]: --------------------------------------
+[ INFO] [1717086446.576583612]: - Entered state: DOCKING
+[ INFO] [1717086446.576634944]: --------------------------------------
+[ INFO] [1717086446.580482766]: Getting Docking Point
+[ WARN] [1717086446.580802167]: Waiting for good GPS
+[ INFO] [1717086447.148455225]: GPS quality: 0.907805
+[ INFO] [1717086447.581111638]: Calculating approach path
+[ INFO] [1717086447.617572942]: FTCLocalPlannerROS: Got new global plan with 73 points.
+[ INFO] [1717086447.618642942]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086447.618900826]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086454.962994693]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086454.963546369]: FTCLocalPlannerROS: Switching to state 2
+[ WARN] [1717086454.965209914]: FTCLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+[ INFO] [1717086455.012266514]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086455.012548675]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086455.062699073]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086455.062947532]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086455.111828748]: Action "move_base" succeeded!
+[ INFO] [1717086455.113421572]: Executing Docking Approach
+[ INFO] [1717086455.131563791]: FTCLocalPlannerROS: Got new global plan with 16 points.
+[ INFO] [1717086455.132554940]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086455.132676975]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086457.148547293]: GPS quality: 0.833567
+[ INFO] [1717086462.525178926]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086462.525320627]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086462.574915943]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086462.575294307]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086462.624980863]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086462.625391318]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086462.678260818]: successfully set GPS to 0
+[ INFO] [1717086462.694103300]: FTCLocalPlannerROS: Got new global plan with 10 points.
+[ INFO] [1717086462.694921100]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086462.695042005]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086462.978745294]: Got a voltage of 29.1393 V. Cancelling docking.
+[ INFO] [1717086462.979007123]: 
+[ INFO] [1717086462.979088881]: 
+[ INFO] [1717086462.979170009]: --------------------------------------
+[ INFO] [1717086462.979249822]: - Entered state: IDLE
+[ INFO] [1717086462.979324784]: --------------------------------------
+[ INFO] [1717086462.981271379]: Cancel action "exe_path"
+[ WARN] [1717086462.981612040]: FTCLocalPlannerROS: FTC planner was cancelled.
+[ INFO] [1717086462.981740093]: Controller will take care of stopping
+[ INFO] [1717086462.984638413]: new actions registered: mower_logic:idle registered 2 actions.
+[ INFO] [1717086462.986970002]: successfully registered actions for mower_logic:idle
+[ INFO] [1717086462.991825195]: Got getMowingArea call with index: 0
+[ INFO] [1717086462.996669332]: Getting Docking Point
+[ INFO] [1717086463.001597597]: successfully set GPS to 0
+[ INFO] [1717086463.104691977]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1717086463.122001136]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1717086463.132327659]: new actions registered: mower_logic:idle registered 2 actions.
+[ INFO] [1717086463.133542768]: successfully registered actions for mower_logic:idle
+[ INFO] [1717086463.133801022]: 
+[ INFO] [1717086463.134016685]: 
+[ INFO] [1717086463.134192330]: --------------------------------------
+[ INFO] [1717086463.134617286]: - Entered state: UNDOCKING
+[ INFO] [1717086463.134816690]: --------------------------------------
+[ INFO] [1717086463.139177743]: Getting Docking Point
+[ INFO] [1717086463.139596087]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1717086463.159155560]: FTCLocalPlannerROS: Got new global plan with 35 points.
+[ INFO] [1717086463.160248541]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086463.160429315]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086465.109533177]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1717086466.110608964]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1717086467.648429231]: GPS quality: 0.890341
+[ INFO] [1717086468.116692351]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1717086470.097949649]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1717086471.115002564]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086472.148529584]: Low quality GPS
+[ INFO] [1717086473.110274325]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086473.648423381]: Low quality GPS
+[ INFO] [1717086474.113643138]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086474.648439570]: Low quality GPS
+[ WARN] [1717086476.148443953]: Low quality GPS
+[ INFO] [1717086476.162570465]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086477.148513779]: Low quality GPS
+[ WARN] [1717086477.148680128]: GPS timeout
+[ INFO] [1717086478.119994683]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086478.648424992]: Low quality GPS
+[ WARN] [1717086478.648526528]: GPS timeout
+[ WARN] [1717086479.648462940]: Low quality GPS
+[ WARN] [1717086479.648850025]: GPS timeout
+[ INFO] [1717086480.123655051]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086481.148464942]: Low quality GPS
+[ WARN] [1717086481.148583255]: GPS timeout
+[ INFO] [1717086482.116873950]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086482.648440065]: Low quality GPS
+[ WARN] [1717086482.648857039]: GPS timeout
+[ INFO] [1717086483.117395457]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086484.148443824]: Low quality GPS
+[ WARN] [1717086484.148566063]: GPS timeout
+[ INFO] [1717086485.105948662]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086485.148458884]: Low quality GPS
+[ WARN] [1717086485.148573179]: GPS timeout
+[ INFO] [1717086486.122692842]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086486.648441065]: Low quality GPS
+[ WARN] [1717086486.648589211]: GPS timeout
+[ INFO] [1717086488.112518898]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086488.148560270]: Low quality GPS
+[ WARN] [1717086488.148677175]: GPS timeout
+[ INFO] [1717086489.118868251]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086489.648446654]: Low quality GPS
+[ WARN] [1717086489.648569522]: GPS timeout
+[ INFO] [1717086490.122645948]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086490.648449067]: Low quality GPS
+[ WARN] [1717086490.648566213]: GPS timeout
+[ INFO] [1717086492.118774645]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086492.148424222]: Low quality GPS
+[ WARN] [1717086492.148538757]: GPS timeout
+[ WARN] [1717086493.148451791]: Low quality GPS
+[ WARN] [1717086493.148573530]: GPS timeout
+[ INFO] [1717086494.114545622]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086494.148468680]: Low quality GPS
+[ WARN] [1717086494.148840914]: GPS timeout
+[ WARN] [1717086495.148473442]: Low quality GPS
+[ WARN] [1717086495.648465241]: GPS timeout
+[ INFO] [1717086496.112342077]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1717086496.648501138]: Low quality GPS
+[ WARN] [1717086496.648889002]: GPS timeout
+[ INFO] [1717086497.204143879]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086497.204287210]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086497.253785331]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086497.253964050]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086497.304013086]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086497.304192602]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086497.354056716]: Undock success. Waiting for GPS.
+[ INFO] [1717086497.357614784]: successfully set GPS to 1
+[ INFO] [1717086497.358013814]: waiting for gps. current accuracy: 999
+[ WARN] [1717086498.117449993]: Last GPS was 36.0046 seconds ago.
+[ WARN] [1717086498.148535527]: Low quality GPS
+[ WARN] [1717086498.149306476]: GPS timeout
+[ INFO] [1717086498.358178548]: waiting for gps. current accuracy: 999
+[ INFO] [1717086499.358226065]: waiting for gps. current accuracy: 999
+[ WARN] [1717086499.648433185]: Low quality GPS
+[ WARN] [1717086499.648544683]: GPS timeout
+[ INFO] [1717086500.358140606]: waiting for gps. current accuracy: 999
+[ WARN] [1717086501.148435757]: Low quality GPS
+[ WARN] [1717086501.148552848]: GPS timeout
+[ INFO] [1717086501.358136112]: waiting for gps. current accuracy: 999
+[ WARN] [1717086502.148443266]: Low quality GPS
+[ WARN] [1717086502.148565634]: GPS timeout
+[ INFO] [1717086502.358131493]: waiting for gps. current accuracy: 999
+[ WARN] [1717086503.148616683]: Low quality GPS
+[ WARN] [1717086503.148745699]: GPS timeout
+[ INFO] [1717086503.358137672]: waiting for gps. current accuracy: 999
+[ INFO] [1717086504.358138985]: waiting for gps. current accuracy: 999
+[ WARN] [1717086504.648424998]: Low quality GPS
+[ WARN] [1717086504.648574014]: GPS timeout
+[ INFO] [1717086505.358134339]: waiting for gps. current accuracy: 999
+[ WARN] [1717086505.648495500]: Low quality GPS
+[ WARN] [1717086505.648696718]: GPS timeout
+[ INFO] [1717086506.358143899]: waiting for gps. current accuracy: 999
+[ WARN] [1717086506.648461247]: Low quality GPS
+[ WARN] [1717086507.148575934]: GPS timeout
+[ INFO] [1717086507.358134130]: waiting for gps. current accuracy: 999
+[ WARN] [1717086507.648501552]: Low quality GPS
+[ WARN] [1717086508.148764572]: GPS timeout
+[ INFO] [1717086508.358131290]: waiting for gps. current accuracy: 999
+[ INFO] [1717086509.097260702]: GPS data now valid
+[ INFO] [1717086509.097542809]: First GPS data, moving kalman filter to -8.37316, -21.949
+[ INFO] [1717086509.148468832]: GPS quality: 0.907805
+[ INFO] [1717086509.358109120]: Got good gps, let's go
+[ INFO] [1717086519.358357159]: 
+[ INFO] [1717086519.358500656]: 
+[ INFO] [1717086519.358584414]: --------------------------------------
+[ INFO] [1717086519.358661376]: - Entered state: MOWING
+[ INFO] [1717086519.358741634]: --------------------------------------
+[ INFO] [1717086519.362886525]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086519.364069004]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086519.364239853]: MowingBehavior: Executing mowing plan
+[ INFO] [1717086519.364335407]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086519.364425665]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086519.414928827]: Failed to get a plan.
+[ INFO] [1717086519.648524874]: GPS quality: 0.913977
+[ INFO] [1717086524.372543301]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086524.372696965]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086524.387274806]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086524.387730464]: No Recovery Behaviors loaded!
+[ WARN] [1717086524.387831222]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086524.464931240]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086524.465090589]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086524.465188791]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1717086524.468932578]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086524.470372405]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086524.470489569]: MowingBehavior: CONTINUING
+[ INFO] [1717086524.474273060]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086524.475959938]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086524.476123250]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086524.476176878]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086524.525442045]: Failed to get a plan.
+[ INFO] [1717086529.482816977]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086529.483495687]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086529.517320047]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086529.517793891]: No Recovery Behaviors loaded!
+[ WARN] [1717086529.517961351]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086529.576684039]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086529.576804315]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086529.576862277]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1717086529.580427290]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086529.581593029]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086529.581730786]: MowingBehavior: CONTINUING
+[ INFO] [1717086529.586731681]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086529.588160045]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086529.588688684]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086529.589430727]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1717086529.641224016]: Failed to get a plan.
+[ INFO] [1717086530.148510026]: GPS quality: 0.904475
+[ INFO] [1717086534.597932877]: Global planner patience has been exceeded! Cancel planning...
+[ WARN] [1717086534.598195983]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[ INFO] [1717086534.599464906]: Planning patience (5s) has been exceeded; planner canceled!
+[ WARN] [1717086534.600028248]: No Recovery Behaviors loaded!
+[ WARN] [1717086534.600166671]: Abort the execution of the planner: Global planner exceeded the patience time
+[ INFO] [1717086534.690476797]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1717086534.690598202]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1717086534.690660775]: MowingBehavior: (FIRST POINT) - Attempt 0 / 3 Trimming first point off the beginning of the mow path.
+[ INFO] [1717086534.693954496]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086534.695322195]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086534.695453989]: MowingBehavior: CONTINUING
+[ INFO] [1717086534.700019743]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1717086534.701752917]: successfully registered actions for mower_logic:mowing
+[ INFO] [1717086534.702151281]: MowingBehavior: Path segment length: 10 poses.
+[ INFO] [1717086534.702279038]: MowingBehavior: Skipping empty path.
+[ INFO] [1717086534.702338963]: MowingBehavior: Path segment length: 21 poses.
+[ INFO] [1717086534.702389943]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1717086534.747976656]: FTCLocalPlannerROS: Got new global plan with 361 points.
+[ INFO] [1717086537.041732201]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086537.042018067]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086540.148575033]: GPS quality: 0.913977
+[ INFO] [1717086550.648452514]: GPS quality: 0.910978
+[ INFO] [1717086560.648526357]: GPS quality: 0.893699
+[ INFO] [1717086571.148469414]: GPS quality: 0.910978
+[ INFO] [1717086578.192182931]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086578.192325762]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086578.241729341]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086578.241963763]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086580.791733234]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086580.791874750]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086580.842642103]: Action "move_base" succeeded!
+[ INFO] [1717086580.903224306]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1717086580.906864744]: Clearing Nav Point
+[ INFO] [1717086580.907846264]: Map Position: x=0.621614, y=-7.37133
+[ INFO] [1717086580.907942466]: Map Size: x=38.6079, y=49.6118
+[ INFO] [1717086581.148485106]: GPS quality: 0.913977
+[ INFO] [1717086583.127565108]: docking pose: position: 
+  x: -9.807
+  y: -19.3233
+  z: 0
+orientation: 
+  x: 0
+  y: 0
+  z: 0.853344
+  w: 0.521348
+[ INFO] [1717086583.128845420]: MowingBehavior: (MOW) First point reached - Executing mow path with 21 poses, from index 0
+[ WARN] [1717086583.149236645]: #### om_mower_logic: setMowerEnabled(1, 1) call
+[ INFO] [1717086583.153602774]: Setting mow enabled to 1
+[ INFO] [1717086583.154771235]: successfully set mower enabled to 1 (direction 1)
+[ WARN] [1717086583.155117803]: #### om_mower_logic: setMowerEnabled(1, 1) call completed within 0.00592645s
+[ INFO] [1717086583.173084848]: FTCLocalPlannerROS: Got new global plan with 21 points.
+[ INFO] [1717086583.173913352]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086583.174045998]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086584.134283413]: MowingBehavior: (MOW) Progress: 1/21
+[ INFO] [1717086589.234312176]: MowingBehavior: (MOW) Progress: 6/21
+[ INFO] [1717086591.648504102]: GPS quality: 0.907805
+[ INFO] [1717086594.333945521]: MowingBehavior: (MOW) Progress: 12/21
+[ INFO] [1717086599.434303948]: MowingBehavior: (MOW) Progress: 18/21
+[ INFO] [1717086602.148921170]: GPS quality: 0.907805
+[ INFO] [1717086602.761139187]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086602.761526458]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086602.811017021]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086602.811376867]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086603.411019414]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086603.411364278]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086603.530537134]: MowingBehavior: (MOW)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1717086603.530689224]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 20 of 21
+[ INFO] [1717086603.530834351]: >>> State: Succeeded <<<
+[ INFO] [1717086603.530962553]: MowingBehavior: (MOW) Mow path finished, skipping to next mow path.
+[ INFO] [1717086603.531072773]: MowingBehavior: Path segment length: 34 poses.
+[ INFO] [1717086603.531197401]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1717086603.574978413]: FTCLocalPlannerROS: Got new global plan with 338 points.
+[ INFO] [1717086607.316718561]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086607.317102184]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086612.648450605]: GPS quality: 0.901005
+[ INFO] [1717086622.648524043]: GPS quality: 0.904475
+[ INFO] [1717086633.148677949]: GPS quality: 0.907805
+[ INFO] [1717086641.417112894]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086641.417258466]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086641.466696294]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086641.466839162]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086642.666726484]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086642.666870538]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086642.716446993]: Action "move_base" succeeded!
+[ INFO] [1717086642.731699716]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1717086642.735951440]: Clearing Nav Point
+[ INFO] [1717086642.736190881]: Map Position: x=0.621614, y=-7.37133
+[ INFO] [1717086642.736257806]: Map Size: x=38.6079, y=49.6118
+[ INFO] [1717086643.648567562]: GPS quality: 0.904475
+[ INFO] [1717086644.895483965]: docking pose: position: 
+  x: -9.807
+  y: -19.3233
+  z: 0
+orientation: 
+  x: 0
+  y: 0
+  z: 0.853344
+  w: 0.521348
+[ INFO] [1717086644.898235733]: MowingBehavior: (MOW) First point reached - Executing mow path with 34 poses, from index 0
+[ INFO] [1717086644.931687370]: FTCLocalPlannerROS: Got new global plan with 34 points.
+[ INFO] [1717086644.932468931]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086644.932597540]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086645.904090965]: MowingBehavior: (MOW) Progress: 1/34
+[ INFO] [1717086651.002738491]: MowingBehavior: (MOW) Progress: 11/34
+[ INFO] [1717086654.148590036]: GPS quality: 0.904475
+[ INFO] [1717086656.102272459]: MowingBehavior: (MOW) Progress: 16/34
+[ INFO] [1717086661.103809094]: MowingBehavior: (MOW) Progress: 26/34
+[ INFO] [1717086664.148605520]: GPS quality: 0.893699
+[ INFO] [1717086664.428500327]: Got invalid checksum from Low Level Board
+[ INFO] [1717086666.024961076]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086666.025110000]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086666.074664218]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086666.074811901]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086666.125786151]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086666.126082516]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086666.198801269]: MowingBehavior: (MOW)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1717086666.198912304]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 33 of 34
+[ INFO] [1717086666.198964526]: >>> State: Succeeded <<<
+[ INFO] [1717086666.199014544]: MowingBehavior: (MOW) Mow path finished, skipping to next mow path.
+[ INFO] [1717086666.199073043]: MowingBehavior: Path segment length: 1599 poses.
+[ INFO] [1717086666.199135227]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1717086666.251165459]: FTCLocalPlannerROS: Got new global plan with 610 points.
+[ INFO] [1717086666.644861975]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086666.645015898]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086674.648694559]: GPS quality: 0.907805
+[ INFO] [1717086685.149279176]: GPS quality: 0.904475
+[ INFO] [1717086695.648417380]: GPS quality: 0.897409
+[ INFO] [1717086705.648455618]: GPS quality: 0.904475
+[ INFO] [1717086713.695110748]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1717086713.695498631]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1717086713.744267350]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1717086713.745134520]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1717086714.844328319]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1717086714.844815181]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1717086714.894138520]: Action "move_base" succeeded!
+[ INFO] [1717086714.899578947]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1717086714.903955392]: Clearing Nav Point
+[ INFO] [1717086714.904236610]: Map Position: x=0.621614, y=-7.37133
+[ INFO] [1717086714.904330164]: Map Size: x=38.6079, y=49.6118
+[ INFO] [1717086715.648691325]: GPS quality: 0.901005
+[ INFO] [1717086717.070876211]: docking pose: position: 
+  x: -9.807
+  y: -19.3233
+  z: 0
+orientation: 
+  x: 0
+  y: 0
+  z: 0.853344
+  w: 0.521348
+[ INFO] [1717086717.073956567]: MowingBehavior: (MOW) First point reached - Executing mow path with 1599 poses, from index 0
+[ INFO] [1717086717.105005324]: FTCLocalPlannerROS: Got new global plan with 1599 points.
+[ INFO] [1717086717.106231025]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[ INFO] [1717086717.106456985]: FTCLocalPlannerROS: Switching to state 1
+[ INFO] [1717086718.080443113]: MowingBehavior: (MOW) Progress: 1/1599
+[ INFO] [1717086723.080965175]: MowingBehavior: (MOW) Progress: 20/1599

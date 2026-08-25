@@ -1,0 +1,108 @@
+__  ___                    ___
+   /  |/  /___ _      ______ _/ (_)
+  / /|_/ / __ \ | /| / / __ `/ / /
+ / /  / / /_/ / |/ |/ / /_/ / / /
+/_/  /_/\____/|__/|__/\__, /_/_/
+                     /____/
+
+
+ * Master USART (debug) initialized
+ * LED initialized
+ * ADC1 initialized
+ * Timer3 (Beeper) initialized
+ * 24V switched on
+ * RAIN Sensor enabled
+ * HALL Sensor enabled
+ * SPI3 SPIFlash ID: 0x68 0x40 0x13
+OK
+   >> LittleFS '/' content ...
+
+      (dir)  '.'
+      (dir)  '..'
+      (file) 'boot_count'     4 B
+
+   >> boot_count: 192
+ * SPIFLASH initialized
+ * Hard I2C initialized
+ * Accelerometer (onboard/tilt safety) initialized
+ * Soft I2C (J18) initialized
+ * Testing supported IMUs:
+> [AltIMU-10v5] - Error probing for LSM6DS33 (Gyro / Accelerometer) at I2C addr=0x6b
+> [WT901] - Error probing for (Gyro / Accelerometer) at I2C addr=0x50
+> [MPU-6050] - Error probing for (Gyro / Accelerometer) at I2C addr=0x68 80
+ * MPU 6050 initialized
+   >> External IMU Calibration started - make sure bot is level and standing still ...
+   >> External IMU Calibration factors accelerometer [-0.000599 -0.000599 0.000000]
+   >> External IMU Calibration accelerometer covariance diagonal [0.000000 0.000000 0.000000]
+   >> External IMU Calibration factors gyro [-0.000133 -0.000133 -0.000133]
+   >> External IMU Calibration gyro covariance diagonal [0.000000 0.000000 0.000000]
+ * Panel initialized
+ * Emergency sensors initialized
+ * Charge Controler PWM Timers initialized
+ * Timer1 (Charge PWM) initialized
+ * USB CDC initialized
+ * Drive Motors USART initialized
+ * Blade Motor UART initialized
+ * NBT Main timers initialized
+ * ROS serial node initialized
+
+> entering main loop ...
+> 
+>  WWDG init Error
+>  * Drive Motor Controller initialized
+>  * Blade Motor Controller initialized
+> t: 101 6
+>     __  ___                    ___
+>    /  |/  /___ _      ______ _/ (_)
+>   / /|_/ / __ \ | /| / / __ `/ / /
+>  / /  / / /_/ / |/ |/ / /_/ / / /
+> /_/  /_/\____/|__/|__/\__, /_/_/
+>                      /____/
+> 
+> 
+>  * Master USART (debug) initialized
+>  * LED initialized
+>  * ADC1 initialized
+>  * Timer3 (Beeper) initialized
+>  * 24V switched on
+>  * RAIN Sensor enabled
+>  * HALL Sensor enabled
+>  * SPI3 SPIFlash ID: 0x68 0x40 0x13
+> OK
+>    >> LittleFS '/' content ...
+> 
+>       (dir)  '.'
+>       (dir)  '..'
+>       (file) 'boot_count'     4 B
+> 
+>    >> boot_count: 193
+>  * SPIFLASH initialized
+>  * Hard I2C initialized
+>  * Accelerometer (onboard/tilt safety) initialized
+>  * Soft I2C (J18) initialized
+>  * Testing supported IMUs:
+>     > [AltIMU-10v5] - Error probing for LSM6DS33 (Gyro / Accelerometer) at I2C addr=0x6b
+>     > [WT901] - Error probing for (Gyro / Accelerometer) at I2C addr=0x50
+>     > [MPU-6050] - Error probing for (Gyro / Accelerometer) at I2C addr=0x68 f7
+>  * MPU 6050 initialized
+>    >> External IMU Calibration started - make sure bot is level and standing still ...
+>    >> External IMU Calibration factors accelerometer [0.000778 0.098258 0.000000]
+>    >> External IMU Calibration accelerometer covariance diagonal [0.000060 0.955806 0.000000]
+>    >> External IMU Calibration factors gyro [0.000000 0.000000 0.000000]
+>    >> External IMU Calibration gyro covariance diagonal [0.000000 0.000000 0.000000]
+>  * Panel initialized
+>  * Emergency sensors initialized
+>  * Charge Controler PWM Timers initialized
+>  * Timer1 (Charge PWM) initialized
+>  * USB CDC initialized
+>  * Drive Motors USART initialized
+>  * Blade Motor UART initialized
+>  * NBT Main timers initialized
+>  * ROS serial node initialized
+> 
+>  >>> entering main loop ...
+> 
+>  WWDG init Error
+>  * Drive Motor Controller initialized
+>  * Blade Motor Controller initialized
+> t: 101

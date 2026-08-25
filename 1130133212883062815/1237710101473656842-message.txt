@@ -1,0 +1,178 @@
+icon: mdi:robot-mower
+title: Kosilnica
+path: kosilnica
+visible:
+  - user: xxx
+  - user: xxx
+badges: []
+cards:
+  - type: vertical-stack
+    cards:
+      - type: horizontal-stack
+        title: Košnja
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_start_mowing
+            icon: mdi:play
+            name: Začni
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_pause_mowing
+            icon: mdi:pause
+            name: Pavza
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_continue_mowing
+            icon: mdi:play-pause
+            name: Nadaljuj
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_abort_mowing
+            icon: mdi:home
+            name: Polnjenje
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_skip_area
+            icon: mdi:skip-next
+            name: Preskoči območje
+      - type: horizontal-stack
+        title: Dodajanje novih območij
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_start_area_recording
+            show_state: false
+            name: Novo območje
+            icon: mdi:record-rec
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_start_recording
+            icon: mdi:record
+            name: Snemaj
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_stop_recording
+            icon: mdi:record
+            name: Konec snemanja
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_record_docking_point
+            icon: mdi:home
+            name: Polnilna postaja
+      - type: horizontal-stack
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_save_mowing_area
+            name: Območje košnje
+            icon: mdi:grass
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_save_navigation_area
+            show_state: false
+            name: Območje za vožnjo
+            icon: mdi:map-marker-path
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_discard_area
+            name: Zavrzi območje
+            icon: mdi:delete
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_exit
+            icon: mdi:exit-to-app
+            name: Izhod iz snemanja
+      - type: horizontal-stack
+        title: Avtomatika
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: input_boolean.samodejna_kosnja
+            show_state: true
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: input_boolean.ignoriraj_dez_pri_kosnji
+            show_state: true
+            name: Ignoriraj dež
+            icon: mdi:weather-rainy
+  - show_name: true
+    show_icon: true
+    show_state: true
+    type: glance
+    entities:
+      - entity: sensor.mow_current_state
+        name: Stanje
+      - entity: binary_sensor.openmower_is_charging
+        name: Polnjenje
+      - entity: binary_sensor.openmower_emergency
+        name: EMG
+      - entity: sensor.mow_motor_temp
+        name: T motorja
+      - entity: sensor.openmower_gps
+        name: GPS
+      - entity: sensor.battery
+        name: Baterija
+      - entity: sensor.charge_current
+        name: Tok
+      - entity: sensor.v_battery
+        name: Baterija V
+      - entity: sensor.v_charge
+        name: Polnjenje V
+      - entity: automation.kosilnica_openmower
+        name: Program
+      - entity: sensor.openmower_wheelticks_left
+        name: Enkoder L
+      - entity: sensor.openmower_wheelticks_right
+        name: Enkoder D
+    state_color: true
+    columns: 5
+  - type: iframe
+    url: >-
+      <GRAFANA_URL>
+    aspect_ratio: "1"

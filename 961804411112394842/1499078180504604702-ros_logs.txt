@@ -1,0 +1,227 @@
+open_mower_ros  | [WARN] [1777475175.783013692]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.823011318]: [ID=2] no endpoint for service
+open_mower_ros  | [INFO] [1777475175.832176096]: [ID=3] Sending Service Claim
+open_mower_ros  | [INFO] [1777475175.832281798]: [ID=8] Sending Service Claim
+open_mower_ros  | [INFO] [1777475175.832444869]: >>> [ID=3] Received claim message
+open_mower_ros  | [INFO] [1777475175.832480979]: >>> [ID=3] service claimed successfully.
+open_mower_ros  | [INFO] [1777475175.832505330]: >>> [ID=3] Service started without requiring configuration
+open_mower_ros  | [INFO] [1777475175.832529015]: >>> [ID=8] Received claim message
+open_mower_ros  | [INFO] [1777475175.832548719]: >>> [ID=8] service claimed successfully.
+open_mower_ros  | [INFO] [1777475175.832568292]: >>> [ID=8] Service started without requiring configuration
+open_mower_ros  | [INFO] [1777475175.832596125]: [ID=3] Successfully claimed service
+open_mower_ros  | [INFO] [1777475175.832615662]: PJB: Service Connected! ID: 3
+open_mower_ros  | [INFO] [1777475175.832662328]: [ID=8] Successfully claimed service
+open_mower_ros  | [INFO] [1777475175.832683772]: PJB: Service Connected! ID: 8
+open_mower_ros  | [WARN] [1777475175.863041980]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.903032161]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.943017491]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.983030690]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.992150895]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475175.996201414]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475176.023006429]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475176.062997819]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475176.103023005]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475176.143072894]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475176.183034432]: [ID=2] no endpoint for service
+open_mower_ros  | [INFO] [1777475176.184845029]: Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1777475176.185432278]: Found new service (Type: InputService, ID: 7, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1777475176.187068841]: Found new service (Type: DiffDriveService, ID: 2, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1777475176.187482130]: Found new service (Type: EmergencyService, ID: 1, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1777475176.187735384]: Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1777475176.308606797]: Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [WARN] [1777475176.337207633]: Costmap2DROS transform timeout. Current time: 1777475176.3372, global_pose stamp: 1777474784.1165, tolerance: 0.3000
+open_mower_ros  | [WARN] [1777475176.496020713]: om_mower_logic: EMERGENCY pose values stopped. dt was: 392.379328670
+open_mower_ros  | [INFO] [1777475176.846397912]: [ID=1] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.846483651]: [ID=2] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.846530483]: [ID=4] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.846564372]: [ID=5] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.846596297]: [ID=6] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.846633963]: >>> [ID=1] Received claim message
+open_mower_ros  | [INFO] [1777475176.846677166]: >>> [ID=1] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.846700721]: >>> [ID=1] Service started without requiring configuration
+open_mower_ros  | [INFO] [1777475176.846745665]: >>> [ID=2] Received claim message
+open_mower_ros  | [INFO] [1777475176.846764757]: >>> [ID=2] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.846783368]: >>> [ID=4] Received claim message
+open_mower_ros  | [INFO] [1777475176.846801145]: >>> [ID=4] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.846857607]: >>> [ID=5] Received claim message
+open_mower_ros  | [INFO] [1777475176.846885921]: >>> [ID=5] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.847036919]: >>> [ID=6] Received claim message
+open_mower_ros  | [INFO] [1777475176.847068937]: >>> [ID=6] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.847116232]: [ID=7] Sending Service Claim
+open_mower_ros  | [INFO] [1777475176.847461726]: [ID=1] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.847651185]: PJB: Service Connected! ID: 1
+open_mower_ros  | [INFO] [1777475176.847796183]: >>> [ID=7] Received claim message
+open_mower_ros  | [INFO] [1777475176.847835219]: >>> [ID=7] service claimed successfully.
+open_mower_ros  | [INFO] [1777475176.848029178]: [ID=4] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.848164509]: PJB: Service Connected! ID: 4
+open_mower_ros  | [INFO] [1777475176.848213620]: [ID=5] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.848232490]: PJB: Service Connected! ID: 5
+open_mower_ros  | [INFO] [1777475176.848253211]: [ID=6] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.848270211]: PJB: Service Connected! ID: 6
+open_mower_ros  | [INFO] [1777475176.848292044]: [ID=7] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.848310303]: PJB: Service Connected! ID: 7
+open_mower_ros  | [INFO] [1777475176.848442690]: [ID=2] Successfully claimed service
+open_mower_ros  | [INFO] [1777475176.848504633]: PJB: Service Connected! ID: 2
+open_mower_ros  | [INFO] [1777475177.183489520]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [INFO] [1777475177.183980807]: Input config JSON has 562 bytes, compressed to 150 bytes
+open_mower_ros  | [INFO] [1777475177.184260061]: >>> [ID=7] Received Configuration
+open_mower_ros  | [WARN] [1777475177.537213071]: Costmap2DROS transform timeout. Current time: 1777475177.5371, global_pose stamp: 1777474784.1165, tolerance: 0.3000
+open_mower_ros  | [INFO] [1777475178.200284695]: PJB: OnServiceDisconnected. ID: 1
+open_mower_ros  | [WARN] [1777475178.200174363]: [ID=1] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.200410452]: [ID=2] Service timed out, removing service.
+open_mower_ros  | [INFO] [1777475178.200914535]: PJB: OnServiceDisconnected. ID: 2
+open_mower_ros  | [INFO] [1777475178.200965535]: PJB: OnServiceDisconnected. ID: 3
+open_mower_ros  | [WARN] [1777475178.200944739]: [ID=3] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.200982775]: [ID=4] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.201018571]: [ID=5] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.201075773]: [ID=6] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.201108514]: [ID=7] Service timed out, removing service.
+open_mower_ros  | [WARN] [1777475178.201144513]: [ID=8] Service timed out, removing service.
+open_mower_ros  | [INFO] [1777475178.201002349]: PJB: OnServiceDisconnected. ID: 4
+open_mower_ros  | [INFO] [1777475178.201059829]: PJB: OnServiceDisconnected. ID: 5
+open_mower_ros  | [INFO] [1777475178.201092273]: PJB: OnServiceDisconnected. ID: 6
+open_mower_ros  | [INFO] [1777475178.201125198]: PJB: OnServiceDisconnected. ID: 7
+open_mower_ros  | [INFO] [1777475178.201160920]: PJB: OnServiceDisconnected. ID: 8
+open_mower_ros  | [WARN] [1777475178.223031975]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.263004301]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.303047106]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.343021154]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.383037646]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.405342138]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.405422803]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.423011508]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.463007500]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.492181536]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496272667]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496314778]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496331796]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496349814]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496364666]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496380165]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496395461]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.496419146]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.503004066]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.543095056]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.583027864]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.623024096]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.663014218]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.703027413]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.737206916]: Costmap2DROS transform timeout. Current time: 1777475178.7372, global_pose stamp: 1777474784.1165, tolerance: 0.3000
+open_mower_ros  | [WARN] [1777475178.743068608]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.783054007]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.823028444]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.863025250]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.903040149]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.943050733]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.983035485]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.992159563]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475178.996303674]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.022996720]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.062985624]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.102981398]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.143026487]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.183022187]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.223013517]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.263021828]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.303053935]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.343019709]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.383031632]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.405390681]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.405493290]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.423009147]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.462995532]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.492162683]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496268389]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496304092]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496322925]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496339332]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496359517]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496375257]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496390627]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.496411553]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.503011214]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.543016710]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.583063724]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.623025592]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.663006422]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.703005863]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.737207239]: Costmap2DROS transform timeout. Current time: 1777475179.7371, global_pose stamp: 1777474784.1165, tolerance: 0.3000
+open_mower_ros  | [WARN] [1777475179.743021877]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.783024300]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.823017315]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.863065940]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.903015308]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.943008897]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.983014208]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.992144695]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.992196657]: [ID=3] no endpoint for service
+open_mower_ros  | [WARN] [1777475179.996201456]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.022997336]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.062991171]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.103019283]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.143063209]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.183018451]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.223010360]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.262998565]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.303014455]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.304562613]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.343005900]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.383050345]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.405352990]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.423017162]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.463001274]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.492163873]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496222024]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496255690]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496276097]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496405558]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496438001]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496454649]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496478130]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.496504574]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.503003571]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.542996554]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.583021351]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.623009741]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.663003261]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.703049965]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.737214272]: Costmap2DROS transform timeout. Current time: 1777475180.7372, global_pose stamp: 1777474784.1165, tolerance: 0.3000
+open_mower_ros  | [WARN] [1777475180.743050892]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.783034208]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.823002673]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.863014025]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.903013952]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.943020046]: [ID=2] no endpoint for service
+çopen_mower_ros  | [WARN] [1777475180.983054954]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.992152961]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475180.996208149]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.022999680]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.062998982]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.103012432]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.143004623]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.183025591]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.223021190]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.263057991]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.303033886]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.305308828]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.305654674]: [ID=6] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.343014022]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.383032027]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.423022866]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.463007872]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.492162437]: [ID=1] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496327772]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496370253]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496388179]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496406289]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496421826]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496437067]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496452881]: [ID=8] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.496587564]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.503015026]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.543018865]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.583037370]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.623021709]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.663006104]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.703030332]: [ID=2] no endpoint for service
+open_mower_ros  | [WARN] [1777475181.743091670]: [ID=2] no endpoint for service

@@ -1,0 +1,28 @@
+openmower@openmower:~ $ sudo podman logs -t openmower | grep -i ntrip
+2025-04-27T22:58:08.914169673+02:00  * /ntrip_client/ntrip_client_node/authenticate: True
+2025-04-27T22:58:08.914169673+02:00  * /ntrip_client/ntrip_client_node/ca_cert:
+2025-04-27T22:58:08.914169673+02:00  * /ntrip_client/ntrip_client_node/cert:
+2025-04-27T22:58:08.914169673+02:00  * /ntrip_client/ntrip_client_node/host: 192.168.1.239
+2025-04-27T22:58:08.914169673+02:00  * /ntrip_client/ntrip_client_node/key:
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/mountpoint: base1
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/ntrip_version:
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/password: password
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/port: 2101
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+2025-04-27T22:58:08.914215192+02:00  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+2025-04-27T22:58:08.914260266+02:00  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+2025-04-27T22:58:08.914260266+02:00  * /ntrip_client/ntrip_client_node/ssl: False
+2025-04-27T22:58:08.914260266+02:00  * /ntrip_client/ntrip_client_node/username: user
+2025-04-27T22:58:08.914452322+02:00   /ntrip_client/
+2025-04-27T22:58:08.914452322+02:00     ntrip_client_node (ntrip_client/ntrip_ros.py)
+2025-04-27T22:58:10.298198997+02:00 process[ntrip_client/ntrip_client_node-3]: started with pid [120]
+openmower@openmower:~ $
+
+
+
+
+

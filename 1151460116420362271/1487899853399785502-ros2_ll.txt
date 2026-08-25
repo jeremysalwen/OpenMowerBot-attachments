@@ -1,0 +1,65 @@
+openmower@RPi-CM4:/opt/open_mower_ros$ ros2 topic echo /ll/mower_status
+stamp:
+  sec: 1774811873
+  nanosec: 814402943
+mower_status: 200
+raspberry_pi_power: false
+is_charging: false
+esc_power: false
+rain_detected: false
+sound_module_available: false
+sound_module_busy: false
+ui_board_available: false
+mow_enabled: false
+mower_esc_status: 0
+mower_esc_temperature: 46.70000076293945
+mower_esc_current: 0.0
+mower_motor_temperature: -78.4000015258789
+mower_motor_rpm: 0.0
+---
+stamp:
+  sec: 1774811874
+  nanosec: 314088624
+mower_status: 200
+raspberry_pi_power: false
+is_charging: false
+esc_power: false
+rain_detected: false
+sound_module_available: false
+sound_module_busy: false
+ui_board_available: false
+mow_enabled: false
+mower_esc_status: 0
+mower_esc_temperature: 46.70000076293945
+mower_esc_current: 0.0
+mower_motor_temperature: -78.9000015258789
+mower_motor_rpm: 0.0
+---
+stamp:
+  sec: 1774811874
+  nanosec: 814328023
+mower_status: 200
+raspberry_pi_power: false
+is_charging: false
+esc_power: false
+rain_detected: false
+sound_module_available: false
+sound_module_busy: false
+ui_board_available: false
+mow_enabled: false
+mower_esc_status: 0
+mower_esc_temperature: 46.70000076293945
+mower_esc_current: 0.0
+mower_motor_temperature: -79.0
+mower_motor_rpm: 0.0
+---
+^Copenmower@RPi-CM4:/opt/open_mower_ros$ ros2 topic echo /ll/power
+stamp:
+  sec: 1774811886
+  nanosec: 808140465
+v_charge: 0.0
+v_battery: 21.312000274658203
+charge_current: 0.0
+charger_enabled: true
+charger_status: Not Charging
+---

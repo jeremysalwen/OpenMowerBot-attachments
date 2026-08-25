@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMS Monitor</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --border: #e2e6ec;
+    --border-strong: #c8cdd8;
+    --volt-color: #0ea5e9;
+    --curr-pos-color: #10b981;
+    --curr-neg-color: #f59e0b;
+    --text-primary: #1a202c;
+    --text-muted: #64748b;
+    --accent: #6366f1;
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  /* ---- Header ---- */
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+  header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+  header .sub {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ---- Drop zone ---- */
+  #drop-zone {
+    flex: 1;
+    border: 1.5px dashed var(--border-strong);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--surface);
+    min-height: 0;
+  }
+  #drop-zone:hover, #drop-zone.drag-over {
+    border-color: var(--accent);
+    background: #f5f5ff;
+  }
+  #drop-zone p { font-size: 0.82rem; color: var(--text-muted); }
+  #drop-zone .hint {
+    font-size: 0.68rem;
+    color: #a0aec0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .actions { display: flex; gap: 8px; margin-top: 6px; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .file-btn {
+    padding: 0.4rem 1rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .file-btn:hover { background: #4f46e5; }
+  .paste-btn {
+    padding: 0.4rem 1rem;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .paste-btn:hover { background: var(--accent); color: #fff; }
+  #file-input { display: none; }
+
+  /* ---- Paste modal ---- */
+  #paste-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+  }
+  #paste-modal.open { display: flex; }
+  .modal-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    width: min(600px, 92vw);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .modal-box h2 { font-size: 0.85rem; font-weight: 500; color: var(--text-primary); }
+  .modal-box textarea {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-primary);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+  }
+  .modal-box textarea:focus { border-color: var(--accent); }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+  .btn-cancel {
+    padding: 0.38rem 0.9rem;
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    color: var(--text-muted);
+  }
+  .btn-ok {
+    padding: 0.38rem 0.9rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+  }
+  .btn-ok:hover { background: #4f46e5; }
+
+  /* ---- Metrics ---- */
+  #metrics-bar {
+    display: none;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .metric {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .metric-label {
+    font-size: 0.58rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .metric-value {
+    font-size: 0.82rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  .metric-value.volt { color: var(--volt-color); }
+  .metric-value.pos  { color: var(--curr-pos-color); }
+  .metric-value.neg  { color: var(--curr-neg-color); }
+  #reset-btn {
+    margin-left: auto;
+    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    align-self: center;
+    font-family: 'DM Sans', sans-serif;
+  }
+  #reset-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- Chart ---- */
+  #chart-box {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px 8px;
+    flex: 1;
+    min-height: 0;
+    flex-direction: column;
+  }
+  .chart-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  .chart-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .zoom-hint {
+    font-size: 0.62rem;
+    color: #b0b8c8;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: auto;
+  }
+  .legend { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.68rem; color: var(--text-muted); }
+  .legend-line { width: 16px; height: 2.5px; border-radius: 2px; }
+
+  .canvas-wrap { position: relative; flex: 1; min-height: 0; }
+  canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+
+  .crosshair {
+    position: absolute;
+    width: 1px;
+    background: rgba(0,0,0,0.18);
+    pointer-events: none;
+    display: none;
+  }
+
+  .tooltip {
+    position: fixed;
+    background: #fff;
+    border: 1px solid var(--border-strong);
+    border-radius: 7px;
+    padding: 7px 11px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 100;
+    line-height: 1.85;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  #no-data {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BMS Monitor</h1>
+  <span class="sub" id="duration-label">No data loaded</span>
+</header>
+
+<!-- Drop / paste zone -->
+<div id="drop-zone">
+  <p>Drop a BMS log file here</p>
+  <p class="hint">&gt;&gt;&gt; BMS Data: t=… V=… I=… T=… SOC=…</p>
+  <div class="actions">
+    <button class="file-btn" onclick="document.getElementById('file-input').click()">Choose file</button>
+    <button class="paste-btn" id="open-paste">Paste text</button>
+  </div>
+  <input type="file" id="file-input" accept=".txt,.log">
+</div>
+
+<!-- Paste modal -->
+<div id="paste-modal">
+  <div class="modal-box">
+    <h2>Paste BMS log data</h2>
+    <textarea id="paste-area" placeholder="Paste your log text here…"></textarea>
+    <div class="modal-actions">
+      <button class="btn-cancel" id="paste-cancel">Cancel</button>
+      <button class="btn-ok" id="paste-ok">Load</button>
+    </div>
+  </div>
+</div>
+
+<!-- Metrics -->
+<div id="metrics-bar">
+  <div class="metric"><span class="metric-label">Duration</span><span class="metric-value" id="m-dur">—</span></div>
+  <div class="metric"><span class="metric-label">Samples</span><span class="metric-value" id="m-n">—</span></div>
+  <div class="metric"><span class="metric-label">Avg voltage</span><span class="metric-value volt" id="m-vavg">—</span></div>
+  <div class="metric"><span class="metric-label">V min / max</span><span class="metric-value volt" id="m-vrange">—</span></div>
+  <div class="metric"><span class="metric-label">I max (charge)</span><span class="metric-value pos" id="m-imax">—</span></div>
+  <div class="metric"><span class="metric-label">I min (negative)</span><span class="metric-value neg" id="m-imin">—</span></div>
+  <div class="metric"><span class="metric-label">SOC</span><span class="metric-value" id="m-soc">—</span></div>
+  <button id="reset-btn">↩ Load new file</button>
+</div>
+
+<!-- Chart -->
+<div id="chart-box">
+  <div class="chart-header">
+    <span class="chart-title">Voltage &amp; Current</span>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-line" style="background:var(--volt-color)"></span>Voltage (V) — left</span>
+      <span class="legend-item"><span class="legend-line" style="background:var(--curr-pos-color)"></span>I ≥ 0 A — right</span>
+      <span class="legend-item"><span class="legend-line" style="background:var(--curr-neg-color)"></span>I &lt; 0 A — right</span>
+    </div>
+    <span class="zoom-hint">scroll to zoom · drag to pan</span>
+  </div>
+  <div class="canvas-wrap">
+    <canvas id="cv-main"></canvas>
+    <div class="crosshair" id="crosshair"></div>
+  </div>
+</div>
+
+<div id="no-data">No valid BMS data found.</div>
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const VOLT_COLOR   = '#0ea5e9';
+const CURR_P_COLOR = '#10b981';
+const CURR_N_COLOR = '#f59e0b';
+
+// ---- Parse ----
+function parseLog(text) {
+  const re = /BMS Data:\s+t=(\d+)\s+V=([\d.]+)\s+I=(-?[\d.]+)\s+T=(-?[\d.]+)\s+SOC=([\d.]+)/g;
+  const rows = []; let m;
+  while ((m = re.exec(text)) !== null)
+    rows.push({ t: +m[1], v: +m[2], i: +m[3], temp: +m[4], soc: +m[5] });
+  return rows;
+}
+
+// ---- State ----
+let XS = [], VS = [], IS = [], ROWS = [];
+let viewX0 = 0, viewX1 = 1; // fraction of full range visible
+let dragStart = null;
+
+// ---- Render data ----
+function render(rows) {
+  document.getElementById('no-data').style.display = rows.length === 0 ? 'block' : 'none';
+  if (!rows.length) return;
+
+  ROWS = rows;
+  const n = rows.length;
+  const t0 = rows[0].t;
+  XS = rows.map(r => (r.t - t0) / 1000);
+  VS = rows.map(r => r.v);
+  IS = rows.map(r => r.i);
+  viewX0 = 0; viewX1 = 1;
+
+  document.getElementById('drop-zone').style.display   = 'none';
+  document.getElementById('metrics-bar').style.display = 'flex';
+  document.getElementById('chart-box').style.display   = 'flex';
+
+  const dur = XS[n - 1];
+  document.getElementById('duration-label').textContent = `${(dur/60).toFixed(1)} min · ${n} samples`;
+  document.getElementById('m-dur').textContent   = (dur/60).toFixed(1) + ' min';
+  document.getElementById('m-n').textContent     = n;
+  document.getElementById('m-vavg').textContent  = (VS.reduce((a,b)=>a+b,0)/n).toFixed(3) + ' V';
+  document.getElementById('m-vrange').textContent = Math.min(...VS).toFixed(2) + ' / ' + Math.max(...VS).toFixed(2) + ' V';
+  document.getElementById('m-imax').textContent  = '+' + Math.max(...IS).toFixed(3) + ' A';
+  document.getElementById('m-imin').textContent  = Math.min(...IS).toFixed(3) + ' A';
+  const socs = rows.map(r => r.soc);
+  document.getElementById('m-soc').textContent  = Math.min(...socs).toFixed(1) + ' – ' + Math.max(...socs).toFixed(1) + ' %';
+
+  draw();
+}
+
+// ---- Draw ----
+function draw() {
+  const canvas = document.getElementById('cv-main');
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth;
+  const H = canvas.offsetHeight;
+  if (!W || !H || !XS.length) return;
+
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const PAD = { top: 14, right: 70, bottom: 38, left: 70 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+
+  const n = XS.length;
+  const xFull = XS[n - 1];
+  const xMin = viewX0 * xFull;
+  const xMax = viewX1 * xFull;
+
+  // Visible slice
+  const visMask = XS.map(x => x >= xMin && x <= xMax);
+  const visVs = VS.filter((_,i) => visMask[i]);
+  const visIs = IS.filter((_,i) => visMask[i]);
+
+  const vPad = 0.06;
+  const vMin = (visVs.length ? Math.min(...visVs) : Math.min(...VS)) - vPad;
+  const vMax = (visVs.length ? Math.max(...visVs) : Math.max(...VS)) + vPad;
+
+  const iAbsMax = Math.max(
+    Math.abs(visIs.length ? Math.min(...visIs) : Math.min(...IS)),
+    Math.abs(visIs.length ? Math.max(...visIs) : Math.max(...IS))
+  ) * 1.3 || 0.1;
+  const iMin = -iAbsMax, iMax = iAbsMax;
+
+  const toX  = x => PAD.left + ((x - xMin) / (xMax - xMin)) * pw;
+  const toYV = y => PAD.top + ph - ((y - vMin) / (vMax - vMin)) * ph;
+  const toYI = y => PAD.top + ph - ((y - iMin) / (iMax - iMin)) * ph;
+
+  // Grid
+  const vTicks = 5;
+  ctx.strokeStyle = '#eef0f6';
+  ctx.lineWidth = 1;
+  for (let i = 0; i <= vTicks; i++) {
+    const yv = vMin + (vMax - vMin) * (i / vTicks);
+    const yp = toYV(yv);
+    ctx.beginPath(); ctx.moveTo(PAD.left, yp); ctx.lineTo(PAD.left + pw, yp); ctx.stroke();
+  }
+
+  // X grid: pick a nice step
+  const xRange = xMax - xMin;
+  const rawStep = xRange / 6;
+  const niceSteps = [10,30,60,120,300,600,900,1800,3600];
+  const xStep = niceSteps.find(s => s >= rawStep) || niceSteps[niceSteps.length-1];
+  const xStart = Math.ceil(xMin / xStep) * xStep;
+  for (let xv = xStart; xv <= xMax; xv += xStep) {
+    const xp = toX(xv);
+    ctx.beginPath(); ctx.strokeStyle = '#eef0f6'; ctx.moveTo(xp, PAD.top); ctx.lineTo(xp, PAD.top + ph); ctx.stroke();
+  }
+
+  // Zero line
+  ctx.strokeStyle = 'rgba(0,0,0,0.10)';
+  ctx.setLineDash([4, 4]);
+  const zp = toYI(0);
+  ctx.beginPath(); ctx.moveTo(PAD.left, zp); ctx.lineTo(PAD.left + pw, zp); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Clip to plot area
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(PAD.left, PAD.top, pw, ph);
+  ctx.clip();
+
+  // Current fills
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), zp);
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYI(Math.max(0, IS[i])));
+  ctx.lineTo(toX(XS[n-1]), zp); ctx.closePath();
+  ctx.fillStyle = 'rgba(16,185,129,0.10)'; ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), zp);
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYI(Math.min(0, IS[i])));
+  ctx.lineTo(toX(XS[n-1]), zp); ctx.closePath();
+  ctx.fillStyle = 'rgba(245,158,11,0.10)'; ctx.fill();
+
+  // Current line
+  ctx.lineWidth = 1.5; ctx.lineJoin = 'round';
+  for (let i = 1; i < n; i++) {
+    ctx.beginPath();
+    ctx.strokeStyle = IS[i] >= 0 ? CURR_P_COLOR : CURR_N_COLOR;
+    ctx.moveTo(toX(XS[i-1]), toYI(IS[i-1]));
+    ctx.lineTo(toX(XS[i]),   toYI(IS[i]));
+    ctx.stroke();
+  }
+
+  // Voltage fill
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), toYV(VS[0]));
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYV(VS[i]));
+  ctx.lineTo(toX(XS[n-1]), PAD.top + ph);
+  ctx.lineTo(toX(XS[0]),   PAD.top + ph);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(14,165,233,0.06)'; ctx.fill();
+
+  // Voltage line
+  ctx.beginPath();
+  ctx.strokeStyle = VOLT_COLOR; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+  for (let i = 0; i < n; i++)
+    i === 0 ? ctx.moveTo(toX(XS[i]), toYV(VS[i])) : ctx.lineTo(toX(XS[i]), toYV(VS[i]));
+  ctx.stroke();
+
+  ctx.restore();
+
+  // Left y-axis (Voltage)
+  ctx.font = '10px JetBrains Mono, monospace';
+  ctx.textAlign = 'right';
+  for (let i = 0; i <= vTicks; i++) {
+    const yv = vMin + (vMax - vMin) * (i / vTicks);
+    ctx.fillStyle = VOLT_COLOR;
+    ctx.fillText(yv.toFixed(2), PAD.left - 6, toYV(yv) + 3.5);
+  }
+  ctx.save();
+  ctx.fillStyle = VOLT_COLOR;
+  ctx.translate(12, PAD.top + ph / 2); ctx.rotate(-Math.PI / 2);
+  ctx.textAlign = 'center'; ctx.fillText('Voltage (V)', 0, 0); ctx.restore();
+
+  // Right y-axis (Current)
+  const iTicks = 5;
+  ctx.textAlign = 'left';
+  for (let i = 0; i <= iTicks; i++) {
+    const iv = iMin + (iMax - iMin) * (i / iTicks);
+    ctx.fillStyle = iv > 0.001 ? CURR_P_COLOR : iv < -0.001 ? CURR_N_COLOR : '#aaa';
+    ctx.fillText((iv >= 0 ? '+' : '') + iv.toFixed(3), PAD.left + pw + 6, toYI(iv) + 3.5);
+  }
+  ctx.save();
+  ctx.fillStyle = '#94a3b8';
+  ctx.translate(W - 11, PAD.top + ph / 2); ctx.rotate(Math.PI / 2);
+  ctx.textAlign = 'center'; ctx.fillText('Current (A)', 0, 0); ctx.restore();
+
+  // X-axis labels
+  ctx.fillStyle = '#94a3b8'; ctx.textAlign = 'center';
+  ctx.font = '10px JetBrains Mono, monospace';
+  for (let xv = xStart; xv <= xMax; xv += xStep) {
+    const label = xv >= 60 ? (xv/60).toFixed(1) + ' m' : xv.toFixed(0) + ' s';
+    ctx.fillText(label, toX(xv), PAD.top + ph + 16);
+  }
+  ctx.fillText('Time', PAD.left + pw / 2, PAD.top + ph + 32);
+
+  // Zoom indicator bar
+  if (viewX0 > 0.001 || viewX1 < 0.999) {
+    const barY = PAD.top + ph + 36;
+    const barW = pw;
+    ctx.fillStyle = '#e2e6ec';
+    ctx.beginPath(); ctx.roundRect(PAD.left, barY, barW, 3, 2); ctx.fill();
+    ctx.fillStyle = VOLT_COLOR;
+    ctx.beginPath(); ctx.roundRect(PAD.left + viewX0 * barW, barY, (viewX1 - viewX0) * barW, 3, 2); ctx.fill();
+  }
+
+  // Store layout
+  canvas._chart = { toX, toYV, toYI, PAD, pw, ph, xMin, xMax };
+}
+
+// ---- Zoom & pan ----
+const canvas = document.getElementById('cv-main');
+
+canvas.addEventListener('wheel', e => {
+  if (!XS.length) return;
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const c = canvas._chart;
+  if (!c) return;
+  const frac = Math.max(0, Math.min(1, (mx - c.PAD.left) / c.pw));
+  const pivotFrac = viewX0 + frac * (viewX1 - viewX0);
+
+  const factor = e.deltaY > 0 ? 1.15 : 0.87;
+  let newSpan = (viewX1 - viewX0) * factor;
+  newSpan = Math.max(0.02, Math.min(1, newSpan));
+
+  let x0 = pivotFrac - frac * newSpan;
+  let x1 = x0 + newSpan;
+  if (x0 < 0) { x0 = 0; x1 = newSpan; }
+  if (x1 > 1) { x1 = 1; x0 = 1 - newSpan; }
+  viewX0 = x0; viewX1 = x1;
+  draw();
+}, { passive: false });
+
+canvas.addEventListener('mousedown', e => {
+  if (!XS.length) return;
+  const rect = canvas.getBoundingClientRect();
+  dragStart = { x: e.clientX - rect.left, v0: viewX0, v1: viewX1 };
+  canvas.style.cursor = 'grabbing';
+});
+
+window.addEventListener('mousemove', e => {
+  if (!dragStart || !XS.length) return;
+  const c = canvas._chart;
+  if (!c) return;
+  const rect = canvas.getBoundingClientRect();
+  const dx = (dragStart.x - (e.clientX - rect.left)) / c.pw;
+  const span = dragStart.v1 - dragStart.v0;
+  let x0 = dragStart.v0 + dx;
+  let x1 = x0 + span;
+  if (x0 < 0) { x0 = 0; x1 = span; }
+  if (x1 > 1) { x1 = 1; x0 = 1 - span; }
+  viewX0 = x0; viewX1 = x1;
+  draw();
+});
+
+window.addEventListener('mouseup', () => {
+  dragStart = null;
+  canvas.style.cursor = 'crosshair';
+});
+
+// Double-click to reset zoom
+canvas.addEventListener('dblclick', () => {
+  viewX0 = 0; viewX1 = 1; draw();
+});
+
+// ---- Tooltip ----
+const tooltip = document.getElementById('tooltip');
+const ch = document.getElementById('crosshair');
+
+canvas.addEventListener('mousemove', e => {
+  if (!XS.length || dragStart) { tooltip.style.opacity = '0'; ch.style.display = 'none'; return; }
+  const c = canvas._chart;
+  if (!c) return;
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const frac = (mx - c.PAD.left) / c.pw;
+  if (frac < 0 || frac > 1) { tooltip.style.opacity = '0'; ch.style.display = 'none'; return; }
+
+  const xVal = c.xMin + frac * (c.xMax - c.xMin);
+  let xi = XS.findIndex(x => x >= xVal);
+  if (xi < 0) xi = XS.length - 1;
+  if (xi > 0 && Math.abs(XS[xi-1] - xVal) < Math.abs(XS[xi] - xVal)) xi--;
+
+  ch.style.display = 'block';
+  ch.style.left   = (c.PAD.left + frac * c.pw) + 'px';
+  ch.style.top    = c.PAD.top + 'px';
+  ch.style.height = c.ph + 'px';
+
+  const iv = IS[xi];
+  const iColor = iv >= 0 ? CURR_P_COLOR : CURR_N_COLOR;
+  const xv = XS[xi];
+  const tLabel = xv >= 60 ? (xv/60).toFixed(2) + ' min' : xv.toFixed(1) + ' s';
+  tooltip.innerHTML =
+    `<span style="color:#94a3b8">t</span>&nbsp; <span style="color:#1a202c">${tLabel}</span><br>` +
+    `<span style="color:${VOLT_COLOR}">V</span>&nbsp; <span style="color:#1a202c">${VS[xi].toFixed(3)} V</span><br>` +
+    `<span style="color:${iColor}">I</span>&nbsp; <span style="color:#1a202c">${iv>=0?'+':''}${iv.toFixed(3)} A</span><br>` +
+    `<span style="color:#94a3b8">T</span>&nbsp; <span style="color:#1a202c">${ROWS[xi].temp.toFixed(1)} °C</span>`;
+  tooltip.style.opacity = '1';
+  const tipW = 160;
+  const left = e.clientX + 14 + tipW > window.innerWidth ? e.clientX - tipW - 8 : e.clientX + 14;
+  tooltip.style.left = left + 'px';
+  tooltip.style.top  = (e.clientY - 20) + 'px';
+});
+
+canvas.addEventListener('mouseleave', () => {
+  if (!dragStart) { tooltip.style.opacity = '0'; ch.style.display = 'none'; }
+});
+
+// ---- Resize ----
+const ro = new ResizeObserver(() => { if (XS.length) draw(); });
+ro.observe(document.getElementById('cv-main'));
+
+// ---- File handling ----
+function handleText(text) {
+  const rows = parseLog(text);
+  render(rows);
+}
+function handleFile(file) {
+  const reader = new FileReader();
+  reader.onload = e => handleText(e.target.result);
+  reader.readAsText(file);
+}
+
+document.getElementById('file-input').addEventListener('change', e => {
+  if (e.target.files[0]) handleFile(e.target.files[0]);
+});
+
+const dz = document.getElementById('drop-zone');
+dz.addEventListener('dragover',  e => { e.preventDefault(); dz.classList.add('drag-over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+dz.addEventListener('drop', e => {
+  e.preventDefault(); dz.classList.remove('drag-over');
+  if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+});
+dz.addEventListener('click', e => {
+  if (!['BUTTON'].includes(e.target.tagName)) document.getElementById('file-input').click();
+});
+
+// ---- Paste modal ----
+const modal     = document.getElementById('paste-modal');
+const pasteArea = document.getElementById('paste-area');
+document.getElementById('open-paste').onclick = () => {
+  pasteArea.value = '';
+  modal.classList.add('open');
+  setTimeout(() => pasteArea.focus(), 50);
+};
+document.getElementById('paste-cancel').onclick = () => modal.classList.remove('open');
+document.getElementById('paste-ok').onclick = () => {
+  handleText(pasteArea.value);
+  modal.classList.remove('open');
+};
+modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
+
+// Ctrl+V global shortcut when drop zone visible
+document.addEventListener('paste', e => {
+  if (document.getElementById('drop-zone').style.display !== 'none') {
+    const text = e.clipboardData.getData('text');
+    if (text) handleText(text);
+  }
+});
+
+// ---- Reset ----
+document.getElementById('reset-btn').onclick = () => {
+  XS = []; VS = []; IS = []; ROWS = [];
+  document.getElementById('drop-zone').style.display   = '';
+  document.getElementById('metrics-bar').style.display = 'none';
+  document.getElementById('chart-box').style.display   = 'none';
+  document.getElementById('no-data').style.display     = 'none';
+  document.getElementById('duration-label').textContent = 'No data loaded';
+  document.getElementById('file-input').value = '';
+};
+</script>
+</body>
+</html>

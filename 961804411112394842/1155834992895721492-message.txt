@@ -1,0 +1,86 @@
+1695570288.924211185 INFO  MowingBehavior: (MOW) Progress: 237/260
+1695570293.919616449 INFO  GPS quality: 0.904475
+1695570293.924360327 INFO  MowingBehavior: (MOW) Progress: 245/260
+1695570299.024425829 INFO  MowingBehavior: (MOW) Progress: 252/260
+1695570303.389515308 INFO  FTCLocalPlannerROS: switching planner to position mode
+1695570303.389685009 INFO  FTCLocalPlannerROS: Switching to state 2
+1695570303.439060133 INFO  FTCLocalPlannerROS: Reached goal position.
+1695570303.439177076 INFO  FTCLocalPlannerROS: Switching to state 3
+1695570303.489085210 INFO  FTCLocalPlannerROS: POST_ROTATE finished.
+1695570303.489204282 INFO  FTCLocalPlannerROS: Switching to state 4
+1695570303.620967030 INFO  MowingBehavior: (MOW)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+1695570303.625025436 INFO  >> MowingBehavior: (MOW) PlannerGetProgress currentIndex = 259 of 260
+1695570303.625455948 INFO  >>> State: Succeeded <<<
+1695570303.625552058 INFO  MowingBehavior: (MOW) Mow path finished, skipping to next mow path.
+1695570303.625926275 INFO  MowingBehavior: Executing mowing plan - finished
+1695570303.672755323 INFO  MowingBehavior: Creating mowing plan for area: 1
+1695570303.676239070 INFO  Got getMowingArea call with index: 1
+1695570303.676352624 ERROR  No mowing area with index: 1
+1695570303.676791748 ERROR  MowingBehavior: Error loading mowing area
+1695570303.677158150 INFO  MowingBehavior: Could not create mowing plan, docking
+1695570303.726511959 INFO  new actions registered: mower_logic:mowing registered 4 actions.
+1695570303.727737923 INFO  successfully registered actions for mower_logic:mowing
+1695570303.728096177 INFO  
+1695570303.728358192 INFO  
+1695570303.728640466 INFO  --------------------------------------
+1695570303.728907499 INFO  - Entered state: DOCKING
+1695570303.729138274 INFO  --------------------------------------
+1695570303.733281401 INFO  Getting Docking Point
+1695570303.733914281 WARN  Waiting for good GPS
+1695570303.919582681 WARN  #### om_mower_logic: setMowerEnabled(0, 1) call
+1695570303.923001614 INFO  Setting mow enabled to 0
+1695570303.923382165 INFO  successfully set mower enabled to 0 (direction 1)
+1695570303.923488015 WARN  #### om_mower_logic: setMowerEnabled(0, 1) call completed within 0.00395837s
+1695570303.923551181 INFO  GPS quality: 0.904475
+1695570304.487934647 ERROR  Motor controller fault code: 1
+1695570304.734615581 INFO  Calculating approach path
+1695570304.793185687 INFO  FTCLocalPlannerROS: Got new global plan with 1019 points.
+1695570304.923703933 ERROR  Setting emergency!!
+1695570304.924384868 INFO  successfully set emergency enabled to 1
+1695570304.924904324 ERROR  EMERGENCY: at least one motor control errored. errors left: status: 200
+current: 0.25
+tacho: 4165560
+temperature_motor: -80.7
+temperature_pcb: 41.7
+, status right: status: 100
+current: 0
+tacho: 4290886563
+temperature_motor: -87.5
+temperature_pcb: 46.5
+
+1695570304.947951260 ERROR  Low Level Emergency. Bitmask was: 1
+1695570305.419790856 INFO  - Behaviour.h: abort() called
+1695570305.967952938 ERROR  Low Level Emergency. Bitmask was: 1
+1695570306.987908876 ERROR  Low Level Emergency. Bitmask was: 1
+1695570307.987926094 ERROR  Low Level Emergency. Bitmask was: 1
+1695570309.008087844 ERROR  Low Level Emergency. Bitmask was: 1
+1695570310.027915654 ERROR  Low Level Emergency. Bitmask was: 1
+1695570311.027930019 ERROR  Low Level Emergency. Bitmask was: 1
+1695570312.047932104 ERROR  Low Level Emergency. Bitmask was: 1
+1695570313.047937933 ERROR  Low Level Emergency. Bitmask was: 1
+1695570314.068113071 ERROR  Low Level Emergency. Bitmask was: 1
+1695570314.419828331 INFO  GPS quality: 0.889886
+1695570315.088166434 ERROR  Low Level Emergency. Bitmask was: 1
+1695570316.107936115 ERROR  Low Level Emergency. Bitmask was: 1
+1695570317.107940240 ERROR  Low Level Emergency. Bitmask was: 1
+1695570318.127980343 ERROR  Low Level Emergency. Bitmask was: 1
+1695570319.147899300 ERROR  Low Level Emergency. Bitmask was: 1
+1695570320.147955609 ERROR  Low Level Emergency. Bitmask was: 1
+1695570321.148006177 ERROR  Low Level Emergency. Bitmask was: 1
+1695570322.167946226 ERROR  Low Level Emergency. Bitmask was: 1
+1695570323.167934499 ERROR  Low Level Emergency. Bitmask was: 1
+1695570324.187937751 ERROR  Low Level Emergency. Bitmask was: 1
+1695570324.835625588 ERROR  FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+1695570324.835742364 INFO  FTCLocalPlannerROS: Switching to state 4
+1695570324.835974027 WARN  No velocity command received from controller! 
+1695570324.919597671 INFO  GPS quality: 0.897409
+1695570325.187963616 ERROR  Low Level Emergency. Bitmask was: 1
+1695570326.207904702 ERROR  Low Level Emergency. Bitmask was: 1
+1695570327.207911327 ERROR  Low Level Emergency. Bitmask was: 1
+1695570327.885210674 WARN  No velocity command received from controller! 
+1695570328.208025042 ERROR  Low Level Emergency. Bitmask was: 1
+1695570329.227912648 ERROR  Low Level Emergency. Bitmask was: 1
+1695570329.835539212 WARN  The controller has been aborted after it exceeded the patience time
+1695570329.835953965 WARN  No Recovery Behaviors loaded!
+1695570329.836045890 WARN  Abort the execution of the controller: 
+1695570329.837918345 ERROR  Error during docking approach.

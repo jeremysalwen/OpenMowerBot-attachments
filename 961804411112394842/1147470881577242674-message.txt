@@ -1,0 +1,72 @@
+openmower@openmower:/etc/systemd/system $ sudo systemctl start gui.service
+Job for gui.service failed because the control process exited with error code.
+See "systemctl status gui.service" and "journalctl -xe" for details.
+openmower@openmower:/etc/systemd/system $ journalctl -xe
+Sep 02 10:58:12 openmower sudo[15608]: pam_unix(sudo:session): session closed for user root
+Sep 02 10:58:15 openmower sudo[17059]: openmower : TTY=pts/1 ; PWD=/etc/systemd/system ; USER=root ; COMMAND=/usr/bin/systemctl start gui.service
+Sep 02 10:58:15 openmower sudo[17059]: pam_unix(sudo:session): session opened for user root(uid=0) by openmower(uid=1000)
+Sep 02 10:58:21 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 239.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 02 10:58:21 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 17673 and the job result is done.
+Sep 02 10:58:21 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 17673.
+Sep 02 10:58:21 openmower podman[17063]: Error: statfs /boot/openmower/db: no such file or directory
+Sep 02 10:58:21 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 02 10:58:21 openmower podman[17093]: Error: error reading CIDFile: open /run/container-gui.ctr-id: no such file or directory
+Sep 02 10:58:21 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStopPost= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 02 10:58:21 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 02 10:58:21 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 17673 and the job result is failed.
+Sep 02 10:58:21 openmower sudo[17059]: pam_unix(sudo:session): session closed for user root
+openmower@openmower:/etc/systemd/system $ systemctl status gui.service
+● gui.service - Podman container - gui.service
+     Loaded: loaded (/etc/systemd/system/gui.service; enabled; vendor preset: enabled)
+     Active: activating (auto-restart) (Result: exit-code) since Sat 2023-09-02 10:58:53 BST; 3s ago
+       Docs: man:podman-generate-systemd(1)
+    Process: 17184 ExecStartPre=/bin/rm -f /run/container-gui.pid /run/container-gui.ctr-id (code=exited, status=0/SUCCESS)
+    Process: 17185 ExecStart=/usr/bin/podman run --conmon-pidfile /run/container-gui.pid --cidfile /run/container-gui.ctr-id --cgroups=no-conmon --replace --detach --tty --privileged --name openmower-gui --network=host -->
+    Process: 17215 ExecStopPost=/usr/bin/podman rm --ignore --force --cidfile /run/container-gui.ctr-id (code=exited, status=125)
+        CPU: 574ms

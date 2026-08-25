@@ -1,0 +1,335 @@
+auto-starting new master
+process[master]: started with pid [50]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 0894832c-3e82-11f1-a79b-d83addb87ed7
+process[rosout-1]: started with pid [60]
+started core service [/rosout]
+process[ll-2]: started with pid [63]
+process[ll/services/gps-3]: started with pid [64]
+process[move_base_flex-4]: started with pid [66]
+process[move_base_legacy_relay-5]: started with pid [74]
+[INFO] [1776886367.023275726]: Using NMEA mode for GPS
+process[xbot_positioning-6]: started with pid [81]
+[INFO] [1776886367.060748041]: Using absolute mode for GPS
+process[joy-7]: started with pid [82]
+[INFO] [1776886367.180934059]: [driver_gps] connecting to 127.0.0.1:2102
+process[joy_teleop-8]: started with pid [88]
+[INFO] [1776886367.224430929]: Antenna offset: -0.065, 0.07
+[WARN] [1776886367.226489855]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+process[map_service-9]: started with pid [96]
+[WARN] [1776886367.318001207]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776886367.329657374]: Wheel ticks [1/m]: 1600
+[INFO] [1776886367.339169244]: Wheel distance [m]: 0.325
+process[mower_logic-10]: started with pid [102]
+[INFO] [1776886367.395855874]: Starting xesc driver
+[ERROR] [1776886367.416149966]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[WARN] [1776886367.421522726]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[INFO] [1776886367.440919374]: Starting xesc driver
+[INFO] [1776886367.478552040]: Starting xesc driver
+process[slic3r_coverage_planner-11]: started with pid [110]
+[INFO] [1776886367.518320392]: Teleop enable button 0.
+[INFO] [1776886367.522184337]: Turbo on button 4.
+[INFO] [1776886367.522272411]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1776886367.522306762]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1776886367.522341855]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1776886367.522373188]: Turbo for angular axis yaw is scale 3.000000.
+[WARN] [1776886367.523061670]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+process[twist_mux-12]: started with pid [116]
+[INFO] [1776886367.588415133]: connecting serial interface: /dev/ttyAMA0
+[WARN] [1776886367.625247281]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+process[xbot_monitoring-13]: started with pid [122]
+[INFO] [1776886367.639160040]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1776886367.663108985]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1776886367.683096392]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[FATAL] [1776886367.707839059]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[WARN] [1776886367.716954688]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+process[xbot_remote-14]: started with pid [129]
+[WARN] [1776886367.824485355]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+process[monitoring-15]: started with pid [135]
+[WARN] [1776886367.915290725]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[WARN] [1776886368.016010392]: [driver_gps] invalid gnssFix - dropping message. fix was: 1
+[WARN] [1776886368.026952707]: Last GPS was 1.77689e+09 seconds ago.
+[INFO] [1776886368.047346170]: GPS data now valid
+[INFO] [1776886368.047486077]: First GPS data, moving kalman filter to -14.4177, -4.05704
+[INFO] [1776886368.069190892]: Restoring checkpoint for plan (771FE8AAC3A271B7726C3E01A62AC771C16A7A6E9508DA3D92CC09A7D35E9131) area: 0 path: 0 index>
+[INFO] [1776886368.182026077]: Using external MQTT broker: 192.168.1.100:1883 with topic prefix: openmower/
+[INFO] [1776886368.364177558]: MQTT Connected
+[INFO] [1776886368.562198799]: new methods registered: xbot_monitoring registered 4 methods.
+[INFO] [1776886368.570775114]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1776886368.578873688]: om_mower_logic: Setting mower_logic config
+[INFO] [1776886368.579694503]: mower_comms received new mower_logic config
+[INFO] [1776886368.579801817]: Monitoring received new mower_logic config
+[INFO] [1776886368.613530910]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1776886368.651246262]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1776886368.677964466]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1776886368.706813280]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1776886368.728828391]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1776886368.757004780]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1776886368.757946077]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1776886368.759794502]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1776886368.801424854]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1776886368.825389891]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1776886368.846206280]: Monitoring received new mower_logic config
+[INFO] [1776886368.846210762]: mower_comms received new mower_logic config
+[INFO] [1776886368.846912058]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1776886368.874811354]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1776886369.076063243]: MQTT Connected
+[INFO] [1776886369.136429521]: Waiting for emergency message
+[INFO] [1776886370.136552835]: Waiting for a power message
+[INFO] [1776886370.136656391]: Waiting for a status message
+[INFO] [1776886370.136688039]: Waiting for a pose message
+[INFO] [1776886370.136738761]: Waiting for left ESC status message
+[INFO] [1776886370.136773391]: Waiting for right ESC status message
+[INFO] [1776886370.136806150]: Waiting for emergency service
+[INFO] [1776886370.140821854]: Waiting for path server
+[INFO] [1776886370.144368520]: Waiting for mower service
+[INFO] [1776886370.147251483]: Waiting for gps service
+[INFO] [1776886370.150306354]: Waiting for positioning service
+[INFO] [1776886370.153458335]: Waiting for map server
+[INFO] [1776886370.155658798]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...
+[INFO] [1776886372.608193315]: Send ll_high_level_config packet 0x11
+options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+lift_period=65535, tilt_period=65535,
+shutdown_esc_max_pitch=0,
+language="en", volume=255
+hall_configs="I, I, I, I, I, I, I, I, U, U"
+[INFO] [1776886372.617416926]: Received ll_high_level_config packet 0x12
+options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+lift_period=100, tilt_period=2500,
+shutdown_esc_max_pitch=0,
+language="en", volume=80
+hall_configs="I, I, I, I, I, I, I, I, I, I"
+[INFO] [1776886372.624892704]: om_mower_logic: Setting mower_logic config
+[INFO] [1776886372.696441796]: mower_comms received new mower_logic config
+[INFO] [1776886372.696741556]: Monitoring received new mower_logic config
+[INFO] [1776886372.697731556]: Started gyro calibration
+[ERROR] [1776886372.708204204]: Low Level Emergency. Bitmask was: 1
+[WARN] [1776886373.066107296]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransfo>
+[ERROR] [1776886373.728210611]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886374.748075517]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886375.768011924]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886376.768049535]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886377.705680182]: Calibrated gyro offset: 0.010225
+[ERROR] [1776886377.787977867]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886377.946374330]: local_costmap: Using plugin "static_layer"
+[INFO] [1776886378.001067404]: Requesting the map...
+[ERROR] [1776886378.788016330]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886379.788145148]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886380.788183535]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886381.808013701]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886382.808154334]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886383.828006354]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886384.828015114]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886385.848042648]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886386.848176825]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886387.848257085]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886388.868188158]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886389.888182987]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886390.908053867]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886391.928048262]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886392.928051041]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886393.928064633]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886394.948044882]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886395.948189774]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886396.948257900]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886397.968179704]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886398.988177065]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886399.988197472]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886401.008191335]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886402.008239133]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886403.008250217]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886404.028333357]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886405.048238973]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886406.068149606]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886407.088137862]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886408.088144931]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886409.108158831]: Low Level Emergency. Bitmask was: 1
+Traceback (most recent call last):
+File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+mbf_drc = Client("move_base_flex", timeout=10)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+self._set_service = self._get_service_proxy('set_parameters', timeout)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+rospy.wait_for_service(service_name, timeout)
+File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[ERROR] [1776886410.108203557]: Low Level Emergency. Bitmask was: 1
+[move_base_legacy_relay-5] process has died [pid 74, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base>
+log file: /data/ros/log/0894832c-3e82-11f1-a79b-d83addb87ed7/move_base_legacy_relay-5*.log
+[ERROR] [1776886411.128013200]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886412.148004348]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886413.148143357]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886414.168070781]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886415.188061337]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886416.188170105]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886417.188209369]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886418.208207850]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886419.208232042]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886420.208250194]: Low Level Emergency. Bitmask was: 1
+[move_base_legacy_relay-5] restarting process
+process[move_base_legacy_relay-5]: started with pid [181]
+[ERROR] [1776886421.228129424]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886422.248043256]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886423.248044533]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886424.248055570]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886425.248112906]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886426.248247846]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886427.268348252]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886428.288253213]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886429.123803402]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886429.308162998]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886430.124899137]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886430.159245686]: Map server service not found.
+[ERROR] [1776886430.308302379]: Low Level Emergency. Bitmask was: 1
+[mower_logic-10] process has died [pid 102, exit code 2, cmd /opt/open_mower_ros/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/data/r>
+log file: /data/ros/log/0894832c-3e82-11f1-a79b-d83addb87ed7/mower_logic-10*.log
+[INFO] [1776886431.224736895]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886431.328179408]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886432.316276452]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886432.328255958]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886433.317138078]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886433.328278594]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886434.317658577]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886434.348044383]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886435.323010559]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886435.348059353]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886435.424198490]: Dropped GPS update, since it's not accurate enough. Accuracy was: 0.810713, limit is:0.2
+[WARN] [1776886436.028002253]: Last GPS was 6.96277 seconds ago.
+[INFO] [1776886436.048311731]: GPS data now valid
+[INFO] [1776886436.048428823]: First GPS data, moving kalman filter to -14.4211, -4.05704
+[ERROR] [1776886436.368007954]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886436.428476393]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886437.368042392]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886437.525375268]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886438.388013889]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886438.623808633]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1776886439.388186071]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886439.421090733]: Dropped GPS update, since it's not accurate enough. Accuracy was: 0.807047, limit is:0.2
+[ERROR] [1776886440.388298369]: Low Level Emergency. Bitmask was: 1
+[mower_logic-10] restarting process
+process[mower_logic-10]: started with pid [193]
+[INFO] [1776886440.756449994]: Restoring checkpoint for plan (771FE8AAC3A271B7726C3E01A62AC771C16A7A6E9508DA3D92CC09A7D35E9131) area: 0 path: 0 index>
+[INFO] [1776886440.874854129]: om_mower_logic: Setting mower_logic config
+[INFO] [1776886441.003460497]: Monitoring received new mower_logic config
+[INFO] [1776886441.009864933]: mower_comms received new mower_logic config
+[INFO] [1776886441.071254443]: Waiting for emergency message
+[ERROR] [1776886441.408080925]: Low Level Emergency. Bitmask was: 1
+[INFO] [1776886442.071888169]: Waiting for a power message
+[INFO] [1776886442.071970242]: Waiting for a status message
+[INFO] [1776886442.072000631]: Waiting for a pose message
+[INFO] [1776886442.072053835]: Waiting for left ESC status message
+[INFO] [1776886442.072126594]: Waiting for right ESC status message
+[INFO] [1776886442.072183056]: Waiting for emergency service
+[INFO] [1776886442.075441470]: Waiting for path server
+[INFO] [1776886442.077739387]: Waiting for mower service
+[INFO] [1776886442.080128489]: Waiting for gps service
+[INFO] [1776886442.082576609]: Waiting for positioning service
+[INFO] [1776886442.085586357]: Waiting for map server
+[INFO] [1776886442.087611720]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...
+[ERROR] [1776886442.408136201]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886443.428060250]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886444.428071971]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886445.428082947]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886446.428194425]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886447.448204582]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886448.468170158]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886449.488151094]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886450.508100750]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886451.528177889]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886452.548058424]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886453.548072023]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886454.568018872]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886455.568155823]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886456.568204344]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886457.588208108]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886458.608192871]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886459.608208486]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886460.608208745]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886461.608312137]: Low Level Emergency. Bitmask was: 1
+Traceback (most recent call last):
+File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+mbf_drc = Client("move_base_flex", timeout=10)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+self._set_service = self._get_service_proxy('set_parameters', timeout)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+rospy.wait_for_service(service_name, timeout)
+File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[ERROR] [1776886462.628061270]: Low Level Emergency. Bitmask was: 1
+[move_base_legacy_relay-5] process has died [pid 181, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_bas>
+log file: /data/ros/log/0894832c-3e82-11f1-a79b-d83addb87ed7/move_base_legacy_relay-5*.log
+[ERROR] [1776886463.648046006]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886464.668000633]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886465.668065357]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886466.688037641]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886467.688163203]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886468.688210413]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886469.708222024]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886470.708268340]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886471.708240405]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886472.728186410]: Low Level Emergency. Bitmask was: 1
+[move_base_legacy_relay-5] restarting process
+process[move_base_legacy_relay-5]: started with pid [203]
+[ERROR] [1776886473.748039466]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886474.748063383]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886475.768055609]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886476.788011608]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886477.788046139]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886478.788189481]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886479.788228261]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886480.808081731]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886481.828063240]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886482.848008864]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886483.848086133]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886484.868065850]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886485.868167800]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886486.868190366]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886487.888187611]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886488.888192533]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886489.888217705]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886490.908274655]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886491.928281679]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886492.948218408]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886493.968017413]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886494.968061586]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886495.988096788]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886497.008059812]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886498.028008764]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886499.028227951]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886500.048222694]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886501.068159247]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886502.068196260]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886502.102711262]: Map server service not found.
+[mower_logic-10] process has died [pid 193, exit code 2, cmd /opt/open_mower_ros/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/data/r>
+log file: /data/ros/log/0894832c-3e82-11f1-a79b-d83addb87ed7/mower_logic-10*.log
+[ERROR] [1776886503.068210717]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886504.068219534]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886505.088178622]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886506.108168730]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886507.108216779]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886508.128151111]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886509.148128440]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886510.148159982]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886511.168013039]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1776886512.168052046]: Low Level Emergency. Bitmask was: 1
+[mower_logic-10] restarting process
+process[mower_logic-10]: started with pid [212]
+[INFO] [1776886512.678485751]: Restoring checkpoint for plan (771FE8AAC3A271B7726C3E01A62AC771C16A7A6E9508DA3D92CC09A7D35E9131) area: 0 path: 0 index>
+[INFO] [1776886512.793039496]: om_mower_logic: Setting mower_logic config
+[INFO] [1776886512.919923775]: mower_comms received new mower_logic config
+[INFO] [1776886512.920806180]: Monitoring received new mower_logic config
+[INFO] [1776886512.973143020]: Waiting for emergency message
+[ERROR] [1776886513.188046967]: Low Level Emergency. Bitmask was: 1
+Traceback (most recent call last):
+File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+mbf_drc = Client("move_base_flex", timeout=10)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+self._set_service = self._get_service_proxy('set_parameters', timeout)
+File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy

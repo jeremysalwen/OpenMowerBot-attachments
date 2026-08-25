@@ -1,0 +1,574 @@
+EXT_FUN_0800e0ec	External[0800e0ec]	External Function	<EXTERNAL>	Default	1	0
+MasterStackPointer	00000000	Data Label	Global	Imported	0	0
+Reset	00000004	Data Label	Global	Imported	1	0
+NMI	00000008	Data Label	Global	Imported	1	0
+HardFault	0000000c	Data Label	Global	Imported	1	0
+MemManage	00000010	Data Label	Global	Imported	1	0
+BusFault	00000014	Data Label	Global	Imported	1	0
+UsageFault	00000018	Data Label	Global	Imported	1	0
+Reserved1	0000001c	Data Label	Global	Imported	1	0
+Reserved2	00000020	Data Label	Global	Imported	1	0
+Reserved3	00000024	Data Label	Global	Imported	1	0
+Reserved4	00000028	Data Label	Global	Imported	1	0
+Reserved6	00000028	Data Label	Global	Imported	0	0
+Reserved5	00000028	Data Label	Global	Imported	0	0
+SVCall	0000002c	Data Label	Global	Imported	1	0
+PendSV	00000038	Data Label	Global	Imported	1	0
+SysTick	0000003c	Data Label	Global	Imported	1	0
+IRQ	00000040	Data Label	Global	Imported	1	0
+thunk_EXT_FUN_0800e0ec	000000bc	Thunk Function	<EXTERNAL>	Default	1	0
+FUN_000000e4	000000e4	Function	Global	Default	3	0
+FUN_00000160	00000160	Function	Global	Default	3	0
+FUN_000001d4	000001d4	Function	Global	Default	6	0
+FUN_00000200	00000200	Function	Global	Default	60	0
+FUN_00000228	00000228	Function	Global	Default	14	0
+FUN_0000024c	0000024c	Function	Global	Default	3	0
+FUN_0000025a	0000025a	Function	Global	Default	15	0
+FUN_0000025e	0000025e	Function	Global	Default	0	0
+FUN_00000270	00000270	Function	Global	Default	2	0
+FUN_00000298	00000298	Function	Global	Default	2	0
+FUN_000002a6	000002a6	Function	Global	Default	11	0
+FUN_000002c2	000002c2	Function	Global	Default	19	0
+FUN_000002dc	000002dc	Function	Global	Default	8	0
+FUN_00000328	00000328	Function	Global	Default	7	0
+FUN_0000033c	0000033c	Function	Global	Default	14	0
+FUN_0000034e	0000034e	Function	Global	Default	3	0
+FUN_00000368	00000368	Function	Global	Default	19	0
+FUN_0000040a	0000040a	Function	Global	Default	9	0
+FUN_00000412	00000412	Function	Global	Default	6	0
+FUN_0000041a	0000041a	Function	Global	Default	33	0
+FUN_00000494	00000494	Function	Global	Default	16	0
+FUN_00000510	00000510	Function	Global	Default	2	0
+FUN_00000528	00000528	Function	Global	Default	12	0
+FUN_00000670	00000670	Function	Global	Default	18	0
+FUN_0000067c	0000067c	Function	Global	Default	8	0
+FUN_0000068c	0000068c	Function	Global	Default	37	0
+FUN_0000075c	0000075c	Function	Global	Default	11	0
+FUN_0000084c	0000084c	Function	Global	Default	13	0
+FUN_00000862	00000862	Function	Global	Default	10	0
+FUN_00000870	00000870	Function	Global	Default	6	0
+FUN_00000898	00000898	Function	Global	Default	0	0
+FUN_000008b4	000008b4	Function	Global	Default	6	0
+FUN_000008e6	000008e6	Function	Global	Default	4	0
+FUN_00000910	00000910	Function	Global	Default	5	0
+FUN_00000958	00000958	Function	Global	Default	52	0
+FUN_00000980	00000980	Function	Global	Default	14	0
+FUN_000009a8	000009a8	Function	Global	Default	9	0
+FUN_000009d0	000009d0	Function	Global	Default	20	0
+FUN_00000a08	00000a08	Function	Global	Default	4	0
+FUN_00000a1c	00000a1c	Function	Global	Default	9	0
+FUN_00000a30	00000a30	Function	Global	Default	0	0
+FUN_00000a90	00000a90	Function	Global	Default	6	0
+FUN_00000ab0	00000ab0	Function	Global	Default	5	0
+FUN_00000ad2	00000ad2	Function	Global	Default	1	0
+FUN_00000af8	00000af8	Function	Global	Default	1	0
+FUN_00000b68	00000b68	Function	Global	Default	4	0
+FUN_00000b78	00000b78	Function	Global	Default	3	0
+FUN_00000bea	00000bea	Function	Global	Default	0	0
+FUN_00000c42	00000c42	Function	Global	Default	4	0
+FUN_00000c5c	00000c5c	Function	Global	Default	4	0
+FUN_00000d00	00000d00	Function	Global	Default	0	0
+FUN_00000d2c	00000d2c	Function	Global	Default	0	0
+FUN_00000dd0	00000dd0	Function	Global	Default	0	0
+FUN_00000e10	00000e10	Function	Global	Default	1	0
+FUN_00000e34	00000e34	Function	Global	Default	1	0
+FUN_00000e3c	00000e3c	Function	Global	Default	1	0
+FUN_00000ee2	00000ee2	Function	Global	Default	1	0
+FUN_00000f00	00000f00	Function	Global	Default	0	0
+FUN_00000f58	00000f58	Function	Global	Default	2	0
+FUN_00000f88	00000f88	Function	Global	Default	1	0
+FUN_00000fbc	00000fbc	Function	Global	Default	1	0
+FUN_0000128c	0000128c	Function	Global	Default	1	0
+FUN_00001684	00001684	Function	Global	Default	1	0
+FUN_000016d0	000016d0	Function	Global	Default	1	0
+FUN_00001a60	00001a60	Function	Global	Default	0	0
+FUN_00001adc	00001adc	Function	Global	Default	4	0
+FUN_00001b18	00001b18	Function	Global	Default	1	0
+FUN_00001b40	00001b40	Function	Global	Default	0	0
+FUN_00001b80	00001b80	Function	Global	Default	1	0
+FUN_00001bac	00001bac	Function	Global	Default	0	0
+FUN_00001c1c	00001c1c	Function	Global	Default	0	0
+FUN_00001d24	00001d24	Function	Global	Default	4	0
+FUN_00001d30	00001d30	Function	Global	Default	3	0
+FUN_00001d4c	00001d4c	Function	Global	Default	1	0
+FUN_00001dd4	00001dd4	Function	Global	Default	0	0
+FUN_00001e10	00001e10	Function	Global	Default	0	0
+FUN_00001e1c	00001e1c	Function	Global	Default	0	0
+FUN_00001e68	00001e68	Function	Global	Default	2	0
+FUN_00001ea4	00001ea4	Function	Global	Default	0	0
+FUN_00001eb8	00001eb8	Function	Global	Default	0	0
+FUN_00001f24	00001f24	Function	Global	Default	0	0
+FUN_00001f48	00001f48	Function	Global	Default	5	0
+FUN_00001f70	00001f70	Function	Global	Default	0	0
+FUN_00001fec	00001fec	Function	Global	Default	0	0
+FUN_0000200c	0000200c	Function	Global	Default	26	0
+FUN_0000209c	0000209c	Function	Global	Default	0	0
+FUN_000020e0	000020e0	Function	Global	Default	1	0
+FUN_000020f4	000020f4	Function	Global	Default	0	0
+FUN_000020f8	000020f8	Function	Global	Default	0	0
+FUN_000020fc	000020fc	Function	Global	Default	1	0
+FUN_000021e8	000021e8	Function	Global	Default	0	0
+FUN_0000228c	0000228c	Function	Global	Default	1	0
+FUN_000022a4	000022a4	Function	Global	Default	1	0
+FUN_000022fc	000022fc	Function	Global	Default	1	0
+FUN_000023dc	000023dc	Function	Global	Default	0	0
+FUN_0000240c	0000240c	Function	Global	Default	0	0
+FUN_00002440	00002440	Function	Global	Default	0	0
+FUN_00002510	00002510	Function	Global	Default	1	0
+FUN_00002528	00002528	Function	Global	Default	1	0
+FUN_00002624	00002624	Function	Global	Default	0	0
+FUN_00002674	00002674	Function	Global	Default	1	0
+FUN_00002894	00002894	Function	Global	Default	2	0
+FUN_00002916	00002916	Function	Global	Default	0	0
+FUN_0000299c	0000299c	Function	Global	Default	2	0
+FUN_00002a02	00002a02	Function	Global	Default	1	0
+FUN_00002a1e	00002a1e	Function	Global	Default	4	0
+FUN_00002a38	00002a38	Function	Global	Default	2	0
+FUN_00002a68	00002a68	Function	Global	Default	1	0
+FUN_00002ac8	00002ac8	Function	Global	Default	1	0
+FUN_00002adc	00002adc	Function	Global	Default	1	0
+FUN_00002b0c	00002b0c	Function	Global	Default	0	0
+FUN_000030fc	000030fc	Function	Global	Default	0	0
+FUN_000031b0	000031b0	Function	Global	Default	1	0
+FUN_00003434	00003434	Function	Global	Default	2	0
+FUN_0000345c	0000345c	Function	Global	Default	0	0
+FUN_0000381c	0000381c	Function	Global	Default	0	0
+FUN_00003868	00003868	Function	Global	Default	0	0
+FUN_000038dc	000038dc	Function	Global	Default	0	0
+FUN_00003a28	00003a28	Function	Global	Default	2	0
+FUN_00003a40	00003a40	Function	Global	Default	0	0
+FUN_00003a94	00003a94	Function	Global	Default	0	0
+FUN_00003abc	00003abc	Function	Global	Default	0	0
+FUN_00003aec	00003aec	Function	Global	Default	0	0
+FUN_00003c48	00003c48	Function	Global	Default	0	0
+FUN_00003d24	00003d24	Function	Global	Default	0	0
+FUN_00003d58	00003d58	Function	Global	Default	1	0
+FUN_00003d68	00003d68	Function	Global	Default	1	0
+FUN_00003d78	00003d78	Function	Global	Default	1	0
+FUN_00003d84	00003d84	Function	Global	Default	1	0
+FUN_00003d90	00003d90	Function	Global	Default	1	0
+FUN_00003d9c	00003d9c	Function	Global	Default	23	0
+FUN_00003e1a	00003e1a	Function	Global	Default	0	0
+FUN_00003e70	00003e70	Function	Global	Default	1	0
+FUN_00003ea4	00003ea4	Function	Global	Default	8	0
+FUN_00003eb4	00003eb4	Function	Global	Default	0	0
+FUN_00003fb4	00003fb4	Function	Global	Default	0	0
+FUN_00004014	00004014	Function	Global	Default	12	0
+FUN_00004024	00004024	Function	Global	Default	0	0
+FUN_0000418c	0000418c	Function	Global	Default	0	0
+FUN_000041f0	000041f0	Function	Global	Default	1	0
+FUN_00004448	00004448	Function	Global	Default	0	0
+FUN_00004a20	00004a20	Function	Global	Default	0	0
+FUN_000060e2	000060e2	Function	Global	Default	1	0
+FUN_00006122	00006122	Function	Global	Default	1	0
+FUN_00006384	00006384	Function	Global	Default	0	0
+FUN_00006918	00006918	Function	Global	Default	1	0
+FUN_00006940	00006940	Function	Global	Default	5	0
+FUN_000069f8	000069f8	Function	Global	Default	9	0
+FUN_00006a10	00006a10	Function	Global	Default	2	0
+FUN_00006a64	00006a64	Function	Global	Default	0	0
+FUN_00006a88	00006a88	Function	Global	Default	4	0
+FUN_00006c64	00006c64	Function	Global	Default	1	0
+FUN_00006df0	00006df0	Function	Global	Default	3	0
+FUN_00006f80	00006f80	Function	Global	Default	6	0
+FUN_00007030	00007030	Function	Global	Default	13	0
+FUN_00007064	00007064	Function	Global	Default	1	0
+FUN_00007298	00007298	Function	Global	Default	1	0
+FUN_00007368	00007368	Function	Global	Default	11	0
+FUN_00007382	00007382	Function	Global	Default	11	0
+FUN_00007484	00007484	Function	Global	Default	1	0
+FUN_000074f6	000074f6	Function	Global	Default	0	0
+FUN_00007528	00007528	Function	Global	Default	6	0
+FUN_00007548	00007548	Function	Global	Default	0	0
+FUN_00007568	00007568	Function	Global	Default	0	0
+FUN_00007588	00007588	Function	Global	Default	1	0
+FUN_000075a8	000075a8	Function	Global	Default	0	0
+FUN_000075c8	000075c8	Function	Global	Default	1	0
+FUN_000075dc	000075dc	Function	Global	Default	0	0
+FUN_000077cc	000077cc	Function	Global	Default	1	0
+FUN_00007814	00007814	Function	Global	Default	1	0
+FUN_0000786a	0000786a	Function	Global	Default	1	0
+FUN_000078d8	000078d8	Function	Global	Default	0	0
+FUN_000079e6	000079e6	Function	Global	Default	1	0
+FUN_00007ab8	00007ab8	Function	Global	Default	4	0
+FUN_00007b54	00007b54	Function	Global	Default	0	0
+FUN_00007b8c	00007b8c	Function	Global	Default	0	0
+FUN_00007bc4	00007bc4	Function	Global	Default	0	0
+FUN_00007bfc	00007bfc	Function	Global	Default	0	0
+FUN_00007c1c	00007c1c	Function	Global	Default	0	0
+FUN_00007c80	00007c80	Function	Global	Default	1	0
+FUN_00007db8	00007db8	Function	Global	Default	0	0
+FUN_00007dd4	00007dd4	Function	Global	Default	1	0
+FUN_00007fe0	00007fe0	Function	Global	Default	1	0
+FUN_00008020	00008020	Function	Global	Default	1	0
+FUN_00008178	00008178	Function	Global	Default	1	0
+FUN_000081cc	000081cc	Function	Global	Default	7	0
+FUN_000082b4	000082b4	Function	Global	Default	7	0
+FUN_00008414	00008414	Function	Global	Default	1	0
+FUN_000086d0	000086d0	Function	Global	Default	5	0
+FUN_000087dc	000087dc	Function	Global	Default	10	0
+FUN_00009394	00009394	Function	Global	Default	1	0
+FUN_00009838	00009838	Function	Global	Default	1	0
+FUN_0000988c	0000988c	Function	Global	Default	1	0
+FUN_0000c498	0000c498	Function	Global	Default	3	0
+FUN_0000c540	0000c540	Function	Global	Default	2	0
+FUN_0000c542	0000c542	Function	Global	Default	1	0
+FUN_0000c650	0000c650	Function	Global	Default	3	0
+FUN_0000c770	0000c770	Function	Global	Default	4	0
+FUN_0000c7b4	0000c7b4	Function	Global	Default	13	0
+FUN_0000c7dc	0000c7dc	Function	Global	Default	2	0
+FUN_0000c83c	0000c83c	Function	Global	Default	5	0
+FUN_0000c884	0000c884	Function	Global	Default	4	0
+FUN_0000d7d0	0000d7d0	Function	Global	Default	5	0
+FUN_0000d830	0000d830	Function	Global	Default	2	0
+FUN_0000d854	0000d854	Function	Global	Default	2	0
+FUN_0000d878	0000d878	Function	Global	Default	1	0
+FUN_0000da94	0000da94	Function	Global	Default	2	0
+FUN_0000dc0c	0000dc0c	Function	Global	Default	1	0
+FUN_0000dd14	0000dd14	Function	Global	Default	10	0
+FUN_0000dd90	0000dd90	Function	Global	Default	1	0
+FUN_0000e030	0000e030	Function	Global	Default	2	0
+FUN_0000e0dc	0000e0dc	Function	Global	Default	2	0
+FUN_0000e270	0000e270	Function	Global	Default	6	0
+FUN_0000e298	0000e298	Function	Global	Default	1	0
+FUN_0000e30c	0000e30c	Function	Global	Default	1	0
+Loop	080000bc	Thunk Function	Global	Default	1	0
+FUN_080000e4	080000e4	Function	Global	Default	4	0
+FUN_08000160	08000160	Function	Global	Default	4	0
+FUN_080001d4	080001d4	Function	Global	Default	18	0
+FUN_08000200	08000200	Function	Global	Default	84	0
+copy_data	08000228	Function	Global	User Defined	22	0
+fill_with_value	0800024c	Function	Global	User Defined	3	0
+fill_with_zeros	0800025a	Function	Global	User Defined	53	0
+FUN_0800025e	0800025e	Function	Global	Default	0	0
+FUN_08000270	08000270	Function	Global	Default	2	0
+strlen	08000298	Function	Global	User Defined	11	0
+FUN_080002a6	080002a6	Function	Global	Default	1	0
+FUN_080002c2	080002c2	Function	Global	Default	23	0
+FUN_080002dc	080002dc	Function	Global	Default	28	0
+FUN_08000328	08000328	Function	Global	Default	20	0
+FUN_0800033c	0800033c	Function	Global	Default	19	0
+FUN_0800034e	0800034e	Function	Global	Default	18	0
+FUN_08000368	08000368	Function	Global	Default	28	0
+FUN_0800040a	0800040a	Function	Global	Default	9	0
+FUN_08000412	08000412	Function	Global	Default	6	0
+FUN_0800041a	0800041a	Function	Global	Default	52	0
+FUN_08000494	08000494	Function	Global	Default	21	0
+FUN_08000510	08000510	Function	Global	Default	2	0
+FUN_08000528	08000528	Function	Global	Default	38	0
+FUN_08000670	08000670	Function	Global	Default	44	0
+FUN_0800067c	0800067c	Function	Global	Default	17	0
+FUN_0800068c	0800068c	Function	Global	Default	75	0
+FUN_0800075c	0800075c	Function	Global	Default	20	0
+FUN_0800084c	0800084c	Function	Global	Default	14	0
+FUN_08000862	08000862	Function	Global	Default	13	0
+FUN_08000870	08000870	Function	Global	Default	8	0
+FUN_08000898	08000898	Function	Global	Default	3	0
+FUN_080008b4	080008b4	Function	Global	Default	6	0
+FUN_080008e6	080008e6	Function	Global	Default	4	0
+FUN_08000910	08000910	Function	Global	Default	7	0
+FUN_08000958	08000958	Function	Global	Default	82	0
+FUN_08000980	08000980	Function	Global	Default	16	0
+FUN_080009a8	080009a8	Function	Global	Default	10	0
+FUN_080009d0	080009d0	Function	Global	Default	22	0
+FUN_08000a08	08000a08	Function	Global	Default	4	0
+FUN_08000a1c	08000a1c	Function	Global	Default	11	0
+FUN_08000a30	08000a30	Function	Global	Default	2	0
+FUN_08000a90	08000a90	Function	Global	Default	6	0
+FUN_08000ab0	08000ab0	Function	Global	Default	5	0
+FUN_08000ad2	08000ad2	Function	Global	Default	1	0
+FUN_08000af8	08000af8	Function	Global	Default	1	0
+FUN_08000b68	08000b68	Function	Global	Default	4	0
+FUN_08000b78	08000b78	Function	Global	Default	3	0
+FUN_08000bea	08000bea	Function	Global	Default	1	0
+FUN_08000c42	08000c42	Function	Global	Default	4	0
+FUN_08000c5c	08000c5c	Function	Global	Default	4	0
+FUN_08000d00	08000d00	Function	Global	Default	8	0
+FUN_08000d2c	08000d2c	Function	Global	Default	1	0
+FUN_08000dd0	08000dd0	Function	Global	Default	1	0
+FUN_08000e10	08000e10	Function	Global	Default	1	0
+FUN_08000e34	08000e34	Function	Global	Default	1	0
+FUN_08000e3c	08000e3c	Function	Global	Default	1	0
+FUN_08000ee2	08000ee2	Function	Global	Default	1	0
+FUN_08000f00	08000f00	Function	Global	Default	3	0
+FUN_08000f58	08000f58	Function	Global	Default	2	0
+FUN_08000f88	08000f88	Function	Global	Default	1	0
+FUN_08000fbc	08000fbc	Function	Global	Default	1	0
+FUN_0800128c	0800128c	Function	Global	Default	1	0
+FUN_08001684	08001684	Function	Global	Default	1	0
+FUN_080016d0	080016d0	Function	Global	Default	1	0
+FUN_08001a60	08001a60	Function	Global	Default	1	0
+FUN_08001adc	08001adc	Function	Global	Default	9	0
+FUN_08001b18	08001b18	Function	Global	Default	3	0
+FUN_08001b40	08001b40	Function	Global	Default	1	0
+FUN_08001b80	08001b80	Function	Global	Default	1	0
+FUN_08001bac	08001bac	Function	Global	Default	1	0
+FUN_08001c1c	08001c1c	Function	Global	Default	1	0
+FUN_08001d24	08001d24	Function	Global	Default	4	0
+FUN_08001d30	08001d30	Function	Global	Default	3	0
+FUN_08001d4c	08001d4c	Function	Global	Default	1	0
+FUN_08001dd4	08001dd4	Function	Global	Default	1	0
+FUN_08001e10	08001e10	Function	Global	Default	1	0
+FUN_08001e1c	08001e1c	Function	Global	Default	1	0
+FUN_08001e68	08001e68	Function	Global	Default	2	0
+FUN_08001ea4	08001ea4	Function	Global	Default	1	0
+FUN_08001eb8	08001eb8	Function	Global	Default	1	0
+FUN_08001f24	08001f24	Function	Global	Default	1	0
+FUN_08001f48	08001f48	Function	Global	Default	5	0
+FUN_08001f70	08001f70	Function	Global	Default	2	0
+FUN_08001fec	08001fec	Function	Global	Default	2	0
+SetupOutputs	0800200c	Function	Global	User Defined	31	0
+SetIoAlternateFunctionSelect	0800209c	Function	Global	User Defined	4	0
+FUN_080020e0	080020e0	Function	Global	Default	1	0
+FUN_080020f4	080020f4	Function	Global	Default	3	0
+FUN_080020f8	080020f8	Function	Global	Default	4	0
+FUN_080020fc	080020fc	Function	Global	Default	3	0
+FUN_080021e8	080021e8	Function	Global	Default	1	0
+FUN_0800228c	0800228c	Function	Global	Default	1	0
+FUN_080022a4	080022a4	Function	Global	Default	1	0
+FUN_080022fc	080022fc	Function	Global	Default	1	0
+FUN_080023dc	080023dc	Function	Global	Default	1	0
+FUN_0800240c	0800240c	Function	Global	Default	1	0
+FUN_08002440	08002440	Function	Global	Default	1	0
+FUN_08002510	08002510	Function	Global	Default	1	0
+FUN_08002528	08002528	Function	Global	Default	4	0
+FUN_08002624	08002624	Function	Global	Default	1	0
+FUN_08002674	08002674	Function	Global	Default	1	0
+FUN_08002894	08002894	Function	Global	Default	7	0
+FUN_08002916	08002916	Function	Global	Default	0	0
+FUN_0800299c	0800299c	Function	Global	Default	2	0
+FUN_08002a02	08002a02	Function	Global	Default	1	0
+FUN_08002a1e	08002a1e	Function	Global	Default	8	0
+FUN_08002a38	08002a38	Function	Global	Default	2	0
+FUN_08002a68	08002a68	Function	Global	Default	1	0
+FUN_08002ac8	08002ac8	Function	Global	Default	1	0
+FUN_08002adc	08002adc	Function	Global	Default	3	0
+FUN_08002b0c	08002b0c	Function	Global	Default	1	0
+FUN_080030fc	080030fc	Function	Global	Default	1	0
+FUN_080031b0	080031b0	Function	Global	Default	1	0
+FUN_08003434	08003434	Function	Global	Default	2	0
+FUN_0800345c	0800345c	Function	Global	Default	1	0
+FUN_0800381c	0800381c	Function	Global	Default	1	0
+FUN_08003868	08003868	Function	Global	Default	1	0
+FUN_080038dc	080038dc	Function	Global	Default	1	0
+FUN_08003a28	08003a28	Function	Global	Default	10	0
+FUN_08003a40	08003a40	Function	Global	Default	1	0
+FUN_08003a94	08003a94	Function	Global	Default	1	0
+FUN_08003abc	08003abc	Function	Global	Default	1	0
+FUN_08003aec	08003aec	Function	Global	Default	1	0
+FUN_08003c48	08003c48	Function	Global	Default	1	0
+SetupWatchdog	08003d24	Function	Global	User Defined	1	0
+StartWatchdog	08003d58	Function	Global	User Defined	1	0
+NudgeWatchdog	08003d68	Function	Global	User Defined	2	0
+SetWatchdogPrescaler	08003d78	Function	Global	User Defined	1	0
+SetWatchdogReload	08003d84	Function	Global	User Defined	1	0
+SetWatchdog	08003d90	Function	Global	User Defined	1	0
+FUN_08003d9c	08003d9c	Function	Global	Default	48	0
+FUN_08003e1a	08003e1a	Function	Global	Default	0	0
+FUN_08003e70	08003e70	Function	Global	Default	6	0
+FUN_08003ea4	08003ea4	Function	Global	Default	8	0
+FUN_08003eb4	08003eb4	Function	Global	Default	1	0
+FUN_08003fb4	08003fb4	Function	Global	Default	1	0
+FUN_08004014	08004014	Function	Global	Default	12	0
+FUN_08004024	08004024	Function	Global	Default	1	0
+FUN_0800418c	0800418c	Function	Global	Default	1	0
+FUN_080041f0	080041f0	Function	Global	Default	1	0
+FUN_08004448	08004448	Function	Global	Default	0	0
+FUN_08004a20	08004a20	Function	Global	Default	0	1
+FUN_080060e2	080060e2	Function	Global	Default	1	0
+FUN_08006122	08006122	Function	Global	Default	1	0
+FUN_08006384	08006384	Function	Global	Default	0	1
+FUN_08006918	08006918	Function	Global	Default	1	1
+FUN_08006940	08006940	Function	Global	Default	6	0
+FUN_080069f8	080069f8	Function	Global	Default	18	0
+FUN_08006a10	08006a10	Function	Global	Default	2	0
+FUN_08006a64	08006a64	Function	Global	Default	6	0
+FUN_08006a88	08006a88	Function	Global	Default	17	0
+FUN_08006c64	08006c64	Function	Global	Default	1	0
+FUN_08006df0	08006df0	Function	Global	Default	3	0
+FUN_08006f80	08006f80	Function	Global	Default	8	0
+FUN_08007030	08007030	Function	Global	Default	13	0
+FUN_08007064	08007064	Function	Global	Default	1	0
+FUN_08007298	08007298	Function	Global	Default	1	0
+FUN_08007368	08007368	Function	Global	Default	11	0
+FUN_08007382	08007382	Function	Global	Default	11	0
+SetInterruptsState	08007484	Function	Global	User Defined	4	0
+FUN_080074f6	080074f6	Function	Global	Default	2	0
+ChangeAhbEnable	08007528	Function	Global	User Defined	9	0
+SetPeripheralClockEnable	08007548	Function	Global	User Defined	2	0
+FUN_08007568	08007568	Function	Global	Default	10	0
+FUN_08007588	08007588	Function	Global	Default	2	0
+FUN_080075a8	080075a8	Function	Global	Default	8	0
+FUN_080075c8	080075c8	Function	Global	Default	1	0
+FUN_080075dc	080075dc	Function	Global	Default	1	0
+FUN_080077cc	080077cc	Function	Global	Default	1	0
+FUN_08007814	08007814	Function	Global	Default	1	0
+FUN_0800786a	0800786a	Function	Global	Default	1	0
+FUN_080078d8	080078d8	Function	Global	Default	8	0
+FUN_080079e6	080079e6	Function	Global	Default	22	0
+FUN_08007ab8	08007ab8	Function	Global	Default	4	0
+FUN_08007b54	08007b54	Function	Global	Default	0	0
+FUN_08007b8c	08007b8c	Function	Global	Default	1	0
+FUN_08007bc4	08007bc4	Function	Global	Default	0	0
+FUN_08007bfc	08007bfc	Function	Global	Default	8	0
+FUN_08007c1c	08007c1c	Function	Global	Default	1	0
+FUN_08007c80	08007c80	Function	Global	Default	2	0
+FUN_08007db8	08007db8	Function	Global	Default	1	0
+FUN_08007dd4	08007dd4	Function	Global	Default	1	0
+FUN_08007fe0	08007fe0	Function	Global	Default	1	0
+FUN_08008020	08008020	Function	Global	Default	1	0
+FUN_08008178	08008178	Function	Global	Default	2	0
+FUN_080081cc	080081cc	Function	Global	Default	7	0
+FUN_080082b4	080082b4	Function	Global	Default	19	0
+FUN_08008414	08008414	Function	Global	Default	1	0
+FUN_080084d0	080084d0	Function	Global	Default	1	0
+FUN_08008538	08008538	Function	Global	Default	3	0
+InitialiseRCC	0800855c	Function	Global	User Defined	1	0
+FUN_080085e4	080085e4	Function	Global	Default	1	0
+FUN_080086d0	080086d0	Function	Global	Default	5	0
+FUN_0800872c	0800872c	Function	Global	Default	1	0
+FUN_080087dc	080087dc	Function	Global	Default	10	0
+SetTickTimerClockSource	0800882c	Function	Global	User Defined	1	0
+InitiliaseRAM	08008854	Function	Global	User Defined	1	0
+FUN_08008904	08008904	Function	Global	Default	2	1
+SetupTimers	08008be8	Function	Global	User Defined	1	0
+FUN_08008c48	08008c48	Function	Global	Default	1	0
+SetCounterEnable	08008c50	Function	Global	User Defined	1	0
+InitTimer	08008c6c	Function	Global	User Defined	1	0
+FUN_08008d70	08008d70	Function	Global	Default	1	0
+SetTimerInterruptEnable	08008d96	Function	Global	User Defined	1	0
+SetTimerCounter	08008daa	Function	Global	User Defined	1	0
+SetupTimer	08008db0	Function	Global	User Defined	1	0
+FUN_08008f2c	08008f2c	Function	Global	Default	4	0
+EnableDisableUart	08008f3e	Function	Global	User Defined	2	0
+FUN_08008f56	08008f56	Function	Global	Default	4	0
+FUN_08008f6a	08008f6a	Function	Global	Default	2	0
+FUN_08008fb8	08008fb8	Function	Global	Default	2	0
+SetupUart	08008ffc	Function	Global	User Defined	2	0
+FUN_080090e4	080090e4	Function	Global	Default	4	0
+FUN_080090ee	080090ee	Function	Global	Default	2	0
+FUN_080090f8	080090f8	Function	Global	Default	0	0
+FUN_0800919c	0800919c	Function	Global	Default	0	0
+FUN_080091cc	080091cc	Function	Global	Default	0	0
+FUN_08009270	08009270	Function	Global	Default	0	0
+FUN_080092a0	080092a0	Function	Global	Default	2	0
+FUN_0800930c	0800930c	Function	Global	Default	0	0
+FUN_08009394	08009394	Function	Global	Default	1	0
+FUN_08009424	08009424	Function	Global	Default	2	0
+FUN_0800944c	0800944c	Function	Global	Default	2	0
+FUN_08009470	08009470	Function	Global	Default	1	0
+FUN_08009838	08009838	Function	Global	Default	2	0
+FUN_0800988c	0800988c	Function	Global	Default	1	0
+FUN_08009984	08009984	Function	Global	Default	1	0
+FUN_08009ae0	08009ae0	Function	Global	Default	1	0
+FUN_08009b10	08009b10	Function	Global	Default	0	1
+FUN_08009e94	08009e94	Function	Global	Default	0	1
+switchD	08009ecc	Instruction Label	switchD_08009ecc	Analysis	0	0
+switchdataD_08009ece	08009ece	Data Label	switchD_08009ecc	Analysis	1	0
+caseD_0	08009f08	Instruction Label	switchD_08009ecc	Analysis	9	0
+caseD_14	08009f0a	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_16	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_18	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_15	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_1a	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_3	08009fb6	Instruction Label	switchD_08009ecc	Analysis	2	0
+caseD_1b	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_19	08009fb6	Instruction Label	switchD_08009ecc	Analysis	0	0
+caseD_17	08009fee	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_1c	0800a084	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_10	0800a0ce	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_1	0800a1f8	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_2	0800a216	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_11	0800a268	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_4	0800a26a	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_5	0800a26c	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_6	0800a26e	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_8	0800a270	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_c	0800a272	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_a	0800a274	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_e	0800a300	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_f	0800a31e	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_13	0800a33c	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_12	0800a384	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_7	0800a3d0	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_9	0800a4ae	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_b	0800a5ac	Instruction Label	switchD_08009ecc	Analysis	1	0
+caseD_d	0800a826	Instruction Label	switchD_08009ecc	Analysis	1	0
+FUN_0800aaa4	0800aaa4	Function	Global	Default	1	0
+FUN_0800b178	0800b178	Function	Global	Default	1	0
+FUN_0800b3b4	0800b3b4	Function	Global	Default	0	1
+FUN_0800b810	0800b810	Function	Global	Default	2	0
+FUN_0800b838	0800b838	Function	Global	Default	1	0
+FUN_0800b8a0	0800b8a0	Function	Global	Default	1	0
+FUN_0800ba3c	0800ba3c	Function	Global	Default	12	0
+FUN_0800ba5c	0800ba5c	Function	Global	Default	1	0
+FUN_0800bb8c	0800bb8c	Function	Global	Default	1	0
+FUN_0800bec0	0800bec0	Function	Global	Default	1	0
+FUN_0800bf08	0800bf08	Function	Global	Default	6	0
+FUN_0800bf54	0800bf54	Function	Global	Default	1	0
+FUN_0800c378	0800c378	Function	Global	Default	2	0
+FUN_0800c3f4	0800c3f4	Function	Global	Default	1	0
+FUN_0800c484	0800c484	Function	Global	Default	12	0
+FUN_0800c498	0800c498	Function	Global	Default	4	0
+FUN_0800c540	0800c540	Function	Global	Default	2	0
+FUN_0800c542	0800c542	Function	Global	Default	1	0
+FUN_0800c650	0800c650	Function	Global	Default	4	0
+FUN_0800c770	0800c770	Function	Global	Default	11	0
+FUN_0800c7b4	0800c7b4	Function	Global	Default	20	0
+FUN_0800c7dc	0800c7dc	Function	Global	Default	2	0
+FUN_0800c80a	0800c80a	Function	Global	Default	2	0
+FUN_0800c83c	0800c83c	Function	Global	Default	10	0
+FUN_0800c858	0800c858	Function	Global	Default	2	0
+FUN_0800c884	0800c884	Function	Global	Default	4	0
+FUN_0800c88c	0800c88c	Function	Global	Default	1	0
+FUN_0800cc28	0800cc28	Function	Global	Default	2	0
+FUN_0800cd1c	0800cd1c	Function	Global	Default	4	0
+FUN_0800cdc8	0800cdc8	Function	Global	Default	2	0
+FUN_0800ceb4	0800ceb4	Function	Global	Default	2	0
+FUN_0800cebe	0800cebe	Function	Global	Default	1	0
+FUN_0800cec6	0800cec6	Function	Global	Default	1	0
+FUN_0800ced8	0800ced8	Function	Global	Default	2	0
+FUN_0800cf0c	0800cf0c	Function	Global	Default	3	0
+FUN_0800cf18	0800cf18	Function	Global	Default	3	0
+FUN_0800d08c	0800d08c	Function	Global	Default	1	0
+FUN_0800d778	0800d778	Function	Global	Default	1	0
+FUN_0800d798	0800d798	Function	Global	Default	5	0
+FUN_0800d7c4	0800d7c4	Function	Global	Default	1	0
+FUN_0800d7d0	0800d7d0	Function	Global	Default	5	0
+FUN_0800d830	0800d830	Function	Global	Default	2	0
+FUN_0800d854	0800d854	Function	Global	Default	2	0
+FUN_0800d878	0800d878	Function	Global	Default	3	0
+FUN_0800da94	0800da94	Function	Global	Default	2	0
+FUN_0800dc0c	0800dc0c	Function	Global	Default	1	0
+FUN_0800dca4	0800dca4	Function	Global	Default	1	0
+FUN_0800dcd0	0800dcd0	Function	Global	Default	5	0
+FUN_0800dd14	0800dd14	Function	Global	Default	21	0
+FUN_0800dd58	0800dd58	Function	Global	Default	2	0
+FUN_0800dd90	0800dd90	Function	Global	Default	1	0
+FUN_0800dfb8	0800dfb8	Function	Global	Default	1	0
+FUN_0800dfe0	0800dfe0	Function	Global	Default	1	0
+FUN_0800e030	0800e030	Function	Global	Default	2	0
+FUN_0800e0dc	0800e0dc	Function	Global	Default	2	0
+Loop	0800e0ec	Function	Global	User Defined	3	0
+FUN_0800e270	0800e270	Function	Global	Default	6	0
+FUN_0800e298	0800e298	Function	Global	Default	1	0
+FUN_0800e2e0	0800e2e0	Function	Global	Default	2	0
+FUN_0800e30c	0800e30c	Function	Global	Default	1	0
+IWDG_KR	40003000	Label	Global	User Defined	6	0
+IWDG_PR	40003004	Label	Global	User Defined	2	0
+IWDG_RLR	40003008	Label	Global	User Defined	2	0
+RCC_ControlReg	40021000	Label	Global	User Defined	11	0
+RCC_ConfigReg	40021004	Label	Global	User Defined	33	0
+RCC_AHBEnable	40021014	Label	Global	User Defined	8	0
+RCC_APB1ENR	4002101c	Label	Global	User Defined	8	0
+RCC_BDCR	40021020	Label	Global	User Defined	2	0
+RCC_ControlStatus	40021024	Label	Global	User Defined	9	0
+RCC_CR2	40021034	Label	Global	User Defined	4	0
+Flash_AccessControlReg	40022000	Label	Global	User Defined	1	0
+GPIOB_Base	48000400	Label	Global	User Defined	97	0
+GPIOB_Input	48000410	Label	Global	User Defined	5	0
+GPIOB_SetReset	48000418	Label	Global	User Defined	26	0
+GPIOB_PinReset	48000428	Label	Global	User Defined	16	0
+CORTEX_M_SYSTICK_CSR	e000e010	Label	Global	User Defined	10	0
+NVIC_ISER	e000e100	Label	Global	User Defined	2	0
+NVIC_ICER	e000e180	Label	Global	User Defined	2	0

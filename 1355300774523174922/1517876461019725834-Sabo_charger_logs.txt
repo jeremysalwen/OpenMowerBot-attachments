@@ -1,0 +1,275 @@
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [ERROR] [1781960144.524663576]: >>> Charger: Error reading PART_INFORMATION
+open_mower_ros  | [ERROR] [1781960144.524855927]: >>> Charger: Invalid Response (charger_connected)
+open_mower_ros  | [ERROR] [1781960144.574779754]: >>> Charger: Error writing Power_Path_and_Reverse_Mode_Control
+open_mower_ros  | [ERROR] [1781960144.574976197]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [WARN] [1781960144.659807540]: Costmap2DROS transform timeout. Current time: 1781960144.6596, global_pose stamp: 1781959504.3705, tolerance: 0.3000
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [WARN] [1781960144.924464948]: [ID=9] Received heartbeat from an unknown service
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [WARN] [1781960145.026766544]: [ID=5] Received heartbeat from an unknown service
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [WARN] [1781960145.859937357]: Costmap2DROS transform timeout. Current time: 1781960145.8598, global_pose stamp: 1781959504.3705, tolerance: 0.3000
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+^C
+openmower@jd:~ $ 

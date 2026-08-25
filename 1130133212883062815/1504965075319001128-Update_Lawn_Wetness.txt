@@ -1,0 +1,51 @@
+alias: Update Lawn Wetness (Private Weather Station)
+triggers:
+  - entity_id:
+      - weather.kvtsouth134
+    trigger: state
+actions:
+  - variables:
+      current_wetness: "{{ states('input_number.lawn_wetness') | float(0) }}"
+      last_run_time: "{{ this.attributes.last_triggered }}"
+      current_time: "{{ now() }}"
+      uv_now: "{{ states('sensor.kvtsouth134_uv_index') | float(0) }}"
+      rain_intensity: "{{ states('sensor.kvtsouth134_precipitation_rate') | float(0) }}"
+      dew_rate: "{{ states('input_number.dew_rate') | float(0) }}"
+      delta_h: |
+        {% if last_run_time is not none %}
+          {{ (as_timestamp(current_time) - as_timestamp(last_run_time)) / 3600 }}
+        {% else %}
+          {{ 0 }}
+        {% endif %}
+  - target:
+      entity_id: input_number.lawn_wetness
+    data:
+      value: |
+        {{ max(
+          (current_wetness | float) + (delta_h | float) * (
+            (rain_intensity | float) * (rain_coeff | float)
+            + (dew_rate | float) * (dew_coeff | float)
+            - (uv_now | float) * (uv_coeff | float)
+          ), 0)
+        }}
+    action: input_number.set_value
+  - data:
+      message: >
+        Lawn Wetness Update: Previous value: {{ current_wetness }} Last
+        triggered: {{ last_run_time }} Current time: {{ current_time }} delta_h:
+        {{ delta_h }} hours uv_now: {{ uv_now }} rain_intensity: {{
+        rain_intensity }} dew_rate {{ dew_rate }} rain_coeff: {{ rain_coeff }}
+        uv_coeff: {{ uv_coeff }} dew_coeff {{ dew_coeff }} New value: {{ max(
+          (current_wetness | float) + (delta_h | float) * (
+            (rain_intensity | float) * (rain_coeff | float)
+            + (dew_rate | float) * (dew_coeff | float)
+            - (uv_now | float) * (uv_coeff | float)
+          ), 0)
+        }}
+      level: info
+    action: system_log.write
+variables:
+  rain_coeff: "{{ states('input_number.lawn_wetness_rain_coefficient') | float(1) }}"
+  uv_coeff: "{{ states('input_number.lawn_wetness_uv_coefficient') | float(1) }}"
+  dew_coeff: "{{ states('input_number.lawn_wetness_dew_coefficient') | float(1) }}"
+mode: queued

@@ -1,0 +1,75 @@
+mowgli-openmower  | [ INFO] [1724623556.331864956]: Waiting for a pose message
+mowgli-openmower  | [ INFO] [1724623556.368904209]: GPS data now valid
+mowgli-openmower  | [ INFO] [1724623556.369089124]: First GPS data, moving kalman filter to -7.67452, 37.259
+mowgli-openmower  | [ WARN] [1724623560.138247999]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100546 timeout was 0.1.
+mowgli-openmower  | [ INFO] [1724623560.163934533]: Calibrated gyro offset: -0.000825404
+mowgli-openmower  | [ WARN] [1724623560.168513654]: Could not add point to heatmap: GridMap::atPosition(...) : Position is out of range.
+mowgli-openmower  | [ INFO] [1724623560.331871310]: Waiting for emergency service
+mowgli-openmower  | [ INFO] [1724623560.335009903]: Waiting for path server
+mowgli-openmower  | [ INFO] [1724623560.337264464]: Waiting for mower service
+mowgli-openmower  | [ INFO] [1724623560.338657450]: Waiting for gps service
+mowgli-openmower  | [ INFO] [1724623560.339797855]: Waiting for positioning service
+mowgli-openmower  | [ INFO] [1724623560.341386548]: Waiting for map server
+mowgli-openmower  | [ INFO] [1724623560.342541244]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...
+mowgli-openmower  | [ WARN] [1724623560.486224430]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided
+mowgli-openmower  | [ INFO] [1724623560.488675864]: local_costmap: Using plugin "obstacle_layer"
+mowgli-openmower  | [ INFO] [1724623560.506684642]:     Subscribed to Topics:
+mowgli-openmower  | [ INFO] [1724623560.521970447]: local_costmap: Using plugin "inflation_layer"
+mowgli-openmower  | [ WARN] [1724623560.581620350]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided
+mowgli-openmower  | [ INFO] [1724623560.582711464]: global_costmap: Using plugin "obstacle_layer"
+mowgli-openmower  | [ INFO] [1724623560.587827537]:     Subscribed to Topics:
+mowgli-openmower  | [ INFO] [1724623560.593359524]: global_costmap: Using plugin "inflation_layer"
+mowgli-openmower  | [ WARN] [1724623560.669104890]: Could not add point to heatmap: GridMap::atPosition(...) : Position is out of range.
+mowgli-openmower  | [ INFO] [1724623560.672623521]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+mowgli-openmower  | [ INFO] [1724623560.740923879]: FTCLocalPlannerROS: Version 2 Init.
+mowgli-openmower  | [ INFO] [1724623560.741136793]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+mowgli-openmower  | [ INFO] [1724623560.793508519]: FTCLocalPlannerROS: Version 2 Init.
+mowgli-openmower  | [ INFO] [1724623560.793756433]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+mowgli-openmower  | [ WARN] [1724623560.794705507]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+mowgli-openmower  | [ WARN] [1724623561.172193935]: Could not add point to heatmap: GridMap::atPosition(...) : Position is out of range.
+mowgli-openmower  | [ INFO] [1724623561.249801866]: docking pose: position:
+mowgli-openmower  |   x: -13.1927
+mowgli-openmower  |   y: 36.7684
+mowgli-openmower  |   z: 0
+mowgli-openmower  | orientation:
+mowgli-openmower  |   x: 0
+mowgli-openmower  |   y: 0
+mowgli-openmower  |   z: -0.997281
+mowgli-openmower  |   w: 0.0736993
+mowgli-openmower  |
+mowgli-openmower  | [ INFO] [1724623561.250112488]: Updated heatmap geometry.
+mowgli-openmower  | [ INFO] [1724623561.268366555]: waitForService: Service [/mower_map_service/get_mowing_area] is now available.
+mowgli-openmower  | [ INFO] [1724623561.268529595]: Waiting for docking point server
+mowgli-openmower  | [ INFO] [1724623561.270446701]: Waiting for nav point server
+mowgli-openmower  | [ INFO] [1724623561.272220308]: Waiting for clear nav point server
+mowgli-openmower  | [ INFO] [1724623561.274500535]: Waiting for move base flex
+mowgli-openmower  | [ INFO] [1724623562.227890991]: Waiting for mowing path progress server
+mowgli-openmower  | [ INFO] [1724623562.229740139]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623562.229795847]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623562.331778993]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623563.331766528]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623564.331753776]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623565.331779527]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623566.331756575]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623567.331776794]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623568.331773684]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623569.331780786]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623570.331779725]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623571.331769044]: Waiting for an emergency status message
+mowgli-openmower  | [ INFO] [1724623572.331767701]: registering actions
+mowgli-openmower  | [ INFO] [1724623572.335853910]: new actions registered: mower_logic registered 1 actions.
+mowgli-openmower  | [ INFO] [1724623572.336320864]: successfully registered actions for mower_logic
+mowgli-openmower  | [ INFO] [1724623572.336427613]: om_mower_logic: Got all servers, we can mow
+mowgli-openmower  | [ INFO] [1724623572.349053445]: successfully set emergency enabled to 0
+mowgli-openmower  | [ INFO] [1724623572.349188194]:
+mowgli-openmower  | [ INFO] [1724623572.349241860]:
+mowgli-openmower  | [ INFO] [1724623572.349295818]: --------------------------------------
+mowgli-openmower  | [ INFO] [1724623572.349349192]: - Entered state: IDLE
+mowgli-openmower  | [ INFO] [1724623572.349408692]: --------------------------------------
+mowgli-openmower  | [ INFO] [1724623572.353074322]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower  | [ INFO] [1724623572.353523192]: successfully registered actions for mower_logic:idle
+mowgli-openmower  | [ INFO] [1724623572.356830951]: Got getMowingArea call with index: 0
+mowgli-openmower  | [ INFO] [1724623572.359999878]: Getting Docking Point
+mowgli-openmower  | [ INFO] [1724623572.362218564]: successfully set GPS to 0
+mowgli-openmower  | [ INFO] [1724623572.371974717]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower  | [ INFO] [1724623572.837147497]: GPS quality: 0.893699

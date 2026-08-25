@@ -1,0 +1,224 @@
+mowgli-openmower  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | Starting OpenMower
+mowgli-openmower  | ... logging to /root/.ros/log/5cbacb5e-1b93-11f0-8834-dca6325e65ea/roslaunch-robomo-44.log
+mowgli-openmower  | Checking log directory for disk usage. This may take a while.
+mowgli-openmower  | Press Ctrl-C to interrupt
+mowgli-openmower  | Done checking log file disk usage. Usage is <1GB.
+mowgli-openmower  | 
+mowgli-openmower  | started roslaunch server http://192.168.1.95:43673/
+mowgli-openmower  | 
+mowgli-openmower  | SUMMARY
+mowgli-openmower  | ========
+mowgli-openmower  | 
+mowgli-openmower  | CLEAR PARAMETERS
+mowgli-openmower  |  * /xbot_driver_gps/
+mowgli-openmower  | 
+mowgli-openmower  | PARAMETERS
+mowgli-openmower  |  * /heatmap_generator/sensor_ids: om_gps_accuracy
+mowgli-openmower  |  * /joy/autorepeat_rate: 10.0
+mowgli-openmower  |  * /joy/coalesce_interval: 0.06
+mowgli-openmower  |  * /joy_teleop/enable_turbo_button: 4
+mowgli-openmower  |  * /joy_teleop/scale_angular: 1.5
+mowgli-openmower  |  * /joy_teleop/scale_angular_turbo: 3.0
+mowgli-openmower  |  * /joy_teleop/scale_linear: 0.5
+mowgli-openmower  |  * /joy_teleop/scale_linear_turbo: 1.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/acceleration: 0.05
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/forward_only: False
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 0.5
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.2
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 10.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/speed_angular: 15.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 0.3
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+mowgli-openmower  |  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/acceleration: 0.1
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/check_obstacles: False
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/debug_pid: True
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/forward_only: True
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kd_ang: 0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kd_lat: 5.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_lat: 0.05
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_lat_max: 20.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kp_ang: 1.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kp_lat: 2.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/kp_lon: 1.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.2
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 0.4
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/max_follow_distance: 0.8
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/restore_defaults: False
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/speed_angular: 40.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/speed_fast: 0.3
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/speed_fast_threshold: 0.3
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 5.0
+mowgli-openmower  |  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+mowgli-openmower  |  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+mowgli-openmower  |  * /move_base_flex/controller_frequency: 1.0
+mowgli-openmower  |  * /move_base_flex/controller_patience: 30.0
+mowgli-openmower  |  * /move_base_flex/controllers: [{'name': 'FTCPla...
+mowgli-openmower  |  * /move_base_flex/global_costmap/global_frame: map
+mowgli-openmower  |  * /move_base_flex/global_costmap/inflation_radius: 1.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/map_topic: mower_map_service...
+mowgli-openmower  |  * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/obstacle_range: 3.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/publish_frequency: 1.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/raytrace_range: 4.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/resolution: 0.1
+mowgli-openmower  |  * /move_base_flex/global_costmap/robot_base_frame: base_link
+mowgli-openmower  |  * /move_base_flex/global_costmap/robot_radius: 0.0
+mowgli-openmower  |  * /move_base_flex/global_costmap/rolling_window: False
+mowgli-openmower  |  * /move_base_flex/global_costmap/static_map: True
+mowgli-openmower  |  * /move_base_flex/global_costmap/update_frequency: 1.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/global_frame: map
+mowgli-openmower  |  * /move_base_flex/local_costmap/height: 1.5
+mowgli-openmower  |  * /move_base_flex/local_costmap/inflation_radius: 0.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/map_topic: mower_map_service...
+mowgli-openmower  |  * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/obstacle_range: 3.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/publish_frequency: 2.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/raytrace_range: 4.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/resolution: 0.15
+mowgli-openmower  |  * /move_base_flex/local_costmap/robot_base_frame: base_link
+mowgli-openmower  |  * /move_base_flex/local_costmap/robot_radius: 0.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/rolling_window: True
+mowgli-openmower  |  * /move_base_flex/local_costmap/static_map: True
+mowgli-openmower  |  * /move_base_flex/local_costmap/update_frequency: 5.0
+mowgli-openmower  |  * /move_base_flex/local_costmap/width: 1.5
+mowgli-openmower  |  * /move_base_flex/oscillation_distance: 0.2
+mowgli-openmower  |  * /move_base_flex/oscillation_timeout: 10.0
+mowgli-openmower  |  * /move_base_flex/planner_frequency: 1.0
+mowgli-openmower  |  * /move_base_flex/planner_patience: 5.0
+mowgli-openmower  |  * /move_base_flex/planners: [{'name': 'Global...
+mowgli-openmower  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+mowgli-openmower  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+mowgli-openmower  |  * /mower_logic/automatic_mode: 0
+mowgli-openmower  |  * /mower_logic/battery_critical_voltage: 23.0
+mowgli-openmower  |  * /mower_logic/battery_empty_voltage: 23.0
+mowgli-openmower  |  * /mower_logic/battery_full_voltage: 28.0
+mowgli-openmower  |  * /mower_logic/docking_distance: 1.0
+mowgli-openmower  |  * /mower_logic/docking_extra_time: 0
+mowgli-openmower  |  * /mower_logic/docking_redock: False
+mowgli-openmower  |  * /mower_logic/docking_retry_count: 4
+mowgli-openmower  |  * /mower_logic/enable_mower: True
+mowgli-openmower  |  * /mower_logic/gps_timeout: 5.0
+mowgli-openmower  |  * /mower_logic/gps_wait_time: 10.0
+mowgli-openmower  |  * /mower_logic/motor_cold_temperature: 40.0
+mowgli-openmower  |  * /mower_logic/motor_hot_temperature: 80.0
+mowgli-openmower  |  * /mower_logic/mow_angle_increment: 0.1
+mowgli-openmower  |  * /mower_logic/mow_angle_offset: 0
+mowgli-openmower  |  * /mower_logic/mow_angle_offset_is_absolute: False
+mowgli-openmower  |  * /mower_logic/outline_count: 4
+mowgli-openmower  |  * /mower_logic/outline_offset: 0.05
+mowgli-openmower  |  * /mower_logic/outline_overlap_count: 0
+mowgli-openmower  |  * /mower_logic/perimeter_signal: False
+mowgli-openmower  |  * /mower_logic/rain_check_seconds: 20
+mowgli-openmower  |  * /mower_logic/rain_delay_minutes: 30
+mowgli-openmower  |  * /mower_logic/rain_mode: 0
+mowgli-openmower  |  * /mower_logic/tool_width: 0.13
+mowgli-openmower  |  * /mower_logic/undock_distance: 1.0
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/authenticate: True
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/ca_cert: 
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/cert: 
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/host: system.asgeupos.pl
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/key: 
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/mountpoint: NWSC_RTCM_3_2
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/ntrip_version: 
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/password: Morse9-Unmasked-S...
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/port: 8086
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/ssl: False
+mowgli-openmower  |  * /ntrip_client/ntrip_client_node/username: twoit/timmywo
+mowgli-openmower  |  * /rosdistro: noetic
+mowgli-openmower  |  * /rosversion: 1.16.0
+mowgli-openmower  |  * /twist_mux/topics: [{'name': 'naviga...
+mowgli-openmower  |  * /xbot_driver_gps/baudrate: 921600
+mowgli-openmower  |  * /xbot_driver_gps/datum_height: 0
+mowgli-openmower  |  * /xbot_driver_gps/datum_lat: 49.782725283
+mowgli-openmower  |  * /xbot_driver_gps/datum_long: 20.526198404
+mowgli-openmower  |  * /xbot_driver_gps/device_type: serial
+mowgli-openmower  |  * /xbot_driver_gps/mode: absolute
+mowgli-openmower  |  * /xbot_driver_gps/serial_port: /dev/gps
+mowgli-openmower  |  * /xbot_driver_gps/ubx_mode: True
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_enable: False
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_password: 
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_port: 1883
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_topic_prefix: 
+mowgli-openmower  |  * /xbot_monitoring/external_mqtt_username: 
+mowgli-openmower  |  * /xbot_monitoring/software_version: c463bce
+mowgli-openmower  |  * /xbot_positioning/antenna_offset_x: 0.3
+mowgli-openmower  |  * /xbot_positioning/antenna_offset_y: 0.0
+mowgli-openmower  |  * /xbot_positioning/max_gps_accuracy: 0.2
+mowgli-openmower  | 
+mowgli-openmower  | NODES
+mowgli-openmower  |   /
+mowgli-openmower  |     heatmap_generator (xbot_monitoring/heatmap_generator)
+mowgli-openmower  |     joy (joy/joy_node)
+mowgli-openmower  |     joy_teleop (teleop_twist_joy/teleop_node)
+mowgli-openmower  |     map_service (mower_map/mower_map_service)
+mowgli-openmower  |     monitoring (mower_logic/monitoring)
+mowgli-openmower  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+mowgli-openmower  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+mowgli-openmower  |     mower_logic (mower_logic/mower_logic)
+mowgli-openmower  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+mowgli-openmower  |     twist_mux (twist_mux/twist_mux)
+mowgli-openmower  |     xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+mowgli-openmower  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+mowgli-openmower  |     xbot_positioning (xbot_positioning/xbot_positioning)
+mowgli-openmower  |     xbot_remote (xbot_remote/xbot_remote)
+mowgli-openmower  |   /ntrip_client/
+mowgli-openmower  |     ntrip_client_node (ntrip_client/ntrip_ros.py)
+mowgli-openmower  | 
+mowgli-openmower  | ROS_MASTER_URI=http://192.168.1.95:11311
+mowgli-openmower  | 
+mowgli-openmower  | process[ntrip_client/ntrip_client_node-1]: started with pid [52]
+mowgli-openmower  | process[xbot_driver_gps-2]: started with pid [53]
+mowgli-openmower  | process[move_base_flex-3]: started with pid [54]
+mowgli-openmower  | process[move_base_legacy_relay-4]: started with pid [55]
+mowgli-openmower  | process[xbot_positioning-5]: started with pid [60]
+mowgli-openmower  | process[joy-6]: started with pid [61]
+mowgli-openmower  | process[joy_teleop-7]: started with pid [62]
+mowgli-openmower  | process[map_service-8]: started with pid [73]
+mowgli-openmower  | process[mower_logic-9]: started with pid [81]
+mowgli-openmower  | process[slic3r_coverage_planner-10]: started with pid [85]
+mowgli-openmower  | process[twist_mux-11]: started with pid [89]
+mowgli-openmower  | process[xbot_monitoring-12]: started with pid [92]
+mowgli-openmower  | process[heatmap_generator-13]: started with pid [94]
+mowgli-openmower  | process[xbot_remote-14]: started with pid [99]
+mowgli-openmower  | process[monitoring-15]: started with pid [107]
+openmower-gui     | time="2025-04-17T13:53:46Z" level=error msg="Post \"http://192.1.168.95:11311/RPC2\": dial tcp 192.1.168.95:11311: i/o timeout (Client.Timeout exceeded while awaiting headers)"
+mowgli-openmower  | the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+mowgli-openmower  | [INFO] [1744898029.088805]: Connected to http://system.asgeupos.pl:8086/NWSC_RTCM_3_2
+

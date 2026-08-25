@@ -1,0 +1,128 @@
+# =======================================
+# topic:           /mower/status
+# msg_count:       4213
+# timestamp (sec): 1714808043.957087278
+# - - -
+stamp: 
+  secs: 1714808043
+  nsecs: 956054774
+mower_status: 255
+raspberry_pi_power: True
+gps_power: False
+esc_power: False
+rain_detected: False
+sound_module_available: False
+sound_module_busy: False
+ui_board_available: False
+ultrasonic_ranges: [0.0, 0.0, 0.0, 0.0, 0.0]
+emergency: False
+v_charge: 0.5051513314247131
+v_battery: 27.597217559814453
+charge_current: 0.0698242112994194
+left_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 11098938
+  temperature_motor: -81.69999694824219
+  temperature_pcb: 39.20000076293945
+right_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 4283356242
+  temperature_motor: -84.9000015258789
+  temperature_pcb: 42.599998474121094
+mow_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 2510146
+  temperature_motor: 17.399999618530273
+  temperature_pcb: 43.5
+
+# =======================================
+# topic:           /mower/status
+# msg_count:       4214
+# timestamp (sec): 1714808043.978403091
+# - - -
+stamp: 
+  secs: 1714808043
+  nsecs: 976291347
+mower_status: 255
+raspberry_pi_power: True
+gps_power: False
+esc_power: False
+rain_detected: False
+sound_module_available: False
+sound_module_busy: False
+ui_board_available: False
+ultrasonic_ranges: [0.0, 0.0, 0.0, 0.0, 0.0]
+emergency: False
+v_charge: 0.5051513314247131
+v_battery: 27.597217559814453
+charge_current: 0.0698242112994194
+left_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 11098938
+  temperature_motor: -81.80000305175781
+  temperature_pcb: 39.20000076293945
+right_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 4283356242
+  temperature_motor: -84.4000015258789
+  temperature_pcb: 42.70000076293945
+mow_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 2510174
+  temperature_motor: 17.399999618530273
+  temperature_pcb: 43.5
+
+# =======================================
+# topic:           /mower/status
+# msg_count:       4215
+# timestamp (sec): 1714808043.997495174
+# - - -
+stamp: 
+  secs: 1714808043
+  nsecs: 996033446
+mower_status: 255
+raspberry_pi_power: True
+gps_power: False
+esc_power: False
+rain_detected: False
+sound_module_available: False
+sound_module_busy: False
+ui_board_available: False
+ultrasonic_ranges: [0.0, 0.0, 0.0, 0.0, 0.0]
+emergency: True
+v_charge: 0.5051513314247131
+v_battery: 27.597217559814453
+charge_current: 0.0698242112994194
+left_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 11098938
+  temperature_motor: -81.9000015258789
+  temperature_pcb: 39.20000076293945
+right_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 4283356242
+  temperature_motor: -84.19999694824219
+  temperature_pcb: 42.70000076293945
+mow_esc_status: 
+  status: 100
+  current: 0.0
+  voltage: 27.0
+  tacho: 2510201
+  temperature_motor: 17.399999618530273
+  temperature_pcb: 43.5

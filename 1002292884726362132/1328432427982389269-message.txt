@@ -1,0 +1,97 @@
+R[2025/01/13 18:32:47] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:32:52] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:32:57] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:02] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:07] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:12] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:17] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:22] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:27] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:32] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:37] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:42] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:47] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:52] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:33:57] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:02] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:07] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:12] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:17] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:22] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:27] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:32] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:37] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:42] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:34:47] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+T[GIN] 2025/01/13 - 18:34:52 | 200 |     521.288Âµs |   192.168.80.56 | GET      "/"
+l[GIN] 2025/01/13 - 18:34:52 | 200 |    4.452574ms |   192.168.80.56 | GET      "/assets/index-DrhbFS9z.css"
+k[GIN] 2025/01/13 - 18:34:52 | 200 |  178.197687ms |   192.168.80.56 | GET      "/assets/index-Dr_VlyBo.js"
+R[2025/01/13 18:34:52] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+o[GIN] 2025/01/13 - 18:34:52 | 200 |   36.327356ms |   192.168.80.56 | GET      "/assets/mapbox-gl-DE1t3Qfi.js"
+_[GIN] 2025/01/13 - 18:34:52 | 404 |     115.664Âµs |   192.168.80.56 | GET      "/favicon.ico"
+g[GIN] 2025/01/13 - 18:34:52 | 200 |     644.026Âµs |   192.168.80.56 | POST     "/api/config/keys/get"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/status"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/status"
+Vtime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower_logic/current_state"
+Ttime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_driver_gps/xb_pose"
+`[GIN] 2025/01/13 - 18:34:52 | 200 |     772.302Âµs |   192.168.80.56 | GET      "/api/settings"
+Vtime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower_logic/current_state"
+Utime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_positioning/xb_pose"
+Ttime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_driver_gps/xb_pose"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/status"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /imu/data_raw"
+Vtime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower_logic/current_state"
+Ntime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/wheel_ticks"
+Utime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_positioning/xb_pose"
+Ptime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_monitoring/map"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /imu/data_raw"
+Ntime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/wheel_ticks"
+Ptime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_monitoring/map"
+ftime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /slic3r_coverage_planner/path_marker_array"
+ftime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /slic3r_coverage_planner/path_marker_array"
+btime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /move_base_flex/FTCPlanner/global_plan"
+btime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /move_base_flex/FTCPlanner/global_plan"
+Ttime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_driver_gps/xb_pose"
+Utime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_positioning/xb_pose"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/status"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /imu/data_raw"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/status"
+Vtime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower_logic/current_state"
+Ntime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/wheel_ticks"
+Vtime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower_logic/current_state"
+Ptime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_monitoring/map"
+Ttime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_driver_gps/xb_pose"
+ftime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /slic3r_coverage_planner/path_marker_array"
+btime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /move_base_flex/FTCPlanner/global_plan"
+Ttime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_driver_gps/xb_pose"
+Utime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_positioning/xb_pose"
+Utime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_positioning/xb_pose"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /imu/data_raw"
+Itime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /imu/data_raw"
+Ntime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/wheel_ticks"
+Ptime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_monitoring/map"
+Ntime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /mower/wheel_ticks"
+ftime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /slic3r_coverage_planner/path_marker_array"
+Ptime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /xbot_monitoring/map"
+btime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /move_base_flex/FTCPlanner/global_plan"
+ftime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /slic3r_coverage_planner/path_marker_array"
+btime="2025-01-13T18:34:52Z" level=info msg="Subscribed to /move_base_flex/FTCPlanner/global_plan"
+p[GIN] 2025/01/13 - 18:34:57 | 200 |  4.345381605s |   192.168.80.56 | GET      "/api/openmower/subscribe/ticks"
+-Error #01: websocket: close 1005 (no status)
+!Error #02: websocket: close sent
+b[GIN] 2025/01/13 - 18:34:57 | 200 |   27.000604ms |   192.168.80.56 | GET      "/api/containers/"
+n[GIN] 2025/01/13 - 18:34:57 | 200 |  4.446468896s |   192.168.80.56 | GET      "/api/openmower/subscribe/gps"
+-Error #01: websocket: close 1005 (no status)
+n[GIN] 2025/01/13 - 18:34:57 | 200 |  4.542182924s |   192.168.80.56 | GET      "/api/openmower/subscribe/imu"
+-Error #01: websocket: close 1005 (no status)
+!Error #02: websocket: close sent
+!Error #03: websocket: close sent
+q[GIN] 2025/01/13 - 18:34:57 | 200 |  4.641952423s |   192.168.80.56 | GET      "/api/openmower/subscribe/status"
+-Error #01: websocket: close 1005 (no status)
+!Error #02: websocket: close sent
+R[2025/01/13 18:34:57] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:35:02] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:35:07] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:35:12] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:35:17] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to have datatype/md5sum [mower_msgs/HighLevelStatus/732af7e69b02c69eb2276dbbe1ebc2aa], but our version has [mower_msgs/HighLevelStatus/db5c3531ba581d4c594cc4da6f89eb3f]. Dropping connection.
+R[2025/01/13 18:35:22] [ERROR] subscriber '/mower_logic/current_state' got an error: Client [/openmower-gui] wants topic /mower_logic/current_state to h

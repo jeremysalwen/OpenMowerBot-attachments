@@ -1,0 +1,165 @@
+operation:
+  automatic_mode: /mower_logic/automatic_mode
+  manual_pause: /mower_logic/manual_pause_mowing
+
+coverage:
+  tool_width: /mower_logic/tool_width
+  outline:
+    count: /mower_logic/outline_count
+    overlap_count: /mower_logic/outline_overlap_count
+    offset: /mower_logic/outline_offset
+  angle:
+    offset: /mower_logic/mow_angle_offset
+    is_absolute: /mower_logic/mow_angle_offset_is_absolute
+    increment: /mower_logic/mow_angle_increment
+
+navigation:
+  add_fake_obstacle: /mower_logic/add_fake_obstacle
+  forward_only: /ftc_local_planner/forward_only
+  first_point:
+    attempts: /mower_logic/max_first_point_attempts
+    trim_attempts: /mower_logic/max_first_point_trim_attempts
+  speed:
+    control_point:
+      fast: /ftc_local_planner/speed_fast
+      threshold: /ftc_local_planner/speed_fast_threshold
+      threshold_angle: /ftc_local_planner/speed_fast_threshold_angle
+      slow: /ftc_local_planner/speed_slow
+      angular: /ftc_local_planner/speed_angular
+      acceleration: /ftc_local_planner/acceleration
+    robot:
+      max_cmd_vel_speed: /ftc_local_planner/max_cmd_vel_speed
+      max_cmd_vel_ang: /ftc_local_planner/max_cmd_vel_ang
+      max_follow_distance: /ftc_local_planner/max_follow_distance
+  goal:
+    max_distance_error: /ftc_local_planner/max_goal_distance_error
+    max_angle_error: /ftc_local_planner/max_goal_angle_error
+    timeout: /ftc_local_planner/goal_timeout
+  pid:
+    lon:
+      kp: /ftc_local_planner/kp_lon
+      ki: /ftc_local_planner/ki_lon
+      ki_max: /ftc_local_planner/ki_lon_max
+      kd: /ftc_local_planner/kd_lon
+    lat:
+      kp: /ftc_local_planner/kp_lat
+      ki: /ftc_local_planner/ki_lat
+      ki_max: /ftc_local_planner/ki_lat_max
+      kd: /ftc_local_planner/kd_lat
+    ang:
+      kp: /ftc_local_planner/kp_ang
+      ki: /ftc_local_planner/ki_ang
+      ki_max: /ftc_local_planner/ki_ang_max
+      kd: /ftc_local_planner/kd_ang
+
+docking:
+  approach_distance: /mower_logic/docking_approach_distance
+  distance: /mower_logic/docking_distance
+  extra_time: /mower_logic/docking_extra_time
+  attempts: /mower_logic/docking_retry_count
+  redock: /mower_logic/docking_redock
+  wait_time: /mower_logic/docking_waiting_time
+  perimeter_signal: /mower_logic/perimeter_signal
+  navigation:
+    forward_only: /ftc_local_planner/forward_only
+    speed: ...
+    goal: ...
+    pid: ...
+
+undocking:
+  distance: /mower_logic/undock_distance
+  angled_distance: /mower_logic/undock_angled_distance
+  angle: /mower_logic/undock_angle
+  fixed_angle: /mower_logic/undock_fixed_angle
+  curved: /mower_logic/undock_use_curve
+  wait_time: /mower_logic/undocking_waiting_time
+
+gps:
+  device_type: /ll/services/gps/device_type
+  serial:
+    serial_port: /ll/services/gps/serial_port
+    baudrate: /ll/services/gps/baudrate
+  tcp:
+    hostname: /ll/services/gps/tcp_host
+    port: /ll/services/gps/tcp_port
+  protocol: /ll/services/gps/protocol
+  ntrip:
+    enabled: (to be added)
+    hostname: /ntrip_client/host
+    port: /ntrip_client/port
+    mountpoint: /ntrip_client/mountpoint
+    username: /ntrip_client/username
+    password: /ntrip_client/password
+    reconnect:
+      delay: /ntrip_client/reconnect_attempt_wait_seconds
+      attempts: /ntrip_client/reconnect_attempt_max
+  datum:
+    latitude: /ll/services/gps/datum_lat
+    longitude: /ll/services/gps/datum_long
+  antenna_offset:
+    x: /xbot_positioning/antenna_offset_x
+    y: /xbot_positioning/antenna_offset_y
+  wait_time: /mower_logic/gps_wait_time
+  timeout: /mower_logic/gps_timeout
+  max_accuracy: /mower_logic/max_position_accuracy
+  ignore_errors: /mower_logic/ignore_gps_errors
+
+emergency:
+  input_config: /mower_logic/emergency_input_config
+  lift_period: /mower_logic/emergency_lift_period
+  tilt_period: /mower_logic/emergency_tilt_period
+
+rain:
+  mode: /mower_logic/rain_mode
+  delay_minutes: /mower_logic/rain_delay_minutes
+  check_seconds: /mower_logic/rain_check_seconds
+  threshold: /mower_logic/cu_rain_threshold
+
+power:
+  battery:
+    voltage:
+      critical_low: /ll/services/power/battery_critical_voltage
+      empty: /ll/services/power/battery_empty_voltage
+      full: /ll/services/power/battery_full_voltage
+      critical_high: /ll/services/power/battery_critical_high_voltage
+  charger:
+    voltage:
+      critical_high: /ll/services/power/charge_critical_high_voltage
+    current:
+      critical_high: /ll/services/power/charge_critical_high_current
+      ignore: /mower_logic/ignore_charging_current
+
+motors:
+  mower:
+    enabled: /mower_logic/enable_mower
+    serial_port: /ll/services/diff_drive/mower_xesc/serial_port
+    ticks_per_m: /ll/services/diff_drive/ticks_per_m
+    wheel_distance_m: /ll/services/diff_drive/wheel_distance_m
+    temperature:
+      cold: /mower_logic/motor_cold_temperature
+      hot: /mower_logic/motor_hot_temperature
+  left:
+    serial_port: /ll/services/diff_drive/left_xesc/serial_port
+  right:
+    serial_port: /ll/services/diff_drive/right_xesc/serial_port
+  shutdown:
+    max_pitch: /mower_logic/shutdown_esc_max_pitch
+
+sound:
+  language: /ll/services/sound/language
+  volume: /ll/services/sound/volume
+  background_sounds: /ll/services/sound/background_sounds
+  dfp_is_5v: /ll/services/sound/dfp_is_5v
+
+mqtt:
+  external:
+    enabled: /xbot_monitoring/external_mqtt_enable
+    hostname: /xbot_monitoring/external_mqtt_hostname
+    port: /xbot_monitoring/external_mqtt_port
+    username: /xbot_monitoring/external_mqtt_username
+    password: /xbot_monitoring/external_mqtt_password
+    topic_prefix: /xbot_monitoring/external_mqtt_topic_prefix
+
+monitoring:
+  heatmap:
+    sensors: /sensor_ids

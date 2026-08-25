@@ -1,0 +1,21 @@
+ the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [ERROR] [1781960224.734962008]: >>> Charger: Error reading PART_INFORMATION
+open_mower_ros  | [ERROR] [1781960224.735080747]: >>> Charger: Invalid Response (charger_connected)
+open_mower_ros  | [WARN] [1781960224.735247984]: [ID=9] received claim ack from an unknown service
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (-nan -nan 0.000000) (-nan -nan -nan -nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (-nan -nan -nan -nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [ERROR] [1781960224.785123382]: >>> Charger: Error writing Power_Path_and_Reverse_Mode_Control
+open_mower_ros  | [ERROR] [1781960224.785239787]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [WARN] [1781960224.786357561]: [ID=9] Received heartbeat from an unknown service
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)
+open_mower_ros  |          at line 254 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | [WARN] [1781960224.835972649]: [ID=5] received claim ack from an unknown service
+open_mower_ros  | [WARN] [1781960224.836102610]: [ID=5] Received heartbeat from an unknown service
+open_mower_ros  | Error:   TF_NAN_INPUT: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of a nan value in the transform (nan nan 0.000000) (nan nan nan nan)
+open_mower_ros  |          at line 239 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp
+open_mower_ros  | Error:   TF_DENORMALIZED_QUATERNION: Ignoring transform for child_frame_id "base_link" from authority "unknown_publisher" because of an invalid quaternion in the transform (nan nan nan nan)

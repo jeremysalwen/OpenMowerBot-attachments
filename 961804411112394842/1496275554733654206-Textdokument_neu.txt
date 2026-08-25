@@ -1,0 +1,57 @@
+open_mower_ros  | [INFO] [1776810036.269425175]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.269479268]: - Entered state: AREA_RECORDING
+open_mower_ros  | [INFO] [1776810036.269713915]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.273656904]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810036.274659253]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810036.280087552]: Starting recording area
+open_mower_ros  | [INFO] [1776810036.280182700]: Subscribing to /joy for user input
+open_mower_ros  | [INFO] [1776810036.335055929]: successfully set GPS to 1
+open_mower_ros  | [WARN] [1776810036.677889356]: GPS timeout
+open_mower_ros  | [INFO] [1776810036.678023559]: Docking: Battery voltage min critical: 0
+open_mower_ros  | [INFO] [1776810036.678065707]: - Behaviour.h: abort() called
+open_mower_ros  | [INFO] [1776810036.738334365]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810036.739563899]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810036.743272943]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810036.744229941]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810036.760337079]: 
+open_mower_ros  | [INFO] [1776810036.760550300]: 
+open_mower_ros  | [INFO] [1776810036.760695485]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.761273743]: - Entered state: IDLE
+open_mower_ros  | [INFO] [1776810036.761413316]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.766130080]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776810036.767465743]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776810036.772234914]: Got getMowingArea call with index: 0
+open_mower_ros  | [ERROR] [1776810036.772315988]: No mowing area with index: 0
+open_mower_ros  | [WARN] [1776810036.772762080]: We don't have a map configured. Starting Area Recorder!
+open_mower_ros  | [INFO] [1776810036.776199607]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776810036.777534695]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776810036.777666102]: 
+open_mower_ros  | [INFO] [1776810036.777719436]: 
+open_mower_ros  | [INFO] [1776810036.777764306]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.777814991]: - Entered state: AREA_RECORDING
+open_mower_ros  | [INFO] [1776810036.777855213]: --------------------------------------
+open_mower_ros  | [INFO] [1776810036.781425184]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810036.782387755]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810036.788426664]: Starting recording area
+open_mower_ros  | [INFO] [1776810036.788523256]: Subscribing to /joy for user input
+open_mower_ros  | [ERROR] [1776810036.841544157]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1776810036.878843734]: successfully set GPS to 1
+open_mower_ros  | [INFO] [1776810037.178114788]: Docking: Battery voltage min critical: 0
+open_mower_ros  | [INFO] [1776810037.178165288]: - Behaviour.h: abort() called
+open_mower_ros  | [WARN] [1776810037.177972418]: Low quality GPS
+open_mower_ros  | [INFO] [1776810037.182466275]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810037.183939215]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810037.187411779]: new actions registered: mower_logic:area_recording registered 12 actions.
+open_mower_ros  | [INFO] [1776810037.189054978]: successfully registered actions for mower_logic:area_recording
+open_mower_ros  | [INFO] [1776810037.207176796]: 
+open_mower_ros  | [INFO] [1776810037.207266888]: 
+open_mower_ros  | [INFO] [1776810037.207321017]: --------------------------------------
+open_mower_ros  | [INFO] [1776810037.207359628]: - Entered state: IDLE
+open_mower_ros  | [INFO] [1776810037.207396406]: --------------------------------------
+open_mower_ros  | [INFO] [1776810037.210754619]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776810037.211900319]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1776810037.215533345]: Got getMowingArea call with index: 0
+open_mower_ros  | [ERROR] [1776810037.216380713]: No mowing area with index: 0
+open_mower_ros  | [WARN] [1776810037.216834953]: We don't have a map configured. Starting Area Recorder!
+open_mower_ros  | [INFO] [1776810037.220175776]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1776810037.221335440]: successfully registered actions for mower_logic:idle

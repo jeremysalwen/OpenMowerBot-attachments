@@ -1,0 +1,654 @@
+2025-05-02T17:48:35.185574652+01:00  * Starting nginx nginx       [80G [74G[ OK ]
+2025-05-02T17:48:35.230279563+01:00  * Starting network daemon: mosquitto       [80G [74G[ OK ]
+2025-05-02T17:48:36.333988622+01:00 ... logging to /root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/roslaunch-openmower-91.log
+2025-05-02T17:48:36.334546488+01:00 Checking log directory for disk usage. This may take a while.
+2025-05-02T17:48:36.334546488+01:00 Press Ctrl-C to interrupt
+2025-05-02T17:48:36.350934505+01:00 Done checking log file disk usage. Usage is <1GB.
+2025-05-02T17:48:36.352134052+01:00 ]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+2025-05-02T17:48:37.187025143+01:00 [1mstarted roslaunch server http://openmower:42357/[0m
+2025-05-02T17:48:37.193146252+01:00 
+2025-05-02T17:48:37.193146252+01:00 SUMMARY
+2025-05-02T17:48:37.193146252+01:00 ========
+2025-05-02T17:48:37.193146252+01:00 
+2025-05-02T17:48:37.193146252+01:00 CLEAR PARAMETERS
+2025-05-02T17:48:37.193146252+01:00  * /xbot_driver_gps/
+2025-05-02T17:48:37.193146252+01:00 
+2025-05-02T17:48:37.193146252+01:00 PARAMETERS
+2025-05-02T17:48:37.193146252+01:00  * /joy/autorepeat_rate: 10.0
+2025-05-02T17:48:37.193279603+01:00  * /joy/coalesce_interval: 0.06
+2025-05-02T17:48:37.193279603+01:00  * /joy_teleop/enable_turbo_button: 4
+2025-05-02T17:48:37.193279603+01:00  * /joy_teleop/scale_angular: 1.5
+2025-05-02T17:48:37.193279603+01:00  * /joy_teleop/scale_angular_turbo: 3.0
+2025-05-02T17:48:37.193279603+01:00  * /joy_teleop/scale_linear: 0.5
+2025-05-02T17:48:37.193330047+01:00  * /joy_teleop/scale_linear_turbo: 1.0
+2025-05-02T17:48:37.193330047+01:00  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+2025-05-02T17:48:37.193372232+01:00  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+2025-05-02T17:48:37.193414509+01:00  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+2025-05-02T17:48:37.193414509+01:00  * /move_base_flex/DockingFTCPlanner/forward_only: False
+2025-05-02T17:48:37.193455601+01:00  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+2025-05-02T17:48:37.193455601+01:00  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+2025-05-02T17:48:37.193495990+01:00  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+2025-05-02T17:48:37.193536194+01:00  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+2025-05-02T17:48:37.193536194+01:00  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+2025-05-02T17:48:37.193576527+01:00  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+2025-05-02T17:48:37.193617712+01:00  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+2025-05-02T17:48:37.193617712+01:00  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+2025-05-02T17:48:37.193659489+01:00  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+2025-05-02T17:48:37.193659489+01:00  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+2025-05-02T17:48:37.193699785+01:00  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+2025-05-02T17:48:37.193740026+01:00  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+2025-05-02T17:48:37.193740026+01:00  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+2025-05-02T17:48:37.193818914+01:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-02T17:48:37.193818914+01:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+2025-05-02T17:48:37.193818914+01:00  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+2025-05-02T17:48:37.193861765+01:00  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+2025-05-02T17:48:37.193861765+01:00  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+2025-05-02T17:48:37.193902247+01:00  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+2025-05-02T17:48:37.193942821+01:00  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+2025-05-02T17:48:37.193942821+01:00  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+2025-05-02T17:48:37.193983005+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+2025-05-02T17:48:37.193983005+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+2025-05-02T17:48:37.194023209+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+2025-05-02T17:48:37.194063394+01:00  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+2025-05-02T17:48:37.194063394+01:00  * /move_base_flex/FTCPlanner/acceleration: 0.1
+2025-05-02T17:48:37.194103375+01:00  * /move_base_flex/FTCPlanner/check_obstacles: False
+2025-05-02T17:48:37.194143930+01:00  * /move_base_flex/FTCPlanner/debug_pid: True
+2025-05-02T17:48:37.194143930+01:00  * /move_base_flex/FTCPlanner/forward_only: True
+2025-05-02T17:48:37.194184226+01:00  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+2025-05-02T17:48:37.194224430+01:00  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+2025-05-02T17:48:37.194224430+01:00  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+2025-05-02T17:48:37.194264893+01:00  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+2025-05-02T17:48:37.194305281+01:00  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+2025-05-02T17:48:37.194305281+01:00  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+2025-05-02T17:48:37.194346188+01:00  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+2025-05-02T17:48:37.194346188+01:00  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+2025-05-02T17:48:37.194386262+01:00  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+2025-05-02T17:48:37.194426410+01:00  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+2025-05-02T17:48:37.194426410+01:00  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+2025-05-02T17:48:37.194466502+01:00  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+2025-05-02T17:48:37.194466502+01:00  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+2025-05-02T17:48:37.194506835+01:00  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-02T17:48:37.194546780+01:00  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+2025-05-02T17:48:37.194546780+01:00  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+2025-05-02T17:48:37.194586890+01:00  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+2025-05-02T17:48:37.194627483+01:00  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+2025-05-02T17:48:37.194627483+01:00  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+2025-05-02T17:48:37.194685538+01:00  * /move_base_flex/FTCPlanner/restore_defaults: False
+2025-05-02T17:48:37.194685538+01:00  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+2025-05-02T17:48:37.194728149+01:00  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+2025-05-02T17:48:37.194728149+01:00  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+2025-05-02T17:48:37.194769686+01:00  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+2025-05-02T17:48:37.194769686+01:00  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+2025-05-02T17:48:37.194810111+01:00  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+2025-05-02T17:48:37.194850389+01:00  * /move_base_flex/controller_frequency: 1.0
+2025-05-02T17:48:37.194850389+01:00  * /move_base_flex/controller_patience: 30.0
+2025-05-02T17:48:37.194890703+01:00  * /move_base_flex/controllers: [{'name': 'FTCPla...
+2025-05-02T17:48:37.194890703+01:00  * /move_base_flex/global_costmap/global_frame: map
+2025-05-02T17:48:37.194930647+01:00  * /move_base_flex/global_costmap/inflation_radius: 1.0
+2025-05-02T17:48:37.194970925+01:00  * /move_base_flex/global_costmap/map_topic: mower_map_service...
+2025-05-02T17:48:37.194970925+01:00  * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+2025-05-02T17:48:37.195011054+01:00  * /move_base_flex/global_costmap/obstacle_range: 3.0
+2025-05-02T17:48:37.195011054+01:00  * /move_base_flex/global_costmap/publish_frequency: 1.0
+2025-05-02T17:48:37.195051387+01:00  * /move_base_flex/global_costmap/raytrace_range: 4.0
+2025-05-02T17:48:37.195091591+01:00  * /move_base_flex/global_costmap/resolution: 0.1
+2025-05-02T17:48:37.195091591+01:00  * /move_base_flex/global_costmap/robot_base_frame: base_link
+2025-05-02T17:48:37.195131683+01:00  * /move_base_flex/global_costmap/robot_radius: 0.0
+2025-05-02T17:48:37.195171683+01:00  * /move_base_flex/global_costmap/rolling_window: False
+2025-05-02T17:48:37.195211812+01:00  * /move_base_flex/global_costmap/static_map: True
+2025-05-02T17:48:37.195211812+01:00  * /move_base_flex/global_costmap/update_frequency: 1.0
+2025-05-02T17:48:37.195251997+01:00  * /move_base_flex/local_costmap/global_frame: map
+2025-05-02T17:48:37.195251997+01:00  * /move_base_flex/local_costmap/height: 1.5
+2025-05-02T17:48:37.195292238+01:00  * /move_base_flex/local_costmap/inflation_radius: 0.0
+2025-05-02T17:48:37.195332441+01:00  * /move_base_flex/local_costmap/map_topic: mower_map_service...
+2025-05-02T17:48:37.195332441+01:00  * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+2025-05-02T17:48:37.195372719+01:00  * /move_base_flex/local_costmap/obstacle_range: 3.0
+2025-05-02T17:48:37.195372719+01:00  * /move_base_flex/local_costmap/publish_frequency: 2.0
+2025-05-02T17:48:37.195413089+01:00  * /move_base_flex/local_costmap/raytrace_range: 4.0
+2025-05-02T17:48:37.195453311+01:00  * /move_base_flex/local_costmap/resolution: 0.15
+2025-05-02T17:48:37.195453311+01:00  * /move_base_flex/local_costmap/robot_base_frame: base_link
+2025-05-02T17:48:37.195493551+01:00  * /move_base_flex/local_costmap/robot_radius: 0.0
+2025-05-02T17:48:37.195533847+01:00  * /move_base_flex/local_costmap/rolling_window: True
+2025-05-02T17:48:37.195533847+01:00  * /move_base_flex/local_costmap/static_map: True
+2025-05-02T17:48:37.195574643+01:00  * /move_base_flex/local_costmap/update_frequency: 5.0
+2025-05-02T17:48:37.195574643+01:00  * /move_base_flex/local_costmap/width: 1.5
+2025-05-02T17:48:37.195631550+01:00  * /move_base_flex/oscillation_distance: 0.2
+2025-05-02T17:48:37.195631550+01:00  * /move_base_flex/oscillation_timeout: 10.0
+2025-05-02T17:48:37.195673180+01:00  * /move_base_flex/planner_frequency: 1.0
+2025-05-02T17:48:37.195673180+01:00  * /move_base_flex/planner_patience: 5.0
+2025-05-02T17:48:37.195713679+01:00  * /move_base_flex/planners: [{'name': 'Global...
+2025-05-02T17:48:37.195754383+01:00  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+2025-05-02T17:48:37.195754383+01:00  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+2025-05-02T17:48:37.195795364+01:00  * /mower_comms/background_sounds: False
+2025-05-02T17:48:37.195795364+01:00  * /mower_comms/dfp_is_5v: False
+2025-05-02T17:48:37.195835438+01:00  * /mower_comms/language: en
+2025-05-02T17:48:37.195875623+01:00  * /mower_comms/left_xesc/has_motor_temp: False
+2025-05-02T17:48:37.195875623+01:00  * /mower_comms/left_xesc/motor_pole_pairs: 4
+2025-05-02T17:48:37.195915863+01:00  * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+2025-05-02T17:48:37.195915863+01:00  * /mower_comms/left_xesc/xesc_type: xesc_mini
+2025-05-02T17:48:37.195955826+01:00  * /mower_comms/ll_serial_port: /dev/ttyAMA0
+2025-05-02T17:48:37.195995789+01:00  * /mower_comms/mower_xesc/has_motor_temp: True
+2025-05-02T17:48:37.195995789+01:00  * /mower_comms/mower_xesc/max_motor_rpm: 3800
+2025-05-02T17:48:37.196036029+01:00  * /mower_comms/mower_xesc/min_motor_rpm: 2800
+2025-05-02T17:48:37.196036029+01:00  * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+2025-05-02T17:48:37.196076084+01:00  * /mower_comms/mower_xesc/motor_pole_pairs: 4
+2025-05-02T17:48:37.196116251+01:00  * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+2025-05-02T17:48:37.196116251+01:00  * /mower_comms/mower_xesc/xesc_type: xesc_mini
+2025-05-02T17:48:37.196156177+01:00  * /mower_comms/right_xesc/has_motor_temp: False
+2025-05-02T17:48:37.196196287+01:00  * /mower_comms/right_xesc/motor_pole_pairs: 4
+2025-05-02T17:48:37.196196287+01:00  * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+2025-05-02T17:48:37.196236509+01:00  * /mower_comms/right_xesc/xesc_type: xesc_mini
+2025-05-02T17:48:37.196277213+01:00  * /mower_comms/volume: -1
+2025-05-02T17:48:37.196277213+01:00  * /mower_comms/wheel_distance_m: 0.325
+2025-05-02T17:48:37.196317324+01:00  * /mower_comms/wheel_ticks_per_m: 1600
+2025-05-02T17:48:37.196357675+01:00  * /mower_logic/automatic_mode: 1
+2025-05-02T17:48:37.196357675+01:00  * /mower_logic/battery_critical_high_voltage: 29.6
+2025-05-02T17:48:37.196398805+01:00  * /mower_logic/battery_critical_voltage: 21.0
+2025-05-02T17:48:37.196398805+01:00  * /mower_logic/battery_empty_voltage: 23
+2025-05-02T17:48:37.196438990+01:00  * /mower_logic/battery_full_voltage: 29.45
+2025-05-02T17:48:37.196479137+01:00  * /mower_logic/charge_critical_high_current: 4.0
+2025-05-02T17:48:37.196479137+01:00  * /mower_logic/charge_critical_high_voltage: 30.0
+2025-05-02T17:48:37.196519304+01:00  * /mower_logic/cu_rain_threshold: -1
+2025-05-02T17:48:37.196519304+01:00  * /mower_logic/docking_approach_distance: 1.5
+2025-05-02T17:48:37.196559378+01:00  * /mower_logic/docking_distance: 1.0
+2025-05-02T17:48:37.196617266+01:00  * /mower_logic/docking_extra_time: 0.0
+2025-05-02T17:48:37.196617266+01:00  * /mower_logic/docking_redock: False
+2025-05-02T17:48:37.196617266+01:00  * /mower_logic/docking_retry_count: 4
+2025-05-02T17:48:37.196658988+01:00  * /mower_logic/emergency_input_config: 
+2025-05-02T17:48:37.196699284+01:00  * /mower_logic/emergency_lift_period: 250
+2025-05-02T17:48:37.196699284+01:00  * /mower_logic/emergency_tilt_period: -1
+2025-05-02T17:48:37.196739358+01:00  * /mower_logic/enable_mower: True
+2025-05-02T17:48:37.196739358+01:00  * /mower_logic/gps_timeout: 5.0
+2025-05-02T17:48:37.196779506+01:00  * /mower_logic/gps_wait_time: 10.0
+2025-05-02T17:48:37.196819561+01:00  * /mower_logic/ignore_charging_current: False
+2025-05-02T17:48:37.196819561+01:00  * /mower_logic/motor_cold_temperature: 40.0
+2025-05-02T17:48:37.196859728+01:00  * /mower_logic/motor_hot_temperature: 80.0
+2025-05-02T17:48:37.196900024+01:00  * /mower_logic/mow_angle_increment: 90
+2025-05-02T17:48:37.196900024+01:00  * /mower_logic/mow_angle_offset: -20
+2025-05-02T17:48:37.196941005+01:00  * /mower_logic/mow_angle_offset_is_absolute: False
+2025-05-02T17:48:37.196941005+01:00  * /mower_logic/outline_count: 4
+2025-05-02T17:48:37.196981319+01:00  * /mower_logic/outline_offset: 0
+2025-05-02T17:48:37.197021486+01:00  * /mower_logic/outline_overlap_count: 1
+2025-05-02T17:48:37.197021486+01:00  * /mower_logic/perimeter_signal: False
+2025-05-02T17:48:37.197061671+01:00  * /mower_logic/rain_check_seconds: 20
+2025-05-02T17:48:37.197061671+01:00  * /mower_logic/rain_delay_minutes: 30
+2025-05-02T17:48:37.197101837+01:00  * /mower_logic/rain_mode: 2
+2025-05-02T17:48:37.197142041+01:00  * /mower_logic/tool_width: 0.16
+2025-05-02T17:48:37.197142041+01:00  * /mower_logic/undock_angle: 0.0
+2025-05-02T17:48:37.197181966+01:00  * /mower_logic/undock_angled_distance: 0.0
+2025-05-02T17:48:37.197181966+01:00  * /mower_logic/undock_distance: 2
+2025-05-02T17:48:37.197234447+01:00  * /mower_logic/undock_fixed_angle: True
+2025-05-02T17:48:37.197280206+01:00  * /mower_logic/undock_use_curve: True
+2025-05-02T17:48:37.197321539+01:00  * /ntrip_client/ntrip_client_node/authenticate: True
+2025-05-02T17:48:37.197321539+01:00  * /ntrip_client/ntrip_client_node/ca_cert: 
+2025-05-02T17:48:37.197361947+01:00  * /ntrip_client/ntrip_client_node/cert: 
+2025-05-02T17:48:37.197361947+01:00  * /ntrip_client/ntrip_client_node/host: 192.168.68.117
+2025-05-02T17:48:37.197401946+01:00  * /ntrip_client/ntrip_client_node/key: 
+2025-05-02T17:48:37.197442298+01:00  * /ntrip_client/ntrip_client_node/mountpoint: RTKBase
+2025-05-02T17:48:37.197482761+01:00  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+2025-05-02T17:48:37.197482761+01:00  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+2025-05-02T17:48:37.197522983+01:00  * /ntrip_client/ntrip_client_node/ntrip_version: 
+2025-05-02T17:48:37.197522983+01:00  * /ntrip_client/ntrip_client_node/password: openmower
+2025-05-02T17:48:37.197563316+01:00  * /ntrip_client/ntrip_client_node/port: 2101
+2025-05-02T17:48:37.197622982+01:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+2025-05-02T17:48:37.197622982+01:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+2025-05-02T17:48:37.197622982+01:00  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+2025-05-02T17:48:37.197664630+01:00  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+2025-05-02T17:48:37.197704944+01:00  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+2025-05-02T17:48:37.197704944+01:00  * /ntrip_client/ntrip_client_node/ssl: False
+2025-05-02T17:48:37.197745259+01:00  * /ntrip_client/ntrip_client_node/username: openmower
+2025-05-02T17:48:37.197745259+01:00  * /rosdistro: noetic
+2025-05-02T17:48:37.197785462+01:00  * /rosversion: 1.17.0
+2025-05-02T17:48:37.197825499+01:00  * /twist_mux/topics: [{'name': 'naviga...
+2025-05-02T17:48:37.197825499+01:00  * /xbot_driver_gps/baudrate: 921600
+2025-05-02T17:48:37.197866406+01:00  * /xbot_driver_gps/datum_height: 0
+2025-05-02T17:48:37.197866406+01:00  * /xbot_driver_gps/datum_lat: 55.44472
+2025-05-02T17:48:37.197906462+01:00  * /xbot_driver_gps/datum_long: 11.57124
+2025-05-02T17:48:37.197946480+01:00  * /xbot_driver_gps/device_type: serial
+2025-05-02T17:48:37.197946480+01:00  * /xbot_driver_gps/mode: absolute
+2025-05-02T17:48:37.197986294+01:00  * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+2025-05-02T17:48:37.198026461+01:00  * /xbot_driver_gps/ubx_mode: True
+2025-05-02T17:48:37.198026461+01:00  * /xbot_monitoring/external_mqtt_enable: False
+2025-05-02T17:48:37.198066442+01:00  * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+2025-05-02T17:48:37.198066442+01:00  * /xbot_monitoring/external_mqtt_password: 
+2025-05-02T17:48:37.198106571+01:00  * /xbot_monitoring/external_mqtt_port: 1883
+2025-05-02T17:48:37.198146756+01:00  * /xbot_monitoring/external_mqtt_topic_prefix: 
+2025-05-02T17:48:37.198146756+01:00  * /xbot_monitoring/external_mqtt_username: 
+2025-05-02T17:48:37.198186978+01:00  * /xbot_monitoring/software_version: 9f65b12
+2025-05-02T17:48:37.198186978+01:00  * /xbot_positioning/antenna_offset_x: 0.3
+2025-05-02T17:48:37.198227182+01:00  * /xbot_positioning/antenna_offset_y: 0
+2025-05-02T17:48:37.198267107+01:00  * /xbot_positioning/max_gps_accuracy: 0.2
+2025-05-02T17:48:37.198267107+01:00 
+2025-05-02T17:48:37.198307903+01:00 NODES
+2025-05-02T17:48:37.198307903+01:00   /
+2025-05-02T17:48:37.198347866+01:00     joy (joy/joy_node)
+2025-05-02T17:48:37.198347866+01:00     joy_teleop (teleop_twist_joy/teleop_node)
+2025-05-02T17:48:37.198388218+01:00     map_service (mower_map/mower_map_service)
+2025-05-02T17:48:37.198428458+01:00     monitoring (mower_logic/monitoring)
+2025-05-02T17:48:37.198428458+01:00     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+2025-05-02T17:48:37.198468754+01:00     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+2025-05-02T17:48:37.198468754+01:00     mower_comms (mower_comms/mower_comms)
+2025-05-02T17:48:37.198509291+01:00     mower_logic (mower_logic/mower_logic)
+2025-05-02T17:48:37.198549346+01:00     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+2025-05-02T17:48:37.198589679+01:00     twist_mux (twist_mux/twist_mux)
+2025-05-02T17:48:37.198589679+01:00     xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+2025-05-02T17:48:37.198645549+01:00     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+2025-05-02T17:48:37.198645549+01:00     xbot_positioning (xbot_positioning/xbot_positioning)
+2025-05-02T17:48:37.198687568+01:00     xbot_remote (xbot_remote/xbot_remote)
+2025-05-02T17:48:37.198687568+01:00   /ntrip_client/
+2025-05-02T17:48:37.198727456+01:00     ntrip_client_node (ntrip_client/ntrip_ros.py)
+2025-05-02T17:48:37.198767271+01:00 
+2025-05-02T17:48:37.201463179+01:00 auto-starting new master
+2025-05-02T17:48:37.215727976+01:00 [1mprocess[master]: started with pid [99][0m
+2025-05-02T17:48:38.254211002+01:00 [1mROS_MASTER_URI=http://localhost:11311[0m
+2025-05-02T17:48:38.254304168+01:00 ]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311
+2025-05-02T17:48:38.258384550+01:00 [1msetting /run_id to 4a731102-2775-11f0-8639-d83addfdbe25[0m
+2025-05-02T17:48:38.459528256+01:00 [1mprocess[rosout-1]: started with pid [111][0m
+2025-05-02T17:48:38.460168307+01:00 started core service [/rosout]
+2025-05-02T17:48:38.675249354+01:00 [1mprocess[mower_comms-2]: started with pid [119][0m
+2025-05-02T17:48:38.695200177+01:00 [1mprocess[ntrip_client/ntrip_client_node-3]: started with pid [120][0m
+2025-05-02T17:48:38.725510086+01:00 [1mprocess[xbot_driver_gps-4]: started with pid [121][0m
+2025-05-02T17:48:38.754866352+01:00 [1mprocess[move_base_flex-5]: started with pid [126][0m
+2025-05-02T17:48:38.796438711+01:00 [1mprocess[move_base_legacy_relay-6]: started with pid [128][0m
+2025-05-02T17:48:38.796438711+01:00 [0m[ INFO] [1746204518.796061769]: Wheel ticks [1/m]: 1600[0m
+2025-05-02T17:48:38.811663081+01:00 [0m[ INFO] [1746204518.811487712]: Wheel distance [m]: 0.325[0m
+2025-05-02T17:48:38.833462468+01:00 [0m[ INFO] [1746204518.833185951]: Using UBX mode for GPS[0m
+2025-05-02T17:48:38.841870713+01:00 [0m[ INFO] [1746204518.841700955]: Starting xesc driver[0m
+2025-05-02T17:48:38.855282835+01:00 [0m[ INFO] [1746204518.855069151]: Starting xesc driver[0m
+2025-05-02T17:48:38.862841160+01:00 [1mprocess[xbot_positioning-7]: started with pid [134][0m
+2025-05-02T17:48:38.872781377+01:00 [0m[ INFO] [1746204518.872601582]: Using absolute mode for GPS[0m
+2025-05-02T17:48:38.878881599+01:00 [0m[ INFO] [1746204518.878667545]: Starting xesc driver[0m
+2025-05-02T17:48:38.926996733+01:00 [1mprocess[joy-8]: started with pid [139][0m
+2025-05-02T17:48:39.012367755+01:00 [1mprocess[joy_teleop-9]: started with pid [146][0m
+2025-05-02T17:48:39.105435188+01:00 [0m[ INFO] [1746204519.105139338]: connecting serial interface: /dev/ttyAMA0[0m
+2025-05-02T17:48:39.108305264+01:00 [1mprocess[map_service-10]: started with pid [148][0m
+2025-05-02T17:48:39.134759151+01:00 [0m[ INFO] [1746204519.129021610]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600[0m
+2025-05-02T17:48:39.294728463+01:00 [1mprocess[mower_logic-11]: started with pid [163][0m
+2025-05-02T17:48:39.377397937+01:00 [1mprocess[slic3r_coverage_planner-12]: started with pid [170][0m
+2025-05-02T17:48:39.390968415+01:00 [0m[ INFO] [1746204519.390288253]: Antenna offset: 0.3, 0[0m
+2025-05-02T17:48:39.458011923+01:00 [31m[ERROR] [1746204519.457790387]: Couldn't open joystick /dev/input/js0. Will retry every second.[0m
+2025-05-02T17:48:39.512036060+01:00 [1mprocess[twist_mux-13]: started with pid [173][0m
+2025-05-02T17:48:39.533213125+01:00 [0m[ INFO] [1746204519.532960219]: Teleop enable button 0.[0m
+2025-05-02T17:48:39.544489727+01:00 [0m[ INFO] [1746204519.544289136]: Turbo on button 4.[0m
+2025-05-02T17:48:39.544935817+01:00 [0m[ INFO] [1746204519.544799873]: Linear axis x on 1 at scale 0.500000.[0m
+2025-05-02T17:48:39.545261093+01:00 [0m[ INFO] [1746204519.545132075]: Turbo for linear axis x is scale 1.000000.[0m
+2025-05-02T17:48:39.545422444+01:00 [0m[ INFO] [1746204519.545342296]: Angular axis yaw on 0 at scale 1.500000.[0m
+2025-05-02T17:48:39.545559795+01:00 [0m[ INFO] [1746204519.545481610]: Turbo for angular axis yaw is scale 3.000000.[0m
+2025-05-02T17:48:39.592328862+01:00 [1mprocess[xbot_monitoring-14]: started with pid [174][0m
+2025-05-02T17:48:39.745398213+01:00 [1mprocess[xbot_remote-15]: started with pid [181][0m
+2025-05-02T17:48:39.891019589+01:00 [33m[ WARN] [1746204519.890789960]: Last GPS was 1.7462e+09 seconds ago.[0m
+2025-05-02T17:48:39.903636109+01:00 [1mprocess[monitoring-16]: started with pid [191][0m
+2025-05-02T17:48:39.921376971+01:00 [0m[ INFO] [1746204519.921071325]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10[0m
+2025-05-02T17:48:39.993884207+01:00 [0m[ INFO] [1746204519.993589079]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100[0m
+2025-05-02T17:48:39.998456607+01:00 [0m[ INFO] [1746204519.998033498]: MQTT Connected[0m
+2025-05-02T17:48:40.131204452+01:00 [31m[FATAL] [1746204520.130814880]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)[0m
+2025-05-02T17:48:40.204588690+01:00 [0m[ INFO] [1746204520.204374136]: Restoring checkpoint for plan (B94D33EF673E6E520D961F7070D384A8B8EBCF45C0B688422A062EF2356AB2F1) area: 1 path: 15 index: 2933 angle increment sum: 0[0m
+2025-05-02T17:48:40.437910149+01:00 [0m[ INFO] [1746204520.437586873]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-02T17:48:40.520610634+01:00 [0m[ INFO] [1746204520.520276525]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-02T17:48:40.585915063+01:00 [0m[ INFO] [1746204520.585715768]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-02T17:48:40.662575228+01:00 [0m[ INFO] [1746204520.662365359]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+2025-05-02T17:48:40.738015382+01:00 [0m[ INFO] [1746204520.737805827]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-02T17:48:40.797522916+01:00 [0m[ INFO] [1746204520.797264214]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+2025-05-02T17:48:40.848921086+01:00 [0m[ INFO] [1746204520.848477070]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+2025-05-02T17:48:40.914238627+01:00 [0m[ INFO] [1746204520.914093350]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+2025-05-02T17:48:40.981270954+01:00 [0m[ INFO] [1746204520.980996956]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info[0m
+2025-05-02T17:48:41.008868049+01:00 [0m[ INFO] [1746204521.008643143]: Loaded 2 mowing areas and 0 navigation areas from file.[0m
+2025-05-02T17:48:41.027475086+01:00 [0m[ INFO] [1746204521.027280550]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-02T17:48:41.027643789+01:00 [0m[ INFO] [1746204521.027513308]: Subscribing to sensor data for sensor with name: Charge Current[0m
+2025-05-02T17:48:41.040343707+01:00 [0m[ INFO] [1746204521.040183633]: Map Position: x=-0.823118, y=-8.94086[0m
+2025-05-02T17:48:41.040446428+01:00 [0m[ INFO] [1746204521.040366521]: Map Size: x=23.1165, y=49.9226[0m
+2025-05-02T17:48:41.048448129+01:00 [0m[ INFO] [1746204521.047843854]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info[0m
+2025-05-02T17:48:41.237051334+01:00 [0m[ INFO] [1746204521.236883613]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-02T17:48:41.237261870+01:00 [0m[ INFO] [1746204521.237084112]: Subscribing to sensor data for sensor with name: GPS Accuracy[0m
+2025-05-02T17:48:41.262308485+01:00 [0m[ INFO] [1746204521.262164227]: om_mower_logic: Setting mower_logic config[0m
+2025-05-02T17:48:41.263036093+01:00 [0m[ INFO] [1746204521.262876020]: mower_comms received new mower_logic config[0m
+2025-05-02T17:48:41.264103273+01:00 [0m[ INFO] [1746204521.263889218]: Monitoring received new mower_logic config[0m
+2025-05-02T17:48:41.277816334+01:00 [0m[ INFO] [1746204521.277629242]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-02T17:48:41.278662348+01:00 [0m[ INFO] [1746204521.278526738]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-02T17:48:41.432656411+01:00 [0m[ INFO] [1746204521.432486894]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-02T17:48:41.432778485+01:00 [0m[ INFO] [1746204521.432632578]: Subscribing to sensor data for sensor with name: Mow Motor Current[0m
+2025-05-02T17:48:41.458906613+01:00 [0m[ INFO] [1746204521.458738096]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-02T17:48:41.459031594+01:00 [0m[ INFO] [1746204521.458878132]: Subscribing to sensor data for sensor with name: Left ESC Temp[0m
+2025-05-02T17:48:41.469978928+01:00 [0m[ INFO] [1746204521.469789985]: Monitoring received new mower_logic config[0m
+2025-05-02T17:48:41.470121668+01:00 [0m[ INFO] [1746204521.469796281]: mower_comms received new mower_logic config[0m
+2025-05-02T17:48:41.500609997+01:00 [0m[ INFO] [1746204521.500433535]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+2025-05-02T17:48:41.500801756+01:00 [0m[ INFO] [1746204521.500723700]: Subscribing to sensor data for sensor with name: Mow ESC Temp[0m
+2025-05-02T17:48:41.550519840+01:00 [0m[ INFO] [1746204521.550329508]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-02T17:48:41.550641210+01:00 [0m[ INFO] [1746204521.550568507]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-02T17:48:41.550839468+01:00 [0m[ INFO] [1746204521.550758654]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-02T17:48:41.550945616+01:00 [0m[ INFO] [1746204521.550875653]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-02T17:48:41.630974234+01:00 [0m[ INFO] [1746204521.630789217]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+2025-05-02T17:48:41.631088548+01:00 [0m[ INFO] [1746204521.631026271]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions[0m
+2025-05-02T17:48:41.751323966+01:00 [0m[ INFO] [1746204521.751161559]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+2025-05-02T17:48:41.751675316+01:00 [0m[ INFO] [1746204521.751581409]: Subscribing to sensor data for sensor with name: Mow Motor Temp[0m
+2025-05-02T17:48:41.915433386+01:00 [0m[ INFO] [1746204521.915270350]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+2025-05-02T17:48:41.915556293+01:00 [0m[ INFO] [1746204521.915424738]: Subscribing to sensor data for sensor with name: Right ESC Temp[0m
+2025-05-02T17:48:42.101446504+01:00 [0m[ INFO] [1746204522.100952932]: GPS data now valid[0m
+2025-05-02T17:48:42.102607110+01:00 [0m[ INFO] [1746204522.102247852]: First GPS data, moving kalman filter to -11.2962, -10.6331[0m
+2025-05-02T17:48:42.145041114+01:00 [0m[ INFO] [1746204522.144847245]: Waiting for a status message[0m
+2025-05-02T17:48:42.164609004+01:00 [0m[ INFO] [1746204522.164432098]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+2025-05-02T17:48:42.164829355+01:00 [0m[ INFO] [1746204522.164754929]: Subscribing to sensor data for sensor with name: V Battery[0m
+2025-05-02T17:48:42.563318561+01:00 [31m[map_service-10] process has died [pid 148, exit code -11, cmd /opt/open_mower_ros/devel/lib/mower_map/mower_map_service __name:=map_service __log:=/root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/map_service-10.log].
+2025-05-02T17:48:42.563515578+01:00 log file: /root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/map_service-10*.log[0m
+2025-05-02T17:48:42.712194492+01:00 [0m[ INFO] [1746204522.711841735]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+2025-05-02T17:48:42.712452436+01:00 [0m[ INFO] [1746204522.712260937]: Subscribing to sensor data for sensor with name: V Charge[0m
+2025-05-02T17:48:43.053405073+01:00 [INFO] [1746204523.053191]: Connected to http://192.168.68.117:2101/RTKBase
+2025-05-02T17:48:43.145117189+01:00 [0m[ INFO] [1746204523.144971689]: Waiting for a pose message[0m
+2025-05-02T17:48:43.476316696+01:00 the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+2025-05-02T17:48:44.125009581+01:00 [0m[ INFO] [1746204524.124886304]: Send ll_high_level_config packet 0x11
+2025-05-02T17:48:44.125009581+01:00 	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-02T17:48:44.125322506+01:00 	 v_charge_cutoff=30.000000, i_charge_cutoff=4.000000,
+2025-05-02T17:48:44.125398783+01:00 	 v_battery_cutoff=29.600000, v_battery_empty=23.000000, v_battery_full=29.450001,
+2025-05-02T17:48:44.125398783+01:00 	 lift_period=250, tilt_period=65535,
+2025-05-02T17:48:44.125442802+01:00 	 shutdown_esc_max_pitch=255,
+2025-05-02T17:48:44.125442802+01:00 	 language="en", volume=255
+2025-05-02T17:48:44.125608171+01:00 	 hall_configs="U, U, U, U, U, U, U, U, U, U"[0m
+2025-05-02T17:48:44.133050067+01:00 [0m[ INFO] [1746204524.132935826]: Started gyro calibration[0m
+2025-05-02T17:48:44.136748644+01:00 [0m[ INFO] [1746204524.136619070]: Received ll_high_level_config packet 0x12
+2025-05-02T17:48:44.136748644+01:00 	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-02T17:48:44.136926828+01:00 	 v_charge_cutoff=30.000000, i_charge_cutoff=4.000000,
+2025-05-02T17:48:44.136926828+01:00 	 v_battery_cutoff=29.600000, v_battery_empty=23.000000, v_battery_full=29.450001,
+2025-05-02T17:48:44.136926828+01:00 	 lift_period=250, tilt_period=2500,
+2025-05-02T17:48:44.136926828+01:00 	 shutdown_esc_max_pitch=0,
+2025-05-02T17:48:44.137023143+01:00 	 language="en", volume=80
+2025-05-02T17:48:44.137131642+01:00 	 hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"[0m
+2025-05-02T17:48:44.141300218+01:00 [0m[ INFO] [1746204524.141128404]: om_mower_logic: Setting mower_logic config[0m
+2025-05-02T17:48:44.218605566+01:00 [0m[ INFO] [1746204524.218456992]: Monitoring received new mower_logic config[0m
+2025-05-02T17:48:44.218765269+01:00 [0m[ INFO] [1746204524.218637936]: mower_comms received new mower_logic config[0m
+2025-05-02T17:48:44.222428902+01:00 [0m[ INFO] [1746204524.222296273]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-02T17:48:44.222546531+01:00 [0m[ INFO] [1746204524.222466920]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-02T17:48:44.224380820+01:00 [0m[ INFO] [1746204524.224247320]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-02T17:48:44.225438686+01:00 [31m[ERROR] [1746204524.225050317]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:44.226328090+01:00 [0m[ INFO] [1746204524.226192368]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+2025-05-02T17:48:44.228462692+01:00 [0m[ INFO] [1746204524.228333193]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-02T17:48:44.235490959+01:00 [0m[ INFO] [1746204524.235359552]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+2025-05-02T17:48:44.240547142+01:00 [0m[ INFO] [1746204524.240398180]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+2025-05-02T17:48:44.242501542+01:00 [0m[ INFO] [1746204524.242380116]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+2025-05-02T17:48:44.242909429+01:00 [0m[ INFO] [1746204524.242824114]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+2025-05-02T17:48:44.245516474+01:00 [0m[ INFO] [1746204524.245364770]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+2025-05-02T17:48:45.244887232+01:00 [31m[ERROR] [1746204525.244768121]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:45.651621401+01:00 [33m[ WARN] [1746204525.651460309]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100575 timeout was 0.1.[0m
+2025-05-02T17:48:46.264881447+01:00 [31m[ERROR] [1746204526.264769521]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:47.284912131+01:00 [31m[ERROR] [1746204527.284799520]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:48.304896583+01:00 [31m[ERROR] [1746204528.304766935]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:49.151880620+01:00 [0m[ INFO] [1746204529.151762102]: Calibrated gyro offset: 0.00676297[0m
+2025-05-02T17:48:49.304958959+01:00 [31m[ERROR] [1746204529.304815904]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:49.515781441+01:00 [33m[ WARN] [1746204529.515644127]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+2025-05-02T17:48:49.562898634+01:00 [0m[ INFO] [1746204529.562760301]: local_costmap: Using plugin "static_layer"[0m
+2025-05-02T17:48:49.592008769+01:00 [0m[ INFO] [1746204529.591816714]: Requesting the map...[0m
+2025-05-02T17:48:50.145099164+01:00 [0m[ INFO] [1746204530.144940979]: Waiting for emergency service[0m
+2025-05-02T17:48:50.148830505+01:00 [0m[ INFO] [1746204530.148668765]: Waiting for path server[0m
+2025-05-02T17:48:50.152313347+01:00 [0m[ INFO] [1746204530.152167311]: Waiting for mower service[0m
+2025-05-02T17:48:50.156335095+01:00 [0m[ INFO] [1746204530.156173318]: Waiting for gps service[0m
+2025-05-02T17:48:50.159895826+01:00 [0m[ INFO] [1746204530.159738197]: Waiting for positioning service[0m
+2025-05-02T17:48:50.164396758+01:00 [0m[ INFO] [1746204530.163983611]: Waiting for map server[0m
+2025-05-02T17:48:50.167349898+01:00 [0m[ INFO] [1746204530.167188731]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...[0m
+2025-05-02T17:48:50.324946253+01:00 [31m[ERROR] [1746204530.324832790]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:51.344911570+01:00 [31m[ERROR] [1746204531.344787959]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:52.345016243+01:00 [31m[ERROR] [1746204532.344883096]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:53.364903439+01:00 [31m[ERROR] [1746204533.364771754]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:54.364908944+01:00 [31m[ERROR] [1746204534.364781204]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:55.364952406+01:00 [31m[ERROR] [1746204535.364840573]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:56.384892517+01:00 [31m[ERROR] [1746204536.384766128]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:57.384951083+01:00 [31m[ERROR] [1746204537.384808498]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:58.384939859+01:00 [31m[ERROR] [1746204538.384812846]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:48:59.404949179+01:00 [31m[ERROR] [1746204539.404831166]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:00.404960225+01:00 [31m[ERROR] [1746204540.404841527]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:01.424921880+01:00 [31m[ERROR] [1746204541.424801515]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:02.425268670+01:00 [31m[ERROR] [1746204542.425125047]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:03.445068785+01:00 [31m[ERROR] [1746204543.444944420]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:04.445207518+01:00 [31m[ERROR] [1746204544.445007805]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:05.465027257+01:00 [31m[ERROR] [1746204545.464881578]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:06.484944805+01:00 [31m[ERROR] [1746204546.484815310]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:07.282256660+01:00 [31m[ERROR] [1746204547.282115369]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:49:07.485124874+01:00 [31m[ERROR] [1746204547.484986139]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:08.094022620+01:00 [0m[ INFO] [1746204548.093860034]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-02T17:49:08.485001339+01:00 [31m[ERROR] [1746204548.484858363]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:09.281897773+01:00 [0m[ INFO] [1746204549.281773278]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-02T17:49:09.505009972+01:00 [31m[ERROR] [1746204549.504873921]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:10.525036165+01:00 [31m[ERROR] [1746204550.524881263]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:11.544874061+01:00 [31m[ERROR] [1746204551.544761861]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:12.564869967+01:00 [31m[ERROR] [1746204552.564759637]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:13.564926960+01:00 [31m[ERROR] [1746204553.564798205]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:14.564958358+01:00 [31m[ERROR] [1746204554.564843788]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:15.584912786+01:00 [31m[ERROR] [1746204555.584784142]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:16.584908817+01:00 [31m[ERROR] [1746204556.584784043]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:17.585128887+01:00 [31m[ERROR] [1746204557.585004483]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:18.604878301+01:00 [31m[ERROR] [1746204558.604755952]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:19.604957150+01:00 [31m[ERROR] [1746204559.604829264]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:20.604953938+01:00 [31m[ERROR] [1746204560.604823219]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:21.624934474+01:00 [31m[ERROR] [1746204561.624800107]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:22.282740536+01:00 [31m[ERROR] [1746204562.282585114]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:49:22.625146893+01:00 [31m[ERROR] [1746204562.625010915]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:23.644919998+01:00 [31m[ERROR] [1746204563.644794076]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:24.087517159+01:00 Traceback (most recent call last):
+2025-05-02T17:49:24.087659137+01:00   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+2025-05-02T17:49:24.087941889+01:00     mbf_drc = Client("move_base_flex", timeout=10)
+2025-05-02T17:49:24.088025072+01:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+2025-05-02T17:49:24.088241660+01:00     self._set_service = self._get_service_proxy('set_parameters', timeout)
+2025-05-02T17:49:24.088307010+01:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+2025-05-02T17:49:24.088592429+01:00     rospy.wait_for_service(service_name, timeout)
+2025-05-02T17:49:24.088592429+01:00   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+2025-05-02T17:49:24.088857829+01:00     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+2025-05-02T17:49:24.088905550+01:00 rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+2025-05-02T17:49:24.664930937+01:00 [31m[ERROR] [1746204564.664815088]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:24.988714488+01:00 [31m[move_base_legacy_relay-6] process has died [pid 128, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/move_base_legacy_relay-6.log].
+2025-05-02T17:49:24.988869743+01:00 log file: /root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/move_base_legacy_relay-6*.log[0m
+2025-05-02T17:49:25.684884992+01:00 [31m[ERROR] [1746204565.684767272]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:26.704923564+01:00 [31m[ERROR] [1746204566.704785623]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:27.704919400+01:00 [31m[ERROR] [1746204567.704802847]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:28.724875707+01:00 [31m[ERROR] [1746204568.724757913]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:29.724900956+01:00 [31m[ERROR] [1746204569.724784921]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:30.744941568+01:00 [31m[ERROR] [1746204570.744807608]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:31.744978329+01:00 [31m[ERROR] [1746204571.744862090]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:32.764907239+01:00 [31m[ERROR] [1746204572.764788445]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:33.764942615+01:00 [31m[ERROR] [1746204573.764792859]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:34.784943794+01:00 [31m[ERROR] [1746204574.784808908]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:35.804940136+01:00 [31m[ERROR] [1746204575.804803805]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:36.824950608+01:00 [31m[ERROR] [1746204576.824833499]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:37.844980214+01:00 [31m[ERROR] [1746204577.844838975]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:38.864894497+01:00 [31m[ERROR] [1746204578.864767888]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:39.884881683+01:00 [31m[ERROR] [1746204579.884771481]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:40.884951530+01:00 [31m[ERROR] [1746204580.884805310]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:41.904925255+01:00 [31m[ERROR] [1746204581.904808535]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:42.924889310+01:00 [31m[ERROR] [1746204582.924764942]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:43.283553169+01:00 [31m[ERROR] [1746204583.283415838]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:49:43.925037763+01:00 [31m[ERROR] [1746204583.924887377]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:44.944875605+01:00 [31m[ERROR] [1746204584.944759533]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:45.944930550+01:00 [31m[ERROR] [1746204585.944797367]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:46.964963741+01:00 [31m[ERROR] [1746204586.964850002]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:47.984955430+01:00 [31m[ERROR] [1746204587.984817969]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:49.004920978+01:00 [31m[ERROR] [1746204589.004787221]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:50.004937586+01:00 [31m[ERROR] [1746204590.004811717]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:50.177947365+01:00 [31m[ERROR] [1746204590.177801830]: Map server service not found.[0m
+2025-05-02T17:49:50.721813501+01:00 [31m[mower_logic-11] process has died [pid 163, exit code 2, cmd /opt/open_mower_ros/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/mower_logic-11.log].
+2025-05-02T17:49:50.721813501+01:00 log file: /root/.ros/log/4a731102-2775-11f0-8639-d83addfdbe25/mower_logic-11*.log[0m
+2025-05-02T17:49:51.024914838+01:00 [31m[ERROR] [1746204591.024786506]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:52.044877661+01:00 [31m[ERROR] [1746204592.044763736]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:53.064865822+01:00 [31m[ERROR] [1746204593.064741046]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:53.281809610+01:00 [31m[ERROR] [1746204593.281685445]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:49:54.064912983+01:00 [31m[ERROR] [1746204594.064785263]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:55.084846369+01:00 [31m[ERROR] [1746204595.084733259]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:56.084918598+01:00 [31m[ERROR] [1746204596.084791951]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:57.104927211+01:00 [31m[ERROR] [1746204597.104817194]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:58.124842366+01:00 [31m[ERROR] [1746204598.124730071]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:49:59.124914551+01:00 [31m[ERROR] [1746204599.124793646]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:00.144873465+01:00 [31m[ERROR] [1746204600.144755226]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:01.145114351+01:00 [31m[ERROR] [1746204601.144923131]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:02.164917055+01:00 [31m[ERROR] [1746204602.164799075]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:03.185122281+01:00 [31m[ERROR] [1746204603.184986542]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:04.204960067+01:00 [31m[ERROR] [1746204604.204830069]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:05.224862867+01:00 [31m[ERROR] [1746204605.224745461]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:06.225315495+01:00 [31m[ERROR] [1746204606.225043553]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:07.244997730+01:00 [31m[ERROR] [1746204607.244849806]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:08.264861923+01:00 [31m[ERROR] [1746204608.264745480]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:09.264905942+01:00 [31m[ERROR] [1746204609.264781314]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:10.284878814+01:00 [31m[ERROR] [1746204610.284763334]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:11.284914053+01:00 [31m[ERROR] [1746204611.284781609]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:12.304939140+01:00 [31m[ERROR] [1746204612.304809567]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:13.324937978+01:00 [31m[ERROR] [1746204613.324816183]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:14.344870303+01:00 [31m[ERROR] [1746204614.344757934]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:15.344949726+01:00 [31m[ERROR] [1746204615.344823283]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:16.364869399+01:00 [31m[ERROR] [1746204616.364749438]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:17.364868861+01:00 [31m[ERROR] [1746204617.364749122]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:18.365006010+01:00 [31m[ERROR] [1746204618.364866400]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:19.384890387+01:00 [31m[ERROR] [1746204619.384748518]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:20.384933739+01:00 [31m[ERROR] [1746204620.384808777]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:21.385009342+01:00 [31m[ERROR] [1746204621.384861547]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:22.404909613+01:00 [31m[ERROR] [1746204622.404795873]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:23.405002508+01:00 [31m[ERROR] [1746204623.404861565]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:24.282318436+01:00 [31m[ERROR] [1746204624.282199530]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:50:24.424860440+01:00 [31m[ERROR] [1746204624.424746719]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:25.424885746+01:00 [31m[ERROR] [1746204625.424757488]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:26.425028973+01:00 [31m[ERROR] [1746204626.424871455]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:27.444867455+01:00 [31m[ERROR] [1746204627.444747178]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:28.444994963+01:00 [31m[ERROR] [1746204628.444861001]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:29.464859873+01:00 [31m[ERROR] [1746204629.464742374]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:30.464857301+01:00 [31m[ERROR] [1746204630.464749728]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:31.465010711+01:00 [31m[ERROR] [1746204631.464859249]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:32.484861760+01:00 [31m[ERROR] [1746204632.484749465]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:33.484900186+01:00 [31m[ERROR] [1746204633.484777947]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:34.504864804+01:00 [31m[ERROR] [1746204634.504749842]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:35.504859996+01:00 [31m[ERROR] [1746204635.504750368]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:36.504992771+01:00 [31m[ERROR] [1746204636.504848012]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:37.524874216+01:00 [31m[ERROR] [1746204637.524757754]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:38.524940911+01:00 [31m[ERROR] [1746204638.524810282]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:39.524949276+01:00 [31m[ERROR] [1746204639.524810351]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:40.545152992+01:00 [31m[ERROR] [1746204640.545028326]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:41.564902712+01:00 [31m[ERROR] [1746204641.564776806]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:42.564967354+01:00 [31m[ERROR] [1746204642.564829410]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:43.585281789+01:00 [31m[ERROR] [1746204643.584850200]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:44.604894355+01:00 [31m[ERROR] [1746204644.604783337]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:45.624958061+01:00 [31m[ERROR] [1746204645.624806247]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:46.624922994+01:00 [31m[ERROR] [1746204646.624793569]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:47.644938128+01:00 [31m[ERROR] [1746204647.644808981]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:48.664873363+01:00 [31m[ERROR] [1746204648.664751086]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:49.684874993+01:00 [31m[ERROR] [1746204649.684750198]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:50.685367043+01:00 [31m[ERROR] [1746204650.685208433]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:51.704865537+01:00 [31m[ERROR] [1746204651.704749149]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:52.704897854+01:00 [31m[ERROR] [1746204652.704772188]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:53.704904393+01:00 [31m[ERROR] [1746204653.704781449]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:54.724855758+01:00 [31m[ERROR] [1746204654.724741037]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:55.724915813+01:00 [31m[ERROR] [1746204655.724785092]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:56.744892823+01:00 [31m[ERROR] [1746204656.744772528]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:57.745114055+01:00 [31m[ERROR] [1746204657.744913242]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:58.764922855+01:00 [31m[ERROR] [1746204658.764794745]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:50:59.784890686+01:00 [31m[ERROR] [1746204659.784778613]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:00.784917698+01:00 [31m[ERROR] [1746204660.784789254]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:01.804857645+01:00 [31m[ERROR] [1746204661.804739145]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:02.824883675+01:00 [31m[ERROR] [1746204662.824736510]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:03.824889994+01:00 [31m[ERROR] [1746204663.824764199]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:04.844856339+01:00 [31m[ERROR] [1746204664.844744673]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:05.845014645+01:00 [31m[ERROR] [1746204665.844858957]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:06.864949374+01:00 [31m[ERROR] [1746204666.864832131]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:07.884871784+01:00 [31m[ERROR] [1746204667.884756560]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:08.884929202+01:00 [31m[ERROR] [1746204668.884798830]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:09.904860864+01:00 [31m[ERROR] [1746204669.904742789]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:10.924876204+01:00 [31m[ERROR] [1746204670.924747980]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:11.924941877+01:00 [31m[ERROR] [1746204671.924820672]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:12.944858588+01:00 [31m[ERROR] [1746204672.944743197]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:13.944974486+01:00 [31m[ERROR] [1746204673.944846836]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:14.964852547+01:00 [31m[ERROR] [1746204674.964736898]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:15.964884760+01:00 [31m[ERROR] [1746204675.964749702]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:16.984872562+01:00 [31m[ERROR] [1746204676.984752579]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:18.004867201+01:00 [31m[ERROR] [1746204678.004741514]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:19.024871138+01:00 [31m[ERROR] [1746204679.024751248]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:20.024887339+01:00 [31m[ERROR] [1746204680.024765208]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:20.282812816+01:00 [31m[ERROR] [1746204680.282689185]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:51:21.024973102+01:00 [31m[ERROR] [1746204681.024858249]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:22.044962778+01:00 [31m[ERROR] [1746204682.044825129]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:23.064874921+01:00 [31m[ERROR] [1746204683.064758531]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:24.084865314+01:00 [31m[ERROR] [1746204684.084747257]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:25.084907271+01:00 [31m[ERROR] [1746204685.084777140]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:26.104960806+01:00 [31m[ERROR] [1746204686.104834971]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:27.124872025+01:00 [31m[ERROR] [1746204687.124743857]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:28.124919722+01:00 [31m[ERROR] [1746204688.124793258]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:29.125587459+01:00 [31m[ERROR] [1746204689.125277160]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:30.144942055+01:00 [31m[ERROR] [1746204690.144824276]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:31.164930060+01:00 [31m[ERROR] [1746204691.164810040]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:32.164916496+01:00 [31m[ERROR] [1746204692.164794458]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:33.164926664+01:00 [31m[ERROR] [1746204693.164797015]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:34.165474572+01:00 [31m[ERROR] [1746204694.165282237]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:35.184929894+01:00 [31m[ERROR] [1746204695.184801855]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:36.185197348+01:00 [31m[ERROR] [1746204696.185057032]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:37.204866738+01:00 [31m[ERROR] [1746204697.204747441]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:38.204906511+01:00 [31m[ERROR] [1746204698.204782510]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:39.224872537+01:00 [31m[ERROR] [1746204699.224755055]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:40.244911680+01:00 [31m[ERROR] [1746204700.244794605]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:40.282201236+01:00 [31m[ERROR] [1746204700.282064791]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:51:41.244930536+01:00 [31m[ERROR] [1746204701.244798924]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:41.282235642+01:00 [31m[ERROR] [1746204701.282121585]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:51:42.264872532+01:00 [31m[ERROR] [1746204702.264753457]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:43.264914181+01:00 [31m[ERROR] [1746204703.264785273]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:44.284876802+01:00 [31m[ERROR] [1746204704.284762950]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:45.304850665+01:00 [31m[ERROR] [1746204705.304738108]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:46.304876752+01:00 [31m[ERROR] [1746204706.304765306]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:47.324859939+01:00 [31m[ERROR] [1746204707.324745550]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:48.344905710+01:00 [31m[ERROR] [1746204708.344776264]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:49.364875545+01:00 [31m[ERROR] [1746204709.364760785]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:50.384882023+01:00 [31m[ERROR] [1746204710.384768856]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:51.384887420+01:00 [31m[ERROR] [1746204711.384768197]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:52.404875971+01:00 [31m[ERROR] [1746204712.404760507]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:53.404894636+01:00 [31m[ERROR] [1746204713.404766579]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:54.424876268+01:00 [31m[ERROR] [1746204714.424753879]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:55.444866759+01:00 [31m[ERROR] [1746204715.444743647]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:56.444881194+01:00 [31m[ERROR] [1746204716.444749175]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:57.444914385+01:00 [31m[ERROR] [1746204717.444781996]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:58.464861746+01:00 [31m[ERROR] [1746204718.464750597]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:51:59.464903417+01:00 [31m[ERROR] [1746204719.464776472]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:00.484910015+01:00 [31m[ERROR] [1746204720.484779922]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:01.504852318+01:00 [31m[ERROR] [1746204721.504735836]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:02.504910222+01:00 [31m[ERROR] [1746204722.504780796]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:03.524870053+01:00 [31m[ERROR] [1746204723.524757738]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:04.544893335+01:00 [31m[ERROR] [1746204724.544752760]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:05.544946009+01:00 [31m[ERROR] [1746204725.544821805]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:06.564850793+01:00 [31m[ERROR] [1746204726.564736125]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:07.564887829+01:00 [31m[ERROR] [1746204727.564770755]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:08.584864623+01:00 [31m[ERROR] [1746204728.584749104]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:09.604858637+01:00 [31m[ERROR] [1746204729.604738692]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:10.604910878+01:00 [31m[ERROR] [1746204730.604778322]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:11.604979514+01:00 [31m[ERROR] [1746204731.604865106]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:12.624957164+01:00 [31m[ERROR] [1746204732.624830349]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:13.644890893+01:00 [31m[ERROR] [1746204733.644771929]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:14.644910994+01:00 [31m[ERROR] [1746204734.644793475]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:15.645262145+01:00 [31m[ERROR] [1746204735.645027737]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:16.664942974+01:00 [31m[ERROR] [1746204736.664806214]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:17.684925944+01:00 [31m[ERROR] [1746204737.684797870]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:18.684976338+01:00 [31m[ERROR] [1746204738.684840856]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:19.704936726+01:00 [31m[ERROR] [1746204739.704801874]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:20.724949777+01:00 [31m[ERROR] [1746204740.724791629]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:21.744970809+01:00 [31m[ERROR] [1746204741.744832809]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:22.764901619+01:00 [31m[ERROR] [1746204742.764790007]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:23.784894652+01:00 [31m[ERROR] [1746204743.784778615]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:24.804919485+01:00 [31m[ERROR] [1746204744.804789189]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:25.282175745+01:00 [31m[ERROR] [1746204745.282049449]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:52:25.804907764+01:00 [31m[ERROR] [1746204745.804793986]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:26.824866035+01:00 [31m[ERROR] [1746204746.824745646]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:27.824896536+01:00 [31m[ERROR] [1746204747.824773665]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:28.844886750+01:00 [31m[ERROR] [1746204748.844754324]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:29.844910867+01:00 [31m[ERROR] [1746204749.844783589]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:30.864861826+01:00 [31m[ERROR] [1746204750.864747141]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:31.864904157+01:00 [31m[ERROR] [1746204751.864777194]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:32.864912449+01:00 [31m[ERROR] [1746204752.864787615]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:33.884862322+01:00 [31m[ERROR] [1746204753.884747137]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:34.884923131+01:00 [31m[ERROR] [1746204754.884787113]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:35.904858466+01:00 [31m[ERROR] [1746204755.904741799]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:36.924870820+01:00 [31m[ERROR] [1746204756.924745023]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:37.924943839+01:00 [31m[ERROR] [1746204757.924798135]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:38.944889845+01:00 [31m[ERROR] [1746204758.944747178]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:39.944940818+01:00 [31m[ERROR] [1746204759.944802633]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:40.964882242+01:00 [31m[ERROR] [1746204760.964750298]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:41.965156267+01:00 [31m[ERROR] [1746204761.964903600]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:42.984885279+01:00 [31m[ERROR] [1746204762.984770501]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:44.004877298+01:00 [31m[ERROR] [1746204764.004747705]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:44.382514861+01:00 [31m[ERROR] [1746204764.382373176]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+2025-05-02T17:52:45.004998555+01:00 [31m[ERROR] [1746204765.004846944]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:46.024914205+01:00 [31m[ERROR] [1746204766.024790575]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:47.045820718+01:00 [31m[ERROR] [1746204767.045569792]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:48.064866631+01:00 [31m[ERROR] [1746204768.064751224]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:49.064868644+01:00 [31m[ERROR] [1746204769.064756533]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:50.064940229+01:00 [31m[ERROR] [1746204770.064794729]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:51.064923183+01:00 [31m[ERROR] [1746204771.064802720]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:52.084971250+01:00 [31m[ERROR] [1746204772.084864602]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:53.104873409+01:00 [31m[ERROR] [1746204773.104757057]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:54.104883028+01:00 [31m[ERROR] [1746204774.104768288]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-02T17:52:55.105006446+01:00 [31m[ERROR] [1746204775.104809632]: Low Level Emergency. Bitmask was: 1[0m

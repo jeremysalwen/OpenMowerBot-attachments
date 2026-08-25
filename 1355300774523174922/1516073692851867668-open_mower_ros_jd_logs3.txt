@@ -1,0 +1,184 @@
+open_mower_ros  | [INFO] [1781530110.643703953]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=541.39
+open_mower_ros  | [INFO] [1781530116.816591684]: Got action: mower_logic:idle/start_mowing
+open_mower_ros  | [INFO] [1781530116.817170634]: Got start_mowing command
+open_mower_ros  | [INFO] [1781530116.838054816]: Currently inside the docking station, we set the robot's pose to the docks pose.
+open_mower_ros  | [INFO] [1781530116.838231442]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1781530116.838831559]: Got sensor info for sensor on topic Battery Current on topic /xbot_monitoring/sensors/om_bms_current/info
+open_mower_ros  | [INFO] [1781530116.839267642]: Got sensor info for sensor on topic Charge Cycles on topic /xbot_monitoring/sensors/om_bms_cycle_count/info
+open_mower_ros  | [INFO] [1781530116.839525099]: Got sensor info for sensor on topic Full Charge Capacity on topic /xbot_monitoring/sensors/om_bms_full_charge_capacity/info
+open_mower_ros  | [INFO] [1781530116.839856889]: Got sensor info for sensor on topic Remaining Capacity on topic /xbot_monitoring/sensors/om_bms_remaining_capacity/info
+open_mower_ros  | [INFO] [1781530116.840094921]: Got sensor info for sensor on topic State of Charge on topic /xbot_monitoring/sensors/om_bms_soc/info
+open_mower_ros  | [INFO] [1781530116.840426580]: Got sensor info for sensor on topic Battery Temp on topic /xbot_monitoring/sensors/om_bms_temp/info
+open_mower_ros  | [INFO] [1781530116.842154247]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1781530116.842378798]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1781530116.842692124]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1781530116.843272389]: Got sensor info for sensor on topic GPS Fix Type on topic /xbot_monitoring/sensors/om_gps_fix_type/info
+open_mower_ros  | [INFO] [1781530116.843379665]: Got sensor info for sensor on topic GPS Heading Accuracy on topic /xbot_monitoring/sensors/om_gps_heading_accuracy/info
+open_mower_ros  | [INFO] [1781530116.843414035]: Got sensor info for sensor on topic GPS PDOP on topic /xbot_monitoring/sensors/om_gps_pdop/info
+open_mower_ros  | [INFO] [1781530116.843478774]: Got sensor info for sensor on topic GPS Quality on topic /xbot_monitoring/sensors/om_gps_quality/info
+open_mower_ros  | [INFO] [1781530116.843546661]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1781530116.844129112]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1781530116.844270109]: Got sensor info for sensor on topic GPS Satellites on topic /xbot_monitoring/sensors/om_gps_satellites/info
+open_mower_ros  | [INFO] [1781530116.844632934]: 
+open_mower_ros  | [INFO] [1781530116.844665563]: 
+open_mower_ros  | [INFO] [1781530116.844681581]: --------------------------------------
+open_mower_ros  | [INFO] [1781530116.844701507]: - Entered state: UNDOCKING
+open_mower_ros  | [INFO] [1781530116.844719210]: --------------------------------------
+open_mower_ros  | [INFO] [1781530116.845072832]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1781530116.846969218]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1781530116.847787552]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1781530116.848978675]: Getting Docking Point
+open_mower_ros  | [INFO] [1781530116.849268168]: Currently inside the docking station, we set the robot's pose to the docks pose.
+open_mower_ros  | [INFO] [1781530116.851015872]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1781530116.851892149]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1781530116.853028088]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1781530116.853582928]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1781530116.853622297]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1781530116.854514537]: new actions registered: mower_logic:undocking registered 0 actions.
+open_mower_ros  | [INFO] [1781530116.854851271]: successfully registered actions for mower_logic:undocking
+open_mower_ros  | [INFO] [1781530116.854926473]: Random angle undock: Seeded rand()
+open_mower_ros  | [INFO] [1781530116.854952139]: Random angle undock: -0
+open_mower_ros  | [INFO] [1781530116.860255359]: FTCLocalPlannerROS: Got new global plan with 14 points.
+open_mower_ros  | [INFO] [1781530116.860475206]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1781530116.860530446]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1781530120.643718644]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=551.39
+open_mower_ros  | [INFO] [1781530130.643704511]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=561.39
+Mosquitto       | 1781530135: Client mqttjs_0c668559 [172.19.0.1:41092] disconnected: connection closed by client.
+open_mower_ros  | [INFO] [1781530140.643699978]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=571.39
+open_mower_ros  | [INFO] [1781530146.908633440]: FTCLocalPlannerROS: switching planner to position mode
+open_mower_ros  | [INFO] [1781530146.908704143]: FTCLocalPlannerROS: Switching to state 2
+open_mower_ros  | [INFO] [1781530146.958626205]: FTCLocalPlannerROS: Reached goal position.
+open_mower_ros  | [INFO] [1781530146.958689630]: FTCLocalPlannerROS: Switching to state 3
+open_mower_ros  | [INFO] [1781530147.008635970]: FTCLocalPlannerROS: POST_ROTATE finished.
+open_mower_ros  | [INFO] [1781530147.008704413]: FTCLocalPlannerROS: Switching to state 4
+open_mower_ros  | [INFO] [1781530147.155088542]: Undock success. Waiting for GPS.
+open_mower_ros  | [INFO] [1781530147.157148457]: successfully set GPS to 1
+open_mower_ros  | [INFO] [1781530147.157205585]: waiting for gps. current accuracy: 0.0282843
+open_mower_ros  | [WARN] [1781530147.161477504]: Last GPS was 577.908 seconds ago.
+open_mower_ros  | [INFO] [1781530148.157299369]: waiting for gps. current accuracy: 0.0282843
+open_mower_ros  | [INFO] [1781530148.157419144]: GPS data now valid
+open_mower_ros  | [INFO] [1781530148.157518086]: First GPS data, moving kalman filter to 16.6415, 1.07942
+open_mower_ros  | [INFO] [1781530149.157290728]: Got good gps, let's go
+open_mower_ros  | [INFO] [1781530150.643698961]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=0.099014
+open_mower_ros  | [2026-06-15 13:29:13] [connect] WebSocket Connection [fe80::141f:4867:d9f6:7e57%wlan0]:59204 v13 "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/149.0.7827.137 Mobile/15E148 Safari/604.1" / 101
+Mosquitto       | 1781530153: New connection from 172.19.0.1:60496 on port 9001.
+Mosquitto       | 1781530153: New client connected from 172.19.0.1:60496 as mqttjs_0c668559 (p4, c1, k60).
+open_mower_ros  | [INFO] [1781530154.158981543]: new actions registered: mower_logic:undocking registered 0 actions.
+open_mower_ros  | [INFO] [1781530154.159632676]: successfully registered actions for mower_logic:undocking
+open_mower_ros  | [INFO] [1781530154.159674082]: 
+open_mower_ros  | [INFO] [1781530154.159897318]: 
+open_mower_ros  | [INFO] [1781530154.159930521]: --------------------------------------
+open_mower_ros  | [INFO] [1781530154.160028815]: - Entered state: MOWING
+open_mower_ros  | [INFO] [1781530154.160053092]: --------------------------------------
+open_mower_ros  | [INFO] [1781530154.162427795]: new actions registered: mower_logic:mowing registered 6 actions.
+open_mower_ros  | [INFO] [1781530154.163049428]: successfully registered actions for mower_logic:mowing
+open_mower_ros  | [INFO] [1781530154.163280497]: MowingBehavior: Creating mowing plan for area: 0
+open_mower_ros  | [INFO] [1781530154.165390947]: Got getMowingArea call with index: 0
+open_mower_ros  | [INFO] [1781530154.165992229]: MowingBehavior: Detected mow angle: 0.223041
+open_mower_ros  | [INFO] [1781530154.166030339]: MowingBehavior: mowing angle offset (deg): 0
+open_mower_ros  | [INFO] [1781530154.166072709]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 0.223041
+open_mower_ros  | [INFO] [1781530154.166096541]: MowingBehavior: using fill pattern 0
+open_mower_ros  | [INFO] [1781530154.168891531]: generating 3 outlines
+open_mower_ros  | [INFO] [1781530154.175531818]: Starting Fill. Poly size:443
+open_mower_ros  | slic3r_coverage_planner: /opt/slic3r_coverage_planner_workspace/build/Slic3r/src/Slic3r/xs/src/libslic3r/Point.cpp:325: Slic3r::coord_t Slic3r::_align_to_grid(Slic3r::coord_t, Slic3r::coord_t): Assertion `spacing > 0' failed.
+open_mower_ros  | [ERROR] [1781530154.180952079]: MowingBehavior: Error during coverage planning
+open_mower_ros  | [INFO] [1781530154.180999781]: MowingBehavior: Could not create mowing plan, docking
+open_mower_ros  | [INFO] [1781530154.183539221]: MowingBehavior: Finished semiautomatic task
+open_mower_ros  | [INFO] [1781530154.185202534]: new actions registered: mower_logic:mowing registered 6 actions.
+open_mower_ros  | [INFO] [1781530154.185765169]: successfully registered actions for mower_logic:mowing
+open_mower_ros  | [INFO] [1781530154.185847130]: 
+open_mower_ros  | [INFO] [1781530154.185866166]: 
+open_mower_ros  | [INFO] [1781530154.185984534]: --------------------------------------
+open_mower_ros  | [INFO] [1781530154.186005404]: - Entered state: DOCKING
+open_mower_ros  | [INFO] [1781530154.186019681]: --------------------------------------
+open_mower_ros  | [INFO] [1781530154.187983135]: Getting Docking Point
+open_mower_ros  | [INFO] [1781530154.189643429]: new actions registered: mower_logic:docking registered 1 actions.
+open_mower_ros  | [INFO] [1781530154.190179879]: successfully registered actions for mower_logic:docking
+open_mower_ros  | [WARN] [1781530154.190250192]: Waiting for good GPS
+open_mower_ros  | [slic3r_coverage_planner-12] process has died [pid 387, exit code -6, cmd /opt/prebuilt/slic3r_coverage_planner/lib/slic3r_coverage_planner/slic3r_coverage_planner __name:=slic3r_coverage_planner __log:=/data/ros/log/892a8ed4-68ba-11f1-b7a2-2ccf67c33cd0/slic3r_coverage_planner-12.log].
+open_mower_ros  | log file: /data/ros/log/892a8ed4-68ba-11f1-b7a2-2ccf67c33cd0/slic3r_coverage_planner-12*.log
+open_mower_ros  | [INFO] [1781530154.444473749]: GPS quality: 0.858579
+open_mower_ros  | [INFO] [1781530155.190362253]: Calculating approach path
+open_mower_ros  | [INFO] [1781530155.199646255]: FTCLocalPlannerROS: Got new global plan with 58 points.
+open_mower_ros  | [INFO] [1781530155.200108355]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1781530155.200290184]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1781530160.643698384]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=0.0115349
+open_mower_ros  | [INFO] [1781530163.098030754]: FTCLocalPlannerROS: switching planner to position mode
+open_mower_ros  | [INFO] [1781530163.098105233]: FTCLocalPlannerROS: Switching to state 2
+open_mower_ros  | [INFO] [1781530163.148023028]: FTCLocalPlannerROS: Reached goal position.
+open_mower_ros  | [INFO] [1781530163.148097304]: FTCLocalPlannerROS: Switching to state 3
+open_mower_ros  | [INFO] [1781530163.198023857]: FTCLocalPlannerROS: POST_ROTATE finished.
+open_mower_ros  | [INFO] [1781530163.198092282]: FTCLocalPlannerROS: Switching to state 4
+open_mower_ros  | [INFO] [1781530163.248103037]: Action "move_base" succeeded!
+open_mower_ros  | [INFO] [1781530163.290522642]: Executing Docking Approach
+open_mower_ros  | [INFO] [1781530163.296950561]: FTCLocalPlannerROS: Got new global plan with 11 points.
+open_mower_ros  | [INFO] [1781530163.297038318]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1781530163.297066706]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [slic3r_coverage_planner-12] restarting process
+open_mower_ros  | process[slic3r_coverage_planner-12]: started with pid [409]
+open_mower_ros  | [INFO] [1781530164.444469714]: GPS quality: 0.858579
+open_mower_ros  | [INFO] [1781530169.994258617]: FTCLocalPlannerROS: switching planner to position mode
+open_mower_ros  | [INFO] [1781530169.994383947]: FTCLocalPlannerROS: Switching to state 2
+open_mower_ros  | [INFO] [1781530170.044255595]: FTCLocalPlannerROS: Reached goal position.
+open_mower_ros  | [INFO] [1781530170.044377129]: FTCLocalPlannerROS: Switching to state 3
+open_mower_ros  | [INFO] [1781530170.094261629]: FTCLocalPlannerROS: POST_ROTATE finished.
+open_mower_ros  | [INFO] [1781530170.094383052]: FTCLocalPlannerROS: Switching to state 4
+open_mower_ros  | [INFO] [1781530170.193320145]: successfully set GPS to 0
+open_mower_ros  | [INFO] [1781530170.199688433]: FTCLocalPlannerROS: Got new global plan with 20 points.
+open_mower_ros  | [INFO] [1781530170.199773135]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+open_mower_ros  | [INFO] [1781530170.199804504]: FTCLocalPlannerROS: Switching to state 1
+open_mower_ros  | [INFO] [1781530170.643695827]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=0.465848
+open_mower_ros  | [INFO] [1781530176.593542106]: Got a voltage of 34.666 V. Cancelling docking.
+open_mower_ros  | [WARN] [1781530177.593958934]: FTCLocalPlannerROS: FTC planner was cancelled.
+open_mower_ros  | [INFO] [1781530177.593891139]: Cancel action "exe_path"
+open_mower_ros  | [INFO] [1781530177.594340480]: Controller will take care of stopping
+open_mower_ros  | [INFO] [1781530177.595951347]: new actions registered: mower_logic:docking registered 1 actions.
+open_mower_ros  | [INFO] [1781530177.596491482]: successfully registered actions for mower_logic:docking
+open_mower_ros  | [INFO] [1781530177.596662570]: 
+open_mower_ros  | [INFO] [1781530177.596686162]: 
+open_mower_ros  | [INFO] [1781530177.596703754]: --------------------------------------
+open_mower_ros  | [INFO] [1781530177.596719420]: - Entered state: IDLE
+open_mower_ros  | [INFO] [1781530177.596733865]: --------------------------------------
+open_mower_ros  | [INFO] [1781530177.599213840]: new actions registered: mower_logic:idle registered 2 actions.
+open_mower_ros  | [INFO] [1781530177.599933359]: successfully registered actions for mower_logic:idle
+open_mower_ros  | [INFO] [1781530177.601603151]: Got getMowingArea call with index: 0
+open_mower_ros  | [INFO] [1781530177.603204889]: Getting Docking Point
+open_mower_ros  | [INFO] [1781530177.605636328]: successfully set GPS to 0
+open_mower_ros  | [INFO] [1781530180.643690646]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=10.4658
+open_mower_ros  | [INFO] [1781530190.643697723]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=20.4658
+open_mower_ros  | [INFO] [1781530200.643688988]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=30.4658
+open_mower_ros  | [INFO] [1781530210.643703029]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=40.4659
+open_mower_ros  | [INFO] [1781530220.643695690]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=50.4658
+Mosquitto       | 1781530226: Client mqttjs_0c668559 [172.19.0.1:60496] disconnected: connection closed by client.
+open_mower_ros  | [INFO] [1781530230.643692639]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=60.4658
+open_mower_ros  | [INFO] [1781530240.643701072]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=70.4659
+open_mower_ros  | [INFO] [1781530250.643697869]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=80.4658
+open_mower_ros  | [INFO] [1781530260.643701031]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=90.4659
+open_mower_ros  | [INFO] [1781530270.643700941]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=100.466
+open_mower_ros  | [INFO] [1781530280.643696386]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=110.466
+Mosquitto       | 1781530289: Client mqttjs_a7e84fa0 [192.168.0.114:59778] disconnected: connection closed by client.
+Mosquitto       | 1781530289: New connection from 192.168.0.159:50668 on port 9001.
+Mosquitto       | 1781530289: New client connected from 192.168.0.159:50668 as mqttjs_0c668559 (p4, c1, k60).
+Mosquitto       | 1781530290: New connection from 192.168.0.114:61167 on port 9001.
+Mosquitto       | 1781530290: New client connected from 192.168.0.114:61167 as mqttjs_568c9ef4 (p4, c1, k60).
+Mosquitto       | 1781530290: Client xbot_monitoring [172.19.0.1:59404] disconnected: oversize packet.
+open_mower_ros  | [2026-06-15 13:31:29] [error] handle_read_frame error: websocketpp.transport:7 (End of File)
+open_mower_ros  | [2026-06-15 13:31:29] [control] Control frame received with opcode 8
+open_mower_ros  | [2026-06-15 13:31:29] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 2 payload bytes
+open_mower_ros  | [2026-06-15 13:31:29] [frame_header] Header Bytes: 
+open_mower_ros  | [0] (2) 88 02 
+open_mower_ros  | 
+open_mower_ros  | [2026-06-15 13:31:29] [disconnect] Disconnect close local:[1006,End of File] remote:[1001]
+open_mower_ros  | [2026-06-15 13:31:29] [connect] WebSocket Connection [::ffff:192.168.0.159]:50667 v13 "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/149.0.7827.137 Mobile/15E148 Safari/604.1" / 101
+open_mower_ros  | [2026-06-15 13:31:30] [connect] WebSocket Connection [::ffff:192.168.0.114]:53161 v13 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" / 101
+open_mower_ros  | [INFO] [1781530290.643689075]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=120.466
+Mosquitto       | 1781530293: New connection from 172.19.0.1:53006 on port 1883.
+Mosquitto       | 1781530294: New client connected from 172.19.0.1:53006 as xbot_monitoring (p4, c1, k1000).
+open_mower_ros  | [INFO] [1781530294.236711454]: MQTT Connected
+open_mower_ros  | [INFO] [1781530300.643699948]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=130.466
+open_mower_ros  | [2026-06-15 13:31:49] [info] asio async_read_at_least error: system:104 (Connection reset by peer)
+open_mower_ros  | [2026-06-15 13:31:49] [error] handle_read_frame error: websocketpp.transport:2 (Underlying Transport Error)
+open_mower_ros  | [2026-06-15 13:31:49] [disconnect] Disconnect close local:[1006,Underlying Transport Error] remote:[1006]
+Mosquitto       | 1781530309: Client mqttjs_0c668559 [192.168.0.159:50668] disconnected: connection closed by client.
+open_mower_ros  | [INFO] [1781530310.643703907]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=140.466
+open_mower_ros  | [INFO] [1781530320.643699106]: xbot_positioning state: has_gyro=1 has_ticks=0 has_gps=1 imu_calibration_age_s=-1 gps_age_s=150.466

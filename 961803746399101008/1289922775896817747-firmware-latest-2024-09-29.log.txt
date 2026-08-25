@@ -1,0 +1,114 @@
+openmower@openmower:~ $ cd OMIAUH/
+
+openmower@openmower:~/OMIAUH $ ls -latr
+total 44
+-rwxr-xr-x 1 openmower openmower  626 Aug 14 09:17 xesc2tcp.sh
+-rwxr-xr-x 1 openmower openmower  774 Aug 14 09:17 upload_firmware.sh
+-rwxr-xr-x 1 openmower openmower  184 Aug 14 09:17 start_ros-debug_bash.sh
+-rwxr-xr-x 1 openmower openmower  178 Aug 14 09:17 start_ros_bash.sh
+-rwxr-xr-x 1 openmower openmower  351 Aug 14 09:17 start_openocd.sh
+-rw-r--r-- 1 openmower openmower  421 Aug 14 09:17 README.md
+-rwxr-xr-x 1 openmower openmower  747 Aug 14 09:17 omiauh.sh
+-rwxr-xr-x 1 openmower openmower 1970 Sep 29 13:47 fetch_and_upload_firmware.sh
+drwxr-xr-x 8 openmower openmower 4096 Sep 29 13:47 .git
+drwxr-xr-x 3 openmower openmower 4096 Sep 29 13:47 .
+drwxr-xr-x 9 openmower openmower 4096 Sep 29 13:59 ..
+
+
+openmower@openmower:~/OMIAUH $ bash ./fetch_and_upload_firmware.sh
+
+ [✓] OpenMowerOS detected
+
+No cached firmware.zip found.
+
+Downloading latest firmware.zip from "https://github.com/ClemensElflein/OpenMower":
+/home/openmower/firmware.zip              100%[===================================================================================>]   6.99M  2.64MB/s    in 2.7s    
+2024-09-29 14:02:47 URL:https://objects.githubusercontent.com/github-production-release-asset-2e65be/452327893/5ca04d43-cad8-49bc-abd0-f851e22d4197?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240929T120210Z&X-Amz-Expires=300&X-Amz-Signature=303f34af51f3430d0baa74e0ad01c60268a55f3b2f60cf728e739e39ec62bd2b&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dfirmware.zip&response-content-type=application%2Foctet-stream [7333546/7333546] -> "/home/openmower/firmware.zip" [1]
+
+Extrating firmware for "0_13_X"
+
+
+Executing flash script with firmware "/home/openmower/firmware.elf":
+
+ [✓] OpenMowerOS detected
+
+Open On-Chip Debugger 0.11.0-g8e3c38f-dirty (2023-08-08-11:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+adapter speed: 1000 kHz
+
+Info : Hardware thread awareness created
+Info : Hardware thread awareness created
+Info : RP2040 Flash Bank Command
+Info : BCM2835 GPIO JTAG/SWD bitbang driver
+Info : clock speed 1001 kHz
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x00000001
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x10000001
+Info : rp2040.core0: hardware has 4 breakpoints, 2 watchpoints
+Info : rp2040.core1: hardware has 4 breakpoints, 2 watchpoints
+Info : starting gdb server for rp2040.core0 on 3333
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+** Programming Started **
+Info : RP2040 B0 Flash Probe: 2097152 bytes @10000000, in 512 sectors
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+Info : Writing 98304 bytes starting at 0x0
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Programming Finished **
+** Verify Started **
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+
+ → Operation successfully completed 🎉
+
+
+openmower@openmower:~/OMIAUH $ sha256sum ~/firmware.*
+20917bd039c6a2ceafb148653dc35e7a24dc7d7fabebe2070b5a0628e9ff0058  /home/openmower/firmware.elf
+fa8eca9e9f1b2bb84a97ae94830eb2c7d09249caf53aae55e07880e7c9fdf72a  /home/openmower/firmware.zip
+
+
+openmower@openmower:~/OMIAUH $ sudo poweroff
+Connection to 192.168.178.251 closed by remote host.
+Connection to 192.168.178.251 closed.

@@ -1,0 +1,110 @@
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/battery_empty_voltage: 23.0
+ * /mower_logic/battery_full_voltage: 28.0
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0.1
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 460800
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 48.8831951
+ * /xbot_driver_gps/datum_long: 2.1661984
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/gps
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+ * /xbot_monitoring/external_mqtt_password: 
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: 
+ * /xbot_monitoring/external_mqtt_username: 
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+NODES
+  /
+    heatmap_generator (xbot_monitoring/heatmap_generator)
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+ROS_MASTER_URI=http://192.168.1.130:11311
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://192.168.1.130:11311
+process[xbot_driver_gps-1]: started with pid [52]
+process[move_base_flex-2]: started with pid [53]
+process[move_base_legacy_relay-3]: started with pid [54]
+process[xbot_positioning-4]: started with pid [55]
+process[joy-5]: started with pid [60]
+process[joy_teleop-6]: started with pid [63]
+process[map_service-7]: started with pid [68]
+process[mower_logic-8]: started with pid [69]
+process[slic3r_coverage_planner-9]: started with pid [76]
+process[twist_mux-10]: started with pid [85]
+process[xbot_monitoring-11]: started with pid [87]
+process[heatmap_generator-12]: started with pid [92]
+process[xbot_remote-13]: started with pid [102]
+process[monitoring-14]: started with pid [105]
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in 
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[move_base_legacy_relay-3] process has died [pid 54, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/e50d494a-57f0-11ee-a974-dca6320f8521/move_base_legacy_relay-3.log].
+log file: /root/.ros/log/e50d494a-57f0-11ee-a974-dca6320f8521/move_base_legacy_relay-3*.log

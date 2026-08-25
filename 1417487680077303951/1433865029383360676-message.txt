@@ -1,0 +1,35 @@
+Mosquitto       | 1761930297: New client connected from 172.19.0.1:39140 as xbot_monitoring (p2, c1, k1000).
+open_mower_ros  | [INFO] [1761930297.701049385]: Using external MQTT broker: 1925.168.1.24:1883 with topic prefix: open_mower/
+open_mower_ros  | [INFO] [1761930297.971156157]: MQTT Connected
+open_mower_ros  | [INFO] [1761930298.675250296]: new methods registered: xbot_monitoring registered 2 methods.
+open_mower_ros  | [INFO] [1761930298.700645116]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1761930298.764731729]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1761930298.794065216]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1761930298.843419956]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1761930298.869815772]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1761930298.869893124]: Subscribing to sensor data for sensor with name: Charge Current
+open_mower_ros  | [INFO] [1761930298.882414396]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1761930298.952661479]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1761930298.972935343]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1761930298.973045991]: Subscribing to sensor data for sensor with name: Charge State
+open_mower_ros  | [INFO] [1761930298.991788899]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1761930299.032710422]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1761930299.033119550]: Subscribing to sensor data for sensor with name: GPS Accuracy
+open_mower_ros  | [INFO] [1761930299.105874307]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1761930299.241356203]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1761930299.270848300]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1761930299.271047706]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+open_mower_ros  | [INFO] [1761930299.297204801]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1761930299.318095736]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1761930299.318154940]: Subscribing to sensor data for sensor with name: Left ESC Temp
+open_mower_ros  | [INFO] [1761930299.355546295]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1761930299.378483109]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1761930299.378553127]: Subscribing to sensor data for sensor with name: Mow Motor Current
+open_mower_ros  | [INFO] [1761930299.411325523]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1761930299.411403393]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1761930299.411435763]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1761930299.411476597]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1761930299.411507356]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1761930299.411537393]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+open_mower_ros  | [INFO] [1761930299.438699686]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1761930299.484756184]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info

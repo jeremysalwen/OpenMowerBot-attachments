@@ -1,0 +1,201 @@
+
+[ERROR] [1688412653.100578236]: Setting emergency!!
+[ERROR] [1688412653.111161011]: Low Level Emergency. Bitmask was: 1
+[ INFO] [1688412653.400505459]: waiting for gps. current accuracy: 999
+[ INFO] [1688412653.552143973]: - Behaviour.h: abort() called
+[ WARN] [1688412654.052121802]: Low quality GPS
+[ WARN] [1688412654.052419964]: GPS timeout
+[ERROR] [1688412654.131136161]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1688412654.400483819]: Could not get GPS.
+[ INFO] [1688412654.400666279]:
+[ INFO] [1688412654.400749908]:
+[ INFO] [1688412654.400878128]: --------------------------------------
+[ INFO] [1688412654.400959775]: - Entered state: IDLE
+[ INFO] [1688412654.401035608]: --------------------------------------
+[ INFO] [1688412654.405238270]: new actions registered: mower_logic:idle registered 2 actions.
+[ INFO] [1688412654.407251056]: successfully registered actions for mower_logic:idle
+[ INFO] [1688412654.412844310]: Got getMowingArea call with index: 0
+[ INFO] [1688412654.419266608]: Getting Docking Point
+[ INFO] [1688412654.423389179]: successfully set GPS to 0
+[ INFO] [1688412654.556490141]: successfully set emergency enabled to 0
+[ WARN] [1688412655.052126272]: Low quality GPS
+[ WARN] [1688412655.052434971]: GPS timeout
+[ INFO] [1688412655.079724602]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412656.552130829]: Low quality GPS
+[ WARN] [1688412656.552237346]: GPS timeout
+[ INFO] [1688412657.079775302]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412657.552283242]: Low quality GPS
+[ WARN] [1688412657.552464832]: GPS timeout
+[ WARN] [1688412658.552491154]: Low quality GPS
+[ WARN] [1688412658.552608856]: GPS timeout
+[ INFO] [1688412659.076976967]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412660.052131068]: Low quality GPS
+[ WARN] [1688412660.052256974]: GPS timeout
+[ INFO] [1688412660.078635007]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412661.552127125]: Low quality GPS
+[ WARN] [1688412661.552279049]: GPS timeout
+[ INFO] [1688412662.079834634]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412662.552145966]: Low quality GPS
+[ WARN] [1688412663.052136219]: GPS timeout
+[ INFO] [1688412663.081110864]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412664.052135727]: Low quality GPS
+[ WARN] [1688412664.052272336]: GPS timeout
+[ INFO] [1688412664.084384065]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688412665.095238233]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688412665.277471905]: Got action: mower_logic:idle/start_mowing
+[ INFO] [1688412665.278210580]: Got start_mowing command
+[ INFO] [1688412665.303957826]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1688412665.308354189]: successfully set pose to position:
+  x: -0.69894
+  y: -0.0079925
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: -0.58986
+  w: 0.807506
+
+[ INFO] [1688412665.312108099]: new actions registered: mower_logic:idle registered 2 actions.
+[ INFO] [1688412665.313652003]: successfully registered actions for mower_logic:idle
+[ INFO] [1688412665.313897351]:
+[ INFO] [1688412665.314050830]:
+[ INFO] [1688412665.314238457]: --------------------------------------
+[ INFO] [1688412665.314380381]: - Entered state: UNDOCKING
+[ INFO] [1688412665.314515065]: --------------------------------------
+[ INFO] [1688412665.318557248]: Getting Docking Point
+[ INFO] [1688412665.319041741]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[ INFO] [1688412665.323469252]: successfully set pose to position:
+  x: -0.69894
+  y: -0.0079925
+  z: 0
+orientation:
+  x: 0
+  y: 0
+  z: -0.58986
+  w: 0.807506
+
+[ INFO] [1688412665.341701493]: Got new global plan with 50 points.
+[ INFO] [1688412665.342829014]: PRE_ROTATE finished. Starting following
+[ INFO] [1688412665.342983105]: Switching to state 1
+[ WARN] [1688412665.552129525]: Low quality GPS
+[ WARN] [1688412665.552455205]: GPS timeout
+[ WARN] [1688412667.052119008]: Low quality GPS
+[ WARN] [1688412667.052223951]: GPS timeout
+[ INFO] [1688412667.081638774]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412668.052204921]: Low quality GPS
+[ WARN] [1688412668.052449992]: GPS timeout
+[ WARN] [1688412669.052246113]: Low quality GPS
+[ WARN] [1688412669.052727976]: GPS timeout
+[ INFO] [1688412669.089613842]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412670.552267355]: Low quality GPS
+[ WARN] [1688412670.552470352]: GPS timeout
+[ INFO] [1688412671.081614710]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412672.052125858]: Low quality GPS
+[ WARN] [1688412672.052233634]: GPS timeout
+[ WARN] [1688412673.052146772]: Low quality GPS
+[ WARN] [1688412673.052269622]: GPS timeout
+[ INFO] [1688412673.081059658]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688412674.086012983]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412674.552128107]: Low quality GPS
+[ WARN] [1688412674.552233309]: GPS timeout
+[ INFO] [1688412675.090065785]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412676.052123127]: Low quality GPS
+[ WARN] [1688412676.052229273]: GPS timeout
+[ INFO] [1688412676.090700968]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412677.052129633]: Low quality GPS
+[ WARN] [1688412677.052508684]: GPS timeout
+[ INFO] [1688412678.091300158]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412678.552129301]: Low quality GPS
+[ WARN] [1688412678.552236596]: GPS timeout
+[ WARN] [1688412679.552154271]: Low quality GPS
+[ WARN] [1688412679.552267065]: GPS timeout
+[ INFO] [1688412680.081982378]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412681.052164327]: Low quality GPS
+[ WARN] [1688412681.052294899]: GPS timeout
+[ INFO] [1688412681.086991518]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412682.052289906]: Low quality GPS
+[ WARN] [1688412682.052484181]: GPS timeout
+[ INFO] [1688412682.091677403]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412683.552123058]: Low quality GPS
+[ WARN] [1688412683.552233834]: GPS timeout
+[ INFO] [1688412684.089640908]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412684.552126435]: Low quality GPS
+[ WARN] [1688412684.552233563]: GPS timeout
+[ WARN] [1688412685.552140701]: Low quality GPS
+[ WARN] [1688412685.552449326]: GPS timeout
+[ INFO] [1688412686.080931360]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412687.052127813]: Low quality GPS
+[ WARN] [1688412687.052272755]: GPS timeout
+[ INFO] [1688412687.088030821]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412688.552119739]: Low quality GPS
+[ WARN] [1688412688.552271663]: GPS timeout
+[ INFO] [1688412689.091035700]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412689.552126153]: Low quality GPS
+[ WARN] [1688412690.052123777]: GPS timeout
+[ WARN] [1688412690.552163808]: Low quality GPS
+[ INFO] [1688412691.085876490]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412691.552119556]: GPS timeout
+[ WARN] [1688412692.052124272]: Low quality GPS
+[ WARN] [1688412692.552132321]: GPS timeout
+[ WARN] [1688412693.052182000]: Low quality GPS
+[ INFO] [1688412693.092197728]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412693.552228826]: GPS timeout
+[ WARN] [1688412694.052211172]: Low quality GPS
+[ WARN] [1688412694.552666104]: GPS timeout
+[ INFO] [1688412695.078112071]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412695.552117637]: Low quality GPS
+[ WARN] [1688412695.552223265]: GPS timeout
+[ INFO] [1688412696.092957903]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412696.552229994]: Low quality GPS
+[ WARN] [1688412696.552392232]: GPS timeout
+[ WARN] [1688412698.052127459]: Low quality GPS
+[ WARN] [1688412698.052272586]: GPS timeout
+[ INFO] [1688412698.096373627]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688412699.103194629]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412699.552122589]: Low quality GPS
+[ WARN] [1688412699.552225217]: GPS timeout
+[ INFO] [1688412700.105097997]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412701.052124460]: Low quality GPS
+[ WARN] [1688412701.052243199]: GPS timeout
+[ WARN] [1688412702.052186095]: Low quality GPS
+[ WARN] [1688412702.052295464]: GPS timeout
+[ INFO] [1688412702.094901692]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412703.552123318]: Low quality GPS
+[ WARN] [1688412703.552463961]: GPS timeout
+[ INFO] [1688412704.089159527]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412704.552135213]: Low quality GPS
+[ WARN] [1688412705.052926622]: GPS timeout
+[ INFO] [1688412705.100788387]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412705.552208737]: Low quality GPS
+[ WARN] [1688412706.552126337]: GPS timeout
+[ WARN] [1688412707.052170312]: Low quality GPS
+[ INFO] [1688412707.096035096]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412708.052269465]: Low quality GPS
+[ WARN] [1688412708.052396407]: GPS timeout
+[ INFO] [1688412708.099984954]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412709.552130226]: Low quality GPS
+[ WARN] [1688412709.552244039]: GPS timeout
+[ INFO] [1688412710.088873402]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412711.052124559]: Low quality GPS
+[ WARN] [1688412711.052229928]: GPS timeout
+[ INFO] [1688412711.094391015]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412712.052231323]: Low quality GPS
+[ WARN] [1688412712.052582651]: GPS timeout
+[ INFO] [1688412713.082564139]: dropping GPS update, since gps_enabled = false.
+[ WARN] [1688412713.552303933]: Low quality GPS
+[ WARN] [1688412713.552471579]: GPS timeout
+[ INFO] [1688412714.105409765]: dropping GPS update, since gps_enabled = false.
+[ INFO] [1688412714.386405146]: switching planner to position mode
+[ INFO] [1688412714.386755401]: Switching to state 2
+[ INFO] [1688412714.435954424]: Reached goal position.
+[ INFO] [1688412714.436283420]: Switching to state 3
+[ INFO] [1688412714.486453263]: POST_ROTATE finished.
+[ INFO] [1688412714.486784147]: Switching to state 4
+[ INFO] [1688412714.536159613]: Undock success. Waiting for GPS.
+[ INFO] [1688412714.540249444]: successfully set GPS to 1
+[ INFO] [1688412714.540378016]: waiting for gps. current accuracy: 999
+[ WARN] [1688412715.052131398]: Low quality GPS
+[ WARN] [1688412715.052260785]: GPS timeout
+[ INFO] [1688412715.091860149]: Dropped GPS update, since it's not RTK Fixed
+[ INFO] [1688412715.540502242]: waiting for gps. current accuracy: 999
+[ INFO] [1688412716.540514248]: waiting for gps. current accuracy: 999

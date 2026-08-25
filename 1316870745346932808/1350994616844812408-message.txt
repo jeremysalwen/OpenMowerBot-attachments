@@ -1,0 +1,63 @@
+ INFO] [1742172549.538988053]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[2025-03-17 00:49:09.630] [info] Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)
+[2025-03-17 00:49:09.631] [info] Found matching service, registering callbacks
+[ INFO] [1742172549.718815463]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[ INFO] [1742172549.718966793]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[ INFO] [1742172549.755665608]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[ INFO] [1742172549.755834567]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[ INFO] [1742172549.830062864]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[ INFO] [1742172549.830219972]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[2025-03-17 00:49:09.884] [info] Sending Service Claim
+[2025-03-17 00:49:09.885] [info] >>> [ID=6] Received claim message
+[2025-03-17 00:49:09.885] [warning] >>> [ID=6] GPS protocol or port change detected - restarting
+[ INFO] [1742172550.012435886]: Waiting for emergency message
+[ INFO] [1742172550.098135959]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[ INFO] [1742172550.098504507]: Subscribing to sensor data for sensor with name: V Charge
+[ERROR] [1742172550.270000891]: Client [/xbot_monitoring] wants topic /xbot_monitoring/sensors/om_charge_state/data to have datatype/md5sum [xbot_msgs/SensorDataString/37670eed6af64f24a40b9b9fc1cb861e], but our version has [xbot_msgs/SensorDataDouble/176463c696aec75591f61a77cde70a71]. Dropping connection.
+[ INFO] [1742172550.484381070]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ INFO] [1742172550.484777340]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[ INFO] [1742172550.606578555]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[ INFO] [1742172550.606814235]: Subscribing to sensor data for sensor with name: V Battery
+[2025-03-17 00:49:10.908] [info] Sending Service Claim
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[2025-03-17 00:49:11.497] [warning] Service registered with invalid endpoint. Ignoring. (ID: 1, endpoint: 172.16.78.150:0)
+[2025-03-17 00:49:11.498] [info] Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)
+[2025-03-17 00:49:11.498] [info] Found matching service, registering callbacks
+[2025-03-17 00:49:11.503] [info] Found new service (Type: DiffDriveService, ID: 2, endpoint: 172.16.78.150:49153)
+[2025-03-17 00:49:11.503] [info] Found matching service, registering callbacks
+[2025-03-17 00:49:11.505] [info] Found new service (Type: MowerService, ID: 3, endpoint: 172.16.78.150:49153)
+[2025-03-17 00:49:11.506] [info] Found matching service, registering callbacks
+[2025-03-17 00:49:11.602] [info] Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)
+[2025-03-17 00:49:11.602] [info] Found matching service, registering callbacks
+[2025-03-17 00:49:11.932] [info] Sending Service Claim
+[2025-03-17 00:49:11.932] [info] Sending Service Claim
+[2025-03-17 00:49:11.933] [info] Sending Service Claim
+[2025-03-17 00:49:11.933] [info] >>> [ID=2] Received claim message
+[2025-03-17 00:49:11.933] [info] Sending Service Claim
+[2025-03-17 00:49:11.933] [info] Sending Service Claim
+[2025-03-17 00:49:11.933] [info] Successfully claimed service
+[2025-03-17 00:49:11.933] [info] PJB: Service Connected! ID: 2
+[2025-03-17 00:49:11.934] [info] Successfully claimed service
+[2025-03-17 00:49:11.934] [info] PJB: Service Connected! ID: 3
+[2025-03-17 00:49:11.934] [info] Successfully claimed service
+[2025-03-17 00:49:11.934] [info] PJB: Service Connected! ID: 4
+[2025-03-17 00:49:11.934] [info] Successfully claimed service
+[2025-03-17 00:49:11.934] [info] PJB: Service Connected! ID: 5
+[2025-03-17 00:49:11.933] [info] >>> [ID=2] service claimed successfully.
+[2025-03-17 00:49:11.934] [info] >>> [ID=2] Requesting Configuration
+[2025-03-17 00:49:11.934] [info] Successfully claimed service
+[2025-03-17 00:49:11.935] [info] PJB: Service Connected! ID: 6
+[2025-03-17 00:49:11.935] [info] >>> [ID=3] Received claim message
+[2025-03-17 00:49:11.935] [info] >>> [ID=3] Service started without requiring configuration
+[2025-03-17 00:49:11.935] [info] >>> [ID=3] service claimed successfully.
+[2025-03-17 00:49:11.935] [info] >>> [ID=4] Received claim message
+[2025-03-17 00:49:11.935] [info] >>> [ID=4] Service started without requiring configuration
+[2025-03-17 00:49:11.936] [info] >>> [ID=4] service claimed successfully.
+[2025-03-17 00:49:11.936] [info] >>> [ID=5] Received claim message
+[2025-03-17 00:49:11.936] [info] >>> [ID=5] Service started without requiring configuration
+[2025-03-17 00:49:11.936] [info] >>> [ID=5] service claimed successfully.
+[2025-03-17 00:49:11.936] [info] >>> [ID=6] Received claim message
+[2025-03-17 00:49:11.936] [info] >>> [ID=6] service claimed successfully.
+[2025-03-17 00:49:11.936] [info] >>> [ID=6] Requesting Configuration
+[2025-03-17 00:49:11.936] [info] >>> [ID=2] Received Configuration
+[2025-03-17 00:49:11.936] [info] >>> [ID=2] Service started after successful configu

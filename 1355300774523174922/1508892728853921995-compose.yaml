@@ -1,0 +1,65 @@
+services:
+  open_mower_ros:
+    image: ghcr.io/oe7set/open_mower_ros:1.2.17-dev
+    container_name: open_mower_ros
+    privileged: true
+    restart: unless-stopped
+    network_mode: host
+    pid: host
+    depends_on:
+      - Mosquitto
+    volumes:
+      - /dev:/dev
+      - /home/openmower/ros:/data/ros
+      - /home/openmower/recordings:/data/recordings
+      - /home/openmower/params:/data/params
+    working_dir: /home/openmower
+    environment:
+      - RECORDINGS_PATH=/data/recordings
+      - PARAMS_PATH=/data/params
+      - ROS_HOME=/data/ros
+    env_file:
+      - .env
+  Mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: Mosquitto
+    restart: unless-stopped
+    user: mosquitto:mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+  OpenMowerApp:
+    image: ghcr.io/clemenselflein/openmowerapp:latest
+    container_name: OpenMowerApp
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+  app:
+    image: ghcr.io/oe7set/openmower-app:0.4.27-dev
+    container_name: app
+    ports:
+      - 3000:3000
+    environment:
+      - MOWER_WHEP_URL=http://192.168.1.117:1984/api/webrtc?src=cam
+    restart: unless-stopped
+  go2rtc:
+    image: alexxit/go2rtc
+    container_name: go2rtc
+    restart: unless-stopped
+    #network_mode: host
+    privileged: true
+    ports:
+      - 1984:1984 # API + WebUI
+      - 8554:8554 # RTSP
+      - 8555:8555/tcp # WebRTC (TCP)
+      - 8555:8555/udp # WebRTC (UDP)
+    volumes:
+      - /dev:/dev
+      - ./go2rtc.yaml:/config/go2rtc.yaml
+x-dockge:
+  urls:
+    - http://${HOSTNAME}:8080
+    - http://${HOSTNAME}:3000
+networks: {}

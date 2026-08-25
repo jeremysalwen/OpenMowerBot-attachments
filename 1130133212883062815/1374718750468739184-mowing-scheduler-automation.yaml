@@ -1,0 +1,13 @@
+alias: Openmower Mowing Scheduler
+description: ""
+triggers:
+  - trigger: time
+    at: input_datetime.openmower_mowing_starttime
+conditions: []
+actions:
+  - action: lawn_mower.start_mowing
+    metadata: {}
+    data: {}
+    target:
+      device_id: 8b57a39588999ee560de155cdc9ab071
+mode: single

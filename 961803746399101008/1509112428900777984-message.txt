@@ -1,0 +1,101 @@
+[mower_logic-11] restarting process
+process[mower_logic-11]: started with pid [268]
+[INFO] [1779869973.177476355]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869973.243501351]: om_mower_logic: Setting mower_logic config
+[INFO] [1779869973.405267986]: Waiting for emergency message
+[INFO] [1779869973.427415606]: Monitoring received new mower_logic config
+[INFO] [1779869973.430415576]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1779869973.430507352]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1779869973.430863179]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1779869973.432000401]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1779869973.433079754]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1779869973.434659414]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1779869973.438407871]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1779869973.439816626]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1779869973.441672836]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1779869973.441754909]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1779869973.442292919]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1779869973.516580668]: mower_comms received new mower_logic config
+[INFO] [1779869973.520793470]: Send ll_high_level_config packet 0x11
+	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+	 v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+	 v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+	 lift_period=65535, tilt_period=65535,
+	 shutdown_esc_max_pitch=0,
+	 language="en", volume=255
+	 hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1779869974.040751884]: Send ll_high_level_config packet 0x11
+	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+	 v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+	 v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+	 lift_period=65535, tilt_period=65535,
+	 shutdown_esc_max_pitch=0,
+	 language="en", volume=255
+	 hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1779869974.190525344]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869974.405339760]: Waiting for a power message
+[INFO] [1779869974.405423647]: Waiting for a status message
+[INFO] [1779869974.405560127]: Waiting for a pose message
+[INFO] [1779869974.405647088]: Waiting for left ESC status message
+[INFO] [1779869974.405719439]: Waiting for right ESC status message
+[INFO] [1779869974.405794919]: Waiting for emergency service
+[INFO] [1779869974.408645687]: Waiting for path server
+[INFO] [1779869974.411058055]: Waiting for mower service
+[WARN] [1779869974.412667159]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100577 timeout was 0.1.
+[INFO] [1779869974.414650163]: Waiting for gps service
+[INFO] [1779869974.417439599]: Waiting for positioning service
+[INFO] [1779869974.419725395]: Waiting for map server
+[INFO] [1779869974.422412611]: Waiting for docking point server
+[INFO] [1779869974.425141918]: Waiting for nav point server
+[INFO] [1779869974.427754023]: Waiting for clear nav point server
+[INFO] [1779869974.430416832]: Waiting for move base flex
+[INFO] [1779869974.560817071]: Send ll_high_level_config packet 0x11
+	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+	 v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+	 v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+	 lift_period=65535, tilt_period=65535,
+	 shutdown_esc_max_pitch=0,
+	 language="en", volume=255
+	 hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1779869975.080771723]: Send ll_high_level_config packet 0x11
+	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+	 v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+	 v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+	 lift_period=65535, tilt_period=65535,
+	 shutdown_esc_max_pitch=0,
+	 language="en", volume=255
+	 hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1779869975.272261612]: Dropped GPS update, since it's not RTK Fixed
+[WARN] [1779869975.601120644]: Didn't received a config packet from LowLevel in time. Is your LowLevel firmware up-to-date?
+[INFO] [1779869975.600930147]: Send ll_high_level_config packet 0x11
+	 options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+	 v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+	 v_battery_cutoff=29.000000, v_battery_empty=24.000000, v_battery_full=28.500000,
+	 lift_period=65535, tilt_period=65535,
+	 shutdown_esc_max_pitch=0,
+	 language="en", volume=255
+	 hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1779869976.272811830]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869977.276601434]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869978.379039400]: Dropped GPS update, since it's not RTK Fixed
+[WARN] [1779869979.443370187]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100624 timeout was 0.1.
+[INFO] [1779869979.472479729]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869980.570584141]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869981.575399816]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869982.674226389]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1779869983.772389726]: Dropped GPS update, since it's not RTK Fixed
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[WARN] [1779869984.475004671]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100963 timeout was 0.1.
+[INFO] [1779869984.772972860]: Dropped GPS update, since it's not RTK Fixed
+[move_base_legacy_relay-6] process has died [pid 260, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/1a853f4e-59a4-11f1-b99e-d83add276784/move_base_legacy_relay-6.log].
+log file: /data/ros/log/1a853f4e-59a4-11f1-b99e-d83add276784/move_base_legacy_relay-6*.log
+[INFO] [1779869985.774223773]: Dropped GPS update, since it's not RTK Fixed

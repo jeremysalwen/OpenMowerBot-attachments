@@ -1,0 +1,54 @@
+Processing GD32F303_STM32F030 (platform: ststm32; board: disco_f051r8; framework: stm32cube)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/disco_f051r8.html
+PLATFORM: ST STM32 (16.1.0) > ST STM32F0DISCOVERY
+HARDWARE: STM32F051R8T6 48MHz, 8KB RAM, 64KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, cmsis-dap, jlink)
+PACKAGES:
+ - framework-stm32cubef0 @ 1.11.3
+ - tool-dfuutil @ 1.11.0
+ - tool-ldscripts-ststm32 @ 0.2.0
+ - tool-openocd @ 3.1200.0 (12.0)
+ - tool-stm32duino @ 1.0.2
+ - toolchain-gccarmnoneeabi @ 1.70201.0 (7.2.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 19 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Compiling .pio\build\GD32F303_STM32F030\src\main.o
+Compiling .pio\build\GD32F303_STM32F030\src\stm32f0xx_hal_msp.o
+Compiling .pio\build\GD32F303_STM32F030\src\stm32f0xx_it.o
+Compiling .pio\build\GD32F303_STM32F030\FrameworkCMSISDevice\system_stm32f0xx.o
+In file included from src\main.c:18:0:
+include/main.h:55:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Left_Sense(void);
+ ^~~~
+ _Bool
+include/main.h:56:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Right_Sense(void);
+ ^~~~
+ _Bool
+In file included from src\stm32f0xx_hal_msp.c:22:0:
+include/main.h:55:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Left_Sense(void);
+ ^~~~
+ _Bool
+In file included from src\stm32f0xx_it.c:21:0:
+include/main.h:55:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Left_Sense(void);
+ ^~~~
+ _Bool
+include/main.h:56:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Right_Sense(void);
+ ^~~~
+ _Bool
+include/main.h:56:1: error: unknown type name 'bool'; did you mean '_Bool'?
+ bool HALLSTOP_Right_Sense(void);
+ ^~~~
+ _Bool
+*** [.pio\build\GD32F303_STM32F030\src\stm32f0xx_hal_msp.o] Error 1
+*** [.pio\build\GD32F303_STM32F030\src\stm32f0xx_it.o] Error 1
+*** [.pio\build\GD32F303_STM32F030\src\main.o] Error 1
+================================================================================================ [FAILED] Took 1.69 seconds ================================================================================================

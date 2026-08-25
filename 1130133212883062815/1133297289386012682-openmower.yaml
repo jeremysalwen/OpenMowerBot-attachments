@@ -1,0 +1,94 @@
+mqtt:
+  sensor:
+    - state_topic: "robot_state/json"
+      name: "OpenMower Position Accuracy"
+      device_class: distance
+      value_template: "{{ value_json.pose.pos_accuracy }}"
+      unit_of_measurement: "m"
+  
+    - state_topic: "sensors/om_mow_esc_temp/data"
+      name: "OpenMower Mower ESC Temperature"
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "°C"
+  
+    - state_topic: "sensors/om_mow_motor_temp/data"
+      name: "OpenMower Mower Motor Temperature"
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "°C"
+  
+    - state_topic: "sensors/om_left_esc_temp/data"
+      name: "OpenMower Left ESC Temperature"
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "°C"
+  
+    - state_topic: "sensors/om_right_esc_temp/data"
+      name: "OpenMower Right ESC Temperature"
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "°C"
+  
+    - state_topic: "sensors/om_charge_current/data"
+      name: "OpenMower Charge Current"
+      device_class: current
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "A"
+  
+    - state_topic: "sensors/om_v_battery/data"
+      name: "OpenMower Battery Voltage"
+      device_class: voltage
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "V"
+  
+    - state_topic: "sensors/om_v_charge/data"
+      name: "OpenMower Charge Voltage"
+      device_class: voltage
+      unique_id: "OM/sensors/om_v_charge"
+      value_template: "{{ value | round(2) }}"
+      unit_of_measurement: "V"
+  
+    - state_topic: "robot_state/json"
+      name: "OpenMower Battery Percentage"
+      device_class: battery
+      value_template: "{{ value_json.battery_percentage | round(2) | float * 100 }}"
+      unit_of_measurement: "%"
+  
+    - state_topic: "robot_state/json"
+      name: "OpenMower State"
+      value_template: "{{ value_json.current_state }}"
+
+  binary_sensor:
+    - state_topic: "robot_state/json"
+      name: "OpenMower Emergency"
+      device_class: safety
+      value_template: "{{ value_json.emergency }}"
+      payload_on: "1"
+      payload_off: "0"
+  
+    - state_topic: "robot_state/json"
+      name: "OpenMower Charging"
+      device_class: battery_charging
+      value_template: "{{ value_json.is_charging }}"
+      payload_on: "1"
+      payload_off: "0"
+      
+command_line:
+  - sensor:
+      name: "OpenMower RPi CPU Frequency"
+      command: "ssh -i /config/.ssh/id_rsa openmower@openmower.local cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq"
+      unit_of_measurement: "MHz"
+      device_class: frequency
+      value_template: "{{ value | multiply(0.001) | round(1) }}"
+      scan_interval: 10
+      
+  - sensor:
+      name: "OpenMower RPi CPU Temperature"
+      command: "ssh -i /config/.ssh/id_rsa openmower@openmower.local cat /sys/class/thermal/thermal_zone0/temp"
+      unit_of_measurement: "°C"
+      value_template: "{{ value | multiply(0.001) | round(1) }}"
+      scan_interval: 10
+      
+  - sensor:
+      name: "OpenMower RPi WiFi Signal Strength"
+      command: "ssh -i /config/.ssh/id_rsa openmower@openmower.local /usr/sbin/iwconfig wlan0 | grep Signal | cut -d= -f3 | cut -d' ' -f1"
+      unit_of_measurement: "dBm"
+      device_class: signal_strength
+      scan_interval: 10

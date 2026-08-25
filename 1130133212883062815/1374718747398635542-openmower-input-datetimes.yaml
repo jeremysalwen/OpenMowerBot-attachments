@@ -1,0 +1,4 @@
+openmower_mowing_starttime:
+    name: Openmower Mowing Start Time
+    has_date: false
+    has_time: true

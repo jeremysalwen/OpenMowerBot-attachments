@@ -1,0 +1,475 @@
+2025-05-04T17:29:16.064975648+02:00  * Starting nginx nginx              [ OK ]
+2025-05-04T17:29:16.109886500+02:00  * Starting network daemon: mosquitto[ OK ]
+2025-05-04T17:29:17.228741999+02:00 ... logging to /root/.ros/log/8aa05e3c-28fc-11f0-9956-d83add388585/roslaunch-openmower-91.log
+2025-05-04T17:29:17.229331425+02:00 Checking log directory for disk usage. This may take a while.
+2025-05-04T17:29:17.229331425+02:00 Press Ctrl-C to interrupt
+2025-05-04T17:29:17.241928333+02:00 Done checking log file disk usage. Usage is <1GB.
+2025-05-04T17:29:17.243332944+02:00
+2025-05-04T17:29:18.124845544+02:00 started roslaunch server http://openmower:39865/
+2025-05-04T17:29:18.131194526+02:00
+2025-05-04T17:29:18.131194526+02:00 SUMMARY
+2025-05-04T17:29:18.131194526+02:00 ========
+2025-05-04T17:29:18.131194526+02:00
+2025-05-04T17:29:18.131194526+02:00 CLEAR PARAMETERS
+2025-05-04T17:29:18.131194526+02:00  * /xbot_driver_gps/
+2025-05-04T17:29:18.131194526+02:00
+2025-05-04T17:29:18.131194526+02:00 PARAMETERS
+2025-05-04T17:29:18.131194526+02:00  * /joy/autorepeat_rate: 10.0
+2025-05-04T17:29:18.131194526+02:00  * /joy/coalesce_interval: 0.06
+2025-05-04T17:29:18.131194526+02:00  * /joy_teleop/enable_turbo_button: 4
+2025-05-04T17:29:18.131194526+02:00  * /joy_teleop/scale_angular: 1.5
+2025-05-04T17:29:18.131194526+02:00  * /joy_teleop/scale_angular_turbo: 3.0
+2025-05-04T17:29:18.131194526+02:00  * /joy_teleop/scale_linear: 0.5
+2025-05-04T17:29:18.131194526+02:00  * /joy_teleop/scale_linear_turbo: 1.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/forward_only: False
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+2025-05-04T17:29:18.131194526+02:00  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/FTCPlanner/acceleration: 0.1
+2025-05-04T17:29:18.131307436+02:00  * /move_base_flex/FTCPlanner/check_obstacles: False
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/debug_pid: True
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/forward_only: True
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/restore_defaults: False
+2025-05-04T17:29:18.131411571+02:00  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/controller_frequency: 1.0
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/controller_patience: 30.0
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/controllers: [{'name': 'FTCPla...
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/global_costmap/global_frame: map
+2025-05-04T17:29:18.131461222+02:00  * /move_base_flex/global_costmap/inflation_radius: 1.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/map_topic: mower_map_service...
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/obstacle_range: 3.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/publish_frequency: 1.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/raytrace_range: 4.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/resolution: 0.1
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/robot_base_frame: base_link
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/robot_radius: 0.0
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/rolling_window: False
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/static_map: True
+2025-05-04T17:29:18.131522981+02:00  * /move_base_flex/global_costmap/update_frequency: 1.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/global_frame: map
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/height: 1.5
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/inflation_radius: 0.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/map_topic: mower_map_service...
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/obstacle_range: 3.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/publish_frequency: 2.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/raytrace_range: 4.0
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/resolution: 0.15
+2025-05-04T17:29:18.131568986+02:00  * /move_base_flex/local_costmap/robot_base_frame: base_link
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/local_costmap/robot_radius: 0.0
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/local_costmap/rolling_window: True
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/local_costmap/static_map: True
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/local_costmap/update_frequency: 5.0
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/local_costmap/width: 1.5
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/oscillation_distance: 0.2
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/oscillation_timeout: 10.0
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/planner_frequency: 1.0
+2025-05-04T17:29:18.131613361+02:00  * /move_base_flex/planner_patience: 5.0
+2025-05-04T17:29:18.131657181+02:00  * /move_base_flex/planners: [{'name': 'Global...
+2025-05-04T17:29:18.131657181+02:00  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+2025-05-04T17:29:18.131657181+02:00  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+2025-05-04T17:29:18.131657181+02:00  * /mower_comms/background_sounds: False
+2025-05-04T17:29:18.131657181+02:00  * /mower_comms/dfp_is_5v: False
+2025-05-04T17:29:18.131657181+02:00  * /mower_comms/language: en
+2025-05-04T17:29:18.131657181+02:00  * /mower_comms/left_xesc/has_motor_temp: False
+2025-05-04T17:29:18.131657181+02:00  * /mower_comms/left_xesc/motor_pole_pairs: 4
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/left_xesc/xesc_type: xesc_mini
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/ll_serial_port: /dev/ttyAMA0
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/has_motor_temp: True
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/max_motor_rpm: 3800
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/min_motor_rpm: 2800
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/motor_pole_pairs: 4
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+2025-05-04T17:29:18.131716663+02:00  * /mower_comms/mower_xesc/xesc_type: xesc_mini
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/right_xesc/has_motor_temp: False
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/right_xesc/motor_pole_pairs: 4
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/right_xesc/xesc_type: xesc_mini
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/volume: -1
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/wheel_distance_m: 0.325
+2025-05-04T17:29:18.131762389+02:00  * /mower_comms/wheel_ticks_per_m: 1600.0
+2025-05-04T17:29:18.131762389+02:00  * /mower_logic/automatic_mode: 2
+2025-05-04T17:29:18.131762389+02:00  * /mower_logic/battery_critical_high_voltage: -1
+2025-05-04T17:29:18.131762389+02:00  * /mower_logic/battery_critical_voltage: 25.0
+2025-05-04T17:29:18.131762389+02:00  * /mower_logic/battery_empty_voltage: 25.0
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/battery_full_voltage: 28.5
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/charge_critical_high_current: -1
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/charge_critical_high_voltage: -1
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/cu_rain_threshold: -1
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/docking_approach_distance: 1.5
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/docking_distance: 1.0
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/docking_extra_time: 0
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/docking_redock: False
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/docking_retry_count: 4
+2025-05-04T17:29:18.131807931+02:00  * /mower_logic/emergency_input_config:
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/emergency_lift_period: -1
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/emergency_tilt_period: -1
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/enable_mower: True
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/gps_timeout: 10.0
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/gps_wait_time: 15.0
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/ignore_charging_current: False
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/motor_cold_temperature: 40.0
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/motor_hot_temperature: 80.0
+2025-05-04T17:29:18.131852380+02:00  * /mower_logic/mow_angle_increment: 0
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/mow_angle_offset: 0
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/mow_angle_offset_is_absolute: False
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/outline_count: 4
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/outline_offset: 0.05
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/outline_overlap_count: 0
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/perimeter_signal:
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/rain_check_seconds: 20
+2025-05-04T17:29:18.131895701+02:00  * /mower_logic/rain_delay_minutes: 30
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/rain_mode: 0
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/tool_width: 0.13
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/undock_angle: 0.0
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/undock_angled_distance: 0.0
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/undock_distance: 2.0
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/undock_fixed_angle: True
+2025-05-04T17:29:18.131954979+02:00  * /mower_logic/undock_use_curve: True
+2025-05-04T17:29:18.131954979+02:00  * /ntrip_client/ntrip_client_node/authenticate: True
+2025-05-04T17:29:18.131954979+02:00  * /ntrip_client/ntrip_client_node/ca_cert:
+2025-05-04T17:29:18.131954979+02:00  * /ntrip_client/ntrip_client_node/cert:
+2025-05-04T17:29:18.131954979+02:00  * /ntrip_client/ntrip_client_node/host: rtkbase
+2025-05-04T17:29:18.131954979+02:00  * /ntrip_client/ntrip_client_node/key:
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/mountpoint: rtk
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/ntrip_version:
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/password: rtk
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/port: 2101
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+2025-05-04T17:29:18.132000909+02:00  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+2025-05-04T17:29:18.132045025+02:00  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+2025-05-04T17:29:18.132045025+02:00  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+2025-05-04T17:29:18.132045025+02:00  * /ntrip_client/ntrip_client_node/ssl: False
+2025-05-04T17:29:18.132045025+02:00  * /ntrip_client/ntrip_client_node/username: rtk
+2025-05-04T17:29:18.132045025+02:00  * /rosdistro: noetic
+2025-05-04T17:29:18.132045025+02:00  * /rosversion: 1.17.0
+2025-05-04T17:29:18.132045025+02:00  * /twist_mux/topics: [{'name': 'naviga...
+2025-05-04T17:29:18.132045025+02:00  * /xbot_driver_gps/baudrate: 921600
+2025-05-04T17:29:18.132045025+02:00  * /xbot_driver_gps/datum_height: 0
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/datum_lat: 50.0561754
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/datum_long: 22.3426481
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/device_type: serial
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/mode: absolute
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+2025-05-04T17:29:18.132089382+02:00  * /xbot_driver_gps/ubx_mode: True
+2025-05-04T17:29:18.132089382+02:00  * /xbot_monitoring/external_mqtt_enable: False
+2025-05-04T17:29:18.132089382+02:00  * /xbot_monitoring/external_mqtt_hostname:
+2025-05-04T17:29:18.132089382+02:00  * /xbot_monitoring/external_mqtt_password:
+2025-05-04T17:29:18.132132869+02:00  * /xbot_monitoring/external_mqtt_port:
+2025-05-04T17:29:18.132132869+02:00  * /xbot_monitoring/external_mqtt_topic_prefix:
+2025-05-04T17:29:18.132132869+02:00  * /xbot_monitoring/external_mqtt_username:
+2025-05-04T17:29:18.132132869+02:00  * /xbot_monitoring/software_version: 9f65b12
+2025-05-04T17:29:18.132132869+02:00  * /xbot_positioning/antenna_offset_x: 0.3
+2025-05-04T17:29:18.132132869+02:00  * /xbot_positioning/antenna_offset_y: 0.0
+2025-05-04T17:29:18.132132869+02:00  * /xbot_positioning/max_gps_accuracy: 0.2
+2025-05-04T17:29:18.132132869+02:00
+2025-05-04T17:29:18.132132869+02:00 NODES
+2025-05-04T17:29:18.132132869+02:00   /
+2025-05-04T17:29:18.132191999+02:00     joy (joy/joy_node)
+2025-05-04T17:29:18.132191999+02:00     joy_teleop (teleop_twist_joy/teleop_node)
+2025-05-04T17:29:18.132191999+02:00     map_service (mower_map/mower_map_service)
+2025-05-04T17:29:18.132191999+02:00     monitoring (mower_logic/monitoring)
+2025-05-04T17:29:18.132191999+02:00     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+2025-05-04T17:29:18.132191999+02:00     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+2025-05-04T17:29:18.132191999+02:00     mower_comms (mower_comms/mower_comms)
+2025-05-04T17:29:18.132191999+02:00     mower_logic (mower_logic/mower_logic)
+2025-05-04T17:29:18.132191999+02:00     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+2025-05-04T17:29:18.132191999+02:00     twist_mux (twist_mux/twist_mux)
+2025-05-04T17:29:18.132236763+02:00     xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+2025-05-04T17:29:18.132236763+02:00     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+2025-05-04T17:29:18.132236763+02:00     xbot_positioning (xbot_positioning/xbot_positioning)
+2025-05-04T17:29:18.132236763+02:00     xbot_remote (xbot_remote/xbot_remote)
+2025-05-04T17:29:18.132236763+02:00   /ntrip_client/
+2025-05-04T17:29:18.132236763+02:00     ntrip_client_node (ntrip_client/ntrip_ros.py)
+2025-05-04T17:29:18.132279046+02:00
+2025-05-04T17:29:18.135181880+02:00 auto-starting new master
+2025-05-04T17:29:18.149463970+02:00 process[master]: started with pid [99]
+2025-05-04T17:29:19.181895595+02:00 ROS_MASTER_URI=http://localhost:11311
+2025-05-04T17:29:19.181991845+02:00
+2025-05-04T17:29:19.186205358+02:00 setting /run_id to 8aa05e3c-28fc-11f0-9956-d83add388585
+2025-05-04T17:29:19.388465841+02:00 process[rosout-1]: started with pid [111]
+2025-05-04T17:29:19.389138130+02:00 started core service [/rosout]
+2025-05-04T17:29:19.603458022+02:00 process[mower_comms-2]: started with pid [119]
+2025-05-04T17:29:19.623942458+02:00 process[ntrip_client/ntrip_client_node-3]: started with pid [120]
+2025-05-04T17:29:19.652377259+02:00 process[xbot_driver_gps-4]: started with pid [121]
+2025-05-04T17:29:19.686749097+02:00 process[move_base_flex-5]: started with pid [126]
+2025-05-04T17:29:19.754305078+02:00 process[move_base_legacy_relay-6]: started with pid [128]
+2025-05-04T17:29:19.781532540+02:00 [ INFO] [1746372559.781235644]: Using UBX mode for GPS
+2025-05-04T17:29:19.796634317+02:00 [ INFO] [1746372559.795949958]: Wheel ticks [1/m]: 1600
+2025-05-04T17:29:19.816490562+02:00 [ INFO] [1746372559.816250779]: Wheel distance [m]: 0.325
+2025-05-04T17:29:19.829586933+02:00 process[xbot_positioning-7]: started with pid [134]
+2025-05-04T17:29:19.860009516+02:00 [ INFO] [1746372559.859831122]: Using absolute mode for GPS
+2025-05-04T17:29:19.884261666+02:00 [ INFO] [1746372559.883993447]: Starting xesc driver
+2025-05-04T17:29:19.909808889+02:00 [ INFO] [1746372559.909620998]: Starting xesc driver
+2025-05-04T17:29:19.921827198+02:00 process[joy-8]: started with pid [139]
+2025-05-04T17:29:19.941221465+02:00 [ INFO] [1746372559.940848794]: Starting xesc driver
+2025-05-04T17:29:20.010002162+02:00 process[joy_teleop-9]: started with pid [146]
+2025-05-04T17:29:20.109813545+02:00 [ INFO] [1746372560.109601436]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+2025-05-04T17:29:20.114396201+02:00 process[map_service-10]: started with pid [154]
+2025-05-04T17:29:20.172748444+02:00 [ WARN] [1746372560.172520783]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:20.233477548+02:00 [ INFO] [1746372560.233038166]: Antenna offset: 0.3, 0
+2025-05-04T17:29:20.266505809+02:00 process[mower_logic-11]: started with pid [162]
+2025-05-04T17:29:20.270903588+02:00 [ INFO] [1746372560.270724599]: connecting serial interface: /dev/ttyAMA0
+2025-05-04T17:29:20.360514846+02:00 process[slic3r_coverage_planner-12]: started with pid [172]
+2025-05-04T17:29:20.504963256+02:00 process[twist_mux-13]: started with pid [173]
+2025-05-04T17:29:20.526588029+02:00 [ INFO] [1746372560.526228311]: Teleop enable button 0.
+2025-05-04T17:29:20.560468320+02:00 [ERROR] [1746372560.560182842]: Couldn't open joystick /dev/input/js0. Will retry every second.
+2025-05-04T17:29:20.573302774+02:00 [ INFO] [1746372560.573127210]: Turbo on button 4.
+2025-05-04T17:29:20.573434720+02:00 [ INFO] [1746372560.573287167]: Linear axis x on 1 at scale 0.500000.
+2025-05-04T17:29:20.573516124+02:00 [ INFO] [1746372560.573439497]: Turbo for linear axis x is scale 1.000000.
+2025-05-04T17:29:20.573566537+02:00 [ INFO] [1746372560.573515976]: Angular axis yaw on 0 at scale 1.500000.
+2025-05-04T17:29:20.573639517+02:00 [ INFO] [1746372560.573578570]: Turbo for angular axis yaw is scale 3.000000.
+2025-05-04T17:29:20.601971375+02:00 process[xbot_monitoring-14]: started with pid [174]
+2025-05-04T17:29:20.727468754+02:00 process[xbot_remote-15]: started with pid [180]
+2025-05-04T17:29:20.787410810+02:00 process[monitoring-16]: started with pid [182]
+2025-05-04T17:29:20.862956242+02:00 [ INFO] [1746372560.862746780]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+2025-05-04T17:29:20.960248433+02:00 [ INFO] [1746372560.960023771]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100
+2025-05-04T17:29:21.067931083+02:00 [FATAL] [1746372561.067683201]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+2025-05-04T17:29:21.172425168+02:00 [ WARN] [1746372561.172194966]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:21.287110756+02:00 [ INFO] [1746372561.286611419]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+2025-05-04T17:29:21.389578426+02:00 [ INFO] [1746372561.389395472]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+2025-05-04T17:29:21.427289580+02:00 [ INFO] [1746372561.427060952]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+2025-05-04T17:29:21.439445624+02:00 [ INFO] [1746372561.439220292]: MQTT Connected
+2025-05-04T17:29:21.456028312+02:00 [ INFO] [1746372561.455801332]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+2025-05-04T17:29:21.531810565+02:00 [ INFO] [1746372561.531595990]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+2025-05-04T17:29:21.594392649+02:00 [ INFO] [1746372561.594236559]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+2025-05-04T17:29:21.666257391+02:00 [ INFO] [1746372561.666088581]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+2025-05-04T17:29:21.716717606+02:00 [ INFO] [1746372561.716419126]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+2025-05-04T17:29:21.854184540+02:00 [ INFO] [1746372561.854002438]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+2025-05-04T17:29:21.946946936+02:00 [ INFO] [1746372561.946772129]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+2025-05-04T17:29:22.003114022+02:00 [ INFO] [1746372562.002927492]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+2025-05-04T17:29:22.003245991+02:00 [ INFO] [1746372562.003105691]: Subscribing to sensor data for sensor with name: Charge Current
+2025-05-04T17:29:22.170677562+02:00 [ WARN] [1746372562.170493902]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:22.184875871+02:00 [ INFO] [1746372562.184704801]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+2025-05-04T17:29:22.184988678+02:00 [ INFO] [1746372562.184875631]: Subscribing to sensor data for sensor with name: GPS Accuracy
+2025-05-04T17:29:22.221843888+02:00 [ INFO] [1746372562.221659061]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+2025-05-04T17:29:22.221970636+02:00 [ INFO] [1746372562.221832761]: Subscribing to sensor data for sensor with name: Left ESC Temp
+2025-05-04T17:29:22.240228577+02:00 [ INFO] [1746372562.239996206]: om_mower_logic: Setting mower_logic config
+2025-05-04T17:29:22.241008874+02:00 [ INFO] [1746372562.240856503]: mower_comms received new mower_logic config
+2025-05-04T17:29:22.244879866+02:00 [ WARN] [1746372562.244673174]: Error opening stored mowing areas.
+2025-05-04T17:29:22.255667889+02:00 [ INFO] [1746372562.255486599]: Map Position: x=0, y=0
+2025-05-04T17:29:22.255783584+02:00 [ INFO] [1746372562.255646153]: Map Size: x=10, y=10
+2025-05-04T17:29:22.419203418+02:00 [ INFO] [1746372562.418830803]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+2025-05-04T17:29:22.419398946+02:00 [ INFO] [1746372562.419218822]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+2025-05-04T17:29:22.439400901+02:00 [ INFO] [1746372562.439244920]: docking pose: position:
+2025-05-04T17:29:22.439566418+02:00   x: 0
+2025-05-04T17:29:22.439566418+02:00   y: 0
+2025-05-04T17:29:22.439566418+02:00   z: 0
+2025-05-04T17:29:22.439566418+02:00 orientation:
+2025-05-04T17:29:22.439566418+02:00   x: 0
+2025-05-04T17:29:22.439566418+02:00   y: 0
+2025-05-04T17:29:22.439566418+02:00   z: 0
+2025-05-04T17:29:22.439619887+02:00   w: 0
+2025-05-04T17:29:22.439619887+02:00
+2025-05-04T17:29:22.541649443+02:00 [ INFO] [1746372562.541358901]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+2025-05-04T17:29:22.541860189+02:00 [ INFO] [1746372562.541696376]: Subscribing to sensor data for sensor with name: Mow Motor Current
+2025-05-04T17:29:22.574484567+02:00 [ INFO] [1746372562.574275931]: mower_comms received new mower_logic config
+2025-05-04T17:29:22.679540148+02:00 [ INFO] [1746372562.679338159]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+2025-05-04T17:29:22.679702388+02:00 [ INFO] [1746372562.679531021]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+2025-05-04T17:29:22.821925254+02:00 [ INFO] [1746372562.821715859]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+2025-05-04T17:29:22.822060370+02:00 [ INFO] [1746372562.821926513]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+2025-05-04T17:29:23.003923237+02:00 [ INFO] [1746372563.003726725]: Waiting for a status message
+2025-05-04T17:29:23.124893825+02:00 [ INFO] [1746372563.124588911]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+2025-05-04T17:29:23.125030554+02:00 [ INFO] [1746372563.124894936]: Subscribing to sensor data for sensor with name: Right ESC Temp
+2025-05-04T17:29:23.171866448+02:00 [ WARN] [1746372563.171520154]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:23.197511855+02:00 [ INFO] [1746372563.197043551]: Monitoring received new mower_logic config
+2025-05-04T17:29:23.222169888+02:00 [ INFO] [1746372563.221857050]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+2025-05-04T17:29:23.222358642+02:00 [ INFO] [1746372563.222264793]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+2025-05-04T17:29:23.234680651+02:00 [ INFO] [1746372563.234503968]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+2025-05-04T17:29:23.238722626+02:00 [ INFO] [1746372563.238566660]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+2025-05-04T17:29:23.240510063+02:00 [ INFO] [1746372563.240287186]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+2025-05-04T17:29:23.240510063+02:00 [ INFO] [1746372563.240443263]: Subscribing to sensor data for sensor with name: V Charge
+2025-05-04T17:29:23.282490681+02:00 [ INFO] [1746372563.282268860]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+2025-05-04T17:29:23.288031434+02:00 [ INFO] [1746372563.287848068]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+2025-05-04T17:29:23.293858087+02:00 [ INFO] [1746372563.293658465]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+2025-05-04T17:29:23.300180852+02:00 [ INFO] [1746372563.299982192]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+2025-05-04T17:29:23.300303102+02:00 [ INFO] [1746372563.300204661]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+2025-05-04T17:29:23.667249601+02:00 [ INFO] [1746372563.666798571]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+2025-05-04T17:29:23.667474403+02:00 [ INFO] [1746372563.667390884]: Subscribing to sensor data for sensor with name: V Battery
+2025-05-04T17:29:24.003934327+02:00 [ INFO] [1746372564.003791525]: Waiting for a pose message
+2025-05-04T17:29:24.058255002+02:00 [INFO] [1746372564.058101]: Connected to http://rtkbase:2101/rtk
+2025-05-04T17:29:24.172280247+02:00 [ WARN] [1746372564.172119244]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:24.404311058+02:00 the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+2025-05-04T17:29:25.168860865+02:00 [ WARN] [1746372565.168558424]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:25.290169228+02:00 [ INFO] [1746372565.290041401]: Send ll_high_level_config packet 0x11
+2025-05-04T17:29:25.290169228+02:00      options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-04T17:29:25.290169228+02:00      v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+2025-05-04T17:29:25.290290908+02:00      v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+2025-05-04T17:29:25.290290908+02:00      lift_period=65535, tilt_period=65535,
+2025-05-04T17:29:25.290290908+02:00      shutdown_esc_max_pitch=255,
+2025-05-04T17:29:25.290290908+02:00      language="en", volume=255
+2025-05-04T17:29:25.290360653+02:00      hall_configs="U, U, U, U, U, U, U, U, U, U"
+2025-05-04T17:29:25.810217488+02:00 [ INFO] [1746372565.810040670]: Send ll_high_level_config packet 0x11
+2025-05-04T17:29:25.810217488+02:00      options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-04T17:29:25.810217488+02:00      v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+2025-05-04T17:29:25.810217488+02:00      v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+2025-05-04T17:29:25.810217488+02:00      lift_period=65535, tilt_period=65535,
+2025-05-04T17:29:25.810217488+02:00      shutdown_esc_max_pitch=255,
+2025-05-04T17:29:25.810217488+02:00      language="en", volume=255
+2025-05-04T17:29:25.810217488+02:00      hall_configs="U, U, U, U, U, U, U, U, U, U"
+2025-05-04T17:29:26.172846669+02:00 [ WARN] [1746372566.172722969]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:26.330201813+02:00 [ INFO] [1746372566.330047286]: Send ll_high_level_config packet 0x11
+2025-05-04T17:29:26.330315940+02:00      options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-04T17:29:26.330315940+02:00      v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+2025-05-04T17:29:26.330315940+02:00      v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+2025-05-04T17:29:26.330315940+02:00      lift_period=65535, tilt_period=65535,
+2025-05-04T17:29:26.330315940+02:00      shutdown_esc_max_pitch=255,
+2025-05-04T17:29:26.330315940+02:00      language="en", volume=255
+2025-05-04T17:29:26.330315940+02:00      hall_configs="U, U, U, U, U, U, U, U, U, U"
+2025-05-04T17:29:26.464840422+02:00 [ WARN] [1746372566.464695393]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100462 timeout was 0.1.
+2025-05-04T17:29:26.850158906+02:00 [ INFO] [1746372566.850025671]: Send ll_high_level_config packet 0x11
+2025-05-04T17:29:26.850158906+02:00      options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-04T17:29:26.850158906+02:00      v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+2025-05-04T17:29:26.850158906+02:00      v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+2025-05-04T17:29:26.850280272+02:00      lift_period=65535, tilt_period=65535,
+2025-05-04T17:29:26.850511749+02:00      shutdown_esc_max_pitch=255,
+2025-05-04T17:29:26.850582440+02:00      language="en", volume=255
+2025-05-04T17:29:26.850582440+02:00      hall_configs="U, U, U, U, U, U, U, U, U, U"
+2025-05-04T17:29:27.170802911+02:00 [ WARN] [1746372567.170672378]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:27.370135071+02:00 [ INFO] [1746372567.369985541]: Send ll_high_level_config packet 0x11
+2025-05-04T17:29:27.370135071+02:00      options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+2025-05-04T17:29:27.370135071+02:00      v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+2025-05-04T17:29:27.370135071+02:00      v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+2025-05-04T17:29:27.370135071+02:00      lift_period=65535, tilt_period=65535,
+2025-05-04T17:29:27.370135071+02:00      shutdown_esc_max_pitch=255,
+2025-05-04T17:29:27.370135071+02:00      language="en", volume=255
+2025-05-04T17:29:27.370135071+02:00      hall_configs="U, U, U, U, U, U, U, U, U, U"
+2025-05-04T17:29:27.370306375+02:00 [ WARN] [1746372567.370220927]: Didn't received a config packet from LowLevel in time. Is your LowLevel firmware up-to-date?
+2025-05-04T17:29:28.171519743+02:00 [ WARN] [1746372568.171404725]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:29.170342062+02:00 [ WARN] [1746372569.170203620]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:30.169191526+02:00 [ WARN] [1746372570.169045269]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:31.173389740+02:00 [ WARN] [1746372571.173266368]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:31.497652494+02:00 [ WARN] [1746372571.497534861]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100118 timeout was 0.1.
+2025-05-04T17:29:32.174103182+02:00 [ WARN] [1746372572.173987734]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:33.171606099+02:00 [ WARN] [1746372573.171488316]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:34.177300922+02:00 [ WARN] [1746372574.177159437]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:35.182634109+02:00 [ WARN] [1746372575.182450646]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:36.169774919+02:00 [ WARN] [1746372576.169657912]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:36.532857563+02:00 [ WARN] [1746372576.532738815]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100969 timeout was 0.1.
+2025-05-04T17:29:37.172208037+02:00 [ WARN] [1746372577.172096528]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:38.182828976+02:00 [ WARN] [1746372578.182715856]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:39.169503806+02:00 [ WARN] [1746372579.169390611]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:40.182038698+02:00 [ WARN] [1746372580.181922262]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:41.178463506+02:00 [ WARN] [1746372581.178331330]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:41.563922951+02:00 [ WARN] [1746372581.563783109]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100425 timeout was 0.1.
+2025-05-04T17:29:42.170926005+02:00 [ WARN] [1746372582.170799513]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:43.174387074+02:00 [ WARN] [1746372583.174278618]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:44.180663863+02:00 [ WARN] [1746372584.180541426]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:45.169620402+02:00 [ WARN] [1746372585.169501260]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:46.176254975+02:00 [ WARN] [1746372586.176135407]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:46.589194896+02:00 [ WARN] [1746372586.589071736]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10035 timeout was 0.1.
+2025-05-04T17:29:47.166109918+02:00 [ WARN] [1746372587.165990535]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:48.169209600+02:00 [ WARN] [1746372588.169092531]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:49.181995665+02:00 [ WARN] [1746372589.181876911]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:50.169306359+02:00 [ WARN] [1746372590.169193123]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:51.169413629+02:00 [ WARN] [1746372591.169296745]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:51.617911127+02:00 [ WARN] [1746372591.617746392]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100979 timeout was 0.1.
+2025-05-04T17:29:52.182838125+02:00 [ WARN] [1746372592.182712278]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:53.181261428+02:00 [ WARN] [1746372593.181098007]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:54.168616552+02:00 [ WARN] [1746372594.168484204]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:55.175949674+02:00 [ WARN] [1746372595.175824621]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:56.168194740+02:00 [ WARN] [1746372596.168079410]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:56.648634341+02:00 [ WARN] [1746372596.648454808]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10005 timeout was 0.1.
+2025-05-04T17:29:57.169082256+02:00 [ WARN] [1746372597.168922482]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:58.177127572+02:00 [ WARN] [1746372598.176976168]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:29:59.172923409+02:00 [ WARN] [1746372599.172672822]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:00.169031622+02:00 [ WARN] [1746372600.168920717]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:01.167919819+02:00 [ WARN] [1746372601.167785969]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:01.677862718+02:00 [ WARN] [1746372601.677742813]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100179 timeout was 0.1.
+2025-05-04T17:30:02.172126157+02:00 [ WARN] [1746372602.172010141]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:03.168815590+02:00 [ WARN] [1746372603.168701369]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:04.166474532+02:00 [ WARN] [1746372604.166360996]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:05.014543414+02:00 Traceback (most recent call last):
+2025-05-04T17:30:05.014543414+02:00   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+2025-05-04T17:30:05.014962131+02:00     mbf_drc = Client("move_base_flex", timeout=10)
+2025-05-04T17:30:05.014962131+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+2025-05-04T17:30:05.015241719+02:00     self._set_service = self._get_service_proxy('set_parameters', timeout)
+2025-05-04T17:30:05.015241719+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+2025-05-04T17:30:05.015573640+02:00     rospy.wait_for_service(service_name, timeout)
+2025-05-04T17:30:05.015573640+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+2025-05-04T17:30:05.015833118+02:00     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+2025-05-04T17:30:05.015879432+02:00 rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+2025-05-04T17:30:05.179730443+02:00 [ WARN] [1746372605.179612944]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:05.859147687+02:00 [move_base_legacy_relay-6] process has died [pid 128, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/8aa05e3c-28fc-11f0-9956-d83add388585/move_base_legacy_relay-6.log].
+2025-05-04T17:30:05.859147687+02:00 log file: /root/.ros/log/8aa05e3c-28fc-11f0-9956-d83add388585/move_base_legacy_relay-6*.log
+2025-05-04T17:30:06.169222087+02:00 [ WARN] [1746372606.169106384]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:06.712290471+02:00 [ WARN] [1746372606.712149399]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100333 timeout was 0.1.
+2025-05-04T17:30:07.173336230+02:00 [ WARN] [1746372607.173222435]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:08.171231329+02:00 [ WARN] [1746372608.171104349]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:09.166956269+02:00 [ WARN] [1746372609.166843048]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:10.167571476+02:00 [ WARN] [1746372610.167457792]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:11.182410171+02:00 [ WARN] [1746372611.182295746]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:11.740858693+02:00 [ WARN] [1746372611.740741546]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100396 timeout was 0.1.
+2025-05-04T17:30:12.169502602+02:00 [ WARN] [1746372612.169381306]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:13.167578076+02:00 [ WARN] [1746372613.167466095]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:14.176189523+02:00 [ WARN] [1746372614.176038394]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:15.169541714+02:00 [ WARN] [1746372615.169427641]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:16.184243754+02:00 [ WARN] [1746372616.184125736]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:16.770558819+02:00 [ WARN] [1746372616.770419135]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100734 timeout was 0.1.
+2025-05-04T17:30:17.169908427+02:00 [ WARN] [1746372617.169729169]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:18.169387134+02:00 [ WARN] [1746372618.169273431]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:19.174355542+02:00 [ WARN] [1746372619.174238265]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:20.187533931+02:00 [ WARN] [1746372620.187420006]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:21.170135526+02:00 [ WARN] [1746372621.170005767]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:21.802121464+02:00 [ WARN] [1746372621.801994888]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100657 timeout was 0.1.
+2025-05-04T17:30:22.179496200+02:00 [ WARN] [1746372622.179375867]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:23.172528461+02:00 [ WARN] [1746372623.172410925]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:24.169571184+02:00 [ WARN] [1746372624.169455575]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:25.172220315+02:00 [ WARN] [1746372625.172099150]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:26.175133724+02:00 [ WARN] [1746372626.175022728]: [driver_gps] invalid gnssFix - dropping message
+2025-05-04T17:30:26.835813297+02:00 [ WARN] [1746372626.835659647]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100454 timeout was 0.1.

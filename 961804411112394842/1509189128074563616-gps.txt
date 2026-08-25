@@ -1,0 +1,99 @@
+header: 
+  seq: 212
+  stamp: 
+    secs: 1779889047
+    nsecs: 478134491
+  frame_id: "gps"
+sensor_stamp: 308265400
+received_stamp: 3052735
+source: 1
+flags: 0
+orientation_valid: 0
+motion_vector_valid: 1
+position_accuracy: 0.1889999955892563
+orientation_accuracy: 3.1415927410125732
+pose: 
+  pose: 
+    position: 
+      x: 16.707056412589736
+      y: 3.2106546126306057
+      z: 38.963
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3106235082323816
+      w: 0.9505330273764334
+  covariance: [0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.869604401089358]
+motion_vector: 
+  x: 0.002
+  y: 0.003
+  z: 0.008
+vehicle_heading: 1.5707963267948966
+motion_heading: 0.6316978372156701
+---
+header: 
+  seq: 213
+  stamp: 
+    secs: 1779889047
+    nsecs: 582984322
+  frame_id: "gps"
+sensor_stamp: 308265500
+received_stamp: 3052840
+source: 1
+flags: 0
+orientation_valid: 0
+motion_vector_valid: 1
+position_accuracy: 0.1889999955892563
+orientation_accuracy: 3.1415927410125732
+pose: 
+  pose: 
+    position: 
+      x: 16.707056412589736
+      y: 3.2106546126306057
+      z: 38.958
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3106235082323816
+      w: 0.9505330273764334
+  covariance: [0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035721, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.869604401089358]
+motion_vector: 
+  x: -0.005
+  y: -0.001
+  z: 0.003
+vehicle_heading: 1.5707963267948966
+motion_heading: 0.6316978372156701
+---
+header: 
+  seq: 214
+  stamp: 
+    secs: 1779889047
+    nsecs: 684319423
+  frame_id: "gps"
+sensor_stamp: 308265600
+received_stamp: 3052941
+source: 1
+flags: 0
+orientation_valid: 0
+motion_vector_valid: 1
+position_accuracy: 0.18799999356269836
+orientation_accuracy: 3.1415927410125732
+pose: 
+  pose: 
+    position: 
+      x: 16.707056412589736
+      y: 3.2106546126306057
+      z: 38.953
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.3106235082323816
+      w: 0.9505330273764334
+  covariance: [0.035344, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035344, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.035344, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.869604401089358]
+motion_vector: 
+  x: -0.002
+  y: 0.003
+  z: 0.0
+vehicle_heading: 1.5707963267948966
+motion_heading: 0.6316978372156701
+---

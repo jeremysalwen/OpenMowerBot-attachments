@@ -1,0 +1,78 @@
+root@openmower:/opt/open_mower_ros# rostopic echo -n 1 /xbot_driver_gps/xb_pose
+header:
+  seq: 1133
+  stamp:
+    secs: 1746182523
+    nsecs:  54445040
+  frame_id: "gps"
+sensor_stamp: 470541000
+received_stamp: 1219126
+source: 1
+flags: 0
+orientation_valid: 0
+motion_vector_valid: 1
+position_accuracy: 3.6489999294281006
+orientation_accuracy: 3.1415927410125732
+pose:
+  pose:
+    position:
+      x: 10.63623871956952
+      y: -0.17587761767208576
+      z: 224.28
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.8779091089969278
+      w: 0.47882731369484394
+  covariance: [13.315201, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.315201, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.315201, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.869604401089358]
+motion_vector:
+  x: -0.007
+  y: 0.036
+  z: -0.072
+vehicle_heading: 1.5707963267948966
+motion_heading: 2.142955747237284
+---
+root@openmower:/opt/open_mower_ros#
+root@openmower:/opt/open_mower_ros# rostopic echo -n 1 /mower/status
+stamp:
+  secs: 1746182540
+  nsecs: 222412091
+mower_status: 0
+raspberry_pi_power: False
+gps_power: False
+esc_power: False
+rain_detected: False
+sound_module_available: False
+sound_module_busy: False
+ui_board_available: False
+ultrasonic_ranges: [0.0, 0.0, 0.0, 0.0, 0.0]
+emergency: False
+v_charge: 0.0
+v_battery: 0.0
+charge_current: 0.0
+mow_enabled: False
+left_esc_status:
+  status: 200
+  current: 0.0
+  tacho: 0
+  rpm: 0
+  temperature_motor: -79.30000305175781
+  temperature_pcb: 47.70000076293945
+right_esc_status:
+  status: 200
+  current: 0.0
+  tacho: 1
+  rpm: 0
+  temperature_motor: -55.0
+  temperature_pcb: 45.79999923706055
+mow_esc_status:
+  status: 200
+  current: 0.0
+  tacho: 4
+  rpm: 0
+  temperature_motor: 23.799999237060547
+  temperature_pcb: 48.900001525878906
+---
+root@openmower:/opt/open_mower_ros# rostopic echo -n 1 /xbot_monitoring/robot_state
+
+

@@ -1,0 +1,83 @@
+  adwaita-icon-theme cython3 gdal-data gtk-update-icon-cache hdf5-helpers hicolor-icon-theme humanity-icon-theme
+  joystick libaec-dev libaec0 libamd2 libaom0 libarmadillo-dev libarmadillo9 libarpack2 libarpack2-dev libassimp-dev
+  libassimp5 libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3 libavcodec-dev
+  libavcodec58 libavformat-dev libavformat58 libavresample-dev libavresample4 libavutil-dev libavutil56 libblas-dev
+  libbluray2 libbtf1 libcairo-gobject2 libcamd2 libccolamd2 libcfitsio-dev libcfitsio8 libcharls-dev libcharls2
+  libcholmod3 libchromaprint1 libclang1-10 libcodec2-0.9 libcolamd2 libcolord2 libcups2 libcurl4-gnutls-dev
+  libcxsparse3 libdap-dev libdap25 libdapclient6v5 libdapserver7v5 libdc1394-22 libdc1394-22-dev libdouble-conversion3
+  libdrm-amdgpu1 libdrm-nouveau2 libdrm-radeon1 libegl-dev libegl-mesa0 libegl1 libeigen3-dev libepoxy0 libepsilon-dev
+  libepsilon1 libevdev2 libexif-dev libexif12 libflac8 libflann-dev libflann1.9 libfontconfig1-dev libfreeimage3
+  libfreetype-dev libfreetype6-dev libfreexl-dev libfreexl1 libfyba-dev libfyba0 libgbm1 libgdal-dev libgdal26
+  libgdcm-dev libgdcm3.0 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgeographic-dev libgeographic19 libgeos-3.8.0
+  libgeos-c1v5 libgeos-dev libgeotiff-dev libgeotiff5 libgif-dev libgif7 libgl-dev libgl1 libgl1-mesa-dev
+  libgl1-mesa-dri libgl2ps-dev libgl2ps1.4 libglapi-mesa libgles-dev libgles1 libgles2 libglew-dev libglew2.1
+  libglu1-mesa libglu1-mesa-dev libglvnd-dev libglvnd0 libglx-dev libglx-mesa0 libglx0 libgme0 libgphoto2-6
+  libgphoto2-dev libgphoto2-port12 libgraphblas3 libgsm1 libgstreamer-plugins-base1.0-0 libgtk-3-0 libgtk-3-common
+  libhdf4-0-alt libhdf4-alt-dev libhdf5-103 libhdf5-cpp-103 libhdf5-dev libhdf5-mpi-dev libhdf5-openmpi-103
+  libhdf5-openmpi-dev libhyphen0 libice-dev libilmbase-dev libilmbase24 libinput-bin libinput10 libjbig-dev
+  libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev libjson-c-dev libjsoncpp-dev libjxr0 libklu1 libkml-dev libkmlbase1
+  libkmlconvenience1 libkmldom1 libkmlengine1 libkmlregionator1 libkmlxsd1 liblapack-dev libldl2 liblept5 libllvm10
+  libllvm12 liblzma-dev libmetis5 libminizip-dev libminizip1 libmongoose2 libmp3lame0 libmpg123-0 libmtdev1
+  libnetcdf-c++4 libnetcdf-cxx-legacy-dev libnetcdf-dev libnetcdf15 libogdi-dev libogdi4.1 libogg-dev libogre-1.9-dev
+  libogre-1.9.0v5 libopencv-calib3d-dev libopencv-calib3d4.2 libopencv-contrib-dev libopencv-contrib4.2
+  libopencv-core-dev libopencv-core4.2 libopencv-dev libopencv-dnn-dev libopencv-dnn4.2 libopencv-features2d-dev
+  libopencv-features2d4.2 libopencv-flann-dev libopencv-flann4.2 libopencv-highgui-dev libopencv-highgui4.2
+  libopencv-imgcodecs-dev libopencv-imgcodecs4.2 libopencv-imgproc-dev libopencv-imgproc4.2 libopencv-ml-dev
+  libopencv-ml4.2 libopencv-objdetect-dev libopencv-objdetect4.2 libopencv-photo-dev libopencv-photo4.2
+  libopencv-shape-dev libopencv-shape4.2 libopencv-stitching-dev libopencv-stitching4.2 libopencv-superres-dev
+  libopencv-superres4.2 libopencv-ts-dev libopencv-video-dev libopencv-video4.2 libopencv-videoio-dev
+  libopencv-videoio4.2 libopencv-videostab-dev libopencv-videostab4.2 libopencv-viz-dev libopencv-viz4.2
+  libopencv4.2-java libopencv4.2-jni libopenexr-dev libopenexr24 libopengl-dev libopengl0 libopenjp2-7
+  libopenjp2-7-dev libopenmpt0 libopenni-dev libopenni0 libopenni2-0 libopenni2-dev libopus0 liborc-0.4-0
+  liborocos-kdl-dev liborocos-kdl1.4 libpcl-apps1.10 libpcl-common1.10 libpcl-dev libpcl-features1.10
+  libpcl-filters1.10 libpcl-io1.10 libpcl-kdtree1.10 libpcl-keypoints1.10 libpcl-ml1.10 libpcl-octree1.10
+  libpcl-outofcore1.10 libpcl-people1.10 libpcl-recognition1.10 libpcl-registration1.10 libpcl-sample-consensus1.10
+  libpcl-search1.10 libpcl-segmentation1.10 libpcl-stereo1.10 libpcl-surface1.10 libpcl-tracking1.10
+  libpcl-visualization1.10 libpcre2-16-0 libpng-dev libpoppler-dev libpoppler-private-dev libpoppler97 libpq-dev
+  libpq5 libproj-dev libproj15 libprotobuf17 libpthread-stubs0-dev libpulse0 libpyside2-dev libpyside2-py3-5.14
+  libqhull-dev libqhull-r7 libqhull7 libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5designer5
+  libqt5designercomponents5 libqt5gui5 libqt5help5 libqt5network5 libqt5opengl5 libqt5opengl5-dev libqt5positioning5
+  libqt5printsupport5 libqt5qml5 libqt5quick5 libqt5quickparticles5 libqt5quickshapes5 libqt5quicktest5
+  libqt5quickwidgets5 libqt5sensors5 libqt5sql5 libqt5sql5-sqlite libqt5svg5 libqt5test5 libqt5webchannel5
+  libqt5webkit5 libqt5webkit5-dev libqt5widgets5 libqt5x11extras5 libqt5xml5 libraw1394-11 libraw1394-dev libraw19
+  librbio2 librest-0.7-0 librsvg2-2 librsvg2-common libsdl2-2.0-0 libsensors-config libsensors5 libshiboken2-dev
+  libshiboken2-py3-5.14 libshine3 libsm-dev libsnappy1v5 libsndfile1 libsocket++1 libsoup-gnome2.4-1 libsoxr0
+  libspatialite-dev libspatialite7 libspeex1 libspqr2 libssh-gcrypt-4 libsuitesparse-dev libsuitesparseconfig5
+  libsuperlu-dev libsuperlu5 libswresample-dev libswresample3 libswscale-dev libswscale5 libsz2 libtbb-dev libtbb2
+  libtcl8.6 libtesseract4 libtheora-dev libtheora0 libtiff-dev libtiffxx5 libtinyxml-dev libtinyxml2.6.2v5 libtk8.6
+  libtwolame0 libumfpack5 liburdfdom-dev liburdfdom-headers-dev liburdfdom-model liburdfdom-model-state
+  liburdfdom-sensor liburdfdom-world liburiparser-dev liburiparser1 libva-drm2 libva-x11-2 libva2 libvdpau1
+  libvorbisenc2 libvpx6 libvtk6.3 libvtk7-dev libvtk7-java libvtk7-jni libvtk7-qt-dev libvtk7.1p libvtk7.1p-qt
+  libvulkan-dev libvulkan1 libwacom-common libwacom2 libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwayland-server0 libwebp-dev libwoff1 libx11-dev libx11-xcb1 libx264-155 libx265-179 libxau-dev libxcb-dri2-0
+  libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0 libxcb-randr0
+  libxcb-render-util0 libxcb-shape0 libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0
+  libxcb-xkb1 libxcb1-dev libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxerces-c-dev libxerces-c3.2
+  libxext-dev libxfixes3 libxft-dev libxft2 libxi6 libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxml2-dev
+  libxrandr2 libxrender-dev libxshmfence1 libxslt1.1 libxss-dev libxss1 libxt-dev libxvidcore4 libxxf86vm1
+  libyaml-cpp-dev libyaml-cpp0.6 libzstd-dev libzvbi-common libzvbi0 libzzip-0-13 odbcinst odbcinst1debian2 proj-data
+  pyqt5-dev python3-autobahn python3-cbor python3-lz4 python3-mpi4py python3-opencv python3-pykdl python3-pyqrcode
+  python3-pyqt5 python3-pyqt5.qtsvg python3-pyside2.qtcore python3-pyside2.qtgui python3-pyside2.qtsvg
+  python3-pyside2.qtwidgets python3-sip python3-sip-dev python3-snappy python3-trie python3-txaio python3-u-msgpack
+  python3-ubjson python3-vtk7 python3-wsaccel qdoc-qt5 qhelpgenerator-qt5 qt5-assistant qt5-qmake qt5-qmake-bin
+  qt5-qmltooling-plugins qtattributionsscanner-qt5 qtbase5-dev qtbase5-dev-tools qtchooser qtdeclarative5-dev
+  qtdeclarative5-dev-tools qttools5-dev qttools5-dev-tools qttools5-private-dev ros-noetic-angles
+  ros-noetic-base-local-planner ros-noetic-clear-costmap-recovery ros-noetic-control-msgs ros-noetic-costmap-2d
+  ros-noetic-costmap-converter ros-noetic-cv-bridge ros-noetic-diagnostic-updater ros-noetic-eigen-conversions
+  ros-noetic-filters ros-noetic-geographic-msgs ros-noetic-global-planner ros-noetic-grid-map-core
+  ros-noetic-grid-map-cv ros-noetic-grid-map-filters ros-noetic-grid-map-msgs ros-noetic-grid-map-ros
+  ros-noetic-image-transport ros-noetic-imu-complementary-filter ros-noetic-imu-filter-madgwick ros-noetic-imu-tools
+  ros-noetic-interactive-markers ros-noetic-joy ros-noetic-joy-teleop ros-noetic-laser-geometry ros-noetic-libg2o
+  ros-noetic-map-msgs ros-noetic-mbf-abstract-core ros-noetic-mbf-abstract-nav ros-noetic-mbf-costmap-core
+  ros-noetic-mbf-costmap-nav ros-noetic-mbf-msgs ros-noetic-mbf-utility ros-noetic-media-export
+  ros-noetic-mobile-robot-simulator ros-noetic-move-base ros-noetic-move-base-msgs ros-noetic-nav-core
+  ros-noetic-navfn ros-noetic-pcl-conversions ros-noetic-pcl-msgs ros-noetic-python-qt-binding ros-noetic-qt-gui
+  ros-noetic-resource-retriever ros-noetic-robot-localization ros-noetic-rotate-recovery ros-noetic-rqt-console
+  ros-noetic-rqt-gui ros-noetic-rqt-gui-py ros-noetic-rqt-logger-level ros-noetic-rqt-py-common
+  ros-noetic-rqt-reconfigure ros-noetic-rtcm-msgs ros-noetic-rviz ros-noetic-rviz-imu-plugin ros-noetic-serial
+  ros-noetic-teleop-tools-msgs ros-noetic-teleop-twist-joy ros-noetic-tf ros-noetic-tf2 ros-noetic-tf2-eigen
+  ros-noetic-tf2-geometry-msgs ros-noetic-tf2-msgs ros-noetic-tf2-py ros-noetic-tf2-ros ros-noetic-twist-mux
+  ros-noetic-twist-mux-msgs ros-noetic-ublox ros-noetic-ublox-gps ros-noetic-ublox-msgs ros-noetic-ublox-serialization
+  ros-noetic-urdf ros-noetic-uuid-msgs ros-noetic-voxel-grid shiboken2 sip-dev tango-icon-theme tcl tcl-dev tcl-vtk7
+  tcl8.6 tcl8.6-dev tk tk-dev tk8.6 tk8.6-dev ubuntu-mono unixodbc-dev vtk7 x11proto-core-dev x11proto-dev
+  x11proto-scrnsaver-dev x11proto-xext-dev xorg-sgml-doctools xtrans-dev

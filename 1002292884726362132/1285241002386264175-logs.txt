@@ -1,0 +1,754 @@
+mowgli-openmower | [ WARN] [1726489418.257744767]: Low quality GPS
+mowgli-openmower | [ WARN] [1726489418.257958525]: GPS timeout
+mowgli-openmower | [ INFO] [1726489418.482231351]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489419.482958305]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ WARN] [1726489419.757676234]: Low quality GPS
+mowgli-openmower | [ WARN] [1726489419.757817733]: GPS timeout
+mowgli-openmower | [ INFO] [1726489420.579215707]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489420.699730736]: Got action: mower_logic:idle/start_mowing
+mowgli-openmower | [WARN] [1726489420.701526]: Found packet, but checksums didn't match
+mowgli-openmower | [ INFO] [1726489420.702166626]: Got start_mowing command
+mowgli-openmower | [WARN] [1726489420.708626]: Expected Checksum: 0x5FFA82
+mowgli-openmower | [WARN] [1726489420.715206]: Actual Checksum:   0x51058E
+mowgli-openmower | [ INFO] [1726489420.743185296]: successfully set GPS to 1
+mowgli-openmower | [ INFO] [1726489420.748447277]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1726489420.751556107]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1726489420.753037374]:
+mowgli-openmower | [ INFO] [1726489420.753371483]:
+mowgli-openmower | [ INFO] [1726489420.753626259]: --------------------------------------
+mowgli-openmower | [ INFO] [1726489420.753966127]: - Entered state: MOWING
+mowgli-openmower | [ INFO] [1726489420.755134341]: --------------------------------------
+mowgli-openmower | [ WARN] [1726489420.757790822]: Low quality GPS
+mowgli-openmower | [ WARN] [1726489420.758001968]: GPS timeout
+mowgli-openmower | [ INFO] [1726489420.762500936]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489420.765986152]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489420.766399538]: MowingBehavior: Creating mowing plan for area: 0
+mowgli-openmower | [ INFO] [1726489420.771970183]: Got getMowingArea call with index: 0
+mowgli-openmower | [ INFO] [1726489420.773185767]: MowingBehavior: Detected mow angle: 1.78263
+mowgli-openmower | [ INFO] [1726489420.773331563]: MowingBehavior: mowing angle offset (deg): 0
+mowgli-openmower | [ INFO] [1726489420.773418710]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 1.78263
+mowgli-openmower | [ WARN] [1726489420.778159787]: Last GPS was 54.491 seconds ago.
+mowgli-openmower | [ INFO] [1726489420.783291862]: generating 4 outlines
+mowgli-openmower | [ INFO] [1726489420.803338978]: Starting Fill. Poly size:108
+mowgli-openmower | [ INFO] [1726489420.809286991]: Fill Complete. Polyline count: 1
+mowgli-openmower | [ INFO] [1726489420.809693414]: Polyline 0 has point count: 134
+mowgli-openmower | [ INFO] [1726489420.809995134]: Got 122 points
+mowgli-openmower | [ INFO] [1726489420.811086312]: Got 130 points
+mowgli-openmower | [ INFO] [1726489420.812065601]: Got 139 points
+mowgli-openmower | [ INFO] [1726489420.812993835]: Got 147 points
+mowgli-openmower | [ INFO] [1726489420.814495287]: Got 636 points
+mowgli-openmower | [ INFO] [1726489420.842781771]: MowingBehavior: Advancing to checkpoint, path: 1 index: 278
+mowgli-openmower | [ INFO] [1726489420.843000269]: MowingBehavior: Executing mowing plan
+mowgli-openmower | [ INFO] [1726489420.843256193]: MowingBehavior: Path segment length: 636 poses.
+mowgli-openmower | [ INFO] [1726489420.843636672]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+mowgli-openmower | [ INFO] [1726489420.865874162]: FTCLocalPlannerROS: Got new global plan with 72 points.
+mowgli-openmower | [ INFO] [1726489421.877948016]: GPS data now valid
+mowgli-openmower | [ INFO] [1726489421.878053015]: First GPS data, moving kalman filter to -2.54663, -12.5222
+mowgli-openmower | [ INFO] [1726489422.257634752]: GPS quality: 0.93
+mowgli-openmower | [ WARN] [1726489422.257745418]: GPS timeout
+mowgli-openmower | [WARN] [1726489425.100331]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489425.104580]: Expected Checksum: 0xAC2578
+mowgli-openmower | [WARN] [1726489425.108582]: Actual Checksum:   0xD7F950
+mowgli-openmower | [WARN] [1726489425.113635]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489425.117906]: Expected Checksum: 0xA39816
+mowgli-openmower | [WARN] [1726489425.122058]: Actual Checksum:   0xEC7EA7
+mowgli-openmower | [ INFO] [1726489425.211277866]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489425.211415254]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [WARN] [1726489425.800304]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489425.804394]: Expected Checksum: 0x5164CD
+mowgli-openmower | [WARN] [1726489425.808147]: Actual Checksum:   0x5B4078
+mowgli-openmower | [WARN] [1726489426.400709]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489426.406672]: Expected Checksum: 0xEA9FED
+mowgli-openmower | [WARN] [1726489426.412830]: Actual Checksum:   0x39B9F1
+mowgli-openmower | [ WARN] [1726489427.448202335]: got vx > 0.6 (-1.81818) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.468382895]: got vx > 0.6 (-1.86047) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.489418782]: got vx > 0.6 (-1.22396) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.510882110]: got vx > 0.6 (-0.901961) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.531167169]: got vx > 0.6 (0.920635) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.553534380]: got vx > 0.6 (0.78125) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.574266417]: got vx > 0.6 (0.693512) - dropping measurement
+mowgli-openmower | [ WARN] [1726489427.595206323]: got vx > 0.6 (0.617647) - dropping measurement
+mowgli-openmower | [WARN] [1726489429.700765]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489429.706696]: Expected Checksum: 0x284830
+mowgli-openmower | [WARN] [1726489429.712449]: Actual Checksum:   0xCB801E
+mowgli-openmower | [ERROR] [1726489429.716609912]: FTCLocalPlannerROS: Robot is far away from global plan. distance (0.801453) > config.max_follow_distance (0.8) It probably has crashed.
+mowgli-openmower | [ INFO] [1726489429.716938243]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ WARN] [1726489429.717596294]: No velocity command received from controller!
+mowgli-openmower | [WARN] [1726489429.721929]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489429.728338]: Expected Checksum: 0x63D5C7
+mowgli-openmower | [WARN] [1726489429.734891]: Actual Checksum:   0x255563
+mowgli-openmower | [WARN] [1726489430.800501]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489430.804935]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489430.808845]: Actual Checksum:   0x6A9E49
+mowgli-openmower | [WARN] [1726489430.813178]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489430.817065]: Expected Checksum: 0x914EEF
+mowgli-openmower | [WARN] [1726489430.820800]: Actual Checksum:   0x420714
+mowgli-openmower | [ INFO] [1726489432.257639322]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489432.700253]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489432.704288]: Expected Checksum: 0xE1A874
+mowgli-openmower | [WARN] [1726489432.708338]: Actual Checksum:   0xC68CD8
+mowgli-openmower | [ WARN] [1726489432.761028602]: No velocity command received from controller!
+mowgli-openmower | [WARN] [1726489432.800191]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489432.804513]: Expected Checksum: 0x1C811A
+mowgli-openmower | [WARN] [1726489432.809118]: Actual Checksum:   0x1A64DC
+mowgli-openmower | [ WARN] [1726489434.710965302]: The controller has been aborted after it exceeded the patience time
+mowgli-openmower | [ WARN] [1726489434.712062609]: No Recovery Behaviors loaded!
+mowgli-openmower | [ WARN] [1726489434.712286497]: Abort the execution of the controller:
+mowgli-openmower | [ INFO] [1726489434.744609822]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+mowgli-openmower | [ERROR] [1726489434.744870024]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+mowgli-openmower | [ WARN] [1726489434.745130985]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+mowgli-openmower | [ INFO] [1726489434.748909439]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489434.750504039]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489434.750704612]: MowingBehavior: CONTINUING
+mowgli-openmower | [ INFO] [1726489434.754894508]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489434.756950771]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489434.757655358]: MowingBehavior: Path segment length: 636 poses.
+mowgli-openmower | [ INFO] [1726489434.757755728]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+mowgli-openmower | [ INFO] [1726489434.780073254]: FTCLocalPlannerROS: Got new global plan with 83 points.
+mowgli-openmower | [ INFO] [1726489434.780764749]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489434.780890285]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [ WARN] [1726489438.267189304]: got vx > 0.6 (-0.916667) - dropping measurement
+mowgli-openmower | [ WARN] [1726489438.288888853]: got vx > 0.6 (-0.833333) - dropping measurement
+mowgli-openmower | [WARN] [1726489438.700638]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489438.707155]: Expected Checksum: 0xBF97FD
+mowgli-openmower | [WARN] [1726489438.713192]: Actual Checksum:   0x53DF93
+mowgli-openmower | [ INFO] [1726489442.257711819]: GPS quality: 0.93
+mowgli-openmower | [ WARN] [1726489442.533364279]: got vx > 0.6 (0.634921) - dropping measurement
+mowgli-openmower | [ INFO] [1726489445.976069461]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower | [ INFO] [1726489445.976288644]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower | [ WARN] [1726489446.022876349]: got vx > 0.6 (-27.3148) - dropping measurement
+mowgli-openmower | [ INFO] [1726489446.025224055]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower | [ INFO] [1726489446.025998697]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower | [ WARN] [1726489446.044641268]: got vx > 0.6 (-24.5833) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.064969808]: got vx > 0.6 (-16.3611) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.086103194]: got vx > 0.6 (-12.1399) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.106913694]: got vx > 0.6 (-9.62418) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.127774990]: got vx > 0.6 (-7.99458) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.148735822]: got vx > 0.6 (-6.81713) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.170491944]: got vx > 0.6 (-5.92369) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.190870428]: got vx > 0.6 (-5.27778) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.211394097]: got vx > 0.6 (-4.74235) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.232847759]: got vx > 0.6 (-4.29825) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.255620985]: got vx > 0.6 (-3.90438) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.276944777]: got vx > 0.6 (-3.60294) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.297425891]: got vx > 0.6 (-3.34471) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.318205539]: got vx > 0.6 (-3.11571) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.339613701]: got vx > 0.6 (-2.91542) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.360960382]: got vx > 0.6 (-2.74813) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.381433958]: got vx > 0.6 (-2.59063) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.401570592]: got vx > 0.6 (-2.45592) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.421809133]: got vx > 0.6 (-2.34374) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.442516133]: got vx > 0.6 (-2.22749) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.464288404]: got vx > 0.6 (-2.11726) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.485678974]: got vx > 0.6 (-2.02477) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.505487055]: got vx > 0.6 (-1.94057) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.526554793]: got vx > 0.6 (-1.86246) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.548643654]: got vx > 0.6 (-1.78403) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.568936972]: got vx > 0.6 (-1.71778) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.589823657]: got vx > 0.6 (-1.65893) - dropping measurement
+mowgli-openmower | [WARN] [1726489446.600973]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489446.607990]: Expected Checksum: 0x0
+mowgli-openmower | [ WARN] [1726489446.611093227]: got vx > 0.6 (-1.59867) - dropping measurement
+mowgli-openmower | [WARN] [1726489446.615439]: Actual Checksum:   0x777030
+mowgli-openmower | [ WARN] [1726489446.631845598]: got vx > 0.6 (-1.54244) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.652358748]: got vx > 0.6 (-1.48986) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.673842742]: got vx > 0.6 (-1.44307) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.696378415]: got vx > 0.6 (-1.39268) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.718072445]: got vx > 0.6 (-1.34975) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.737102513]: got vx > 0.6 (-1.31427) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.757791940]: got vx > 0.6 (-1.2776) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.780208632]: got vx > 0.6 (-1.23972) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.801133649]: got vx > 0.6 (-1.20704) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.823010715]: got vx > 0.6 (-1.17401) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.844541803]: got vx > 0.6 (-1.14325) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.864035534]: got vx > 0.6 (-1.11471) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.884771478]: got vx > 0.6 (-1.08748) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.906489046]: got vx > 0.6 (-1.06094) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.926948826]: got vx > 0.6 (-1.03973) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.946873073]: got vx > 0.6 (-1.01588) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.967614147]: got vx > 0.6 (-0.99372) - dropping measurement
+mowgli-openmower | [ WARN] [1726489446.987415598]: got vx > 0.6 (-0.973496) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.010208047]: got vx > 0.6 (-0.951233) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.031047305]: got vx > 0.6 (-0.931776) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.053897087]: got vx > 0.6 (-0.909773) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.074491273]: got vx > 0.6 (-0.894321) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.095066812]: got vx > 0.6 (-0.877102) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.116975859]: got vx > 0.6 (-0.860534) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.138122412]: got vx > 0.6 (-0.843835) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.158459341]: got vx > 0.6 (-0.829207) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.179141619]: got vx > 0.6 (-0.812965) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.201664292]: got vx > 0.6 (-0.799412) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.224421963]: got vx > 0.6 (-0.782971) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.244061397]: got vx > 0.6 (-0.771684) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.264276494]: got vx > 0.6 (-0.758109) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.287051998]: got vx > 0.6 (-0.744516) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.308226810]: got vx > 0.6 (-0.733802) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.328246870]: got vx > 0.6 (-0.721456) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.349551959]: got vx > 0.6 (-0.710189) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.368823729]: got vx > 0.6 (-0.700294) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.389809191]: got vx > 0.6 (-0.689674) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.411725627]: got vx > 0.6 (-0.678888) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.431952538]: got vx > 0.6 (-0.668902) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.452433374]: got vx > 0.6 (-0.659661) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.473071337]: got vx > 0.6 (-0.650229) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.495352049]: got vx > 0.6 (-0.641751) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.516033549]: got vx > 0.6 (-0.632836) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.536495589]: got vx > 0.6 (-0.624573) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.558982447]: got vx > 0.6 (-0.615333) - dropping measurement
+mowgli-openmower | [ WARN] [1726489447.579271487]: got vx > 0.6 (-0.607518) - dropping measurement
+mowgli-openmower | [WARN] [1726489447.601434]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489447.607851]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489447.614194]: Actual Checksum:   0x581FEB
+mowgli-openmower | [WARN] [1726489447.622427]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489447.632170]: Expected Checksum: 0x33F4C
+mowgli-openmower | [WARN] [1726489447.643554]: Actual Checksum:   0x15F59B
+mowgli-openmower | [ INFO] [1726489447.974801999]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower | [ INFO] [1726489447.974920294]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ INFO] [1726489448.024576737]: Action "move_base" succeeded!
+mowgli-openmower | [ INFO] [1726489448.058243922]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+mowgli-openmower | [ INFO] [1726489448.061646991]: Clearing Nav Point
+mowgli-openmower | [ INFO] [1726489448.062410652]: MowingBehavior: (MOW) First point reached - Executing mow path with 636 poses, from index 278
+mowgli-openmower | [ INFO] [1726489448.077151676]: FTCLocalPlannerROS: Got new global plan with 358 points.
+mowgli-openmower | [ INFO] [1726489448.078469963]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489448.079023570]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [ WARN] [1726489448.257625389]: #### om_mower_logic: setMowerEnabled(1, 0) call
+mowgli-openmower | [ INFO] [1726489448.269444971]: successfully set mower enabled to 1 (direction 0)
+mowgli-openmower | [ WARN] [1726489448.269566174]: #### om_mower_logic: setMowerEnabled(1, 0) call completed within 0.0119837s
+mowgli-openmower | [WARN] [1726489448.800226]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489448.804052]: Expected Checksum: 0xEE03A
+mowgli-openmower | [WARN] [1726489448.807736]: Actual Checksum:   0xE31718
+mowgli-openmower | [ INFO] [1726489449.067078392]: MowingBehavior: (MOW) Progress: 278/636
+mowgli-openmower | [WARN] [1726489450.300494]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489450.304167]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489450.308714]: Actual Checksum:   0x61D456
+mowgli-openmower | [ WARN] [1726489451.510168168]: got vx > 0.6 (1.59091) - dropping measurement
+mowgli-openmower | [ WARN] [1726489451.528677999]: got vx > 0.6 (1.62602) - dropping measurement
+mowgli-openmower | [ WARN] [1726489451.549971903]: got vx > 0.6 (1.20968) - dropping measurement
+mowgli-openmower | [ WARN] [1726489451.570638607]: got vx > 0.6 (0.963855) - dropping measurement
+mowgli-openmower | [ WARN] [1726489451.633751324]: got vx > 0.6 (0.634921) - dropping measurement
+mowgli-openmower | [WARN] [1726489451.700505]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489451.704254]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489451.707842]: Actual Checksum:   0x4406CA
+mowgli-openmower | [WARN] [1726489452.701704]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489452.710127]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489452.717261]: Actual Checksum:   0xAE161
+mowgli-openmower | [ INFO] [1726489452.757748158]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489454.068659028]: MowingBehavior: (MOW) Progress: 284/636
+mowgli-openmower | [ INFO] [1726489459.166536533]: MowingBehavior: (MOW) Progress: 299/636
+mowgli-openmower | [WARN] [1726489460.600269]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489460.603876]: Expected Checksum: 0xDAE057
+mowgli-openmower | [WARN] [1726489460.608008]: Actual Checksum:   0x9FF106
+mowgli-openmower | [WARN] [1726489462.200876]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489462.206522]: Expected Checksum: 0x98FF78
+mowgli-openmower | [WARN] [1726489462.212333]: Actual Checksum:   0x1AAB14
+mowgli-openmower | [ INFO] [1726489463.257721960]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489464.168082077]: MowingBehavior: (MOW) Progress: 312/636
+mowgli-openmower | [WARN] [1726489466.601195]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489466.607662]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489466.614632]: Actual Checksum:   0x42FAB1
+mowgli-openmower | [ INFO] [1726489469.168587628]: MowingBehavior: (MOW) Progress: 318/636
+mowgli-openmower | [WARN] [1726489469.601172]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489469.607361]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489469.613917]: Actual Checksum:   0x134F0A
+mowgli-openmower | [WARN] [1726489470.402266]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489470.407874]: Expected Checksum: 0xA10CC9
+mowgli-openmower | [WARN] [1726489470.414108]: Actual Checksum:   0xD6D1A2
+mowgli-openmower | [ INFO] [1726489473.757715133]: GPS quality: 0.93
+mowgli-openmower | [ WARN] [1726489474.244304644]: got vx > 0.6 (0.606061) - dropping measurement
+mowgli-openmower | [ INFO] [1726489474.269154003]: MowingBehavior: (MOW) Progress: 333/636
+mowgli-openmower | [ INFO] [1726489479.270444216]: MowingBehavior: (MOW) Progress: 346/636
+mowgli-openmower | [WARN] [1726489480.700939]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489480.707626]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489480.714416]: Actual Checksum:   0xD77341
+mowgli-openmower | [WARN] [1726489482.301060]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489482.308443]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489482.315436]: Actual Checksum:   0xF835E4
+mowgli-openmower | [ INFO] [1726489484.257697307]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489484.368747922]: MowingBehavior: (MOW) Progress: 352/636
+mowgli-openmower | [WARN] [1726489484.700593]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489484.707900]: Expected Checksum: 0xC91F8E
+mowgli-openmower | [WARN] [1726489484.714411]: Actual Checksum:   0x7B54BF
+mowgli-openmower | [WARN] [1726489484.720917]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489484.728674]: Expected Checksum: 0xBE7FCA
+mowgli-openmower | [WARN] [1726489484.736306]: Actual Checksum:   0xC035C8
+mowgli-openmower | [WARN] [1726489484.900497]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489484.906592]: Expected Checksum: 0xC91F8E
+mowgli-openmower | [WARN] [1726489484.912940]: Actual Checksum:   0x7B54BF
+mowgli-openmower | [WARN] [1726489484.920579]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489484.926950]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489484.935449]: Actual Checksum:   0x135633
+mowgli-openmower | [WARN] [1726489485.401083]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489485.407241]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489485.413177]: Actual Checksum:   0x82EC3B
+mowgli-openmower | [WARN] [1726489485.421424]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489485.428450]: Expected Checksum: 0x38AE1
+mowgli-openmower | [WARN] [1726489485.434459]: Actual Checksum:   0xBBE9F6
+mowgli-openmower | [ WARN] [1726489486.429123058]: got vx > 0.6 (0.606061) - dropping measurement
+mowgli-openmower | [ WARN] [1726489489.288186256]: got vx > 0.6 (0.652174) - dropping measurement
+mowgli-openmower | [ WARN] [1726489489.351104955]: got vx > 0.6 (0.652174) - dropping measurement
+mowgli-openmower | [ INFO] [1726489489.369740267]: MowingBehavior: (MOW) Progress: 367/636
+mowgli-openmower | [WARN] [1726489489.600963]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489489.607529]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489489.613519]: Actual Checksum:   0xCA6033
+mowgli-openmower | [WARN] [1726489493.600391]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489493.604351]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489493.608109]: Actual Checksum:   0x7C814C
+mowgli-openmower | [WARN] [1726489493.700466]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489493.704293]: Expected Checksum: 0x55321C
+mowgli-openmower | [WARN] [1726489493.707942]: Actual Checksum:   0x42E770
+mowgli-openmower | [WARN] [1726489493.711677]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489493.715674]: Expected Checksum: 0x92278C
+mowgli-openmower | [WARN] [1726489493.719495]: Actual Checksum:   0xFC3BE5
+mowgli-openmower | [ INFO] [1726489494.469120909]: MowingBehavior: (MOW) Progress: 381/636
+mowgli-openmower | [ INFO] [1726489494.757645962]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489494.800438]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489494.804227]: Expected Checksum: 0x4CA565
+mowgli-openmower | [WARN] [1726489494.808553]: Actual Checksum:   0x491251
+mowgli-openmower | [ WARN] [1726489494.813276103]: got vx > 0.6 (-68.0833) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.832719723]: got vx > 0.6 (-69.8291) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.854660844]: got vx > 0.6 (-44.6448) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.876164228]: got vx > 0.6 (-32.7711) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.896030086]: got vx > 0.6 (26.8791) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.916670347]: got vx > 0.6 (22.3306) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.938346747]: got vx > 0.6 (-18.8773) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.959014674]: got vx > 0.6 (-16.3755) - dropping measurement
+mowgli-openmower | [ WARN] [1726489494.979654897]: got vx > 0.6 (14.8656) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.000849505]: got vx > 0.6 (13.3093) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.021675486]: got vx > 0.6 (-11.9591) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.043457701]: got vx > 0.6 (-10.9067) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.064117128]: got vx > 0.6 (-10.0554) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.085258755]: got vx > 0.6 (9.54909) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.106093218]: got vx > 0.6 (8.91906) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.126941810]: got vx > 0.6 (8.36327) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.148404990]: got vx > 0.6 (-7.66197) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.169249452]: got vx > 0.6 (-7.22961) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.190001415]: got vx > 0.6 (-6.84719) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.210931359]: got vx > 0.6 (-6.49522) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.231962468]: got vx > 0.6 (-6.18451) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.252919318]: got vx > 0.6 (-5.89855) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.274883199]: got vx > 0.6 (-5.63624) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.296468711]: got vx > 0.6 (-5.39761) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.317031954]: got vx > 0.6 (-5.17812) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.337788417]: got vx > 0.6 (5.20527) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.357997272]: got vx > 0.6 (5.0177) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.379398657]: got vx > 0.6 (-4.62173) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.399919918]: got vx > 0.6 (-4.45909) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.421967742]: got vx > 0.6 (-4.30048) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.442855130]: got vx > 0.6 (-4.15641) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.465033324]: got vx > 0.6 (-4.02385) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.484997441]: got vx > 0.6 (-3.89933) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.506039976]: got vx > 0.6 (-3.7798) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.528001282]: got vx > 0.6 (-3.66213) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.549424388]: got vx > 0.6 (-3.5582) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.570012149]: got vx > 0.6 (-3.45774) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.589869618]: got vx > 0.6 (3.59473) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.611100985]: got vx > 0.6 (3.50652) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.633525696]: got vx > 0.6 (3.41865) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.654544287]: got vx > 0.6 (3.33914) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.674821290]: got vx > 0.6 (-3.03477) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.696519561]: got vx > 0.6 (-2.9605) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.717185562]: got vx > 0.6 (3.12049) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.737873915]: got vx > 0.6 (3.05968) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.758006363]: got vx > 0.6 (2.99655) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.778955936]: got vx > 0.6 (2.93442) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.799896324]: got vx > 0.6 (-2.65144) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.822051758]: got vx > 0.6 (-2.59637) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.842982980]: got vx > 0.6 (2.77302) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.863791035]: got vx > 0.6 (2.72176) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.884025409]: got vx > 0.6 (-2.44424) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.907033874]: got vx > 0.6 (-2.38929) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.927271860]: got vx > 0.6 (-2.34568) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.949289147]: got vx > 0.6 (-2.29815) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.969765964]: got vx > 0.6 (-2.25765) - dropping measurement
+mowgli-openmower | [ WARN] [1726489495.991133367]: got vx > 0.6 (-2.21526) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.011898608]: got vx > 0.6 (-2.17433) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.031894632]: got vx > 0.6 (2.37211) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.054013826]: got vx > 0.6 (2.33333) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.075269030]: got vx > 0.6 (-2.06448) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.095938082]: got vx > 0.6 (-2.03149) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.116978317]: got vx > 0.6 (-1.99924) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.137911922]: got vx > 0.6 (-1.96677) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.158946767]: got vx > 0.6 (-1.93529) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.179850539]: got vx > 0.6 (-1.90476) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.201378918]: got vx > 0.6 (-1.87263) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.223874566]: got vx > 0.6 (-1.84732) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.245084057]: got vx > 0.6 (-1.82058) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.266529010]: got vx > 0.6 (-1.79113) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.286815954]: got vx > 0.6 (-1.7649) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.306903067]: got vx > 0.6 (-1.74047) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.328706276]: got vx > 0.6 (-1.71336) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.349714936]: got vx > 0.6 (-1.68916) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.370596412]: got vx > 0.6 (-1.66455) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.392869210]: got vx > 0.6 (-1.63852) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.413837519]: got vx > 0.6 (-1.61523) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.434698088]: got vx > 0.6 (-1.59252) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.454758960]: got vx > 0.6 (-1.57235) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.475589418]: got vx > 0.6 (-1.54974) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.496706596]: got vx > 0.6 (-1.52867) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.515886901]: got vx > 0.6 (1.75958) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.537089911]: got vx > 0.6 (1.74029) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.558747825]: got vx > 0.6 (-1.47214) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.579193546]: got vx > 0.6 (-1.45304) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.600304187]: got vx > 0.6 (-1.43338) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.621198681]: got vx > 0.6 (-1.41601) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.642159990]: got vx > 0.6 (-1.39722) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.663299353]: got vx > 0.6 (-1.38064) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.684307384]: got vx > 0.6 (-1.36354) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.707429619]: got vx > 0.6 (-1.34454) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.728672555]: got vx > 0.6 (-1.3265) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.749806159]: got vx > 0.6 (-1.31056) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.770515859]: got vx > 0.6 (-1.29495) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.791711073]: got vx > 0.6 (-1.27967) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.811975073]: got vx > 0.6 (-1.26388) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.831287247]: got vx > 0.6 (1.5228) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.852175204]: got vx > 0.6 (1.5097) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.873118847]: got vx > 0.6 (-1.22521) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.894164118]: got vx > 0.6 (-1.21217) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.915189130]: got vx > 0.6 (-1.1986) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.936994469]: got vx > 0.6 (1.46607) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.957430208]: got vx > 0.6 (1.45416) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.978035019]: got vx > 0.6 (1.44171) - dropping measurement
+mowgli-openmower | [ WARN] [1726489496.999061865]: got vx > 0.6 (-1.15447) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.021899311]: got vx > 0.6 (-1.14555) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.042149669]: got vx > 0.6 (-1.13462) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.063306364]: got vx > 0.6 (-1.12266) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.084934087]: got vx > 0.6 (-1.11091) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.104945171]: got vx > 0.6 (-1.09866) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.126497766]: got vx > 0.6 (-1.08662) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.148025769]: got vx > 0.6 (-1.07506) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.168631973]: got vx > 0.6 (-1.0646) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.189960479]: got vx > 0.6 (-1.05344) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.210860770]: got vx > 0.6 (-1.04334) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.230135978]: got vx > 0.6 (1.32203) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.251133564]: got vx > 0.6 (1.31277) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.272181741]: got vx > 0.6 (1.30299) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.293135161]: got vx > 0.6 (-1.0067) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.314008175]: got vx > 0.6 (-0.996994) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.335345626]: got vx > 0.6 (1.28053) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.356105716]: got vx > 0.6 (1.27134) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.377040655]: got vx > 0.6 (1.26294) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.398375587]: got vx > 0.6 (-0.965484) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.420816981]: got vx > 0.6 (-0.958302) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.441240003]: got vx > 0.6 (1.24359) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.460908945]: got vx > 0.6 (1.23567) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.482372578]: got vx > 0.6 (-0.934083) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.503291036]: got vx > 0.6 (-0.926229) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.524235956]: got vx > 0.6 (-0.917886) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.545096970]: got vx > 0.6 (1.20886) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.566585270]: got vx > 0.6 (1.2009) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.587167233]: got vx > 0.6 (-0.900171) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.608083284]: got vx > 0.6 (-0.892864) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.631204944]: got vx > 0.6 (1.18103) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.650679353]: got vx > 0.6 (1.17493) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.671518163]: got vx > 0.6 (1.16751) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.691901593]: got vx > 0.6 (-0.863542) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.712973474]: got vx > 0.6 (-0.856761) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.734467533]: got vx > 0.6 (1.1493) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.754953553]: got vx > 0.6 (1.14284) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.775825049]: got vx > 0.6 (-0.840342) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.797047187]: got vx > 0.6 (-0.833913) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.820663987]: got vx > 0.6 (-0.828677) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.842103991]: got vx > 0.6 (-0.822144) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.861753415]: got vx > 0.6 (-0.814886) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.882653466]: got vx > 0.6 (-0.808267) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.903614737]: got vx > 0.6 (-0.801202) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.924869004]: got vx > 0.6 (-0.794763) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.944006159]: got vx > 0.6 (1.09281) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.965192686]: got vx > 0.6 (1.08715) - dropping measurement
+mowgli-openmower | [ WARN] [1726489497.986180698]: got vx > 0.6 (-0.777242) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.007016305]: got vx > 0.6 (-0.770608) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.028263332]: got vx > 0.6 (1.07267) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.048960424]: got vx > 0.6 (1.06729) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.070034120]: got vx > 0.6 (1.06198) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.091298924]: got vx > 0.6 (-0.749969) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.112111792]: got vx > 0.6 (-0.74422) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.133070416]: got vx > 0.6 (1.04843) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.153975042]: got vx > 0.6 (1.04287) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.176003629]: got vx > 0.6 (-0.728169) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.196169748]: got vx > 0.6 (-0.7234) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.216955542]: got vx > 0.6 (-0.717503) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.238083423]: got vx > 0.6 (1.02567) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.259432467]: got vx > 0.6 (1.01993) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.280175595]: got vx > 0.6 (1.01522) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.301333586]: got vx > 0.6 (1.01057) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.325112255]: got vx > 0.6 (1.00512) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.346011695]: got vx > 0.6 (1.00059) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.364825689]: got vx > 0.6 (-0.685166) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.385484559]: got vx > 0.6 (-0.679768) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.405912859]: got vx > 0.6 (-0.674894) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.427121424]: got vx > 0.6 (0.983788) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.447830071]: got vx > 0.6 (0.979048) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.469237891]: got vx > 0.6 (0.974361) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.489923076]: got vx > 0.6 (-0.659109) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.511247805]: got vx > 0.6 (-0.655386) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.532357853]: got vx > 0.6 (-0.650813) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.554938727]: got vx > 0.6 (0.957403) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.575215400]: got vx > 0.6 (0.953662) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.595031766]: got vx > 0.6 (-0.638714) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.616115870]: got vx > 0.6 (-0.634769) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.637298176]: got vx > 0.6 (0.941749) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.658019878]: got vx > 0.6 (0.937926) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.678864449]: got vx > 0.6 (-0.624907) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.700474303]: got vx > 0.6 (-0.620695) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.720989583]: got vx > 0.6 (-0.616952) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.742147630]: got vx > 0.6 (0.925149) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.762902961]: got vx > 0.6 (0.921515) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.784038916]: got vx > 0.6 (-0.608048) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.804910227]: got vx > 0.6 (-0.603619) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.826157068]: got vx > 0.6 (-0.600063) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.846933140]: got vx > 0.6 (0.908176) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.868312832]: got vx > 0.6 (0.905132) - dropping measurement
+mowgli-openmower | [ WARN] [1726489498.930857506]: got vx > 0.6 (0.714286) - dropping measurement
+mowgli-openmower | [ WARN] [1726489499.329867848]: got vx > 0.6 (0.714286) - dropping measurement
+mowgli-openmower | [ WARN] [1726489499.541866779]: got vx > 0.6 (0.793651) - dropping measurement
+mowgli-openmower | [ WARN] [1726489499.563324581]: got vx > 0.6 (0.719697) - dropping measurement
+mowgli-openmower | [ INFO] [1726489499.568597066]: MowingBehavior: (MOW) Progress: 386/636
+mowgli-openmower | [ERROR] [1726489501.425561159]: FTCLocalPlannerROS: Robot is far away from global plan. distance (0.803187) > config.max_follow_distance (0.8) It probably has crashed.
+mowgli-openmower | [ INFO] [1726489501.425784915]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ WARN] [1726489501.426615771]: No velocity command received from controller!
+mowgli-openmower | [ WARN] [1726489504.472557532]: No velocity command received from controller!
+mowgli-openmower | [ INFO] [1726489504.668255793]: MowingBehavior: (MOW) Progress: 391/636
+mowgli-openmower | [ INFO] [1726489504.757713120]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489505.700753]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489505.706779]: Expected Checksum: 0xE0BDA1
+mowgli-openmower | [WARN] [1726489505.712782]: Actual Checksum:   0x5181C4
+mowgli-openmower | [ WARN] [1726489506.422710834]: The controller has been aborted after it exceeded the patience time
+mowgli-openmower | [ INFO] [1726489506.463823570]: MowingBehavior: (MOW)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+mowgli-openmower | [ INFO] [1726489506.464489355]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 391 of 636
+mowgli-openmower | [ INFO] [1726489506.464799091]: >>> State: Aborted <<<
+mowgli-openmower | [ INFO] [1726489506.465325990]: MowingBehavior: (MOW) PAUSED due to MBF Error at 391
+mowgli-openmower | [ INFO] [1726489506.471418017]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489506.474728350]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489506.475024494]: MowingBehavior: CONTINUING
+mowgli-openmower | [ INFO] [1726489506.481052948]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489506.485106676]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489506.485304988]: MowingBehavior: Path segment length: 636 poses.
+mowgli-openmower | [ INFO] [1726489506.485405986]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+mowgli-openmower | [ INFO] [1726489506.517123565]: FTCLocalPlannerROS: Got new global plan with 30 points.
+mowgli-openmower | [ INFO] [1726489507.559210979]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489507.559497752]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [WARN] [1726489507.600982]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489507.609956]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489507.616473]: Actual Checksum:   0xCA41AD
+mowgli-openmower | [WARN] [1726489509.801328]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489509.808415]: Expected Checksum: 0xF3FEED
+mowgli-openmower | [WARN] [1726489509.817891]: Actual Checksum:   0x33799C
+mowgli-openmower | [ INFO] [1726489510.809961568]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower | [ INFO] [1726489510.810228786]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower | [ WARN] [1726489510.847766606]: got vx > 0.6 (-15) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.867379483]: got vx > 0.6 (-14.9167) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.887981548]: got vx > 0.6 (-9.7541) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.910460655]: got vx > 0.6 (-7.21545) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.930978647]: got vx > 0.6 (-5.72816) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.951670192]: got vx > 0.6 (-4.73118) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.972990874]: got vx > 0.6 (-4.00685) - dropping measurement
+mowgli-openmower | [ WARN] [1726489510.993955970]: got vx > 0.6 (-3.48303) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.014927325]: got vx > 0.6 (-3.11052) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.034460723]: got vx > 0.6 (3.01932) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.055433208]: got vx > 0.6 (2.74123) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.076473970]: got vx > 0.6 (2.51004) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.099378090]: got vx > 0.6 (2.13848) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.120351241]: got vx > 0.6 (1.98521) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.141010676]: got vx > 0.6 (1.85836) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.161394227]: got vx > 0.6 (1.88689) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.181712019]: got vx > 0.6 (1.77495) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.202566062]: got vx > 0.6 (1.67556) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.223576435]: got vx > 0.6 (1.5867) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.244457181]: got vx > 0.6 (1.50679) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.265320686]: got vx > 0.6 (1.43455) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.286456983]: got vx > 0.6 (1.36892) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.307354562]: got vx > 0.6 (1.30903) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.328323288]: got vx > 0.6 (1.25416) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.349427790]: got vx > 0.6 (1.2037) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.370308110]: got vx > 0.6 (1.15715) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.391303206]: got vx > 0.6 (1.11407) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.412878199]: got vx > 0.6 (1.07407) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.433415914]: got vx > 0.6 (1.03685) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.454571896]: got vx > 0.6 (1.00213) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.476609493]: got vx > 0.6 (-0.896251) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.497781789]: got vx > 0.6 (-0.870647) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.519006178]: got vx > 0.6 (-0.844187) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.541471138]: got vx > 0.6 (-0.819288) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.560971333]: got vx > 0.6 (-0.795816) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.582152037]: got vx > 0.6 (-0.773652) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.602101354]: got vx > 0.6 (0.817204) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.622358091]: got vx > 0.6 (0.796834) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.643481222]: got vx > 0.6 (0.776322) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.664724054]: got vx > 0.6 (0.75684) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.685507432]: got vx > 0.6 (0.738312) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.706554971]: got vx > 0.6 (0.72067) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.727486735]: got vx > 0.6 (0.70385) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.748428813]: got vx > 0.6 (0.687798) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.771264545]: got vx > 0.6 (-0.618061) - dropping measurement
+mowgli-openmower | [ WARN] [1726489511.791759908]: got vx > 0.6 (-0.606965) - dropping measurement
+mowgli-openmower | [ INFO] [1726489514.757736240]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489515.601033]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489515.606963]: Expected Checksum: 0xB74FDC
+mowgli-openmower | [WARN] [1726489515.614489]: Actual Checksum:   0x3A0FDE
+mowgli-openmower | [WARN] [1726489516.701029]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489516.709849]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489516.717101]: Actual Checksum:   0xE814F1
+mowgli-openmower | [WARN] [1726489516.800682]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489516.806518]: Expected Checksum: 0x9E7F94
+mowgli-openmower | [WARN] [1726489516.813920]: Actual Checksum:   0x27314A
+mowgli-openmower | [WARN] [1726489519.701158]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489519.708076]: Expected Checksum: 0x6ECFE4
+mowgli-openmower | [WARN] [1726489519.716582]: Actual Checksum:   0xD66F8E
+mowgli-openmower | [WARN] [1726489519.800814]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489519.806625]: Expected Checksum: 0x3E105E
+mowgli-openmower | [WARN] [1726489519.812755]: Actual Checksum:   0xC93E25
+mowgli-openmower | [WARN] [1726489520.801396]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489520.810952]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489520.817447]: Actual Checksum:   0x499C59
+mowgli-openmower | [ INFO] [1726489525.257643527]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489530.401089]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489530.407011]: Expected Checksum: 0x14FED
+mowgli-openmower | [WARN] [1726489530.413764]: Actual Checksum:   0xDE9D17
+mowgli-openmower | [WARN] [1726489530.420683]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489530.427964]: Expected Checksum: 0xF1D7BB
+mowgli-openmower | [WARN] [1726489530.433756]: Actual Checksum:   0xC935FD
+mowgli-openmower | [ WARN] [1726489530.859246233]: FTCLocalPlannerROS: Could not reach goal position. config.goal_timeout (20) reached - Attempting final rotation anyways.
+mowgli-openmower | [ INFO] [1726489530.859432341]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower | [ INFO] [1726489532.109167636]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower | [ INFO] [1726489532.109444280]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ INFO] [1726489532.158957416]: Action "move_base" succeeded!
+mowgli-openmower | [ INFO] [1726489532.185980522]: MowingBehavior: (FIRST POINT)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+mowgli-openmower | [ INFO] [1726489532.192310533]: Clearing Nav Point
+mowgli-openmower | [ INFO] [1726489532.193095168]: MowingBehavior: (MOW) First point reached - Executing mow path with 636 poses, from index 391
+mowgli-openmower | [ INFO] [1726489532.219940462]: FTCLocalPlannerROS: Got new global plan with 245 points.
+mowgli-openmower | [ INFO] [1726489532.221479031]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489532.221983226]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [ INFO] [1726489533.199216225]: MowingBehavior: (MOW) Progress: 392/636
+mowgli-openmower | [ INFO] [1726489535.257710678]: GPS quality: 0.93
+mowgli-openmower | [ WARN] [1726489535.974432704]: got vx > 0.6 (0.634921) - dropping measurement
+mowgli-openmower | [WARN] [1726489537.501097]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489537.509370]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489537.516780]: Actual Checksum:   0x886926
+mowgli-openmower | [WARN] [1726489537.600604]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489537.606762]: Expected Checksum: 0x1E6FD2
+mowgli-openmower | [WARN] [1726489537.612899]: Actual Checksum:   0xE6231C
+mowgli-openmower | [WARN] [1726489537.700613]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489537.706568]: Expected Checksum: 0x1E6FD2
+mowgli-openmower | [WARN] [1726489537.711976]: Actual Checksum:   0xE6231C
+mowgli-openmower | [ INFO] [1726489538.199274686]: MowingBehavior: (MOW) Progress: 407/636
+mowgli-openmower | [WARN] [1726489541.700997]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489541.706950]: Expected Checksum: 0x5FFA8A
+mowgli-openmower | [WARN] [1726489541.714968]: Actual Checksum:   0x4D087F
+mowgli-openmower | [WARN] [1726489542.701177]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489542.707195]: Expected Checksum: 0x449000
+mowgli-openmower | [WARN] [1726489542.713669]: Actual Checksum:   0x7CCC58
+mowgli-openmower | [ INFO] [1726489543.199770545]: MowingBehavior: (MOW) Progress: 417/636
+mowgli-openmower | [ INFO] [1726489543.757756126]: Docking: Battery voltage min critical: 22.8712
+mowgli-openmower | [ INFO] [1726489543.757905734]: - Behaviour.h: abort() called
+mowgli-openmower | [ INFO] [1726489543.794513663]: MowingBehavior: (MOW) ABORT was requested - stopping path execution.
+mowgli-openmower | [ INFO] [1726489543.794749085]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 417 of 636
+mowgli-openmower | [ INFO] [1726489543.794832898]: >>> State: Active <<<
+mowgli-openmower | [ INFO] [1726489543.794910360]: MowingBehavior: (MOW) PAUSED due to MBF Error at 417
+mowgli-openmower | [ INFO] [1726489543.795627182]: Cancel action "exe_path"
+mowgli-openmower | [ WARN] [1726489543.795865567]: FTCLocalPlannerROS: FTC planner was cancelled.
+mowgli-openmower | [ INFO] [1726489543.796013491]: Controller will take care of stopping
+mowgli-openmower | [ INFO] [1726489543.800508365]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [WARN] [1726489543.802372]: Found packet, but checksums didn't match
+mowgli-openmower | [ INFO] [1726489543.805364252]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [WARN] [1726489543.813874]: Expected Checksum: 0x7D5F1D
+mowgli-openmower | [ INFO] [1726489543.817177198]: new actions registered: mower_logic:mowing registered 5 actions.
+mowgli-openmower | [ INFO] [1726489543.820581589]: successfully registered actions for mower_logic:mowing
+mowgli-openmower | [ INFO] [1726489543.821858087]:
+mowgli-openmower | [ INFO] [1726489543.822390283]:
+mowgli-openmower | [ INFO] [1726489543.822956144]: --------------------------------------
+mowgli-openmower | [ INFO] [1726489543.824211532]: - Entered state: DOCKING
+mowgli-openmower | [ INFO] [1726489543.824477713]: --------------------------------------
+mowgli-openmower | [WARN] [1726489543.826733]: Actual Checksum:   0x93CD1E
+mowgli-openmower | [ INFO] [1726489543.832361849]: Getting Docking Point
+mowgli-openmower | [ WARN] [1726489543.833802012]: Waiting for good GPS
+mowgli-openmower | [WARN] [1726489543.840690]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489543.848974]: Expected Checksum: 0x48BE9F
+mowgli-openmower | [WARN] [1726489543.857246]: Actual Checksum:   0xAFA120
+mowgli-openmower | [ WARN] [1726489544.257626307]: #### om_mower_logic: setMowerEnabled(0, 0) call
+mowgli-openmower | [ INFO] [1726489544.269951244]: successfully set mower enabled to 0 (direction 0)
+mowgli-openmower | [ WARN] [1726489544.270162185]: #### om_mower_logic: setMowerEnabled(0, 0) call completed within 0.0125522s
+mowgli-openmower | [WARN] [1726489544.300504]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489544.304352]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489544.308064]: Actual Checksum:   0x1E9FF8
+mowgli-openmower | [ INFO] [1726489544.834141522]: Calculating approach path
+mowgli-openmower | [ INFO] [1726489544.857710488]: FTCLocalPlannerROS: Got new global plan with 121 points.
+mowgli-openmower | [ INFO] [1726489545.757585906]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489547.653130808]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489547.653257732]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [WARN] [1726489554.600467]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489554.605160]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489554.610801]: Actual Checksum:   0xB51B02
+mowgli-openmower | [ INFO] [1726489555.757649997]: GPS quality: 0.93
+mowgli-openmower | [WARN] [1726489557.801454]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489557.810035]: Expected Checksum: 0xE9AA0A
+mowgli-openmower | [WARN] [1726489557.817114]: Actual Checksum:   0xDCF4FA
+mowgli-openmower | [ INFO] [1726489559.304102576]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower | [ INFO] [1726489559.304300925]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower | [ INFO] [1726489559.353658565]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower | [ INFO] [1726489559.353939987]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower | [ WARN] [1726489559.461536818]: got vx > 0.6 (0.666667) - dropping measurement
+mowgli-openmower | [ INFO] [1726489561.503577429]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower | [ INFO] [1726489561.503777000]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ INFO] [1726489561.553564451]: Action "move_base" succeeded!
+mowgli-openmower | [ INFO] [1726489561.555607494]: Executing Docking Approach
+mowgli-openmower | [ INFO] [1726489561.581727617]: FTCLocalPlannerROS: Got new global plan with 16 points.
+mowgli-openmower | [ INFO] [1726489561.584150877]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489561.584395188]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [ INFO] [1726489565.757709730]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489567.223244455]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower | [ INFO] [1726489567.223444823]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower | [WARN] [1726489569.100756]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489569.106982]: Expected Checksum: 0xA25FA0
+mowgli-openmower | [WARN] [1726489569.113219]: Actual Checksum:   0xF4D8DA
+mowgli-openmower | [WARN] [1726489569.120806]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489569.128601]: Expected Checksum: 0x20800
+mowgli-openmower | [WARN] [1726489569.135543]: Actual Checksum:   0x3D91A
+mowgli-openmower | [WARN] [1726489569.600597]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489569.608260]: Expected Checksum: 0xCF1FD4
+mowgli-openmower | [WARN] [1726489569.615238]: Actual Checksum:   0x13C559
+mowgli-openmower | [WARN] [1726489569.800630]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489569.805788]: Expected Checksum: 0x0
+mowgli-openmower | [WARN] [1726489569.811016]: Actual Checksum:   0xC89F75
+mowgli-openmower | [WARN] [1726489570.500738]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489570.506676]: Expected Checksum: 0x0
+mowgli-openmower | [WARN] [1726489570.513658]: Actual Checksum:   0x637A59
+mowgli-openmower | [ INFO] [1726489572.222729132]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower | [ INFO] [1726489572.222972925]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower | [ INFO] [1726489572.272696595]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower | [ INFO] [1726489572.272892777]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower | [ INFO] [1726489572.327121159]: successfully set GPS to 0
+mowgli-openmower | [ INFO] [1726489572.353515360]: FTCLocalPlannerROS: Got new global plan with 10 points.
+mowgli-openmower | [ INFO] [1726489572.354802952]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower | [ INFO] [1726489572.355025708]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower | [ INFO] [1726489572.380023596]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489573.476221670]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489574.477780802]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489575.228528492]: Got a voltage of 30.5383 V. Cancelling docking.
+mowgli-openmower | [ INFO] [1726489575.229086669]:
+mowgli-openmower | [ INFO] [1726489575.229703179]:
+mowgli-openmower | [ INFO] [1726489575.230015119]: --------------------------------------
+mowgli-openmower | [ INFO] [1726489575.230129135]: - Entered state: IDLE
+mowgli-openmower | [ INFO] [1726489575.230200949]: --------------------------------------
+mowgli-openmower | [ INFO] [1726489575.230836940]: Cancel action "exe_path"
+mowgli-openmower | [ WARN] [1726489575.232499637]: FTCLocalPlannerROS: FTC planner was cancelled.
+mowgli-openmower | [ INFO] [1726489575.232693449]: Controller will take care of stopping
+mowgli-openmower | [ INFO] [1726489575.238919617]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1726489575.243379644]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1726489575.248859007]: Got getMowingArea call with index: 0
+mowgli-openmower | [ INFO] [1726489575.254973713]: Getting Docking Point
+mowgli-openmower | [ INFO] [1726489575.262176089]: successfully set GPS to 0
+mowgli-openmower | [ INFO] [1726489575.479073426]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [WARN] [1726489575.602229]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489575.612881]: Expected Checksum: 0x0
+mowgli-openmower | [WARN] [1726489575.622288]: Actual Checksum:   0xD8650F
+mowgli-openmower | [ INFO] [1726489575.757828870]: GPS quality: 0.93
+mowgli-openmower | [ INFO] [1726489576.579769613]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489577.673668430]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [ INFO] [1726489578.676436225]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [WARN] [1726489579.600463]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489579.605119]: Expected Checksum: 0x0
+mowgli-openmower | [WARN] [1726489579.608726]: Actual Checksum:   0xC31069
+mowgli-openmower | [ INFO] [1726489579.769571166]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower | [WARN] [1726489580.700809]: Found packet, but checksums didn't match
+mowgli-openmower | [WARN] [1726489580.708458]: Expected Checksum: 0x0
+mowgli-openmower | [WARN] [1726489580.715839]: Actual Checksum:   0x23D46E

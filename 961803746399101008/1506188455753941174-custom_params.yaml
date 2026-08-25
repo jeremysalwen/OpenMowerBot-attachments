@@ -1,0 +1,61 @@
+ll:
+  bind_ip: 172.16.78.1
+  services:
+    sound:
+      language: en
+      volume: -1
+    gps:
+      baud_rate: 921600
+      protocol: UBX
+      datum_lat: zz
+      datum_long: zz
+    power:
+      battery_empty_voltage: 23.5
+      battery_critical_voltage: 21.5
+      battery_full_voltage: 28.5
+      battery_critical_high_voltage: 29.1
+      charge_critical_high_voltage: 30
+      charge_critical_high_current: 2.2
+    diff_drive:
+      wheel_distance_m: 0.355
+      ticks_per_m: 1830
+xbot_positioning:
+  antenna_offset_x: 0.21
+  antenna_offset_y: 0
+ntrip_client:
+  host: 192.168.1.101
+  port: 2101
+  username: zz
+  password: zz
+  mountpoint: zz
+mower_logic:
+  emergency_input_config: I, I, I, !S
+  tool_width: 0.29
+  automatic_mode: 1
+  docking_approach_distance: 1.5
+  docking_extra_time: 0
+  docking_retry_count: 3
+  docking_redock: false
+  outline_count: 2
+  outline_overlap_count: 0
+  mow_angle_offset: 0
+  mow_angle_offset_is_absolute: false
+  mow_angle_increment: 60
+  gps_wait_time: 5
+  gps_timeout: 5
+  rain_mode: 2
+  rain_delay_minutes: 30
+  rain_check_seconds: 20
+  undock_distance: 1
+  undock_angled_distance: 0
+  undock_angle: 0
+  undock_fixed_angle: true
+  undock_use_curve: false
+  enable_mower: true
+xbot_monitoring:
+  external_mqtt_enable: true
+  external_mqtt_hostname: 192.168.1.102
+  external_mqtt_port: 1883
+  external_mqtt_username: zz
+  external_mqtt_password: zz
+  external_mqtt_topic_prefix: openmower

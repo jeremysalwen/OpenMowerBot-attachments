@@ -1,0 +1,658 @@
+openmower@openmower:~ $ sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/24652daa-526e-11f0-b25a-d83adde38c38/roslaunch-openmower-91.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:38069/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/services/power/battery_critical_high_voltage: -1
+ * /ll/services/power/battery_critical_voltage: 25.0
+ * /ll/services/power/battery_empty_voltage: 25.0
+ * /ll/services/power/battery_full_voltage: 28.5
+ * /ll/services/power/charge_critical_high_current: -1
+ * /ll/services/power/charge_critical_high_voltage: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/background_sounds: False
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/has_motor_temp: False
+ * /mower_comms/left_xesc/motor_pole_pairs: 4
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/has_motor_temp: True
+ * /mower_comms/mower_xesc/max_motor_rpm: 3800
+ * /mower_comms/mower_xesc/min_motor_rpm: 2800
+ * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+ * /mower_comms/mower_xesc/motor_pole_pairs: 4
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/has_motor_temp: False
+ * /mower_comms/right_xesc/motor_pole_pairs: 4
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/cu_rain_threshold: -1
+ * /mower_logic/docking_approach_distance: 1.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/docking_waiting_time: 0.0
+ * /mower_logic/emergency_input_config: I, I, I, I, I, I,...
+ * /mower_logic/emergency_lift_period: -1
+ * /mower_logic/emergency_tilt_period: -1
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/ignore_charging_current: False
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 0.0
+ * /mower_logic/undock_distance: 2.0
+ * /mower_logic/undock_fixed_angle: True
+ * /mower_logic/undock_use_curve: True
+ * /mower_logic/undocking_waiting_time: 0.0
+ * /ntrip_client/authenticate: True
+ * /ntrip_client/ca_cert:
+ * /ntrip_client/cert:
+ * /ntrip_client/host: tapas-rtk.space.d...
+ * /ntrip_client/key:
+ * /ntrip_client/mountpoint: VRS1
+ * /ntrip_client/nmea_max_length: 82
+ * /ntrip_client/nmea_min_length: 3
+ * /ntrip_client/ntrip_version:
+ * /ntrip_client/password: ghj5fds
+ * /ntrip_client/port: 2101
+ * /ntrip_client/reconnect_attempt_max: 99999
+ * /ntrip_client/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/rtcm_frame_id: odom
+ * /ntrip_client/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/rtcm_timeout_seconds: 30
+ * /ntrip_client/ssl: False
+ * /ntrip_client/username: g4m1
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sensor_ids:
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 56.198163
+ * /xbot_driver_gps/datum_long: 10.259108
+ * /xbot_driver_gps/device_type: serial
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_monitoring/software_version: 0f92243
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/debug: False
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms_v1/mower_comms_v1)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ntrip_client/ntrip_ros.py)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+process[master]: started with pid [101]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 24652daa-526e-11f0-b25a-d83adde38c38
+process[rosout-1]: started with pid [111]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [119]
+process[xbot_driver_gps-3]: started with pid [120]
+process[ntrip_client-4]: started with pid [126]
+process[move_base_flex-5]: started with pid [131]
+[INFO] [1750929349.193929705]: Using UBX mode for GPS
+process[move_base_legacy_relay-6]: started with pid [133]
+[INFO] [1750929349.236532518]: Using absolute mode for GPS
+process[xbot_positioning-7]: started with pid [134]
+process[joy-8]: started with pid [135]
+[INFO] [1750929349.377522730]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+[INFO] [1750929349.399465998]: Wheel ticks [1/m]: 1600
+[INFO] [1750929349.405571437]: Wheel distance [m]: 0.325
+process[joy_teleop-9]: started with pid [143]
+[INFO] [1750929349.441183712]: Antenna offset: 0.3, 0
+process[map_service-10]: started with pid [145]
+[INFO] [1750929349.493732765]: Starting xesc driver
+[INFO] [1750929349.524190552]: Starting xesc driver
+process[mower_logic-11]: started with pid [155]
+[INFO] [1750929349.568337086]: Starting xesc driver
+process[slic3r_coverage_planner-12]: started with pid [164]
+[ERROR] [1750929349.703413578]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[twist_mux-13]: started with pid [170]
+[INFO] [1750929349.766328978]: Teleop enable button 0.
+[INFO] [1750929349.774141635]: Turbo on button 4.
+[INFO] [1750929349.774574870]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1750929349.774912625]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1750929349.775265194]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1750929349.775602320]: Turbo for angular axis yaw is scale 3.000000.
+process[xbot_monitoring-14]: started with pid [176]
+[INFO] [1750929349.884404674]: connecting serial interface: /dev/ttyAMA0
+[INFO] [1750929349.897683556]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+process[xbot_remote-15]: started with pid [180]
+[INFO] [1750929349.920303964]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1750929349.946871876]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+process[monitoring-16]: started with pid [190]
+[FATAL] [1750929350.008002132]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[INFO] [1750929350.051678505]: MQTT Connected
+[INFO] [1750929350.125564688]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750929350.522164206]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750929350.543450076]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750929350.573106522]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750929350.605533505]: om_mower_logic: Setting mower_logic config
+[INFO] [1750929350.606155257]: mower_comms received new mower_logic config
+[INFO] [1750929350.625302988]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750929350.647062351]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750929350.647283256]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1750929350.654930749]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750929350.694095792]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750929350.721917651]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750929350.753900918]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750929350.776160460]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750929350.776271162]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1750929350.801938290]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750929350.848386220]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750929350.898173532]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750929350.898416214]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1750929350.951535316]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1750929350.979070715]: mower_comms received new mower_logic config
+[INFO] [1750929350.993525322]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750929350.993743764]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1750929351.052232425]: Monitoring received new mower_logic config
+[INFO] [1750929351.089353089]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750929351.089565734]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[ERROR] [1750929351.094426670]: Client [/xbot_monitoring] wants topic /xbot_monitoring/sensors/om_charge_state/data to have datatype/md5sum [xbot_msgs/SensorDataString/37670eed6af64f24a40b9b9fc1cb861e], but our version has [xbot_msgs/SensorDataDouble/176463c696aec75591f61a77cde70a71]. Dropping connection.
+[INFO] [1750929351.148020396]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750929351.148167746]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1750929351.181045668]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750929351.181165296]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1750929351.217490544]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750929351.217699189]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1750929351.241163568]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750929351.241339417]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1750929351.274704000]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750929351.274856109]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750929351.274924534]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1750929351.274983793]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750929351.275038403]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1750929351.307592459]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1750929351.307746642]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750929351.307814160]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750929351.308005268]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1750929351.308074231]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1750929351.420016379]: Loaded 1 mowing areas and 0 navigation areas from file.
+[INFO] [1750929351.426380055]: Map Position: x=-23311.9, y=20959.8
+[INFO] [1750929351.426617200]: Map Size: x=46625.9, y=31.8867
+[INFO] [1750929351.458501209]: Waiting for emergency message
+[INFO] [1750929352.084074]: Connected to http://tapas-rtk.space.dtu.dk:2101/VRS1
+[INFO] [1750929352.130642428]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750929352.458585570]: Waiting for a power message
+[INFO] [1750929352.459051527]: Waiting for a status message
+[INFO] [1750929352.459433726]: Waiting for a pose message
+[INFO] [1750929352.459582298]: Waiting for left ESC status message
+[INFO] [1750929352.461104889]: Waiting for right ESC status message
+[INFO] [1750929352.461550809]: Waiting for emergency service
+[INFO] [1750929352.467642285]: Waiting for path server
+[INFO] [1750929352.474473474]: Waiting for mower service
+[INFO] [1750929352.479027285]: Waiting for gps service
+[INFO] [1750929352.488531920]: Waiting for positioning service
+[INFO] [1750929352.493932961]: Waiting for map server
+[INFO] [1750929352.496973106]: waitForService: Service [/mower_map_service/get_mowing_area] has not been advertised, waiting...
+[INFO] [1750929354.123344280]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750929354.904365107]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+         v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=65535, tilt_period=65535,
+         shutdown_esc_max_pitch=255,
+         language="en", volume=255
+         hall_configs="I, I, I, I, I, I, I, I, I, I"
+[INFO] [1750929354.917492547]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="I, I, I, I, I, I, I, I, I, I"
+[INFO] [1750929354.935421054]: om_mower_logic: Setting mower_logic config
+[INFO] [1750929355.047313687]: mower_comms received new mower_logic config
+[INFO] [1750929355.047931345]: Monitoring received new mower_logic config
+[INFO] [1750929355.054210523]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1750929355.054417853]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1750929355.054876533]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[WARN] [1750929355.059237791]: Could not set configuration
+[INFO] [1750929355.060923065]: Started gyro calibration
+[INFO] [1750929355.063819286]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[ERROR] [1750929355.064418649]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929355.068001824]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1750929355.070926194]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1750929355.082828020]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1750929355.087459497]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1750929355.089808170]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1750929355.089964834]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1750929355.090048981]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[WARN] [1750929355.700119025]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100807 timeout was 0.1.
+[ERROR] [1750929356.084046221]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929356.128915470]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929357.084060278]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929358.104031099]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929358.133261756]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929359.104095112]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929360.068986643]: Calibrated gyro offset: -0.00189716
+[ERROR] [1750929360.124205221]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929360.124719029]: Dropped GPS update, since it's not RTK Fixed
+[INFO] [1750929360.327653999]: local_costmap: Using plugin "static_layer"
+[INFO] [1750929360.420648067]: Requesting the map...
+[ERROR] [1750929361.144107320]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929362.126251916]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929362.164079554]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929363.184065127]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929364.117344536]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929364.184123465]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929365.117630692]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929365.184188512]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929366.128519511]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929366.204158677]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929367.224132866]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929368.125562024]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929368.224222763]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929369.224614791]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929370.116166346]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929370.224769717]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929371.122093831]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929371.226108614]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929372.125621445]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929372.244348538]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929373.244464091]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929374.120637160]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929374.244477854]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929375.244564844]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929376.128362546]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929376.264711413]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929377.284974820]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929378.122865605]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929378.304334002]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929379.304437827]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929380.120908509]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929380.304613860]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929381.304730861]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929382.121132570]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929382.326073761]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929383.344503777]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929384.126336032]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929384.364471686]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929385.364510634]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929386.117619063]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929386.384443108]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929387.120463076]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929387.384575102]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929388.384729674]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929389.121273030]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929389.404491758]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929390.123567546]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929390.424370067]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929391.424900481]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929392.123900516]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929392.444817670]: Low Level Emergency. Bitmask was: 1
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+[ERROR] [1750929393.464554310]: Low Level Emergency. Bitmask was: 1
+[move_base_legacy_relay-6] process has died [pid 133, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/24652daa-526e-11f0-b25a-d83adde38c38/move_base_legacy_relay-6.log].
+log file: /root/.ros/log/24652daa-526e-11f0-b25a-d83adde38c38/move_base_legacy_relay-6*.log
+[INFO] [1750929394.129127959]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929394.484388527]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929395.484449633]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929396.119183227]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929396.504447764]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929397.121211203]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929397.504612303]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929398.134788535]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929398.524317059]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929399.524366108]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929400.120244933]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929400.544285981]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929401.544421908]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929402.127868341]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929402.544538061]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929403.564293319]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929404.120429589]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929404.564344778]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929405.122120733]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929405.564446815]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929406.128849854]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929406.564653428]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929407.564641622]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929408.135827783]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929408.584675787]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929409.604427459]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929410.115196321]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929410.604505479]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929411.117956587]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929411.624424082]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929412.517659770]: Map server service not found.
+[ERROR] [1750929412.624549702]: Low Level Emergency. Bitmask was: 1
+[mower_logic-11] process has died [pid 155, exit code 2, cmd /opt/open_mower_ros/devel/lib/mower_logic/mower_logic __name:=mower_logic __log:=/root/.ros/log/24652daa-526e-11f0-b25a-d83adde38c38/mower_logic-11.log].
+log file: /root/.ros/log/24652daa-526e-11f0-b25a-d83adde38c38/mower_logic-11*.log
+[INFO] [1750929413.116861029]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929413.644423851]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929414.120079819]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929414.644525831]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929415.664472339]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929416.121617620]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929416.664566623]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929417.684103977]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929418.117865115]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929418.684095529]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929419.684103732]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929420.123609300]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929420.684156883]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929421.704223042]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929422.127893166]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929422.724080596]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929423.724132498]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929424.118027838]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929424.744147262]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929425.744608481]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929426.121110192]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929426.764179553]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929427.784055717]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929428.123280646]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929428.804135142]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929429.824098127]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929430.126828856]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929430.844063412]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929431.844081213]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929432.125546288]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929432.844098555]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929433.844138195]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929434.113483018]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929434.864104994]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929435.864150882]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929436.111441967]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929436.884064113]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929437.884122322]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929438.127518089]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929438.904073912]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929439.904138701]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929440.112790187]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929440.904123773]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929441.114555496]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929441.924076964]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929442.121439502]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929442.924085319]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929443.924102140]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929444.120234213]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929444.944046767]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929445.944178611]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929446.117113589]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929446.964051486]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929447.964110688]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929448.124616695]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929448.964119579]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929449.984078425]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929450.116533121]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929450.984090063]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929451.984093796]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929452.118920945]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929453.004135909]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929454.024077674]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929454.114885694]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929455.024177544]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929456.044103741]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929456.121607374]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929457.044087266]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929458.044086387]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929458.133653516]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929459.044126880]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929460.064159975]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929460.124870747]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929461.084081186]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929462.084084688]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929462.119853403]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929463.104065607]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929464.104067688]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929464.119854248]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929465.124062612]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929466.116000392]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929466.144043816]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929467.122643119]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929467.144099664]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929468.132484920]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929468.164082392]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929469.164218077]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929470.123744090]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929470.184135293]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929471.204103473]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929472.118569465]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929472.204123037]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929473.224067353]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929474.119037872]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929474.224068051]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929475.123917845]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929475.224115066]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929476.224100066]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929477.116829361]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929477.244074465]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929478.119783198]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929478.244083840]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929479.123902468]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929479.264059336]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929480.128025702]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929480.264097141]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929481.264135411]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929482.117252047]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929482.284075451]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929483.119071928]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929483.304079327]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929484.129884587]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929484.324071427]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929485.130021531]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929485.324072484]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929486.324107432]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929487.119354378]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929487.344149724]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929488.126246669]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929488.364092889]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929489.364582578]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929490.113144966]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929490.384147493]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929491.384146767]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929492.120027429]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929492.404146552]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929493.122508434]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929493.404094275]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929494.133714518]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929494.424074860]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929495.424164844]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929496.128475722]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929496.444029880]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929497.464024137]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929498.122014117]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929498.464057795]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929499.484056168]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929500.120817601]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929500.504056377]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929501.524032828]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929502.127169425]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929502.524145271]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929503.544081226]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929504.132352919]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929504.564030962]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929505.584019606]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929506.114847797]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929506.584055168]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929507.604024057]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929508.109843212]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929508.624018059]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929509.111777292]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929509.624054145]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929510.124813069]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929510.644021966]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929511.644037223]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929512.121207258]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929512.644037000]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929513.644067538]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929514.124710920]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929514.644096171]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1750929515.664048574]: Low Level Emergency. Bitmask was: 1
+[INFO] [1750929516.116892213]: Dropped GPS update, since it's not RTK Fixed
+[ERROR] [1750929516.684123201]: Low Level Emergency. Bitmask was: 1

@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenMower Battery Chart</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #efefef;
+    --surface: #ffffff;
+    --border: #e0e0e0;
+    --border-strong: #cacaca;
+    --volt-color: #0ea5e9;
+    --curr-pos-color: #2cc76b;
+    --curr-neg-color: #f5a523;
+    --text-primary: #1a1a1a;
+    --text-muted: #555555;
+    --accent: #2cc76b;
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  /* ---- Logo badge ---- */
+  .logo-badge {
+    background: #2cc76b;
+    border-radius: 6px;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .logo-badge img { display: block; height: 18px; width: auto; }
+
+  /* ---- Header ---- */
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+  header h1 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+  header .sub {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ---- Drop zone ---- */
+  #drop-zone {
+    flex: 1;
+    border: 1.5px dashed var(--border-strong);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--surface);
+    min-height: 0;
+  }
+  #drop-zone:hover, #drop-zone.drag-over {
+    border-color: var(--accent);
+    background: #edfbf2;
+  }
+  #drop-zone p { font-size: 0.82rem; color: var(--text-muted); }
+  #drop-zone .hint {
+    font-size: 0.68rem;
+    color: #a0aec0;
+    font-family: 'DM Mono', monospace;
+  }
+  .actions { display: flex; gap: 8px; margin-top: 6px; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .file-btn {
+    padding: 0.4rem 1rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .file-btn:hover { background: #14853f; }
+  .paste-btn {
+    padding: 0.4rem 1rem;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .paste-btn:hover { background: var(--accent); color: #fff; }
+  #file-input { display: none; }
+
+  /* ---- Paste modal ---- */
+  #paste-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+  }
+  #paste-modal.open { display: flex; }
+  .modal-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    width: min(600px, 92vw);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .modal-box h2 { font-size: 0.85rem; font-weight: 500; color: var(--text-primary); }
+  .modal-box textarea {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-primary);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+  }
+  .modal-box textarea:focus { border-color: var(--accent); }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+  .btn-cancel {
+    padding: 0.38rem 0.9rem;
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    color: var(--text-muted);
+  }
+  .btn-ok {
+    padding: 0.38rem 0.9rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+  }
+  .btn-ok:hover { background: #14853f; }
+
+  /* ---- Metrics ---- */
+  #metrics-bar {
+    display: none;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .metric {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .metric-label {
+    font-size: 0.58rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-family: 'DM Mono', monospace;
+  }
+  .metric-value {
+    font-size: 0.82rem;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  .metric-value.volt { color: var(--volt-color); }
+  .metric-value.pos  { color: var(--curr-pos-color); }
+  .metric-value.neg  { color: var(--curr-neg-color); }
+  #reset-btn {
+    margin-left: auto;
+    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    align-self: center;
+    font-family: 'DM Sans', sans-serif;
+  }
+  #reset-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- Chart ---- */
+  #chart-box {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px 8px;
+    flex: 1;
+    min-height: 0;
+    flex-direction: column;
+  }
+  .chart-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  .chart-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .zoom-hint {
+    font-size: 0.62rem;
+    color: #b0b8c8;
+    font-family: 'DM Mono', monospace;
+    margin-left: auto;
+  }
+  .legend { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.68rem; color: var(--text-muted); }
+  .legend-line { width: 16px; height: 2.5px; border-radius: 2px; }
+
+  .canvas-wrap { position: relative; flex: 1; min-height: 0; }
+  canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+
+  .crosshair {
+    position: absolute;
+    width: 1px;
+    background: rgba(0,0,0,0.18);
+    pointer-events: none;
+    display: none;
+  }
+
+  .tooltip {
+    position: fixed;
+    background: #fff;
+    border: 1px solid var(--border-strong);
+    border-radius: 7px;
+    padding: 7px 11px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 100;
+    line-height: 1.85;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  #no-data {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+
+  /* ---- Status strips ---- */
+  #status-box {
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    flex-shrink: 0;
+  }
+  .status-canvas {
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    cursor: default;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  /* ---- Bottom chart ---- */
+  #bottom-box {
+    display: none;
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 14px 6px;
+    height: 140px;
+    min-height: 80px;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .bottom-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+  }
+  .resize-handle {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 12px;
+    cursor: ns-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+  .resize-handle::after {
+    content: '';
+    width: 52px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border-strong);
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <div class="logo-badge">
+      <img src="https://cdn.jsdelivr.net/gh/xtech/design-openmower-branding@main/public/logo-square.svg" alt="OpenMower">
+    </div>
+    <h1>OpenMower Battery Chart</h1>
+  </div>
+  <span class="sub" id="duration-label">No data loaded</span>
+</header>
+
+<!-- Drop / paste zone -->
+<div id="drop-zone">
+  <p>Drop a rosbag or BMS log file here</p>
+  <p class="hint">.bag · mower_msgs/Power &nbsp;|&nbsp; BMS text log</p>
+  <div class="actions">
+    <button class="file-btn" onclick="document.getElementById('file-input').click()">Choose file</button>
+    <button class="paste-btn" id="open-paste">Paste text</button>
+  </div>
+  <input type="file" id="file-input" accept=".txt,.log,.bag">
+</div>
+
+<!-- Paste modal -->
+<div id="paste-modal">
+  <div class="modal-box">
+    <h2>Paste BMS log data</h2>
+    <textarea id="paste-area" placeholder="Paste your log text here…"></textarea>
+    <div class="modal-actions">
+      <button class="btn-cancel" id="paste-cancel">Cancel</button>
+      <button class="btn-ok" id="paste-ok">Load</button>
+    </div>
+  </div>
+</div>
+
+<!-- Metrics -->
+<div id="metrics-bar">
+  <div class="metric"><span class="metric-label">Duration</span><span class="metric-value" id="m-dur">—</span></div>
+  <div class="metric"><span class="metric-label">Samples</span><span class="metric-value" id="m-n">—</span></div>
+  <div class="metric"><span class="metric-label">Avg voltage</span><span class="metric-value volt" id="m-vavg">—</span></div>
+  <div class="metric"><span class="metric-label">V min / max</span><span class="metric-value volt" id="m-vrange">—</span></div>
+  <div class="metric"><span class="metric-label">I max (charge)</span><span class="metric-value pos" id="m-imax">—</span></div>
+  <div class="metric"><span class="metric-label">I min (negative)</span><span class="metric-value neg" id="m-imin">—</span></div>
+  <div class="metric"><span class="metric-label">SOC BMS</span><span class="metric-value" id="m-soc-bms">—</span></div>
+  <div class="metric"><span class="metric-label">SOC V</span><span class="metric-value" id="m-soc-v">—</span></div>
+  <button id="reset-btn">↩ Load new file</button>
+</div>
+
+<!-- Chart -->
+<div id="chart-box">
+  <div class="chart-header">
+    <span class="chart-title">Voltage &amp; Current</span>
+    <div class="legend" style="flex:1">
+      <span class="legend-item"><span class="legend-line" style="background:var(--volt-color)"></span>V batt</span>
+      <span class="legend-item"><span class="legend-line" style="background:transparent;border-top:1.5px dashed #8b5cf6;height:0;border-radius:0;margin-top:4px;"></span>V chg</span>
+      <span style="flex:1"></span>
+      <span class="legend-item"><span class="legend-line" style="background:var(--curr-pos-color)"></span>I ≥ 0 A</span>
+      <span class="legend-item"><span class="legend-line" style="background:var(--curr-neg-color)"></span>I &lt; 0 A</span>
+    </div>
+    <span class="zoom-hint">scroll to zoom · drag to pan</span>
+  </div>
+  <div class="canvas-wrap">
+    <canvas id="cv-main"></canvas>
+    <div class="crosshair" id="crosshair"></div>
+  </div>
+</div>
+
+<!-- Status strips -->
+<div id="status-box">
+  <canvas id="cv-charger" class="status-canvas"></canvas>
+  <canvas id="cv-bms"     class="status-canvas"></canvas>
+</div>
+
+<!-- Bottom: cells + temp -->
+<div id="bottom-box">
+  <div class="resize-handle" id="bottom-resize-handle"></div>
+  <div class="bottom-header">
+    <span class="chart-title">Cells &amp; Temp</span>
+    <div class="legend" id="cell-legend"></div>
+  </div>
+  <div class="canvas-wrap" style="flex:1;min-height:0;">
+    <canvas id="cv-bottom"></canvas>
+    <div class="crosshair" id="crosshair-bottom"></div>
+  </div>
+</div>
+
+<div id="no-data">No valid BMS data found.</div>
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const VOLT_COLOR   = '#0ea5e9';
+const CURR_P_COLOR = '#2cc76b';
+const CURR_N_COLOR = '#f5a523';
+const CHG_VOLT_COLOR = '#8b5cf6';
+const TEMP_COLOR     = '#f97316';
+const CELL_COLORS    = ['#3b82f6','#06b6d4','#6366f1','#a78bfa','#0ea5e9','#22d3ee','#7dd3fc'];
+
+// ---- ROS Bag / LZ4 ----
+const td = new TextDecoder();
+
+function u32(b, i) { return (b[i] | b[i+1]<<8 | b[i+2]<<16 | b[i+3]<<24) >>> 0; }
+
+function lz4BlockDecompressInto(src, sS, sE, dst, dS) {
+  let si = sS, di = dS;
+  while (si < sE) {
+    const tok = src[si++];
+    let litLen = tok >>> 4;
+    if (litLen === 15) { let b; do { b = src[si++]; litLen += b; } while (b === 255); }
+    dst.set(src.subarray(si, si + litLen), di); si += litLen; di += litLen;
+    if (si >= sE) break;
+    const offset = src[si] | src[si+1]<<8; si += 2;
+    let matchLen = (tok & 0xf) + 4;
+    if ((tok & 0xf) === 15) { let b; do { b = src[si++]; matchLen += b; } while (b === 255); }
+    let mp = di - offset;
+    for (let k = 0; k < matchLen; k++) dst[di++] = dst[mp++];
+  }
+  return di - dS;
+}
+
+function lz4FrameDecompress(src, uncompressedSize) {
+  let si = 4; // skip magic 04 22 4D 18
+  const flg = src[si++]; si++; // FLG + BD
+  if ((flg >> 3) & 1) si += 8; // content size
+  if (flg & 1) si += 4;        // dict id
+  si++;                         // header checksum
+  const bChecksum = (flg >> 4) & 1;
+  const dst = new Uint8Array(uncompressedSize);
+  let di = 0;
+  while (true) {
+    const blockSz = u32(src, si); si += 4;
+    if (blockSz === 0) break;
+    const sz = blockSz & 0x7FFFFFFF;
+    if (blockSz >>> 31) { dst.set(src.subarray(si, si + sz), di); di += sz; }
+    else { di += lz4BlockDecompressInto(src, si, si + sz, dst, di); }
+    si += sz;
+    if (bChecksum) si += 4;
+  }
+  return dst;
+}
+
+function parseFields(b, start, end) {
+  const f = {}; let p = start;
+  while (p < end) {
+    const len = u32(b, p); p += 4;
+    const field = b.subarray(p, p + len); p += len;
+    const eq = field.indexOf(0x3d);
+    f[td.decode(field.subarray(0, eq))] = field.subarray(eq + 1);
+  }
+  return f;
+}
+
+function readRecord(b, pos) {
+  const hLen = u32(b, pos); pos += 4;
+  const header = parseFields(b, pos, pos + hLen); pos += hLen;
+  const dLen = u32(b, pos); pos += 4;
+  return { op: header.op?.[0], header, data: b.subarray(pos, pos + dLen), next: pos + dLen };
+}
+
+const POWER_MD5 = '64a452515e8f6248a493e3b38041388f';
+
+function deserializePower(data) {
+  const dv = new DataView(data.buffer, data.byteOffset, data.byteLength);
+  let o = 0;
+  const secs  = dv.getUint32(o, true); o += 4;
+  const nsecs = dv.getUint32(o, true); o += 4;
+  const charge_voltage_adc    = dv.getFloat32(o, true); o += 4;
+  const charge_voltage_chg    = dv.getFloat32(o, true); o += 4;
+  const charge_current        = dv.getFloat32(o, true); o += 4;
+  const battery_voltage_adc   = dv.getFloat32(o, true); o += 4;
+  const battery_voltage_chg   = dv.getFloat32(o, true); o += 4;
+  const battery_voltage_bms   = dv.getFloat32(o, true); o += 4;
+  const battery_current       = dv.getFloat32(o, true); o += 4;
+  const battery_pct           = dv.getFloat32(o, true); o += 4;
+  const battery_soc           = dv.getFloat32(o, true); o += 4;
+  const battery_temp          = dv.getFloat32(o, true); o += 4;
+  const dcdc_input_current    = dv.getFloat32(o, true); o += 4;
+  const charger_input_current = dv.getFloat32(o, true); o += 4;
+  const csLen = dv.getUint32(o, true); o += 4;
+  const charger_status = td.decode(data.subarray(o, o + csLen)); o += csLen;
+  const charger_enabled = data[o] !== 0; o += 1;
+  const bsLen = dv.getUint32(o, true); o += 4;
+  const bms_status = td.decode(data.subarray(o, o + bsLen)); o += bsLen;
+  const bedLen = dv.getUint32(o, true); o += 4;
+  let cells = [];
+  try { cells = JSON.parse(td.decode(data.subarray(o, o + bedLen)))?.cell_voltage_v ?? []; } catch {}
+  return {
+    t: (secs + nsecs / 1e9) * 1000, // ms, same unit as text log
+    v: battery_voltage_bms, i: battery_current,
+    soc: battery_soc * 100, temp: battery_temp, cells,
+    charge_voltage_adc, charge_voltage_chg, charge_current,
+    battery_voltage_adc, battery_voltage_chg, battery_pct,
+    dcdc_input_current, charger_input_current,
+    charger_status, charger_enabled, bms_status,
+  };
+}
+
+function parseBag(buf) {
+  const b = new Uint8Array(buf);
+  if (td.decode(b.subarray(0, 13)) !== '#ROSBAG V2.0\n') throw new Error('Not a ROS bag file');
+  const conns = {};
+  const rows = [];
+
+  function processRec(rec) {
+    const { op, header, data } = rec;
+    if (op === 0x07) { // CONNECTION
+      const id = u32(header.conn, 0);
+      const cd = parseFields(data, 0, data.length);
+      conns[id] = { md5: cd.md5sum ? td.decode(cd.md5sum) : '' };
+    } else if (op === 0x02) { // MESSAGE_DATA
+      const id = u32(header.conn, 0);
+      if (conns[id]?.md5 === POWER_MD5) rows.push(deserializePower(data));
+    }
+  }
+
+  let pos = 13;
+  while (pos < b.length) {
+    const rec = readRecord(b, pos); pos = rec.next;
+    if (rec.op === 0x05) { // CHUNK
+      const compression = td.decode(rec.header.compression);
+      const uncompSize = u32(rec.header.size, 0);
+      const cb = compression === 'lz4' ? lz4FrameDecompress(rec.data, uncompSize) : rec.data;
+      let cp = 0;
+      while (cp < cb.length) { const cr = readRecord(cb, cp); cp = cr.next; processRec(cr); }
+    } else {
+      processRec(rec);
+    }
+  }
+  return rows;
+}
+
+// ---- Parse ----
+const SBS_BITS = [
+  [0x0010, 'Fully discharged'], [0x0020, 'Fully charged'],
+  [0x0040, 'Discharging'],      [0x0080, 'Initialized'],
+  [0x0100, 'ALARM: Remaining time'], [0x0200, 'ALARM: Remaining capacity'],
+  [0x0800, 'ALARM: Terminate discharge'], [0x1000, 'ALARM: Over temperature'],
+  [0x4000, 'ALARM: Terminate charge'],   [0x8000, 'ALARM: Over charged'],
+];
+function parseLog(text) {
+  const re = /BMS Data:\s+t=(\d+)\s+V=([\d.]+)\s+I=(-?[\d.]+)\s+T=(-?[\d.]+)\s+SOC=([\d.]+)[^S]*?Status=0x([0-9a-fA-F]+)/g;
+  const rows = []; let m;
+  while ((m = re.exec(text)) !== null) {
+    const bits = parseInt(m[6], 16);
+    const bms_status = SBS_BITS.filter(([b]) => bits & b).map(([,n]) => n).join(', ');
+    rows.push({ t: +m[1], v: +m[2], i: +m[3], temp: +m[4], soc: +m[5], bms_status });
+  }
+  return rows;
+}
+
+// ---- State ----
+let XS = [], VS = [], IS = [], ROWS = [];
+let VS2 = [], TEMPS = [], CELLS = [], STATUSES = [];
+let viewX0 = 0, viewX1 = 1;
+let dragStart = null;
+
+// ---- Render data ----
+function render(rows) {
+  document.getElementById('no-data').style.display = rows.length === 0 ? 'block' : 'none';
+  if (!rows.length) return;
+
+  ROWS = rows;
+  const n = rows.length;
+  const t0 = rows[0].t;
+  XS       = rows.map(r => (r.t - t0) / 1000);
+  VS       = rows.map(r => r.v);
+  IS       = rows.map(r => r.i);
+  VS2      = rows.map(r => r.charge_voltage_chg ?? 0);
+  TEMPS    = rows.map(r => r.temp ?? null);
+  CELLS    = rows.map(r => r.cells ?? []);
+  STATUSES = rows.map(r => ({ charger_status: r.charger_status ?? '', bms_status: r.bms_status ?? '' }));
+  viewX0 = 0; viewX1 = 1;
+
+  document.getElementById('drop-zone').style.display   = 'none';
+  document.getElementById('metrics-bar').style.display = 'flex';
+  document.getElementById('chart-box').style.display   = 'flex';
+
+  const hasStatus  = STATUSES.some(s => s.charger_status || s.bms_status);
+  const hasBottom  = CELLS.some(c => c.length > 0) || TEMPS.some(t => t != null);
+  document.getElementById('status-box').style.display = hasStatus ? 'flex' : 'none';
+  document.getElementById('bottom-box').style.display = hasBottom ? 'flex' : 'none';
+
+  if (CELLS.some(c => c.length > 0)) {
+    const numCells = Math.max(...CELLS.map(c => c.length));
+    document.getElementById('cell-legend').innerHTML =
+      `<span class="legend-item"><span class="legend-line" style="background:rgba(59,130,246,0.2);height:8px;border:1px solid rgba(59,130,246,0.5);border-radius:2px;"></span>Cell range (${numCells}×)</span>` +
+      `<span class="legend-item"><span class="legend-line" style="background:#3b82f6"></span>Cell mean</span>` +
+      `<span class="legend-item"><span class="legend-line" style="background:${TEMP_COLOR}"></span>Temp</span>`;
+  }
+
+  const dur = XS[n - 1];
+  document.getElementById('duration-label').textContent = `${(dur/60).toFixed(1)} min · ${n} samples`;
+  document.getElementById('m-dur').textContent   = (dur/60).toFixed(1) + ' min';
+  document.getElementById('m-n').textContent     = n;
+  document.getElementById('m-vavg').textContent  = (VS.reduce((a,b)=>a+b,0)/n).toFixed(3) + ' V';
+  document.getElementById('m-vrange').textContent = Math.min(...VS).toFixed(2) + ' / ' + Math.max(...VS).toFixed(2) + ' V';
+  document.getElementById('m-imax').textContent  = '+' + Math.max(...IS).toFixed(3) + ' A';
+  document.getElementById('m-imin').textContent  = Math.min(...IS).toFixed(3) + ' A';
+  const socs = rows.map(r => r.soc).filter(s => s != null);
+  document.getElementById('m-soc-bms').textContent = socs.length
+    ? Math.min(...socs).toFixed(1) + ' – ' + Math.max(...socs).toFixed(1) + ' %' : '—';
+  const pcts = rows.map(r => r.battery_pct != null ? r.battery_pct * 100 : null).filter(s => s != null);
+  document.getElementById('m-soc-v').textContent = pcts.length
+    ? Math.min(...pcts).toFixed(1) + ' – ' + Math.max(...pcts).toFixed(1) + ' %' : '—';
+
+  draw();
+}
+
+// ---- Nice axis ticks ----
+function niceAxis(lo, hi, n) {
+  const span = hi - lo;
+  if (span < 1e-10) return [lo];
+  const rough = span / n;
+  const exp = Math.floor(Math.log10(rough));
+  const mag = Math.pow(10, exp);
+  const step = [1, 2, 5, 10].find(s => s * mag >= rough - 1e-10) * mag;
+  const start = Math.ceil((lo - step * 1e-9) / step) * step;
+  const ticks = [];
+  for (let k = 0; ; k++) {
+    const v = parseFloat((start + k * step).toPrecision(10));
+    if (v > hi + step * 1e-9) break;
+    ticks.push(v);
+  }
+  return ticks;
+}
+
+// ---- Draw ----
+function draw() {
+  const canvas = document.getElementById('cv-main');
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth;
+  const H = canvas.offsetHeight;
+  if (!W || !H || !XS.length) return;
+
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const PAD = { top: 14, right: 70, bottom: 38, left: 70 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+
+  const n = XS.length;
+  const xFull = XS[n - 1];
+  const xMin = viewX0 * xFull;
+  const xMax = viewX1 * xFull;
+
+  // Visible slice
+  const visMask = XS.map(x => x >= xMin && x <= xMax);
+  const visVs = VS.filter((_,i) => visMask[i]);
+  const visIs = IS.filter((_,i) => visMask[i]);
+
+  const hasChargeVolt = VS2.some(v => v > 1);
+  const visVs2 = hasChargeVolt ? VS2.filter((v,i) => visMask[i] && v > 1) : [];
+  const allVisVs = [...visVs, ...visVs2];
+
+  const vPad = 0.06;
+  const vMin = (allVisVs.length ? Math.min(...allVisVs) : Math.min(...VS)) - vPad;
+  const vMax = (allVisVs.length ? Math.max(...allVisVs) : Math.max(...VS)) + vPad;
+
+  const iAbsMax = Math.max(
+    Math.abs(visIs.length ? Math.min(...visIs) : Math.min(...IS)),
+    Math.abs(visIs.length ? Math.max(...visIs) : Math.max(...IS))
+  ) * 1.3 || 0.1;
+  const iMin = -iAbsMax, iMax = iAbsMax;
+
+  const toX  = x => PAD.left + ((x - xMin) / (xMax - xMin)) * pw;
+  const toYV = y => PAD.top + ph - ((y - vMin) / (vMax - vMin)) * ph;
+  const toYI = y => PAD.top + ph - ((y - iMin) / (iMax - iMin)) * ph;
+
+  // Grid
+  const vTickVals = niceAxis(vMin, vMax, 5);
+  ctx.strokeStyle = '#eef0f6';
+  ctx.lineWidth = 1;
+  for (const yv of vTickVals) {
+    const yp = toYV(yv);
+    ctx.beginPath(); ctx.moveTo(PAD.left, yp); ctx.lineTo(PAD.left + pw, yp); ctx.stroke();
+  }
+
+  // X grid: pick a nice step
+  const xRange = xMax - xMin;
+  const rawStep = xRange / 6;
+  const niceSteps = [10,30,60,120,300,600,900,1800,3600];
+  const xStep = niceSteps.find(s => s >= rawStep) || niceSteps[niceSteps.length-1];
+  const xStart = Math.ceil(xMin / xStep) * xStep;
+  for (let xv = xStart; xv <= xMax; xv += xStep) {
+    const xp = toX(xv);
+    ctx.beginPath(); ctx.strokeStyle = '#eef0f6'; ctx.moveTo(xp, PAD.top); ctx.lineTo(xp, PAD.top + ph); ctx.stroke();
+  }
+
+  // Zero line
+  ctx.strokeStyle = 'rgba(0,0,0,0.10)';
+  ctx.setLineDash([4, 4]);
+  const zp = toYI(0);
+  ctx.beginPath(); ctx.moveTo(PAD.left, zp); ctx.lineTo(PAD.left + pw, zp); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Clip to plot area
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(PAD.left, PAD.top, pw, ph);
+  ctx.clip();
+
+  // Current fills
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), zp);
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYI(Math.max(0, IS[i])));
+  ctx.lineTo(toX(XS[n-1]), zp); ctx.closePath();
+  ctx.fillStyle = 'rgba(16,185,129,0.10)'; ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), zp);
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYI(Math.min(0, IS[i])));
+  ctx.lineTo(toX(XS[n-1]), zp); ctx.closePath();
+  ctx.fillStyle = 'rgba(245,158,11,0.10)'; ctx.fill();
+
+  // Current line
+  ctx.lineWidth = 1.5; ctx.lineJoin = 'round';
+  for (let i = 1; i < n; i++) {
+    ctx.beginPath();
+    ctx.strokeStyle = IS[i] >= 0 ? CURR_P_COLOR : CURR_N_COLOR;
+    ctx.moveTo(toX(XS[i-1]), toYI(IS[i-1]));
+    ctx.lineTo(toX(XS[i]),   toYI(IS[i]));
+    ctx.stroke();
+  }
+
+  // Voltage fill
+  ctx.beginPath();
+  ctx.moveTo(toX(XS[0]), toYV(VS[0]));
+  for (let i = 0; i < n; i++) ctx.lineTo(toX(XS[i]), toYV(VS[i]));
+  ctx.lineTo(toX(XS[n-1]), PAD.top + ph);
+  ctx.lineTo(toX(XS[0]),   PAD.top + ph);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(14,165,233,0.06)'; ctx.fill();
+
+  // Voltage line
+  ctx.beginPath();
+  ctx.strokeStyle = VOLT_COLOR; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+  for (let i = 0; i < n; i++)
+    i === 0 ? ctx.moveTo(toX(XS[i]), toYV(VS[i])) : ctx.lineTo(toX(XS[i]), toYV(VS[i]));
+  ctx.stroke();
+
+  // Charge voltage line (dashed)
+  if (hasChargeVolt) {
+    ctx.setLineDash([5, 4]);
+    ctx.beginPath();
+    ctx.strokeStyle = CHG_VOLT_COLOR; ctx.lineWidth = 1.5; ctx.lineJoin = 'round';
+    let cvMoved = false;
+    for (let i = 0; i < n; i++) {
+      if (VS2[i] <= 1) { cvMoved = false; continue; }
+      cvMoved ? ctx.lineTo(toX(XS[i]), toYV(VS2[i])) : (ctx.moveTo(toX(XS[i]), toYV(VS2[i])), cvMoved = true);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  ctx.restore();
+
+  // Left y-axis (Voltage)
+  ctx.font = '10px DM Mono, monospace';
+  ctx.textAlign = 'right';
+  for (const yv of vTickVals) {
+    ctx.fillStyle = VOLT_COLOR;
+    ctx.fillText(yv.toFixed(2), PAD.left - 6, toYV(yv) + 3.5);
+  }
+  ctx.save();
+  ctx.fillStyle = VOLT_COLOR;
+  ctx.translate(12, PAD.top + ph / 2); ctx.rotate(-Math.PI / 2);
+  ctx.textAlign = 'center'; ctx.fillText('Voltage (V)', 0, 0); ctx.restore();
+
+  // Right y-axis (Current)
+  const iTickVals = niceAxis(iMin, iMax, 5);
+  ctx.textAlign = 'left';
+  for (const iv of iTickVals) {
+    ctx.fillStyle = iv > 0.001 ? CURR_P_COLOR : iv < -0.001 ? CURR_N_COLOR : '#aaa';
+    ctx.fillText((iv >= 0 ? '+' : '') + iv.toFixed(2), PAD.left + pw + 6, toYI(iv) + 3.5);
+  }
+  ctx.save();
+  ctx.fillStyle = '#94a3b8';
+  ctx.translate(W - 11, PAD.top + ph / 2); ctx.rotate(Math.PI / 2);
+  ctx.textAlign = 'center'; ctx.fillText('Current (A)', 0, 0); ctx.restore();
+
+  // X-axis labels
+  ctx.fillStyle = '#94a3b8'; ctx.textAlign = 'center';
+  ctx.font = '10px DM Mono, monospace';
+  for (let xv = xStart; xv <= xMax; xv += xStep) {
+    const label = xv >= 60 ? (xv/60).toFixed(1) + ' m' : xv.toFixed(0) + ' s';
+    ctx.fillText(label, toX(xv), PAD.top + ph + 16);
+  }
+  ctx.fillText('Time', PAD.left + pw / 2, PAD.top + ph + 32);
+
+  // Zoom indicator bar
+  if (viewX0 > 0.001 || viewX1 < 0.999) {
+    const barY = PAD.top + ph + 36;
+    const barW = pw;
+    ctx.fillStyle = '#e2e6ec';
+    ctx.beginPath(); ctx.roundRect(PAD.left, barY, barW, 3, 2); ctx.fill();
+    ctx.fillStyle = VOLT_COLOR;
+    ctx.beginPath(); ctx.roundRect(PAD.left + viewX0 * barW, barY, (viewX1 - viewX0) * barW, 3, 2); ctx.fill();
+  }
+
+  // Store layout
+  canvas._chart = { toX, toYV, toYI, PAD, pw, ph, xMin, xMax };
+
+  drawStatus();
+  drawBottom();
+}
+
+// ---- Status strips ----
+function chargerStatusColor(s) {
+  if (!s) return null;
+  const l = s.toLowerCase();
+  if (l.includes('error') || l.includes('fault'))              return 'rgba(239,68,68,0.70)';   // red   — error
+  if (l.includes('(cc)') || l.includes('fast'))                return 'rgba(44,199,107,0.60)';  // green — CC / fast
+  if (l.includes('(cv)') || l.includes('taper'))               return 'rgba(14,165,233,0.50)';  // blue  — CV / taper
+  if (l.includes('trickle') || l.includes('float'))            return 'rgba(44,199,107,0.22)';  // pale green — maintenance
+  if (l.includes('pre'))                                        return 'rgba(245,158,11,0.55)';  // amber — pre-charge
+  if (l.includes('complet') || l.includes('finish') || l.includes('done'))
+                                                                return 'rgba(14,165,233,0.28)';  // pale blue — done
+  return null; // "Not Charging" → transparent
+}
+function bmsStatusColor(s) {
+  if (!s) return null;
+  const l = s.toLowerCase();
+  if (l.includes('error') || l.includes('fault') || l.includes('alarm'))
+                                                               return 'rgba(239,68,68,0.65)';   // red
+  if (l.includes('discharging') && l.includes('fully charged'))
+                                                               return 'rgba(245,158,11,0.35)';  // amber — transitioning
+  if (l.includes('fully charged'))                             return 'rgba(14,165,233,0.35)';  // blue  — idle on dock
+  if (l.includes('discharging'))                               return 'rgba(245,158,11,0.25)';  // amber — discharging
+  if (l.includes('charging'))                                  return 'rgba(44,199,107,0.40)';  // green — charging
+  return null;
+}
+
+function drawStatus() {
+  if (!STATUSES.length || !XS.length) return;
+  const n = XS.length;
+  const xFull = XS[n - 1];
+  const xMin = viewX0 * xFull, xMax = viewX1 * xFull;
+  const PADS = 70;
+
+  [
+    { id: 'cv-charger', key: 'charger_status', colorFn: chargerStatusColor, label: 'CHARGER' },
+    { id: 'cv-bms',     key: 'bms_status',     colorFn: bmsStatusColor,     label: 'BMS' },
+  ].forEach(({ id, key, colorFn, label }) => {
+    const cv = document.getElementById(id);
+    const dpr = window.devicePixelRatio || 1;
+    const W = cv.offsetWidth, H = cv.offsetHeight;
+    if (!W || !H) return;
+    cv.width = W * dpr; cv.height = H * dpr;
+    const ctx = cv.getContext('2d');
+    ctx.scale(dpr, dpr);
+    const pw = W - PADS * 2;
+    const toX = x => PADS + ((x - xMin) / (xMax - xMin)) * pw;
+
+    for (let i = 0; i < n; i++) {
+      const color = colorFn(STATUSES[i]?.[key]);
+      if (!color) continue;
+      const x1 = Math.max(PADS, toX(XS[i]));
+      const x2 = Math.min(PADS + pw, i < n - 1 ? toX(XS[i + 1]) : PADS + pw);
+      if (x2 <= PADS || x1 >= PADS + pw || x2 <= x1) continue;
+      ctx.fillStyle = color;
+      ctx.beginPath(); ctx.roundRect(x1, 2, x2 - x1, H - 4, 3); ctx.fill();
+    }
+    ctx.font = '9px DM Mono, monospace';
+    ctx.fillStyle = '#9e9e9e'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(label, 4, H / 2);
+    ctx.textBaseline = 'alphabetic';
+  });
+}
+
+// ---- Bottom chart (cells + temp) ----
+function drawBottom() {
+  const cv = document.getElementById('cv-bottom');
+  const dpr = window.devicePixelRatio || 1;
+  const W = cv.offsetWidth, H = cv.offsetHeight;
+  if (!W || !H || !XS.length) return;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const ctx = cv.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const PAD = { top: 6, right: 52, bottom: 18, left: 52 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+  const n = XS.length;
+  const xFull = XS[n - 1];
+  const xMin = viewX0 * xFull, xMax = viewX1 * xFull;
+  const visMask = XS.map(x => x >= xMin && x <= xMax);
+  const toX = x => PAD.left + ((x - xMin) / (xMax - xMin)) * pw;
+  ctx.font = '9px DM Mono, monospace';
+
+  // Cells — left axis (min/max band + mean line)
+  const hasCells = CELLS.some(c => c.length > 0);
+  if (hasCells) {
+    const cellMin  = CELLS.map(c => c.length ? Math.min(...c) : null);
+    const cellMax  = CELLS.map(c => c.length ? Math.max(...c) : null);
+    const cellMean = CELLS.map(c => c.length ? c.reduce((a,b) => a+b, 0) / c.length : null);
+
+    const flat = CELLS.filter((_,i) => visMask[i]).flatMap(c => c).filter(isFinite);
+    const cPad = 0.001;
+    const cMin = (flat.length ? Math.min(...flat) : 3.0) - cPad;
+    const cMax = (flat.length ? Math.max(...flat) : 4.2) + cPad;
+    const toYC = y => PAD.top + ph - ((y - cMin) / (cMax - cMin)) * ph;
+    const cTickVals = niceAxis(cMin, cMax, 4);
+
+    // Grid
+    ctx.strokeStyle = '#eef0f6'; ctx.lineWidth = 1;
+    for (const yv of cTickVals) {
+      const yp = toYC(yv);
+      ctx.beginPath(); ctx.moveTo(PAD.left, yp); ctx.lineTo(PAD.left + pw, yp); ctx.stroke();
+    }
+
+    ctx.save();
+    ctx.beginPath(); ctx.rect(PAD.left, PAD.top, pw, ph); ctx.clip();
+
+    // Filled band: max forward then min backward
+    ctx.beginPath();
+    let first = true;
+    for (let i = 0; i < n; i++) {
+      if (cellMax[i] == null) { first = true; continue; }
+      first ? (ctx.moveTo(toX(XS[i]), toYC(cellMax[i])), first = false) : ctx.lineTo(toX(XS[i]), toYC(cellMax[i]));
+    }
+    for (let i = n - 1; i >= 0; i--) {
+      if (cellMin[i] == null) continue;
+      ctx.lineTo(toX(XS[i]), toYC(cellMin[i]));
+    }
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(59,130,246,0.15)'; ctx.fill();
+
+    // Min / max outlines
+    for (const arr of [cellMax, cellMin]) {
+      ctx.beginPath(); ctx.strokeStyle = 'rgba(59,130,246,0.45)'; ctx.lineWidth = 1; first = true;
+      for (let i = 0; i < n; i++) {
+        if (arr[i] == null) { first = true; continue; }
+        first ? (ctx.moveTo(toX(XS[i]), toYC(arr[i])), first = false) : ctx.lineTo(toX(XS[i]), toYC(arr[i]));
+      }
+      ctx.stroke();
+    }
+
+    // Mean line
+    ctx.beginPath(); ctx.strokeStyle = '#3b82f6'; ctx.lineWidth = 1.5; ctx.lineJoin = 'round'; first = true;
+    for (let i = 0; i < n; i++) {
+      if (cellMean[i] == null) { first = true; continue; }
+      first ? (ctx.moveTo(toX(XS[i]), toYC(cellMean[i])), first = false) : ctx.lineTo(toX(XS[i]), toYC(cellMean[i]));
+    }
+    ctx.stroke();
+
+    ctx.restore();
+
+    ctx.textAlign = 'right'; ctx.fillStyle = '#3b82f6';
+    for (const yv of cTickVals) {
+      ctx.fillText(yv.toFixed(3), PAD.left - 3, toYC(yv) + 3);
+    }
+  }
+
+  // Temp — right axis
+  const hasTemp = TEMPS.some(t => t != null);
+  if (hasTemp) {
+    const visT = TEMPS.filter((_,i) => visMask[i]).filter(t => t != null);
+    const tMin = (visT.length ? Math.min(...visT) : 0) - 0.5;
+    const tMax = (visT.length ? Math.max(...visT) : 50) + 0.5;
+    const toYT = y => PAD.top + ph - ((y - tMin) / (tMax - tMin)) * ph;
+
+    ctx.save();
+    ctx.beginPath(); ctx.rect(PAD.left, PAD.top, pw, ph); ctx.clip();
+    ctx.beginPath();
+    ctx.strokeStyle = TEMP_COLOR; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+    let first = true;
+    for (let i = 0; i < n; i++) {
+      if (TEMPS[i] == null) { first = true; continue; }
+      first ? (ctx.moveTo(toX(XS[i]), toYT(TEMPS[i])), first = false) : ctx.lineTo(toX(XS[i]), toYT(TEMPS[i]));
+    }
+    ctx.stroke();
+    ctx.restore();
+
+    const tTickVals = niceAxis(tMin, tMax, 4);
+    ctx.textAlign = 'left'; ctx.fillStyle = TEMP_COLOR;
+    for (const tv of tTickVals) {
+      ctx.fillText(tv.toFixed(1) + '°', PAD.left + pw + 3, toYT(tv) + 3);
+    }
+  }
+
+  // X-axis ticks
+  const niceSteps = [10,30,60,120,300,600,900,1800,3600];
+  const xStep = niceSteps.find(s => s >= (xMax - xMin) / 4) || niceSteps[niceSteps.length - 1];
+  const xStart = Math.ceil(xMin / xStep) * xStep;
+  ctx.fillStyle = '#b0b8c8'; ctx.textAlign = 'center';
+  for (let xv = xStart; xv <= xMax; xv += xStep)
+    ctx.fillText(xv >= 60 ? (xv/60).toFixed(1)+'m' : xv.toFixed(0)+'s', toX(xv), PAD.top + ph + 13);
+
+  cv._chart = { PAD, pw, ph, xMin, xMax };
+}
+
+// ---- Zoom & pan ----
+const canvas = document.getElementById('cv-main');
+
+canvas.addEventListener('wheel', e => {
+  if (!XS.length) return;
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const c = canvas._chart;
+  if (!c) return;
+  const frac = Math.max(0, Math.min(1, (mx - c.PAD.left) / c.pw));
+  const pivotFrac = viewX0 + frac * (viewX1 - viewX0);
+
+  const factor = e.deltaY > 0 ? 1.15 : 0.87;
+  let newSpan = (viewX1 - viewX0) * factor;
+  newSpan = Math.max(0.02, Math.min(1, newSpan));
+
+  let x0 = pivotFrac - frac * newSpan;
+  let x1 = x0 + newSpan;
+  if (x0 < 0) { x0 = 0; x1 = newSpan; }
+  if (x1 > 1) { x1 = 1; x0 = 1 - newSpan; }
+  viewX0 = x0; viewX1 = x1;
+  draw();
+}, { passive: false });
+
+canvas.addEventListener('mousedown', e => {
+  if (!XS.length) return;
+  const c = canvas._chart; if (!c) return;
+  dragStart = { clientX: e.clientX, v0: viewX0, v1: viewX1, pw: c.pw };
+  canvas.style.cursor = 'grabbing';
+});
+
+window.addEventListener('mousemove', e => {
+  if (!dragStart || !XS.length) return;
+  const dx = (dragStart.clientX - e.clientX) / dragStart.pw;
+  const span = dragStart.v1 - dragStart.v0;
+  let x0 = dragStart.v0 + dx;
+  let x1 = x0 + span;
+  if (x0 < 0) { x0 = 0; x1 = span; }
+  if (x1 > 1) { x1 = 1; x0 = 1 - span; }
+  viewX0 = x0; viewX1 = x1;
+  draw();
+});
+
+window.addEventListener('mouseup', () => {
+  dragStart = null;
+  canvas.style.cursor = 'crosshair';
+  document.getElementById('cv-bottom').style.cursor = 'crosshair';
+});
+
+// Double-click to reset zoom
+canvas.addEventListener('dblclick', () => {
+  viewX0 = 0; viewX1 = 1; draw();
+});
+
+// ---- Tooltip ----
+const tooltip = document.getElementById('tooltip');
+const ch = document.getElementById('crosshair');
+
+canvas.addEventListener('mousemove', e => {
+  if (!XS.length || dragStart) { tooltip.style.opacity = '0'; ch.style.display = 'none'; return; }
+  const c = canvas._chart;
+  if (!c) return;
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const frac = (mx - c.PAD.left) / c.pw;
+  if (frac < 0 || frac > 1) { tooltip.style.opacity = '0'; ch.style.display = 'none'; return; }
+
+  const xVal = c.xMin + frac * (c.xMax - c.xMin);
+  let xi = XS.findIndex(x => x >= xVal);
+  if (xi < 0) xi = XS.length - 1;
+  if (xi > 0 && Math.abs(XS[xi-1] - xVal) < Math.abs(XS[xi] - xVal)) xi--;
+  // Segment-start index: matches status bar visual segments
+  let xiSeg = XS.findIndex(x => x > xVal);
+  xiSeg = xiSeg < 0 ? XS.length - 1 : Math.max(0, xiSeg - 1);
+
+  ch.style.display = 'block';
+  ch.style.left   = (c.PAD.left + frac * c.pw) + 'px';
+  ch.style.top    = c.PAD.top + 'px';
+  ch.style.height = c.ph + 'px';
+
+  const chBot = document.getElementById('crosshair-bottom');
+  const cBot  = document.getElementById('cv-bottom')._chart;
+  if (cBot) {
+    chBot.style.display = 'block';
+    chBot.style.left    = (cBot.PAD.left + frac * cBot.pw) + 'px';
+    chBot.style.top     = cBot.PAD.top + 'px';
+    chBot.style.height  = cBot.ph + 'px';
+  }
+
+  const iv = IS[xi];
+  const iColor = iv >= 0 ? CURR_P_COLOR : CURR_N_COLOR;
+  const xv = XS[xi];
+  const tLabel = xv >= 60 ? (xv/60).toFixed(2) + ' min' : xv.toFixed(1) + ' s';
+  const r = ROWS[xi];
+  tooltip.innerHTML =
+    `<span style="color:#94a3b8">t</span>&nbsp; <span style="color:#1a202c">${tLabel}</span><br>` +
+    `<span style="color:${VOLT_COLOR}">V</span>&nbsp; <span style="color:#1a202c">${VS[xi].toFixed(3)} V</span><br>` +
+    (VS2[xi] > 1 ? `<span style="color:${CHG_VOLT_COLOR}">V⚡</span>&nbsp; <span style="color:#1a202c">${VS2[xi].toFixed(3)} V</span><br>` : '') +
+    `<span style="color:${iColor}">I</span>&nbsp; <span style="color:#1a202c">${iv>=0?'+':''}${iv.toFixed(3)} A</span><br>` +
+    (r.temp != null ? `<span style="color:#94a3b8">T</span>&nbsp; <span style="color:#1a202c">${r.temp.toFixed(1)} °C</span><br>` : '') +
+    (r.soc       != null ? `<span style="color:#94a3b8">SOC·BMS</span>&nbsp; <span style="color:#1a202c">${r.soc.toFixed(1)} %</span><br>` : '') +
+    (r.battery_pct != null ? `<span style="color:#94a3b8">SOC·V</span>&nbsp;&nbsp; <span style="color:#1a202c">${(r.battery_pct * 100).toFixed(1)} %</span><br>` : '') +
+    (STATUSES[xiSeg]?.charger_status ? `<span style="color:#94a3b8">CHG</span>&nbsp; <span style="color:#1a202c">${STATUSES[xiSeg].charger_status}</span><br>` : '') +
+    (STATUSES[xiSeg]?.bms_status     ? `<span style="color:#94a3b8">BMS</span>&nbsp; <span style="color:#1a202c">${STATUSES[xiSeg].bms_status}</span>` : '');
+  tooltip.style.opacity = '1';
+  const tipW = 210;
+  const left = e.clientX + 14 + tipW > window.innerWidth ? e.clientX - tipW - 8 : e.clientX + 14;
+  tooltip.style.left = left + 'px';
+  tooltip.style.top  = (e.clientY - 20) + 'px';
+});
+
+canvas.addEventListener('mouseleave', () => {
+  if (!dragStart) {
+    tooltip.style.opacity = '0';
+    ch.style.display = 'none';
+    document.getElementById('crosshair-bottom').style.display = 'none';
+  }
+});
+
+// ---- Bottom chart crosshair + tooltip ----
+document.getElementById('cv-bottom').addEventListener('mousemove', e => {
+  const cBot = document.getElementById('cv-bottom')._chart;
+  const c    = canvas._chart;
+  if (!cBot || !c || !XS.length || dragStart) return;
+  const rect = document.getElementById('cv-bottom').getBoundingClientRect();
+  const frac = (e.clientX - rect.left - cBot.PAD.left) / cBot.pw;
+  if (frac < 0 || frac > 1) {
+    ch.style.display = 'none';
+    document.getElementById('crosshair-bottom').style.display = 'none';
+    tooltip.style.opacity = '0';
+    return;
+  }
+  document.getElementById('crosshair-bottom').style.cssText =
+    `display:block;left:${cBot.PAD.left + frac * cBot.pw}px;top:${cBot.PAD.top}px;height:${cBot.ph}px`;
+  ch.style.cssText =
+    `display:block;left:${c.PAD.left + frac * c.pw}px;top:${c.PAD.top}px;height:${c.ph}px`;
+
+  const xVal = cBot.xMin + frac * (cBot.xMax - cBot.xMin);
+  let xi = XS.findIndex(x => x >= xVal);
+  if (xi < 0) xi = XS.length - 1;
+  if (xi > 0 && Math.abs(XS[xi-1] - xVal) < Math.abs(XS[xi] - xVal)) xi--;
+  const xv = XS[xi];
+  const tLabel = xv >= 60 ? (xv/60).toFixed(2) + ' min' : xv.toFixed(1) + ' s';
+  const cells = CELLS[xi] || [];
+  const temp = TEMPS[xi];
+  let html = `<span style="color:#94a3b8">t</span>&nbsp; <span style="color:#1a202c">${tLabel}</span>`;
+  if (cells.length) {
+    const mn = Math.min(...cells), mx = Math.max(...cells);
+    const mean = cells.reduce((a,b) => a+b, 0) / cells.length;
+    html += `<br><span style="color:#3b82f6">cell min</span>&nbsp; <span style="color:#1a202c">${mn.toFixed(3)} V</span>`;
+    html += `<br><span style="color:#3b82f6">cell max</span>&nbsp; <span style="color:#1a202c">${mx.toFixed(3)} V</span>`;
+    html += `<br><span style="color:#3b82f6">cell avg</span>&nbsp; <span style="color:#1a202c">${mean.toFixed(3)} V</span>`;
+    html += `<br><span style="color:#3b82f6">Δcell</span>&nbsp;&nbsp;&nbsp; <span style="color:#1a202c">${((mx - mn) * 1000).toFixed(0)} mV</span>`;
+  }
+  if (temp != null) html += `<br><span style="color:${TEMP_COLOR}">T</span>&nbsp; <span style="color:#1a202c">${temp.toFixed(1)} °C</span>`;
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = '1';
+  const tipW = 210;
+  tooltip.style.left = (e.clientX + 14 + tipW > window.innerWidth ? e.clientX - tipW - 8 : e.clientX + 14) + 'px';
+  tooltip.style.top  = (e.clientY - 20) + 'px';
+});
+document.getElementById('cv-bottom').addEventListener('mouseleave', () => {
+  ch.style.display = 'none';
+  document.getElementById('crosshair-bottom').style.display = 'none';
+  tooltip.style.opacity = '0';
+});
+
+// Bottom chart: zoom, pan, dblclick — synced with main via shared viewX0/viewX1
+const cvBottom = document.getElementById('cv-bottom');
+cvBottom.addEventListener('wheel', e => {
+  if (!XS.length) return;
+  e.preventDefault();
+  const cBot = cvBottom._chart; if (!cBot) return;
+  const frac = Math.max(0, Math.min(1, (e.clientX - cvBottom.getBoundingClientRect().left - cBot.PAD.left) / cBot.pw));
+  const pivotFrac = viewX0 + frac * (viewX1 - viewX0);
+  const factor = e.deltaY > 0 ? 1.15 : 0.87;
+  let newSpan = Math.max(0.02, Math.min(1, (viewX1 - viewX0) * factor));
+  let x0 = pivotFrac - frac * newSpan, x1 = x0 + newSpan;
+  if (x0 < 0) { x0 = 0; x1 = newSpan; }
+  if (x1 > 1) { x1 = 1; x0 = 1 - newSpan; }
+  viewX0 = x0; viewX1 = x1; draw();
+}, { passive: false });
+cvBottom.addEventListener('mousedown', e => {
+  if (!XS.length) return;
+  const cBot = cvBottom._chart; if (!cBot) return;
+  dragStart = { clientX: e.clientX, v0: viewX0, v1: viewX1, pw: cBot.pw };
+  cvBottom.style.cursor = 'grabbing';
+});
+cvBottom.addEventListener('dblclick', () => { viewX0 = 0; viewX1 = 1; draw(); });
+
+// ---- Status strip hover tooltips ----
+[
+  { id: 'cv-charger', key: 'charger_status', label: 'Charger' },
+  { id: 'cv-bms',     key: 'bms_status',     label: 'BMS' },
+].forEach(({ id, key, label }) => {
+  const cv = document.getElementById(id);
+  cv.addEventListener('mousemove', e => {
+    const c = canvas._chart;
+    if (!c || !STATUSES.length) return;
+    const rect = cv.getBoundingClientRect();
+    const frac = (e.clientX - rect.left - c.PAD.left) / c.pw;
+    if (frac < 0 || frac > 1) { tooltip.style.opacity = '0'; return; }
+    const xVal = c.xMin + frac * (c.xMax - c.xMin);
+    let xi = XS.findIndex(x => x > xVal);
+    xi = xi < 0 ? XS.length - 1 : Math.max(0, xi - 1);
+    const text = STATUSES[xi]?.[key] || '—';
+    tooltip.innerHTML = `<span style="color:#94a3b8">${label}</span>&nbsp; ${text}`;
+    tooltip.style.opacity = '1';
+    const tipW = 210;
+    tooltip.style.left = (e.clientX + 14 + tipW > window.innerWidth ? e.clientX - tipW - 8 : e.clientX + 14) + 'px';
+    tooltip.style.top  = (e.clientY - 20) + 'px';
+  });
+  cv.addEventListener('mouseleave', () => { tooltip.style.opacity = '0'; });
+});
+
+// ---- Resize ----
+const ro = new ResizeObserver(() => { if (XS.length) draw(); });
+ro.observe(document.getElementById('cv-main'));
+ro.observe(document.getElementById('cv-bottom'));
+
+// ---- File handling ----
+function handleText(text) {
+  const rows = parseLog(text);
+  render(rows);
+}
+function handleFile(file) {
+  const reader = new FileReader();
+  if (file.name.endsWith('.bag')) {
+    reader.onload = e => {
+      try { render(parseBag(e.target.result)); }
+      catch (err) { alert('Failed to parse bag: ' + err.message); }
+    };
+    reader.readAsArrayBuffer(file);
+  } else {
+    reader.onload = e => handleText(e.target.result);
+    reader.readAsText(file);
+  }
+}
+
+document.getElementById('file-input').addEventListener('change', e => {
+  if (e.target.files[0]) handleFile(e.target.files[0]);
+});
+
+const dz = document.getElementById('drop-zone');
+dz.addEventListener('dragover',  e => { e.preventDefault(); dz.classList.add('drag-over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+dz.addEventListener('drop', e => {
+  e.preventDefault(); dz.classList.remove('drag-over');
+  if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+});
+dz.addEventListener('click', e => {
+  if (!['BUTTON'].includes(e.target.tagName)) document.getElementById('file-input').click();
+});
+
+// ---- Paste modal ----
+const modal     = document.getElementById('paste-modal');
+const pasteArea = document.getElementById('paste-area');
+document.getElementById('open-paste').onclick = () => {
+  pasteArea.value = '';
+  modal.classList.add('open');
+  setTimeout(() => pasteArea.focus(), 50);
+};
+document.getElementById('paste-cancel').onclick = () => modal.classList.remove('open');
+document.getElementById('paste-ok').onclick = () => {
+  handleText(pasteArea.value);
+  modal.classList.remove('open');
+};
+modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
+
+// Ctrl+V global shortcut when drop zone visible
+document.addEventListener('paste', e => {
+  if (document.getElementById('drop-zone').style.display !== 'none') {
+    const text = e.clipboardData.getData('text');
+    if (text) handleText(text);
+  }
+});
+
+// ---- Bottom panel resize ----
+let resizing = false, resizeStartY = 0, resizeStartH = 0;
+const bottomBox = document.getElementById('bottom-box');
+document.getElementById('bottom-resize-handle').addEventListener('mousedown', e => {
+  resizing = true;
+  resizeStartY = e.clientY;
+  resizeStartH = bottomBox.offsetHeight;
+  e.preventDefault();
+});
+window.addEventListener('mousemove', e => {
+  if (!resizing) return;
+  const delta = resizeStartY - e.clientY; // drag up = taller
+  bottomBox.style.height = Math.max(80, Math.min(500, resizeStartH + delta)) + 'px';
+  if (XS.length) draw();
+});
+window.addEventListener('mouseup', () => { resizing = false; });
+
+// ---- Reset ----
+document.getElementById('reset-btn').onclick = () => {
+  XS = []; VS = []; IS = []; ROWS = [];
+  VS2 = []; TEMPS = []; CELLS = []; STATUSES = [];
+  document.getElementById('drop-zone').style.display   = '';
+  document.getElementById('metrics-bar').style.display = 'none';
+  document.getElementById('chart-box').style.display   = 'none';
+  document.getElementById('status-box').style.display  = 'none';
+  document.getElementById('bottom-box').style.display  = 'none';
+  document.getElementById('no-data').style.display     = 'none';
+  document.getElementById('duration-label').textContent = 'No data loaded';
+  document.getElementById('file-input').value = '';
+};
+</script>
+</body>
+</html>

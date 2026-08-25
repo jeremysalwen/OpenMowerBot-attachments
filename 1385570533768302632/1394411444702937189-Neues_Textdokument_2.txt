@@ -1,0 +1,210 @@
+openmower@openmower:~ $ journalctl -u openmower.service --no-pager --since "5 minutes ago"
+-- Journal begins at Sun 2023-06-18 16:55:55 CEST, ends at Mon 2025-07-14 22:10:41 CEST. --
+Jul 14 22:05:52 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 33.
+Jul 14 22:05:52 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:05:52 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:05:52 openmower podman[2912]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:05:53 openmower podman[2912]:   manifest unknown
+Jul 14 22:05:53 openmower podman[2912]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:05:53 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:05:53 openmower podman[2941]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:05:53 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:05:53 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:05:53 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:06:08 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 34.
+Jul 14 22:06:08 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:06:08 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:06:09 openmower podman[2970]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:06:09 openmower podman[2970]:   manifest unknown
+Jul 14 22:06:09 openmower podman[2970]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:06:09 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:09 openmower podman[2999]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:06:09 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:09 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:06:09 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:06:25 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 35.
+Jul 14 22:06:25 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:06:25 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:06:25 openmower podman[3028]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:06:25 openmower podman[3028]:   manifest unknown
+Jul 14 22:06:25 openmower podman[3028]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:06:25 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:26 openmower podman[3057]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:06:26 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:26 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:06:26 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:06:41 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 36.
+Jul 14 22:06:41 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:06:41 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:06:41 openmower podman[3087]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:06:42 openmower podman[3087]:   manifest unknown
+Jul 14 22:06:42 openmower podman[3087]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:06:42 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:42 openmower podman[3116]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:06:42 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:42 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:06:42 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:06:57 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 37.
+Jul 14 22:06:57 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:06:57 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:06:57 openmower podman[3147]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:06:58 openmower podman[3147]:   manifest unknown
+Jul 14 22:06:58 openmower podman[3147]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:06:58 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:58 openmower podman[3176]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:06:58 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:06:58 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:06:58 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:07:13 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 38.
+Jul 14 22:07:13 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:07:13 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:07:14 openmower podman[3239]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:07:14 openmower podman[3239]:   manifest unknown
+Jul 14 22:07:14 openmower podman[3239]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:07:14 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:14 openmower podman[3268]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:07:14 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:14 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:07:14 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:07:30 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 39.
+Jul 14 22:07:30 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:07:30 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:07:30 openmower podman[3297]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:07:30 openmower podman[3297]:   manifest unknown
+Jul 14 22:07:30 openmower podman[3297]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:07:30 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:31 openmower podman[3326]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:07:31 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:31 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:07:31 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:07:46 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 40.
+Jul 14 22:07:46 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:07:46 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:07:46 openmower podman[3356]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:07:47 openmower podman[3356]:   manifest unknown
+Jul 14 22:07:47 openmower podman[3356]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:07:47 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:47 openmower podman[3385]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:07:47 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:07:47 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:07:47 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:08:02 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 41.
+Jul 14 22:08:02 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:08:02 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:08:02 openmower podman[3416]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:08:03 openmower podman[3416]:   manifest unknown
+Jul 14 22:08:03 openmower podman[3416]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:08:03 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:03 openmower podman[3446]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:08:03 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:03 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:08:03 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:08:18 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 42.
+Jul 14 22:08:18 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:08:18 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:08:19 openmower podman[3475]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:08:20 openmower podman[3475]:   manifest unknown
+Jul 14 22:08:20 openmower podman[3475]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:08:20 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:20 openmower podman[3504]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:08:20 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:20 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:08:20 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:08:35 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 43.
+Jul 14 22:08:35 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:08:35 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:08:35 openmower podman[3535]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:08:36 openmower podman[3535]:   manifest unknown
+Jul 14 22:08:36 openmower podman[3535]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:08:36 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:36 openmower podman[3564]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:08:36 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:36 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:08:36 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:08:47 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:08:47 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:08:47 openmower podman[3599]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:08:47 openmower podman[3599]:   manifest unknown
+Jul 14 22:08:47 openmower podman[3599]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:08:48 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:48 openmower podman[3629]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:08:48 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:08:48 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:08:48 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:09:03 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 44.
+Jul 14 22:09:03 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:09:03 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:09:03 openmower podman[3659]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:09:04 openmower podman[3659]:   manifest unknown
+Jul 14 22:09:04 openmower podman[3659]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:09:04 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:04 openmower podman[3688]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:09:04 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:04 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:09:04 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:09:19 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 45.
+Jul 14 22:09:19 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:09:19 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:09:19 openmower podman[3718]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:09:20 openmower podman[3718]:   manifest unknown
+Jul 14 22:09:20 openmower podman[3718]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:09:20 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:20 openmower podman[3748]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:09:20 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:20 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:09:20 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:09:35 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 46.
+Jul 14 22:09:35 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:09:35 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:09:36 openmower podman[3777]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:09:36 openmower podman[3777]:   manifest unknown
+Jul 14 22:09:36 openmower podman[3777]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:09:36 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:37 openmower podman[3806]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:09:37 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:37 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:09:37 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:09:52 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 47.
+Jul 14 22:09:52 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:09:52 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:09:52 openmower podman[3835]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:09:53 openmower podman[3835]:   manifest unknown
+Jul 14 22:09:53 openmower podman[3835]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:09:53 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:53 openmower podman[3866]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:09:53 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:09:53 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:09:53 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:10:08 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 48.
+Jul 14 22:10:08 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:10:08 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:10:08 openmower podman[3899]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:10:09 openmower podman[3899]:   manifest unknown
+Jul 14 22:10:09 openmower podman[3899]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:10:09 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:09 openmower podman[3928]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:10:09 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:09 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:10:09 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:10:24 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 49.
+Jul 14 22:10:24 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:10:24 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:10:24 openmower podman[3957]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:10:25 openmower podman[3957]:   manifest unknown
+Jul 14 22:10:25 openmower podman[3957]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:10:25 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:25 openmower podman[3987]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:10:25 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:25 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:10:25 openmower systemd[1]: Failed to start Podman container - openmower.service.
+Jul 14 22:10:40 openmower systemd[1]: openmower.service: Scheduled restart job, restart counter is at 50.
+Jul 14 22:10:40 openmower systemd[1]: Stopped Podman container - openmower.service.
+Jul 14 22:10:40 openmower systemd[1]: Starting Podman container - openmower.service...
+Jul 14 22:10:41 openmower podman[4016]: Trying to pull ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage...
+Jul 14 22:10:41 openmower podman[4016]:   manifest unknown
+Jul 14 22:10:41 openmower podman[4016]: Error: Error initializing source docker://ghcr.io/clemenselflein/open_mower_ros:releases-feature-NekarusOMA_AdvancedPage: Error reading manifest releases-feature-NekarusOMA_AdvancedPage in ghcr.io/clemenselflein/open_mower_ros: manifest unknown
+Jul 14 22:10:41 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:41 openmower podman[4046]: Error: error reading CIDFile: open /run/container-openmower.ctr-id: no such file or directory
+Jul 14 22:10:41 openmower systemd[1]: openmower.service: Control process exited, code=exited, status=125/n/a
+Jul 14 22:10:41 openmower systemd[1]: openmower.service: Failed with result 'exit-code'.
+Jul 14 22:10:41 openmower systemd[1]: Failed to start Podman container - openmower.service.

@@ -1,0 +1,20 @@
+      - type: custom:map-card
+        auto_fit: true
+        map_style: satellite
+        theme_mode: light
+        card_size: 10
+        entities:
+          - entity: device_tracker.openmower1
+            show_marker: false
+            icon: mdi:robot-mower-outline
+            size: 20
+            history_start: 8 hours ago
+            history_line_color: rgba(0, 0, 255, 0.1)
+        show_paths: true
+        tile_layer_url: https://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
+        tile_layer_options:
+          attribution: Google Satellite
+          maxZoom: 21
+          minZoom: 13
+        view_layout:
+          position: main

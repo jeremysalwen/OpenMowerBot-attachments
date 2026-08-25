@@ -1,0 +1,30 @@
+### Old Mower needed
+1. Working Hardware (YardForce, etc.)
+2. Worx Landroid SO500i (WR105SI)
+
+
+### What to buy
+1. Universal Board, 3x ESC, xCore Board
+2. Raspberry Pi Compute Module 4 Lite, BCM2711, ARM Cortex-A72, 4GB-RAM
+    https://de.farnell.com/raspberry-pi/cm4004000/rpi-compute-module-4-lite-4gb/dp/3678901
+
+
+### Prepare SD-Card
+1. Download image (https://github.com/ClemensElflein/OpenMowerOS/actions/runs/17615522586)
+2. Flash image to SD-Card with imager with user- and wifi-settings (see readme)
+
+
+### Put the Boards together
+1. Put RPi CM4 on xCode Module (image)
+2. Add Distanceholder between RPi, xCode Module and Universal Board (smaller distance is between RPi and xCode module, image)
+3. Insert SD-Card (into xCode Module or RPi?, image)
+4. Insert xCode Module into Universal Board (image)
+5. Add screws to Distanceholder (optional, only do this if everything works, image)
+
+
+### Make it work
+1. Power up the mower (Where? Values?)
+2. Setup docker environment for your mower at "http://openmower:5001" (see readme)
+3. Setup openmower at "http://openmower:8080"
+
+

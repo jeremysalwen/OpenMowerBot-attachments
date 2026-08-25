@@ -1,0 +1,9 @@
+daniel@ubuntu2204-vm:~/RTK1010Board/esp32_fw$ idf.py menuconfig 
+Executing action: menuconfig
+Running ninja in directory /home/daniel/RTK1010Board/esp32_fw/build
+Executing "ninja menuconfig"...
+[0/1] cd /home/daniel/RTK1010Board/esp32_fw/build && /home/daniel/.espressif/python_env/idf4.4_py3.10_env/bin/python /h...ld/config.env --env IDF_TARGET=esp32s2 --env IDF_ENV_FPGA= --output config /home/daniel/RTK1010Board/esp32_fw/sdkconfig
+TERM environment variable is set to "xterm-256color"
+Loaded configuration '/home/daniel/RTK1010Board/esp32_fw/sdkconfig'
+Configuration saved to '/home/daniel/RTK1010Board/esp32_fw/sdkconfig'
+

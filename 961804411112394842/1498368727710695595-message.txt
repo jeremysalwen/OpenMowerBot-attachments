@@ -1,0 +1,52 @@
+open_mower_ros  | [WARN] [1777309312.117477789]: Low quality GPS
+open_mower_ros  | [WARN] [1777309312.117567438]: GPS timeout
+open_mower_ros  | [INFO] [1777309313.019669466]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309313.117496743]: Low quality GPS
+open_mower_ros  | [WARN] [1777309313.117588226]: GPS timeout
+open_mower_ros  | [INFO] [1777309314.025749204]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309314.117550182]: Low quality GPS
+open_mower_ros  | [WARN] [1777309314.117702183]: GPS timeout
+open_mower_ros  | [INFO] [1777309315.027323608]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309315.117551936]: Low quality GPS
+open_mower_ros  | [ERROR] [1777309315.131644205]: [driver_gps] waited 35 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1777309315.617480883]: GPS timeout
+open_mower_ros  | [INFO] [1777309316.034896676]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309316.617527030]: Low quality GPS
+open_mower_ros  | [WARN] [1777309316.617636216]: GPS timeout
+open_mower_ros  | [INFO] [1777309317.035159129]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [INFO] [1777309318.035373750]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309318.117600121]: Low quality GPS
+open_mower_ros  | [WARN] [1777309318.117698751]: GPS timeout
+open_mower_ros  | [INFO] [1777309319.035386816]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309319.617485947]: Low quality GPS
+open_mower_ros  | [WARN] [1777309319.617716616]: GPS timeout
+open_mower_ros  | [INFO] [1777309320.035818147]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [INFO] [1777309321.040825000]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309321.117481271]: Low quality GPS
+open_mower_ros  | [WARN] [1777309321.117686829]: GPS timeout
+open_mower_ros  | [ERROR] [1777309321.207773265]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [INFO] [1777309322.041802508]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309322.117535025]: Low quality GPS
+open_mower_ros  | [WARN] [1777309322.617497482]: GPS timeout
+open_mower_ros  | [INFO] [1777309323.510768035]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309323.617481925]: Low quality GPS
+open_mower_ros  | [WARN] [1777309323.617571926]: GPS timeout
+open_mower_ros  | [INFO] [1777309324.510834990]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309324.617533539]: Low quality GPS
+open_mower_ros  | [WARN] [1777309324.617745263]: GPS timeout
+open_mower_ros  | [INFO] [1777309325.511628991]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [ERROR] [1777309326.108208666]: [driver_gps] waited 12 ms to write to the tx buffer, serial port is probably congested!
+open_mower_ros  | [WARN] [1777309326.117550517]: Low quality GPS
+open_mower_ros  | [WARN] [1777309326.118005928]: GPS timeout
+open_mower_ros  | [INFO] [1777309327.005671999]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309327.618211239]: Low quality GPS
+open_mower_ros  | [WARN] [1777309327.618305406]: GPS timeout
+open_mower_ros  | [INFO] [1777309328.010912266]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [INFO] [1777309329.010975996]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309329.117493710]: Low quality GPS
+open_mower_ros  | [WARN] [1777309329.117596284]: GPS timeout
+open_mower_ros  | [INFO] [1777309330.012073553]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309330.117572437]: Low quality GPS
+open_mower_ros  | [WARN] [1777309330.117683271]: GPS timeout
+open_mower_ros  | [INFO] [1777309331.017190551]: dropping GPS update, since gps_enabled = false.
+open_mower_ros  | [WARN] [1777309331.617485011]: Low quality GPS

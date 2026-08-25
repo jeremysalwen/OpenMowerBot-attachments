@@ -1,0 +1,50 @@
+sensor:
+  - platform: template
+    sensors:
+      openmower_latitude:
+        friendly_name: "OpenMower Latitude"
+        value_template: "{{ states('sensor.openmower_position_lat') | float }}"
+      openmower_longitude:
+        friendly_name: "OpenMower Longitude"
+        value_template: "{{ states('sensor.openmower_position_lon') | float }}"
+
+device_tracker:
+  - platform: mqtt
+    name: "OpenMower1"
+    state_topic: "openmower/tracker"
+    json_attributes_topic: "openmower/tracker"
+    value_template: "home"  # This is required but doesn't matter here
+    latitude_template: "{{ value_json.latitude }}"
+    longitude_template: "{{ value_json.longitude }}"
+    source_type: gps
+    unique_id: openmower1_tracker
+
+mqtt:
+  sensor:
+
+  - state_topic: "robot_state/json"
+    name: "OpenMower Position Lat"
+    unique_id: openmower_position_lat
+    icon: mdi:ruler
+    value_template: >-
+      {# https://stackoverflow.com/a/50506609 #}
+      {# https://github.com/Turfjs/turf/issues/635#issuecomment-292011500 #}
+      {% set earth = 6371008.8 %}
+      {% set m = 1 / ((2 * pi / 360) * earth) %}
+      {% set datum_lat = xx.xxxxx %} # enter your mower base latitude here
+      {% set datum_lon = xx.xxxxx %} # enter your mower base longitude here
+      {{ datum_lat + (value_json.pose.y * m) }}
+
+
+  - state_topic: "robot_state/json"
+    name: "OpenMower Position Lon"
+    unique_id: openmower_position_lon
+    icon: mdi:ruler
+    value_template: >-
+      {# https://stackoverflow.com/a/50506609 #}
+      {# https://github.com/Turfjs/turf/issues/635#issuecomment-292011500 #}
+      {% set earth = 6371008.8 %}
+      {% set m = 1 / ((2 * pi / 360) * earth) %}
+      {% set datum_lat = xx.xxxxx %} # enter your mower base latitude here
+      {% set datum_lon = xx.xxxxx %} # enter your mower base longitude here
+      {{ datum_lon + (value_json.pose.x * m) / cos(datum_lat * (pi / 180)) }}

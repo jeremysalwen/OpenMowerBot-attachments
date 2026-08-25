@@ -1,0 +1,97 @@
+ll:
+  services:
+    diff_drive:
+      ticks_per_m: OM_WHEEL_TICKS_PER_M
+      wheel_distance_m: OM_WHEEL_DISTANCE_M
+      left_xesc:
+        serial_port: OM_XESC_LEFT_PORT
+
+      right_xesc:
+        serial_port: OM_XESC_RIGHT_PORT
+
+      mower_xesc:
+        serial_port: OM_XESC_MOWER_PORT
+
+    sound:
+      dfp_is_5v: OM_DFP_IS_5V
+      language: OM_LANGUAGE
+      volume: OM_VOLUME
+      background_sounds: OM_BACKGROUND_SOUNDS
+
+    gps:
+      baudrate: OM_GPS_BAUDRATE
+      serial_port: OM_GPS_PORT
+      device_type: OM_GPS_DEVICE_TYPE
+      tcp_host: OM_GPS_TCP_HOSTNAME
+      tcp_port: OM_GPS_TCP_PORT
+      protocol: OM_GPS_PROTOCOL
+      datum_lat: OM_DATUM_LAT
+      datum_long: OM_DATUM_LONG
+
+    power:
+      battery_empty_voltage: OM_BATTERY_EMPTY_VOLTAGE
+      battery_full_voltage: OM_BATTERY_FULL_VOLTAGE
+      battery_critical_high_voltage: OM_BATTERY_CRITICAL_HIGH_VOLTAGE
+      charge_critical_high_voltage: OM_CHARGE_CRITICAL_HIGH_VOLTAGE
+      charge_critical_high_current: OM_CHARGE_CRITICAL_HIGH_CURRENT
+
+xbot_positioning:
+  antenna_offset_x: OM_ANTENNA_OFFSET_X
+  antenna_offset_y: OM_ANTENNA_OFFSET_Y
+
+ntrip_client:
+  host: OM_NTRIP_HOSTNAME
+  port: OM_NTRIP_PORT
+  mountpoint: OM_NTRIP_ENDPOINT
+  username: OM_NTRIP_USER
+  password: OM_NTRIP_PASSWORD
+  reconnect_attempt_wait_seconds: OM_NTRIP_RECONNECT_WAIT_SECONDS
+  reconnect_attempt_max: OM_NTRIP_RECONNECT_MAX
+
+mower_logic:
+  automatic_mode: OM_AUTOMATIC_MODE
+  docking_distance: OM_DOCKING_DISTANCE
+  docking_approach_distance: OM_DOCKING_APPROACH_DISTANCE
+  docking_extra_time: OM_DOCKING_EXTRA_TIME
+  docking_retry_count: OM_DOCKING_RETRY_COUNT
+  docking_redock: OM_DOCKING_REDOCK
+  undock_distance: OM_UNDOCK_DISTANCE
+  perimeter_signal: OM_PERIMETER_SIGNAL
+  tool_width: OM_TOOL_WIDTH
+  enable_mower: OM_ENABLE_MOWER
+  outline_count: OM_OUTLINE_COUNT
+  outline_overlap_count: OM_OUTLINE_OVERLAP_COUNT
+  outline_offset: OM_OUTLINE_OFFSET
+  mow_angle_offset: OM_MOWING_ANGLE_OFFSET
+  mow_angle_offset_is_absolute: OM_MOWING_ANGLE_OFFSET_IS_ABSOLUTE
+  mow_angle_increment: OM_MOWING_ANGLE_INCREMENT
+  motor_hot_temperature: OM_MOWING_MOTOR_TEMP_HIGH
+  motor_cold_temperature: OM_MOWING_MOTOR_TEMP_LOW
+  gps_wait_time: OM_GPS_WAIT_TIME_SEC
+  gps_timeout: OM_GPS_TIMEOUT_SEC
+  rain_mode: OM_RAIN_MODE
+  rain_delay_minutes: OM_RAIN_DELAY_MINUTES
+  rain_check_seconds: OM_RAIN_CHECK_SECONDS
+  cu_rain_threshold: OM_CU_RAIN_THRESHOLD
+  undock_angled_distance: OM_UNDOCK_ANGLED_DISTANCE
+  undock_angle: OM_UNDOCK_ANGLE
+  undock_fixed_angle: OM_UNDOCK_FIXED_ANGLE
+  undock_use_curve: OM_UNDOCK_USE_CURVE
+  docking_waiting_time: OM_DOCKING_WAIT_TIME
+  undocking_waiting_time: OM_UNDOCKING_WAIT_TIME
+  emergency_lift_period: OM_EMERGENCY_LIFT_PERIOD
+  emergency_tilt_period: OM_EMERGENCY_TILT_PERIOD
+  emergency_input_config: OM_EMERGENCY_INPUT_CONFIG
+  ignore_charging_current: OM_IGNORE_CHARGING_CURRENT
+  shutdown_esc_max_pitch: OM_SHUTDOWN_ESC_MAX_PITCH
+
+xbot_monitoring:
+  external_mqtt_enable: OM_MQTT_ENABLE
+  external_mqtt_hostname: OM_MQTT_HOSTNAME
+  external_mqtt_port: OM_MQTT_PORT
+  external_mqtt_username: OM_MQTT_USER
+  external_mqtt_password: OM_MQTT_PASSWORD
+  external_mqtt_topic_prefix: OM_MQTT_TOPIC_PREFIX
+  software_version: OM_SOFTWARE_VERSION
+
+sensor_ids: OM_HEATMAP_SENSOR_IDS

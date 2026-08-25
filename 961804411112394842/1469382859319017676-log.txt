@@ -1,0 +1,435 @@
+sfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398323.767208214]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398323.859067512]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398323.859145844]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398324.359124779]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398324.359040929]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398324.767710223]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398324.860127677]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398324.860497282]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398325.358757099]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398325.359171925]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398325.767436355]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398325.858840809]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398325.859050657]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398326.359144238]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398326.359232718]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398326.767448075]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398326.859025896]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398326.859253559]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398327.359100903]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398327.358908202]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398327.767541663]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398327.858692621]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398327.858784749]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398328.358671129]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398328.358790146]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398328.767518808]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398328.859204738]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398328.859121480]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398329.358955546]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398329.358754346]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398329.768298716]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398329.861542544]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398329.861944426]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398330.359194797]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398330.359325424]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398330.768624576]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398330.858915142]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398330.858821662]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398331.358688800]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398331.358598635]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398331.769174283]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398331.859143577]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398331.859273167]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398332.358806237]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398332.358718461]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398332.769150112]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398332.858964157]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398332.858880936]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398333.358947570]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398333.359032642]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398333.769162894]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398333.858982901]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398333.859115028]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398334.358907293]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398334.358742260]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398334.770023251]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398334.858972851]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398334.858868427]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398335.363164604]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398335.363326620]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398335.770007599]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398335.858718113]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398335.858801426]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398336.358995711]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398336.359086598]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398336.770382597]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398336.858861765]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398336.858950967]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398337.358766506]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398337.358853097]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398337.770361522]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398337.858746062]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398337.858828264]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398338.358747195]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398338.358936617]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398338.770325641]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398338.859070083]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398338.859157970]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398339.358669637]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398339.358755598]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398339.770338715]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398339.858988455]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398339.859075342]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398340.358962432]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398340.359054616]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398340.770398315]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398340.861354231]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398340.861488506]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398341.359070297]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398341.359151036]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398341.770587553]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398341.858826693]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398341.858738324]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398342.358854957]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398342.358939510]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398342.770694117]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398342.858710485]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398342.858789298]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398343.358980878]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398343.358891676]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398343.770667120]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398343.858916835]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398343.859117775]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398344.358737928]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398344.358823556]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398344.770652465]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398344.858946588]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398344.858851405]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398345.358643892]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398345.358729631]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398345.770645765]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398345.858752929]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398345.858667524]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398346.363849645]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398346.363948106]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398346.770608093]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398346.858977272]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398346.859064955]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398347.358890137]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398347.358805768]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398347.770577857]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398347.858627488]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398347.858711079]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398348.358692595]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398348.358769445]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398348.771456001]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398348.858920922]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398348.858833683]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398349.358719892]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398349.358806279]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398349.771639762]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398349.858640360]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398349.858725173]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398350.358833363]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398350.358912491]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398350.771714590]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398350.859228122]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398350.859032034]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398351.361562438]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398351.361722175]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398351.771716947]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398351.859208814]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398351.859328793]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398352.358818394]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398352.358902819]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398352.771692444]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398352.859193831]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398352.859290440]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398353.358842674]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398353.358925968]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398353.771681136]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398353.859345242]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398353.859253521]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398354.359400507]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398354.359832610]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398354.771656244]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398354.858990062]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398354.858891656]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398355.358712376]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398355.359087627]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398355.771668917]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398355.858811128]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398355.858895441]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398356.358912217]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398356.358832163]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398356.771920354]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398356.860059897]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398356.860307966]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398357.359014181]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398357.359094013]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398357.771600960]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398357.858713006]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398357.858801949]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398358.358827956]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398358.358908047]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398358.771852285]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398358.859370121]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398358.859256049]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398359.358685962]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398359.358769923]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398359.771925254]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398359.858784455]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398359.858874138]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398360.359107984]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398360.358997746]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398360.771910640]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398360.858615586]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398360.858867841]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398361.358670403]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398361.358583831]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398361.771835259]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398361.862326296]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398361.862174873]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398362.359065148]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398362.359360975]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398362.771808868]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398362.858955270]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398362.859042065]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398363.358664918]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398363.358748490]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398363.772010704]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398363.858881242]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398363.858961944]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398364.358991275]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398364.359078718]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398364.772812296]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398364.858894758]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398364.859316935]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398365.358652062]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398365.358739931]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398365.772799654]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398365.858808674]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398365.858895302]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398366.358850588]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398366.358940123]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398366.772765781]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398366.859067481]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398366.859166516]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398367.362831416]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398367.363538475]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398367.772751435]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398367.858741846]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398367.858903139]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398368.359379608]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398368.359298110]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398368.772711413]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398368.858722824]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398368.858802897]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398369.358809177]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398369.358732104]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398369.772716048]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398369.858624480]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398369.858846661]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398370.358874519]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398370.358962443]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398370.772699506]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398370.858991191]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398370.859410664]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398371.358737911]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398371.358923981]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398371.772686399]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398371.858911531]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398371.859446872]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398372.358708939]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398372.358626348]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398372.773384694]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398372.860661287]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398372.860763359]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398373.359683900]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398373.359774899]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398373.773345680]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398373.858797736]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398373.859187061]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398374.359308490]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398374.359399322]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398374.773914032]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398374.858762027]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398374.858677825]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398375.358840387]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398375.358916293]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398375.773927145]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398375.858805548]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398375.858730568]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398376.358621529]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398376.358707120]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398376.773896508]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398376.858977630]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398376.859076498]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398377.358828411]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398377.358913187]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398377.773967323]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398377.860302216]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398377.860439509]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398378.358769881]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398378.358852527]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398378.773861945]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398378.858861663]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398378.858952716]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398379.359138555]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398379.359233479]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398379.773833112]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398379.858988679]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398379.859280488]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398380.358756734]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398380.358940249]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398380.774134429]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398380.859344292]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398380.859249349]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398381.360991868]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398381.361232382]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398381.774128076]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398381.859875187]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398381.860088683]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398382.358825212]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398382.358692992]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398382.774422095]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398382.859041267]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398382.859121802]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398383.361753034]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398383.361618426]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398383.775040060]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398383.859096078]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398383.858834898]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398384.358723653]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398384.358639914]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398384.774345505]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398384.858714536]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398384.859115435]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398385.358852252]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398385.358765439]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398385.775346295]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398385.859223410]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398385.859468479]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398386.358720569]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398386.358816605]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398386.774709811]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398386.858770201]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398386.858681795]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398387.359030182]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398387.359657059]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398387.774717100]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398387.858856804]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398387.858948246]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398388.358790407]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398388.358962737]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398388.775586398]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398388.858785381]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398388.858935082]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398389.358663619]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398389.358751747]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398389.775549927]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398389.859435897]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398389.859519747]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398390.358913258]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398390.359149902]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398390.775530426]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398390.859507876]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398390.859594041]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398391.358666249]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398391.358756821]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398391.775520601]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398391.859062727]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398391.859251871]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398392.358743481]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398392.359133511]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398392.775695946]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398392.858696732]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398392.858773693]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398393.359144771]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398393.358949294]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398393.775799838]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398393.861388480]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398393.861534662]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398394.359202669]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398394.359586976]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398394.775671576]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398394.858793824]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398394.858717473]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398395.358750992]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398395.358873990]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398395.776354509]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398395.858886103]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398395.858999341]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398396.359361858]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398396.359276878]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398396.776319613]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398396.858967205]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398396.858863689]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398397.358894679]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398397.358982158]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398397.776310095]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398397.858702304]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398397.858618806]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398398.358739076]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398398.358929479]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398398.776280622]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398398.858612703]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398398.858930586]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398399.360251058]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398399.360506182]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398399.776260602]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1770398399.858948862]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398399.858853993]: successfully set emergency enabled to 1
+open_mower_ros  | [INFO] [1770398400.358719776]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398400.358798589]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398400.776251089]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398400.858900387]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398400.859238714]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398401.359015225]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398401.358924023]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398401.776428525]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398401.858956474]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398401.859042898]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [INFO] [1770398402.358941577]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398402.359021205]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [ERROR] [1770398402.776462693]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398402.861266283]: successfully set emergency enabled to 1
+open_mower_ros  | [ERROR] [1770398402.861731329]: EMERGENCY: at least one motor control errored. errors left: c, status right: c
+open_mower_ros  | [monitoring-15] killing on exit
+open_mower_ros  | [xbot_remote-14] killing on exit
+open_mower_ros  | [twist_mux-12] killing on exit
+open_mower_ros  | [xbot_monitoring-13] killing on exit
+open_mower_ros  | [joy-7] killing on exit[map_service-9] killing on exit[mower_logic-10] killing on exit
+open_mower_ros  | 
+open_mower_ros  | 
+open_mower_ros  | [slic3r_coverage_planner-11] killing on exit
+open_mower_ros  | [joy_teleop-8] killing on exit
+open_mower_ros  | [xbot_positioning-6] killing on exit
+OpenMowerApp exited with code 0
+open_mower_ros  | [move_base_legacy_relay-5] killing on exit
+open_mower_ros  | [WARN] [1770398403.578146045]: Costmap2DROS transform timeout. Current time: 1770398403.5780, global_pose stamp: 1770398403.0840, tolerance: 0.3000
+open_mower_ros  | [ERROR] [1770398403.776792975]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [move_base_flex-4] killing on exit
+open_mower_ros  | [INFO] [1770398403.999618640]: Shutdown costmap navigation server.
+open_mower_ros  | [INFO] [1770398403.999795007]: Cancel all goals for "get_path".
+open_mower_ros  | [INFO] [1770398403.999939875]: Cancel all goals for "exe_path".
+open_mower_ros  | [INFO] [1770398404.000047058]: Cancel all goals for "recovery".
+open_mower_ros  | [INFO] [1770398404.000157315]: Stopping local and global costmap for shutdown
+open_mower_ros  | [ntrip_client-3] killing on exit
+open_mower_ros  | [INFO] [1770398404.086224]: Stopping RTCM publisher
+open_mower_ros  | [INFO] [1770398404.184779]: Disconnecting NTRIP client
+open_mower_ros  | [mower_comms_v2-2] killing on exit
+open_mower_ros  | [INFO] [1770398404.204482669]: Shutting Down
+open_mower_ros  | [INFO] [1770398404.204644480]: Shutting down ServiceDiscovery
+Mosquitto       | 1770398404: Client xbot_monitoring [172.19.0.1:57816] disconnected.
+open_mower_ros  | [ERROR] [1770398404.776424038]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398404.936853626]: ServiceDiscovery Stopped.
+open_mower_ros  | [INFO] [1770398404.936972957]: Shutting down ServiceIO
+open_mower_ros  | [INFO] [1770398404.940206096]: ServiceIO Stopped.
+open_mower_ros  | [INFO] [1770398404.940339630]: Shutting down RemoteLoggingReceiver
+open_mower_ros  | [ERROR] [1770398405.776321547]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1770398405.776678410]: RemoteLoggingReceiver Stopped.
+open_mower_ros exited with code 137
+Mosquitto exited with code 0

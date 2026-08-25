@@ -1,0 +1,24 @@
+alias: Openmower Area Scheduler
+description: ""
+triggers:
+  - trigger: state
+    entity_id:
+      - sensor.openmower_current_state
+  - trigger: state
+    entity_id:
+      - sensor.openmower_current_area
+conditions: []
+actions:
+  - if:
+      - condition: template
+        value_template: >
+          {{ is_state('input_boolean.openmower_area_' ~
+          states('sensor.openmower_current_area') ~ '_' ~ now().weekday(),
+          'off') }}
+    then:
+      - action: openmower.command_mowing_skip_area
+        metadata: {}
+        data: {}
+        target:
+          device_id: 8b57a39588999ee560de155cdc9ab071
+mode: single

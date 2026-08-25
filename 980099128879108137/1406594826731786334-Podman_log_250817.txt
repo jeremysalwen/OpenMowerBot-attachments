@@ -1,0 +1,74 @@
+[INFO] [1755423448.068451707]: MowingBehavior: (MOW) Progress: 919/75598
+[INFO] [1755423453.068793659]: MowingBehavior: (MOW) Progress: 939/75598
+[INFO] [1755423457.194927253]: GPS quality: 0.93
+[INFO] [1755423458.168254632]: MowingBehavior: (MOW) Progress: 949/75598
+[INFO] [1755423463.168754759]: MowingBehavior: (MOW) Progress: 954/75598
+[INFO] [1755423467.194995308]: GPS quality: 0.93
+[INFO] [1755423468.168961526]: MowingBehavior: (MOW) Progress: 972/75598
+[INFO] [1755423473.171770006]: MowingBehavior: (MOW) Progress: 992/75598
+[INFO] [1755423477.694929910]: GPS quality: 0.93
+[INFO] [1755423478.268630398]: MowingBehavior: (MOW) Progress: 1013/75598
+[INFO] [1755423483.368727120]: MowingBehavior: (MOW) Progress: 1033/75598
+[INFO] [1755423488.194927370]: GPS quality: 0.93
+[INFO] [1755423488.468335664]: MowingBehavior: (MOW) Progress: 1054/75598
+[ERROR] [1755423489.356071]: Error while reading 1024 bytes from socket
+[WARN] [1755423493.130048759]: >>> got ubx packet with invalid checksum
+[INFO] [1755423493.468437221]: MowingBehavior: (MOW) Progress: 1074/75598
+[INFO] [1755423498.194934737]: GPS quality: 0.93
+[INFO] [1755423498.468693487]: MowingBehavior: (MOW) Progress: 1094/75598
+[WARN] [1755423499.148201836]: >>> got ubx packet with invalid checksum
+[INFO] [1755423503.568321637]: MowingBehavior: (MOW) Progress: 1114/75598
+[WARN] [1755423507.146015357]: >>> got ubx packet with invalid checksum
+[INFO] [1755423508.569184259]: MowingBehavior: (MOW) Progress: 1134/75598
+[INFO] [1755423508.694922023]: GPS quality: 0.93
+[WARN] [1755423513.138532621]: >>> got ubx packet with invalid checksum
+[INFO] [1755423513.669764425]: MowingBehavior: (MOW) Progress: 1154/75598
+[WARN] [1755423515.146001509]: >>> got ubx packet with invalid checksum
+[WARN] [1755423516.150618577]: Last GPS was 5.0155 seconds ago.
+[WARN] [1755423516.194903087]: Low quality GPS
+[WARN] [1755423517.194912180]: Low quality GPS
+[WARN] [1755423518.195308860]: Low quality GPS
+[INFO] [1755423518.673299774]: MowingBehavior: (MOW) Progress: 1174/75598
+[WARN] [1755423519.135331264]: >>> got ubx packet with invalid checksum
+[WARN] [1755423519.694905401]: Low quality GPS
+[WARN] [1755423521.194902293]: Low quality GPS
+[WARN] [1755423521.195022309]: GPS timeout
+[WARN] [1755423521.195067105]: #### om_mower_logic: setMowerEnabled(0, 1) call
+[INFO] [1755423521.198489417]: successfully set mower enabled to 0 (direction 1)
+[WARN] [1755423521.198634488]: #### om_mower_logic: setMowerEnabled(0, 1) call completed within 0.00354924s
+[WARN] [1755423522.194906532]: Low quality GPS
+[WARN] [1755423522.694915102]: GPS timeout
+[ERROR] [1755423523.417402580]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.00779) > config.max_follow_distance (1) It probably has crashed.
+[INFO] [1755423523.417565541]: FTCLocalPlannerROS: Switching to state 4
+[WARN] [1755423523.417798185]: No velocity command received from controller! 
+[WARN] [1755423523.694909543]: Low quality GPS
+[WARN] [1755423523.695033689]: GPS timeout
+[INFO] [1755423523.773043227]: MowingBehavior: (MOW) Progress: 1193/75598
+[WARN] [1755423524.157336870]: >>> got ubx packet with invalid checksum
+[WARN] [1755423524.694910094]: Low quality GPS
+[WARN] [1755423525.194902985]: GPS timeout
+[WARN] [1755423525.694927792]: Low quality GPS
+[WARN] [1755423526.144823440]: >>> got ubx packet with invalid checksum
+[WARN] [1755423526.194906775]: GPS timeout
+[WARN] [1755423526.467690310]: No velocity command received from controller! 
+[WARN] [1755423527.194905989]: Low quality GPS
+[WARN] [1755423527.195032450]: GPS timeout
+[WARN] [1755423528.194919813]: Low quality GPS
+[WARN] [1755423528.195238678]: GPS timeout
+[WARN] [1755423528.418063281]: The controller has been aborted after it exceeded the patience time
+[INFO] [1755423528.465436943]: MowingBehavior: (MOW)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[INFO] [1755423528.465546848]: >> MowingBehavior: (MOW) PlannerGetProgress currentMowingPathIndex = 1193 of 75598
+[INFO] [1755423528.465596255]: >>> State: Aborted <<<
+[INFO] [1755423528.465636550]: MowingBehavior: (MOW) PAUSED due to MBF Error at 1193
+[INFO] [1755423528.469011067]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1755423528.470701150]: successfully registered actions for mower_logic:mowing
+[INFO] [1755423528.478574443]: MowingBehavior: PAUSED (2.3555e-05s) (waiting for GPS)
+[INFO] [1755423529.478869992]: MowingBehavior: PAUSED (1.00033s) (waiting for GPS)
+[WARN] [1755423529.694905829]: Low quality GPS
+[WARN] [1755423529.695234156]: GPS timeout
+[INFO] [1755423530.479142243]: MowingBehavior: PAUSED (2.0006s) (waiting for GPS)
+[WARN] [1755423530.694961850]: Low quality GPS
+[WARN] [1755423530.695396251]: GPS timeout
+[WARN] [1755423531.138924510]: >>> got ubx packet with invalid checksum
+[INFO] [1755423531.479424437]: MowingBehavior: PAUSED (3.00088s) (waiting for GPS)
+

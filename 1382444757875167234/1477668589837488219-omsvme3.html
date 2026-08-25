@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenMower Map Editor Pro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .toolbar {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 1150px;
+        }
+        .toolbar-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .toolbar-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .file-group {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            color: #555;
+            gap: 5px;
+        }
+        .custom-file-upload {
+            display: inline-flex; align-items: center; justify-content: center;
+            background-color: #007bff; color: white; border-radius: 5px;
+            padding: 8px 12px; cursor: pointer; font-size: 13px; font-weight: 600;
+            transition: background 0.2s;
+        }
+        .custom-file-upload:hover { background-color: #0056b3; }
+        input[type="file"] { display: none; }
+        .filename-display { font-size: 11px; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; }
+        
+        .btn-group {
+            display: flex; gap: 8px; border-left: 2px solid #eee; padding-left: 15px; align-items: center;
+        }
+        button {
+            background-color: #6c757d; color: white; border: none; padding: 8px 12px;
+            border-radius: 5px; cursor: pointer; font-size: 13px; font-weight: 600;
+            transition: background 0.2s; display: flex; align-items: center; gap: 5px;
+        }
+        button:hover { background-color: #5a6268; }
+        button:disabled { background-color: #ccc; cursor: not-allowed; }
+        
+        #downloadBtn { background-color: #28a745; font-size: 14px; padding: 10px 15px; }
+        #downloadBtn:hover { background-color: #218838; }
+        #undoBtn, #redoBtn { background-color: #fd7e14; }
+        #undoBtn:hover, #redoBtn:hover { background-color: #e86e04; }
+        
+        .mode-btn { background-color: #6f42c1; }
+        .mode-btn:hover { background-color: #59339d; }
+        
+        .action-btn { background-color: #17a2b8; }
+        .action-btn:hover { background-color: #138496; }
+
+        .add-area-btn { background-color: #007bff; }
+        .add-nav-btn { background-color: #6c757d; }
+        .add-obs-btn { background-color: #dc3545; }
+        .danger-btn { background-color: #dc3545; }
+        .danger-btn:hover { background-color: #c82333; }
+
+        select {
+            padding: 7px; border-radius: 5px; border: 1px solid #ccc; font-size: 13px;
+            outline: none; max-width: 200px;
+        }
+        
+        .canvas-wrapper {
+            position: relative; width: 1150px; height: 700px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;
+            background-color: white;
+        }
+        canvas {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 10; cursor: crosshair; background-color: white;
+        }
+        iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1; border: none; pointer-events: none; display: none;
+        }
+        .transparent-bg { background-color: transparent !important; }
+        .mode-bg { border: 3px solid #dc3545 !important; }
+
+        .mode-indicator { font-weight: bold; color: #dc3545; margin-bottom: 10px; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <!-- ROW 1: Data File Loading & Saving -->
+        <div class="toolbar-row">
+            <div class="file-group">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <label class="custom-file-upload">
+                        <input type="file" id="jsonInput" accept=".json">
+                        📂 Open Map JSON
+                    </label>
+                    <span class="filename-display" id="jsonFileName">No map loaded</span>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button id="undoBtn" disabled>↩️ Undo</button>
+                <button id="redoBtn" disabled>↪️ Redo</button>
+            </div>
+            
+            <div class="btn-group" style="margin-left: auto;">
+                <button id="downloadBtn" disabled>💾 Save JSON As...</button>
+            </div>
+        </div>
+
+        <!-- ROW 2: Backgrounds (Image or Google Maps) -->
+        <div class="toolbar-row">
+            <div class="file-group">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <label class="custom-file-upload" style="background-color:#6f42c1;">
+                        <input type="file" id="imageInput" accept="image/*">
+                        🖼️ Image BG
+                    </label>
+                    <button class="action-btn" id="gmapBtn">🌍 Google Maps BG</button>
+                    <button class="danger-btn" id="clearBgBtn" style="display: none;">🗑️ Clear BG</button>
+                    <span class="filename-display" id="imgFileName">No background</span>
+                </div>
+            </div>
+
+            <!-- Controlli Sfondo Immagine -->
+            <div class="btn-group" id="imageControls" style="display: none;">
+                <button class="mode-btn" id="toggleModeBtn">🔄 Mode: Edit Map</button>
+                <button class="action-btn" id="exportSyncBtn" title="Export Image Position">💾 Export Sync</button>
+                <label class="custom-file-upload action-btn" style="padding:8px 12px; margin:0;" title="Import Image Position">
+                    <input type="file" id="importSyncInput" accept=".json">
+                    📂 Load Sync
+                </label>
+            </div>
+
+            <!-- Controlli Google Maps -->
+            <div class="btn-group" id="gmapControls" style="display: none;">
+                <button class="action-btn" id="toggleGmapInteractBtn">🖱️ Unlock Map (Enable Panning)</button>
+            </div>
+        </div>
+
+        <!-- ROW 3: Area Management & Editing Tools -->
+        <div class="toolbar-row">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <label style="font-size: 13px; font-weight: bold;">Active Area:</label>
+                <select id="areaSelector" disabled>
+                    <option value="-1">None</option>
+                </select>
+            </div>
+            
+            <div class="btn-group">
+                <button class="add-area-btn" id="addMowAreaBtn" disabled>➕ Mow Area</button>
+                <button class="add-nav-btn" id="addNavAreaBtn" disabled>🛤️ Nav Area</button>
+                <button class="add-obs-btn" id="addObsAreaBtn" disabled>🧱 Obstacle</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="action-btn" id="toggleRulerBtn">📏 Distances: OFF</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="action-btn" id="halveBtn" disabled>➖ Simplify</button>
+                <button class="action-btn" id="doubleBtn" disabled>➕ Subdivide</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="action-btn" id="lockAllBtn" disabled>🔒 Lock All</button>
+                <button class="action-btn" id="unlockAllBtn" disabled>🔓 Unlock All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mode-indicator" id="modeIndicator">⚠️ BACKGROUND EDIT MODE ACTIVE: Drag and Scroll to position the image.</div>
+    
+    <div class="canvas-wrapper">
+        <iframe id="gmapIframe" src=""></iframe>
+        <canvas id="mapCanvas" width="1150" height="700"></canvas>
+    </div>
+    
+    <div style="margin-top: 15px; color: #555; font-size: 13px; max-width: 1150px; text-align: center;">
+        🖱️ <strong>Move:</strong> Drag points. &nbsp;|&nbsp; ➕ <strong>Add:</strong> Double Click near a line. &nbsp;|&nbsp; ➖ <strong>Delete:</strong> Right Click. &nbsp;|&nbsp; 🧲 <strong>Lock:</strong> ALT + Click. &nbsp;|&nbsp; 🧭 <strong>Heading:</strong> SHIFT + Drag House.
+    </div>
+
+    <script>
+        const canvas = document.getElementById('mapCanvas');
+        const ctx = canvas.getContext('2d');
+        const gmapIframe = document.getElementById('gmapIframe');
+        
+        // Inputs
+        const jsonInput = document.getElementById('jsonInput');
+        const imageInput = document.getElementById('imageInput');
+        const importSyncInput = document.getElementById('importSyncInput');
+        
+        // Buttons
+        const downloadBtn = document.getElementById('downloadBtn');
+        const halveBtn = document.getElementById('halveBtn');
+        const doubleBtn = document.getElementById('doubleBtn');
+        const lockAllBtn = document.getElementById('lockAllBtn');
+        const unlockAllBtn = document.getElementById('unlockAllBtn');
+        const undoBtn = document.getElementById('undoBtn');
+        const redoBtn = document.getElementById('redoBtn');
+        const toggleModeBtn = document.getElementById('toggleModeBtn');
+        const exportSyncBtn = document.getElementById('exportSyncBtn');
+        const toggleRulerBtn = document.getElementById('toggleRulerBtn');
+        const addMowAreaBtn = document.getElementById('addMowAreaBtn');
+        const addNavAreaBtn = document.getElementById('addNavAreaBtn');
+        const addObsAreaBtn = document.getElementById('addObsAreaBtn');
+        const clearBgBtn = document.getElementById('clearBgBtn');
+        const gmapBtn = document.getElementById('gmapBtn');
+        const toggleGmapInteractBtn = document.getElementById('toggleGmapInteractBtn');
+        
+        // UI Elements
+        const areaSelector = document.getElementById('areaSelector');
+        const imageControls = document.getElementById('imageControls');
+        const gmapControls = document.getElementById('gmapControls');
+        const modeIndicator = document.getElementById('modeIndicator');
+
+        let mapData = null;
+        let historyStack =[];
+        let redoStack =[];
+        
+        // View settings
+        let scale = 1;
+        let offsetX = 0;
+        let offsetY = 0;
+        let showRuler = false;
+        
+        // Background Image settings
+        let bgImage = null;
+        let bgWorldX = 0, bgWorldY = 0, bgWorldW = 10, bgWorldH = 10;
+        
+        // Google Maps settings
+        let gmapActive = false;
+        let gmapUnlocked = false;
+
+        // Interaction states
+        let dragTarget = null;
+        let dragType = null; 
+        let lastMouse = {x: 0, y: 0};
+        let editMode = 'map'; 
+
+        // --- UNDO / REDO SYSTEM ---
+        function saveState() {
+            if (!mapData) return;
+            historyStack.push(JSON.stringify(mapData));
+            if (historyStack.length > 50) historyStack.shift();
+            redoStack =[]; 
+            updateUndoRedoUI();
+        }
+
+        function updateUndoRedoUI() {
+            undoBtn.disabled = historyStack.length === 0;
+            redoBtn.disabled = redoStack.length === 0;
+        }
+
+        undoBtn.addEventListener('click', () => {
+            if (historyStack.length > 0) {
+                redoStack.push(JSON.stringify(mapData));
+                mapData = JSON.parse(historyStack.pop());
+                updateUndoRedoUI();
+                refreshAreaSelector();
+                draw();
+            }
+        });
+
+        redoBtn.addEventListener('click', () => {
+            if (redoStack.length > 0) {
+                historyStack.push(JSON.stringify(mapData));
+                mapData = JSON.parse(redoStack.pop());
+                updateUndoRedoUI();
+                refreshAreaSelector();
+                draw();
+            }
+        });
+
+        // --- AREA MANAGEMENT ---
+        function refreshAreaSelector() {
+            areaSelector.innerHTML = '';
+            if (!mapData || !mapData.areas) {
+                areaSelector.disabled = true; return;
+            }
+            areaSelector.disabled = false;
+            mapData.areas.forEach((area, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                const type = (area.properties && area.properties.type) ? area.properties.type : "unknown";
+                opt.innerText = `Area ${index + 1} (${type})`;
+                areaSelector.appendChild(opt);
+            });
+        }
+
+        function createNewArea(type) {
+            if (!mapData) return;
+            saveState();
+            const centerWorld = toWorld(canvas.width/2, canvas.height/2);
+            const newArea = {
+                properties: { type: type },
+                outline:[
+                    { x: centerWorld.x - 1, y: centerWorld.y - 1 },
+                    { x: centerWorld.x + 1, y: centerWorld.y - 1 },
+                    { x: centerWorld.x + 1, y: centerWorld.y + 1 },
+                    { x: centerWorld.x - 1, y: centerWorld.y + 1 },
+                    { x: centerWorld.x - 1, y: centerWorld.y - 1 }
+                ]
+            };
+            if (!mapData.areas) mapData.areas =[];
+            mapData.areas.push(newArea);
+            refreshAreaSelector();
+            areaSelector.value = mapData.areas.length - 1; 
+            draw();
+        }
+
+        addMowAreaBtn.addEventListener('click', () => createNewArea("mow"));
+        addNavAreaBtn.addEventListener('click', () => createNewArea("nav"));
+        addObsAreaBtn.addEventListener('click', () => createNewArea("obstacle"));
+        areaSelector.addEventListener('change', draw);
+
+        // --- BACKGROUND MANAGEMENT (IMAGE & GMAP) ---
+        function resetBackgrounds() {
+            bgImage = null;
+            gmapActive = false;
+            gmapIframe.src = "";
+            gmapIframe.style.display = 'none';
+            imageControls.style.display = 'none';
+            gmapControls.style.display = 'none';
+            clearBgBtn.style.display = 'none';
+            canvas.classList.remove('transparent-bg');
+            document.getElementById('imgFileName').innerText = "No background";
+            editMode = 'map';
+            canvas.classList.remove('mode-bg');
+            modeIndicator.style.display = 'none';
+            
+            gmapUnlocked = false;
+            canvas.style.pointerEvents = 'auto';
+            gmapIframe.style.pointerEvents = 'none';
+            toggleGmapInteractBtn.innerText = "🖱️ Unlock Map (Enable Panning)";
+            toggleGmapInteractBtn.classList.replace('danger-btn', 'action-btn');
+        }
+
+        clearBgBtn.addEventListener('click', () => {
+            resetBackgrounds();
+            imageInput.value = "";
+            draw();
+        });
+
+        imageInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            resetBackgrounds();
+            document.getElementById('imgFileName').innerText = file.name;
+
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                bgImage = new Image();
+                bgImage.onload = () => {
+                    const centerWorld = toWorld(canvas.width / 2, canvas.height / 2);
+                    bgWorldW = 30; 
+                    bgWorldH = 30 * (bgImage.height / bgImage.width);
+                    bgWorldX = centerWorld.x - bgWorldW / 2;
+                    bgWorldY = centerWorld.y + bgWorldH / 2; 
+                    
+                    imageControls.style.display = 'flex';
+                    clearBgBtn.style.display = 'inline-block';
+                    draw();
+                };
+                bgImage.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        gmapBtn.addEventListener('click', () => {
+            const addr = prompt("Enter an Address or GPS Coordinates to load Google Maps:\n(e.g., 'Colosseum, Rome' or '41.8902, 12.4922')");
+            if (addr && addr.trim() !== "") {
+                resetBackgrounds();
+                document.getElementById('imgFileName').innerText = "Google Maps";
+                gmapIframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(addr)}&t=k&z=19&output=embed`;
+                gmapIframe.style.display = 'block';
+                canvas.classList.add('transparent-bg');
+                gmapActive = true;
+                gmapControls.style.display = 'flex';
+                clearBgBtn.style.display = 'inline-block';
+                draw();
+            }
+        });
+
+        toggleGmapInteractBtn.addEventListener('click', () => {
+            gmapUnlocked = !gmapUnlocked;
+            if (gmapUnlocked) {
+                canvas.style.pointerEvents = 'none';
+                gmapIframe.style.pointerEvents = 'auto';
+                toggleGmapInteractBtn.innerText = "🔒 Lock Map (Enable Editor)";
+                toggleGmapInteractBtn.classList.replace('action-btn', 'danger-btn');
+            } else {
+                canvas.style.pointerEvents = 'auto';
+                gmapIframe.style.pointerEvents = 'none';
+                toggleGmapInteractBtn.innerText = "🖱️ Unlock Map (Enable Panning)";
+                toggleGmapInteractBtn.classList.replace('danger-btn', 'action-btn');
+            }
+        });
+
+        exportSyncBtn.addEventListener('click', () => {
+            const syncData = { x: bgWorldX, y: bgWorldY, w: bgWorldW, h: bgWorldH };
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(syncData, null, 2));
+            const dl = document.createElement('a');
+            dl.setAttribute("href", dataStr);
+            dl.setAttribute("download", "bg_calibration.json");
+            document.body.appendChild(dl); dl.click(); dl.remove();
+        });
+
+        importSyncInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    const syncData = JSON.parse(event.target.result);
+                    bgWorldX = syncData.x; bgWorldY = syncData.y;
+                    bgWorldW = syncData.w; bgWorldH = syncData.h;
+                    draw();
+                } catch(err) { alert("Invalid Sync file."); }
+            };
+            reader.readAsText(file);
+        });
+
+        // --- LOAD/SAVE JSON MAP ---
+        jsonInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            document.getElementById('jsonFileName').innerText = file.name;
+            
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    mapData = JSON.parse(event.target.result);
+                    if (mapData.areas) {
+                        mapData.areas.forEach(area => {
+                            if (area.properties && area.properties._locked_indices) {
+                                area.properties._locked_indices.forEach(idx => {
+                                    if (area.outline[idx]) area.outline[idx]._locked = true;
+                                });
+                            }
+                        });
+                    }
+                    historyStack =[]; redoStack =[]; updateUndoRedoUI();
+                    refreshAreaSelector();
+                    autoFit();
+                    draw();
+                    
+                    downloadBtn.disabled = false; halveBtn.disabled = false; doubleBtn.disabled = false;
+                    lockAllBtn.disabled = false; unlockAllBtn.disabled = false;
+                    addMowAreaBtn.disabled = false; addNavAreaBtn.disabled = false; addObsAreaBtn.disabled = false;
+                } catch (err) { alert("Error parsing JSON file!"); }
+            };
+            reader.readAsText(file);
+        });
+
+        downloadBtn.addEventListener('click', async () => {
+            if (!mapData) return;
+            const exportData = JSON.parse(JSON.stringify(mapData));
+            
+            exportData.areas.forEach((area, areaIndex) => {
+                let lockedIndices =[];
+                area.outline.forEach((p, i) => {
+                    const originalPoint = mapData.areas[areaIndex].outline[i];
+                    if (originalPoint._locked) lockedIndices.push(i);
+                    delete p._locked; 
+                });
+
+                if (lockedIndices.length > 0) {
+                    area.properties = area.properties || {};
+                    area.properties._locked_indices = lockedIndices;
+                } else if (area.properties && area.properties._locked_indices) {
+                    delete area.properties._locked_indices;
+                }
+
+                if (area.outline.length > 0) {
+                    const first = area.outline[0];
+                    const last = area.outline[area.outline.length - 1];
+                    if (first.x !== last.x || first.y !== last.y) {
+                        area.outline.push({x: first.x, y: first.y});
+                    }
+                }
+            });
+
+            const jsonString = JSON.stringify(exportData, null, 2);
+            
+            if (window.showSaveFilePicker) {
+                try {
+                    const handle = await window.showSaveFilePicker({
+                        suggestedName: 'openmower_map_edited.json',
+                        types:[{
+                            description: 'JSON File',
+                            accept: {'application/json': ['.json']},
+                        }],
+                    });
+                    const writable = await handle.createWritable();
+                    await writable.write(new Blob([jsonString], {type: 'application/json'}));
+                    await writable.close();
+                    return; 
+                } catch (err) {
+                    return;
+                }
+            }
+            
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(jsonString);
+            const dl = document.createElement('a');
+            dl.setAttribute("href", dataStr);
+            dl.setAttribute("download", "openmower_map_edited.json");
+            document.body.appendChild(dl);
+            dl.click();
+            dl.remove();
+        });
+
+        // --- TOGGLES ---
+        toggleModeBtn.addEventListener('click', () => {
+            if (editMode === 'map') {
+                editMode = 'background';
+                toggleModeBtn.innerText = "🔄 Mode: Edit Background";
+                toggleModeBtn.style.backgroundColor = "#dc3545";
+                canvas.classList.add('mode-bg');
+                modeIndicator.style.display = 'block';
+            } else {
+                editMode = 'map';
+                toggleModeBtn.innerText = "🔄 Mode: Edit Map";
+                toggleModeBtn.style.backgroundColor = "#6f42c1";
+                canvas.classList.remove('mode-bg');
+                modeIndicator.style.display = 'none';
+            }
+            draw();
+        });
+
+        toggleRulerBtn.addEventListener('click', () => {
+            showRuler = !showRuler;
+            toggleRulerBtn.innerText = showRuler ? "📏 Distances: ON" : "📏 Distances: OFF";
+            toggleRulerBtn.style.backgroundColor = showRuler ? "#28a745" : "#17a2b8";
+            draw();
+        });
+
+        // --- MASS MANIPULATION ---
+        halveBtn.addEventListener('click', () => {
+            if (!mapData || !mapData.areas) return;
+            saveState();
+            const selIdx = parseInt(areaSelector.value);
+            mapData.areas.forEach((area, i) => {
+                if (selIdx !== -1 && i !== selIdx) return;
+                const out = area.outline;
+                if (out.length <= 4) return; 
+                let newOut =[];
+                for (let j = 0; j < out.length; j++) {
+                    if (j === 0 || j === out.length - 1 || out[j]._locked || j % 2 === 0) newOut.push(out[j]);
+                }
+                area.outline = newOut;
+            });
+            draw();
+        });
+
+        doubleBtn.addEventListener('click', () => {
+            if (!mapData || !mapData.areas) return;
+            saveState();
+            const selIdx = parseInt(areaSelector.value);
+            mapData.areas.forEach((area, i) => {
+                if (selIdx !== -1 && i !== selIdx) return;
+                const out = area.outline;
+                let newOut =[];
+                for (let j = 0; j < out.length - 1; j++) {
+                    newOut.push(out[j]); 
+                    let midX = (out[j].x + out[j+1].x) / 2;
+                    let midY = (out[j].y + out[j+1].y) / 2;
+                    newOut.push({ x: midX, y: midY }); 
+                }
+                if (out.length > 0) newOut.push(out[out.length - 1]); 
+                area.outline = newOut;
+            });
+            draw();
+        });
+
+        lockAllBtn.addEventListener('click', () => {
+            if (!mapData || !mapData.areas) return;
+            saveState();
+            mapData.areas.forEach(area => area.outline.forEach(p => p._locked = true));
+            draw();
+        });
+
+        unlockAllBtn.addEventListener('click', () => {
+            if (!mapData || !mapData.areas) return;
+            saveState();
+            mapData.areas.forEach(area => area.outline.forEach(p => p._locked = false));
+            draw();
+        });
+
+        // --- GRAPHICS & MATH ---
+        function toScreen(x, y) {
+            return {
+                cx: (x - offsetX) * scale + canvas.width / 2,
+                cy: -(y - offsetY) * scale + canvas.height / 2
+            };
+        }
+
+        function toWorld(cx, cy) {
+            return {
+                x: (cx - canvas.width / 2) / scale + offsetX,
+                y: -(cy - canvas.height / 2) / scale + offsetY
+            };
+        }
+
+        function autoFit() {
+            let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+            const addPoint = (x, y) => {
+                if (x < minX) minX = x; if (x > maxX) maxX = x;
+                if (y < minY) minY = y; if (y > maxY) maxY = y;
+            };
+
+            if (mapData.areas) mapData.areas.forEach(area => area.outline.forEach(p => addPoint(p.x, p.y)));
+            if (mapData.docking_stations) mapData.docking_stations.forEach(ds => addPoint(ds.position.x, ds.position.y));
+
+            const padding = 60;
+            const widthWorld = maxX - minX; const heightWorld = maxY - minY;
+
+            if (widthWorld <= 0 || heightWorld <= 0) return;
+            scale = Math.min((canvas.width - padding*2) / widthWorld, (canvas.height - padding*2) / heightWorld);
+            offsetX = minX + widthWorld / 2; offsetY = minY + heightWorld / 2;
+        }
+
+        function drawGrid() {
+            const tl = toWorld(0, 0); const br = toWorld(canvas.width, canvas.height); 
+            const minX = Math.floor(Math.min(tl.x, br.x)); const maxX = Math.ceil(Math.max(tl.x, br.x));
+            const minY = Math.floor(Math.min(tl.y, br.y)); const maxY = Math.ceil(Math.max(tl.y, br.y));
+
+            const step = 1; 
+
+            const lineCol = gmapActive ? "rgba(255, 255, 255, 0.4)" : "rgba(200, 200, 200, 0.3)";
+            const axisCol = gmapActive ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.4)";
+
+            for (let x = minX; x <= maxX; x += step) {
+                const sp = toScreen(x, 0);
+                ctx.beginPath(); ctx.moveTo(sp.cx, 0); ctx.lineTo(sp.cx, canvas.height);
+                ctx.strokeStyle = x === 0 ? axisCol : lineCol;
+                ctx.lineWidth = x === 0 ? 2 : 1; ctx.stroke();
+            }
+            for (let y = minY; y <= maxY; y += step) {
+                const sp = toScreen(0, y);
+                ctx.beginPath(); ctx.moveTo(0, sp.cy); ctx.lineTo(canvas.width, sp.cy);
+                ctx.strokeStyle = y === 0 ? axisCol : lineCol;
+                ctx.lineWidth = y === 0 ? 2 : 1; ctx.stroke();
+            }
+
+            ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
+            ctx.fillRect(0, 0, canvas.width, 22);
+            ctx.fillRect(0, 0, 30, canvas.height);
+            ctx.strokeStyle = "#ccc"; ctx.lineWidth = 1;
+            ctx.strokeRect(0, 0, canvas.width, 22); ctx.strokeRect(0, 0, 30, canvas.height);
+
+            ctx.fillStyle = "black"; ctx.font = "11px Arial"; ctx.textAlign = "center";
+            for (let x = minX; x <= maxX; x += step) {
+                const sp = toScreen(x, 0);
+                if(sp.cx > 35) { ctx.fillText(x, sp.cx, 15); ctx.fillRect(sp.cx, 22, 1, -5); }
+            }
+            ctx.textAlign = "left";
+            for (let y = minY; y <= maxY; y += step) {
+                const sp = toScreen(0, y);
+                if(sp.cy > 25) { ctx.fillText(y, 2, sp.cy + 4); ctx.fillRect(30, sp.cy, -5, 1); }
+            }
+
+            const originPt = toScreen(0, 0);
+            ctx.beginPath(); ctx.arc(originPt.cx, originPt.cy, 6, 0, Math.PI * 2);
+            ctx.fillStyle = gmapActive ? "white" : "rgba(0, 0, 0, 0.6)"; ctx.fill();
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            if (bgImage) {
+                ctx.globalAlpha = (editMode === 'background') ? 0.8 : 0.5; 
+                const screenTL = toScreen(bgWorldX, bgWorldY);
+                ctx.drawImage(bgImage, screenTL.cx, screenTL.cy, bgWorldW * scale, bgWorldH * scale);
+                if (editMode === 'background') {
+                    ctx.strokeStyle = "#dc3545"; ctx.lineWidth = 3;
+                    ctx.strokeRect(screenTL.cx, screenTL.cy, bgWorldW * scale, bgWorldH * scale);
+                }
+                ctx.globalAlpha = 1.0;
+            }
+
+            drawGrid();
+
+            if (!mapData) return;
+
+            const selectedAreaIndex = parseInt(areaSelector.value);
+
+            if (mapData.areas) {
+                mapData.areas.forEach((area, index) => {
+                    if (area.outline.length === 0) return;
+                    
+                    const isSelected = (index === selectedAreaIndex);
+                    const isObstacle = (area.properties && area.properties.type === "obstacle");
+                    const isNav = (area.properties && area.properties.type === "nav");
+
+                    ctx.beginPath();
+                    area.outline.forEach((p, i) => {
+                        const sp = toScreen(p.x, p.y);
+                        if (i === 0) ctx.moveTo(sp.cx, sp.cy); else ctx.lineTo(sp.cx, sp.cy);
+                    });
+                    
+                    // Colori personalizzati in base al tipo di area
+                    if (isObstacle) {
+                        ctx.fillStyle = isSelected ? "rgba(220, 53, 69, 0.4)" : "rgba(220, 53, 69, 0.15)";
+                        ctx.strokeStyle = isSelected ? "#c82333" : "#dc3545";
+                    } else if (isNav) {
+                        ctx.fillStyle = isSelected ? "rgba(200, 200, 200, 0.6)" : "rgba(200, 200, 200, 0.3)";
+                        ctx.strokeStyle = isSelected ? "#6c757d" : "#adb5bd";
+                    } else { // type: mow
+                        ctx.fillStyle = isSelected ? "rgba(0, 123, 255, 0.35)" : "rgba(0, 123, 255, 0.15)";
+                        ctx.strokeStyle = isSelected ? "#0056b3" : "#007bff";
+                    }
+                    
+                    ctx.fill(); ctx.lineWidth = isSelected ? 3 : 1.5; ctx.stroke();
+
+                    if (showRuler && isSelected) {
+                        ctx.font = "bold 11px Arial";
+                        for (let i = 0; i < area.outline.length - 1; i++) {
+                            const p1 = area.outline[i], p2 = area.outline[i+1];
+                            const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y).toFixed(2) + "m";
+                            const sp1 = toScreen(p1.x, p1.y), sp2 = toScreen(p2.x, p2.y);
+                            
+                            let angle = Math.atan2(sp2.cy - sp1.cy, sp2.cx - sp1.cx);
+                            if (angle > Math.PI/2 || angle < -Math.PI/2) angle += Math.PI; 
+                            
+                            ctx.save();
+                            ctx.translate((sp1.cx + sp2.cx)/2, (sp1.cy + sp2.cy)/2);
+                            ctx.rotate(angle);
+                            ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+                            ctx.fillRect(-20, -14, 40, 16);
+                            ctx.fillStyle = "#333"; ctx.textAlign = "center";
+                            ctx.fillText(dist, 0, -3);
+                            ctx.restore();
+                        }
+                    }
+
+                    // Colori dei punti vettoriali
+                    area.outline.forEach((p, i) => {
+                        if (i === area.outline.length - 1 && p.x === area.outline[0].x && p.y === area.outline[0].y) return;
+                        const sp = toScreen(p.x, p.y);
+                        ctx.beginPath();
+                        if (p._locked) {
+                            ctx.rect(sp.cx - 5, sp.cy - 5, 10, 10);
+                            ctx.fillStyle = "#ffc107"; ctx.fill();
+                            ctx.strokeStyle = "#d39e00"; ctx.lineWidth = 2;
+                        } else {
+                            ctx.arc(sp.cx, sp.cy, isSelected ? 5 : 3, 0, Math.PI * 2);
+                            if (isObstacle) ctx.fillStyle = "#dc3545";
+                            else if (isNav) ctx.fillStyle = "#6c757d"; // Punti grigi per area Nav
+                            else ctx.fillStyle = "#0056b3"; // Punti blu per area Mow
+                            ctx.fill();
+                            ctx.strokeStyle = "white"; ctx.lineWidth = 1;
+                        }
+                        ctx.stroke();
+                    });
+                });
+            }
+
+            if (mapData.docking_stations) {
+                mapData.docking_stations.forEach(ds => {
+                    const sp = toScreen(ds.position.x, ds.position.y);
+                    const hRad = ds.heading || 0;
+                    
+                    // Lunghezza linea direzione
+                    const hx = sp.cx + Math.cos(hRad) * 45; 
+                    const hy = sp.cy - Math.sin(hRad) * 45; 
+                    
+                    // 1. Linea Heading
+                    ctx.beginPath(); ctx.moveTo(sp.cx, sp.cy); ctx.lineTo(hx, hy);
+                    ctx.strokeStyle = "#28a745"; ctx.lineWidth = 3; ctx.stroke();
+                    
+                    // 2. Punta Freccia (Arrowhead)
+                    let angle = Math.atan2(hy - sp.cy, hx - sp.cx);
+                    ctx.save();
+                    ctx.translate(hx, hy);
+                    ctx.rotate(angle);
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);     // Punta in avanti
+                    ctx.lineTo(-12, -7);  // Spigolo basso
+                    ctx.lineTo(-8, 0);    // Taglio interno (stile freccia a delta)
+                    ctx.lineTo(-12, 7);   // Spigolo alto
+                    ctx.closePath();
+                    ctx.fillStyle = "#28a745";
+                    ctx.fill();
+                    ctx.restore();
+
+                    // 3. Icona Casetta Rossa (Dock)
+                    ctx.save();
+                    ctx.translate(sp.cx, sp.cy);
+                    ctx.beginPath();
+                    ctx.moveTo(0, -10);  // Tetto punta
+                    ctx.lineTo(9, -1);   // Tetto dx
+                    ctx.lineTo(7, -1);
+                    ctx.lineTo(7, 8);    // Muro dx
+                    ctx.lineTo(-7, 8);   // Muro sx
+                    ctx.lineTo(-7, -1);
+                    ctx.lineTo(-9, -1);  // Tetto sx
+                    ctx.closePath();
+                    ctx.fillStyle = "#dc3545";
+                    ctx.fill();
+                    ctx.strokeStyle = "white";
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.restore();
+
+                    // Etichetta Dock
+                    ctx.fillStyle = "black"; ctx.font = "bold 12px Arial";
+                    ctx.fillStyle = "rgba(255,255,255,0.8)"; ctx.fillRect(sp.cx + 10, sp.cy - 8, 35, 15);
+                    ctx.fillStyle = "black"; ctx.fillText("Dock", sp.cx + 12, sp.cy + 4);
+                });
+            }
+        }
+
+        // --- INTERACTION ---
+        canvas.addEventListener('contextmenu', e => e.preventDefault());
+
+        canvas.addEventListener('mousedown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const cx = e.clientX - rect.left; const cy = e.clientY - rect.top;
+            lastMouse = {x: cx, y: cy};
+
+            if (editMode === 'background') { dragType = 'pan_bg'; return; }
+            if (!mapData) return;
+            const detectionRadius = 12;
+
+            if (e.button === 2) {
+                for (let a = 0; a < mapData.areas.length; a++) {
+                    const outline = mapData.areas[a].outline;
+                    for (let p = 0; p < outline.length; p++) {
+                        const sp = toScreen(outline[p].x, outline[p].y);
+                        if (Math.hypot(sp.cx - cx, sp.cy - cy) < detectionRadius) {
+                            if (outline[p]._locked) return; 
+                            saveState();
+                            outline.splice(p, 1);
+                            areaSelector.value = a; 
+                            draw();
+                            return;
+                        }
+                    }
+                }
+                return;
+            }
+            
+            if (mapData.docking_stations) {
+                for (let i = 0; i < mapData.docking_stations.length; i++) {
+                    const ds = mapData.docking_stations[i];
+                    const sp = toScreen(ds.position.x, ds.position.y);
+                    if (Math.hypot(sp.cx - cx, sp.cy - cy) < detectionRadius) {
+                        saveState();
+                        dragTarget = ds; dragType = e.shiftKey ? 'heading' : 'dock_pos'; return;
+                    }
+                }
+            }
+
+            if (mapData.areas) {
+                for (let a = 0; a < mapData.areas.length; a++) {
+                    const outline = mapData.areas[a].outline;
+                    for (let p = 0; p < outline.length; p++) {
+                        const pt = outline[p]; const sp = toScreen(pt.x, pt.y);
+                        if (Math.hypot(sp.cx - cx, sp.cy - cy) < detectionRadius) {
+                            areaSelector.value = a; 
+                            if (e.altKey) { saveState(); pt._locked = !pt._locked; draw(); return; }
+                            if (pt._locked) return; 
+                            saveState(); dragTarget = pt; dragType = 'point'; return;
+                        }
+                    }
+                }
+            }
+
+            dragType = 'pan';
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!dragType) return;
+            const rect = canvas.getBoundingClientRect();
+            const cx = e.clientX - rect.left; const cy = e.clientY - rect.top;
+
+            if (dragType === 'pan_bg') {
+                bgWorldX += (cx - lastMouse.x) / scale; bgWorldY -= (cy - lastMouse.y) / scale;
+                lastMouse = {x: cx, y: cy};
+            }
+            else if (dragType === 'pan' && mapData) {
+                offsetX -= (cx - lastMouse.x) / scale; offsetY += (cy - lastMouse.y) / scale;
+                lastMouse = {x: cx, y: cy};
+            } 
+            else if (dragType === 'heading' && dragTarget) {
+                const sp = toScreen(dragTarget.position.x, dragTarget.position.y);
+                dragTarget.heading = Math.atan2(-(cy - sp.cy), cx - sp.cx);
+            } 
+            else if (dragType === 'point' && dragTarget) {
+                const nw = toWorld(cx, cy); dragTarget.x = nw.x; dragTarget.y = nw.y;
+            }
+            else if (dragType === 'dock_pos' && dragTarget) {
+                const nw = toWorld(cx, cy); dragTarget.position.x = nw.x; dragTarget.position.y = nw.y;
+            }
+            draw();
+        });
+
+        window.addEventListener('mouseup', () => { dragTarget = null; dragType = null; });
+
+        canvas.addEventListener('dblclick', (e) => {
+            if (editMode === 'background' || !mapData || !mapData.areas) return;
+            const rect = canvas.getBoundingClientRect();
+            const cx = e.clientX - rect.left; const cy = e.clientY - rect.top;
+            const nw = toWorld(cx, cy);
+
+            let bestInsertIndex = -1; let targetArea = null; let minDistance = 20;
+
+            mapData.areas.forEach((area, aIndex) => {
+                const outline = area.outline;
+                for (let i = 0; i < outline.length; i++) {
+                    const sp1 = toScreen(outline[i].x, outline[i].y);
+                    const sp2 = toScreen(outline[(i+1)%outline.length].x, outline[(i+1)%outline.length].y);
+                    
+                    const l2 = (sp2.cx - sp1.cx)**2 + (sp2.cy - sp1.cy)**2;
+                    let t = ((cx - sp1.cx)*(sp2.cx - sp1.cx) + (cy - sp1.cy)*(sp2.cy - sp1.cy)) / (l2 || 1);
+                    t = Math.max(0, Math.min(1, t));
+                    const dist = Math.hypot(cx - (sp1.cx + t*(sp2.cx - sp1.cx)), cy - (sp1.cy + t*(sp2.cy - sp1.cy)));
+
+                    if (dist < minDistance) {
+                        minDistance = dist; bestInsertIndex = i + 1; targetArea = area;
+                        areaSelector.value = aIndex; 
+                    }
+                }
+            });
+
+            if (targetArea && bestInsertIndex !== -1) {
+                saveState();
+                targetArea.outline.splice(bestInsertIndex, 0, {x: nw.x, y: nw.y});
+                draw();
+            }
+        });
+
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const cx = e.clientX - rect.left; const cy = e.clientY - rect.top;
+
+            if (editMode === 'background' && bgImage) {
+                const wm = toWorld(cx, cy); const zoomBg = e.deltaY < 0 ? 1.05 : (1/1.05);
+                const fx = (wm.x - bgWorldX)/bgWorldW; const fy = (bgWorldY - wm.y)/bgWorldH; 
+                bgWorldW *= zoomBg; bgWorldH *= zoomBg;
+                bgWorldX = wm.x - fx*bgWorldW; bgWorldY = wm.y + fy*bgWorldH;
+                draw(); return;
+            }
+
+            if (!mapData) return;
+            const wBefore = toWorld(cx, cy);
+            scale *= (e.deltaY < 0 ? 1.05 : (1/1.05));
+            offsetX = wBefore.x - (cx - canvas.width/2)/scale;
+            offsetY = wBefore.y + (cy - canvas.height/2)/scale;
+            draw();
+        });
+
+    </script>
+</body>
+</html>

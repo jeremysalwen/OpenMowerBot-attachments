@@ -1,0 +1,194 @@
+ubuntu@OpenMower:~/open_mower_ros$ rospack rosdep open_mower
+[rospack] Error: package 'open_mower' depends on non-existent package 'ublox' and rosdep claims that it is not a system dependency. Check the ROS_PACKAGE_PATH or try calling 'rosdep update'
+[rospack] Error: package 'open_mower' depends on non-existent package 'imu_tools' and rosdep claims that it is not a system dependency. Check the ROS_PACKAGE_PATH or try calling 'rosdep update'
+name: apr
+name: boost
+name: bzip2
+name: cmake
+name: dvipng
+name: eigen
+name: google-mock
+name: graphviz
+name: gtest
+name: joystick
+name: libboost-chrono-dev
+name: libboost-date-time-dev
+name: libboost-dev
+name: libboost-filesystem-dev
+name: libboost-program-options-dev
+name: libboost-regex-dev
+name: libboost-system-dev
+name: libboost-thread-dev
+name: libconsole-bridge-dev
+name: libgpgme-dev
+name: libopencv-dev
+name: liborocos-kdl-dev
+name: libssl-dev
+name: log4cxx
+name: lz4
+name: netpbm
+name: opengl
+name: pkg-config
+name: python
+name: python-argparse
+name: python-catkin-pkg
+name: python-catkin-pkg-modules
+name: python-coverage
+name: python-defusedxml
+name: python-empy
+name: python-gnupg
+name: python-imaging
+name: python-mock
+name: python-netifaces
+name: python-nose
+name: python-numpy
+name: python-paramiko
+name: python-pycryptodome
+name: python-qt5-bindings
+name: python-rosdep-modules
+name: python-rospkg
+name: python-rospkg-modules
+name: python-setuptools
+name: python-yaml
+name: python3
+name: python3-catkin-pkg
+name: python3-catkin-pkg-modules
+name: python3-coverage
+name: python3-defusedxml
+name: python3-empy
+name: python3-gnupg
+name: python3-mock
+name: python3-netifaces
+name: python3-nose
+name: python3-numpy
+name: python3-opencv
+name: python3-paramiko
+name: python3-pil
+name: python3-pycryptodome
+name: python3-pykdl
+name: python3-qt5-bindings
+name: python3-rosdep-modules
+name: python3-rospkg
+name: python3-rospkg-modules
+name: python3-setuptools
+name: python3-yaml
+name: qt5-qmake
+name: qtbase5-dev
+name: suitesparse
+name: tango-icon-theme
+name: tinyxml2
+name: uuid
+ubuntu@OpenMower:~/open_mower_ros$ rospack depends open_mower
+[rospack] Error: package 'open_mower' depends on non-existent package 'ublox' and rosdep claims that it is not a system dependency. Check the ROS_PACKAGE_PATH or try calling 'rosdep update'
+[rospack] Error: package 'open_mower' depends on non-existent package 'imu_tools' and rosdep claims that it is not a system dependency. Check the ROS_PACKAGE_PATH or try calling 'rosdep update'
+actionlib
+actionlib_msgs
+angles
+base_local_planner
+bond
+bondcpp
+catkin
+clear_costmap_recovery
+control_msgs
+costmap_2d
+costmap_converter
+cpp_common
+cv_bridge
+diagnostic_msgs
+diagnostic_updater
+dynamic_reconfigure
+ftc_local_planner
+gencpp
+geneus
+genlisp
+genmsg
+gennodejs
+genpy
+geometry_msgs
+global_planner
+imu_filter_madgwick
+interactive_markers
+joy
+joy_teleop
+laser_geometry
+libg2o
+map_msgs
+mbf_abstract_core
+mbf_abstract_nav
+mbf_costmap_core
+mbf_costmap_nav
+mbf_msgs
+mbf_utility
+message_filters
+message_generation
+message_runtime
+mobile_robot_simulator
+move_base
+move_base_msgs
+mower_map
+mower_msgs
+mower_simulation
+nav_core
+nav_msgs
+navfn
+nodelet
+pluginlib
+python_qt_binding
+qt_gui
+ros_environment
+rosbag
+rosbag_migration_rule
+rosbag_storage
+rosbuild
+rosclean
+rosconsole
+roscpp
+roscpp_serialization
+roscpp_traits
+rosgraph
+rosgraph_msgs
+roslaunch
+roslib
+roslz4
+rosmaster
+rosmsg
+rosnode
+rosout
+rospack
+rosparam
+rospy
+rosservice
+rostest
+rostime
+rostopic
+rosunit
+roswtf
+rotate_recovery
+rqt_console
+rqt_gui
+rqt_gui_py
+rqt_logger_level
+rqt_py_common
+rqt_reconfigure
+sensor_msgs
+smclib
+std_msgs
+std_srvs
+teb_local_planner
+teleop_tools_msgs
+teleop_twist_joy
+tf
+tf2
+tf2_geometry_msgs
+tf2_msgs
+tf2_py
+tf2_ros
+topic_tools
+trajectory_msgs
+twist_mux
+twist_mux_msgs
+visualization_msgs
+voxel_grid
+xmlrpcpp
+ubuntu@OpenMower:~/open_mower_ros$ rosdep install --from-paths src --ignore-packages-from-source -s
+ubuntu@OpenMower:~/open_mower_ros$

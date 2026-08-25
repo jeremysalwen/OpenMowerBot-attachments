@@ -1,0 +1,134 @@
+openmower@openmower:~ $ sudo su -
+
+root@openmower:~# cd /home/openmower
+
+root@openmower:/home/openmower# ./fetch_and_upload_firmware.sh
+Fetching Firmware
+--2025-04-29 19:16:38--  https://github.com/ClemensElflein/OpenMower/releases/download/latest/firmware.zip
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/452327893/d06fad99-6388-4e11-aefc-9133669ff24a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250429%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250429T171638Z&X-Amz-Expires=300&X-Amz-Signature=d035a890ce1b23dc67d73823d022a8bd06762960439f27ad086bc0500545b3b3&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dfirmware.zip&response-content-type=application%2Foctet-stream [following]
+--2025-04-29 19:16:38--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/452327893/d06fad99-6388-4e11-aefc-9133669ff24a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250429%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250429T171638Z&X-Amz-Expires=300&X-Amz-Signature=d035a890ce1b23dc67d73823d022a8bd06762960439f27ad086bc0500545b3b3&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dfirmware.zip&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8583429 (8.2M) [application/octet-stream]
+Saving to: ‘firmware.zip’
+firmware.zip       100%[==============>]   8.19M  4.13MB/s    in 2.0s
+2025-04-29 19:16:41 (4.13 MB/s) - ‘firmware.zip’ saved [8583429/8583429]
+Archive:  firmware.zip
+   creating: firmware/
+   creating: firmware/0_11_X_WT901/
+  inflating: firmware/0_11_X_WT901/firmware.uf2
+  inflating: firmware/0_11_X_WT901/firmware.elf
+   creating: firmware/0_13_X/
+  inflating: firmware/0_13_X/firmware.uf2
+  inflating: firmware/0_13_X/firmware.elf
+   creating: firmware/0_11_X_MPU9250/
+  inflating: firmware/0_11_X_MPU9250/firmware.uf2
+  inflating: firmware/0_11_X_MPU9250/firmware.elf
+   creating: firmware/0_12_X_LSM6DSO/
+  inflating: firmware/0_12_X_LSM6DSO/firmware.uf2
+  inflating: firmware/0_12_X_LSM6DSO/firmware.elf
+   creating: firmware/0_10_X_WT901/
+  inflating: firmware/0_10_X_WT901/firmware.uf2
+  inflating: firmware/0_10_X_WT901/firmware.elf
+   creating: firmware/0_11_X_LSM6DSO/
+  inflating: firmware/0_11_X_LSM6DSO/firmware.uf2
+  inflating: firmware/0_11_X_LSM6DSO/firmware.elf
+   creating: firmware/0_9_X_WT901_INSTEAD_OF_SOUND/
+  inflating: firmware/0_9_X_WT901_INSTEAD_OF_SOUND/firmware.uf2
+  inflating: firmware/0_9_X_WT901_INSTEAD_OF_SOUND/firmware.elf
+   creating: firmware/0_10_X_MPU9250/
+  inflating: firmware/0_10_X_MPU9250/firmware.uf2
+  inflating: firmware/0_10_X_MPU9250/firmware.elf
+   creating: firmware/0_10_X_LSM6DSO/
+  inflating: firmware/0_10_X_LSM6DSO/firmware.uf2
+  inflating: firmware/0_10_X_LSM6DSO/firmware.elf
+   creating: firmware/0_9_X_WT901/
+  inflating: firmware/0_9_X_WT901/firmware.uf2
+  inflating: firmware/0_9_X_WT901/firmware.elf
+   creating: firmware/0_9_X_MPU9250/
+  inflating: firmware/0_9_X_MPU9250/firmware.uf2
+  inflating: firmware/0_9_X_MPU9250/firmware.elf
+   creating: firmware/0_12_X/
+  inflating: firmware/0_12_X/firmware.uf2
+  inflating: firmware/0_12_X/firmware.elf
+   creating: firmware/0_9_X_LSM6DSO/
+  inflating: firmware/0_9_X_LSM6DSO/firmware.uf2
+  inflating: firmware/0_9_X_LSM6DSO/firmware.elf
+Flashing Firmware: ./firmware_download/firmware/0_13_X/firmware.elf
+Open On-Chip Debugger 0.11.0-g8e3c38f-dirty (2023-08-08-11:14)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+adapter speed: 1000 kHz
+Info : Hardware thread awareness created
+Info : Hardware thread awareness created
+Info : RP2040 Flash Bank Command
+Info : BCM2835 GPIO JTAG/SWD bitbang driver
+Info : clock speed 1001 kHz
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x00000001
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x10000001
+Info : rp2040.core0: hardware has 4 breakpoints, 2 watchpoints
+Info : rp2040.core1: hardware has 4 breakpoints, 2 watchpoints
+Info : starting gdb server for rp2040.core0 on 3333
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+** Programming Started **
+Info : RP2040 B0 Flash Probe: 2097152 bytes @10000000, in 512 sectors
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+Info : Writing 135168 bytes starting at 0x0
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Programming Finished **
+** Verify Started **
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+root@openmower:/home/openmower#

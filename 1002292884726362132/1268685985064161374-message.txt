@@ -1,0 +1,52 @@
+[ERROR] [1722547880.731309044]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[ INFO] [1722547880.731535666]: FTCLocalPlannerROS: Switching to state 4
+[ WARN] [1722547880.731762871]: No velocity command received from controller! 
+[ INFO] [1722547881.219223639]: GPS quality: 0.875803
+[ WARN] [1722547883.780643795]: No velocity command received from controller! 
+[ WARN] [1722547885.730534117]: The controller has been aborted after it exceeded the patience time
+[ WARN] [1722547885.730788155]: No Recovery Behaviors loaded!
+[ WARN] [1722547885.730852612]: Abort the execution of the controller: 
+[ INFO] [1722547885.742171443]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1722547885.742246109]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1722547885.742268275]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[ INFO] [1722547885.745138816]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1722547885.745964512]: successfully registered actions for mower_logic:mowing
+[ INFO] [1722547885.746030136]: MowingBehavior: CONTINUING
+[ INFO] [1722547885.748992258]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1722547885.749572375]: successfully registered actions for mower_logic:mowing
+[ INFO] [1722547885.749680581]: MowingBehavior: Path segment length: 36901 poses.
+[ INFO] [1722547885.749753205]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1722547885.794777409]: FTCLocalPlannerROS: Got new global plan with 44 points.
+[ INFO] [1722547891.719168469]: GPS quality: 0.890341
+[ INFO] [1722547901.719169675]: GPS quality: 0.871938
+[ERROR] [1722547905.840833009]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[ INFO] [1722547905.840934799]: FTCLocalPlannerROS: Switching to state 4
+[ WARN] [1722547905.841040381]: No velocity command received from controller! 
+[ WARN] [1722547908.890713168]: No velocity command received from controller! 
+[ WARN] [1722547910.840697406]: The controller has been aborted after it exceeded the patience time
+[ WARN] [1722547910.841080067]: No Recovery Behaviors loaded!
+[ WARN] [1722547910.841164940]: Abort the execution of the controller: 
+[ INFO] [1722547910.850358136]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1722547910.850481218]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ WARN] [1722547910.850560550]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[ INFO] [1722547910.855079566]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1722547910.855900012]: successfully registered actions for mower_logic:mowing
+[ INFO] [1722547910.855974386]: MowingBehavior: CONTINUING
+[ INFO] [1722547910.859031882]: new actions registered: mower_logic:mowing registered 5 actions.
+[ INFO] [1722547910.859686664]: successfully registered actions for mower_logic:mowing
+[ INFO] [1722547910.859795454]: MowingBehavior: Path segment length: 36901 poses.
+[ INFO] [1722547910.860245197]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ INFO] [1722547910.907833404]: FTCLocalPlannerROS: Got new global plan with 44 points.
+[ INFO] [1722547912.219161462]: GPS quality: 0.882846
+[ INFO] [1722547922.219172294]: GPS quality: 0.875803
+[ERROR] [1722547930.953767964]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+[ INFO] [1722547930.953868296]: FTCLocalPlannerROS: Switching to state 4
+[ WARN] [1722547930.954154708]: No velocity command received from controller! 
+[ INFO] [1722547932.719131415]: GPS quality: 0.878963
+[ WARN] [1722547934.003608166]: No velocity command received from controller! 
+[ WARN] [1722547935.953626236]: The controller has been aborted after it exceeded the patience time
+[ WARN] [1722547935.953999856]: No Recovery Behaviors loaded!
+[ WARN] [1722547935.954143937]: Abort the execution of the controller: 
+[ INFO] [1722547935.960842253]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1722547935.960965043]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ERROR] [1722547935.961088125]: MowingBehavior: (FIRST POINT) Max retries reached, we are unable to reach any of the first points - aborting at index: 352 path: 12 area: 2

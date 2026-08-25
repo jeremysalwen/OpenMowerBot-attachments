@@ -1,0 +1,998 @@
+openmower@openmower:~ $ sudo podman logs -f openmower-debug
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/cdc73ed8-55a7-11f0-b06a-d83adde38c38/roslaunch-openmower-91.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:35011/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/services/power/battery_critical_high_voltage: -1
+ * /ll/services/power/battery_critical_voltage: 25.0
+ * /ll/services/power/battery_empty_voltage: 25.0
+ * /ll/services/power/battery_full_voltage: 28.5
+ * /ll/services/power/charge_critical_high_current: -1
+ * /ll/services/power/charge_critical_high_voltage: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/background_sounds: False
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/has_motor_temp: False
+ * /mower_comms/left_xesc/motor_pole_pairs: 4
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/has_motor_temp: True
+ * /mower_comms/mower_xesc/max_motor_rpm: 3800
+ * /mower_comms/mower_xesc/min_motor_rpm: 2800
+ * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+ * /mower_comms/mower_xesc/motor_pole_pairs: 4
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/has_motor_temp: False
+ * /mower_comms/right_xesc/motor_pole_pairs: 4
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/cu_rain_threshold: -1
+ * /mower_logic/docking_approach_distance: 1.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/docking_waiting_time: 0.0
+ * /mower_logic/emergency_input_config:
+ * /mower_logic/emergency_lift_period: -1
+ * /mower_logic/emergency_tilt_period: -1
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/ignore_charging_current: False
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 0.0
+ * /mower_logic/undock_distance: 2.0
+ * /mower_logic/undock_fixed_angle: True
+ * /mower_logic/undock_use_curve: True
+ * /mower_logic/undocking_waiting_time: 0.0
+ * /ntrip_client/authenticate: True
+ * /ntrip_client/ca_cert:
+ * /ntrip_client/cert:
+ * /ntrip_client/host: tapas-rtk.space.d...
+ * /ntrip_client/key:
+ * /ntrip_client/mountpoint: VRS1
+ * /ntrip_client/nmea_max_length: 82
+ * /ntrip_client/nmea_min_length: 3
+ * /ntrip_client/ntrip_version:
+ * /ntrip_client/password: ghj5fds
+ * /ntrip_client/port: 2101
+ * /ntrip_client/reconnect_attempt_max: 99999
+ * /ntrip_client/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/rtcm_frame_id: odom
+ * /ntrip_client/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/rtcm_timeout_seconds: 30
+ * /ntrip_client/ssl: False
+ * /ntrip_client/username: g4m1
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sensor_ids:
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 56.198163
+ * /xbot_driver_gps/datum_long: 10.259108
+ * /xbot_driver_gps/device_type: serial
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_monitoring/software_version: 0f92243
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/debug: False
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms_v1/mower_comms_v1)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ntrip_client/ntrip_ros.py)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+process[master]: started with pid [99]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to cdc73ed8-55a7-11f0-b06a-d83adde38c38
+process[rosout-1]: started with pid [111]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [119]
+process[xbot_driver_gps-3]: started with pid [120]
+process[ntrip_client-4]: started with pid [125]
+process[move_base_flex-5]: started with pid [131]
+[INFO] [1751283967.514765886]: Using UBX mode for GPS
+process[move_base_legacy_relay-6]: started with pid [133]
+[INFO] [1751283967.548611385]: Using absolute mode for GPS
+process[xbot_positioning-7]: started with pid [134]
+process[joy-8]: started with pid [139]
+process[joy_teleop-9]: started with pid [142]
+[INFO] [1751283967.715744663]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600
+[INFO] [1751283967.760607735]: Wheel ticks [1/m]: 1600
+process[map_service-10]: started with pid [154]
+[INFO] [1751283967.791079914]: Wheel distance [m]: 0.325
+[INFO] [1751283967.802307668]: Antenna offset: 0.3, 0
+process[mower_logic-11]: started with pid [157]
+[INFO] [1751283967.853849623]: Starting xesc driver
+[INFO] [1751283967.880278531]: Starting xesc driver
+[INFO] [1751283967.905208618]: Starting xesc driver
+process[slic3r_coverage_planner-12]: started with pid [164]
+[ERROR] [1751283968.002330075]: Couldn't open joystick /dev/input/js0. Will retry every second.
+process[twist_mux-13]: started with pid [170]
+process[xbot_monitoring-14]: started with pid [172]
+[INFO] [1751283968.110793062]: Teleop enable button 0.
+[INFO] [1751283968.123553599]: Turbo on button 4.
+[INFO] [1751283968.123702707]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1751283968.123775724]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1751283968.123844982]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1751283968.123905851]: Turbo for angular axis yaw is scale 3.000000.
+process[xbot_remote-15]: started with pid [177]
+[INFO] [1751283968.224051840]: connecting serial interface: /dev/ttyAMA0
+process[monitoring-16]: started with pid [190]
+[INFO] [1751283968.295146380]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1751283968.354323921]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1751283968.372116931]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1751283968.389634335]: MQTT Connected
+[INFO] [1751283968.398767631]: Restoring checkpoint for plan (8AD7FD752A333342BAD97925CC4FBE049D3B86C8B911596793B0837172A8318A) area: 0 path: 2 index: 108 angle increment sum: 0
+[FATAL] [1751283968.467313649]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+[INFO] [1751283968.844900383]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1751283968.874553467]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1751283968.886337524]: Loaded 4 mowing areas and 0 navigation areas from file.
+[INFO] [1751283968.909025064]: Map Position: x=-9.13898, y=-1.00851
+[INFO] [1751283968.909328762]: Map Size: x=20.278, y=14.8404
+[INFO] [1751283968.912789284]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1751283968.952345316]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1751283968.957602987]: om_mower_logic: Setting mower_logic config
+[INFO] [1751283968.959114771]: mower_comms received new mower_logic config
+[INFO] [1751283968.979256770]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1751283969.005167986]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1751283969.046189117]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1751283969.053384749]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1751283969.053535116]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1751283969.062827669]: docking pose: position:
+  x: -11.2736
+
+  y: -1.8402
+
+  z: 0
+
+orientation:
+  x: 0
+
+  y: 0
+
+  z: 0.102339
+
+  w: 0.99475
+
+[INFO] [1751283969.077803365]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1751283969.116842537]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1751283969.117553485]: Subscribing to sensor data for sensor with name: Charge State
+[WARN] [1751283969.120355984]: Last GPS was 1.75128e+09 seconds ago.
+[INFO] [1751283969.192630556]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1751283969.204972343]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1751283969.205114562]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1751283969.243022108]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1751283969.297434412]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1751283969.298148176]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1751283969.327669281]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1751283969.354137930]: mower_comms received new mower_logic config
+[INFO] [1751283969.357869576]: Monitoring received new mower_logic config
+[INFO] [1751283969.372958863]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1751283969.373194617]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[ERROR] [1751283969.383781810]: Client [/xbot_monitoring] wants topic /xbot_monitoring/sensors/om_charge_state/data to have datatype/md5sum [xbot_msgs/SensorDataString/37670eed6af64f24a40b9b9fc1cb861e], but our version has [xbot_msgs/SensorDataDouble/176463c696aec75591f61a77cde70a71]. Dropping connection.
+[INFO] [1751283969.484538916]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1751283969.484677228]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1751283969.506640542]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1751283969.506783909]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1751283969.533912137]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1751283969.534045875]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1751283969.559986608]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1751283969.560128328]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1751283969.585145135]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1751283969.585300595]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1751283969.585378945]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1751283969.585448759]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1751283969.585513906]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1751283969.585710531]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1751283969.585788085]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1751283969.630143760]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1751283969.630286035]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1751283969.765332779]: Waiting for emergency message
+[INFO] [1751283970.096580]: Connected to http://tapas-rtk.space.dtu.dk:2101/VRS1
+[INFO] [1751283970.765405523]: Waiting for a power message
+[INFO] [1751283970.765554724]: Waiting for a status message
+[INFO] [1751283970.765720591]: Waiting for a pose message
+[INFO] [1751283970.765845144]: Waiting for left ESC status message
+[INFO] [1751283970.765922679]: Waiting for right ESC status message
+[INFO] [1751283970.765999956]: Waiting for emergency service
+[INFO] [1751283970.769165484]: Waiting for path server
+[INFO] [1751283970.771763987]: Waiting for mower service
+[INFO] [1751283970.774470673]: Waiting for gps service
+[INFO] [1751283970.777169007]: Waiting for positioning service
+[INFO] [1751283970.780378035]: Waiting for map server
+[INFO] [1751283970.783741800]: Waiting for docking point server
+[INFO] [1751283970.787295913]: Waiting for nav point server
+[INFO] [1751283970.790071801]: Waiting for clear nav point server
+[INFO] [1751283970.793179145]: Waiting for move base flex
+[INFO] [1751283973.243767355]: Send ll_high_level_config packet 0x11
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=-1.000000, i_charge_cutoff=-1.000000,
+         v_battery_cutoff=-1.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=65535, tilt_period=65535,
+         shutdown_esc_max_pitch=255,
+         language="en", volume=255
+         hall_configs="U, U, U, U, U, U, U, U, U, U"
+[INFO] [1751283973.253155517]: Received ll_high_level_config packet 0x12
+         options{dfp_is_5v=0, background_sounds=0, ignore_charging_current=0},
+         v_charge_cutoff=30.000000, i_charge_cutoff=1.500000,
+         v_battery_cutoff=29.000000, v_battery_empty=25.000000, v_battery_full=28.500000,
+         lift_period=100, tilt_period=2500,
+         shutdown_esc_max_pitch=0,
+         language="en", volume=80
+         hall_configs="!L, !L, !S, !S, I, I, I, I, I, I"
+[INFO] [1751283973.256911145]: om_mower_logic: Setting mower_logic config
+[INFO] [1751283973.322582443]: Monitoring received new mower_logic config
+[INFO] [1751283973.322741292]: mower_comms received new mower_logic config
+[WARN] [1751283973.324385777]: Could not set configuration
+[INFO] [1751283973.325537420]: Started gyro calibration
+[INFO] [1751283973.327675895]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1751283973.328078831]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1751283973.328336011]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1751283973.329318473]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1751283973.331048308]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1751283973.332500501]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1751283973.339294919]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1751283973.341842201]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1751283973.343506130]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[ERROR] [1751283973.343700033]: Low Level Emergency. Bitmask was: 1
+[INFO] [1751283973.344487128]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1751283973.344663384]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[WARN] [1751283973.724110822]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100774 timeout was 0.1.
+[ERROR] [1751283974.363623358]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1751283975.363639882]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1751283976.383633798]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1751283977.383845337]: Low Level Emergency. Bitmask was: 1
+[INFO] [1751283978.325564377]: Calibrated gyro offset: -0.00631059
+[ERROR] [1751283978.403665757]: Low Level Emergency. Bitmask was: 1
+[INFO] [1751283978.613916680]: local_costmap: Using plugin "static_layer"
+[INFO] [1751283978.645583816]: Requesting the map...
+[INFO] [1751283978.856038735]: Resizing static layer to 406 X 297 at 0.050000 m/pix
+[INFO] [1751283978.955677753]: Received a 406 X 297 map at 0.050000 m/pix
+[INFO] [1751283978.966538847]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1751283978.974923751]:     Subscribed to Topics:
+[INFO] [1751283979.001338290]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1751283979.150160033]: global_costmap: Using plugin "static_layer"
+[INFO] [1751283979.164855438]: Requesting the map...
+[INFO] [1751283979.172737779]: Resizing costmap to 406 X 297 at 0.050000 m/pix
+[INFO] [1751283979.272477479]: Received a 406 X 297 map at 0.050000 m/pix
+[INFO] [1751283979.285181462]: global_costmap: Using plugin "obstacle_layer"
+[INFO] [1751283979.298189106]:     Subscribed to Topics:
+[INFO] [1751283979.338672119]: global_costmap: Using plugin "inflation_layer"
+[ERROR] [1751283979.403714134]: Low Level Emergency. Bitmask was: 1
+[INFO] [1751283979.669334416]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1751283979.869502859]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1751283979.869667466]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1751283980.043658736]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1751283980.043817584]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+[WARN] [1751283980.045821766]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+[INFO] [1751283980.127595145]: GPS data now valid
+[INFO] [1751283980.127733087]: First GPS data, moving kalman filter to -10.6869, -1.72036
+[ERROR] [1751283980.423644626]: Low Level Emergency. Bitmask was: 1
+[INFO] [1751283980.459958982]: Waiting for mowing path progress server
+[INFO] [1751283980.463485652]: Waiting for an emergency status message
+[INFO] [1751283980.463684351]: Got emergency, resetting it
+[INFO] [1751283980.470867539]: successfully set emergency enabled to 0
+[INFO] [1751283980.471017962]: registering actions
+[INFO] [1751283980.477764677]: new actions registered: mower_logic registered 1 actions.
+[INFO] [1751283980.479299794]: successfully registered actions for mower_logic
+[INFO] [1751283980.479470753]: om_mower_logic: Got all servers, we can mow
+[INFO] [1751283980.489258259]: successfully set emergency enabled to 0
+[INFO] [1751283980.489571364]:
+[INFO] [1751283980.489725009]:
+[INFO] [1751283980.489784378]: --------------------------------------
+[INFO] [1751283980.489837210]: - Entered state: IDLE
+[INFO] [1751283980.489888468]: --------------------------------------
+[INFO] [1751283980.498682975]: new actions registered: mower_logic:idle registered 2 actions.
+[INFO] [1751283980.501209924]: successfully registered actions for mower_logic:idle
+[INFO] [1751283980.508223782]: Got getMowingArea call with index: 0
+[INFO] [1751283980.518411890]: Getting Docking Point
+[INFO] [1751283980.526495745]: successfully set GPS to 0
+[INFO] [1751283980.980016959]: GPS quality: 0.93
+[WARN] [1751283980.980121790]: GPS timeout
+[INFO] [1751283981.124543844]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283982.127820359]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283984.125746825]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283986.114594901]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283987.115581278]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283988.123663234]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751283990.134840878]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751283990.479790034]: Low quality GPS
+[WARN] [1751283991.979768910]: Low quality GPS
+[INFO] [1751283992.128578580]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751283992.979803734]: Low quality GPS
+[WARN] [1751283993.979915520]: Low quality GPS
+[INFO] [1751283994.128081536]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751283994.979796070]: GPS timeout
+[WARN] [1751283995.479797306]: Low quality GPS
+[WARN] [1751283995.979825709]: GPS timeout
+[INFO] [1751283996.128348014]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751283996.479786706]: Low quality GPS
+[WARN] [1751283996.979833535]: GPS timeout
+[WARN] [1751283997.479811753]: Low quality GPS
+[INFO] [1751283998.127821694]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751283998.479789024]: GPS timeout
+[WARN] [1751283998.979767854]: Low quality GPS
+[INFO] [1751283999.576626721]: Got action: mower_logic:idle/start_mowing
+[INFO] [1751283999.577265800]: Got start_mowing command
+[INFO] [1751283999.606792276]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[INFO] [1751283999.613973649]: new actions registered: mower_logic:idle registered 2 actions.
+[INFO] [1751283999.614873612]: successfully registered actions for mower_logic:idle
+[INFO] [1751283999.614977814]:
+[INFO] [1751283999.615081904]:
+[INFO] [1751283999.615135144]: --------------------------------------
+[INFO] [1751283999.615223161]: - Entered state: UNDOCKING
+[INFO] [1751283999.615277067]: --------------------------------------
+[INFO] [1751283999.619871159]: Getting Docking Point
+[INFO] [1751283999.620991711]: Currently inside the docking station, we set the robot's pose to the docks pose.
+[INFO] [1751283999.628584723]: new actions registered: mower_logic:undocking registered 0 actions.
+[INFO] [1751283999.629222636]: successfully registered actions for mower_logic:undocking
+[INFO] [1751283999.629483131]: Fixed angle undock: 0
+[INFO] [1751283999.647429619]: FTCLocalPlannerROS: Got new global plan with 14 points.
+[INFO] [1751283999.647791908]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[INFO] [1751283999.647937016]: FTCLocalPlannerROS: Switching to state 1
+[WARN] [1751283999.979763514]: GPS timeout
+[INFO] [1751284000.134573709]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284000.479781787]: Low quality GPS
+[WARN] [1751284000.979777821]: GPS timeout
+[WARN] [1751284001.979763629]: Low quality GPS
+[WARN] [1751284001.979866312]: GPS timeout
+[INFO] [1751284002.135642915]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284002.979790215]: Low quality GPS
+[WARN] [1751284002.979906842]: GPS timeout
+[INFO] [1751284004.122936011]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284004.479813556]: Low quality GPS
+[WARN] [1751284004.479929221]: GPS timeout
+[WARN] [1751284005.979780863]: Low quality GPS
+[WARN] [1751284005.979886527]: GPS timeout
+[INFO] [1751284006.119857209]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284006.979782616]: Low quality GPS
+[WARN] [1751284006.979887781]: GPS timeout
+[INFO] [1751284008.128563818]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284008.479779071]: Low quality GPS
+[WARN] [1751284008.479887939]: GPS timeout
+[WARN] [1751284009.479783621]: Low quality GPS
+[WARN] [1751284009.480097985]: GPS timeout
+[INFO] [1751284010.137793935]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284010.979769151]: Low quality GPS
+[WARN] [1751284010.979877426]: GPS timeout
+[WARN] [1751284011.979768905]: Low quality GPS
+[INFO] [1751284012.127981383]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284012.479770606]: GPS timeout
+[WARN] [1751284013.479787620]: Low quality GPS
+[WARN] [1751284013.479892803]: GPS timeout
+[INFO] [1751284014.130822279]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284014.979770429]: Low quality GPS
+[WARN] [1751284014.979907296]: GPS timeout
+[WARN] [1751284015.979779073]: Low quality GPS
+[INFO] [1751284016.127094236]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284016.479814144]: GPS timeout
+[WARN] [1751284016.979790346]: Low quality GPS
+[WARN] [1751284017.979803657]: Low quality GPS
+[WARN] [1751284017.979934043]: GPS timeout
+[INFO] [1751284018.126189191]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284019.479895817]: Low quality GPS
+[WARN] [1751284019.480134516]: GPS timeout
+[WARN] [1751284019.689780342]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.689945227]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690029800]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690094428]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690153557]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690234666]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690307146]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690389515]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690462476]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[WARN] [1751284019.690549123]: FTCLocalPlannerROS: Skipping duplicate point in global plan.
+[INFO] [1751284019.690667176]: FTCLocalPlannerROS: switching planner to position mode
+[INFO] [1751284019.690753674]: FTCLocalPlannerROS: Switching to state 2
+[INFO] [1751284019.739806328]: FTCLocalPlannerROS: Reached goal position.
+[INFO] [1751284019.739971843]: FTCLocalPlannerROS: Switching to state 3
+[INFO] [1751284019.789889480]: FTCLocalPlannerROS: POST_ROTATE finished.
+[INFO] [1751284019.790025348]: FTCLocalPlannerROS: Switching to state 4
+[INFO] [1751284019.929731054]: Undock success. Waiting for GPS.
+[INFO] [1751284019.933083134]: successfully set GPS to 1
+[INFO] [1751284019.933237298]: waiting for gps. current accuracy: 999
+[WARN] [1751284020.126018651]: Last GPS was 39.9984 seconds ago.
+[INFO] [1751284020.933357033]: waiting for gps. current accuracy: 999
+[WARN] [1751284020.979800870]: Low quality GPS
+[WARN] [1751284020.980305156]: GPS timeout
+[INFO] [1751284021.933352160]: waiting for gps. current accuracy: 999
+[WARN] [1751284022.479775496]: Low quality GPS
+[WARN] [1751284022.479880938]: GPS timeout
+[INFO] [1751284022.933350750]: waiting for gps. current accuracy: 999
+[INFO] [1751284023.933351673]: waiting for gps. current accuracy: 999
+[WARN] [1751284023.979800954]: Low quality GPS
+[WARN] [1751284023.979913730]: GPS timeout
+[INFO] [1751284024.933381374]: waiting for gps. current accuracy: 999
+[WARN] [1751284025.479774785]: Low quality GPS
+[WARN] [1751284025.479879616]: GPS timeout
+[INFO] [1751284025.933368539]: waiting for gps. current accuracy: 999
+[INFO] [1751284026.933347500]: waiting for gps. current accuracy: 999
+[WARN] [1751284026.979771134]: Low quality GPS
+[WARN] [1751284026.979879094]: GPS timeout
+[INFO] [1751284027.933351591]: waiting for gps. current accuracy: 999
+[WARN] [1751284027.979771724]: Low quality GPS
+[WARN] [1751284027.980094403]: GPS timeout
+[INFO] [1751284028.933352589]: waiting for gps. current accuracy: 999
+[WARN] [1751284029.479777166]: Low quality GPS
+[WARN] [1751284029.479879553]: GPS timeout
+[INFO] [1751284029.933352014]: waiting for gps. current accuracy: 999
+[INFO] [1751284030.933347957]: waiting for gps. current accuracy: 999
+[WARN] [1751284030.979761776]: Low quality GPS
+[WARN] [1751284030.979867607]: GPS timeout
+[INFO] [1751284031.109445537]: GPS data now valid
+[INFO] [1751284031.109848714]: First GPS data, moving kalman filter to -12.588, -1.95547
+[INFO] [1751284031.479799460]: GPS quality: 0.93
+[INFO] [1751284031.933360808]: Got good gps, let's go
+[INFO] [1751284041.937272321]: new actions registered: mower_logic:undocking registered 0 actions.
+[INFO] [1751284041.937822403]: successfully registered actions for mower_logic:undocking
+[INFO] [1751284041.937922827]:
+[INFO] [1751284041.937980603]:
+[INFO] [1751284041.938029954]: --------------------------------------
+[INFO] [1751284041.938091212]: - Entered state: MOWING
+[INFO] [1751284041.938245783]: --------------------------------------
+[INFO] [1751284041.942022910]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284041.942747636]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284041.942868912]: MowingBehavior: Creating mowing plan for area: 0
+[INFO] [1751284041.946874905]: Got getMowingArea call with index: 0
+[INFO] [1751284041.947346229]: MowingBehavior: Detected mow angle: 0.586192
+[INFO] [1751284041.947457634]: MowingBehavior: mowing angle offset (deg): 0
+[INFO] [1751284041.947528466]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 0.586192
+[INFO] [1751284041.952244518]: generating 4 outlines
+[INFO] [1751284041.963551178]: Starting Fill. Poly size:4
+[INFO] [1751284041.965096887]: Fill Complete. Polyline count: 0
+[INFO] [1751284041.965238292]: Starting Fill. Poly size:3
+[INFO] [1751284041.965486139]: Fill Complete. Polyline count: 0
+[INFO] [1751284041.965564285]: Starting Fill. Poly size:9
+[INFO] [1751284041.966174032]: Fill Complete. Polyline count: 1
+[INFO] [1751284041.966272938]: Polyline 0 has point count: 18
+[INFO] [1751284041.966337455]: Starting Fill. Poly size:21
+[INFO] [1751284041.967335324]: Fill Complete. Polyline count: 2
+[INFO] [1751284041.967426766]: Polyline 0 has point count: 10
+[INFO] [1751284041.967477506]: Polyline 1 has point count: 7
+[INFO] [1751284041.967597281]: Got 46 points
+[INFO] [1751284041.967784074]: Got 26 points
+[INFO] [1751284041.967928663]: Skipping single dot
+[INFO] [1751284041.968005884]: Got 6 points
+[INFO] [1751284041.968146603]: Got 122 points
+[INFO] [1751284041.968488096]: Got 145 points
+[INFO] [1751284041.969105732]: Got 169 points
+[INFO] [1751284041.969673665]: Got 23 points
+[INFO] [1751284041.969828440]: Got 7 points
+[INFO] [1751284041.969920993]: Got 2 points
+[INFO] [1751284041.972790583]: MowingBehavior: Advancing to checkpoint, path: 2 index: 108
+[INFO] [1751284041.973182298]: MowingBehavior: Executing mowing plan
+[INFO] [1751284041.973396534]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284041.973593604]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[INFO] [1751284041.979844589]: GPS quality: 0.93
+[ERROR] [1751284041.987061183]: Failed to get a plan.
+[INFO] [1751284046.981931961]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284046.982850128]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284046.983220583]: Planning patience (5s) has been exceeded
+[WARN] [1751284046.984180527]: No Recovery Behaviors loaded!
+[WARN] [1751284046.984397670]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284047.074152908]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284047.074537178]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284047.074774803]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[INFO] [1751284047.079358284]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284047.080833050]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284047.081243783]: MowingBehavior: CONTINUING
+[INFO] [1751284047.086191905]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284047.087276512]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284047.087401676]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284047.087461860]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284047.102623257]: Failed to get a plan.
+[INFO] [1751284051.979881459]: GPS quality: 0.93
+[INFO] [1751284052.095281325]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284052.095453636]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284052.096218639]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284052.096596076]: No Recovery Behaviors loaded!
+[WARN] [1751284052.096738221]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284052.187883708]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284052.188281256]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284052.188398124]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[INFO] [1751284052.193115769]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284052.194024862]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284052.194215136]: MowingBehavior: CONTINUING
+[INFO] [1751284052.198572066]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284052.199764079]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284052.199950705]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284052.200096146]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284052.212477136]: Failed to get a plan.
+[INFO] [1751284057.208161666]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284057.208435346]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284057.208777839]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284057.209176164]: No Recovery Behaviors loaded!
+[WARN] [1751284057.209312773]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284057.300544943]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284057.300765735]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284057.300890232]: MowingBehavior: (FIRST POINT) - Attempt 0 / 3 Trimming first point off the beginning of the mow path.
+[INFO] [1751284057.306018666]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284057.307005849]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284057.307255881]: MowingBehavior: CONTINUING
+[INFO] [1751284057.314273517]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284057.315384957]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284057.316119905]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284057.317096960]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284057.332293319]: Failed to get a plan.
+[INFO] [1751284062.325675678]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284062.325837545]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284062.327728025]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284062.328546731]: No Recovery Behaviors loaded!
+[WARN] [1751284062.328741041]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284062.418184211]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284062.418680386]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284062.419041231]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[INFO] [1751284062.424353771]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284062.425409509]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284062.425601802]: MowingBehavior: CONTINUING
+[INFO] [1751284062.429869438]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284062.430397094]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284062.431065450]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284062.431772899]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284062.443955486]: Failed to get a plan.
+[INFO] [1751284062.479835148]: GPS quality: 0.93
+[INFO] [1751284067.439064388]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284067.439292476]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284067.443155694]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284067.443982974]: No Recovery Behaviors loaded!
+[WARN] [1751284067.444147007]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284067.532369276]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284067.532502144]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284067.532571809]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[INFO] [1751284067.536449694]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284067.537283825]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284067.537410989]: MowingBehavior: CONTINUING
+[INFO] [1751284067.541358557]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284067.542042043]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284067.542371277]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284067.542687197]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284067.554900968]: Failed to get a plan.
+[INFO] [1751284072.479874407]: GPS quality: 0.93
+[INFO] [1751284072.550309147]: Planning patience (5s) has been exceeded
+[WARN] [1751284072.551467716]: No Recovery Behaviors loaded!
+[WARN] [1751284072.551870430]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284072.643349429]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284072.643816161]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284072.644142117]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Trimming first point off the beginning of the mow path.
+[INFO] [1751284072.648802208]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284072.649689208]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284072.650029183]: MowingBehavior: CONTINUING
+[INFO] [1751284072.654642571]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284072.655596903]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284072.656042524]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284072.656530885]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284072.668910300]: Failed to get a plan.
+[INFO] [1751284077.664065952]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284077.664260374]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284077.666031357]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284077.666892321]: No Recovery Behaviors loaded!
+[WARN] [1751284077.668471122]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284077.757317860]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284077.757711963]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284077.758016586]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[INFO] [1751284077.763093335]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284077.764751783]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284077.765118572]: MowingBehavior: CONTINUING
+[INFO] [1751284077.769755811]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284077.771409019]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284077.771996192]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284077.772434165]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284077.787549414]: Failed to get a plan.
+[INFO] [1751284082.780238379]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284082.780464838]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284082.783714550]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284082.785091059]: No Recovery Behaviors loaded!
+[WARN] [1751284082.785346183]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284082.873460658]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284082.873825891]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284082.874096682]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[INFO] [1751284082.877693424]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284082.878482519]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284082.878614331]: MowingBehavior: CONTINUING
+[INFO] [1751284082.883428438]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284082.884581377]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284082.884828835]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284082.884990202]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284082.900189580]: Failed to get a plan.
+[INFO] [1751284082.979853133]: GPS quality: 0.93
+[INFO] [1751284087.894686327]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284087.894884971]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284087.898082777]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284087.898507139]: No Recovery Behaviors loaded!
+[WARN] [1751284087.899792817]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284087.985464859]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284087.985629245]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284087.986062662]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Trimming first point off the beginning of the mow path.
+[INFO] [1751284087.990527257]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284087.991165688]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284087.991398369]: MowingBehavior: CONTINUING
+[INFO] [1751284087.995517285]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284087.996243845]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284087.996360380]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284087.996421489]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284088.010681682]: Failed to get a plan.
+[INFO] [1751284092.979849410]: GPS quality: 0.93
+[INFO] [1751284093.003481950]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284093.003952348]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284093.005100102]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284093.005783033]: No Recovery Behaviors loaded!
+[WARN] [1751284093.005934215]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284093.097008575]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284093.097133831]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284093.097205422]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...
+[INFO] [1751284093.101645851]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284093.102836586]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284093.102965047]: MowingBehavior: CONTINUING
+[INFO] [1751284093.107439549]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284093.110145568]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284093.110515171]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284093.110695686]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284093.128114630]: Failed to get a plan.
+[INFO] [1751284098.122595905]: Global planner patience has been exceeded! Cancel planning...
+[WARN] [1751284098.122804901]: Cancel planning failed or is not supported by the plugin. Wait until the current planning finished!
+[INFO] [1751284098.123387574]: Planning patience (5s) has been exceeded; planner canceled!
+[WARN] [1751284098.123817917]: No Recovery Behaviors loaded!
+[WARN] [1751284098.123947674]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284098.211901412]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284098.212137999]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[WARN] [1751284098.212806949]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+[INFO] [1751284098.217150028]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284098.217955567]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284098.218129785]: MowingBehavior: CONTINUING
+[INFO] [1751284098.223109555]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284098.224177478]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284098.224621080]: MowingBehavior: Path segment length: 442 poses.
+[INFO] [1751284098.225287455]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+[ERROR] [1751284098.238442670]: Failed to get a plan.
+[INFO] [1751284102.979921035]: GPS quality: 0.93
+[INFO] [1751284103.232748287]: Planning patience (5s) has been exceeded
+[WARN] [1751284103.233339071]: No Recovery Behaviors loaded!
+[WARN] [1751284103.233729174]: Abort the execution of the planner: Global planner exceeded the patience time
+[INFO] [1751284103.326007417]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+[ERROR] [1751284103.326581813]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+[ERROR] [1751284103.326858603]: MowingBehavior: (FIRST POINT) Max retries reached, we are unable to reach any of the first points - aborting at index: 111 path: 2 area: 0
+[INFO] [1751284103.327128505]: - Behaviour.h: abort() called
+[INFO] [1751284103.330982224]: new actions registered: mower_logic:mowing registered 5 actions.
+[INFO] [1751284103.331788115]: successfully registered actions for mower_logic:mowing
+[INFO] [1751284103.332135385]:
+[INFO] [1751284103.332355122]:
+[INFO] [1751284103.332592173]: --------------------------------------
+[INFO] [1751284103.332825705]: - Entered state: DOCKING
+[INFO] [1751284103.333043960]: --------------------------------------
+[INFO] [1751284103.338076802]: Getting Docking Point
+[INFO] [1751284103.343452082]: new actions registered: mower_logic:docking registered 1 actions.
+[INFO] [1751284103.344416378]: successfully registered actions for mower_logic:docking
+[WARN] [1751284103.344854758]: Waiting for good GPS
+[INFO] [1751284104.345311964]: Calculating approach path
+[INFO] [1751284104.377612106]: FTCLocalPlannerROS: Got new global plan with 10 points.
+[INFO] [1751284106.069934656]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[INFO] [1751284106.070321593]: FTCLocalPlannerROS: Switching to state 1
+[INFO] [1751284108.470017340]: FTCLocalPlannerROS: switching planner to position mode
+[INFO] [1751284108.470202743]: FTCLocalPlannerROS: Switching to state 2
+[INFO] [1751284108.519954866]: FTCLocalPlannerROS: Reached goal position.
+[INFO] [1751284108.520145140]: FTCLocalPlannerROS: Switching to state 3
+[INFO] [1751284109.319969890]: FTCLocalPlannerROS: POST_ROTATE finished.
+[INFO] [1751284109.320122813]: FTCLocalPlannerROS: Switching to state 4
+[INFO] [1751284109.370212336]: Action "move_base" succeeded!
+[INFO] [1751284109.445940581]: Executing Docking Approach
+[INFO] [1751284109.469939021]: FTCLocalPlannerROS: Got new global plan with 16 points.
+[INFO] [1751284109.470466899]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[INFO] [1751284109.470723116]: FTCLocalPlannerROS: Switching to state 1
+[INFO] [1751284113.479799892]: GPS quality: 0.93
+[INFO] [1751284116.860396394]: FTCLocalPlannerROS: switching planner to position mode
+[INFO] [1751284116.860978308]: FTCLocalPlannerROS: Switching to state 2
+[INFO] [1751284116.910336642]: FTCLocalPlannerROS: Reached goal position.
+[INFO] [1751284116.910858928]: FTCLocalPlannerROS: Switching to state 3
+[INFO] [1751284116.960311760]: FTCLocalPlannerROS: POST_ROTATE finished.
+[INFO] [1751284116.960778399]: FTCLocalPlannerROS: Switching to state 4
+[INFO] [1751284117.051394564]: successfully set GPS to 0
+[INFO] [1751284117.076344374]: FTCLocalPlannerROS: Got new global plan with 10 points.
+[INFO] [1751284117.077046286]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+[INFO] [1751284117.077210319]: FTCLocalPlannerROS: Switching to state 1
+[INFO] [1751284117.125954444]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751284118.129400018]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751284120.125051523]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751284120.651895487]: Got a voltage of 28.3416 V. Cancelling docking.
+[INFO] [1751284120.653586082]: Cancel action "exe_path"
+[WARN] [1751284120.653813800]: FTCLocalPlannerROS: FTC planner was cancelled.
+[INFO] [1751284120.653928353]: Controller will take care of stopping
+[INFO] [1751284120.656617595]: new actions registered: mower_logic:docking registered 1 actions.
+[INFO] [1751284120.657397727]: successfully registered actions for mower_logic:docking
+[INFO] [1751284120.657707462]:
+[INFO] [1751284120.657877884]:
+[INFO] [1751284120.658044362]: --------------------------------------
+[INFO] [1751284120.658210137]: - Entered state: IDLE
+[INFO] [1751284120.658486502]: --------------------------------------
+[INFO] [1751284120.662764452]: new actions registered: mower_logic:idle registered 2 actions.
+[INFO] [1751284120.663837523]: successfully registered actions for mower_logic:idle
+[INFO] [1751284120.669874123]: Got getMowingArea call with index: 0
+[INFO] [1751284120.674265701]: Getting Docking Point
+[INFO] [1751284120.678661389]: successfully set GPS to 0
+[INFO] [1751284122.151843806]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751284123.979829596]: GPS quality: 0.93
+[INFO] [1751284124.121538487]: dropping GPS update, since gps_enabled = false.
+[INFO] [1751284126.136661600]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284126.479848504]: Low quality GPS
+[WARN] [1751284127.979777011]: Low quality GPS
+[INFO] [1751284128.128372280]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284129.479769553]: Low quality GPS
+[INFO] [1751284130.115843954]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284130.479786809]: Low quality GPS
+[WARN] [1751284130.979770373]: GPS timeout
+[INFO] [1751284131.119620153]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284131.479931897]: Low quality GPS
+[WARN] [1751284131.979837092]: GPS timeout
+[INFO] [1751284132.121483965]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284132.480038744]: Low quality GPS
+[WARN] [1751284133.480035113]: GPS timeout
+[WARN] [1751284133.979784404]: Low quality GPS
+[INFO] [1751284134.121250114]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284134.979778772]: GPS timeout
+[WARN] [1751284135.479781670]: Low quality GPS
+[INFO] [1751284136.116619760]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284136.479761428]: GPS timeout
+[WARN] [1751284136.979779269]: Low quality GPS
+[INFO] [1751284137.120972504]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284137.479764945]: GPS timeout
+[WARN] [1751284138.479782573]: Low quality GPS
+[WARN] [1751284138.479894089]: GPS timeout
+[INFO] [1751284139.111852556]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284139.979782099]: Low quality GPS
+[WARN] [1751284139.979920467]: GPS timeout
+[INFO] [1751284140.124725850]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284141.479763218]: Low quality GPS
+[WARN] [1751284141.479869513]: GPS timeout
+[INFO] [1751284142.129835023]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284142.479772014]: Low quality GPS
+[WARN] [1751284142.480106081]: GPS timeout
+[WARN] [1751284143.979827966]: Low quality GPS
+[WARN] [1751284143.980267716]: GPS timeout
+[INFO] [1751284144.129605656]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284145.479769957]: Low quality GPS
+[WARN] [1751284145.479879714]: GPS timeout
+[INFO] [1751284146.128796413]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284146.979789022]: Low quality GPS
+[WARN] [1751284146.979892945]: GPS timeout
+[INFO] [1751284148.128720878]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284148.479772476]: Low quality GPS
+[WARN] [1751284148.479881974]: GPS timeout
+[WARN] [1751284149.479810272]: Low quality GPS
+[WARN] [1751284149.480199153]: GPS timeout
+[INFO] [1751284150.126695327]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284150.979800967]: Low quality GPS
+[WARN] [1751284150.979918243]: GPS timeout
+[WARN] [1751284151.979808949]: Low quality GPS
+[WARN] [1751284151.980228422]: GPS timeout
+[INFO] [1751284152.124495503]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284153.479773498]: Low quality GPS
+[WARN] [1751284153.479880088]: GPS timeout
+[INFO] [1751284154.121768134]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284154.479848405]: Low quality GPS
+[WARN] [1751284154.480391801]: GPS timeout
+[WARN] [1751284155.979771418]: Low quality GPS
+[WARN] [1751284155.979909841]: GPS timeout
+[INFO] [1751284156.118267967]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284157.479765226]: Low quality GPS
+[WARN] [1751284157.479872316]: GPS timeout
+[INFO] [1751284158.131059230]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284158.479771154]: Low quality GPS
+[WARN] [1751284158.479876337]: GPS timeout
+[WARN] [1751284159.979770555]: Low quality GPS
+[WARN] [1751284159.979876367]: GPS timeout
+[INFO] [1751284160.124493163]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284160.979777816]: Low quality GPS
+[WARN] [1751284160.979884962]: GPS timeout
+[INFO] [1751284162.129491696]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284162.479811532]: Low quality GPS
+[WARN] [1751284162.479963825]: GPS timeout
+[WARN] [1751284163.979767138]: Low quality GPS
+[WARN] [1751284163.979906672]: GPS timeout
+[INFO] [1751284164.121474622]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284164.979772474]: Low quality GPS
+[WARN] [1751284164.980077875]: GPS timeout
+[INFO] [1751284166.111134189]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284166.479773636]: Low quality GPS
+[WARN] [1751284166.479917670]: GPS timeout
+[INFO] [1751284167.119588873]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284167.979781112]: Low quality GPS
+[WARN] [1751284167.979965035]: GPS timeout
+[INFO] [1751284168.131061199]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284168.979814578]: Low quality GPS
+[WARN] [1751284169.479770775]: GPS timeout
+[INFO] [1751284170.125844274]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284170.479772464]: Low quality GPS
+[WARN] [1751284170.479879739]: GPS timeout
+[WARN] [1751284171.479778208]: Low quality GPS
+[WARN] [1751284171.979791200]: GPS timeout
+[INFO] [1751284172.124861079]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284172.979797334]: Low quality GPS
+[WARN] [1751284172.979965145]: GPS timeout
+[INFO] [1751284174.125742921]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284174.479806775]: Low quality GPS
+[WARN] [1751284174.479930420]: GPS timeout
+[WARN] [1751284175.979797568]: Low quality GPS
+[WARN] [1751284175.979967639]: GPS timeout
+[INFO] [1751284176.134046280]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284177.479771344]: Low quality GPS
+[WARN] [1751284177.479875435]: GPS timeout
+[INFO] [1751284178.129942743]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284178.479793941]: Low quality GPS
+[WARN] [1751284178.479910217]: GPS timeout
+[WARN] [1751284179.479773132]: Low quality GPS
+[WARN] [1751284179.479919388]: GPS timeout
+[INFO] [1751284180.125573193]: dropping GPS update, since gps_enabled = false.
+^[[F[WARN] [1751284180.479854987]: Low quality GPS
+[WARN] [1751284180.480382402]: GPS timeout
+^[[6~^[[B[WARN] [1751284181.979778228]: Low quality GPS
+[WARN] [1751284181.979885911]: GPS timeout
+[INFO] [1751284182.129105595]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284183.479770930]: Low quality GPS
+[WARN] [1751284183.479883317]: GPS timeout
+[INFO] [1751284184.116910074]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284184.479771862]: Low quality GPS
+[WARN] [1751284184.480128317]: GPS timeout
+[INFO] [1751284185.119719727]: dropping GPS update, since gps_enabled = false.
+[WARN] [1751284185.979824786]: Low quality GPS
+[WARN] [1751284185.979979005]: GPS timeout

@@ -1,0 +1,134 @@
+Using username "openmower".
+Linux openmower 6.12.47+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-                                                                                                 09-16) aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Jan 17 18:13:40 2026 from 192.168.1.67
+openmower@openmower:~ $ openmower logs
+ℹ Info: Checking for new version
+open_mower_ros  | [WARN] [1769343039.402900764]: Low quality GPS
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:56 +0000] "GET / HTTP/1.1"                                                                                                  200 654 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM                                                                                                 L, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:56 +0000] "GET /flutter_bo                                                                                                 otstrap.js HTTP/1.1" 200 3804 "http://openmower:8080/" "Mozilla/5.0 (Windows NT                                                                                                  10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari                                                                                                 /537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:56 +0000] "GET /main.dart.                                                                                                 js HTTP/1.1" 200 848524 "http://openmower:8080/" "Mozilla/5.0 (Windows NT 10.0;                                                                                                  Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.3                                                                                                 6"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:56 +0000] "GET /assets/Fon                                                                                                 tManifest.json HTTP/1.1" 200 226 "http://openmower:8080/" "Mozilla/5.0 (Windows                                                                                                  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Saf                                                                                                 ari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:56 +0000] "GET /favicon.pn                                                                                                 g HTTP/1.1" 200 917 "http://openmower:8080/" "Mozilla/5.0 (Windows NT 10.0; Win6                                                                                                 4; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:57 +0000] "GET /assets/fon                                                                                                 ts/MaterialIcons-Regular.otf HTTP/1.1" 200 9780 "http://openmower:8080/" "Mozill                                                                                                 a/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom                                                                                                 e/144.0.0.0 Safari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:57 +0000] "GET /assets/ass                                                                                                 ets/google_fonts/Roboto-Regular.ttf HTTP/1.1" 200 168260 "http://openmower:8080/                                                                                                 " "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gec                                                                                                 ko) Chrome/144.0.0.0 Safari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:57 +0000] "GET /assets/pac                                                                                                 kages/geekyants_flutter_gauges/assets/fonts/Roboto-Regular.ttf HTTP/1.1" 200 168                                                                                                 260 "http://openmower:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb                                                                                                 Kit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:57 +0000] "GET /assets/pac                                                                                                 kages/cupertino_icons/assets/CupertinoIcons.ttf HTTP/1.1" 200 1472 "http://openm                                                                                                 ower:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML                                                                                                 , like Gecko) Chrome/144.0.0.0 Safari/537.36"
+Mosquitto       | 1769342193: New client connected from 192.168.1.67:60387 as om                                                                                                 -client-44404 (p5, c0, k0).
+open_mower_ros  | [WARN] [1769343039.402984430]: GPS timeout
+open_mower_ros  | [WARN] [1769343040.402906006]: Low quality GPS
+OpenMowerApp    | 192.168.1.67 - - [25/Jan/2026:11:18:57 +0000] "GET /assets/pac                                                                                                 kages/flutter_material_design_icons/assets/materialdesignicons-webfont.ttf HTTP/                                                                                                 1.1" 200 1056428 "http://openmower:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64;                                                                                                  x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+Mosquitto       | 1769342200: New connection from 172.19.0.1:53800 on port 1883.
+Mosquitto       | 1769342200: New client connected from 172.19.0.1:53800 as xbot                                                                                                 _monitoring (p2, c1, k1000).
+open_mower_ros  | [WARN] [1769343040.402995986]: GPS timeout
+open_mower_ros  | [WARN] [1769343041.902908528]: Low quality GPS
+open_mower_ros  | [WARN] [1769343041.903002490]: GPS timeout
+open_mower_ros  | [WARN] [1769343042.902986500]: Low quality GPS
+open_mower_ros  | [WARN] [1769343042.903159980]: GPS timeout
+open_mower_ros  | [WARN] [1769343043.902989950]: Low quality GPS
+open_mower_ros  | [WARN] [1769343043.903139930]: GPS timeout
+open_mower_ros  | [WARN] [1769343045.402992488]: Low quality GPS
+open_mower_ros  | [WARN] [1769343045.403152357]: GPS timeout
+open_mower_ros  | [WARN] [1769343046.402997614]: Low quality GPS
+open_mower_ros  | [WARN] [1769343046.902977907]: GPS timeout
+open_mower_ros  | [WARN] [1769343047.902998231]: Low quality GPS
+open_mower_ros  | [WARN] [1769343047.903148322]: GPS timeout
+open_mower_ros  | [WARN] [1769343048.903121013]: Low quality GPS
+open_mower_ros  | [WARN] [1769343048.903276511]: GPS timeout
+open_mower_ros  | [WARN] [1769343050.403285225]: Low quality GPS
+open_mower_ros  | [WARN] [1769343050.403649129]: GPS timeout
+open_mower_ros  | [WARN] [1769343051.902969082]: Low quality GPS
+open_mower_ros  | [WARN] [1769343051.903109284]: GPS timeout
+open_mower_ros  | [WARN] [1769343052.903029387]: Low quality GPS
+open_mower_ros  | [WARN] [1769343052.903553716]: GPS timeout
+open_mower_ros  | [WARN] [1769343054.402909987]: Low quality GPS
+open_mower_ros  | [WARN] [1769343054.403240836]: GPS timeout
+open_mower_ros  | [WARN] [1769343055.402913191]: Low quality GPS
+open_mower_ros  | [WARN] [1769343055.902903227]: GPS timeout
+open_mower_ros  | [WARN] [1769343056.902915074]: Low quality GPS
+open_mower_ros  | [WARN] [1769343056.903127591]: GPS timeout
+open_mower_ros  | [WARN] [1769343058.402971800]: Low quality GPS
+open_mower_ros  | [WARN] [1769343058.403123151]: GPS timeout
+open_mower_ros  | [WARN] [1769343059.902976630]: Low quality GPS
+open_mower_ros  | [WARN] [1769343059.903194869]: GPS timeout
+open_mower_ros  | [WARN] [1769343061.402940749]: Low quality GPS
+open_mower_ros  | [WARN] [1769343061.403069674]: GPS timeout
+open_mower_ros  | [WARN] [1769343062.902896287]: Low quality GPS
+open_mower_ros  | [WARN] [1769343062.902981045]: GPS timeout
+open_mower_ros  | [WARN] [1769343063.902910480]: Low quality GPS
+open_mower_ros  | [WARN] [1769343063.903003294]: GPS timeout
+open_mower_ros  | [INFO] [1769343007.077817592]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343008.080284108]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343009.081662960]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343011.064114709]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343012.066648537]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343013.071637896]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343014.074874097]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343015.079412320]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343016.084332682]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343018.067857984]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343019.073392456]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343020.077584417]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343021.082454960]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343023.064792392]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343024.067159331]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343025.071987616]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343026.077533279]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343027.080174684]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343029.065926274]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343030.069842156]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343031.073477979]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343032.079322150]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343033.081597680]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343035.065242368]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343036.068105103]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343037.074325916]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343038.078108358]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343039.079765276]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343040.084448423]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343042.065806907]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343043.070460969]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343044.074764086]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343045.078723535]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343046.082905534]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343048.064060437]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343049.066851214]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343050.069557896]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343051.071807633]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343052.075875889]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343053.079042981]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343054.083384690]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343056.066206317]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343057.069666930]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343058.072467731]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343059.076620572]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343060.081110425]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343061.085046538]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [INFO] [1769343063.068090616]: Dropped GPS update, since it's                                                                                                  not RTK Fixed
+open_mower_ros  | [WARN] [1769343065.402902116]: Low quality GPS
+open_mower_ros  | [WARN] [1769343065.402997522]: GPS timeout
+open_mower_ros  | [WARN] [1769343066.402904912]: Low quality GPS
+open_mower_ros  | [WARN] [1769343066.902988966]: GPS timeout
+open_mower_ros  | [WARN] [1769343067.402959723]: Low quality GPS
+open_mower_ros  | [WARN] [1769343068.402917995]: GPS timeout
+open_mower_ros  | [WARN] [1769343068.902910880]: Low quality GPS
+open_mower_ros  | [WARN] [1769343069.902906961]: GPS timeout
+open_mower_ros  | [WARN] [1769343070.402993565]: Low quality GPS
+open_mower_ros  | [WARN] [1769343070.902929058]: GPS timeout
+open_mower_ros  | [WARN] [1769343071.902979318]: Low quality GPS
+open_mower_ros  | [WARN] [1769343071.903510332]: GPS timeout
+open_mower_ros  | [WARN] [1769343073.402966934]: Low quality GPS
+open_mower_ros  | [WARN] [1769343073.403108433]: GPS timeout
+open_mower_ros  | [WARN] [1769343074.902966229]: Low quality GPS
+open_mower_ros  | [WARN] [1769343074.903157227]: GPS timeout
+open_mower_ros  | [WARN] [1769343076.402987905]: Low quality GPS
+open_mower_ros  | [WARN] [1769343076.403158978]: GPS timeout
+open_mower_ros  | [WARN] [1769343077.402994463]: Low quality GPS
+open_mower_ros  | [WARN] [1769343077.403328572]: GPS timeout
+open_mower_ros  | [WARN] [1769343078.403282035]: Low quality GPS

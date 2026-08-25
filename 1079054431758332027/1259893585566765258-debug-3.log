@@ -1,0 +1,1639 @@
+ * Starting nginx nginx       [80G [74G[ OK ]
+ * Starting network daemon: mosquitto       [80G [74G[ OK ]
+... logging to /root/.ros/log/6bf4bf38-3d2e-11ef-bc55-e45f018e1f42/roslaunch-openmower-81.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+[1mstarted roslaunch server http://openmower:46693/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 2175.0
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/battery_critical_voltage: 23.0
+ * /mower_logic/battery_empty_voltage: 24.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0.0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/enable_mower: False
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal: False
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert: 
+ * /ntrip_client/ntrip_client_node/cert: 
+ * /ntrip_client/ntrip_client_node/host: 10.0.10.151
+ * /ntrip_client/ntrip_client_node/key: 
+ * /ntrip_client/ntrip_client_node/mountpoint: garage
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version: 
+ * /ntrip_client/ntrip_client_node/password: gps
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: gps
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 56.746602
+ * /xbot_driver_gps/datum_long: 12.731935
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname: your_mqtt_broker
+ * /xbot_monitoring/external_mqtt_password: 
+ * /xbot_monitoring/external_mqtt_port: 1883
+ * /xbot_monitoring/external_mqtt_topic_prefix: 
+ * /xbot_monitoring/external_mqtt_username: 
+ * /xbot_monitoring/software_version: 45f3d23
+ * /xbot_positioning/antenna_offset_x: 0.19
+ * /xbot_positioning/antenna_offset_y: 0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    rosbag_record_diag_alle (rosbag/record)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [89][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311
+[1msetting /run_id to 6bf4bf38-3d2e-11ef-bc55-e45f018e1f42[0m
+[1mprocess[rosout-1]: started with pid [101][0m
+started core service [/rosout]
+[1mprocess[mower_comms-2]: started with pid [109][0m
+[1mprocess[ntrip_client/ntrip_client_node-3]: started with pid [110][0m
+[1mprocess[xbot_driver_gps-4]: started with pid [111][0m
+[0m[ INFO] [1720445508.546970613]: Wheel ticks [1/m]: 2175[0m
+[0m[ INFO] [1720445508.552158506]: Wheel distance [m]: 0.325[0m
+[1mprocess[move_base_flex-5]: started with pid [117][0m
+[0m[ INFO] [1720445508.558575099]: DFP is set to 5V [boolean]: 0, language: 'en', volume: -1[0m
+[0m[ INFO] [1720445508.560751148]: Starting xesc driver[0m
+[0m[ INFO] [1720445508.570640714]: Starting xesc driver[0m
+[0m[ INFO] [1720445508.591441174]: Starting xesc driver[0m
+[1mprocess[move_base_legacy_relay-6]: started with pid [118][0m
+[0m[ INFO] [1720445508.608820071]: Using UBX mode for GPS[0m
+[1mprocess[xbot_positioning-7]: started with pid [130][0m
+[0m[ INFO] [1720445508.666649651]: Using absolute mode for GPS[0m
+[0m[ INFO] [1720445508.706770429]: connecting serial interface: /dev/ttyAMA0[0m
+[1mprocess[joy-8]: started with pid [131][0m
+[0m[ INFO] [1720445508.817784639]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600[0m
+[1mprocess[joy_teleop-9]: started with pid [134][0m
+[1mprocess[rosbag_record_diag_alle-10]: started with pid [151][0m
+[0m[ INFO] [1720445509.003164033]: Antenna offset: 0.19, 0[0m
+[1mprocess[map_service-11]: started with pid [154][0m
+[1mprocess[mower_logic-12]: started with pid [161][0m
+[31m[ERROR] [1720445509.233350079]: Couldn't open joystick /dev/input/js0. Will retry every second.[0m
+[0m[ INFO] [1720445509.287583836]: Teleop enable button 0.[0m
+[1mprocess[slic3r_coverage_planner-13]: started with pid [162][0m
+[0m[ INFO] [1720445509.298695843]: Turbo on button 4.[0m
+[0m[ INFO] [1720445509.299241563]: Linear axis x on 1 at scale 0.500000.[0m
+[0m[ INFO] [1720445509.299569044]: Turbo for linear axis x is scale 1.000000.[0m
+[0m[ INFO] [1720445509.299863487]: Angular axis yaw on 0 at scale 1.500000.[0m
+[0m[ INFO] [1720445509.300150098]: Turbo for angular axis yaw is scale 3.000000.[0m
+[1mprocess[twist_mux-14]: started with pid [164][0m
+[1mprocess[xbot_monitoring-15]: started with pid [165][0m
+[0m[ INFO] [1720445509.529232648]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10[0m
+[0m[ INFO] [1720445509.568437446]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100[0m
+[1mprocess[xbot_remote-16]: started with pid [173][0m
+[31m[FATAL] [1720445509.648988593]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)[0m
+[1mprocess[monitoring-17]: started with pid [178][0m
+[0m[ INFO] [1720445509.780318433]: Subscribing to record[0m
+[0m[ INFO] [1720445509.886171213]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1720445509.898888326]: Recording to '//root/all_mow_area_2024-07-08-13-31-49.bag'.[0m
+[0m[ INFO] [1720445509.960502804]: Subscribing to /rosout[0m
+[0m[ INFO] [1720445510.091789847]: Subscribing to /mower/status[0m
+[0m[ INFO] [1720445510.105125569]: Restoring checkpoint for plan (DA9DFBD49EE8522DFAEF5C96A6C95EEE33589453BBAA97A752878A55EB7AC81E) area: 0 path: 0 index: 80 angle increment sum: 0[0m
+[33m[ WARN] [1720445510.106123177]: Last GPS was 1.72045e+09 seconds ago.[0m
+[0m[ INFO] [1720445510.142458317]: Subscribing to /mower/wheel_ticks[0m
+[0m[ INFO] [1720445510.162495391]: MQTT Connected[0m
+[0m[ INFO] [1720445510.223577796]: Subscribing to /imu/data_raw[0m
+[0m[ INFO] [1720445510.296599686]: Subscribing to /imu/mag[0m
+[0m[ INFO] [1720445510.439175143]: Subscribing to /nmea[0m
+[0m[ INFO] [1720445510.504232185]: found new sensor topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[ INFO] [1720445510.605694607]: Subscribing to /xbot_driver_gps/pose[0m
+[0m[ INFO] [1720445510.653679233]: found new sensor topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[ INFO] [1720445510.686686938]: Subscribing to /xbot_driver_gps/xb_pose[0m
+[0m[ INFO] [1720445510.707240936]: found new sensor topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[ INFO] [1720445510.770974611]: Subscribing to /xbot_driver_gps/imu[0m
+[0m[ INFO] [1720445510.797557982]: found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[ INFO] [1720445510.834525380]: Subscribing to /xbot_driver_gps/wheel_tick_stamp_esc[0m
+[0m[ INFO] [1720445510.906388903]: found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[ INFO] [1720445510.946082107]: Subscribing to /xbot_driver_gps/wheel_tick_ublox_rx[0m
+[0m[ INFO] [1720445511.013218717]: Subscribing to /xbot_driver_gps/wheel_tick_round_trip_host[0m
+[0m[ INFO] [1720445511.019331071]: found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[ INFO] [1720445511.092941533]: Subscribing to /diagnostics[0m
+[0m[ INFO] [1720445511.115008880]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[ INFO] [1720445511.162685173]: Subscribing to /joy[0m
+[0m[ INFO] [1720445511.245374814]: found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[ INFO] [1720445511.271207798]: Subscribing to /xbot_positioning/odom_out[0m
+[0m[ INFO] [1720445511.342070398]: Subscribing to /joy_vel[0m
+[0m[ INFO] [1720445511.363765356]: found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[ INFO] [1720445511.414453734]: Subscribing to /move_base_flex/current_goal[0m
+[0m[ INFO] [1720445511.517309523]: Subscribing to /xbot_positioning/xb_pose[0m
+[0m[ INFO] [1720445511.603735932]: Subscribing to /move_base_flex/exe_path/goal[0m
+[0m[ INFO] [1720445511.660429478]: om_mower_logic: Setting mower_logic config[0m
+[0m[ INFO] [1720445511.704234764]: Subscribing to /move_base_flex/exe_path/cancel[0m
+[0m[ INFO] [1720445511.813932719]: Subscribing to /move_base_flex/get_path/goal[0m
+[0m[ INFO] [1720445511.907143035]: Subscribing to /move_base_flex/get_path/cancel[0m
+[0m[ INFO] [1720445511.955854881]: got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[ INFO] [1720445511.967701385]: Subscribing to /slic3r_coverage_planner/path_marker_array[0m
+[0m[ INFO] [1720445511.970771581]: Subscribing to sensor data for sensor with name: V Charge[0m
+[0m[ INFO] [1720445511.977594710]: Loaded 1 mowing areas and 1 navigation areas from file.[0m
+[0m[ INFO] [1720445512.026046075]: Map Position: x=-3.5431, y=-3.31202[0m
+[0m[ INFO] [1720445512.026269279]: Map Size: x=9.08621, y=8.62404[0m
+[0m[ INFO] [1720445512.067592460]: Subscribing to /cmd_vel[0m
+[0m[ INFO] [1720445512.112224207]: got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[ INFO] [1720445512.120084685]: Subscribing to sensor data for sensor with name: V Battery[0m
+[0m[ INFO] [1720445512.153541518]: Subscribing to /move_base_flex/recovery/goal[0m
+[0m[ INFO] [1720445512.200436518]: got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[ INFO] [1720445512.210969063]: docking pose: position: 
+  x: -0.459587
+  y: -2.48931
+  z: 0
+orientation: 
+  x: 0
+  y: 0
+  z: 0.231749
+  w: 0.972776
+[0m
+[0m[ INFO] [1720445512.226392187]: Subscribing to sensor data for sensor with name: Charge Current[0m
+[0m[ INFO] [1720445512.274239702]: Subscribing to /move_base_flex/recovery/cancel[0m
+[0m[ INFO] [1720445512.326204113]: Subscribing to /current_goal[0m
+[0m[ INFO] [1720445512.363766435]: Subscribing to /nav_vel[0m
+[0m[ INFO] [1720445512.383909139]: got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[ INFO] [1720445512.387068926]: Subscribing to sensor data for sensor with name: Left ESC Temp[0m
+[0m[ INFO] [1720445512.676327698]: got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[ INFO] [1720445512.690108790]: Subscribing to sensor data for sensor with name: Mow ESC Temp[0m
+[0m[ INFO] [1720445512.734956276]: got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[ INFO] [1720445512.757844028]: Subscribing to sensor data for sensor with name: Right ESC Temp[0m
+[0m[ INFO] [1720445512.857561381]: got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[ INFO] [1720445512.869507125]: Subscribing to sensor data for sensor with name: Mow Motor Temp[0m
+[0m[ INFO] [1720445513.003407643]: Waiting for a status message[0m
+[0m[ INFO] [1720445513.453236710]: got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[ INFO] [1720445513.459321082]: Subscribing to sensor data for sensor with name: Mow Motor Current[0m
+[0m[ INFO] [1720445513.512351380]: Subscribing to /xbot_monitoring/sensors/om_v_charge/info[0m
+[0m[ INFO] [1720445513.542654444]: Subscribing to /xbot_monitoring/sensors/om_v_charge/data[0m
+[0m[ INFO] [1720445513.594719466]: Subscribing to /xbot_monitoring/sensors/om_v_battery/info[0m
+[0m[ INFO] [1720445513.618950899]: Subscribing to /xbot_monitoring/sensors/om_v_battery/data[0m
+[0m[ INFO] [1720445513.665764084]: Subscribing to /xbot_monitoring/sensors/om_charge_current/info[0m
+[0m[ INFO] [1720445513.707288487]: Subscribing to /xbot_monitoring/sensors/om_charge_current/data[0m
+[0m[ INFO] [1720445513.710582330]: Received ll_high_level_config packet 0x21 with comms_version=1, config_bitmask=0b00000000, volume=80, language='en'[0m
+[0m[ INFO] [1720445513.710727478]: Send ll_high_level_config packet 0x22 with comms_version=1, config_bitmask=0b00000000, volume=-1, language='en'[0m
+[31m[ERROR] [1720445513.727581024]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445513.728251244]: Started gyro calibration[0m
+[0m[ INFO] [1720445513.737996495]: Subscribing to /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+[0m[ INFO] [1720445513.774149024]: Subscribing to /xbot_monitoring/sensors/om_left_esc_temp/data[0m
+[0m[ INFO] [1720445513.794828078]: Subscribing to /xbot/action[0m
+[0m[ INFO] [1720445513.845558863]: Subscribing to /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+[0m[ INFO] [1720445513.880091675]: Subscribing to /xbot_monitoring/sensors/om_right_esc_temp/data[0m
+[0m[ INFO] [1720445513.912062346]: Subscribing to /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+[0m[ INFO] [1720445513.935428373]: Subscribing to /xbot_monitoring/sensors/om_mow_esc_temp/data[0m
+[0m[ INFO] [1720445513.965169550]: Subscribing to /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+[0m[ INFO] [1720445513.985751752]: Subscribing to /mower_logic/parameter_descriptions[0m
+[0m[ INFO] [1720445514.003404574]: Waiting for a pose message[0m
+[0m[ INFO] [1720445514.005711104]: Subscribing to /xbot_monitoring/sensors/om_mow_motor_temp/data[0m
+[0m[ INFO] [1720445514.030433851]: Subscribing to /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+[0m[ INFO] [1720445514.049203873]: Subscribing to /mower_logic/parameter_updates[0m
+[0m[ INFO] [1720445514.065005255]: Subscribing to /xbot_monitoring/sensors/om_mow_motor_current/data[0m
+[0m[ INFO] [1720445514.100396120]: Subscribing to /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[ INFO] [1720445514.118581106]: Subscribing to /xbot_monitoring/sensors/om_gps_accuracy/data[0m
+[0m[ INFO] [1720445514.170929461]: Subscribing to /xbot_monitoring/robot_state[0m
+[0m[ INFO] [1720445514.190890628]: Subscribing to /mower_map_service/map[0m
+[0m[ INFO] [1720445514.205776383]: Subscribing to /mower_map_service/map_areas[0m
+[0m[ INFO] [1720445514.228885467]: Subscribing to /mower_map_service/map_viz[0m
+[0m[ INFO] [1720445514.255432282]: Subscribing to /xbot_monitoring/map[0m
+[0m[ INFO] [1720445514.284779553]: Subscribing to /logic_vel[0m
+[0m[ INFO] [1720445514.321665191]: Subscribing to /mower_logic/mowing_path[0m
+[0m[ INFO] [1720445514.344489702]: Subscribing to /mower_logic/current_state[0m
+[0m[ INFO] [1720445514.359593938]: Subscribing to /move_base_flex/move_base/goal[0m
+[0m[ INFO] [1720445514.374885210]: Subscribing to /move_base_flex/move_base/cancel[0m
+[31m[ERROR] [1720445514.746839105]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445515.215594768]: got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+[0m[ INFO] [1720445515.219365850]: Subscribing to sensor data for sensor with name: GPS Accuracy[0m
+[0m[ INFO] [1720445515.513977755]: Subscribing to /ntrip_client/rtcm[0m
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[33m[ WARN] [1720445515.684091691]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100965 timeout was 0.1.[0m
+[31m[ERROR] [1720445515.768418420]: Low Level Emergency. Bitmask was: 1[0m
+[INFO] [1720445516.049546]: Connected to http://10.0.10.151:2101/garage
+[31m[ERROR] [1720445516.786327598]: Low Level Emergency. Bitmask was: 1[0m
+[31m[ERROR] [1720445517.806302899]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445518.745473073]: Calibrated gyro offset: -0.000274889[0m
+[31m[ERROR] [1720445518.806389293]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445519.003327284]: Waiting for emergency service[0m
+[0m[ INFO] [1720445519.006231906]: Waiting for path server[0m
+[0m[ INFO] [1720445519.009139805]: Waiting for mower service[0m
+[0m[ INFO] [1720445519.012127130]: Waiting for gps service[0m
+[0m[ INFO] [1720445519.014948271]: Waiting for positioning service[0m
+[0m[ INFO] [1720445519.017742096]: Waiting for map server[0m
+[0m[ INFO] [1720445519.020583329]: Waiting for docking point server[0m
+[0m[ INFO] [1720445519.023571321]: Waiting for nav point server[0m
+[0m[ INFO] [1720445519.026308350]: Waiting for clear nav point server[0m
+[0m[ INFO] [1720445519.029217472]: Waiting for move base flex[0m
+[33m[ WARN] [1720445519.072081927]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[0m[ INFO] [1720445519.119523851]: local_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1720445519.143746376]: Requesting the map...[0m
+[0m[ INFO] [1720445519.363137509]: Resizing static layer to 182 X 172 at 0.050000 m/pix[0m
+[0m[ INFO] [1720445519.463037899]: Received a 182 X 172 map at 0.050000 m/pix[0m
+[0m[ INFO] [1720445519.476790453]: local_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1720445519.488146736]:     Subscribed to Topics: [0m
+[0m[ INFO] [1720445519.504890505]: Subscribing to /tf[0m
+[0m[ INFO] [1720445519.519728056]: Subscribing to /move_base_flex/local_costmap/static_layer/parameter_descriptions[0m
+[0m[ INFO] [1720445519.531553690]: local_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1720445519.541197478]: Subscribing to /move_base_flex/local_costmap/static_layer/parameter_updates[0m
+[0m[ INFO] [1720445519.593975684]: Subscribing to /move_base_flex/local_costmap/obstacle_layer/parameter_descriptions[0m
+[0m[ INFO] [1720445519.630740008]: Subscribing to /move_base_flex/local_costmap/obstacle_layer/parameter_updates[0m
+[31m[ERROR] [1720445519.826934890]: Low Level Emergency. Bitmask was: 1[0m
+[33m[ WARN] [1720445519.839708799]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[0m[ INFO] [1720445519.893799482]: global_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1720445519.911736821]: Requesting the map...[0m
+[0m[ INFO] [1720445519.917590064]: Resizing costmap to 182 X 172 at 0.050000 m/pix[0m
+[0m[ INFO] [1720445520.017600268]: Received a 182 X 172 map at 0.050000 m/pix[0m
+[0m[ INFO] [1720445520.028438998]: global_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1720445520.036369457]:     Subscribed to Topics: [0m
+[0m[ INFO] [1720445520.062140108]: global_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1720445520.360541021]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".[0m
+[0m[ INFO] [1720445520.506242025]: Subscribing to /move_base_flex/local_costmap/inflation_layer/parameter_descriptions[0m
+[0m[ INFO] [1720445520.522869960]: Subscribing to /move_base_flex/local_costmap/inflation_layer/parameter_updates[0m
+[0m[ INFO] [1720445520.549704145]: Subscribing to /move_base_flex/local_costmap/footprint[0m
+[0m[ INFO] [1720445520.566319618]: Subscribing to /move_base_flex/local_costmap/costmap[0m
+[0m[ INFO] [1720445520.604638585]: Subscribing to /move_base_flex/local_costmap/costmap_updates[0m
+[0m[ INFO] [1720445520.625261880]: Subscribing to /move_base_flex/local_costmap/parameter_descriptions[0m
+[0m[ INFO] [1720445520.663410052]: Subscribing to /move_base_flex/local_costmap/parameter_updates[0m
+[0m[ INFO] [1720445520.683781218]: Subscribing to /move_base_flex/global_costmap/static_layer/parameter_descriptions[0m
+[0m[ INFO] [1720445520.688525353]: FTCLocalPlannerROS: Version 2 Init.[0m
+[0m[ INFO] [1720445520.689562183]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".[0m
+[0m[ INFO] [1720445520.724499846]: Subscribing to /move_base_flex/global_costmap/static_layer/parameter_updates[0m
+[0m[ INFO] [1720445520.773532099]: Subscribing to /move_base_flex/global_costmap/obstacle_layer/parameter_descriptions[0m
+[0m[ INFO] [1720445520.795833481]: Subscribing to /move_base_flex/global_costmap/obstacle_layer/parameter_updates[0m
+[0m[ INFO] [1720445520.834533430]: Subscribing to /move_base_flex/global_costmap/inflation_layer/parameter_descriptions[0m
+[31m[ERROR] [1720445520.846474822]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445520.853352026]: Subscribing to /move_base_flex/global_costmap/inflation_layer/parameter_updates[0m
+[0m[ INFO] [1720445520.903582201]: Subscribing to /move_base_flex/global_costmap/footprint[0m
+[0m[ INFO] [1720445520.961652892]: Subscribing to /move_base_flex/global_costmap/costmap[0m
+[0m[ INFO] [1720445521.012229529]: Subscribing to /move_base_flex/global_costmap/costmap_updates[0m
+[0m[ INFO] [1720445521.033179268]: Subscribing to /move_base_flex/global_costmap/parameter_descriptions[0m
+[0m[ INFO] [1720445521.076350370]: Subscribing to /move_base_flex/global_costmap/parameter_updates[0m
+[0m[ INFO] [1720445521.104808106]: Subscribing to /move_base_flex/parameter_descriptions[0m
+[0m[ INFO] [1720445521.116862369]: GPS data now valid[0m
+[0m[ INFO] [1720445521.117087628]: First GPS data, moving kalman filter to 0.0704264, -10.4403[0m
+[0m[ INFO] [1720445521.134627061]: Subscribing to /move_base_flex/parameter_updates[0m
+[0m[ INFO] [1720445521.182238484]: Subscribing to /move_base_flex/GlobalPlanner/plan[0m
+[0m[ INFO] [1720445521.220353897]: Subscribing to /move_base_flex/GlobalPlanner/potential[0m
+[0m[ INFO] [1720445521.247539933]: Subscribing to /move_base_flex/GlobalPlanner/parameter_descriptions[0m
+[0m[ INFO] [1720445521.278870698]: Subscribing to /move_base_flex/GlobalPlanner/parameter_updates[0m
+[0m[ INFO] [1720445521.313682360]: Subscribing to /move_base_flex/FTCPlanner/global_point[0m
+[0m[ INFO] [1720445521.348064710]: Subscribing to /move_base_flex/FTCPlanner/global_plan[0m
+[0m[ INFO] [1720445521.376545519]: Subscribing to /move_base_flex/FTCPlanner/costmap_marker[0m
+[0m[ INFO] [1720445521.440233232]: Subscribing to /move_base_flex/FTCPlanner/parameter_descriptions[0m
+[0m[ INFO] [1720445521.460931711]: FTCLocalPlannerROS: Version 2 Init.[0m
+[0m[ INFO] [1720445521.462117616]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".[0m
+[33m[ WARN] [1720445521.493699584]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.[0m
+[0m[ INFO] [1720445521.514214193]: Subscribing to /move_base_flex/FTCPlanner/parameter_updates[0m
+[0m[ INFO] [1720445521.574397156]: Subscribing to /move_base_flex/FTCPlanner/debug_pid[0m
+[0m[ INFO] [1720445521.616585687]: Subscribing to /move_base_flex/DockingFTCPlanner/global_point[0m
+[0m[ INFO] [1720445521.663314132]: Subscribing to /move_base_flex/DockingFTCPlanner/global_plan[0m
+[0m[ INFO] [1720445521.691904608]: Subscribing to /move_base_flex/DockingFTCPlanner/costmap_marker[0m
+[0m[ INFO] [1720445521.739238681]: Subscribing to /move_base_flex/DockingFTCPlanner/parameter_descriptions[0m
+[0m[ INFO] [1720445521.785873311]: Subscribing to /move_base_flex/DockingFTCPlanner/parameter_updates[0m
+[31m[ERROR] [1720445521.846515420]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445521.859689310]: Subscribing to /move_base_flex/get_path/result[0m
+[0m[ INFO] [1720445521.887653140]: Subscribing to /move_base_flex/get_path/feedback[0m
+[0m[ INFO] [1720445521.951197056]: Subscribing to /move_base_flex/get_path/status[0m
+[0m[ INFO] [1720445522.522808268]: Subscribing to /move_base_flex/exe_path/result[0m
+[0m[ INFO] [1720445522.539097945]: Subscribing to /move_base_flex/exe_path/feedback[0m
+[0m[ INFO] [1720445522.561381068]: Subscribing to /move_base_flex/exe_path/status[0m
+[0m[ INFO] [1720445522.587144089]: Subscribing to /move_base_flex/recovery/result[0m
+[0m[ INFO] [1720445522.598860705]: Subscribing to /move_base_flex/recovery/feedback[0m
+[0m[ INFO] [1720445522.632506704]: Subscribing to /move_base_flex/recovery/status[0m
+[0m[ INFO] [1720445522.644273097]: Subscribing to /move_base_flex/move_base/result[0m
+[0m[ INFO] [1720445522.657509153]: Subscribing to /move_base_flex/move_base/feedback[0m
+[0m[ INFO] [1720445522.694373366]: Subscribing to /move_base_flex/move_base/status[0m
+[31m[ERROR] [1720445522.846990332]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445523.622179442]: Waiting for mowing path progress server[0m
+[0m[ INFO] [1720445523.630987603]: Waiting for an emergency status message[0m
+[0m[ INFO] [1720445523.631121417]: Got emergency, resetting it[0m
+[0m[ INFO] [1720445523.636368829]: successfully set emergency enabled to 0[0m
+[0m[ INFO] [1720445523.636494013]: registering actions[0m
+[0m[ INFO] [1720445523.641590110]: new actions registered: mower_logic registered 1 actions.[0m
+[0m[ INFO] [1720445523.642748329]: successfully registered actions for mower_logic[0m
+[0m[ INFO] [1720445523.642876088]: om_mower_logic: Got all servers, we can mow[0m
+[0m[ INFO] [1720445523.649237978]: successfully set emergency enabled to 0[0m
+[0m[ INFO] [1720445523.649381996]: [0m
+[0m[ INFO] [1720445523.649439866]: [0m
+[0m[ INFO] [1720445523.649493811]: --------------------------------------[0m
+[0m[ INFO] [1720445523.649549329]: - Entered state: IDLE[0m
+[0m[ INFO] [1720445523.649602533]: --------------------------------------[0m
+[0m[ INFO] [1720445523.654111242]: new actions registered: mower_logic:idle registered 2 actions.[0m
+[0m[ INFO] [1720445523.655175499]: successfully registered actions for mower_logic:idle[0m
+[0m[ INFO] [1720445523.660021078]: Got getMowingArea call with index: 0[0m
+[0m[ INFO] [1720445523.666009932]: Getting Docking Point[0m
+[0m[ INFO] [1720445523.683817179]: successfully set GPS to 0[0m
+[0m[ INFO] [1720445524.115757703]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445524.143418830]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720445524.143592145]: GPS timeout[0m
+[0m[ INFO] [1720445525.505688258]: Subscribing to /move_base/status[0m
+[0m[ INFO] [1720445525.517218096]: Subscribing to /move_base/result[0m
+[0m[ INFO] [1720445525.528991119]: Subscribing to /move_base/feedback[0m
+[0m[ INFO] [1720445525.539894385]: Subscribing to /move_base_legacy_relay/parameter_descriptions[0m
+[0m[ INFO] [1720445525.553755032]: Subscribing to /move_base_legacy_relay/parameter_updates[0m
+[0m[ INFO] [1720445526.111378319]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445528.108288303]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445530.117568159]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445532.112966943]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445533.143172644]: Low quality GPS[0m
+[0m[ INFO] [1720445534.109989594]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445534.643212598]: Low quality GPS[0m
+[0m[ INFO] [1720445536.108104538]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445536.143172404]: Low quality GPS[0m
+[33m[ WARN] [1720445537.643176987]: Low quality GPS[0m
+[33m[ WARN] [1720445537.643420283]: GPS timeout[0m
+[0m[ INFO] [1720445538.108416050]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445539.110043385]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445539.143166423]: Low quality GPS[0m
+[33m[ WARN] [1720445539.143270071]: GPS timeout[0m
+[33m[ WARN] [1720445540.143193393]: Low quality GPS[0m
+[33m[ WARN] [1720445540.143341004]: GPS timeout[0m
+[0m[ INFO] [1720445541.107988127]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445541.643179940]: Low quality GPS[0m
+[33m[ WARN] [1720445541.643317829]: GPS timeout[0m
+[0m[ INFO] [1720445542.118039495]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445542.643213725]: Low quality GPS[0m
+[33m[ WARN] [1720445542.643347113]: GPS timeout[0m
+[0m[ INFO] [1720445544.109166287]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445544.143178276]: Low quality GPS[0m
+[33m[ WARN] [1720445544.143472032]: GPS timeout[0m
+[33m[ WARN] [1720445545.143202030]: Low quality GPS[0m
+[33m[ WARN] [1720445545.643188810]: GPS timeout[0m
+[0m[ INFO] [1720445546.105737136]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445546.643184823]: Low quality GPS[0m
+[33m[ WARN] [1720445546.643321377]: GPS timeout[0m
+[33m[ WARN] [1720445547.643162292]: Low quality GPS[0m
+[0m[ INFO] [1720445548.114514415]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445548.143182345]: GPS timeout[0m
+[33m[ WARN] [1720445548.643184143]: Low quality GPS[0m
+[33m[ WARN] [1720445549.643175562]: GPS timeout[0m
+[0m[ INFO] [1720445550.109935296]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445550.143150220]: Low quality GPS[0m
+[33m[ WARN] [1720445550.643179011]: GPS timeout[0m
+[33m[ WARN] [1720445551.143184137]: Low quality GPS[0m
+[33m[ WARN] [1720445551.643288137]: GPS timeout[0m
+[0m[ INFO] [1720445552.108010864]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445552.643270184]: Low quality GPS[0m
+[33m[ WARN] [1720445552.643526404]: GPS timeout[0m
+[0m[ INFO] [1720445553.108258377]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445554.113418040]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445554.143186684]: Low quality GPS[0m
+[33m[ WARN] [1720445554.143296090]: GPS timeout[0m
+[33m[ WARN] [1720445555.143208204]: Low quality GPS[0m
+[33m[ WARN] [1720445555.143569293]: GPS timeout[0m
+[0m[ INFO] [1720445556.101500371]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445556.143240217]: Low quality GPS[0m
+[33m[ WARN] [1720445556.643217803]: GPS timeout[0m
+[0m[ INFO] [1720445557.104673051]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445557.643166261]: Low quality GPS[0m
+[33m[ WARN] [1720445557.643308871]: GPS timeout[0m
+[0m[ INFO] [1720445558.109314173]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445558.643173711]: Low quality GPS[0m
+[33m[ WARN] [1720445559.143180032]: GPS timeout[0m
+[33m[ WARN] [1720445559.643414411]: Low quality GPS[0m
+[0m[ INFO] [1720445560.116210476]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445560.643168960]: GPS timeout[0m
+[33m[ WARN] [1720445561.143181978]: Low quality GPS[0m
+[33m[ WARN] [1720445561.643180556]: GPS timeout[0m
+[0m[ INFO] [1720445562.122232295]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445562.643171386]: Low quality GPS[0m
+[33m[ WARN] [1720445562.643460161]: GPS timeout[0m
+[33m[ WARN] [1720445563.643218486]: Low quality GPS[0m
+[33m[ WARN] [1720445563.643546335]: GPS timeout[0m
+[0m[ INFO] [1720445564.110129313]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445565.143170195]: Low quality GPS[0m
+[33m[ WARN] [1720445565.143276176]: GPS timeout[0m
+[0m[ INFO] [1720445566.109969764]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445566.143265694]: Low quality GPS[0m
+[33m[ WARN] [1720445566.143463470]: GPS timeout[0m
+[33m[ WARN] [1720445567.643182855]: Low quality GPS[0m
+[33m[ WARN] [1720445567.643319483]: GPS timeout[0m
+[0m[ INFO] [1720445568.113440153]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445568.643202734]: Low quality GPS[0m
+[33m[ WARN] [1720445568.643365029]: GPS timeout[0m
+[0m[ INFO] [1720445569.114025292]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445570.143172066]: Low quality GPS[0m
+[33m[ WARN] [1720445570.143319953]: GPS timeout[0m
+[0m[ INFO] [1720445571.102857830]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445571.643177905]: Low quality GPS[0m
+[33m[ WARN] [1720445571.643316330]: GPS timeout[0m
+[0m[ INFO] [1720445572.108989007]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445573.143167380]: Low quality GPS[0m
+[33m[ WARN] [1720445573.143450026]: GPS timeout[0m
+[0m[ INFO] [1720445574.112079517]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445574.143198044]: Low quality GPS[0m
+[33m[ WARN] [1720445574.643201993]: GPS timeout[0m
+[33m[ WARN] [1720445575.143206998]: Low quality GPS[0m
+[0m[ INFO] [1720445576.107249739]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445576.143168741]: GPS timeout[0m
+[33m[ WARN] [1720445576.643182811]: Low quality GPS[0m
+[33m[ WARN] [1720445577.143171605]: GPS timeout[0m
+[0m[ INFO] [1720445578.107511365]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445578.143176333]: Low quality GPS[0m
+[33m[ WARN] [1720445578.143314628]: GPS timeout[0m
+[33m[ WARN] [1720445579.143210701]: Low quality GPS[0m
+[33m[ WARN] [1720445579.143562309]: GPS timeout[0m
+[0m[ INFO] [1720445580.115071654]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445580.643212581]: Low quality GPS[0m
+[33m[ WARN] [1720445580.643353932]: GPS timeout[0m
+[33m[ WARN] [1720445581.643260903]: Low quality GPS[0m
+[33m[ WARN] [1720445581.643398717]: GPS timeout[0m
+[0m[ INFO] [1720445582.113808680]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445583.143173121]: Low quality GPS[0m
+[33m[ WARN] [1720445583.143277472]: GPS timeout[0m
+[0m[ INFO] [1720445584.108788341]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445584.643192141]: Low quality GPS[0m
+[33m[ WARN] [1720445584.643303048]: GPS timeout[0m
+[0m[ INFO] [1720445585.110028764]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445586.143171130]: Low quality GPS[0m
+[33m[ WARN] [1720445586.143272555]: GPS timeout[0m
+[0m[ INFO] [1720445587.104748344]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445587.143172254]: Low quality GPS[0m
+[33m[ WARN] [1720445587.143483010]: GPS timeout[0m
+[33m[ WARN] [1720445588.143180963]: Low quality GPS[0m
+[33m[ WARN] [1720445588.643170303]: GPS timeout[0m
+[0m[ INFO] [1720445589.094536865]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445589.643170455]: Low quality GPS[0m
+[33m[ WARN] [1720445589.643275583]: GPS timeout[0m
+[0m[ INFO] [1720445590.109920697]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445590.643592002]: Low quality GPS[0m
+[33m[ WARN] [1720445590.645358986]: GPS timeout[0m
+[0m[ INFO] [1720445592.108291686]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445592.143162222]: Low quality GPS[0m
+[33m[ WARN] [1720445592.143438479]: GPS timeout[0m
+[0m[ INFO] [1720445593.109901916]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445593.143170301]: Low quality GPS[0m
+[33m[ WARN] [1720445593.143467205]: GPS timeout[0m
+[33m[ WARN] [1720445594.143177816]: Low quality GPS[0m
+[33m[ WARN] [1720445594.643174448]: GPS timeout[0m
+[0m[ INFO] [1720445595.112088863]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445595.143189860]: Low quality GPS[0m
+[33m[ WARN] [1720445595.643183220]: GPS timeout[0m
+[0m[ INFO] [1720445596.115549609]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445596.143188211]: Low quality GPS[0m
+[33m[ WARN] [1720445596.643191540]: GPS timeout[0m
+[33m[ WARN] [1720445597.643182445]: Low quality GPS[0m
+[33m[ WARN] [1720445597.643348425]: GPS timeout[0m
+[0m[ INFO] [1720445598.112979200]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445598.643184749]: Low quality GPS[0m
+[33m[ WARN] [1720445598.643500728]: GPS timeout[0m
+[33m[ WARN] [1720445599.643185397]: Low quality GPS[0m
+[0m[ INFO] [1720445600.105082585]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445600.143219113]: GPS timeout[0m
+[33m[ WARN] [1720445600.643217186]: Low quality GPS[0m
+[33m[ WARN] [1720445601.643179411]: GPS timeout[0m
+[0m[ INFO] [1720445602.106085211]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445602.143244712]: Low quality GPS[0m
+[33m[ WARN] [1720445602.643196573]: GPS timeout[0m
+[0m[ INFO] [1720445603.108170507]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445603.643179690]: Low quality GPS[0m
+[33m[ WARN] [1720445603.643490132]: GPS timeout[0m
+[33m[ WARN] [1720445604.643178059]: Low quality GPS[0m
+[0m[ INFO] [1720445605.096326571]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445605.143175802]: GPS timeout[0m
+[33m[ WARN] [1720445605.643188271]: Low quality GPS[0m
+[0m[ INFO] [1720445606.121722544]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445606.143181056]: GPS timeout[0m
+[33m[ WARN] [1720445607.143171544]: Low quality GPS[0m
+[33m[ WARN] [1720445607.143275932]: GPS timeout[0m
+[0m[ INFO] [1720445608.108309648]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445608.143327596]: Low quality GPS[0m
+[33m[ WARN] [1720445608.143480373]: GPS timeout[0m
+[33m[ WARN] [1720445609.643173596]: Low quality GPS[0m
+[33m[ WARN] [1720445609.643282855]: GPS timeout[0m
+[0m[ INFO] [1720445610.102557318]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445611.143182895]: Low quality GPS[0m
+[33m[ WARN] [1720445611.143289376]: GPS timeout[0m
+[0m[ INFO] [1720445612.105118235]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445612.643162738]: Low quality GPS[0m
+[33m[ WARN] [1720445612.643473457]: GPS timeout[0m
+[33m[ WARN] [1720445613.643182034]: Low quality GPS[0m
+[0m[ INFO] [1720445614.114532633]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445614.143185658]: GPS timeout[0m
+[33m[ WARN] [1720445615.143213914]: Low quality GPS[0m
+[33m[ WARN] [1720445615.143328765]: GPS timeout[0m
+[0m[ INFO] [1720445616.145858546]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445616.643177393]: Low quality GPS[0m
+[33m[ WARN] [1720445616.643310244]: GPS timeout[0m
+[0m[ INFO] [1720445618.105741204]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445618.143152598]: Low quality GPS[0m
+[33m[ WARN] [1720445618.143442632]: GPS timeout[0m
+[33m[ WARN] [1720445619.143181636]: Low quality GPS[0m
+[33m[ WARN] [1720445619.643285159]: GPS timeout[0m
+[0m[ INFO] [1720445620.104861799]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445620.643209195]: Low quality GPS[0m
+[33m[ WARN] [1720445620.643338361]: GPS timeout[0m
+[0m[ INFO] [1720445622.115982533]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445622.143190629]: Low quality GPS[0m
+[33m[ WARN] [1720445622.143337127]: GPS timeout[0m
+[33m[ WARN] [1720445623.643192808]: Low quality GPS[0m
+[33m[ WARN] [1720445623.643557564]: GPS timeout[0m
+[0m[ INFO] [1720445624.113087968]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445624.643183052]: Low quality GPS[0m
+[33m[ WARN] [1720445625.143187325]: GPS timeout[0m
+[0m[ INFO] [1720445626.117001829]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445626.143179009]: Low quality GPS[0m
+[33m[ WARN] [1720445626.143290082]: GPS timeout[0m
+[33m[ WARN] [1720445627.143183722]: Low quality GPS[0m
+[33m[ WARN] [1720445627.143292629]: GPS timeout[0m
+[0m[ INFO] [1720445628.111053891]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445628.643176238]: Low quality GPS[0m
+[33m[ WARN] [1720445628.643281885]: GPS timeout[0m
+[33m[ WARN] [1720445629.643180254]: Low quality GPS[0m
+[33m[ WARN] [1720445629.643314993]: GPS timeout[0m
+[0m[ INFO] [1720445630.112802908]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445630.643185039]: Low quality GPS[0m
+[33m[ WARN] [1720445631.143184695]: GPS timeout[0m
+[0m[ INFO] [1720445632.104405534]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445632.143182366]: Low quality GPS[0m
+[33m[ WARN] [1720445632.143287495]: GPS timeout[0m
+[33m[ WARN] [1720445633.643163309]: Low quality GPS[0m
+[33m[ WARN] [1720445633.643270067]: GPS timeout[0m
+[0m[ INFO] [1720445634.112490891]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445635.143179162]: Low quality GPS[0m
+[33m[ WARN] [1720445635.143319383]: GPS timeout[0m
+[0m[ INFO] [1720445636.112396471]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445636.643186131]: Low quality GPS[0m
+[33m[ WARN] [1720445636.643289611]: GPS timeout[0m
+[0m[ INFO] [1720445638.112621883]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445638.143174862]: Low quality GPS[0m
+[33m[ WARN] [1720445638.143282213]: GPS timeout[0m
+[33m[ WARN] [1720445639.143174029]: Low quality GPS[0m
+[33m[ WARN] [1720445639.643172043]: GPS timeout[0m
+[0m[ INFO] [1720445640.102942254]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445640.143272057]: Low quality GPS[0m
+[33m[ WARN] [1720445640.643181280]: GPS timeout[0m
+[0m[ INFO] [1720445641.109430625]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445641.643178027]: Low quality GPS[0m
+[33m[ WARN] [1720445641.643312637]: GPS timeout[0m
+[33m[ WARN] [1720445642.643218173]: Low quality GPS[0m
+[33m[ WARN] [1720445642.643322394]: GPS timeout[0m
+[0m[ INFO] [1720445643.102895121]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445644.143180531]: Low quality GPS[0m
+[33m[ WARN] [1720445644.143285789]: GPS timeout[0m
+[0m[ INFO] [1720445645.104397698]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445645.143444940]: Low quality GPS[0m
+[33m[ WARN] [1720445645.143572790]: GPS timeout[0m
+[33m[ WARN] [1720445646.643177430]: Low quality GPS[0m
+[33m[ WARN] [1720445646.643285151]: GPS timeout[0m
+[0m[ INFO] [1720445647.098112269]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445647.643198532]: Low quality GPS[0m
+[33m[ WARN] [1720445647.643722898]: GPS timeout[0m
+[0m[ INFO] [1720445648.115559858]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445649.143219592]: Low quality GPS[0m
+[33m[ WARN] [1720445649.143327702]: GPS timeout[0m
+[0m[ INFO] [1720445650.097573920]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445650.643191805]: Low quality GPS[0m
+[33m[ WARN] [1720445650.643308526]: GPS timeout[0m
+[0m[ INFO] [1720445651.104225740]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445652.139700402]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445652.143169798]: Low quality GPS[0m
+[33m[ WARN] [1720445652.143300649]: GPS timeout[0m
+[33m[ WARN] [1720445653.143179473]: Low quality GPS[0m
+[33m[ WARN] [1720445653.143314990]: GPS timeout[0m
+[0m[ INFO] [1720445654.108097970]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445654.143179971]: Low quality GPS[0m
+[33m[ WARN] [1720445654.643170077]: GPS timeout[0m
+[33m[ WARN] [1720445655.643191257]: Low quality GPS[0m
+[33m[ WARN] [1720445655.643324774]: GPS timeout[0m
+[0m[ INFO] [1720445656.113714560]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445657.143190785]: Low quality GPS[0m
+[33m[ WARN] [1720445657.143495671]: GPS timeout[0m
+[0m[ INFO] [1720445658.112257414]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445658.143392913]: Low quality GPS[0m
+[33m[ WARN] [1720445658.143522301]: GPS timeout[0m
+[33m[ WARN] [1720445659.643164850]: Low quality GPS[0m
+[33m[ WARN] [1720445659.643327719]: GPS timeout[0m
+[0m[ INFO] [1720445660.106737582]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445660.643171596]: Low quality GPS[0m
+[33m[ WARN] [1720445661.143204565]: GPS timeout[0m
+[33m[ WARN] [1720445661.643184352]: Low quality GPS[0m
+[0m[ INFO] [1720445662.106086820]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445662.643175765]: GPS timeout[0m
+[0m[ INFO] [1720445663.108637050]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445663.143167225]: Low quality GPS[0m
+[33m[ WARN] [1720445663.643183836]: GPS timeout[0m
+[33m[ WARN] [1720445664.143249356]: Low quality GPS[0m
+[0m[ INFO] [1720445665.109376019]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445665.143182219]: GPS timeout[0m
+[33m[ WARN] [1720445665.643247154]: Low quality GPS[0m
+[0m[ INFO] [1720445666.112661864]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445666.143373331]: GPS timeout[0m
+[33m[ WARN] [1720445667.143198566]: Low quality GPS[0m
+[33m[ WARN] [1720445667.143533026]: GPS timeout[0m
+[0m[ INFO] [1720445668.112674580]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445668.143213161]: Low quality GPS[0m
+[33m[ WARN] [1720445668.643189110]: GPS timeout[0m
+[0m[ INFO] [1720445669.115014869]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445669.643194053]: Low quality GPS[0m
+[33m[ WARN] [1720445669.643296404]: GPS timeout[0m
+[0m[ INFO] [1720445671.104088287]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445671.143297852]: Low quality GPS[0m
+[33m[ WARN] [1720445671.143480055]: GPS timeout[0m
+[0m[ INFO] [1720445672.108547382]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445672.643178158]: Low quality GPS[0m
+[33m[ WARN] [1720445672.643281805]: GPS timeout[0m
+[0m[ INFO] [1720445674.097636745]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445674.143179537]: Low quality GPS[0m
+[33m[ WARN] [1720445674.143302851]: GPS timeout[0m
+[0m[ INFO] [1720445675.105241768]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445675.143181549]: Low quality GPS[0m
+[33m[ WARN] [1720445675.643183290]: GPS timeout[0m
+[0m[ INFO] [1720445676.107553918]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445676.643192816]: Low quality GPS[0m
+[33m[ WARN] [1720445676.643314482]: GPS timeout[0m
+[0m[ INFO] [1720445678.104373921]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445678.143178696]: Low quality GPS[0m
+[33m[ WARN] [1720445678.143282861]: GPS timeout[0m
+[33m[ WARN] [1720445679.643182152]: Low quality GPS[0m
+[33m[ WARN] [1720445679.643289762]: GPS timeout[0m
+[0m[ INFO] [1720445680.112050464]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445681.143179591]: Low quality GPS[0m
+[33m[ WARN] [1720445681.143487107]: GPS timeout[0m
+[0m[ INFO] [1720445682.099870206]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445682.143188353]: Low quality GPS[0m
+[33m[ WARN] [1720445682.643172497]: GPS timeout[0m
+[0m[ INFO] [1720445683.104141201]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445683.643167790]: Low quality GPS[0m
+[33m[ WARN] [1720445683.643280789]: GPS timeout[0m
+[33m[ WARN] [1720445684.643175093]: Low quality GPS[0m
+[0m[ INFO] [1720445685.108188143]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445685.143187599]: GPS timeout[0m
+[33m[ WARN] [1720445686.143163267]: Low quality GPS[0m
+[33m[ WARN] [1720445686.143311099]: GPS timeout[0m
+[0m[ INFO] [1720445687.102654125]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445687.143196611]: Low quality GPS[0m
+[33m[ WARN] [1720445687.643172629]: GPS timeout[0m
+[0m[ INFO] [1720445688.114327086]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445688.643170023]: Low quality GPS[0m
+[33m[ WARN] [1720445688.643278449]: GPS timeout[0m
+[33m[ WARN] [1720445689.643503257]: Low quality GPS[0m
+[33m[ WARN] [1720445689.643626960]: GPS timeout[0m
+[0m[ INFO] [1720445690.112400445]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445691.143233224]: Low quality GPS[0m
+[33m[ WARN] [1720445691.143342389]: GPS timeout[0m
+[0m[ INFO] [1720445692.106248170]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445692.643210598]: Low quality GPS[0m
+[33m[ WARN] [1720445692.643315616]: GPS timeout[0m
+[0m[ INFO] [1720445693.109209821]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445694.113722932]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445694.143157510]: Low quality GPS[0m
+[33m[ WARN] [1720445694.143302175]: GPS timeout[0m
+[33m[ WARN] [1720445695.143197462]: Low quality GPS[0m
+[33m[ WARN] [1720445695.143528404]: GPS timeout[0m
+[0m[ INFO] [1720445696.106104333]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445696.143215423]: Low quality GPS[0m
+[33m[ WARN] [1720445696.643164279]: GPS timeout[0m
+[33m[ WARN] [1720445697.643195864]: Low quality GPS[0m
+[33m[ WARN] [1720445697.643356456]: GPS timeout[0m
+[0m[ INFO] [1720445698.107102458]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445699.143180972]: Low quality GPS[0m
+[33m[ WARN] [1720445699.143475247]: GPS timeout[0m
+[0m[ INFO] [1720445700.103643470]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445700.643186323]: Low quality GPS[0m
+[33m[ WARN] [1720445700.643508191]: GPS timeout[0m
+[0m[ INFO] [1720445702.113819760]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445702.143178600]: Low quality GPS[0m
+[33m[ WARN] [1720445702.143280358]: GPS timeout[0m
+[33m[ WARN] [1720445703.143179956]: Low quality GPS[0m
+[33m[ WARN] [1720445703.143283826]: GPS timeout[0m
+[0m[ INFO] [1720445704.112516084]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445704.643192100]: Low quality GPS[0m
+[33m[ WARN] [1720445704.643297155]: GPS timeout[0m
+[0m[ INFO] [1720445706.111326276]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445706.143173652]: Low quality GPS[0m
+[33m[ WARN] [1720445706.143279559]: GPS timeout[0m
+[33m[ WARN] [1720445707.143177044]: Low quality GPS[0m
+[33m[ WARN] [1720445707.143311709]: GPS timeout[0m
+[0m[ INFO] [1720445708.108146536]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720445708.143190962]: Low quality GPS[0m
+[33m[ WARN] [1720445708.143481738]: GPS timeout[0m
+[0m[ INFO] [1720445708.768435451]: Got action: mower_logic:idle/start_area_recording[0m
+[0m[ INFO] [1720445708.769591534]: Got start_area_recording command[0m
+[0m[ INFO] [1720445708.807827731]: new actions registered: mower_logic:idle registered 2 actions.[0m
+[0m[ INFO] [1720445708.809185665]: successfully registered actions for mower_logic:idle[0m
+[0m[ INFO] [1720445708.809299905]: [0m
+[0m[ INFO] [1720445708.809351349]: [0m
+[0m[ INFO] [1720445708.809408534]: --------------------------------------[0m
+[0m[ INFO] [1720445708.809462811]: - Entered state: AREA_RECORDING[0m
+[0m[ INFO] [1720445708.809509699]: --------------------------------------[0m
+[0m[ INFO] [1720445708.813230651]: new actions registered: mower_logic:area_recording registered 7 actions.[0m
+[0m[ INFO] [1720445708.814711992]: successfully registered actions for mower_logic:area_recording[0m
+[0m[ INFO] [1720445708.821843046]: Starting recording area[0m
+[0m[ INFO] [1720445708.821962138]: Subscribing to /joy for user input[0m
+[0m[ INFO] [1720445708.991926865]: successfully set GPS to 1[0m
+[33m[ WARN] [1720445709.102594451]: Last GPS was 186.004 seconds ago.[0m
+[0m[ INFO] [1720445709.506019017]: Subscribing to /area_recorder/progress_visualization[0m
+[0m[ INFO] [1720445709.516882208]: Subscribing to /xbot_monitoring/map_overlay[0m
+[0m[ INFO] [1720445709.536356332]: Subscribing to /area_recorder/progress_visualization_array[0m
+[33m[ WARN] [1720445709.643406466]: Low quality GPS[0m
+[33m[ WARN] [1720445709.643644816]: GPS timeout[0m
+[33m[ WARN] [1720445710.643383351]: Low quality GPS[0m
+[33m[ WARN] [1720445711.143180751]: GPS timeout[0m
+[33m[ WARN] [1720445712.143185852]: Low quality GPS[0m
+[33m[ WARN] [1720445712.143416054]: GPS timeout[0m
+[2024-07-08 13:35:13] [connect] WebSocket Connection [::ffff:10.0.10.52]:50916 v13 "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0" / 101
+[0m[ INFO] [1720445713.229631299]: vx:0 vr: 0[0m
+[33m[ WARN] [1720445713.643183799]: Low quality GPS[0m
+[33m[ WARN] [1720445713.643290909]: GPS timeout[0m
+[0m[ INFO] [1720445713.801811104]: vx:0.33 vr: 0.064[0m
+[0m[ INFO] [1720445714.353377722]: vx:0.51 vr: 0[0m
+[33m[ WARN] [1720445715.143166467]: Low quality GPS[0m
+[33m[ WARN] [1720445715.143462983]: GPS timeout[0m
+[0m[ INFO] [1720445715.779934292]: vx:0.53 vr: 0[0m
+[33m[ WARN] [1720445716.143188399]: Low quality GPS[0m
+[0m[ INFO] [1720445716.292162710]: vx:0.2 vr: 1.344[0m
+[33m[ WARN] [1720445716.643172248]: GPS timeout[0m
+[0m[ INFO] [1720445716.805495917]: vx:0.04 vr: 1.344[0m
+[33m[ WARN] [1720445717.143305116]: Low quality GPS[0m
+[0m[ INFO] [1720445717.318492111]: vx:0.04 vr: 1.344[0m
+[33m[ WARN] [1720445717.643226544]: GPS timeout[0m
+[0m[ INFO] [1720445717.835102353]: vx:0.03 vr: 1.344[0m
+[0m[ INFO] [1720445718.339800283]: vx:0.03 vr: 1.344[0m
+[33m[ WARN] [1720445718.643292274]: Low quality GPS[0m
+[33m[ WARN] [1720445718.643668957]: GPS timeout[0m
+[0m[ INFO] [1720445718.847920466]: vx:0.14 vr: 1.344[0m
+[0m[ INFO] [1720445719.362106531]: vx:0.35 vr: 1.2800000000000002[0m
+[0m[ INFO] [1720445720.111291035]: GPS data now valid[0m
+[0m[ INFO] [1720445720.111501625]: First GPS data, moving kalman filter to 0.321171, -10.8163[0m
+[0m[ INFO] [1720445720.143197063]: GPS quality: 0.907805[0m
+[33m[ WARN] [1720445720.143299710]: GPS timeout[0m
+[0m[ INFO] [1720445720.499155667]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445721.089169533]: vx:0.2 vr: 1.328[0m
+[0m[ INFO] [1720445721.602812482]: vx:0.17 vr: 1.504[0m
+[0m[ INFO] [1720445722.199599431]: vx:0.14 vr: 1.52[0m
+[0m[ INFO] [1720445722.720553272]: vx:0.35 vr: 1.328[0m
+[0m[ INFO] [1720445723.249104296]: vx:0.54 vr: 1.2320000000000002[0m
+[0m[ INFO] [1720445723.757298963]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445724.669330338]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445725.177582529]: vx:0.25 vr: 0.43200000000000005[0m
+[0m[ INFO] [1720445725.700247554]: vx:0.31 vr: 0.976[0m
+[0m[ INFO] [1720445726.220706469]: vx:0.027767067240353285 vr: 1.5993830730443492[0m
+[0m[ INFO] [1720445726.818991078]: vx:-0.1414213562373095 vr: 1.5839191898578664[0m
+[0m[ INFO] [1720445727.352097808]: vx:-0.017388674879358107 vr: 1.5997580889009457[0m
+[0m[ INFO] [1720445728.363038295]: vx:0.1414213562373095 vr: 1.5839191898578666[0m
+[0m[ INFO] [1720445730.143207665]: GPS quality: 0.904475[0m
+[0m[ INFO] [1720445740.143208116]: GPS quality: 0.907805[0m
+[2024-07-08 13:35:45] [connect] WebSocket Connection [::ffff:10.0.10.185]:63281 v13 "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1" / 101
+[0m[ INFO] [1720445745.607108215]: vx:0.28 vr: 0.016[0m
+[0m[ INFO] [1720445746.201708151]: vx:0.7 vr: -0.048[0m
+[0m[ INFO] [1720445746.708991995]: vx:0.04 vr: 1.4400000000000002[0m
+[0m[ INFO] [1720445747.211731801]: vx:0.36508752881845624 vr: 1.4895571175793014[0m
+[0m[ INFO] [1720445747.719487478]: vx:0.7535690571589675 vr: 1.05179000318358[0m
+[0m[ INFO] [1720445748.321150130]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445748.823648240]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445749.324583513]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445749.828134842]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445750.143260768]: GPS quality: 0.910978[0m
+[0m[ INFO] [1720445750.332445075]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445750.844400715]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445751.440820848]: vx:0.33999996921684444 vr: 1.5046807148319923[0m
+[0m[ INFO] [1720445751.957738824]: vx:0.5920764339606918 vr: 1.2894109006255066[0m
+[0m[ INFO] [1720445752.459870434]: vx:0.6807348567911585 vr: 1.1720478403882557[0m
+[0m[ INFO] [1720445752.963234629]: vx:0.5795237863600036 vr: 1.3039285193100083[0m
+[0m[ INFO] [1720445753.823359669]: vx:0.19 vr: 0.048[0m
+[0m[ INFO] [1720445754.325957986]: vx:0.8149553245687551 vr: 0.9272380581760058[0m
+[0m[ INFO] [1720445754.868755206]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445755.459049941]: vx:-0.58 vr: 0.016[0m
+[0m[ INFO] [1720445755.962063372]: vx:-0.71 vr: 0.016[0m
+[0m[ INFO] [1720445756.474299181]: vx:-0.71 vr: 0.016[0m
+[0m[ INFO] [1720445757.049620054]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445758.775191266]: vx:0.18 vr: 0.384[0m
+[0m[ INFO] [1720445759.277211959]: vx:0.5665288228870652 vr: 1.3184670787189883[0m
+[0m[ INFO] [1720445759.777690499]: vx:0.42368510890141337 vr: 1.4492952690696623[0m
+[0m[ INFO] [1720445760.280507987]: vx:0.41216786985544673 vr: 1.4577726765413697[0m
+[0m[ INFO] [1720445760.643307729]: GPS quality: 0.904475[0m
+[0m[ INFO] [1720445760.788759676]: vx:0.4240655438407553 vr: 1.4490104006490894[0m
+[0m[ INFO] [1720445761.294960123]: vx:0.453049848125789 vr: 1.4263762960347421[0m
+[0m[ INFO] [1720445761.796645051]: vx:0.5568764302559503 vr: 1.3289525657633527[0m
+[0m[ INFO] [1720445762.714546922]: vx:0.3 vr: 0[0m
+[0m[ INFO] [1720445763.311042461]: vx:0.9962042085185944 vr: -0.13927515148221123[0m
+[31m[ERROR] [1720445763.566679606]: Low Level Emergency. Bitmask was: 17[0m
+[0m[ INFO] [1720445763.811976198]: vx:0.98 vr: 0.17600000000000002[0m
+[31m[ERROR] [1720445764.586326786]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445764.646275116]: vx:0.24 vr: 0.016[0m
+[0m[ INFO] [1720445765.184626227]: vx:0 vr: 0[0m
+[31m[ERROR] [1720445765.586368230]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445766.583433890]: Got action: mower_logic/reset_emergency[0m
+[33m[ WARN] [1720445766.584203829]: Got reset emergency action.[0m
+[31m[ERROR] [1720445766.586393424]: Low Level Emergency. Bitmask was: 1[0m
+[0m[ INFO] [1720445766.590219877]: successfully set emergency enabled to 0[0m
+[0m[ INFO] [1720445767.430899338]: vx:0.1 vr: 0.016[0m
+[0m[ INFO] [1720445767.935006771]: vx:0.61 vr: -0.032[0m
+[0m[ INFO] [1720445768.445094311]: vx:0.52 vr: 0.6240000000000001[0m
+[0m[ INFO] [1720445769.042038632]: vx:0.3680484510073784 vr: 1.4876905809140348[0m
+[0m[ INFO] [1720445769.544165661]: vx:0.3511234415883917 vr: 1.4981266841104712[0m
+[0m[ INFO] [1720445770.144439889]: vx:0.3425287238106898 vr: 1.5032117707806272[0m
+[0m[ INFO] [1720445770.645898612]: vx:0.35 vr: 0.7200000000000001[0m
+[0m[ INFO] [1720445771.143231367]: GPS quality: 0.904475[0m
+[0m[ INFO] [1720445771.147048265]: vx:0.66 vr: 0.288[0m
+[0m[ INFO] [1720445771.649742409]: vx:0.67 vr: 0.08000000000000002[0m
+[0m[ INFO] [1720445772.156190933]: vx:0.71 vr: -0.46399999999999997[0m
+[0m[ INFO] [1720445772.656762264]: vx:0.77 vr: -0.41600000000000004[0m
+[0m[ INFO] [1720445773.161975153]: vx:0.78 vr: -0.384[0m
+[0m[ INFO] [1720445773.666242941]: vx:0.78 vr: -0.384[0m
+[0m[ INFO] [1720445774.265192124]: vx:0.78 vr: -0.36800000000000005[0m
+[0m[ INFO] [1720445774.768806347]: vx:0.78 vr: -0.32000000000000006[0m
+[0m[ INFO] [1720445775.272980216]: vx:0.81 vr: -0.17600000000000002[0m
+[0m[ INFO] [1720445775.779686623]: vx:0.82 vr: -0.032[0m
+[0m[ INFO] [1720445776.281034572]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445776.783039074]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445777.287026267]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445777.788819311]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445778.296670257]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445778.811711040]: vx:0.82 vr: 0[0m
+[0m[ INFO] [1720445779.314942598]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445779.817676828]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445780.325226154]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445780.828972677]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445781.339851353]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445781.643290442]: GPS quality: 0.910978[0m
+[0m[ INFO] [1720445781.932062767]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445782.433610757]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445782.936798032]: vx:0.83 vr: -0.016[0m
+[0m[ INFO] [1720445783.442617532]: vx:0.83 vr: -0.096[0m
+[0m[ INFO] [1720445784.025010620]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445784.626334573]: vx:0 vr: 0[0m
+[0m[ INFO] [1720445785.209652956]: vx:0.6 vr: -0.24[0m
+[0m[ INFO] [1720445785.813186416]: vx:0.76 vr: -0.496[0m
+[0m[ INFO] [1720445786.315405101]: vx:0.73 vr: -0.592[0m
+[0m[ INFO] [1720445786.819384755]: vx:0.73 vr: -0.6400000000000001[0m
+[0m[ INFO] [1720445787.327011441]: vx:0.73 vr: -0.6080000000000001[0m
+[0m[ INFO] [1720445787.837647254]: vx:0.73 vr: -0.592[0m
+[0m[ INFO] [1720445788.343126719]: vx:0.73 vr: -0.5599999999999999[0m
+[0m[ INFO] [1720445788.848865497]: vx:0.73 vr: -0.5599999999999999[0m
+[0m[ INFO] [1720445789.349388372]: vx:0.83 vr: -0.512[0m
+[0m[ INFO] [1720445789.850719150]: vx:0.88 vr: -0.32000000000000006[0m
+[0m[ INFO] [1720445790.352788943]: vx:0.88 vr: -0.32000000000000006[0m
+[0m[ INFO] [1720445790.856132654]: vx:0.88 vr: -0.24[0m
+[0m[ INFO] [1720445791.368795763]: vx:0.88 vr: 0.144[0m
+[0m[ INFO] [1720445791.966254831]: vx:0.88 vr: 0.11200000000000002[0m
+[0m[ INFO] [1720445792.143203732]: GPS quality: 0.910978[0m
+[0m[ INFO] [1720445793.301493090]: Got action: mower_logic:area_recording/exit_recording_mode[0m
+[0m[ INFO] [1720445793.302424232]: Got exit without saving[0m
+[0m[ INFO] [1720445793.302533860]: - Behaviour.h: abort() called[0m
+[0m[ INFO] [1720445793.395379428]: new actions registered: mower_logic:area_recording registered 7 actions.[0m
+[0m[ INFO] [1720445793.396924491]: successfully registered actions for mower_logic:area_recording[0m
+[0m[ INFO] [1720445793.400924314]: new actions registered: mower_logic:area_recording registered 7 actions.[0m
+[0m[ INFO] [1720445793.403758627]: successfully registered actions for mower_logic:area_recording[0m
+[0m[ INFO] [1720445793.424092498]: [0m
+[0m[ INFO] [1720445793.424446069]: [0m
+[0m[ INFO] [1720445793.425383396]: --------------------------------------[0m
+[0m[ INFO] [1720445793.426139687]: - Entered state: IDLE[0m
+[0m[ INFO] [1720445793.426230408]: --------------------------------------[0m
+[0m[ INFO] [1720445793.430952300]: new actions registered: mower_logic:idle registered 2 actions.[0m
+[0m[ INFO] [1720445793.432159828]: successfully registered actions for mower_logic:idle[0m
+[0m[ INFO] [1720445793.436363557]: Got getMowingArea call with index: 0[0m
+[0m[ INFO] [1720445793.442086293]: Getting Docking Point[0m
+[0m[ INFO] [1720445793.454128928]: successfully set GPS to 0[0m
+[0m[ INFO] [1720445794.109569049]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720445794.689506850]: Got action: mower_logic:idle/start_mowing[0m
+[0m[ INFO] [1720445794.690227030]: Got start_mowing command[0m
+[0m[ INFO] [1720445794.697906067]: successfully set GPS to 1[0m
+[0m[ INFO] [1720445794.702041037]: new actions registered: mower_logic:idle registered 2 actions.[0m
+[0m[ INFO] [1720445794.703352398]: successfully registered actions for mower_logic:idle[0m
+[0m[ INFO] [1720445794.703761339]: [0m
+[0m[ INFO] [1720445794.703888597]: [0m
+[0m[ INFO] [1720445794.703937004]: --------------------------------------[0m
+[0m[ INFO] [1720445794.703985337]: - Entered state: MOWING[0m
+[0m[ INFO] [1720445794.704115411]: --------------------------------------[0m
+[0m[ INFO] [1720445794.709994757]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445794.711737133]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445794.711894243]: MowingBehavior: Creating mowing plan for area: 0[0m
+[0m[ INFO] [1720445794.716822911]: Got getMowingArea call with index: 0[0m
+[0m[ INFO] [1720445794.717483758]: MowingBehavior: Detected mow angle: 2.3241[0m
+[0m[ INFO] [1720445794.717614146]: MowingBehavior: mowing angle offset (deg): 0[0m
+[0m[ INFO] [1720445794.717681275]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 2.3241[0m
+[0m[ INFO] [1720445794.723610418]: generating 4 outlines[0m
+[0m[ INFO] [1720445794.729928742]: Starting Fill. Poly size:6[0m
+[0m[ INFO] [1720445794.731635822]: Fill Complete. Polyline count: 1[0m
+[0m[ INFO] [1720445794.731766747]: Polyline 0 has point count: 64[0m
+[0m[ INFO] [1720445794.731924228]: Got 138 points[0m
+[0m[ INFO] [1720445794.732383150]: Got 148 points[0m
+[0m[ INFO] [1720445794.732899221]: Got 158 points[0m
+[0m[ INFO] [1720445794.733294496]: Got 168 points[0m
+[0m[ INFO] [1720445794.734375210]: Got 940 points[0m
+[0m[ INFO] [1720445794.744706543]: MowingBehavior: Advancing to checkpoint, path: 0 index: 80[0m
+[0m[ INFO] [1720445794.746549363]: MowingBehavior: Executing mowing plan[0m
+[0m[ INFO] [1720445794.747059859]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445794.747400986]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445794.792210958]: FTCLocalPlannerROS: Got new global plan with 126 points.[0m
+[0m[ INFO] [1720445802.643377314]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445813.143307672]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445814.829932251]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445814.830107120]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445814.830438026]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445817.878775245]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445819.828805632]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445819.829254925]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445819.829637052]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445819.851604749]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445819.851907487]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445819.852092764]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445819.856061124]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445819.857618669]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445819.857975352]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445819.863278462]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445819.865836592]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445819.866290034]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445819.867749523]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445819.905862902]: FTCLocalPlannerROS: Got new global plan with 123 points.[0m
+[0m[ INFO] [1720445823.643272419]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445834.143225947]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445839.949698897]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445839.950038061]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445839.950362522]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445842.999179614]: No velocity command received from controller! [0m
+[0m[ INFO] [1720445844.643184591]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720445844.949341944]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445844.949674146]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445844.949779311]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445844.968740125]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445844.968890291]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445844.968947253]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445844.973358390]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445844.975006952]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445844.975185451]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445844.981105781]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445844.983044953]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445844.983664615]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445844.984181408]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445845.021146264]: FTCLocalPlannerROS: Got new global plan with 124 points.[0m
+[0m[ INFO] [1720445854.643201342]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445864.643202724]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445865.064243674]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445865.064634227]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445865.065124334]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445868.113771093]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445870.063840297]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445870.064456608]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445870.064593403]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445870.085521373]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445870.085643391]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445870.085719205]: MowingBehavior: (FIRST POINT) - Attempt 0 / 3 Trimming first point off the beginning of the mow path.[0m
+[0m[ INFO] [1720445870.089913936]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445870.091573148]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445870.091926997]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445870.097049277]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445870.098971264]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445870.099122800]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445870.099184133]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445870.134135695]: FTCLocalPlannerROS: Got new global plan with 121 points.[0m
+[0m[ INFO] [1720445875.143194803]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445885.143243499]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445890.178807175]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445890.178965711]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445890.179233247]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445893.228259607]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445895.178289336]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445895.178628556]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445895.178763333]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445895.199637788]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445895.199754991]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445895.199832639]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445895.203332245]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445895.204973975]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445895.205120289]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445895.209945665]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445895.211987874]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445895.212733702]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445895.213372161]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445895.260300871]: FTCLocalPlannerROS: Got new global plan with 121 points.[0m
+[0m[ INFO] [1720445895.643223966]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445905.643262646]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445915.292068847]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445915.292272401]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445915.292608899]: No velocity command received from controller! [0m
+[0m[ INFO] [1720445915.643566338]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720445918.341595434]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445920.291670487]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445920.292262076]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445920.292405741]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445920.314310156]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445920.314417507]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445920.314489914]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445920.317868930]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445920.319418012]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445920.319616567]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445920.324484924]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445920.327401239]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445920.327707866]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445920.327907569]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445920.360314231]: FTCLocalPlannerROS: Got new global plan with 121 points.[0m
+[0m[ INFO] [1720445926.143318155]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445936.643330243]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445940.405140793]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445940.405305718]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445940.405609031]: No velocity command received from controller! [0m
+[2024-07-08 13:39:03] [info] asio async_read_at_least error: system:104 (Connection reset by peer)
+[2024-07-08 13:39:03] [error] handle_read_frame error: websocketpp.transport:2 (Underlying Transport Error)
+[2024-07-08 13:39:03] [disconnect] Disconnect close local:[1006,Underlying Transport Error] remote:[1006]
+[33m[ WARN] [1720445943.454614219]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445945.404699193]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445945.405298060]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445945.405429467]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445945.428569895]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445945.428676506]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445945.428734468]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Trimming first point off the beginning of the mow path.[0m
+[0m[ INFO] [1720445945.432158132]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445945.433944621]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445945.434069213]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445945.437758078]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445945.439840917]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445945.440021509]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445945.440088582]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445945.476960128]: FTCLocalPlannerROS: Got new global plan with 118 points.[0m
+[0m[ INFO] [1720445947.143199646]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445957.143196035]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445965.519141648]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445965.519320369]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445965.519554553]: No velocity command received from controller! [0m
+[0m[ INFO] [1720445967.143202344]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720445968.568723742]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445970.518476424]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445970.519188308]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445970.519337659]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445970.540636584]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445970.540747954]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445970.540805712]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445970.544217099]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445970.546043921]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445970.546178753]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445970.552279568]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445970.554430943]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445970.554689849]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445970.555394826]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445970.592689430]: FTCLocalPlannerROS: Got new global plan with 119 points.[0m
+[0m[ INFO] [1720445977.143205676]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720445987.143219094]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720445990.635864160]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720445990.636035473]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720445990.636298546]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445993.685372681]: No velocity command received from controller! [0m
+[33m[ WARN] [1720445995.635099334]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720445995.635410647]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720445995.635506776]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720445995.659312281]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720445995.659429410]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720445995.659484576]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720445995.663118480]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445995.664592379]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445995.664724304]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720445995.671021914]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720445995.673196975]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720445995.674809558]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720445995.675802756]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720445995.712687459]: FTCLocalPlannerROS: Got new global plan with 118 points.[0m
+[0m[ INFO] [1720445997.143242254]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446007.643650996]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446015.754045105]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446015.754326159]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446015.754795841]: No velocity command received from controller! [0m
+[0m[ INFO] [1720446018.143248088]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720446018.802774392]: No velocity command received from controller! [0m
+[31m[ERROR] [1720446019.172698168]: [driver_gps] waited 11 ms to write to the tx buffer, serial port is probably congested![0m
+[33m[ WARN] [1720446020.752898464]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446020.753367813]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446020.753529830]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720446020.777221931]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720446020.777557466]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720446020.777661818]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Trimming first point off the beginning of the mow path.[0m
+[0m[ INFO] [1720446020.781238815]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446020.783329488]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446020.783509450]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720446020.787709073]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446020.791455051]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446020.791698327]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720446020.792212565]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720446020.844536886]: FTCLocalPlannerROS: Got new global plan with 115 points.[0m
+[0m[ INFO] [1720446028.643365810]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446039.143212839]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446040.874225886]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446040.874372256]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446040.874617662]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446043.923698170]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446045.873816190]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446045.874281409]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446045.874637426]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720446045.893491039]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720446045.893655242]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720446045.893746000]: MowingBehavior: (FIRST POINT) - Attempt 1 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720446045.897423331]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446045.899351764]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446045.899713318]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720446045.906055059]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446045.908475823]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446045.909442484]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720446045.910136998]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720446045.943600619]: FTCLocalPlannerROS: Got new global plan with 115 points.[0m
+[0m[ INFO] [1720446049.143203328]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446059.643204658]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446065.986661194]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446065.986830118]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446065.987455541]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446069.036139296]: No velocity command received from controller! [0m
+[0m[ INFO] [1720446070.143203485]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720446070.986267141]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446070.986748434]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446070.986875934]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720446071.011313887]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720446071.011625219]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[33m[ WARN] [1720446071.011819162]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...[0m
+[0m[ INFO] [1720446071.016020824]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446071.017748351]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446071.018213163]: MowingBehavior: CONTINUING[0m
+[0m[ INFO] [1720446071.024534590]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446071.026132396]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446071.027460648]: MowingBehavior: Path segment length: 612 poses.[0m
+[0m[ INFO] [1720446071.027944163]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point[0m
+[0m[ INFO] [1720446071.059726946]: FTCLocalPlannerROS: Got new global plan with 115 points.[0m
+[0m[ INFO] [1720446080.643197117]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446090.643197396]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446091.103523635]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446091.103668412]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446091.103945837]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446094.153045429]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446096.103120885]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446096.103768215]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446096.104099824]: Abort the execution of the controller: [0m
+[0m[ INFO] [1720446096.128539373]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.[0m
+[31m[ERROR] [1720446096.128656687]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5[0m
+[31m[ERROR] [1720446096.128727279]: MowingBehavior: (FIRST POINT) Max retries reached, we are unable to reach any of the first points - aborting at index: 83 path: 0 area: 0[0m
+[0m[ INFO] [1720446096.128785668]: - Behaviour.h: abort() called[0m
+[0m[ INFO] [1720446096.132866182]: new actions registered: mower_logic:mowing registered 4 actions.[0m
+[0m[ INFO] [1720446096.134543303]: successfully registered actions for mower_logic:mowing[0m
+[0m[ INFO] [1720446096.134660506]: [0m
+[0m[ INFO] [1720446096.134713376]: [0m
+[0m[ INFO] [1720446096.134762635]: --------------------------------------[0m
+[0m[ INFO] [1720446096.134819616]: - Entered state: DOCKING[0m
+[0m[ INFO] [1720446096.134865097]: --------------------------------------[0m
+[0m[ INFO] [1720446096.139779236]: Getting Docking Point[0m
+[33m[ WARN] [1720446096.140127623]: Waiting for good GPS[0m
+[0m[ INFO] [1720446097.140361736]: Calculating approach path[0m
+[0m[ INFO] [1720446097.175360893]: FTCLocalPlannerROS: Got new global plan with 78 points.[0m
+[0m[ INFO] [1720446100.643199252]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446110.643209732]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446117.213736077]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446117.213890484]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446117.214109464]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446120.263222632]: No velocity command received from controller! [0m
+[0m[ INFO] [1720446120.643352106]: GPS quality: 0.913977[0m
+[33m[ WARN] [1720446122.213309513]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446122.213701862]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446122.213833843]: Abort the execution of the controller: [0m
+[31m[ERROR] [1720446122.216586365]: Error during docking approach.[0m
+[31m[ERROR] [1720446122.216966011]: Retrying docking approach[0m
+[0m[ INFO] [1720446122.217225491]: [0m
+[0m[ INFO] [1720446122.217797099]: [0m
+[0m[ INFO] [1720446122.218138690]: --------------------------------------[0m
+[0m[ INFO] [1720446122.218606335]: - Entered state: DOCKING[0m
+[0m[ INFO] [1720446122.219275202]: --------------------------------------[0m
+[0m[ INFO] [1720446122.223783992]: Getting Docking Point[0m
+[33m[ WARN] [1720446122.224151935]: Waiting for good GPS[0m
+[0m[ INFO] [1720446123.224537242]: Calculating approach path[0m
+[0m[ INFO] [1720446123.253121734]: FTCLocalPlannerROS: Got new global plan with 82 points.[0m
+[0m[ INFO] [1720446131.143251908]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446141.643317072]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446143.295292976]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446143.295653122]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446143.296032991]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446146.344782462]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446148.294856886]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446148.295819140]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446148.296177897]: Abort the execution of the controller: [0m
+[31m[ERROR] [1720446148.297274595]: Error during docking approach.[0m
+[31m[ERROR] [1720446148.297424965]: Retrying docking approach[0m
+[0m[ INFO] [1720446148.297487094]: [0m
+[0m[ INFO] [1720446148.297536020]: [0m
+[0m[ INFO] [1720446148.297599760]: --------------------------------------[0m
+[0m[ INFO] [1720446148.297650982]: - Entered state: DOCKING[0m
+[0m[ INFO] [1720446148.297696574]: --------------------------------------[0m
+[0m[ INFO] [1720446148.303022860]: Getting Docking Point[0m
+[33m[ WARN] [1720446148.303706690]: Waiting for good GPS[0m
+[0m[ INFO] [1720446149.303982040]: Calculating approach path[0m
+[0m[ INFO] [1720446149.334378655]: FTCLocalPlannerROS: Got new global plan with 83 points.[0m
+[0m[ INFO] [1720446152.143274145]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446162.643202323]: GPS quality: 0.904475[0m
+[31m[ERROR] [1720446169.376221007]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446169.376369950]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446169.376622801]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446172.425725241]: No velocity command received from controller! [0m
+[0m[ INFO] [1720446172.643203073]: GPS quality: 0.907805[0m
+[33m[ WARN] [1720446174.375719292]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446174.376126771]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446174.376265771]: Abort the execution of the controller: [0m
+[31m[ERROR] [1720446174.377634856]: Error during docking approach.[0m
+[31m[ERROR] [1720446174.377767485]: Retrying docking approach[0m
+[0m[ INFO] [1720446174.377828022]: [0m
+[0m[ INFO] [1720446174.377878225]: [0m
+[0m[ INFO] [1720446174.377967928]: --------------------------------------[0m
+[0m[ INFO] [1720446174.378055095]: - Entered state: DOCKING[0m
+[0m[ INFO] [1720446174.378137724]: --------------------------------------[0m
+[0m[ INFO] [1720446174.383545788]: Getting Docking Point[0m
+[33m[ WARN] [1720446174.383932119]: Waiting for good GPS[0m
+[0m[ INFO] [1720446175.384502246]: Calculating approach path[0m
+[0m[ INFO] [1720446175.413293391]: FTCLocalPlannerROS: Got new global plan with 83 points.[0m
+[0m[ INFO] [1720446175.414229312]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following[0m
+[0m[ INFO] [1720446175.414359940]: FTCLocalPlannerROS: Switching to state 1[0m
+[31m[ERROR] [1720446182.156314803]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.02371) > config.max_follow_distance (1) It probably has crashed.[0m
+[0m[ INFO] [1720446182.156714412]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446182.157646648]: No velocity command received from controller! [0m
+[0m[ INFO] [1720446182.643215450]: GPS quality: 0.910978[0m
+[33m[ WARN] [1720446185.204629327]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446187.154757907]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446187.155227275]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446187.155353478]: Abort the execution of the controller: [0m
+[31m[ERROR] [1720446187.157243431]: Error during docking approach.[0m
+[31m[ERROR] [1720446187.157392671]: Retrying docking approach[0m
+[0m[ INFO] [1720446187.157456375]: [0m
+[0m[ INFO] [1720446187.157502893]: [0m
+[0m[ INFO] [1720446187.157551689]: --------------------------------------[0m
+[0m[ INFO] [1720446187.157601355]: - Entered state: DOCKING[0m
+[0m[ INFO] [1720446187.157650114]: --------------------------------------[0m
+[0m[ INFO] [1720446187.161621556]: Getting Docking Point[0m
+[33m[ WARN] [1720446187.163084067]: Waiting for good GPS[0m
+[0m[ INFO] [1720446188.163343721]: Calculating approach path[0m
+[0m[ INFO] [1720446188.195842218]: FTCLocalPlannerROS: Got new global plan with 67 points.[0m
+[0m[ INFO] [1720446193.143210561]: GPS quality: 0.910978[0m
+[0m[ INFO] [1720446203.643243284]: GPS quality: 0.913977[0m
+[31m[ERROR] [1720446208.236994096]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.[0m
+[0m[ INFO] [1720446208.237588815]: FTCLocalPlannerROS: Switching to state 4[0m
+[33m[ WARN] [1720446208.238026850]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446211.286461879]: No velocity command received from controller! [0m
+[33m[ WARN] [1720446213.236530443]: The controller has been aborted after it exceeded the patience time[0m
+[33m[ WARN] [1720446213.236997200]: No Recovery Behaviors loaded![0m
+[33m[ WARN] [1720446213.237129829]: Abort the execution of the controller: [0m
+[31m[ERROR] [1720446213.238951190]: Error during docking approach.[0m
+[31m[ERROR] [1720446213.239099041]: Giving up on docking[0m
+[0m[ INFO] [1720446213.239164615]: [0m
+[0m[ INFO] [1720446213.239211818]: [0m
+[0m[ INFO] [1720446213.239263855]: --------------------------------------[0m
+[0m[ INFO] [1720446213.239319595]: - Entered state: IDLE[0m
+[0m[ INFO] [1720446213.239365651]: --------------------------------------[0m
+[0m[ INFO] [1720446213.244888344]: new actions registered: mower_logic:idle registered 2 actions.[0m
+[0m[ INFO] [1720446213.246657743]: successfully registered actions for mower_logic:idle[0m
+[0m[ INFO] [1720446213.251710772]: Got getMowingArea call with index: 0[0m
+[0m[ INFO] [1720446213.257053578]: Getting Docking Point[0m
+[0m[ INFO] [1720446213.262298977]: successfully set GPS to 0[0m
+[0m[ INFO] [1720446214.097851657]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446214.143221998]: GPS quality: 0.913977[0m
+[0m[ INFO] [1720446216.099717917]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446218.102093206]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446220.103875993]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446222.089612077]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446223.094777599]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446223.143312684]: Low quality GPS[0m
+[0m[ INFO] [1720446224.097267266]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446224.643163790]: Low quality GPS[0m
+[33m[ WARN] [1720446225.643181123]: Low quality GPS[0m
+[0m[ INFO] [1720446226.105330188]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446226.643181275]: Low quality GPS[0m
+[33m[ WARN] [1720446227.643172022]: GPS timeout[0m
+[0m[ INFO] [1720446228.116865883]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446228.143178637]: Low quality GPS[0m
+[33m[ WARN] [1720446228.643180143]: GPS timeout[0m
+[33m[ WARN] [1720446229.143241482]: Low quality GPS[0m
+[33m[ WARN] [1720446229.643200600]: GPS timeout[0m
+[0m[ INFO] [1720446230.097535858]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446230.643204079]: Low quality GPS[0m
+[33m[ WARN] [1720446230.643327393]: GPS timeout[0m
+[33m[ WARN] [1720446231.643240746]: Low quality GPS[0m
+[33m[ WARN] [1720446231.643389338]: GPS timeout[0m
+[0m[ INFO] [1720446232.097050825]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446233.111426164]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446233.143239947]: Low quality GPS[0m
+[33m[ WARN] [1720446233.143537056]: GPS timeout[0m
+[33m[ WARN] [1720446234.643188210]: Low quality GPS[0m
+[33m[ WARN] [1720446234.643328025]: GPS timeout[0m
+[0m[ INFO] [1720446235.097891789]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446236.104130161]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446236.143174981]: Low quality GPS[0m
+[33m[ WARN] [1720446236.143295591]: GPS timeout[0m
+[33m[ WARN] [1720446237.143188961]: Low quality GPS[0m
+[33m[ WARN] [1720446237.143485978]: GPS timeout[0m
+[0m[ INFO] [1720446238.111373958]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446238.143191500]: Low quality GPS[0m
+[33m[ WARN] [1720446238.143513202]: GPS timeout[0m
+[33m[ WARN] [1720446239.143209042]: Low quality GPS[0m
+[33m[ WARN] [1720446239.143619318]: GPS timeout[0m
+[0m[ INFO] [1720446240.101689613]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446240.643177686]: Low quality GPS[0m
+[33m[ WARN] [1720446240.643325833]: GPS timeout[0m
+[33m[ WARN] [1720446241.643196384]: Low quality GPS[0m
+[0m[ INFO] [1720446242.108885935]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446242.143209206]: GPS timeout[0m
+[33m[ WARN] [1720446243.143178557]: Low quality GPS[0m
+[33m[ WARN] [1720446243.143291075]: GPS timeout[0m
+[0m[ INFO] [1720446244.103758276]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446244.143214040]: Low quality GPS[0m
+[33m[ WARN] [1720446244.143348947]: GPS timeout[0m
+[33m[ WARN] [1720446245.643176354]: Low quality GPS[0m
+[33m[ WARN] [1720446245.643470723]: GPS timeout[0m
+[0m[ INFO] [1720446246.099738031]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446247.102372251]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446247.143317137]: Low quality GPS[0m
+[33m[ WARN] [1720446247.143491137]: GPS timeout[0m
+[33m[ WARN] [1720446248.643169744]: Low quality GPS[0m
+[33m[ WARN] [1720446248.643274632]: GPS timeout[0m
+[0m[ INFO] [1720446249.092937848]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446249.643182966]: Low quality GPS[0m
+[33m[ WARN] [1720446249.643292077]: GPS timeout[0m
+[0m[ INFO] [1720446250.105849025]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446251.143196379]: Low quality GPS[0m
+[33m[ WARN] [1720446251.143349193]: GPS timeout[0m
+[0m[ INFO] [1720446252.108950355]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446252.143212479]: Low quality GPS[0m
+[33m[ WARN] [1720446252.643261817]: GPS timeout[0m
+[33m[ WARN] [1720446253.643174792]: Low quality GPS[0m
+[33m[ WARN] [1720446253.643277736]: GPS timeout[0m
+[0m[ INFO] [1720446254.112501324]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446254.643309492]: Low quality GPS[0m
+[33m[ WARN] [1720446254.643461399]: GPS timeout[0m
+[0m[ INFO] [1720446256.105615542]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446256.143181409]: Low quality GPS[0m
+[33m[ WARN] [1720446256.143511315]: GPS timeout[0m
+[33m[ WARN] [1720446257.143315468]: Low quality GPS[0m
+[33m[ WARN] [1720446257.143900669]: GPS timeout[0m
+[0m[ INFO] [1720446258.092014250]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446258.643178508]: Low quality GPS[0m
+[33m[ WARN] [1720446258.643551506]: GPS timeout[0m
+[0m[ INFO] [1720446259.097679713]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446260.107345140]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446260.143282850]: Low quality GPS[0m
+[33m[ WARN] [1720446260.143614533]: GPS timeout[0m
+[33m[ WARN] [1720446261.643173810]: Low quality GPS[0m
+[33m[ WARN] [1720446261.643284347]: GPS timeout[0m
+[0m[ INFO] [1720446262.096222823]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446262.643190978]: Low quality GPS[0m
+[33m[ WARN] [1720446262.643306644]: GPS timeout[0m
+[0m[ INFO] [1720446263.097900373]: dropping GPS update, since gps_enabled = false.[0m
+[0m[ INFO] [1720446264.108867268]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446264.143235856]: Low quality GPS[0m
+[33m[ WARN] [1720446264.143358948]: GPS timeout[0m
+[33m[ WARN] [1720446265.643177408]: Low quality GPS[0m
+[33m[ WARN] [1720446265.643284445]: GPS timeout[0m
+[0m[ INFO] [1720446266.111966625]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446266.643211292]: Low quality GPS[0m
+[33m[ WARN] [1720446266.643343180]: GPS timeout[0m
+[0m[ INFO] [1720446268.107203144]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446268.143201965]: Low quality GPS[0m
+[33m[ WARN] [1720446268.143329427]: GPS timeout[0m
+[33m[ WARN] [1720446269.143228337]: Low quality GPS[0m
+[33m[ WARN] [1720446269.143366337]: GPS timeout[0m
+[0m[ INFO] [1720446270.113150344]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446270.643205355]: Low quality GPS[0m
+[33m[ WARN] [1720446270.643345021]: GPS timeout[0m
+[0m[ INFO] [1720446272.097894178]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446272.143184861]: Low quality GPS[0m
+[33m[ WARN] [1720446272.143340434]: GPS timeout[0m
+[33m[ WARN] [1720446273.143202782]: Low quality GPS[0m
+[33m[ WARN] [1720446273.643251521]: GPS timeout[0m
+[0m[ INFO] [1720446274.108558877]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446274.143272446]: Low quality GPS[0m
+[33m[ WARN] [1720446275.143182503]: GPS timeout[0m
+[33m[ WARN] [1720446275.643170689]: Low quality GPS[0m
+[0m[ INFO] [1720446276.089860363]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446276.143208413]: GPS timeout[0m
+[33m[ WARN] [1720446276.643178824]: Low quality GPS[0m
+[0m[ INFO] [1720446277.103374951]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446277.643300683]: Low quality GPS[0m
+[33m[ WARN] [1720446277.643435053]: GPS timeout[0m
+[0m[ INFO] [1720446279.102343181]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446279.143187127]: Low quality GPS[0m
+[33m[ WARN] [1720446279.143340200]: GPS timeout[0m
+[0m[ INFO] [1720446280.113280938]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446280.643172799]: Low quality GPS[0m
+[33m[ WARN] [1720446280.643316705]: GPS timeout[0m
+[33m[ WARN] [1720446281.643179485]: Low quality GPS[0m
+[33m[ WARN] [1720446281.643480520]: GPS timeout[0m
+[0m[ INFO] [1720446282.105858124]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446283.143195111]: Low quality GPS[0m
+[33m[ WARN] [1720446283.143310166]: GPS timeout[0m
+[0m[ INFO] [1720446284.096450035]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446284.143286267]: Low quality GPS[0m
+[33m[ WARN] [1720446284.143604117]: GPS timeout[0m
+[33m[ WARN] [1720446285.643162645]: Low quality GPS[0m
+[33m[ WARN] [1720446285.643310274]: GPS timeout[0m
+[0m[ INFO] [1720446286.109625179]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446286.643188382]: Low quality GPS[0m
+[33m[ WARN] [1720446286.643489640]: GPS timeout[0m
+[0m[ INFO] [1720446288.110958707]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446288.143180808]: Low quality GPS[0m
+[33m[ WARN] [1720446288.143304363]: GPS timeout[0m
+[33m[ WARN] [1720446289.143233107]: Low quality GPS[0m
+[33m[ WARN] [1720446289.143395125]: GPS timeout[0m
+[0m[ INFO] [1720446290.101514911]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446290.143234391]: Low quality GPS[0m
+[33m[ WARN] [1720446290.643179247]: GPS timeout[0m
+[0m[ INFO] [1720446291.103504910]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446291.643190831]: Low quality GPS[0m
+[33m[ WARN] [1720446291.643299331]: GPS timeout[0m
+[0m[ INFO] [1720446292.109831686]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446293.143225185]: Low quality GPS[0m
+[33m[ WARN] [1720446293.143408110]: GPS timeout[0m
+[0m[ INFO] [1720446294.097208428]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446294.143444849]: Low quality GPS[0m
+[33m[ WARN] [1720446294.144050642]: GPS timeout[0m
+[33m[ WARN] [1720446295.643182363]: Low quality GPS[0m
+[33m[ WARN] [1720446295.643287214]: GPS timeout[0m
+[0m[ INFO] [1720446296.105653373]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446296.643254034]: Low quality GPS[0m
+[33m[ WARN] [1720446296.643363867]: GPS timeout[0m
+[0m[ INFO] [1720446298.102065759]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446298.143182483]: Low quality GPS[0m
+[33m[ WARN] [1720446298.143338686]: GPS timeout[0m
+[0m[ INFO] [1720446299.104736684]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446299.643178790]: Low quality GPS[0m
+[33m[ WARN] [1720446299.643284623]: GPS timeout[0m
+[0m[ INFO] [1720446301.094865301]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446301.143187787]: Low quality GPS[0m
+[33m[ WARN] [1720446301.143311417]: GPS timeout[0m
+[0m[ INFO] [1720446302.097755789]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446302.143262937]: Low quality GPS[0m
+[33m[ WARN] [1720446302.143697435]: GPS timeout[0m
+[33m[ WARN] [1720446303.643180353]: Low quality GPS[0m
+[33m[ WARN] [1720446303.643284093]: GPS timeout[0m
+[0m[ INFO] [1720446304.104735804]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446304.643267676]: Low quality GPS[0m
+[33m[ WARN] [1720446304.643381176]: GPS timeout[0m
+[0m[ INFO] [1720446306.097093790]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446306.143184824]: Low quality GPS[0m
+[33m[ WARN] [1720446306.143301416]: GPS timeout[0m
+[0m[ INFO] [1720446307.101676746]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446307.143256080]: Low quality GPS[0m
+[33m[ WARN] [1720446307.143373265]: GPS timeout[0m
+[33m[ WARN] [1720446308.643197183]: Low quality GPS[0m
+[33m[ WARN] [1720446308.643306664]: GPS timeout[0m
+[0m[ INFO] [1720446309.102681594]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446310.143192180]: Low quality GPS[0m
+[33m[ WARN] [1720446310.143311290]: GPS timeout[0m
+[0m[ INFO] [1720446311.101402187]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446311.643173517]: Low quality GPS[0m
+[33m[ WARN] [1720446311.643281720]: GPS timeout[0m
+[33m[ WARN] [1720446312.643184250]: Low quality GPS[0m
+[33m[ WARN] [1720446312.643295917]: GPS timeout[0m
+[0m[ INFO] [1720446313.102436520]: dropping GPS update, since gps_enabled = false.[0m
+[33m[ WARN] [1720446313.643204524]: Low quality GPS[0m
+[33m[ WARN] [1720446313.643579429]: GPS timeout[0m
+[0m[ INFO] [1720446314.114686791]: dropping GPS update, since gps_enabled = false.[0m

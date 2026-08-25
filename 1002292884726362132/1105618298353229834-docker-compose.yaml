@@ -1,0 +1,67 @@
+version: '3'
+
+services:
+  web:
+    image: nginx
+    restart: unless-stopped
+    ports:
+      - 4005:80
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+  mosquitto:
+    hostname: mosquitto
+    image: eclipse-mosquitto:latest
+    restart: always
+    volumes:
+      - ./config/mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    ports:
+      - "1883:1883"
+      - 9001:9001
+  roscore:
+    image: ghcr.io/cedbossneo/mowgli-docker:cedbossneo-arm64
+    network_mode: host
+    tty: true
+    restart: unless-stopped
+    command:
+      - /opt/ros/noetic/bin/roscore
+    volumes:
+      - ./ros:/home/ubuntu/.ros/
+      - /etc/timezone:/etc/timezone:ro
+    privileged: true
+  rosserial:
+    image: ghcr.io/cedbossneo/mowgli-docker:cedbossneo-arm64
+    network_mode: host
+    tty: true
+    restart: unless-stopped
+    command:
+      - /opt/ros/noetic/bin/rosrun
+      - rosserial_server
+      - serial_node
+      - _port:=/dev/mowgli
+      - _baud:=115200
+    environment:
+      ROS_IP: 192.168.178.106
+    volumes:
+      - ./ros:/home/ubuntu/.ros/
+      - /etc/timezone:/etc/timezone:ro
+      - /dev:/dev
+    privileged: true
+    depends_on:
+      - roscore
+  openmower:
+    image: ghcr.io/cedbossneo/mowgli-docker:cedbossneo-arm64
+    network_mode: host
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./mower_params:/home/ubuntu/mower_params:ro
+      - ./params:/home/ubuntu/open_mower_ros/src/open_mower/params:ro
+      - ./config/om:/home/ubuntu/open_mower_ros/src/open_mower/config:ro
+      - ./ros:/home/ubuntu/.ros/
+      - /etc/timezone:/etc/timezone:ro
+      - /dev:/dev
+    environment:
+      ROS_IP: 192.168.178.106
+    privileged: true
+    depends_on:
+      - rosserial

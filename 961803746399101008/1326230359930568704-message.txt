@@ -1,0 +1,38 @@
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.544066869]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ERROR] [1736263444.544264606]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ WARN] [1736263444.544370641]: MowingBehavior: (FIRST POINT) - Attempt 2 / 3 Making a little pause ...
+Jan 07 16:24:04 Maehlanie openmower_launch[7846]: [ INFO] [1736263444.556698349]: new actions registered: mower_logic:mowing registered 5 actions.
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.560749678]: successfully registered actions for mower_logic:mowing
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.561036543]: MowingBehavior: CONTINUING
+Jan 07 16:24:04 Maehlanie openmower_launch[7846]: [ INFO] [1736263444.571439510]: new actions registered: mower_logic:mowing registered 5 actions.
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.573738966]: successfully registered actions for mower_logic:mowing
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.574006942]: MowingBehavior: Path segment length: 393 poses.
+Jan 07 16:24:04 Maehlanie openmower_launch[7722]: [ INFO] [1736263444.574119162]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+Jan 07 16:24:04 Maehlanie openmower_launch[7688]: [ INFO] [1736263444.620409439]: FTCLocalPlannerROS: Got new global plan with 184 points.
+Jan 07 16:24:06 Maehlanie openmower_launch[7688]: [ INFO] [1736263446.111989651]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+Jan 07 16:24:06 Maehlanie openmower_launch[7688]: [ INFO] [1736263446.112138593]: FTCLocalPlannerROS: Switching to state 1
+Jan 07 16:24:07 Maehlanie openmower_launch[7722]: [ INFO] [1736263447.076674951]: GPS quality: 0.94
+Jan 07 16:24:12 Maehlanie openmower_launch[7687]: [ERROR] [1736263452.198902889]: [driver_gps] waited 13 ms to write to the tx buffer, serial port is probably congested!
+Jan 07 16:24:13 Maehlanie openmower_launch[7688]: [ERROR] [1736263453.615084881]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.0013) > config.max_follow_distance (1) It probably has crashed.
+Jan 07 16:24:13 Maehlanie openmower_launch[7688]: [ INFO] [1736263453.615244878]: FTCLocalPlannerROS: Switching to state 4
+Jan 07 16:24:13 Maehlanie openmower_launch[7688]: [ WARN] [1736263453.615555631]: No velocity command received from controller! 
+Jan 07 16:24:16 Maehlanie openmower_launch[7688]: [ WARN] [1736263456.661468642]: No velocity command received from controller! 
+Jan 07 16:24:17 Maehlanie openmower_launch[7722]: [ INFO] [1736263457.576677623]: GPS quality: 0.94
+Jan 07 16:24:18 Maehlanie openmower_launch[7713]: [ WARN] [1736263458.203794032]: Less than 5 x 1G of space free on disk with '//home/jebeling/all_mow_area_2025-01-07-16-17-38.bag.active'.
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ WARN] [1736263458.611504193]: The controller has been aborted after it exceeded the patience time
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ WARN] [1736263458.611871630]: No Recovery Behaviors loaded!
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ WARN] [1736263458.611969091]: Abort the execution of the controller: 
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.674642351]: MowingBehavior: (FIRST POINT)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ERROR] [1736263458.674760849]: MowingBehavior: (FIRST POINT) - Could not reach goal (first point). Planner Status was: 5
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ WARN] [1736263458.674825014]: MowingBehavior: (FIRST POINT) - Attempt 0 / 3 Trimming first point off the beginning of the mow path.
+Jan 07 16:24:18 Maehlanie openmower_launch[7846]: [ INFO] [1736263458.683734123]: new actions registered: mower_logic:mowing registered 5 actions.
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.686301982]: successfully registered actions for mower_logic:mowing
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.686420332]: MowingBehavior: CONTINUING
+Jan 07 16:24:18 Maehlanie openmower_launch[7846]: [ INFO] [1736263458.694100279]: new actions registered: mower_logic:mowing registered 5 actions.
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.695117908]: successfully registered actions for mower_logic:mowing
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.695364626]: MowingBehavior: Path segment length: 393 poses.
+Jan 07 16:24:18 Maehlanie openmower_launch[7722]: [ INFO] [1736263458.695507160]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ INFO] [1736263458.721089454]: FTCLocalPlannerROS: Got new global plan with 120 points.
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ INFO] [1736263458.722022677]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+Jan 07 16:24:18 Maehlanie openmower_launch[7688]: [ INFO] [1736263458.722171730]: FTCLocalPlannerROS: Switching to state 1
+Jan 07 16:24:27 Maehlanie openmower_launch[7722]: [ INFO] [1736263467.576735903]: GPS quality: 0.93

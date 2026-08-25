@@ -1,0 +1,52 @@
+mowgli-openmower | [ WARN] [1689261067.833868550]: We don't have a map configured. Starting Area Recorder!
+mowgli-openmower | [ INFO] [1689261067.866881206]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1689261067.887244340]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1689261067.887604548]: 
+mowgli-openmower | [ INFO] [1689261067.887773506]: 
+mowgli-openmower | [ INFO] [1689261067.887878381]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261067.887997297]: - Entered state: AREA_RECORDING
+mowgli-openmower | [ INFO] [1689261067.888105964]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261067.916737752]: new actions registered: mower_logic:area_recording registered 7 actions.
+mowgli-openmower | [ INFO] [1689261067.927267943]: successfully registered actions for mower_logic:area_recording
+mowgli-openmower | [ INFO] [1689261067.952778736]: Starting recording area
+mowgli-openmower | [ INFO] [1689261067.952985194]: Subscribing to /joy for user input
+mowgli-openmower | [ WARN] [1689261068.152093620]: Low quality GPS
+mowgli-openmower | [ WARN] [1689261068.153136619]: GPS timeout
+mowgli-openmower | [ INFO] [1689261068.153818368]: - Behaviour.h: abort() called
+mowgli-openmower | [ INFO] [1689261068.282280449]: successfully set GPS to 1
+mowgli-openmower | [ INFO] [1689261068.297235716]: new actions registered: mower_logic:area_recording registered 7 actions.
+mowgli-openmower | [ INFO] [1689261068.304210996]: successfully registered actions for mower_logic:area_recording
+mowgli-openmower | [ INFO] [1689261068.370531721]: 
+mowgli-openmower | [ INFO] [1689261068.370714971]: 
+mowgli-openmower | [ INFO] [1689261068.371014012]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.371134553]: - Entered state: IDLE
+mowgli-openmower | [ INFO] [1689261068.371237386]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.404295624]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1689261068.411091946]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1689261068.440371773]: Got getMowingArea call with index: 0
+mowgli-openmower | [ERROR] [1689261068.440566189]: No mowing area with index: 0
+mowgli-openmower | [ WARN] [1689261068.441481938]: We don't have a map configured. Starting Area Recorder!
+mowgli-openmower | [ INFO] [1689261068.465294399]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1689261068.471795555]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1689261068.472605929]: 
+mowgli-openmower | [ INFO] [1689261068.472794303]: 
+mowgli-openmower | [ INFO] [1689261068.472901011]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.473000428]: - Entered state: AREA_RECORDING
+mowgli-openmower | [ INFO] [1689261068.473254386]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.510944282]: new actions registered: mower_logic:area_recording registered 7 actions.
+mowgli-openmower | [ INFO] [1689261068.523496887]: successfully registered actions for mower_logic:area_recording
+mowgli-openmower | [ INFO] [1689261068.547656889]: Starting recording area
+mowgli-openmower | [ INFO] [1689261068.547948014]: Subscribing to /joy for user input
+mowgli-openmower | [ INFO] [1689261068.647632434]: - Behaviour.h: abort() called
+mowgli-openmower | [ INFO] [1689261068.834685710]: successfully set GPS to 1
+mowgli-openmower | [ INFO] [1689261068.866401533]: new actions registered: mower_logic:area_recording registered 7 actions.
+mowgli-openmower | [ INFO] [1689261068.871611775]: successfully registered actions for mower_logic:area_recording
+mowgli-openmower | [ INFO] [1689261068.933558090]: 
+mowgli-openmower | [ INFO] [1689261068.938528040]: 
+mowgli-openmower | [ INFO] [1689261068.940609120]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.942465325]: - Entered state: IDLE
+mowgli-openmower | [ INFO] [1689261068.943778115]: --------------------------------------
+mowgli-openmower | [ INFO] [1689261068.966544244]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower | [ INFO] [1689261068.978012059]: successfully registered actions for mower_logic:idle
+mowgli-openmower | [ INFO] [1689261069.013139292]: Got getMowingArea call with index: 0
+mowgli-openmower | [ERROR] [1689261069.013368334]: No mowing area with index: 0

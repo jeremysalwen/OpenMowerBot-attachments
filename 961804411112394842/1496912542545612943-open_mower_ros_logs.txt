@@ -1,0 +1,303 @@
+open_mower_ros  | load_parameters: unable to set parameters (last param was [/twist_mux/topics=[{'name': 'navigation', 'topic': 'nav_vel', 'timeout': 0.5, 'priority': 10}, {'name': 'logic', 'topic': 'logic_vel', 'timeout': 0.5, 'priority': 50}, {'name': 'logic', 'topic': 'override_vel', 'timeout': 0.5, 'priority': 100}]]): cannot marshal None unless allow_none is enabled
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+open_mower_ros  |     p.start()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 316, in start
+open_mower_ros  |     self.runner.launch()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 676, in launch
+open_mower_ros  |     self._setup()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 663, in _setup
+open_mower_ros  |     self._load_parameters()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 354, in _load_parameters
+open_mower_ros  |     r  = param_server_multi()
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 879, in __call__
+open_mower_ros  |     return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+open_mower_ros  |     return self.__send(self.__name, args)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1447, in __request
+open_mower_ros  |     request = dumps(params, methodname, encoding=self.__encoding,
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 968, in dumps
+open_mower_ros  |     data = m.dumps(params)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 501, in dumps
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 594, in dump_struct
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 527, in dump_nil
+open_mower_ros  |     raise TypeError("cannot marshal None unless allow_none is enabled")
+open_mower_ros  | TypeError: cannot marshal None unless allow_none is enabled
+open_mower_ros  | [rosout-1] killing on exit
+open_mower_ros  | [master] killing on exit
+open_mower_ros exited with code 1 (restarting)
+open_mower_ros  | ... logging to /data/ros/log/df39d3c8-3f31-11f1-8665-2ccf67c33cd0/roslaunch-openmower-1.log
+open_mower_ros  | Checking log directory for disk usage. This may take a while.
+open_mower_ros  | Press Ctrl-C to interrupt
+open_mower_ros  | Done checking log file disk usage. Usage is <1GB.
+open_mower_ros  | 
+open_mower_ros  | started roslaunch server http://openmower:42819/
+open_mower_ros  | 
+open_mower_ros  | SUMMARY
+open_mower_ros  | ========
+open_mower_ros  | 
+open_mower_ros  | PARAMETERS
+open_mower_ros  |  * /joy/autorepeat_rate: 10.0
+open_mower_ros  |  * /joy/coalesce_interval: 0.06
+open_mower_ros  |  * /joy_teleop/enable_turbo_button: 4
+open_mower_ros  |  * /joy_teleop/scale_angular: 1.5
+open_mower_ros  |  * /joy_teleop/scale_angular_turbo: 3.0
+open_mower_ros  |  * /joy_teleop/scale_linear: 0.5
+open_mower_ros  |  * /joy_teleop/scale_linear_turbo: 1.0
+open_mower_ros  |  * /ll/bind_ip: 172.16.78.1
+open_mower_ros  |  * /ll/services/diff_drive/ticks_per_m: 1600.0
+open_mower_ros  |  * /ll/services/diff_drive/wheel_distance_m: 0.325
+open_mower_ros  |  * /ll/services/gps/absolute_coords: True
+open_mower_ros  |  * /ll/services/gps/baud_rate: 921600
+open_mower_ros  |  * /ll/services/gps/datum_height: 0
+open_mower_ros  |  * /ll/services/gps/datum_lat: 55.44347
+open_mower_ros  |  * /ll/services/gps/datum_long: 11.5594
+open_mower_ros  |  * /ll/services/gps/protocol: UBX
+open_mower_ros  |  * /ll/services/imu/axis_config: +X-Y-Z
+open_mower_ros  |  * /ll/services/input/config_file: /opt/open_mower_r...
+open_mower_ros  |  * /ll/services/power/battery_critical_high_voltage: 29.5
+open_mower_ros  |  * /ll/services/power/battery_critical_voltage: 23.0
+open_mower_ros  |  * /ll/services/power/battery_empty_voltage: 24.0
+open_mower_ros  |  * /ll/services/power/battery_full_voltage: 29.4
+open_mower_ros  |  * /ll/services/power/charge_critical_high_current: 3
+open_mower_ros  |  * /ll/services/power/charge_critical_high_voltage: 30
+open_mower_ros  |  * /ll/services/power/charge_current: 2.5
+open_mower_ros  |  * /ll/services/sound/language: en
+open_mower_ros  |  * /ll/services/sound/volume: -1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/forward_only: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/acceleration: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/debug_pid: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/forward_only: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+open_mower_ros  |  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+open_mower_ros  |  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+open_mower_ros  |  * /move_base_flex/controller_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/controller_patience: 30.0
+open_mower_ros  |  * /move_base_flex/controllers: [{'name': 'FTCPla...
+open_mower_ros  |  * /move_base_flex/global_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/global_costmap/publish_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/resolution: 0.1
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/global_costmap/rolling_window: False
+open_mower_ros  |  * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/global_costmap/update_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/local_costmap/height: 1.5
+open_mower_ros  |  * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/local_costmap/publish_frequency: 2.0
+open_mower_ros  |  * /move_base_flex/local_costmap/resolution: 0.15
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/rolling_window: True
+open_mower_ros  |  * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/local_costmap/update_frequency: 5.0
+open_mower_ros  |  * /move_base_flex/local_costmap/width: 1.5
+open_mower_ros  |  * /move_base_flex/oscillation_distance: 0.2
+open_mower_ros  |  * /move_base_flex/oscillation_timeout: 10.0
+open_mower_ros  |  * /move_base_flex/planner_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/planner_patience: 5.0
+open_mower_ros  |  * /move_base_flex/planners: [{'name': 'Global...
+open_mower_ros  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+open_mower_ros  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+open_mower_ros  |  * /mower_logic/automatic_mode: 1
+open_mower_ros  |  * /mower_logic/cu_rain_threshold: -1
+open_mower_ros  |  * /mower_logic/docking_approach_distance: 1.0
+open_mower_ros  |  * /mower_logic/docking_extra_time: 1.0
+open_mower_ros  |  * /mower_logic/docking_redock: False
+open_mower_ros  |  * /mower_logic/docking_retry_count: 3
+open_mower_ros  |  * /mower_logic/emergency_lift_period: -1
+open_mower_ros  |  * /mower_logic/emergency_tilt_period: -1
+open_mower_ros  |  * /mower_logic/enable_mower: True
+open_mower_ros  |  * /mower_logic/external_mqtt_enable: True
+open_mower_ros  |  * /mower_logic/external_mqtt_hostname: 192.168.0.141
+open_mower_ros  |  * /mower_logic/external_mqtt_password: BrondByFtw1
+open_mower_ros  |  * /mower_logic/external_mqtt_port: 1883
+open_mower_ros  |  * /mower_logic/external_mqtt_topic_prefix: openmower
+open_mower_ros  |  * /mower_logic/external_mqtt_username: ladk1919
+open_mower_ros  |  * /mower_logic/gps_timeout: 5.0
+open_mower_ros  |  * /mower_logic/gps_wait_time: 5.0
+open_mower_ros  |  * /mower_logic/ignore_charging_current: False
+open_mower_ros  |  * /mower_logic/mow_angle_increment: 0
+open_mower_ros  |  * /mower_logic/mow_angle_offset: 0
+open_mower_ros  |  * /mower_logic/mow_angle_offset_is_absolute: False
+open_mower_ros  |  * /mower_logic/outline_overlap_count: 1
+open_mower_ros  |  * /mower_logic/rain_check_seconds: 20
+open_mower_ros  |  * /mower_logic/rain_delay_minutes: 30
+open_mower_ros  |  * /mower_logic/rain_mode: 0
+open_mower_ros  |  * /mower_logic/undock_angle: 0.0
+open_mower_ros  |  * /mower_logic/undock_angled_distance: 2.0
+open_mower_ros  |  * /mower_logic/undock_distance: 1.0
+open_mower_ros  |  * /mower_logic/undock_fixed_angle: False
+open_mower_ros  |  * /mower_logic/undock_use_curve: True
+open_mower_ros  |  * /mower_logic/xbot_monitoring: None
+open_mower_ros  |  * /ntrip_client/authenticate: True
+open_mower_ros  |  * /ntrip_client/ca_cert: 
+open_mower_ros  |  * /ntrip_client/cert: 
+open_mower_ros  |  * /ntrip_client/host: 192.168.0.156
+open_mower_ros  |  * /ntrip_client/key: 
+open_mower_ros  |  * /ntrip_client/mountpoint: Lasse-RTK
+open_mower_ros  |  * /ntrip_client/nmea_max_length: 82
+open_mower_ros  |  * /ntrip_client/nmea_min_length: 3
+open_mower_ros  |  * /ntrip_client/ntrip_version: 
+open_mower_ros  |  * /ntrip_client/password: openmower
+open_mower_ros  |  * /ntrip_client/port: 2101
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_max: 5
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_wait_seconds: 99999
+open_mower_ros  |  * /ntrip_client/rtcm_frame_id: odom
+open_mower_ros  |  * /ntrip_client/rtcm_message_package: rtcm_msgs
+open_mower_ros  |  * /ntrip_client/rtcm_timeout_seconds: 30
+open_mower_ros  |  * /ntrip_client/ssl: False
+open_mower_ros  |  * /ntrip_client/username: openmower
+open_mower_ros  |  * /rosdistro: noetic
+open_mower_ros  |  * /rosversion: 1.17.4
+open_mower_ros  |  * /twist_mux/topics: [{'name': 'naviga...
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_enable: False
+open_mower_ros  |  * /xbot_positioning/antenna_offset_x: 0.3
+open_mower_ros  |  * /xbot_positioning/antenna_offset_y: 0.0
+open_mower_ros  |  * /xbot_positioning/debug: False
+open_mower_ros  |  * /xbot_positioning/max_gps_accuracy: 0.2
+open_mower_ros  | 
+open_mower_ros  | NODES
+open_mower_ros  |   /
+open_mower_ros  |     joy (joy/joy_node)
+open_mower_ros  |     joy_teleop (teleop_twist_joy/teleop_node)
+open_mower_ros  |     map_service (mower_map/mower_map_service)
+open_mower_ros  |     monitoring (mower_logic/monitoring)
+open_mower_ros  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+open_mower_ros  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+open_mower_ros  |     mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+open_mower_ros  |     mower_logic (mower_logic/mower_logic)
+open_mower_ros  |     ntrip_client (ntrip_client/ntrip_ros.py)
+open_mower_ros  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+open_mower_ros  |     twist_mux (twist_mux/twist_mux)
+open_mower_ros  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+open_mower_ros  |     xbot_positioning (xbot_positioning/xbot_positioning)
+open_mower_ros  |     xbot_remote (xbot_remote/xbot_remote)
+open_mower_ros  | 
+open_mower_ros  | auto-starting new master
+open_mower_ros  | process[master]: started with pid [50]
+open_mower_ros  | ROS_MASTER_URI=http://localhost:11311
+open_mower_ros  | 
+open_mower_ros  | setting /run_id to df39d3c8-3f31-11f1-8665-2ccf67c33cd0
+open_mower_ros  | process[rosout-1]: started with pid [60]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | load_parameters: unable to set parameters (last param was [/twist_mux/topics=[{'name': 'navigation', 'topic': 'nav_vel', 'timeout': 0.5, 'priority': 10}, {'name': 'logic', 'topic': 'logic_vel', 'timeout': 0.5, 'priority': 50}, {'name': 'logic', 'topic': 'override_vel', 'timeout': 0.5, 'priority': 100}]]): cannot marshal None unless allow_none is enabled
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+open_mower_ros  |     p.start()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 316, in start
+open_mower_ros  |     self.runner.launch()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 676, in launch
+open_mower_ros  |     self._setup()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 663, in _setup
+open_mower_ros  |     self._load_parameters()
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 354, in _load_parameters
+open_mower_ros  |     r  = param_server_multi()
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 879, in __call__
+open_mower_ros  |     return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+open_mower_ros  |     return self.__send(self.__name, args)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 1447, in __request
+open_mower_ros  |     request = dumps(params, methodname, encoding=self.__encoding,
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 968, in dumps
+open_mower_ros  |     data = m.dumps(params)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 501, in dumps
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 594, in dump_struct
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 576, in dump_array
+open_mower_ros  |     dump(v, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 523, in __dump
+open_mower_ros  |     f(self, value, write)
+open_mower_ros  |   File "/usr/lib/python3.8/xmlrpc/client.py", line 527, in dump_nil
+open_mower_ros  |     raise TypeError("cannot marshal None unless allow_none is enabled")
+open_mower_ros  | TypeError: cannot marshal None unless allow_none is enabled
+open_mower_ros  | [rosout-1] killing on exit
+open_mower_ros  | [master] killing on exit
+open_mower_ros exited with code 1 (restarting)
+^X^C
+openmower@openmower:~ $ 

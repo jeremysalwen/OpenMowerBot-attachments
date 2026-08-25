@@ -1,0 +1,123 @@
+openmower@openmower:~ $ mkdir firmware_run--10773992895
+
+openmower@openmower:~ $ ls -la open-mower-pico-firmware__run--10773992895.zip 
+-rw-r--r-- 1 openmower openmower 7032984 Sep 29 12:09 open-mower-pico-firmware__run--10773992895.zip
+
+openmower@openmower:~ $ mv open-mower-pico-firmware__run--10773992895.zip firmware_run--10773992895/
+
+openmower@openmower:~ $ sha256sum firmware_run--10773992895/open-mower-pico-firmware__run--10773992895.zip 
+39b92f18580544b4c15fa5d616f1c896368ffd278306bd51fb90f0a2e2be477e  firmware_run--10773992895/open-mower-pico-firmware__run--10773992895.zip
+
+openmower@openmower:~ $ cd firmware_run--10773992895/
+
+openmower@openmower:~/firmware_run--10773992895 $ unzip open-mower-pico-firmware__run--10773992895.zip 
+Archive:  open-mower-pico-firmware__run--10773992895.zip
+  inflating: 0_10_X_MPU9250/firmware.elf  
+  inflating: 0_10_X_MPU9250/firmware.uf2  
+  inflating: 0_10_X_WT901/firmware.elf  
+  inflating: 0_10_X_WT901/firmware.uf2  
+  inflating: 0_10_X_WT901_IGNORE_CHARGING_CURRENT/firmware.elf  
+  inflating: 0_10_X_WT901_IGNORE_CHARGING_CURRENT/firmware.uf2  
+  inflating: 0_11_X_MPU9250/firmware.elf  
+  inflating: 0_11_X_MPU9250/firmware.uf2  
+  inflating: 0_11_X_WT901/firmware.elf  
+  inflating: 0_11_X_WT901/firmware.uf2  
+  inflating: 0_11_X_WT901_IGNORE_CHARGING_CURRENT/firmware.elf  
+  inflating: 0_11_X_WT901_IGNORE_CHARGING_CURRENT/firmware.uf2  
+  inflating: 0_12_X/firmware.elf     
+  inflating: 0_12_X/firmware.uf2     
+  inflating: 0_12_X_IGNORE_CHARGING_CURRENT/firmware.elf  
+  inflating: 0_12_X_IGNORE_CHARGING_CURRENT/firmware.uf2  
+  inflating: 0_12_X_LSM6DSO/firmware.elf  
+  inflating: 0_12_X_LSM6DSO/firmware.uf2  
+  inflating: 0_13_X/firmware.elf     
+  inflating: 0_13_X/firmware.uf2     
+  inflating: 0_13_X_IGNORE_CHARGING_CURRENT/firmware.elf  
+  inflating: 0_13_X_IGNORE_CHARGING_CURRENT/firmware.uf2  
+  inflating: 0_9_X_MPU9250/firmware.elf  
+  inflating: 0_9_X_MPU9250/firmware.uf2  
+  inflating: 0_9_X_WT901/firmware.elf  
+  inflating: 0_9_X_WT901/firmware.uf2  
+  inflating: 0_9_X_WT901_IGNORE_CHARGING_CURRENT/firmware.elf  
+  inflating: 0_9_X_WT901_IGNORE_CHARGING_CURRENT/firmware.uf2  
+  inflating: 0_9_X_WT901_INSTEAD_OF_SOUND/firmware.elf  
+  inflating: 0_9_X_WT901_INSTEAD_OF_SOUND/firmware.uf2  
+
+
+openmower@openmower:~/firmware_run--10773992895 $ sudo ~/OMIAUH/upload_firmware.sh ./0_13_X/firmware.elf 
+
+ [✓] OpenMowerOS detected
+
+Open On-Chip Debugger 0.11.0-g8e3c38f-dirty (2023-08-08-11:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+adapter speed: 1000 kHz
+
+Info : Hardware thread awareness created
+Info : Hardware thread awareness created
+Info : RP2040 Flash Bank Command
+Info : BCM2835 GPIO JTAG/SWD bitbang driver
+Info : clock speed 1001 kHz
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x00000001
+Info : SWD DPIDR 0x0bc12477
+Info : SWD DLPIDR 0x10000001
+Info : rp2040.core0: hardware has 4 breakpoints, 2 watchpoints
+Info : rp2040.core1: hardware has 4 breakpoints, 2 watchpoints
+Info : starting gdb server for rp2040.core0 on 3333
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x000000ea msp: 0x20041f00
+** Programming Started **
+Info : RP2040 B0 Flash Probe: 2097152 bytes @10000000, in 512 sectors
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+Info : Writing 90112 bytes starting at 0x0
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Programming Finished **
+** Verify Started **
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000184 msp: 0x20041f00
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+
+
+openmower@openmower:~/firmware_run--10773992895 $ sudo poweroff 
+Connection to 192.168.178.251 closed by remote host.
+Connection to 192.168.178.251 closed.

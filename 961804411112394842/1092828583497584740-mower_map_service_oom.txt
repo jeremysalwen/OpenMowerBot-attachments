@@ -1,0 +1,103 @@
+Apr 04 15:51:06 openmower kernel: twist_mux invoked oom-killer: gfp_mask=0x1100cca(GFP_HIGHUSER_MOVABLE), order=0, oom_score_adj=0
+Apr 04 15:51:11 openmower kernel: CPU: 1 PID: 801 Comm: twist_mux Tainted: G         C        5.15.84-v8+ #1613
+Apr 04 15:51:11 openmower kernel: Hardware name: Raspberry Pi 4 Model B Rev 1.5 (DT)
+Apr 04 15:51:11 openmower kernel: Call trace:
+Apr 04 15:51:11 openmower kernel:  dump_backtrace+0x0/0x1b8
+Apr 04 15:51:11 openmower kernel:  show_stack+0x20/0x30
+Apr 04 15:51:11 openmower kernel:  dump_stack_lvl+0x8c/0xb8
+Apr 04 15:51:11 openmower kernel:  dump_stack+0x18/0x34
+Apr 04 15:51:11 openmower kernel:  dump_header+0x4c/0x204
+Apr 04 15:51:11 openmower kernel:  oom_kill_process+0x1f8/0x200
+Apr 04 15:51:11 openmower kernel:  out_of_memory+0xf0/0x330
+Apr 04 15:51:11 openmower kernel:  __alloc_pages_slowpath.constprop.155+0x84c/0xba0
+Apr 04 15:51:11 openmower kernel:  __alloc_pages+0x2b0/0x330
+Apr 04 15:51:11 openmower kernel:  pagecache_get_page+0x1a8/0x3e0
+Apr 04 15:51:11 openmower kernel:  filemap_fault+0x514/0x850
+Apr 04 15:51:11 openmower kernel:  __do_fault+0x44/0x168
+Apr 04 15:51:11 openmower kernel:  __handle_mm_fault+0x508/0xa38
+Apr 04 15:51:11 openmower kernel:  handle_mm_fault+0x1a4/0x288
+Apr 04 15:51:11 openmower kernel:  do_page_fault+0x240/0x480
+Apr 04 15:51:11 openmower kernel:  do_translation_fault+0x60/0x78
+Apr 04 15:51:11 openmower kernel:  do_mem_abort+0x48/0xb8
+Apr 04 15:51:11 openmower kernel:  el0_ia+0x74/0xe8
+Apr 04 15:51:11 openmower kernel:  el0t_64_sync_handler+0x78/0xb8
+Apr 04 15:51:11 openmower kernel:  el0t_64_sync+0x1a0/0x1a4
+Apr 04 15:51:11 openmower kernel: Mem-Info:
+Apr 04 15:51:11 openmower kernel: active_anon:6258 inactive_anon:936649 isolated_anon:0
+                                   active_file:19 inactive_file:341 isolated_file:0
+                                   unevictable:4 dirty:0 writeback:4
+                                   slab_reclaimable:5431 slab_unreclaimable:6149
+                                   mapped:52 shmem:195 pagetables:3503 bounce:0
+                                   kernel_misc_reclaimable:0
+                                   free:6915 free_pcp:227 free_cma:2526
+Apr 04 15:51:11 openmower kernel: Node 0 active_anon:25032kB inactive_anon:3746596kB active_file:76kB inactive_file:1364kB unevictable:16kB isolated(anon):0kB isolated(file):0kB mapped:208kB dirty:0kB writeback:16kB shmem:780kB writeback_tmp:0kB kernel_stack:4480kB pagetables:14012kB all_unreclaimable? yes
+Apr 04 15:51:11 openmower kernel: DMA free:15260kB min:3736kB low:4668kB high:5600kB reserved_highatomic:0KB active_anon:148kB inactive_anon:862584kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:970752kB managed:886416kB mlocked:0kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:10104kB
+Apr 04 15:51:11 openmower kernel: lowmem_reserve[]: 0 2928 2928 2928
+Apr 04 15:51:11 openmower kernel: DMA32 free:12400kB min:12644kB low:15804kB high:18964kB reserved_highatomic:0KB active_anon:24884kB inactive_anon:2884012kB active_file:0kB inactive_file:1468kB unevictable:16kB writepending:16kB present:3080192kB managed:2999012kB mlocked:16kB bounce:0kB free_pcp:908kB local_pcp:236kB free_cma:0kB
+Apr 04 15:51:11 openmower kernel: lowmem_reserve[]: 0 0 0 0
+Apr 04 15:51:11 openmower kernel: DMA: 13*4kB (UE) 13*8kB (UEC) 12*16kB (UEC) 10*32kB (UEC) 8*64kB (UEC) 4*128kB (UE) 3*256kB (UEC) 1*512kB (C) 2*1024kB (EC) 1*2048kB (E) 2*4096kB (C) = 15260kB
+Apr 04 15:51:11 openmower kernel: DMA32: 647*4kB (UE) 295*8kB (UE) 150*16kB (UME) 98*32kB (UME) 17*64kB (UME) 10*128kB (UM) 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 12852kB
+Apr 04 15:51:11 openmower kernel: 1031 total pagecache pages
+Apr 04 15:51:11 openmower kernel: 377 pages in swap cache
+Apr 04 15:51:11 openmower kernel: Swap cache stats: add 65709, delete 65386, find 77/144
+Apr 04 15:51:11 openmower kernel: Free swap  = 0kB
+Apr 04 15:51:11 openmower kernel: Total swap = 262140kB
+Apr 04 15:51:11 openmower kernel: 1012736 pages RAM
+Apr 04 15:51:11 openmower kernel: 0 pages HighMem/MovableOnly
+Apr 04 15:51:11 openmower kernel: 41379 pages reserved
+Apr 04 15:51:11 openmower kernel: 16384 pages cma reserved
+Apr 04 15:51:11 openmower kernel: Tasks state (memory values in pages):
+Apr 04 15:51:11 openmower kernel: [  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+Apr 04 15:51:11 openmower kernel: [    143]     0   143    21498        6   180224      221          -250 systemd-journal
+Apr 04 15:51:11 openmower kernel: [    169]     0   169     5404        2    61440      615         -1000 systemd-udevd
+Apr 04 15:51:11 openmower kernel: [    325]   103   325    22027        0    69632      185             0 systemd-timesyn
+Apr 04 15:51:11 openmower kernel: [    362]   108   362     1768       63    40960       53             0 avahi-daemon
+Apr 04 15:51:11 openmower kernel: [    363]     0   363     1674        0    49152       62             0 cron
+Apr 04 15:51:11 openmower kernel: [    364]   104   364     2038        1    49152      210          -900 dbus-daemon
+Apr 04 15:51:11 openmower kernel: [    365]     0   365    64135        0   131072      974             0 NetworkManager
+Apr 04 15:51:11 openmower kernel: [    373]     0   373    58490        0    77824      210             0 polkitd
+Apr 04 15:51:11 openmower kernel: [    377]   108   377     1723       12    40960       65             0 avahi-daemon
+Apr 04 15:51:11 openmower kernel: [    378]     0   378    55221        0    73728      308             0 rsyslogd
+Apr 04 15:51:11 openmower kernel: [    384]     0   384     3598       19    57344      186             0 systemd-logind
+Apr 04 15:51:11 openmower kernel: [    386] 65534   386     1371        0    40960       56             0 thd
+Apr 04 15:51:11 openmower kernel: [    387]     0   387     3459       12    61440      237             0 wpa_supplicant
+Apr 04 15:51:11 openmower kernel: [    449]     0   449    23073        0    45056       32             0 rngd
+Apr 04 15:51:11 openmower kernel: [    458]     0   458    61070        0    98304      433             0 ModemManager
+Apr 04 15:51:11 openmower kernel: [    477]     0   477    10384      126   106496     3882             0 comitup
+Apr 04 15:51:11 openmower kernel: [    495]     0   495     1369        0    40960       29             0 agetty
+Apr 04 15:51:11 openmower kernel: [    500]     0   500     3413        1    53248      216         -1000 sshd
+Apr 04 15:51:11 openmower kernel: [    566]     0   566    20233        0    45056       74         -1000 conmon
+Apr 04 15:51:11 openmower kernel: [    569]     0   569     1343        2    49152       66             0 bash
+Apr 04 15:51:11 openmower kernel: [    627]     0   627    12627       43    77824      313             0 nginx
+Apr 04 15:51:11 openmower kernel: [    628]    33   628    12718       26    77824      394             0 nginx
+Apr 04 15:51:11 openmower kernel: [    629]    33   629    12718       26    77824      394             0 nginx
+Apr 04 15:51:11 openmower kernel: [    630]    33   630    12718       26    77824      394             0 nginx
+Apr 04 15:51:11 openmower kernel: [    631]    33   631    12718       27    77824      393             0 nginx
+Apr 04 15:51:11 openmower kernel: [    648]   101   648    12852     2103   106496     4267             0 mosquitto
+Apr 04 15:51:11 openmower kernel: [    650]     0   650    69759      298   163840     7229             0 roslaunch
+Apr 04 15:51:11 openmower kernel: [    697]     0   697   419251      646   315392     6494             0 rosmaster
+Apr 04 15:51:11 openmower kernel: [    707]     0   707    87173       65   118784     2263             0 rosout
+Apr 04 15:51:11 openmower kernel: [    711]     0   711   220647      110   184320     2252             0 mower_comms
+Apr 04 15:51:11 openmower kernel: [    712]     0   712   161690     2804   200704     4568             0 ntrip_ros.py
+Apr 04 15:51:11 openmower kernel: [    713]     0   713   108070      104   139264     2236             0 driver_gps_node
+Apr 04 15:51:11 openmower kernel: [    718]     0   718   151511      133   184320     3203             0 mbf_costmap_nav
+Apr 04 15:51:11 openmower kernel: [    732]     0   732    71557       89   114688     2260             0 xbot_positionin
+Apr 04 15:51:11 openmower kernel: [    739]     0   739    70809       73   110592     2234             0 joy_node
+Apr 04 15:51:11 openmower kernel: [    740]     0   740   161543     3182   192512     4072             0 python3
+Apr 04 15:51:11 openmower kernel: [    741]     0   741  1295007   929179  7798784     3439             0 mower_map_servi
+Apr 04 15:51:11 openmower kernel: [    760]     0   760    71780       48   122880     2257             0 slic3r_coverage
+Apr 04 15:51:11 openmower kernel: [    767]     0   767    91310       73   122880     2243             0 twist_mux
+Apr 04 15:51:11 openmower kernel: [    769]     0   769   127473      210   147456     2337             0 xbot_monitoring
+Apr 04 15:51:11 openmower kernel: [    775]     0   775    89490       68   131072     2252             0 xbot_remote
+Apr 04 15:51:11 openmower kernel: [    777]     0   777    72931       91   118784     2246             0 monitoring
+Apr 04 15:51:11 openmower kernel: [    951]     0   951     4018      305    57344        0             0 sshd
+Apr 04 15:51:11 openmower kernel: [    954]  1000   954     4016      332    65536        0             0 systemd
+Apr 04 15:51:11 openmower kernel: [    955]  1000   955    42190       37    98304      685             0 (sd-pam)
+Apr 04 15:51:11 openmower kernel: [    975]  1000   975     4087      347    57344        2             0 sshd
+Apr 04 15:51:11 openmower kernel: [    976]  1000   976     1991      388    49152        0             0 bash
+Apr 04 15:51:11 openmower kernel: [    987]  1000   987   215205      199  1724416        0             0 journalctl
+Apr 04 15:51:11 openmower kernel: [    990]     0   990     4018      305    61440        0             0 sshd
+Apr 04 15:51:11 openmower kernel: [    996]  1000   996     4018      302    61440        3             0 sshd
+Apr 04 15:51:11 openmower kernel: [    997]  1000   997     2024      414    45056        0             0 bash
+Apr 04 15:51:11 openmower kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=container,mems_allowed=0,global_oom,task_memcg=/,task=mower_map_servi,pid=741,uid=0
+Apr 04 15:51:11 openmower kernel: Out of memory: Killed process 741 (mower_map_servi) total-vm:5180028kB, anon-rss:3716716kB, file-rss:0kB, shmem-rss:0kB, UID:0 pgtables:7616kB oom_score_adj:0

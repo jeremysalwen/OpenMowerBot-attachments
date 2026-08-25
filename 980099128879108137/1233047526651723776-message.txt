@@ -1,0 +1,35 @@
+Maybe there is something in my mower_config ? i am using only one ardusimple and ntrip provider 
+
+# Uncomment and set to coordinates near your future docking station, this will be your map origin.
+# There might be a case that you don't need those if you using OM_USE_RELATIVE_POSITION=True
+export OM_DATUM_LAT=50.065780
+export OM_DATUM_LONG=19.922789
+
+# NTRIP Settings
+# Set to False if using external radio plugged into the Ardusimple board.
+export OM_USE_NTRIP=True
+export OM_NTRIP_HOSTNAME=91.198.76.2 ( adress of ntrip server caster  it also can be system.asgeupos.pl?)
+export OM_NTRIP_PORT=8082 ( 8086 for RTCM 3.4 ,  8082, 8083 for  RTCM 3.1, Network correction data RTN port: 2101 or 8080, DGNSS code correction data port: 8081) which one i have to choose ? 
+export OM_NTRIP_USER=(it should be my login at ntrip webservice provider? )
+export OM_NTRIP_PASSWORD=(it should be my password at ntrip webservice provider? )
+export OM_NTRIP_ENDPOINT=KRA1 (this should be name of my refference station ?)
+
+
+################################
+##        GPS Settings        ##
+################################
+# Relative Positioning vs LatLng coordinates
+# If OM_USE_RELATIVE_POSITION=False, we're using an arbitrary point as map origin. This point is called the DATUM point and
+# needs to be set using OM_DATUM_LAT and OM_DATUM_LONG below.
+# If OM_USE_RELATIVE_POSITION=True, we're using the ublox NAVRELPOSNED messages as position.
+# This makes your base station the map origin
+# For it recommended to set OM_USE_RELATIVE_POSITION to False. This way you can move your base station without re-recording your maps and it's also more compatible overall.
+export OM_USE_RELATIVE_POSITION=False
+
+# GPS protocol. Use UBX for u-blox chipsets and NMEA for everything else
+export OM_GPS_PROTOCOL=UBX
+
+# If you want to use F9R's sensor fusion, set this to true (you will also need to set DATUM_LAT and DATUM_LONG.
+# Consider this option unstable, since I don't have the F9R anymore, so I'm not able to test this.
+# IF YOU DONT KNOW WHAT THIS IS, SET IT TO FALSE
+export OM_USE_F9R_SENSOR_FUSION=False

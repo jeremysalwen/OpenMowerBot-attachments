@@ -1,0 +1,112 @@
+Thread 10 (Thread 0x7f91ffb170 (LWP 192)):
+#0  futex_abstimed_wait_cancelable (private=0, abstime=0x7f91ffa868, clockid=<optimized out>, expected=0, futex_word=0x5570514eb4) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7f91ffa868, clockid=<optimized out>, mutex=0x5570514e58, cond=0x5570514e88) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x5570514e88, mutex=0x5570514e58, abstime=0x7f91ffa868) at pthread_cond_wait.c:665
+#3  0x0000007fa583b258 in ros::TimerManager<ros::SteadyTime, ros::WallDuration, ros::SteadyTimerEvent>::threadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#4  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#5  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#6  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 9 (Thread 0x7f927fc170 (LWP 165)):
+#0  __lll_lock_wait (futex=futex@entry=0x7fa5290ae8, private=0) at lowlevellock.c:52
+#1  0x0000007fa56c0cd8 in __GI___pthread_mutex_lock (mutex=0x7fa5290ae8) at pthread_mutex_lock.c:80
+#2  0x0000007fa5258f14 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#3  0x0000007fa525e898 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#4  0x0000007fa52568e8 in MQTTAsync_send () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#5  0x0000007fa5256a14 in MQTTAsync_sendMessage () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#6  0x0000007fa534cdf0 in mqtt::async_client::publish(std::shared_ptr<mqtt::message const>) () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqttpp3.so.1
+#7  0x0000007fa5344dcc in mqtt::async_client::publish(mqtt::buffer_ref<char>, mqtt::buffer_ref<char>, int, bool) () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqttpp3.so.1
+#8  0x000000555ce152e0 in try_publish (topic="sensor_infos/json", data="[{\"sensor_id\":\"om_charge_state\",\"sensor_name\":\"Charge State\",\"value_type\":\"STRING\",\"value_description\":\"UNKNOWN\",\"unit\":\"\",\"has_min_max\":0,\"min_value\":0.0,\"max_value\":0.0,\"has_critical_low\":0,\"lower_c"..., retain=true) at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:253
+#9  0x000000555ce16c44 in publish_sensor_metadata () at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:447
+#10 0x000000555ce1ba50 in <lambda(const ros::master::TopicInfo&)>::<lambda(const ConstPtr&)>::operator()(const xbot_msgs::SensorInfo_<std::allocator<void> >::ConstPtr &) const (__closure=0x5570589180, msg=...) at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:879
+#11 0x000000555ce1ef64 in boost::detail::function::void_function_obj_invoker1<main(int, char**)::<lambda(const ros::master::TopicInfo&)>::<lambda(const ConstPtr&)>, void, const boost::shared_ptr<const xbot_msgs::SensorInfo_<std::allocator<void> > >&>::invoke(boost::detail::function::function_buffer &, const boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> &) (function_obj_ptr=..., a0=...) at /usr/include/boost/function/function_template.hpp:158
+#12 0x000000555ceb7bf4 in boost::function1<void, boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> const&>::operator() (this=0x5570583480, a0=...) at /usr/include/boost/function/function_template.hpp:763
+#13 0x000000555ceac6bc in boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const>) (function_obj_ptr=..., a0=...) at /usr/include/boost/function/function_template.hpp:158
+#14 0x000000555cecc9c8 in boost::function1<void, boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> >::operator() (this=0x557057a9d8, a0=...) at /usr/include/boost/function/function_template.hpp:763
+#15 0x000000555cec86d0 in ros::SubscriptionCallbackHelperT<boost::shared_ptr<xbot_msgs::SensorInfo_<std::allocator<void> > const> const&, void>::call (this=0x557057a9d0, params=...) at /opt/ros/noetic/include/ros/subscription_callback_helper.h:144
+#16 0x0000007fa585d01c in ros::SubscriptionQueue::call() () from /opt/ros/noetic/lib/libroscpp.so
+#17 0x0000007fa580890c in ros::CallbackQueue::callOneCB(ros::CallbackQueue::TLS*) () from /opt/ros/noetic/lib/libroscpp.so
+#18 0x0000007fa580a454 in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/noetic/lib/libroscpp.so
+#19 0x0000007fa585fb04 in ros::AsyncSpinnerImpl::threadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#20 0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#21 0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#22 0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 8 (Thread 0x7f92ffd170 (LWP 164)):
+#0  futex_abstimed_wait_cancelable (private=0, abstime=0x7f92ffc868, clockid=<optimized out>, expected=0, futex_word=0x7fa58c08cc <ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::global()::global+164>) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7f92ffc868, clockid=<optimized out>, mutex=0x7fa58c0870 <ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::global()::global+72>, cond=0x7fa58c08a0 <ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::global()::global+120>) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fa58c08a0 <ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::global()::global+120>, mutex=0x7fa58c0870 <ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::global()::global+72>, abstime=0x7f92ffc868) at pthread_cond_wait.c:665
+#3  0x0000007fa57e0cd8 in boost::condition_variable::do_wait_until(boost::unique_lock<boost::mutex>&, boost::detail::mono_platform_timepoint const&) () from /opt/ros/noetic/lib/libroscpp.so
+#4  0x0000007fa57e28e0 in ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::threadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#5  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#7  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 7 (Thread 0x7f937fe170 (LWP 163)):
+#0  __lll_lock_wait (futex=futex@entry=0x555cf654a0 <mqtt_callback_mutex>, private=0) at lowlevellock.c:52
+#1  0x0000007fa56c0cd8 in __GI___pthread_mutex_lock (mutex=0x555cf654a0 <mqtt_callback_mutex>) at pthread_mutex_lock.c:80
+#2  0x000000555ce20a0c in __gthread_mutex_lock (__mutex=0x555cf654a0 <mqtt_callback_mutex>) at /usr/include/aarch64-linux-gnu/c++/9/bits/gthr-default.h:749
+#3  0x000000555ce22c5c in std::mutex::lock (this=0x555cf654a0 <mqtt_callback_mutex>) at /usr/include/c++/9/bits/std_mutex.h:100
+#4  0x000000555ce40048 in std::unique_lock<std::mutex>::lock (this=0x7f937fd4f0) at /usr/include/c++/9/bits/unique_lock.h:141
+#5  0x000000555ce31abc in std::unique_lock<std::mutex>::unique_lock (this=0x7f937fd4f0, __m=...) at /usr/include/c++/9/bits/unique_lock.h:71
+#6  0x000000555ce16530 in publish_sensor_metadata () at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:374
+#7  0x000000555ce28310 in MqttCallback::connected (this=0x555cf65618 <mqtt_callback_external>, string="connect onSuccess called") at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:92
+#8  0x0000007fa53472d4 in mqtt::async_client::on_connected(void*, char*) () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqttpp3.so.1
+#9  0x0000007fa525bf34 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#10 0x0000007fa56be624 in start_thread (arg=0x7fa525b428) at pthread_create.c:477
+#11 0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 6 (Thread 0x7f93fff170 (LWP 162)):
+#0  __lll_lock_wait (futex=futex@entry=0x7fa5290ae8, private=0) at lowlevellock.c:52
+#1  0x0000007fa56c0cd8 in __GI___pthread_mutex_lock (mutex=0x7fa5290ae8) at pthread_mutex_lock.c:80
+#2  0x0000007fa5258f14 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#3  0x0000007fa525d550 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#4  0x0000007fa525e328 in ?? () from /opt/ros/noetic/lib/aarch64-linux-gnu/libpaho-mqtt3as.so.1
+#5  0x0000007fa56be624 in start_thread (arg=0x7fa525e210) at pthread_create.c:477
+#6  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 5 (Thread 0x7fa0ee7170 (LWP 151)):
+#0  futex_abstimed_wait_cancelable (private=0, abstime=0x7fa0ee6818, clockid=<optimized out>, expected=0, futex_word=0x55705176b8) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fa0ee6818, clockid=<optimized out>, mutex=0x5570517660, cond=0x5570517690) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x5570517690, mutex=0x5570517660, abstime=0x7fa0ee6818) at pthread_cond_wait.c:665
+#3  0x0000007fa580a708 in ros::CallbackQueue::callAvailable(ros::WallDuration) () from /opt/ros/noetic/lib/libroscpp.so
+#4  0x0000007fa58488c8 in ros::internalCallbackQueueThreadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#5  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#7  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 4 (Thread 0x7fa16e8170 (LWP 148)):
+#0  futex_wait_cancelable (private=0, expected=0, futex_word=0x55705171b8) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x5570517160, cond=0x5570517190) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x5570517190, mutex=0x5570517160) at pthread_cond_wait.c:647
+#3  0x0000007fa584574c in ros::ROSOutAppender::logThread() () from /opt/ros/noetic/lib/libroscpp.so
+#4  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#5  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#6  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 3 (Thread 0x7fa1ee9170 (LWP 147)):
+#0  0x0000007fa4ef00d8 in __GI___poll (fds=0x7f9400a200, nfds=4, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000007fa56948e4 in XmlRpc::XmlRpcDispatch::work(double) () from /opt/ros/noetic/lib/libxmlrpcpp.so
+#2  0x0000007fa57d8e84 in ros::XMLRPCManager::serverThreadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#3  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#4  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#5  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 2 (Thread 0x7fa26ea170 (LWP 146)):
+#0  0x0000007fa4ef9794 in __GI_epoll_pwait (epfd=<optimized out>, events=0x7fa26e9460, maxevents=27, timeout=100, set=0x0) at ../sysdeps/unix/sysv/linux/epoll_pwait.c:42
+#1  0x0000007fa57e5d90 in ros::poll_sockets(int, pollfd*, unsigned long, int) () from /opt/ros/noetic/lib/libroscpp.so
+#2  0x0000007fa5866ec4 in ros::PollSet::update(int) () from /opt/ros/noetic/lib/libroscpp.so
+#3  0x0000007fa57f3ff8 in ros::PollManager::threadFunc() () from /opt/ros/noetic/lib/libroscpp.so
+#4  0x0000007fa4de1624 in ?? () from /lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+#5  0x0000007fa56be624 in start_thread (arg=0x7fa4de1598) at pthread_create.c:477
+#6  0x0000007fa4ef966c in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:78
+
+Thread 1 (Thread 0x7fa2746010 (LWP 121)):
+#0  0x0000007fa4ec660c in __GI___clock_nanosleep (clock_id=<optimized out>, clock_id@entry=0, flags=flags@entry=0, req=<optimized out>, rem=0x7fd72947b8) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x0000007fa4ecbf94 in __GI___nanosleep (requested_time=<optimized out>, remaining=<optimized out>) at nanosleep.c:27
+#2  0x0000007fa5398ba8 in ros::ros_wallsleep(unsigned int, unsigned int) () from /opt/ros/noetic/lib/librostime.so
+#3  0x0000007fa53994c8 in ros::Duration::sleep() const () from /opt/ros/noetic/lib/librostime.so
+#4  0x0000007fa53986e8 in ros::Rate::sleep() () from /opt/ros/noetic/lib/librostime.so
+#5  0x000000555ce1cfd4 in main (argc=1, argv=0x7fd7294ec8) at /opt/open_mower_ros/src/lib/xbot_monitoring/src/xbot_monitoring.cpp:883
+Detaching from program: /opt/open_mower_ros/devel/lib/xbot_monitoring/xbot_monitoring, process 121
+[Inferior 1 (process 121) detached]

@@ -1,0 +1,512 @@
+[roslaunch][INFO] 2026-05-25 18:36:51,729: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-05-25 18:36:51,742: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-05-25 18:36:51,743: roslaunch starting with args ['/opt/ros/noetic/bin/roslaunch', 'open_mower', 'open_mower.launch', '--screen']
+[roslaunch][INFO] 2026-05-25 18:36:51,743: roslaunch env is environ({'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'})
+[roslaunch][INFO] 2026-05-25 18:36:51,744: starting in server mode
+[roslaunch.parent][INFO] 2026-05-25 18:36:51,745: starting roslaunch parent run
+[roslaunch][INFO] 2026-05-25 18:36:51,745: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-05-25 18:36:52,192: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2026-05-25 18:36:52,193: loading config file /opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+[roslaunch][INFO] 2026-05-25 18:36:52,364: Added node of type [mower_comms_v1/mower_comms_v1] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,365: Added node of type [xbot_driver_gps/driver_gps_node] in namespace [/ll/services/]
+[roslaunch][INFO] 2026-05-25 18:36:52,370: Added node of type [ntrip_client/ntrip_ros.py] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,424: Added node of type [mbf_costmap_nav/mbf_costmap_nav] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,425: Added node of type [mbf_costmap_nav/move_base_legacy_relay.py] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,427: Added node of type [xbot_positioning/xbot_positioning] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,430: Added node of type [joy/joy_node] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,431: Added node of type [teleop_twist_joy/teleop_node] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,435: Added node of type [mower_map/mower_map_service] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,435: Added node of type [mower_logic/mower_logic] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,436: Added node of type [slic3r_coverage_planner/slic3r_coverage_planner] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,443: Added node of type [twist_mux/twist_mux] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,444: Added node of type [xbot_monitoring/xbot_monitoring] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,444: Added node of type [xbot_remote/xbot_remote] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: Added node of type [mower_logic/monitoring] in namespace [/]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: ... selected machine [] for node of type [mower_comms_v1/mower_comms_v1]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: ... selected machine [] for node of type [xbot_driver_gps/driver_gps_node]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: ... selected machine [] for node of type [ntrip_client/ntrip_ros.py]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: ... selected machine [] for node of type [mbf_costmap_nav/mbf_costmap_nav]
+[roslaunch][INFO] 2026-05-25 18:36:52,445: ... selected machine [] for node of type [mbf_costmap_nav/move_base_legacy_relay.py]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [xbot_positioning/xbot_positioning]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [joy/joy_node]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [teleop_twist_joy/teleop_node]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [mower_map/mower_map_service]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [mower_logic/mower_logic]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [slic3r_coverage_planner/slic3r_coverage_planner]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [twist_mux/twist_mux]
+[roslaunch][INFO] 2026-05-25 18:36:52,446: ... selected machine [] for node of type [xbot_monitoring/xbot_monitoring]
+[roslaunch][INFO] 2026-05-25 18:36:52,447: ... selected machine [] for node of type [xbot_remote/xbot_remote]
+[roslaunch][INFO] 2026-05-25 18:36:52,447: ... selected machine [] for node of type [mower_logic/monitoring]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:52,450: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-05-25 18:36:52,451: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-05-25 18:36:52,451: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-05-25 18:36:52,452: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-05-25 18:36:52,452: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-05-25 18:36:52,452: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-05-25 18:36:52,452: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-05-25 18:36:52,453: Started XML-RPC server [http://openmower:36817/]
+[xmlrpc][INFO] 2026-05-25 18:36:52,454: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-05-25 18:36:52,466: started roslaunch server http://openmower:36817/
+[roslaunch.parent][INFO] 2026-05-25 18:36:52,467: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-05-25 18:36:52,471: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,473: auto-starting new master
+[roslaunch][INFO] 2026-05-25 18:36:52,474: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2026-05-25 18:36:52,475: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:52,475: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:52,475: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-05-25 18:36:52,476: process[master]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:52,476: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/master.log']]
+[roslaunch][INFO] 2026-05-25 18:36:52,476: process[master]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:52,486: process[master]: started with pid [50]
+[roslaunch][INFO] 2026-05-25 18:36:52,487: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,589: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,690: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,793: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,894: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:52,996: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,098: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,199: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,301: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,306: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,309: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2026-05-25 18:36:53,313: setting /run_id to b246c65a-5868-11f1-a71f-d83addfc5a4c
+[roslaunch][INFO] 2026-05-25 18:36:53,316: setting /roslaunch/uris/host_openmower__36817' to http://openmower:36817/
+[roslaunch][INFO] 2026-05-25 18:36:53,321: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2026-05-25 18:36:53,322: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,322: process[rosout-1]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,463: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2026-05-25 18:36:53,463: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,463: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,463: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,463: ... registered process [rosout-1]
+[roslaunch][INFO] 2026-05-25 18:36:53,463: process[rosout-1]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,464: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/rosout-1.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,464: process[rosout-1]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,473: process[rosout-1]: started with pid [60]
+[roslaunch][INFO] 2026-05-25 18:36:53,474: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2026-05-25 18:36:53,475: load_parameters starting ...
+[roslaunch][INFO] 2026-05-25 18:36:53,611: ... load_parameters complete
+[roslaunch][INFO] 2026-05-25 18:36:53,612: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-05-25 18:36:53,614: ... preparing to launch node of type [mower_comms_v1/mower_comms_v1]
+[roslaunch][INFO] 2026-05-25 18:36:53,614: create_node_process: package[mower_comms_v1] type[mower_comms_v1] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,615: process[ll-2]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,617: process[ll-2]: args[['/opt/open_mower_ros/devel/lib/mower_comms_v1/mower_comms_v1', '__name:=ll']]
+[roslaunch][INFO] 2026-05-25 18:36:53,617: ... created process [ll-2]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,617: ProcessMonitor.register[ll-2]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,617: ProcessMonitor.register[ll-2] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,617: ... registered process [ll-2]
+[roslaunch][INFO] 2026-05-25 18:36:53,617: process[ll-2]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,618: process[ll-2]: start w/ args [['/opt/open_mower_ros/devel/lib/mower_comms_v1/mower_comms_v1', '__name:=ll', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ll-2.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,618: process[ll-2]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,626: process[ll-2]: started with pid [67]
+[roslaunch][INFO] 2026-05-25 18:36:53,627: ... successfully launched [ll-2]
+[roslaunch][INFO] 2026-05-25 18:36:53,628: ... preparing to launch node of type [xbot_driver_gps/driver_gps_node]
+[roslaunch][INFO] 2026-05-25 18:36:53,628: create_node_process: package[xbot_driver_gps] type[driver_gps_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,629: process[ll/services/gps-3]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log', 'ROS_NAMESPACE': '/ll/services'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,631: process[ll/services/gps-3]: args[['/opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node', '/ll/services/rtcm:=/ll/position/gps/rtcm', '/nmea:=/ll/position/gps/nmea', '~xb_pose:=/ll/position/gps', '~wheel_ticks:=/mower/wheel_ticks', '__name:=gps']]
+[roslaunch][INFO] 2026-05-25 18:36:53,632: ... created process [ll/services/gps-3]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,632: ProcessMonitor.register[ll/services/gps-3]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,632: ProcessMonitor.register[ll/services/gps-3] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,632: ... registered process [ll/services/gps-3]
+[roslaunch][INFO] 2026-05-25 18:36:53,632: process[ll/services/gps-3]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,632: process[ll/services/gps-3]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node', '/ll/services/rtcm:=/ll/position/gps/rtcm', '/nmea:=/ll/position/gps/nmea', '~xb_pose:=/ll/position/gps', '~wheel_ticks:=/mower/wheel_ticks', '__name:=gps', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ll-services-gps-3.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,633: process[ll/services/gps-3]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,642: process[ll/services/gps-3]: started with pid [68]
+[roslaunch][INFO] 2026-05-25 18:36:53,643: ... successfully launched [ll/services/gps-3]
+[roslaunch][INFO] 2026-05-25 18:36:53,643: ... preparing to launch node of type [ntrip_client/ntrip_ros.py]
+[roslaunch][INFO] 2026-05-25 18:36:53,644: create_node_process: package[ntrip_client] type[ntrip_ros.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,645: process[ntrip_client-4]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log', 'NTRIP_CLIENT_DEBUG': 'false'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,648: process[ntrip_client-4]: args[['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client']]
+[roslaunch][INFO] 2026-05-25 18:36:53,648: ... created process [ntrip_client-4]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,649: ProcessMonitor.register[ntrip_client-4]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,649: ProcessMonitor.register[ntrip_client-4] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,649: ... registered process [ntrip_client-4]
+[roslaunch][INFO] 2026-05-25 18:36:53,650: process[ntrip_client-4]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,650: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,650: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,662: process[ntrip_client-4]: started with pid [73]
+[roslaunch][INFO] 2026-05-25 18:36:53,662: ... successfully launched [ntrip_client-4]
+[roslaunch][INFO] 2026-05-25 18:36:53,663: ... preparing to launch node of type [mbf_costmap_nav/mbf_costmap_nav]
+[roslaunch][INFO] 2026-05-25 18:36:53,663: create_node_process: package[mbf_costmap_nav] type[mbf_costmap_nav] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,664: process[move_base_flex-5]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,667: process[move_base_flex-5]: args[['/opt/ros/noetic/lib/mbf_costmap_nav/mbf_costmap_nav', 'cmd_vel:=/nav_vel', '__name:=move_base_flex']]
+[roslaunch][INFO] 2026-05-25 18:36:53,668: ... created process [move_base_flex-5]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,668: ProcessMonitor.register[move_base_flex-5]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,668: ProcessMonitor.register[move_base_flex-5] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,668: ... registered process [move_base_flex-5]
+[roslaunch][INFO] 2026-05-25 18:36:53,669: process[move_base_flex-5]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,669: process[move_base_flex-5]: start w/ args [['/opt/ros/noetic/lib/mbf_costmap_nav/mbf_costmap_nav', 'cmd_vel:=/nav_vel', '__name:=move_base_flex', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/move_base_flex-5.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,670: process[move_base_flex-5]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,685: process[move_base_flex-5]: started with pid [79]
+[roslaunch][INFO] 2026-05-25 18:36:53,685: ... successfully launched [move_base_flex-5]
+[roslaunch][INFO] 2026-05-25 18:36:53,686: ... preparing to launch node of type [mbf_costmap_nav/move_base_legacy_relay.py]
+[roslaunch][INFO] 2026-05-25 18:36:53,686: create_node_process: package[mbf_costmap_nav] type[move_base_legacy_relay.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,687: process[move_base_legacy_relay-6]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,690: process[move_base_legacy_relay-6]: args[['/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py', '__name:=move_base_legacy_relay']]
+[roslaunch][INFO] 2026-05-25 18:36:53,690: ... created process [move_base_legacy_relay-6]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,691: ProcessMonitor.register[move_base_legacy_relay-6]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,691: ProcessMonitor.register[move_base_legacy_relay-6] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,691: ... registered process [move_base_legacy_relay-6]
+[roslaunch][INFO] 2026-05-25 18:36:53,692: process[move_base_legacy_relay-6]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,692: process[move_base_legacy_relay-6]: start w/ args [['/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py', '__name:=move_base_legacy_relay', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/move_base_legacy_relay-6.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,692: process[move_base_legacy_relay-6]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,707: process[move_base_legacy_relay-6]: started with pid [81]
+[roslaunch][INFO] 2026-05-25 18:36:53,708: ... successfully launched [move_base_legacy_relay-6]
+[roslaunch][INFO] 2026-05-25 18:36:53,710: ... preparing to launch node of type [xbot_positioning/xbot_positioning]
+[roslaunch][INFO] 2026-05-25 18:36:53,710: create_node_process: package[xbot_positioning] type[xbot_positioning] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,711: process[xbot_positioning-7]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,720: process[xbot_positioning-7]: args[['/opt/open_mower_ros/devel/lib/xbot_positioning/xbot_positioning', '~imu_in:=/ll/imu/data_raw', '~twist_in:=/ll/diff_drive/measured_twist', '~xb_pose_in:=/ll/position/gps', '~xb_pose_out:=xbot_positioning/xb_pose', '__name:=xbot_positioning']]
+[roslaunch][INFO] 2026-05-25 18:36:53,721: ... created process [xbot_positioning-7]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,721: ProcessMonitor.register[xbot_positioning-7]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,721: ProcessMonitor.register[xbot_positioning-7] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,722: ... registered process [xbot_positioning-7]
+[roslaunch][INFO] 2026-05-25 18:36:53,722: process[xbot_positioning-7]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,723: process[xbot_positioning-7]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_positioning/xbot_positioning', '~imu_in:=/ll/imu/data_raw', '~twist_in:=/ll/diff_drive/measured_twist', '~xb_pose_in:=/ll/position/gps', '~xb_pose_out:=xbot_positioning/xb_pose', '__name:=xbot_positioning', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/xbot_positioning-7.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,723: process[xbot_positioning-7]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,742: process[xbot_positioning-7]: started with pid [82]
+[roslaunch][INFO] 2026-05-25 18:36:53,743: ... successfully launched [xbot_positioning-7]
+[roslaunch][INFO] 2026-05-25 18:36:53,747: ... preparing to launch node of type [joy/joy_node]
+[roslaunch][INFO] 2026-05-25 18:36:53,747: create_node_process: package[joy] type[joy_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,748: process[joy-8]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,754: process[joy-8]: args[['/opt/ros/noetic/lib/joy/joy_node', '__name:=joy']]
+[roslaunch][INFO] 2026-05-25 18:36:53,754: ... created process [joy-8]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,755: ProcessMonitor.register[joy-8]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,755: ProcessMonitor.register[joy-8] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,755: ... registered process [joy-8]
+[roslaunch][INFO] 2026-05-25 18:36:53,756: process[joy-8]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,756: process[joy-8]: start w/ args [['/opt/ros/noetic/lib/joy/joy_node', '__name:=joy', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/joy-8.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,756: process[joy-8]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,776: process[joy-8]: started with pid [87]
+[roslaunch][INFO] 2026-05-25 18:36:53,778: ... successfully launched [joy-8]
+[roslaunch][INFO] 2026-05-25 18:36:53,778: ... preparing to launch node of type [teleop_twist_joy/teleop_node]
+[roslaunch][INFO] 2026-05-25 18:36:53,779: create_node_process: package[teleop_twist_joy] type[teleop_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,780: process[joy_teleop-9]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,785: process[joy_teleop-9]: args[['/opt/ros/noetic/lib/teleop_twist_joy/teleop_node', 'cmd_vel:=/joy_vel', '__name:=joy_teleop']]
+[roslaunch][INFO] 2026-05-25 18:36:53,785: ... created process [joy_teleop-9]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,786: ProcessMonitor.register[joy_teleop-9]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,786: ProcessMonitor.register[joy_teleop-9] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,790: ... registered process [joy_teleop-9]
+[roslaunch][INFO] 2026-05-25 18:36:53,791: process[joy_teleop-9]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,791: process[joy_teleop-9]: start w/ args [['/opt/ros/noetic/lib/teleop_twist_joy/teleop_node', 'cmd_vel:=/joy_vel', '__name:=joy_teleop', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/joy_teleop-9.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,792: process[joy_teleop-9]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,811: process[joy_teleop-9]: started with pid [88]
+[roslaunch][INFO] 2026-05-25 18:36:53,812: ... successfully launched [joy_teleop-9]
+[roslaunch][INFO] 2026-05-25 18:36:53,812: ... preparing to launch node of type [mower_map/mower_map_service]
+[roslaunch][INFO] 2026-05-25 18:36:53,813: create_node_process: package[mower_map] type[mower_map_service] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,813: process[map_service-10]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,828: process[map_service-10]: args[['/opt/open_mower_ros/devel/lib/mower_map/mower_map_service', '__name:=map_service']]
+[roslaunch][INFO] 2026-05-25 18:36:53,829: ... created process [map_service-10]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,829: ProcessMonitor.register[map_service-10]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,829: ProcessMonitor.register[map_service-10] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,830: ... registered process [map_service-10]
+[roslaunch][INFO] 2026-05-25 18:36:53,830: process[map_service-10]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,832: process[map_service-10]: start w/ args [['/opt/open_mower_ros/devel/lib/mower_map/mower_map_service', '__name:=map_service', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/map_service-10.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,832: process[map_service-10]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,857: process[map_service-10]: started with pid [97]
+[roslaunch][INFO] 2026-05-25 18:36:53,861: ... successfully launched [map_service-10]
+[roslaunch][INFO] 2026-05-25 18:36:53,862: ... preparing to launch node of type [mower_logic/mower_logic]
+[roslaunch][INFO] 2026-05-25 18:36:53,867: create_node_process: package[mower_logic] type[mower_logic] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,868: process[mower_logic-11]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,874: process[mower_logic-11]: args[['/opt/open_mower_ros/devel/lib/mower_logic/mower_logic', '__name:=mower_logic']]
+[roslaunch][INFO] 2026-05-25 18:36:53,874: ... created process [mower_logic-11]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,877: ProcessMonitor.register[mower_logic-11]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,877: ProcessMonitor.register[mower_logic-11] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,881: ... registered process [mower_logic-11]
+[roslaunch][INFO] 2026-05-25 18:36:53,881: process[mower_logic-11]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,882: process[mower_logic-11]: start w/ args [['/opt/open_mower_ros/devel/lib/mower_logic/mower_logic', '__name:=mower_logic', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/mower_logic-11.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,883: process[mower_logic-11]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,899: process[mower_logic-11]: started with pid [103]
+[roslaunch][INFO] 2026-05-25 18:36:53,901: ... successfully launched [mower_logic-11]
+[roslaunch][INFO] 2026-05-25 18:36:53,901: ... preparing to launch node of type [slic3r_coverage_planner/slic3r_coverage_planner]
+[roslaunch][INFO] 2026-05-25 18:36:53,901: create_node_process: package[slic3r_coverage_planner] type[slic3r_coverage_planner] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,902: process[slic3r_coverage_planner-12]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,916: process[slic3r_coverage_planner-12]: args[['/opt/prebuilt/slic3r_coverage_planner/lib/slic3r_coverage_planner/slic3r_coverage_planner', '__name:=slic3r_coverage_planner']]
+[roslaunch][INFO] 2026-05-25 18:36:53,917: ... created process [slic3r_coverage_planner-12]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,917: ProcessMonitor.register[slic3r_coverage_planner-12]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,918: ProcessMonitor.register[slic3r_coverage_planner-12] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,918: ... registered process [slic3r_coverage_planner-12]
+[roslaunch][INFO] 2026-05-25 18:36:53,922: process[slic3r_coverage_planner-12]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,926: process[slic3r_coverage_planner-12]: start w/ args [['/opt/prebuilt/slic3r_coverage_planner/lib/slic3r_coverage_planner/slic3r_coverage_planner', '__name:=slic3r_coverage_planner', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/slic3r_coverage_planner-12.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,927: process[slic3r_coverage_planner-12]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,949: process[slic3r_coverage_planner-12]: started with pid [105]
+[roslaunch][INFO] 2026-05-25 18:36:53,949: ... successfully launched [slic3r_coverage_planner-12]
+[roslaunch][INFO] 2026-05-25 18:36:53,950: ... preparing to launch node of type [twist_mux/twist_mux]
+[roslaunch][INFO] 2026-05-25 18:36:53,950: create_node_process: package[twist_mux] type[twist_mux] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:53,955: process[twist_mux-13]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:53,963: process[twist_mux-13]: args[['/opt/ros/noetic/lib/twist_mux/twist_mux', 'cmd_vel_out:=/ll/cmd_vel', '__name:=twist_mux']]
+[roslaunch][INFO] 2026-05-25 18:36:53,964: ... created process [twist_mux-13]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,964: ProcessMonitor.register[twist_mux-13]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:53,967: ProcessMonitor.register[twist_mux-13] complete
+[roslaunch][INFO] 2026-05-25 18:36:53,971: ... registered process [twist_mux-13]
+[roslaunch][INFO] 2026-05-25 18:36:53,971: process[twist_mux-13]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:53,972: process[twist_mux-13]: start w/ args [['/opt/ros/noetic/lib/twist_mux/twist_mux', 'cmd_vel_out:=/ll/cmd_vel', '__name:=twist_mux', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/twist_mux-13.log']]
+[roslaunch][INFO] 2026-05-25 18:36:53,972: process[twist_mux-13]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:53,997: process[twist_mux-13]: started with pid [107]
+[roslaunch][INFO] 2026-05-25 18:36:53,998: ... successfully launched [twist_mux-13]
+[roslaunch][INFO] 2026-05-25 18:36:53,999: ... preparing to launch node of type [xbot_monitoring/xbot_monitoring]
+[roslaunch][INFO] 2026-05-25 18:36:53,999: create_node_process: package[xbot_monitoring] type[xbot_monitoring] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:54,004: process[xbot_monitoring-14]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:54,011: process[xbot_monitoring-14]: args[['/opt/open_mower_ros/devel/lib/xbot_monitoring/xbot_monitoring', '/xbot_monitoring/remote_cmd_vel:=/joy_vel', '__name:=xbot_monitoring']]
+[roslaunch][INFO] 2026-05-25 18:36:54,014: ... created process [xbot_monitoring-14]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,014: ProcessMonitor.register[xbot_monitoring-14]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,019: ProcessMonitor.register[xbot_monitoring-14] complete
+[roslaunch][INFO] 2026-05-25 18:36:54,019: ... registered process [xbot_monitoring-14]
+[roslaunch][INFO] 2026-05-25 18:36:54,019: process[xbot_monitoring-14]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:54,020: process[xbot_monitoring-14]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_monitoring/xbot_monitoring', '/xbot_monitoring/remote_cmd_vel:=/joy_vel', '__name:=xbot_monitoring', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/xbot_monitoring-14.log']]
+[roslaunch][INFO] 2026-05-25 18:36:54,020: process[xbot_monitoring-14]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:54,042: process[xbot_monitoring-14]: started with pid [112]
+[roslaunch][INFO] 2026-05-25 18:36:54,043: ... successfully launched [xbot_monitoring-14]
+[roslaunch][INFO] 2026-05-25 18:36:54,043: ... preparing to launch node of type [xbot_remote/xbot_remote]
+[roslaunch][INFO] 2026-05-25 18:36:54,044: create_node_process: package[xbot_remote] type[xbot_remote] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:54,044: process[xbot_remote-15]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:54,056: process[xbot_remote-15]: args[['/opt/open_mower_ros/devel/lib/xbot_remote/xbot_remote', '/xbot_remote/cmd_vel:=/joy_vel', '__name:=xbot_remote']]
+[roslaunch][INFO] 2026-05-25 18:36:54,056: ... created process [xbot_remote-15]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,057: ProcessMonitor.register[xbot_remote-15]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,058: ProcessMonitor.register[xbot_remote-15] complete
+[roslaunch][INFO] 2026-05-25 18:36:54,066: ... registered process [xbot_remote-15]
+[roslaunch][INFO] 2026-05-25 18:36:54,067: process[xbot_remote-15]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:54,068: process[xbot_remote-15]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_remote/xbot_remote', '/xbot_remote/cmd_vel:=/joy_vel', '__name:=xbot_remote', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/xbot_remote-15.log']]
+[roslaunch][INFO] 2026-05-25 18:36:54,068: process[xbot_remote-15]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:54,115: process[xbot_remote-15]: started with pid [121]
+[roslaunch][INFO] 2026-05-25 18:36:54,115: ... successfully launched [xbot_remote-15]
+[roslaunch][INFO] 2026-05-25 18:36:54,116: ... preparing to launch node of type [mower_logic/monitoring]
+[roslaunch][INFO] 2026-05-25 18:36:54,116: create_node_process: package[mower_logic] type[monitoring] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-05-25 18:36:54,117: process[monitoring-16]: env[{'ROS_VERSION': '1', 'PYTHONUNBUFFERED': '1', 'PKG_CONFIG_PATH': '/opt/open_mower_ros/devel/lib/pkgconfig:/opt/prebuilt/slic3r_coverage_planner/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'openmower', 'RECORDINGS_PATH': '/data/recordings', 'PARAMS_PATH': '/data/params', 'ROS_PACKAGE_PATH': '/opt/open_mower_ros/src:/opt/prebuilt/slic3r_coverage_planner/share:/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '/opt/open_mower_ros/devel/share/common-lisp', 'PWD': '/home/openmower', 'ROSOUT_DISABLE_FILE_LOGGING': 'True', 'ESC_TYPE': 'xesc_mini', 'HARDWARE_PLATFORM': '1', 'HOME': '/home/openmower', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'ROSCONSOLE_STDOUT_LINE_BUFFERED': '1', 'OM_SOFTWARE_VERSION': 'v1.1.1', 'CMAKE_PREFIX_PATH': '/opt/open_mower_ros/devel:/opt/prebuilt/slic3r_coverage_planner:/opt/ros/noetic', 'PYTHONPATH': '/opt/open_mower_ros/devel/lib/python3/dist-packages:/opt/prebuilt/slic3r_coverage_planner/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'ROSCONSOLE_CONFIG_FILE': '/config/rosconsole.config', 'ROS_HOME': '/data/ros', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/open_mower_ros/devel/lib:/opt/prebuilt/slic3r_coverage_planner/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu', 'MOWER': 'YardForce500', 'LC_ALL': 'C.UTF-8', 'FIRMWARE': '0_13_X', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'VERSION': 'latest', 'DEBUG': 'False', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/roslaunch-openmower-1.log'}]
+[roslaunch][INFO] 2026-05-25 18:36:54,128: process[monitoring-16]: args[['/opt/open_mower_ros/devel/lib/mower_logic/monitoring', '__name:=monitoring']]
+[roslaunch][INFO] 2026-05-25 18:36:54,129: ... created process [monitoring-16]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,129: ProcessMonitor.register[monitoring-16]
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,129: ProcessMonitor.register[monitoring-16] complete
+[roslaunch][INFO] 2026-05-25 18:36:54,129: ... registered process [monitoring-16]
+[roslaunch][INFO] 2026-05-25 18:36:54,130: process[monitoring-16]: starting os process
+[roslaunch][INFO] 2026-05-25 18:36:54,138: process[monitoring-16]: start w/ args [['/opt/open_mower_ros/devel/lib/mower_logic/monitoring', '__name:=monitoring', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/monitoring-16.log']]
+[roslaunch][INFO] 2026-05-25 18:36:54,139: process[monitoring-16]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-25 18:36:54,167: process[monitoring-16]: started with pid [127]
+[roslaunch][INFO] 2026-05-25 18:36:54,168: ... successfully launched [monitoring-16]
+[roslaunch][INFO] 2026-05-25 18:36:54,169: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-05-25 18:36:54,169: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 547647984096)>
+[roslaunch.parent][INFO] 2026-05-25 18:36:54,170: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-05-25 18:36:54,170: spin
+[roslaunch][INFO] 2026-05-26 08:46:12,254: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 08:46:22,318: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 08:46:22,319: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 08:46:22,320: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 08:46:22,321: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 08:46:22,337: process[ntrip_client-4]: started with pid [240]
+[roslaunch][INFO] 2026-05-26 09:06:40,085: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 09:06:50,149: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 09:06:50,150: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 09:06:50,151: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 09:06:50,152: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 09:06:50,170: process[ntrip_client-4]: started with pid [253]
+[roslaunch][INFO] 2026-05-26 09:27:08,009: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 09:27:18,081: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 09:27:18,082: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 09:27:18,084: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 09:27:18,084: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 09:27:18,102: process[ntrip_client-4]: started with pid [266]
+[roslaunch][INFO] 2026-05-26 09:47:35,942: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 09:47:46,007: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 09:47:46,008: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 09:47:46,009: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 09:47:46,010: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 09:47:46,026: process[ntrip_client-4]: started with pid [279]
+[roslaunch][INFO] 2026-05-26 10:08:03,855: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 10:08:13,923: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 10:08:13,924: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 10:08:13,925: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 10:08:13,925: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 10:08:13,941: process[ntrip_client-4]: started with pid [292]
+[roslaunch][INFO] 2026-05-26 10:28:31,813: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 10:28:41,879: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 10:28:41,881: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 10:28:41,882: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 10:28:41,883: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 10:28:41,900: process[ntrip_client-4]: started with pid [305]
+[roslaunch][INFO] 2026-05-26 10:48:59,859: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 10:49:09,929: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 10:49:09,929: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 10:49:09,930: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 10:49:09,931: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 10:49:09,948: process[ntrip_client-4]: started with pid [318]
+[roslaunch][INFO] 2026-05-26 11:09:28,068: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 11:09:38,150: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 11:09:38,151: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 11:09:38,151: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 11:09:38,152: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 11:09:38,163: process[ntrip_client-4]: started with pid [331]
+[roslaunch][INFO] 2026-05-26 11:29:56,797: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 11:30:06,797: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 11:30:06,799: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 11:30:06,802: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 11:30:06,805: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 11:30:06,827: process[ntrip_client-4]: started with pid [344]
+[roslaunch][INFO] 2026-05-26 11:50:26,668: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 11:50:36,769: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 11:50:36,769: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 11:50:36,772: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 11:50:36,772: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 11:50:36,793: process[ntrip_client-4]: started with pid [357]
+[roslaunch][INFO] 2026-05-26 12:10:56,402: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 12:11:06,472: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 12:11:06,473: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 12:11:06,473: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 12:11:06,474: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 12:11:06,485: process[ntrip_client-4]: started with pid [370]
+[roslaunch][INFO] 2026-05-26 12:31:24,952: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 12:31:35,031: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 12:31:35,032: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 12:31:35,033: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 12:31:35,033: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 12:31:35,051: process[ntrip_client-4]: started with pid [383]
+[roslaunch][INFO] 2026-05-26 12:51:52,812: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 12:52:02,877: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 12:52:02,878: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 12:52:02,879: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 12:52:02,879: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 12:52:02,896: process[ntrip_client-4]: started with pid [396]
+[roslaunch][INFO] 2026-05-26 13:12:20,653: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 13:12:30,708: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 13:12:30,708: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 13:12:30,709: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 13:12:30,709: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 13:12:30,719: process[ntrip_client-4]: started with pid [409]
+[roslaunch][INFO] 2026-05-26 13:32:48,614: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 13:32:58,670: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 13:32:58,671: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 13:32:58,671: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 13:32:58,671: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 13:32:58,681: process[ntrip_client-4]: started with pid [424]
+[roslaunch][INFO] 2026-05-26 13:53:16,552: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 13:53:26,617: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 13:53:26,618: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 13:53:26,619: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 13:53:26,620: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 13:53:26,642: process[ntrip_client-4]: started with pid [437]
+[roslaunch][INFO] 2026-05-26 14:13:44,485: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 14:13:54,549: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 14:13:54,549: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 14:13:54,551: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 14:13:54,551: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 14:13:54,568: process[ntrip_client-4]: started with pid [450]
+[roslaunch][INFO] 2026-05-26 14:34:12,499: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 14:34:22,566: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 14:34:22,567: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 14:34:22,568: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 14:34:22,568: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 14:34:22,585: process[ntrip_client-4]: started with pid [463]
+[roslaunch][INFO] 2026-05-26 14:54:40,363: [ntrip_client-4] process has finished cleanly
+log file: /data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4*.log
+[roslaunch][INFO] 2026-05-26 14:54:50,425: [ntrip_client-4] restarting process
+[roslaunch][INFO] 2026-05-26 14:54:50,425: process[ntrip_client-4]: restarting os process
+[roslaunch][INFO] 2026-05-26 14:54:50,426: process[ntrip_client-4]: start w/ args [['/opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py', '/nmea:=/ll/position/gps/nmea', '/rtcm:=/ll/position/gps/rtcm', '__name:=ntrip_client', '__log:=/data/ros/log/b246c65a-5868-11f1-a71f-d83addfc5a4c/ntrip_client-4.log']]
+[roslaunch][INFO] 2026-05-26 14:54:50,426: process[ntrip_client-4]: cwd will be [/data/ros]
+[roslaunch][INFO] 2026-05-26 14:54:50,436: process[ntrip_client-4]: started with pid [476]
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,105: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 547647984096)>
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,114: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 547647984096)>
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,115: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 547647984096)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f82619070>, <roslaunch.nodeprocess.LocalProcess object at 0x7f82828190>, <roslaunch.nodeprocess.LocalProcess object at 0x7f827e92b0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f82619d30>, <roslaunch.nodeprocess.LocalProcess object at 0x7f826193d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9220>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9160>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f93d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9460>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f94f0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9640>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9a90>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9c10>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9b80>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9cd0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9e20>, <roslaunch.nodeprocess.LocalProcess object at 0x7f825f9e50>]
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,116: ProcessMonitor exit: killing monitoring-16
+[roslaunch][INFO] 2026-05-26 15:14:22,116: [monitoring-16] killing on exit
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,117: ProcessMonitor exit: killing xbot_remote-15
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,118: ProcessMonitor exit: killing xbot_monitoring-14
+[roslaunch][INFO] 2026-05-26 15:14:22,123: [xbot_monitoring-14] killing on exit
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,120: ProcessMonitor exit: killing twist_mux-13
+[roslaunch][INFO] 2026-05-26 15:14:22,124: [twist_mux-13] killing on exit
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,122: ProcessMonitor exit: killing slic3r_coverage_planner-12
+[roslaunch][INFO] 2026-05-26 15:14:22,119: process[monitoring-16]: killing os process with pid[127] pgid[127]
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,123: ProcessMonitor exit: killing mower_logic-11
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,124: ProcessMonitor exit: killing map_service-10
+[roslaunch][INFO] 2026-05-26 15:14:22,121: [xbot_remote-15] killing on exit
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,126: ProcessMonitor exit: killing joy_teleop-9
+[roslaunch][INFO] 2026-05-26 15:14:22,126: process[xbot_monitoring-14]: killing os process with pid[112] pgid[112]
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,127: ProcessMonitor exit: killing joy-8
+[roslaunch][INFO] 2026-05-26 15:14:22,128: [slic3r_coverage_planner-12] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,129: process[twist_mux-13]: killing os process with pid[107] pgid[107]
+[roslaunch][INFO] 2026-05-26 15:14:22,133: [twist_mux-13] sending SIGINT to pgid [107]
+[roslaunch][INFO] 2026-05-26 15:14:22,129: [monitoring-16] sending SIGINT to pgid [127]
+[roslaunch][INFO] 2026-05-26 15:14:22,130: [mower_logic-11] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,130: [map_service-10] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,131: [joy_teleop-9] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,132: process[xbot_remote-15]: killing os process with pid[121] pgid[121]
+[roslaunch][INFO] 2026-05-26 15:14:22,132: [xbot_monitoring-14] sending SIGINT to pgid [112]
+[roslaunch][INFO] 2026-05-26 15:14:22,132: [joy-8] killing on exit
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,129: ProcessMonitor exit: killing xbot_positioning-7
+[roslaunch][INFO] 2026-05-26 15:14:22,138: [xbot_positioning-7] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,140: process[xbot_positioning-7]: killing os process with pid[82] pgid[82]
+[roslaunch][INFO] 2026-05-26 15:14:22,133: [monitoring-16] sent SIGINT to pgid [127]
+[roslaunch][INFO] 2026-05-26 15:14:22,134: process[mower_logic-11]: killing os process with pid[103] pgid[103]
+[roslaunch][INFO] 2026-05-26 15:14:22,135: process[map_service-10]: killing os process with pid[97] pgid[97]
+[roslaunch][INFO] 2026-05-26 15:14:22,145: [map_service-10] sending SIGINT to pgid [97]
+[roslaunch][INFO] 2026-05-26 15:14:22,146: [map_service-10] sent SIGINT to pgid [97]
+[roslaunch][INFO] 2026-05-26 15:14:22,138: [xbot_monitoring-14] sent SIGINT to pgid [112]
+[roslaunch][INFO] 2026-05-26 15:14:22,133: process[slic3r_coverage_planner-12]: killing os process with pid[105] pgid[105]
+[roslaunch][INFO] 2026-05-26 15:14:22,133: [twist_mux-13] sent SIGINT to pgid [107]
+[roslaunch][INFO] 2026-05-26 15:14:22,141: [xbot_positioning-7] sending SIGINT to pgid [82]
+[roslaunch][INFO] 2026-05-26 15:14:22,154: [xbot_positioning-7] sent SIGINT to pgid [82]
+[roslaunch][INFO] 2026-05-26 15:14:22,143: process[joy-8]: killing os process with pid[87] pgid[87]
+[roslaunch][INFO] 2026-05-26 15:14:22,137: process[joy_teleop-9]: killing os process with pid[88] pgid[88]
+[roslaunch][INFO] 2026-05-26 15:14:22,137: [xbot_remote-15] sending SIGINT to pgid [121]
+[roslaunch][INFO] 2026-05-26 15:14:22,149: [slic3r_coverage_planner-12] sending SIGINT to pgid [105]
+[roslaunch][INFO] 2026-05-26 15:14:22,144: [mower_logic-11] sending SIGINT to pgid [103]
+[roslaunch][INFO] 2026-05-26 15:14:22,160: [joy_teleop-9] sending SIGINT to pgid [88]
+[roslaunch][INFO] 2026-05-26 15:14:22,164: [joy_teleop-9] sent SIGINT to pgid [88]
+[roslaunch][INFO] 2026-05-26 15:14:22,161: [xbot_remote-15] sent SIGINT to pgid [121]
+[roslaunch][INFO] 2026-05-26 15:14:22,163: [mower_logic-11] sent SIGINT to pgid [103]
+[roslaunch][INFO] 2026-05-26 15:14:22,159: [joy-8] sending SIGINT to pgid [87]
+[roslaunch][INFO] 2026-05-26 15:14:22,161: [slic3r_coverage_planner-12] sent SIGINT to pgid [105]
+[roslaunch][INFO] 2026-05-26 15:14:22,167: [joy-8] sent SIGINT to pgid [87]
+[roslaunch][INFO] 2026-05-26 15:14:22,878: process[joy_teleop-9]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,888: ProcessMonitor exit: killing move_base_legacy_relay-6
+[roslaunch][INFO] 2026-05-26 15:14:22,890: [move_base_legacy_relay-6] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,879: process[slic3r_coverage_planner-12]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,907: ProcessMonitor exit: killing move_base_flex-5
+[roslaunch][INFO] 2026-05-26 15:14:22,907: [move_base_flex-5] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,907: process[move_base_flex-5]: killing os process with pid[79] pgid[79]
+[roslaunch][INFO] 2026-05-26 15:14:22,911: [move_base_flex-5] sending SIGINT to pgid [79]
+[roslaunch][INFO] 2026-05-26 15:14:22,911: [move_base_flex-5] sent SIGINT to pgid [79]
+[roslaunch][INFO] 2026-05-26 15:14:22,912: process[move_base_legacy_relay-6]: killing os process with pid[81] pgid[81]
+[roslaunch][INFO] 2026-05-26 15:14:22,912: [move_base_legacy_relay-6] sending SIGINT to pgid [81]
+[roslaunch][INFO] 2026-05-26 15:14:22,913: [move_base_legacy_relay-6] sent SIGINT to pgid [81]
+[roslaunch][INFO] 2026-05-26 15:14:22,962: process[twist_mux-13]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-05-26 15:14:22,966: ProcessMonitor exit: killing ntrip_client-4
+[roslaunch][INFO] 2026-05-26 15:14:22,966: [ntrip_client-4] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:22,967: process[ntrip_client-4]: killing os process with pid[476] pgid[476]
+[roslaunch][INFO] 2026-05-26 15:14:22,967: [ntrip_client-4] sending SIGINT to pgid [476]
+[roslaunch][INFO] 2026-05-26 15:14:22,967: [ntrip_client-4] sent SIGINT to pgid [476]
+[roslaunch][INFO] 2026-05-26 15:14:23,188: process[joy-8]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-05-26 15:14:23,211: ProcessMonitor exit: killing ll/services/gps-3
+[roslaunch][INFO] 2026-05-26 15:14:23,211: [ll/services/gps-3] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:23,211: process[ll/services/gps-3]: killing os process with pid[68] pgid[68]
+[roslaunch][INFO] 2026-05-26 15:14:23,214: [ll/services/gps-3] sending SIGINT to pgid [68]
+[roslaunch][INFO] 2026-05-26 15:14:23,216: [ll/services/gps-3] sent SIGINT to pgid [68]
+[roslaunch][INFO] 2026-05-26 15:14:23,259: process[xbot_positioning-7]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-05-26 15:14:23,268: ProcessMonitor exit: killing ll-2
+[roslaunch][INFO] 2026-05-26 15:14:23,268: [ll-2] killing on exit
+[roslaunch][INFO] 2026-05-26 15:14:23,269: process[ll-2]: killing os process with pid[67] pgid[67]
+[roslaunch][INFO] 2026-05-26 15:14:23,270: [ll-2] sending SIGINT to pgid [67]
+[roslaunch][INFO] 2026-05-26 15:14:23,271: [ll-2] sent SIGINT to pgid [67]
+[roslaunch][INFO] 2026-05-26 15:14:23,651: process[map_service-10]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:23,820: process[ll/services/gps-3]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:23,855: process[monitoring-16]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:23,977: process[ll-2]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:24,153: process[xbot_monitoring-14]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:24,216: process[move_base_legacy_relay-6]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-05-26 15:14:24,219: process[move_base_flex-5]: SIGINT killed with return value 0

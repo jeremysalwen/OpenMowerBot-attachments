@@ -1,0 +1,718 @@
+2025-05-08T08:38:42.821455695+01:00  * Starting nginx nginx       [80G [74G[ OK ]
+2025-05-08T08:38:42.867510361+01:00  * Starting network daemon: mosquitto       [80G [74G[ OK ]
+2025-05-08T08:38:44.034192348+01:00 ... logging to /root/.ros/log/77fb805a-2bdf-11f0-95c9-d83add3befef/roslaunch-openmower-81.log
+2025-05-08T08:38:44.034751322+01:00 Checking log directory for disk usage. This may take a while.
+2025-05-08T08:38:44.034751322+01:00 Press Ctrl-C to interrupt
+2025-05-08T08:38:44.050110149+01:00 [31mWARNING: disk usage in log directory [/root/.ros/log] is over 1GB.
+2025-05-08T08:38:44.050110149+01:00 It's recommended that you use the 'rosclean' command.[0m
+2025-05-08T08:38:44.051206948+01:00 ]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch
+2025-05-08T08:38:44.889069432+01:00 [1mstarted roslaunch server http://openmower:41663/[0m
+2025-05-08T08:38:44.895279570+01:00 
+2025-05-08T08:38:44.895279570+01:00 SUMMARY
+2025-05-08T08:38:44.895279570+01:00 ========
+2025-05-08T08:38:44.895279570+01:00 
+2025-05-08T08:38:44.895279570+01:00 CLEAR PARAMETERS
+2025-05-08T08:38:44.895279570+01:00  * /xbot_driver_gps/
+2025-05-08T08:38:44.895279570+01:00 
+2025-05-08T08:38:44.895279570+01:00 PARAMETERS
+2025-05-08T08:38:44.895279570+01:00  * /joy/autorepeat_rate: 10.0
+2025-05-08T08:38:44.895279570+01:00  * /joy/coalesce_interval: 0.06
+2025-05-08T08:38:44.895279570+01:00  * /joy_teleop/enable_turbo_button: 4
+2025-05-08T08:38:44.895279570+01:00  * /joy_teleop/scale_angular: 1.5
+2025-05-08T08:38:44.895279570+01:00  * /joy_teleop/scale_angular_turbo: 3.0
+2025-05-08T08:38:44.895279570+01:00  * /joy_teleop/scale_linear: 0.5
+2025-05-08T08:38:44.895279570+01:00  * /joy_teleop/scale_linear_turbo: 1.0
+2025-05-08T08:38:44.895279570+01:00  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+2025-05-08T08:38:44.895279570+01:00  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+2025-05-08T08:38:44.895279570+01:00  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/forward_only: False
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+2025-05-08T08:38:44.895390031+01:00  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/acceleration: 0.1
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/check_obstacles: False
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/debug_pid: True
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/forward_only: True
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+2025-05-08T08:38:44.895485159+01:00  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+2025-05-08T08:38:44.895534159+01:00  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/restore_defaults: False
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+2025-05-08T08:38:44.895580103+01:00  * /move_base_flex/controller_frequency: 1.0
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/controller_patience: 30.0
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/controllers: [{'name': 'FTCPla...
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/global_frame: map
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/inflation_radius: 1.0
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/map_topic: mower_map_service...
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/obstacle_range: 3.0
+2025-05-08T08:38:44.895625454+01:00  * /move_base_flex/global_costmap/publish_frequency: 1.0
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/raytrace_range: 4.0
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/resolution: 0.1
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/robot_base_frame: base_link
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/robot_radius: 0.0
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/rolling_window: False
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/static_map: True
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/global_costmap/update_frequency: 1.0
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/local_costmap/global_frame: map
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/local_costmap/height: 1.5
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/local_costmap/inflation_radius: 0.0
+2025-05-08T08:38:44.895686971+01:00  * /move_base_flex/local_costmap/map_topic: mower_map_service...
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/obstacle_range: 3.0
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/publish_frequency: 2.0
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/raytrace_range: 4.0
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/resolution: 0.15
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/robot_base_frame: base_link
+2025-05-08T08:38:44.895732656+01:00  * /move_base_flex/local_costmap/robot_radius: 0.0
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/local_costmap/rolling_window: True
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/local_costmap/static_map: True
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/local_costmap/update_frequency: 5.0
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/local_costmap/width: 1.5
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/oscillation_distance: 0.2
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/oscillation_timeout: 10.0
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/planner_frequency: 1.0
+2025-05-08T08:38:44.895776322+01:00  * /move_base_flex/planner_patience: 5.0
+2025-05-08T08:38:44.895820229+01:00  * /move_base_flex/planners: [{'name': 'Global...
+2025-05-08T08:38:44.895820229+01:00  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+2025-05-08T08:38:44.895820229+01:00  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/dfp_is_5v: False
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/language: en
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/left_xesc/has_motor_temp: False
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/left_xesc/motor_pole_pairs: 4
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+2025-05-08T08:38:44.895820229+01:00  * /mower_comms/left_xesc/xesc_type: xesc_mini
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/ll_serial_port: /dev/ttyAMA0
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/has_motor_temp: True
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/max_motor_rpm: 3800
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/min_motor_rpm: 2800
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/motor_pole_pairs: 4
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/mower_xesc/xesc_type: xesc_mini
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/right_xesc/has_motor_temp: False
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/right_xesc/motor_pole_pairs: 4
+2025-05-08T08:38:44.895883561+01:00  * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+2025-05-08T08:38:44.895929079+01:00  * /mower_comms/right_xesc/xesc_type: xesc_mini
+2025-05-08T08:38:44.895929079+01:00  * /mower_comms/volume: -1
+2025-05-08T08:38:44.895929079+01:00  * /mower_comms/wheel_distance_m: 0.325
+2025-05-08T08:38:44.895929079+01:00  * /mower_comms/wheel_ticks_per_m: 1600.0
+2025-05-08T08:38:44.895929079+01:00  * /mower_logic/automatic_mode: 0
+2025-05-08T08:38:44.895929079+01:00  * /mower_logic/battery_critical_voltage: 23.0
+2025-05-08T08:38:44.895929079+01:00  * /mower_logic/battery_empty_voltage: 24.0
+2025-05-08T08:38:44.895929079+01:00  * /mower_logic/battery_full_voltage: 28.5
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/docking_approach_distance: 1.5
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/docking_distance: 2.5
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/docking_extra_time: 0.05
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/docking_redock: False
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/docking_retry_count: 4
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/enable_mower: True
+2025-05-08T08:38:44.895973171+01:00  * /mower_logic/gps_timeout: 5
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/gps_wait_time: 10
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/motor_cold_temperature: 40.0
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/motor_hot_temperature: 80.0
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/mow_angle_increment: 90
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/mow_angle_offset: -18
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/mow_angle_offset_is_absolute: True
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/outline_count: 4
+2025-05-08T08:38:44.896016782+01:00  * /mower_logic/outline_offset: 0.05
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/outline_overlap_count: 1
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/perimeter_signal: 
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/rain_check_seconds: 20
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/rain_delay_minutes: 180
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/rain_mode: 2
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/tool_width: 0.12
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/undock_angle: 0.0
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/undock_angled_distance: 0.0
+2025-05-08T08:38:44.896060337+01:00  * /mower_logic/undock_distance: 2.5
+2025-05-08T08:38:44.896104725+01:00  * /mower_logic/undock_fixed_angle: True
+2025-05-08T08:38:44.896104725+01:00  * /mower_logic/undock_use_curve: True
+2025-05-08T08:38:44.896104725+01:00  * /ntrip_client/ntrip_client_node/authenticate: True
+2025-05-08T08:38:44.896104725+01:00  * /ntrip_client/ntrip_client_node/ca_cert: 
+2025-05-08T08:38:44.896104725+01:00  * /ntrip_client/ntrip_client_node/cert: 
+2025-05-08T08:38:44.896104725+01:00  * /ntrip_client/ntrip_client_node/host: euref-ip.be
+2025-05-08T08:38:44.896104725+01:00  * /ntrip_client/ntrip_client_node/key: 
+
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/ntrip_version: 
+
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/port: 2101
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+2025-05-08T08:38:44.896167372+01:00  * /ntrip_client/ntrip_client_node/ssl: False
+
+2025-05-08T08:38:44.896212483+01:00  * /rosdistro: noetic
+2025-05-08T08:38:44.896212483+01:00  * /rosversion: 1.17.0
+2025-05-08T08:38:44.896212483+01:00  * /twist_mux/topics: [{'name': 'naviga...
+2025-05-08T08:38:44.896212483+01:00  * /xbot_driver_gps/baudrate: 921600
+2025-05-08T08:38:44.896212483+01:00  * /xbot_driver_gps/datum_height: 0
+2025-05-08T08:38:44.896212483+01:00  * /xbot_driver_gps/datum_lat: 52.08732
+2025-05-08T08:38:44.896256001+01:00  * /xbot_driver_gps/datum_long: 21.0564
+2025-05-08T08:38:44.896256001+01:00  * /xbot_driver_gps/device_type: serial
+2025-05-08T08:38:44.896256001+01:00  * /xbot_driver_gps/mode: absolute
+2025-05-08T08:38:44.896256001+01:00  * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+2025-05-08T08:38:44.896256001+01:00  * /xbot_driver_gps/ubx_mode: True
+2025-05-08T08:38:44.896256001+01:00  * /xbot_monitoring/external_mqtt_enable: False
+2025-05-08T08:38:44.896256001+01:00  * /xbot_monitoring/external_mqtt_hostname: 
+2025-05-08T08:38:44.896256001+01:00  * /xbot_monitoring/external_mqtt_password: 
+2025-05-08T08:38:44.896256001+01:00  * /xbot_monitoring/external_mqtt_port: 
+2025-05-08T08:38:44.896299741+01:00  * /xbot_monitoring/external_mqtt_topic_prefix: 
+2025-05-08T08:38:44.896299741+01:00  * /xbot_monitoring/external_mqtt_username: 
+2025-05-08T08:38:44.896299741+01:00  * /xbot_monitoring/software_version: ac81497
+2025-05-08T08:38:44.896299741+01:00  * /xbot_positioning/antenna_offset_x: 0.3
+2025-05-08T08:38:44.896299741+01:00  * /xbot_positioning/antenna_offset_y: 0.0
+2025-05-08T08:38:44.896299741+01:00  * /xbot_positioning/max_gps_accuracy: 0.2
+2025-05-08T08:38:44.896299741+01:00 
+2025-05-08T08:38:44.896299741+01:00 NODES
+2025-05-08T08:38:44.896343833+01:00   /
+2025-05-08T08:38:44.896343833+01:00     joy (joy/joy_node)
+2025-05-08T08:38:44.896343833+01:00     joy_teleop (teleop_twist_joy/teleop_node)
+2025-05-08T08:38:44.896343833+01:00     map_service (mower_map/mower_map_service)
+2025-05-08T08:38:44.896343833+01:00     monitoring (mower_logic/monitoring)
+2025-05-08T08:38:44.896343833+01:00     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+2025-05-08T08:38:44.896343833+01:00     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+2025-05-08T08:38:44.896343833+01:00     mower_comms (mower_comms/mower_comms)
+2025-05-08T08:38:44.896403258+01:00     mower_logic (mower_logic/mower_logic)
+2025-05-08T08:38:44.896403258+01:00     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+2025-05-08T08:38:44.896403258+01:00     twist_mux (twist_mux/twist_mux)
+2025-05-08T08:38:44.896403258+01:00     xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+2025-05-08T08:38:44.896403258+01:00     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+2025-05-08T08:38:44.896403258+01:00     xbot_positioning (xbot_positioning/xbot_positioning)
+2025-05-08T08:38:44.896403258+01:00     xbot_remote (xbot_remote/xbot_remote)
+2025-05-08T08:38:44.896403258+01:00   /ntrip_client/
+2025-05-08T08:38:44.896403258+01:00     ntrip_client_node (ntrip_client/ntrip_ros.py)
+2025-05-08T08:38:44.896447220+01:00 
+2025-05-08T08:38:44.899127147+01:00 auto-starting new master
+2025-05-08T08:38:44.913042049+01:00 [1mprocess[master]: started with pid [89][0m
+2025-05-08T08:38:45.944785492+01:00 [1mROS_MASTER_URI=http://localhost:11311[0m
+2025-05-08T08:38:45.944872843+01:00 ]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://localhost:11311
+2025-05-08T08:38:45.949053767+01:00 [1msetting /run_id to 77fb805a-2bdf-11f0-95c9-d83add3befef[0m
+2025-05-08T08:38:46.106349079+01:00 [1mprocess[rosout-1]: started with pid [101][0m
+2025-05-08T08:38:46.107043495+01:00 started core service [/rosout]
+2025-05-08T08:38:46.358863180+01:00 [1mprocess[mower_comms-2]: started with pid [109][0m
+2025-05-08T08:38:46.379800172+01:00 [1mprocess[ntrip_client/ntrip_client_node-3]: started with pid [110][0m
+2025-05-08T08:38:46.413610246+01:00 [1mprocess[xbot_driver_gps-4]: started with pid [111][0m
+2025-05-08T08:38:46.435936089+01:00 [0m[ INFO] [1746689926.435668556]: Wheel ticks [1/m]: 1600[0m
+2025-05-08T08:38:46.441255146+01:00 [0m[ INFO] [1746689926.441081352]: Wheel distance [m]: 0.325[0m
+2025-05-08T08:38:46.442184411+01:00 [1mprocess[move_base_flex-5]: started with pid [117][0m
+2025-05-08T08:38:46.447052659+01:00 [0m[ INFO] [1746689926.446822829]: DFP is set to 5V [boolean]: 0, language: 'en', volume: -1[0m
+2025-05-08T08:38:46.449297962+01:00 [0m[ INFO] [1746689926.449114020]: Starting xesc driver[0m
+2025-05-08T08:38:46.472929676+01:00 [0m[ INFO] [1746689926.472725993]: Starting xesc driver[0m
+2025-05-08T08:38:46.503195447+01:00 [0m[ INFO] [1746689926.502995339]: Starting xesc driver[0m
+2025-05-08T08:38:46.533726937+01:00 [1mprocess[move_base_legacy_relay-6]: started with pid [121][0m
+2025-05-08T08:38:46.535143214+01:00 [0m[ INFO] [1746689926.534889625]: Using UBX mode for GPS[0m
+2025-05-08T08:38:46.595859568+01:00 [1mprocess[xbot_positioning-7]: started with pid [130][0m
+2025-05-08T08:38:46.627569320+01:00 [0m[ INFO] [1746689926.627381026]: Using absolute mode for GPS[0m
+2025-05-08T08:38:46.656104856+01:00 [1mprocess[joy-8]: started with pid [131][0m
+2025-05-08T08:38:46.679975529+01:00 [0m[ INFO] [1746689926.679786346]: connecting serial interface: /dev/ttyAMA0[0m
+2025-05-08T08:38:46.759016837+01:00 [1mprocess[joy_teleop-9]: started with pid [136][0m
+2025-05-08T08:38:46.804952190+01:00 [0m[ INFO] [1746689926.804735952]: [driver_gps] opening serial port: /dev/ttyAMA1 with baudrate: 921600[0m
+2025-05-08T08:38:46.837701835+01:00 [1mprocess[map_service-10]: started with pid [143][0m
+2025-05-08T08:38:46.926387825+01:00 [1mprocess[mower_logic-11]: started with pid [154][0m
+2025-05-08T08:38:47.005551650+01:00 [31m[ERROR] [1746689927.005299172]: Couldn't open joystick /dev/input/js0. Will retry every second.[0m
+2025-05-08T08:38:47.006585506+01:00 [1mprocess[slic3r_coverage_planner-12]: started with pid [160][0m
+2025-05-08T08:38:47.034027964+01:00 [0m[ INFO] [1746689927.033786764]: Antenna offset: 0.3, 0[0m
+2025-05-08T08:38:47.116509892+01:00 [1mprocess[twist_mux-13]: started with pid [162][0m
+2025-05-08T08:38:47.225589714+01:00 [1mprocess[xbot_monitoring-14]: started with pid [164][0m
+2025-05-08T08:38:47.243154845+01:00 [0m[ INFO] [1746689927.242905496]: Teleop enable button 0.[0m
+2025-05-08T08:38:47.263829358+01:00 [0m[ INFO] [1746689927.263624490]: Turbo on button 4.[0m
+2025-05-08T08:38:47.263984189+01:00 [0m[ INFO] [1746689927.263842599]: Linear axis x on 1 at scale 0.500000.[0m
+2025-05-08T08:38:47.263984189+01:00 [0m[ INFO] [1746689927.263946468]: Turbo for linear axis x is scale 1.000000.[0m
+2025-05-08T08:38:47.264120113+01:00 [0m[ INFO] [1746689927.264048633]: Angular axis yaw on 0 at scale 1.500000.[0m
+2025-05-08T08:38:47.264203538+01:00 [0m[ INFO] [1746689927.264137891]: Turbo for angular axis yaw is scale 3.000000.[0m
+2025-05-08T08:38:47.274924336+01:00 [0m[ INFO] [1746689927.274662247]: Restoring checkpoint for plan (151B1ED8AE1C175867BBCFD7DFE6BF0FD01F8956C7DAB344C36F7FF1E77E77A9) area: 0 path: 0 index: 0 angle increment sum: 180[0m
+2025-05-08T08:38:47.367662864+01:00 [1mprocess[xbot_remote-15]: started with pid [167][0m
+2025-05-08T08:38:47.508586696+01:00 [1mprocess[monitoring-16]: started with pid [175][0m
+2025-05-08T08:38:47.683720689+01:00 [0m[ INFO] [1746689927.683501396]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10[0m
+2025-05-08T08:38:47.850786737+01:00 [0m[ INFO] [1746689927.850147764]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 100[0m
+2025-05-08T08:38:47.924634616+01:00 [31m[FATAL] [1746689927.924478340]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)[0m
+2025-05-08T08:38:48.081963890+01:00 [0m[ INFO] [1746689928.081788596]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:48.127657006+01:00 [0m[ INFO] [1746689928.127444157]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-08T08:38:48.189472383+01:00 [0m[ INFO] [1746689928.189254663]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-08T08:38:48.222349100+01:00 [0m[ INFO] [1746689928.222158602]: MQTT Connected[0m
+2025-05-08T08:38:48.240361094+01:00 [0m[ INFO] [1746689928.240205059]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-08T08:38:48.292005073+01:00 [0m[ INFO] [1746689928.291795353]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+2025-05-08T08:38:48.316732012+01:00 [0m[ INFO] [1746689928.316546811]: om_mower_logic: Setting mower_logic config[0m
+2025-05-08T08:38:48.323333052+01:00 [0m[ INFO] [1746689928.323136203]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-08T08:38:48.396094279+01:00 [0m[ INFO] [1746689928.395599211]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+2025-05-08T08:38:48.461862046+01:00 [0m[ INFO] [1746689928.461681919]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+2025-05-08T08:38:48.512135580+01:00 [0m[ INFO] [1746689928.511741530]: Monitoring received new mower_logic config[0m
+2025-05-08T08:38:48.560905784+01:00 [0m[ INFO] [1746689928.560684342]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+2025-05-08T08:38:48.602405883+01:00 [0m[ INFO] [1746689928.602269144]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info[0m
+2025-05-08T08:38:48.651591358+01:00 [0m[ INFO] [1746689928.651197623]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info[0m
+2025-05-08T08:38:48.713639732+01:00 [0m[ INFO] [1746689928.713370217]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-08T08:38:48.714612570+01:00 [0m[ INFO] [1746689928.714409555]: Subscribing to sensor data for sensor with name: Charge Current[0m
+2025-05-08T08:38:48.797249218+01:00 [0m[ INFO] [1746689928.796228602]: Monitoring received new mower_logic config[0m
+2025-05-08T08:38:48.800619450+01:00 [0m[ INFO] [1746689928.800382638]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info[0m
+2025-05-08T08:38:48.811897277+01:00 [0m[ INFO] [1746689928.811676169]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info[0m
+2025-05-08T08:38:48.813227351+01:00 [0m[ INFO] [1746689928.813066798]: Subscribing to sensor data for sensor with name: GPS Accuracy[0m
+2025-05-08T08:38:48.866013407+01:00 [0m[ INFO] [1746689928.865814354]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info[0m
+2025-05-08T08:38:48.866542863+01:00 [0m[ INFO] [1746689928.866433642]: Subscribing to sensor data for sensor with name: Left ESC Temp[0m
+2025-05-08T08:38:48.967808459+01:00 [0m[ INFO] [1746689928.967537037]: Loaded 2 mowing areas and 1 navigation areas from file.[0m
+2025-05-08T08:38:48.974797715+01:00 [0m[ INFO] [1746689928.974616847]: Map Position: x=-0.789403, y=-0.580168[0m
+2025-05-08T08:38:48.975117192+01:00 [0m[ INFO] [1746689928.975002416]: Map Size: x=11.6149, y=18.5685[0m
+2025-05-08T08:38:49.090683667+01:00 [0m[ INFO] [1746689929.090458652]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:49.187398882+01:00 [0m[ INFO] [1746689929.187245384]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info[0m
+2025-05-08T08:38:49.187784043+01:00 [0m[ INFO] [1746689929.187683322]: Subscribing to sensor data for sensor with name: Mow ESC Temp[0m
+2025-05-08T08:38:49.310571438+01:00 [0m[ INFO] [1746689929.310110833]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info[0m
+2025-05-08T08:38:49.311341853+01:00 [0m[ INFO] [1746689929.311077949]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions[0m
+2025-05-08T08:38:49.378009182+01:00 [0m[ INFO] [1746689929.377839388]: docking pose: position: 
+2025-05-08T08:38:49.378009182+01:00   x: -4.23224
+2025-05-08T08:38:49.378009182+01:00   y: -1.51019
+2025-05-08T08:38:49.378009182+01:00   z: 0
+2025-05-08T08:38:49.378009182+01:00 orientation: 
+2025-05-08T08:38:49.378009182+01:00   x: 0
+2025-05-08T08:38:49.378009182+01:00   y: 0
+2025-05-08T08:38:49.378009182+01:00   z: -0.752151
+2025-05-08T08:38:49.378009182+01:00   w: 0.658991
+2025-05-08T08:38:49.378009182+01:00 [0m
+2025-05-08T08:38:49.380860884+01:00 [0m[ INFO] [1746689929.380623072]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info[0m
+2025-05-08T08:38:49.391787882+01:00 [0m[ INFO] [1746689929.391586792]: Waiting for a status message[0m
+2025-05-08T08:38:49.392605279+01:00 [0m[ INFO] [1746689929.392243043]: Subscribing to sensor data for sensor with name: Mow Motor Current[0m
+2025-05-08T08:38:49.685044464+01:00 [0m[ INFO] [1746689929.684628284]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info[0m
+2025-05-08T08:38:49.686127190+01:00 [0m[ INFO] [1746689929.685831749]: Subscribing to sensor data for sensor with name: V Battery[0m
+2025-05-08T08:38:49.703532452+01:00 [0m[ INFO] [1746689929.703373732]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info[0m
+2025-05-08T08:38:49.704292275+01:00 [0m[ INFO] [1746689929.704104796]: Subscribing to sensor data for sensor with name: Mow Motor Temp[0m
+2025-05-08T08:38:49.734513232+01:00 [0m[ INFO] [1746689929.734261457]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info[0m
+2025-05-08T08:38:49.735807307+01:00 [0m[ INFO] [1746689929.735505829]: Subscribing to sensor data for sensor with name: Right ESC Temp[0m
+2025-05-08T08:38:49.823823825+01:00 [0m[ INFO] [1746689929.823496830]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info[0m
+2025-05-08T08:38:49.823989341+01:00 [0m[ INFO] [1746689929.823888843]: Subscribing to sensor data for sensor with name: V Charge[0m
+2025-05-08T08:38:50.392332049+01:00 [0m[ INFO] [1746689930.391958740]: Waiting for a pose message[0m
+2025-05-08T08:38:51.085690825+01:00 [0m[ INFO] [1746689931.085562086]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:51.115974133+01:00 the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+2025-05-08T08:38:51.709625570+01:00 [0m[ INFO] [1746689931.709499682]: Started gyro calibration[0m
+2025-05-08T08:38:51.779680389+01:00 [31m[ERROR] [1746689931.779529076]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:52.799620476+01:00 [31m[ERROR] [1746689932.799506034]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:53.082811344+01:00 [0m[ INFO] [1746689933.082668346]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:53.320544518+01:00 [33m[ WARN] [1746689933.320379910]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100485 timeout was 0.1.[0m
+2025-05-08T08:38:53.799644170+01:00 [31m[ERROR] [1746689933.799525708]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:54.090136623+01:00 [0m[ INFO] [1746689934.089904089]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:54.819632997+01:00 [31m[ERROR] [1746689934.819510295]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:55.839643658+01:00 [31m[ERROR] [1746689935.839527937]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:56.086941406+01:00 [0m[ INFO] [1746689936.086807278]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:56.729820817+01:00 [0m[ INFO] [1746689936.729706763]: Calibrated gyro offset: -0.0027998[0m
+2025-05-08T08:38:56.839813646+01:00 [31m[ERROR] [1746689936.839672666]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:57.030492723+01:00 [33m[ WARN] [1746689937.030322670]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+2025-05-08T08:38:57.080483577+01:00 [0m[ INFO] [1746689937.080334708]: local_costmap: Using plugin "static_layer"[0m
+2025-05-08T08:38:57.097690249+01:00 [0m[ INFO] [1746689937.097527751]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:57.109337886+01:00 [0m[ INFO] [1746689937.109210073]: Requesting the map...[0m
+2025-05-08T08:38:57.391769412+01:00 [0m[ INFO] [1746689937.391638247]: Waiting for emergency service[0m
+2025-05-08T08:38:57.394623669+01:00 [0m[ INFO] [1746689937.394486838]: Waiting for path server[0m
+2025-05-08T08:38:57.397335558+01:00 [0m[ INFO] [1746689937.397209467]: Waiting for mower service[0m
+2025-05-08T08:38:57.400296518+01:00 [0m[ INFO] [1746689937.400151057]: Waiting for gps service[0m
+2025-05-08T08:38:57.408182928+01:00 [0m[ INFO] [1746689937.408036486]: Waiting for positioning service[0m
+2025-05-08T08:38:57.413375617+01:00 [0m[ INFO] [1746689937.413250452]: Waiting for map server[0m
+2025-05-08T08:38:57.418342493+01:00 [0m[ INFO] [1746689937.418198958]: Waiting for docking point server[0m
+2025-05-08T08:38:57.422225477+01:00 [0m[ INFO] [1746689937.422073090]: Waiting for nav point server[0m
+2025-05-08T08:38:57.424241264+01:00 [0m[ INFO] [1746689937.424079711]: Resizing static layer to 232 X 371 at 0.050000 m/pix[0m
+2025-05-08T08:38:57.427612181+01:00 [0m[ INFO] [1746689937.427448276]: Waiting for clear nav point server[0m
+2025-05-08T08:38:57.431228984+01:00 [0m[ INFO] [1746689937.431073430]: Waiting for move base flex[0m
+2025-05-08T08:38:57.523412408+01:00 [0m[ INFO] [1746689937.523275484]: Received a 232 X 371 map at 0.050000 m/pix[0m
+2025-05-08T08:38:57.534944102+01:00 [0m[ INFO] [1746689937.534810493]: local_costmap: Using plugin "obstacle_layer"[0m
+2025-05-08T08:38:57.544592192+01:00 [0m[ INFO] [1746689937.544473250]:     Subscribed to Topics: [0m
+2025-05-08T08:38:57.571502954+01:00 [0m[ INFO] [1746689937.571370345]: local_costmap: Using plugin "inflation_layer"[0m
+2025-05-08T08:38:57.703111080+01:00 [33m[ WARN] [1746689937.702963656]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+2025-05-08T08:38:57.749144395+01:00 [0m[ INFO] [1746689937.748975249]: global_costmap: Using plugin "static_layer"[0m
+2025-05-08T08:38:57.764742700+01:00 [0m[ INFO] [1746689937.764591406]: Requesting the map...[0m
+2025-05-08T08:38:57.770511251+01:00 [0m[ INFO] [1746689937.770365216]: Resizing costmap to 232 X 371 at 0.050000 m/pix[0m
+2025-05-08T08:38:57.859670994+01:00 [31m[ERROR] [1746689937.859555681]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:57.870398125+01:00 [0m[ INFO] [1746689937.870263016]: Received a 232 X 371 map at 0.050000 m/pix[0m
+2025-05-08T08:38:57.882123039+01:00 [0m[ INFO] [1746689937.882005856]: global_costmap: Using plugin "obstacle_layer"[0m
+2025-05-08T08:38:57.891161082+01:00 [0m[ INFO] [1746689937.891027010]:     Subscribed to Topics: [0m
+2025-05-08T08:38:57.924123539+01:00 [0m[ INFO] [1746689937.923991022]: global_costmap: Using plugin "inflation_layer"[0m
+2025-05-08T08:38:58.197211971+01:00 [0m[ INFO] [1746689938.197094380]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".[0m
+2025-05-08T08:38:58.389906206+01:00 [0m[ INFO] [1746689938.389758060]: FTCLocalPlannerROS: Version 2 Init.[0m
+2025-05-08T08:38:58.390224590+01:00 [0m[ INFO] [1746689938.390145240]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".[0m
+2025-05-08T08:38:58.594882088+01:00 [0m[ INFO] [1746689938.594738497]: FTCLocalPlannerROS: Version 2 Init.[0m
+2025-05-08T08:38:58.595267027+01:00 [0m[ INFO] [1746689938.595181621]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".[0m
+2025-05-08T08:38:58.598649314+01:00 [33m[ WARN] [1746689938.598509001]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.[0m
+2025-05-08T08:38:58.860024239+01:00 [31m[ERROR] [1746689938.859868575]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:38:59.087847883+01:00 [0m[ INFO] [1746689939.087384648]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:38:59.879691183+01:00 [31m[ERROR] [1746689939.879562518]: Low Level Emergency. Bitmask was: 1[0m
+2025-05-08T08:39:00.188577422+01:00 [0m[ INFO] [1746689940.188447979]: Waiting for mowing path progress server[0m
+2025-05-08T08:39:00.191368569+01:00 [0m[ INFO] [1746689940.191252348]: Waiting for an emergency status message[0m
+2025-05-08T08:39:00.191482327+01:00 [0m[ INFO] [1746689940.191405235]: Got emergency, resetting it[0m
+2025-05-08T08:39:00.195617659+01:00 [0m[ INFO] [1746689940.195486401]: successfully set emergency enabled to 0[0m
+2025-05-08T08:39:00.195729639+01:00 [0m[ INFO] [1746689940.195637029]: registering actions[0m
+2025-05-08T08:39:00.199314016+01:00 [0m[ INFO] [1746689940.199193536]: new actions registered: mower_logic registered 1 actions.[0m
+2025-05-08T08:39:00.200555351+01:00 [0m[ INFO] [1746689940.200428019]: successfully registered actions for mower_logic[0m
+2025-05-08T08:39:00.200657683+01:00 [0m[ INFO] [1746689940.200582832]: om_mower_logic: Got all servers, we can mow[0m
+2025-05-08T08:39:00.205780390+01:00 [0m[ INFO] [1746689940.205623115]: successfully set emergency enabled to 0[0m
+2025-05-08T08:39:00.205891611+01:00 [0m[ INFO] [1746689940.205766113]: [0m
+2025-05-08T08:39:00.205891611+01:00 [0m[ INFO] [1746689940.205828353]: [0m
+2025-05-08T08:39:00.205935870+01:00 [0m[ INFO] [1746689940.205882407]: --------------------------------------[0m
+2025-05-08T08:39:00.205976888+01:00 [0m[ INFO] [1746689940.205937907]: - Entered state: IDLE[0m
+2025-05-08T08:39:00.206029535+01:00 [0m[ INFO] [1746689940.205990258]: --------------------------------------[0m
+2025-05-08T08:39:00.209712522+01:00 [0m[ INFO] [1746689940.209585986]: new actions registered: mower_logic:idle registered 2 actions.[0m
+2025-05-08T08:39:00.211174724+01:00 [0m[ INFO] [1746689940.210999300]: successfully registered actions for mower_logic:idle[0m
+2025-05-08T08:39:00.216453041+01:00 [0m[ INFO] [1746689940.216316728]: Got getMowingArea call with index: 0[0m
+2025-05-08T08:39:00.220881517+01:00 [0m[ INFO] [1746689940.220761167]: Getting Docking Point[0m
+2025-05-08T08:39:00.224703817+01:00 [0m[ INFO] [1746689940.224574189]: successfully set GPS to 0[0m
+2025-05-08T08:39:00.701237948+01:00 [33m[ WARN] [1746689940.701113042]: Low quality GPS[0m
+2025-05-08T08:39:00.701497629+01:00 [33m[ WARN] [1746689940.701427908]: GPS timeout[0m
+2025-05-08T08:39:01.093641174+01:00 [0m[ INFO] [1746689941.093526101]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:02.201054789+01:00 [33m[ WARN] [1746689942.200888865]: Low quality GPS[0m
+2025-05-08T08:39:02.201222712+01:00 [33m[ WARN] [1746689942.201039715]: GPS timeout[0m
+2025-05-08T08:39:03.083459795+01:00 [0m[ INFO] [1746689943.083321334]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:03.201035724+01:00 [33m[ WARN] [1746689943.200886467]: Low quality GPS[0m
+2025-05-08T08:39:03.701057146+01:00 [33m[ WARN] [1746689943.700891703]: GPS timeout[0m
+2025-05-08T08:39:04.701048896+01:00 [33m[ WARN] [1746689944.700884917]: Low quality GPS[0m
+2025-05-08T08:39:04.701293282+01:00 [33m[ WARN] [1746689944.701225598]: GPS timeout[0m
+2025-05-08T08:39:05.078872915+01:00 [0m[ INFO] [1746689945.078749435]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:05.701043462+01:00 [33m[ WARN] [1746689945.700888964]: Low quality GPS[0m
+2025-05-08T08:39:06.091612176+01:00 [0m[ INFO] [1746689946.091493252]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:06.201063587+01:00 [33m[ WARN] [1746689946.200912015]: GPS timeout[0m
+2025-05-08T08:39:07.201057782+01:00 [33m[ WARN] [1746689947.200883822]: Low quality GPS[0m
+2025-05-08T08:39:07.201251483+01:00 [33m[ WARN] [1746689947.201018709]: GPS timeout[0m
+2025-05-08T08:39:08.088959566+01:00 [0m[ INFO] [1746689948.088815605]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:08.201047997+01:00 [33m[ WARN] [1746689948.200887128]: Low quality GPS[0m
+2025-05-08T08:39:08.201298734+01:00 [33m[ WARN] [1746689948.201225790]: GPS timeout[0m
+2025-05-08T08:39:09.201075821+01:00 [33m[ WARN] [1746689949.200920768]: Low quality GPS[0m
+2025-05-08T08:39:09.201371984+01:00 [33m[ WARN] [1746689949.201297170]: GPS timeout[0m
+2025-05-08T08:39:10.081772223+01:00 [0m[ INFO] [1746689950.081648872]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:10.701079198+01:00 [33m[ WARN] [1746689950.700921145]: Low quality GPS[0m
+2025-05-08T08:39:10.701221937+01:00 [33m[ WARN] [1746689950.701098328]: GPS timeout[0m
+2025-05-08T08:39:11.085594829+01:00 [0m[ INFO] [1746689951.085476164]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:12.086638326+01:00 [0m[ INFO] [1746689952.086511013]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:12.201110612+01:00 [33m[ WARN] [1746689952.200930652]: Low quality GPS[0m
+2025-05-08T08:39:12.201508662+01:00 [33m[ WARN] [1746689952.201395016]: GPS timeout[0m
+2025-05-08T08:39:13.701049102+01:00 [33m[ WARN] [1746689953.700883178]: Low quality GPS[0m
+2025-05-08T08:39:13.701177100+01:00 [33m[ WARN] [1746689953.701053972]: GPS timeout[0m
+2025-05-08T08:39:14.076442728+01:00 [0m[ INFO] [1746689954.076312100]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:14.701068076+01:00 [33m[ WARN] [1746689954.700889671]: Low quality GPS[0m
+2025-05-08T08:39:15.091725734+01:00 [0m[ INFO] [1746689955.091603754]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:15.201055683+01:00 [33m[ WARN] [1746689955.200885260]: GPS timeout[0m
+2025-05-08T08:39:16.201047547+01:00 [33m[ WARN] [1746689956.200884345]: Low quality GPS[0m
+2025-05-08T08:39:16.201194545+01:00 [33m[ WARN] [1746689956.201023232]: GPS timeout[0m
+2025-05-08T08:39:17.076677388+01:00 [0m[ INFO] [1746689957.076555149]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:17.701054721+01:00 [33m[ WARN] [1746689957.700888168]: Low quality GPS[0m
+2025-05-08T08:39:17.701416198+01:00 [33m[ WARN] [1746689957.701336106]: GPS timeout[0m
+2025-05-08T08:39:18.089326042+01:00 [0m[ INFO] [1746689958.089197081]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:18.701044604+01:00 [33m[ WARN] [1746689958.700886661]: Low quality GPS[0m
+2025-05-08T08:39:19.201036471+01:00 [33m[ WARN] [1746689959.200879380]: GPS timeout[0m
+2025-05-08T08:39:19.701042227+01:00 [33m[ WARN] [1746689959.700888062]: Low quality GPS[0m
+2025-05-08T08:39:20.085532284+01:00 [0m[ INFO] [1746689960.085408341]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:20.201039131+01:00 [33m[ WARN] [1746689960.200881040]: GPS timeout[0m
+2025-05-08T08:39:21.085654776+01:00 [0m[ INFO] [1746689961.085528444]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:21.201040513+01:00 [33m[ WARN] [1746689961.200882478]: Low quality GPS[0m
+2025-05-08T08:39:21.201155512+01:00 [33m[ WARN] [1746689961.201013773]: GPS timeout[0m
+2025-05-08T08:39:22.201048822+01:00 [33m[ WARN] [1746689962.200894805]: Low quality GPS[0m
+2025-05-08T08:39:22.201376428+01:00 [33m[ WARN] [1746689962.201286503]: GPS timeout[0m
+2025-05-08T08:39:23.074664654+01:00 [0m[ INFO] [1746689963.074541656]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:23.201054463+01:00 [33m[ WARN] [1746689963.200886373]: Low quality GPS[0m
+2025-05-08T08:39:23.701053683+01:00 [33m[ WARN] [1746689963.700894426]: GPS timeout[0m
+2025-05-08T08:39:24.087739840+01:00 [0m[ INFO] [1746689964.087615749]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:24.701062010+01:00 [33m[ WARN] [1746689964.700911197]: Low quality GPS[0m
+2025-05-08T08:39:24.701371654+01:00 [33m[ WARN] [1746689964.701277044]: GPS timeout[0m
+2025-05-08T08:39:26.082588325+01:00 [0m[ INFO] [1746689966.082455864]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:26.201076020+01:00 [33m[ WARN] [1746689966.200926392]: Low quality GPS[0m
+2025-05-08T08:39:26.201348553+01:00 [33m[ WARN] [1746689966.201280906]: GPS timeout[0m
+2025-05-08T08:39:27.082742298+01:00 [0m[ INFO] [1746689967.082611374]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:27.701037678+01:00 [33m[ WARN] [1746689967.700883958]: Low quality GPS[0m
+2025-05-08T08:39:27.701162566+01:00 [33m[ WARN] [1746689967.701021771]: GPS timeout[0m
+2025-05-08T08:39:28.090735684+01:00 [0m[ INFO] [1746689968.090595093]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:29.201040281+01:00 [33m[ WARN] [1746689969.200880580]: Low quality GPS[0m
+2025-05-08T08:39:29.201156835+01:00 [33m[ WARN] [1746689969.201014300]: GPS timeout[0m
+2025-05-08T08:39:30.088509296+01:00 [0m[ INFO] [1746689970.088314095]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:30.201216588+01:00 [33m[ WARN] [1746689970.201029332]: Low quality GPS[0m
+2025-05-08T08:39:30.201393123+01:00 [33m[ WARN] [1746689970.201211422]: GPS timeout[0m
+2025-05-08T08:39:31.701310487+01:00 [33m[ WARN] [1746689971.701172156]: Low quality GPS[0m
+2025-05-08T08:39:31.701490188+01:00 [33m[ WARN] [1746689971.701348912]: GPS timeout[0m
+2025-05-08T08:39:32.079562279+01:00 [0m[ INFO] [1746689972.079437577]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:33.083229335+01:00 [0m[ INFO] [1746689973.083109966]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:33.201046724+01:00 [33m[ WARN] [1746689973.200886430]: Low quality GPS[0m
+2025-05-08T08:39:33.201177444+01:00 [33m[ WARN] [1746689973.201060353]: GPS timeout[0m
+2025-05-08T08:39:34.087997154+01:00 [0m[ INFO] [1746689974.087851193]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:34.201049682+01:00 [33m[ WARN] [1746689974.200886351]: Low quality GPS[0m
+2025-05-08T08:39:34.701041013+01:00 [33m[ WARN] [1746689974.700890830]: GPS timeout[0m
+2025-05-08T08:39:35.088750898+01:00 [0m[ INFO] [1746689975.088626029]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:35.201081807+01:00 [33m[ WARN] [1746689975.200912902]: Low quality GPS[0m
+2025-05-08T08:39:36.092376177+01:00 [0m[ INFO] [1746689976.092255883]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:36.201047636+01:00 [33m[ WARN] [1746689976.200883453]: GPS timeout[0m
+2025-05-08T08:39:36.701037264+01:00 [33m[ WARN] [1746689976.700889247]: Low quality GPS[0m
+2025-05-08T08:39:37.201041595+01:00 [33m[ WARN] [1746689977.200889263]: GPS timeout[0m
+2025-05-08T08:39:37.701056574+01:00 [33m[ WARN] [1746689977.700896243]: Low quality GPS[0m
+2025-05-08T08:39:38.089319766+01:00 [0m[ INFO] [1746689978.089195268]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:38.701063792+01:00 [33m[ WARN] [1746689978.700887331]: GPS timeout[0m
+2025-05-08T08:39:39.092664438+01:00 [0m[ INFO] [1746689979.092526662]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:39.201040827+01:00 [33m[ WARN] [1746689979.200879070]: Low quality GPS[0m
+2025-05-08T08:39:39.701043732+01:00 [33m[ WARN] [1746689979.700893271]: GPS timeout[0m
+2025-05-08T08:39:40.201055545+01:00 [33m[ WARN] [1746689980.200881085]: Low quality GPS[0m
+2025-05-08T08:39:41.081173013+01:00 [0m[ INFO] [1746689981.081014164]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:41.201037597+01:00 [33m[ WARN] [1746689981.200880025]: GPS timeout[0m
+2025-05-08T08:39:41.701052521+01:00 [33m[ WARN] [1746689981.700891393]: Low quality GPS[0m
+2025-05-08T08:39:42.086141775+01:00 [0m[ INFO] [1746689982.086017906]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:42.701098331+01:00 [33m[ WARN] [1746689982.700915945]: Low quality GPS[0m
+2025-05-08T08:39:42.701379420+01:00 [33m[ WARN] [1746689982.701305255]: GPS timeout[0m
+2025-05-08T08:39:43.086614802+01:00 [0m[ INFO] [1746689983.086494822]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:44.201039216+01:00 [33m[ WARN] [1746689984.200882940]: Low quality GPS[0m
+2025-05-08T08:39:44.201303638+01:00 [33m[ WARN] [1746689984.201231398]: GPS timeout[0m
+2025-05-08T08:39:45.084706858+01:00 [0m[ INFO] [1746689985.084571657]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:45.701053989+01:00 [33m[ WARN] [1746689985.700892583]: Low quality GPS[0m
+2025-05-08T08:39:45.701202024+01:00 [33m[ WARN] [1746689985.701042785]: GPS timeout[0m
+2025-05-08T08:39:46.086335259+01:00 [0m[ INFO] [1746689986.086211427]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:47.201033910+01:00 [33m[ WARN] [1746689987.200880505]: Low quality GPS[0m
+2025-05-08T08:39:47.201154242+01:00 [33m[ WARN] [1746689987.201064206]: GPS timeout[0m
+2025-05-08T08:39:48.089615912+01:00 [0m[ INFO] [1746689988.089487506]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:48.201051129+01:00 [33m[ WARN] [1746689988.200887724]: Low quality GPS[0m
+2025-05-08T08:39:48.201322551+01:00 [33m[ WARN] [1746689988.201260552]: GPS timeout[0m
+2025-05-08T08:39:49.701047384+01:00 [33m[ WARN] [1746689989.700884294]: Low quality GPS[0m
+2025-05-08T08:39:49.701177068+01:00 [33m[ WARN] [1746689989.701024977]: GPS timeout[0m
+2025-05-08T08:39:50.080623103+01:00 [0m[ INFO] [1746689990.080493938]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:50.536667795+01:00 [0m[ INFO] [1746689990.536523260]: Got action: mower_logic:idle/start_mowing[0m
+2025-05-08T08:39:50.537597023+01:00 [0m[ INFO] [1746689990.537462747]: Got start_mowing command[0m
+2025-05-08T08:39:50.545262456+01:00 [0m[ INFO] [1746689990.545136365]: Currently inside the docking station, we set the robot's pose to the docks pose.[0m
+2025-05-08T08:39:50.552355803+01:00 [0m[ INFO] [1746689990.552222860]: new actions registered: mower_logic:idle registered 2 actions.[0m
+2025-05-08T08:39:50.553678192+01:00 [0m[ INFO] [1746689990.553519232]: successfully registered actions for mower_logic:idle[0m
+2025-05-08T08:39:50.553786376+01:00 [0m[ INFO] [1746689990.553656026]: [0m
+2025-05-08T08:39:50.553786376+01:00 [0m[ INFO] [1746689990.553724081]: [0m
+2025-05-08T08:39:50.553830357+01:00 [0m[ INFO] [1746689990.553776358]: --------------------------------------[0m
+2025-05-08T08:39:50.553871968+01:00 [0m[ INFO] [1746689990.553829227]: - Entered state: UNDOCKING[0m
+2025-05-08T08:39:50.553944578+01:00 [0m[ INFO] [1746689990.553881708]: --------------------------------------[0m
+2025-05-08T08:39:50.557444382+01:00 [0m[ INFO] [1746689990.557326309]: Getting Docking Point[0m
+2025-05-08T08:39:50.557973411+01:00 [0m[ INFO] [1746689990.557873746]: Currently inside the docking station, we set the robot's pose to the docks pose.[0m
+2025-05-08T08:39:50.562665977+01:00 [0m[ INFO] [1746689990.562535238]: Fixed angle undock: 0[0m
+2025-05-08T08:39:50.579136141+01:00 [0m[ INFO] [1746689990.578992791]: FTCLocalPlannerROS: Got new global plan with 13 points.[0m
+2025-05-08T08:39:50.590920702+01:00 [0m[ INFO] [1746689990.590719649]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following[0m
+2025-05-08T08:39:50.591640581+01:00 [0m[ INFO] [1746689990.590960201]: FTCLocalPlannerROS: Switching to state 1[0m
+2025-05-08T08:39:50.701202657+01:00 [33m[ WARN] [1746689990.701017160]: Low quality GPS[0m
+2025-05-08T08:39:50.701360081+01:00 [33m[ WARN] [1746689990.701248120]: GPS timeout[0m
+2025-05-08T08:39:51.089644755+01:00 [0m[ INFO] [1746689991.089530016]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:52.201068100+01:00 [33m[ WARN] [1746689992.200914676]: Low quality GPS[0m
+2025-05-08T08:39:52.201189191+01:00 [33m[ WARN] [1746689992.201095285]: GPS timeout[0m
+2025-05-08T08:39:53.089497789+01:00 [0m[ INFO] [1746689993.089371532]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:53.701548164+01:00 [33m[ WARN] [1746689993.701392537]: Low quality GPS[0m
+2025-05-08T08:39:53.701678847+01:00 [33m[ WARN] [1746689993.701513313]: GPS timeout[0m
+2025-05-08T08:39:54.093329568+01:00 [0m[ INFO] [1746689994.093211644]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:55.201051723+01:00 [33m[ WARN] [1746689995.200886744]: Low quality GPS[0m
+2025-05-08T08:39:55.201254998+01:00 [33m[ WARN] [1746689995.201018298]: GPS timeout[0m
+2025-05-08T08:39:56.100165508+01:00 [0m[ INFO] [1746689996.100034528]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:56.201075943+01:00 [33m[ WARN] [1746689996.200908575]: Low quality GPS[0m
+2025-05-08T08:39:56.201203645+01:00 [33m[ WARN] [1746689996.201140127]: GPS timeout[0m
+2025-05-08T08:39:57.701033774+01:00 [33m[ WARN] [1746689997.700885665]: Low quality GPS[0m
+2025-05-08T08:39:57.701160865+01:00 [33m[ WARN] [1746689997.701048663]: GPS timeout[0m
+2025-05-08T08:39:58.089228024+01:00 [0m[ INFO] [1746689998.089109877]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:39:58.701074291+01:00 [33m[ WARN] [1746689998.700894163]: Low quality GPS[0m
+2025-05-08T08:39:59.201044327+01:00 [33m[ WARN] [1746689999.200889792]: GPS timeout[0m
+2025-05-08T08:39:59.701047475+01:00 [33m[ WARN] [1746689999.700892106]: Low quality GPS[0m
+2025-05-08T08:40:00.100615235+01:00 [0m[ INFO] [1746690000.100488015]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:40:00.701055195+01:00 [33m[ WARN] [1746690000.700885883]: GPS timeout[0m
+2025-05-08T08:40:01.103603693+01:00 [0m[ INFO] [1746690001.103484380]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:40:01.201059806+01:00 [33m[ WARN] [1746690001.200896123]: Low quality GPS[0m
+2025-05-08T08:40:01.701059490+01:00 [33m[ WARN] [1746690001.700930381]: GPS timeout[0m
+2025-05-08T08:40:02.701047452+01:00 [33m[ WARN] [1746690002.700885325]: Low quality GPS[0m
+2025-05-08T08:40:02.701173654+01:00 [33m[ WARN] [1746690002.701024286]: GPS timeout[0m
+2025-05-08T08:40:03.091199768+01:00 [0m[ INFO] [1746690003.091079603]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:40:04.097529625+01:00 [0m[ INFO] [1746690004.097392219]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:40:04.201063821+01:00 [33m[ WARN] [1746690004.200901082]: Low quality GPS[0m
+2025-05-08T08:40:04.201412297+01:00 [33m[ WARN] [1746690004.201320077]: GPS timeout[0m
+2025-05-08T08:40:05.201058672+01:00 [33m[ WARN] [1746690005.200910841]: Low quality GPS[0m
+2025-05-08T08:40:05.701048598+01:00 [33m[ WARN] [1746690005.700887526]: GPS timeout[0m
+2025-05-08T08:40:06.094587719+01:00 [0m[ INFO] [1746690006.094469665]: dropping GPS update, since gps_enabled = false.[0m
+2025-05-08T08:40:06.701067282+01:00 [33m[ WARN] [1746690006.700901914]: Low quality GPS[0m
+2025-05-08T08:40:06.701190725+01:00 [33m[ WARN] [1746690006.701087448]: GPS timeout[0m
+2025-05-08T08:40:07.273073094+01:00 [33m[ WARN] [1746690007.272919614]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.273320368+01:00 [33m[ WARN] [1746690007.273238203]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.273569920+01:00 [33m[ WARN] [1746690007.273443200]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.273919156+01:00 [33m[ WARN] [1746690007.273687067]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.274254967+01:00 [33m[ WARN] [1746690007.274153672]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.274562055+01:00 [33m[ WARN] [1746690007.274473389]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.274806348+01:00 [33m[ WARN] [1746690007.274722719]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.275037678+01:00 [33m[ WARN] [1746690007.274957364]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.275321193+01:00 [33m[ WARN] [1746690007.275179232]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.275685762+01:00 [33m[ WARN] [1746690007.275500709]: FTCLocalPlannerROS: Skipping duplicate point in global plan.[0m
+2025-05-08T08:40:07.276435140+01:00 [0m[ INFO] [1746690007.276270661]: FTCLocalPlannerROS: switching planner to position mode[0m
+2025-05-08T08:40:07.276562194+01:00 [0m[ INFO] [1746690007.276410956]: FTCLocalPlannerROS: Switching to state 2[0m
+2025-05-08T08:40:07.322659231+01:00 [0m[ INFO] [1746690007.322531955]: FTCLocalPlannerROS: Reached goal position.[0m
+2025-05-08T08:40:07.322804988+01:00 [0m[ INFO] [1746690007.322677231]: FTCLocalPlannerROS: Switching to state 3[0m
+2025-05-08T08:40:07.372978377+01:00 [0m[ INFO] [1746690007.372591882]: FTCLocalPlannerROS: POST_ROTATE finished.[0m
+2025-05-08T08:40:07.373196077+01:00 [0m[ INFO] [1746690007.373068153]: FTCLocalPlannerROS: Switching to state 4[0m
+2025-05-08T08:40:07.423061785+01:00 [0m[ INFO] [1746690007.422904268]: Undock success. Waiting for GPS.[0m
+2025-05-08T08:40:07.426994749+01:00 [0m[ INFO] [1746690007.426862862]: successfully set GPS to 1[0m
+2025-05-08T08:40:07.427103044+01:00 [0m[ INFO] [1746690007.427009212]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:08.092953851+01:00 [0m[ INFO] [1746690008.092798576]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:08.201081059+01:00 [33m[ WARN] [1746690008.200902820]: Low quality GPS[0m
+2025-05-08T08:40:08.201363684+01:00 [33m[ WARN] [1746690008.201287704]: GPS timeout[0m
+2025-05-08T08:40:08.427237560+01:00 [0m[ INFO] [1746690008.427123710]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:09.427246504+01:00 [0m[ INFO] [1746690009.427124617]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:09.701031040+01:00 [33m[ WARN] [1746690009.700883820]: Low quality GPS[0m
+2025-05-08T08:40:09.701145743+01:00 [33m[ WARN] [1746690009.701043688]: GPS timeout[0m
+2025-05-08T08:40:10.090677826+01:00 [0m[ INFO] [1746690010.090555661]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:10.427247319+01:00 [0m[ INFO] [1746690010.427127487]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:10.701037855+01:00 [33m[ WARN] [1746690010.700888468]: Low quality GPS[0m
+2025-05-08T08:40:11.201051725+01:00 [33m[ WARN] [1746690011.200894783]: GPS timeout[0m
+2025-05-08T08:40:11.427264448+01:00 [0m[ INFO] [1746690011.427152691]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:11.701052447+01:00 [33m[ WARN] [1746690011.700891598]: Low quality GPS[0m
+2025-05-08T08:40:12.088582707+01:00 [0m[ INFO] [1746690012.088459782]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:12.427262208+01:00 [0m[ INFO] [1746690012.427128191]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:12.701050836+01:00 [33m[ WARN] [1746690012.700888265]: GPS timeout[0m
+2025-05-08T08:40:13.201067929+01:00 [33m[ WARN] [1746690013.200924375]: Low quality GPS[0m
+2025-05-08T08:40:13.427285874+01:00 [0m[ INFO] [1746690013.427152691]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:13.701107169+01:00 [33m[ WARN] [1746690013.700927505]: GPS timeout[0m
+2025-05-08T08:40:14.089733080+01:00 [0m[ INFO] [1746690014.089615637]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:14.427246653+01:00 [0m[ INFO] [1746690014.427127858]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:14.701150595+01:00 [33m[ WARN] [1746690014.700981338]: Low quality GPS[0m
+2025-05-08T08:40:14.701496627+01:00 [33m[ WARN] [1746690014.701395721]: GPS timeout[0m
+2025-05-08T08:40:15.427245598+01:00 [0m[ INFO] [1746690015.427125136]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:16.089412196+01:00 [0m[ INFO] [1746690016.089293309]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:16.201221372+01:00 [33m[ WARN] [1746690016.200970209]: Low quality GPS[0m
+2025-05-08T08:40:16.201395407+01:00 [33m[ WARN] [1746690016.201184150]: GPS timeout[0m
+2025-05-08T08:40:16.427252320+01:00 [0m[ INFO] [1746690016.427122563]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:17.427250136+01:00 [0m[ INFO] [1746690017.427131323]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:17.701043042+01:00 [33m[ WARN] [1746690017.700896470]: Low quality GPS[0m
+2025-05-08T08:40:17.701168189+01:00 [33m[ WARN] [1746690017.701035468]: GPS timeout[0m
+2025-05-08T08:40:18.090645292+01:00 [0m[ INFO] [1746690018.090505312]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:18.427243007+01:00 [0m[ INFO] [1746690018.427127657]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:18.701045747+01:00 [33m[ WARN] [1746690018.700889749]: Low quality GPS[0m
+2025-05-08T08:40:19.201050599+01:00 [33m[ WARN] [1746690019.200887583]: GPS timeout[0m
+2025-05-08T08:40:19.427254008+01:00 [0m[ INFO] [1746690019.427125917]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:19.701093043+01:00 [33m[ WARN] [1746690019.700920694]: Low quality GPS[0m
+2025-05-08T08:40:20.091727020+01:00 [0m[ INFO] [1746690020.091610207]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:20.427250731+01:00 [0m[ INFO] [1746690020.427126233]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:20.701039193+01:00 [33m[ WARN] [1746690020.700888066]: GPS timeout[0m
+2025-05-08T08:40:21.201045175+01:00 [33m[ WARN] [1746690021.200880696]: Low quality GPS[0m
+2025-05-08T08:40:21.427385045+01:00 [0m[ INFO] [1746690021.427186326]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:22.086784145+01:00 [0m[ INFO] [1746690022.086648277]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:22.201046102+01:00 [33m[ WARN] [1746690022.200885030]: Low quality GPS[0m
+2025-05-08T08:40:22.201164193+01:00 [33m[ WARN] [1746690022.201055046]: GPS timeout[0m
+2025-05-08T08:40:22.427296621+01:00 [0m[ INFO] [1746690022.427153160]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:23.090652242+01:00 [0m[ INFO] [1746690023.090529003]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:23.427239216+01:00 [0m[ INFO] [1746690023.427124681]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:23.701040975+01:00 [33m[ WARN] [1746690023.700880662]: Low quality GPS[0m
+2025-05-08T08:40:23.701310378+01:00 [33m[ WARN] [1746690023.701246009]: GPS timeout[0m
+2025-05-08T08:40:24.427295846+01:00 [0m[ INFO] [1746690024.427153608]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:24.701038643+01:00 [33m[ WARN] [1746690024.700885145]: Low quality GPS[0m
+2025-05-08T08:40:25.083920096+01:00 [0m[ INFO] [1746690025.083797653]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:25.201058088+01:00 [33m[ WARN] [1746690025.200900719]: GPS timeout[0m
+2025-05-08T08:40:25.427254700+01:00 [0m[ INFO] [1746690025.427126091]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:26.201048812+01:00 [33m[ WARN] [1746690026.200887258]: Low quality GPS[0m
+2025-05-08T08:40:26.201193569+01:00 [33m[ WARN] [1746690026.201022775]: GPS timeout[0m
+2025-05-08T08:40:26.427237813+01:00 [0m[ INFO] [1746690026.427124593]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:27.092556240+01:00 [0m[ INFO] [1746690027.092395002]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:27.427247315+01:00 [0m[ INFO] [1746690027.427125187]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:27.701080369+01:00 [33m[ WARN] [1746690027.700899835]: Low quality GPS[0m
+2025-05-08T08:40:27.701206942+01:00 [33m[ WARN] [1746690027.701067073]: GPS timeout[0m
+2025-05-08T08:40:28.092637630+01:00 [0m[ INFO] [1746690028.092488354]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:28.427249780+01:00 [0m[ INFO] [1746690028.427126467]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:29.201047928+01:00 [33m[ WARN] [1746690029.200885671]: Low quality GPS[0m
+2025-05-08T08:40:29.201314591+01:00 [33m[ WARN] [1746690029.201242148]: GPS timeout[0m
+2025-05-08T08:40:29.427406835+01:00 [0m[ INFO] [1746690029.427271615]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:30.095461966+01:00 [0m[ INFO] [1746690030.095331912]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:30.427236562+01:00 [0m[ INFO] [1746690030.427125619]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:30.701088172+01:00 [33m[ WARN] [1746690030.700929340]: Low quality GPS[0m
+2025-05-08T08:40:30.701258040+01:00 [33m[ WARN] [1746690030.701101912]: GPS timeout[0m
+2025-05-08T08:40:31.427243934+01:00 [0m[ INFO] [1746690031.427125677]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:32.084131570+01:00 [0m[ INFO] [1746690032.084004238]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:32.201053546+01:00 [33m[ WARN] [1746690032.200883678]: Low quality GPS[0m
+2025-05-08T08:40:32.201194951+01:00 [33m[ WARN] [1746690032.201018361]: GPS timeout[0m
+2025-05-08T08:40:32.427247122+01:00 [0m[ INFO] [1746690032.427118975]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:33.085923103+01:00 [0m[ INFO] [1746690033.085794809]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:33.201052437+01:00 [33m[ WARN] [1746690033.200892088]: Low quality GPS[0m
+2025-05-08T08:40:33.201165380+01:00 [33m[ WARN] [1746690033.201031938]: GPS timeout[0m
+2025-05-08T08:40:33.427244384+01:00 [0m[ INFO] [1746690033.427124737]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:34.201155920+01:00 [33m[ WARN] [1746690034.200944923]: Low quality GPS[0m
+2025-05-08T08:40:34.201343528+01:00 [33m[ WARN] [1746690034.201136068]: GPS timeout[0m
+2025-05-08T08:40:34.427250831+01:00 [0m[ INFO] [1746690034.427130499]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:35.081413540+01:00 [0m[ INFO] [1746690035.081293801]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:35.201132330+01:00 [33m[ WARN] [1746690035.200945777]: Low quality GPS[0m
+2025-05-08T08:40:35.201525251+01:00 [33m[ WARN] [1746690035.201411827]: GPS timeout[0m
+2025-05-08T08:40:35.427242074+01:00 [0m[ INFO] [1746690035.427124705]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:36.089042680+01:00 [0m[ INFO] [1746690036.088896071]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:36.427244410+01:00 [0m[ INFO] [1746690036.427115708]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:36.701371906+01:00 [33m[ WARN] [1746690036.701159112]: Low quality GPS[0m
+2025-05-08T08:40:36.701586384+01:00 [33m[ WARN] [1746690036.701326128]: GPS timeout[0m
+2025-05-08T08:40:37.427239450+01:00 [0m[ INFO] [1746690037.427123415]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:38.084333583+01:00 [0m[ INFO] [1746690038.084215529]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:38.201097766+01:00 [33m[ WARN] [1746690038.200896898]: Low quality GPS[0m
+2025-05-08T08:40:38.201451409+01:00 [33m[ WARN] [1746690038.201349929]: GPS timeout[0m
+2025-05-08T08:40:38.427246472+01:00 [0m[ INFO] [1746690038.427129714]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:39.087646023+01:00 [0m[ INFO] [1746690039.087527432]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:39.427235698+01:00 [0m[ INFO] [1746690039.427125810]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:39.701070234+01:00 [33m[ WARN] [1746690039.700877403]: Low quality GPS[0m
+2025-05-08T08:40:39.701239898+01:00 [33m[ WARN] [1746690039.701023364]: GPS timeout[0m
+2025-05-08T08:40:40.089071599+01:00 [0m[ INFO] [1746690040.088944175]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:40.427251627+01:00 [0m[ INFO] [1746690040.427122258]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:40.701060182+01:00 [33m[ WARN] [1746690040.700885240]: Low quality GPS[0m
+2025-05-08T08:40:40.701301641+01:00 [33m[ WARN] [1746690040.701233902]: GPS timeout[0m
+2025-05-08T08:40:41.427241871+01:00 [0m[ INFO] [1746690041.427124484]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:42.093638118+01:00 [0m[ INFO] [1746690042.093518101]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:42.201053076+01:00 [33m[ WARN] [1746690042.200888652]: Low quality GPS[0m
+2025-05-08T08:40:42.201337369+01:00 [33m[ WARN] [1746690042.201258647]: GPS timeout[0m
+2025-05-08T08:40:42.427248208+01:00 [0m[ INFO] [1746690042.427130858]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:43.427284785+01:00 [0m[ INFO] [1746690043.427164916]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:43.701034675+01:00 [33m[ WARN] [1746690043.700880695]: Low quality GPS[0m
+2025-05-08T08:40:43.701156451+01:00 [33m[ WARN] [1746690043.701010842]: GPS timeout[0m
+2025-05-08T08:40:44.083479412+01:00 [0m[ INFO] [1746690044.083327729]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:44.427276271+01:00 [0m[ INFO] [1746690044.427146272]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:44.701053215+01:00 [33m[ WARN] [1746690044.700883773]: Low quality GPS[0m
+2025-05-08T08:40:44.701569912+01:00 [33m[ WARN] [1746690044.701019660]: GPS timeout[0m
+2025-05-08T08:40:45.094331101+01:00 [0m[ INFO] [1746690045.094193992]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:45.427300033+01:00 [0m[ INFO] [1746690045.427148573]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:45.701051738+01:00 [33m[ WARN] [1746690045.700884333]: Low quality GPS[0m
+2025-05-08T08:40:46.201076462+01:00 [33m[ WARN] [1746690046.200895612]: GPS timeout[0m
+2025-05-08T08:40:46.427468998+01:00 [0m[ INFO] [1746690046.427134299]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:47.094522310+01:00 [0m[ INFO] [1746690047.094398182]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:47.201044355+01:00 [33m[ WARN] [1746690047.200884265]: Low quality GPS[0m
+2025-05-08T08:40:47.201165187+01:00 [33m[ WARN] [1746690047.201024763]: GPS timeout[0m
+2025-05-08T08:40:47.427241265+01:00 [0m[ INFO] [1746690047.427126322]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:48.099759706+01:00 [0m[ INFO] [1746690048.099587801]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:48.201049155+01:00 [33m[ WARN] [1746690048.200885343]: Low quality GPS[0m
+2025-05-08T08:40:48.201049155+01:00 [33m[ WARN] [1746690048.201012767]: GPS timeout[0m
+2025-05-08T08:40:48.427263176+01:00 [0m[ INFO] [1746690048.427135511]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:49.427242403+01:00 [0m[ INFO] [1746690049.427125793]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:49.701107624+01:00 [33m[ WARN] [1746690049.700935108]: Low quality GPS[0m
+2025-05-08T08:40:49.701374935+01:00 [33m[ WARN] [1746690049.701301973]: GPS timeout[0m
+2025-05-08T08:40:50.086647209+01:00 [0m[ INFO] [1746690050.086455156]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:50.427247129+01:00 [0m[ INFO] [1746690050.427119168]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:51.201056780+01:00 [33m[ WARN] [1746690051.200877041]: Low quality GPS[0m
+2025-05-08T08:40:51.201056780+01:00 [33m[ WARN] [1746690051.201014077]: GPS timeout[0m
+2025-05-08T08:40:51.427243189+01:00 [0m[ INFO] [1746690051.427125043]: waiting for gps. current accuracy: 999[0m
+2025-05-08T08:40:52.084587357+01:00 [0m[ INFO] [1746690052.084323194]: Dropped GPS update, since it's not RTK Fixed[0m
+2025-05-08T08:40:52.201049303+01:00 [33m[ WARN] [1746690052.200887398]: Low quality GPS[0m
+2025-05-08T08:40:52.201326651+01:00 [33m[ WARN] [1746690052.201254559]: GPS timeout[0m
+2025-05-08T08:40:52.427235009+01:00 [0m[ INFO] [1746690052.427120140]: waiting for gps. current accuracy: 999[0m

@@ -1,0 +1,93 @@
+ /mower_logic/docking_distance: 0.7
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 123
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.25
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 1.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert: 
+ * /ntrip_client/ntrip_client_node/cert: 
+ * /ntrip_client/ntrip_client_node/host: [NTRIP_SERVER_HOST]
+ * /ntrip_client/ntrip_client_node/key: 
+ * /ntrip_client/ntrip_client_node/mountpoint: [MOUNTPOINT]
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version: 
+ * /ntrip_client/ntrip_client_node/password: [PASSWORD_REDACTED]
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: [USERNAME_REDACTED]
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 460800
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: [LATITUDE_REDACTED]
+ * /xbot_driver_gps/datum_long: [LONGITUDE_REDACTED]
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/gps
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname: 
+ * /xbot_monitoring/external_mqtt_password: 
+ * /xbot_monitoring/external_mqtt_port: 
+ * /xbot_monitoring/external_mqtt_topic_prefix: 
+ * /xbot_monitoring/external_mqtt_username: 
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+NODES
+  /
+    heatmap_generator (xbot_monitoring/heatmap_generator)
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+ROS_MASTER_URI=http://[REDACTED_IP]:11311
+]2;/opt/open_mower_ros/src/open_mower/launch/open_mower.launch http://[REDACTED_IP]:11311
+process[ntrip_client/ntrip_client_node-1]: started with pid [52]
+process[xbot_driver_gps-2]: started with pid [53]
+process[move_base_flex-3]: started with pid [54]
+process[move_base_legacy_relay-4]: started with pid [55]
+process[xbot_positioning-5]: started with pid [59]
+process[joy-6]: started with pid [61]
+process[joy_teleop-7]: started with pid [62]
+process[map_service-8]: started with pid [67]
+process[mower_logic-9]: started with pid [73]
+process[slic3r_coverage_planner-10]: started with pid [75]
+process[twist_mux-11]: started with pid [82]
+process[xbot_monitoring-12]: started with pid [87]
+process[heatmap_generator-13]: started with pid [95]
+process[xbot_remote-14]: started with pid [98]
+process[monitoring-15]: started with pid [103]
+[INFO] [1736244305.648334]: Connected to http://[NTRIP_SERVER_HOST]:2101/[MOUNTPOINT]
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[WARN] [1736244478.364027]: Found packet, but checksums didn't match
+[WARN] [1736244478.371479]: Expected Checksum: 0x5D6B02
+[WARN] [1736244478.379926]: Actual Checksum:   0x416F45
+[WARN] [1736244523.263599]: Found packet, but checksums didn't match
+[WARN] [1736244523.269950]: Expected Checksum: 0x84A3C4
+[WARN] [1736244523.276290]: Actual Checksum:   0x3399E0

@@ -1,0 +1,171 @@
+OpenMowerApp  | 192.168.0.114 - - [24/Apr/2026:22:31:15 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Apr/2026:22:31:15 +0000] "GET /main.dart.js HTTP/1.1" 304 0 "http://openmower.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+Mosquitto     | 1777069872: Info: running mosquitto as user: mosquitto.
+Mosquitto     | 1777069873: New connection from 172.19.0.1:51938 on port 1883.
+Mosquitto     | 1777069873: New client connected from 172.19.0.1:51938 as xbot_monitoring (p4, c1, k1000).
+Mosquitto     | 1777069876: New connection from 192.168.0.114:54764 on port 9001.
+Mosquitto     | 1777069876: New client connected from 192.168.0.114:54764 as om-client-39645 (p5, c0, k0).
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | process[mower_comms_v2-2]: started with pid [67]
+open_mower_ros  | process[ntrip_client-3]: started with pid [68]
+open_mower_ros  | process[move_base_flex-4]: started with pid [69]
+open_mower_ros  | process[move_base_legacy_relay-5]: started with pid [71]
+open_mower_ros  | process[xbot_positioning-6]: started with pid [76]
+open_mower_ros  | process[joy-7]: started with pid [78]
+open_mower_ros  | process[joy_teleop-8]: started with pid [84]
+open_mower_ros  | [INFO] [1777069873.413845117]: Bind IP (Robot Internal): 172.16.78.1
+open_mower_ros  | process[map_service-9]: started with pid [85]
+open_mower_ros  | process[mower_logic-10]: started with pid [87]
+open_mower_ros  | process[slic3r_coverage_planner-11]: started with pid [99]
+open_mower_ros  | [INFO] [1777069873.462182662]: Wheel ticks [1/m]: 1600
+open_mower_ros  | [INFO] [1777069873.462652386]: Wheel distance [m]: 0.325
+open_mower_ros  | process[twist_mux-12]: started with pid [101]
+open_mower_ros  | process[xbot_monitoring-13]: started with pid [107]
+open_mower_ros  | [INFO] [1777069873.483715586]: GPS protocol: UBX, baud rate: 921600, gps port index:0
+open_mower_ros  | process[xbot_remote-14]: started with pid [110]
+open_mower_ros  | process[monitoring-15]: started with pid [119]
+open_mower_ros  | [INFO] [1777069873.524189612]: IMU axis config: +X-Y-Z
+open_mower_ros  | [INFO] [1777069873.568219944]: Antenna offset: 0.3, 0
+open_mower_ros  | [INFO] [1777069873.570528227]: Restoring checkpoint for plan (D40459C2C2D8DAD56FDEB2B10424D7DE581C8860A11ABF6574BFC9AA0AE16157) area: 0 path: 5 index: 6653 angle increment sum: 0
+open_mower_ros  | [ERROR] [1777069873.586159470]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | [INFO] [1777069873.592682097]: Datum: 55.4435, 11.5594, 0
+open_mower_ros  | [INFO] [1777069873.597346349]: Using external MQTT broker: 192.168.0.141:1883 with topic prefix: openmower/
+open_mower_ros  | [INFO] [1777069873.603003734]: Teleop enable button 0.
+open_mower_ros  | [INFO] [1777069873.608251376]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+open_mower_ros  | [INFO] [1777069873.618749069]: Turbo on button 4.
+open_mower_ros  | [INFO] [1777069873.618839736]: Linear axis x on 1 at scale 0.500000.
+open_mower_ros  | [INFO] [1777069873.618878921]: Turbo for linear axis x is scale 1.000000.
+open_mower_ros  | [INFO] [1777069873.618967847]: Angular axis yaw on 0 at scale 1.500000.
+open_mower_ros  | [INFO] [1777069873.619112737]: Turbo for angular axis yaw is scale 3.000000.
+open_mower_ros  | [INFO] [1777069873.634557164]: MQTT Connected
+open_mower_ros  | [INFO] [1777069873.653308099]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+open_mower_ros  | [INFO] [1777069873.677690937]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+open_mower_ros  | [FATAL] [1777069873.712307727]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+open_mower_ros  | [INFO] [1777069873.728089173]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+open_mower_ros  | [INFO] [1777069873.771596244]: waitForService: Service [/xbot/rpc/register] is now available.
+open_mower_ros  | [INFO] [1777069873.786514596]: new methods registered: mower_map_service registered 1 methods.
+open_mower_ros  | [INFO] [1777069873.787815710]: Loaded 1 areas from: map.json
+open_mower_ros  | [INFO] [1777069873.787980507]: Map Position: x=22.2431, y=4.16773
+open_mower_ros  | [INFO] [1777069873.788003118]: Map Size: x=18.2406, y=16.6733
+open_mower_ros  | [INFO] [1777069873.804163955]: new methods registered: xbot_monitoring registered 2 methods.
+open_mower_ros  | [INFO] [1777069873.807581500]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1777069873.823040890]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1777069873.844102387]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1777069873.866443757]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1777069873.881202608]: om_mower_logic: Setting mower_logic config
+open_mower_ros  | [INFO] [1777069873.908117583]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1777069873.913686208]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1777069873.921970098]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1777069873.928394337]: MQTT Connected
+open_mower_ros  | [INFO] [1777069873.930998491]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1777069873.934002165]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1777069873.940232199]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1777069873.948948239]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1777069873.951105374]: docking pose: position: 
+open_mower_ros  |   x: 15.4176
+open_mower_ros  | 
+open_mower_ros  |   y: 3.52453
+open_mower_ros  | 
+open_mower_ros  |   z: 0
+open_mower_ros  | 
+open_mower_ros  | orientation: 
+open_mower_ros  |   x: 0
+open_mower_ros  | 
+open_mower_ros  |   y: 0
+open_mower_ros  | 
+open_mower_ros  |   z: 0.808948
+open_mower_ros  | 
+open_mower_ros  |   w: 0.587881
+open_mower_ros  | 
+open_mower_ros  | [INFO] [1777069873.956443702]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1777069873.960517879]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1777069874.027249100]: Waiting for emergency message
+open_mower_ros  | [INFO] [1777069874.078271819]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1777069874.078333430]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+open_mower_ros  | [INFO] [1777069874.084147037]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1777069874.084186371]: Subscribing to sensor data for sensor with name: Charge Current
+open_mower_ros  | [INFO] [1777069874.086774118]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1777069874.086807692]: Subscribing to sensor data for sensor with name: Left ESC Temp
+open_mower_ros  | [INFO] [1777069874.089045124]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1777069874.089500236]: Subscribing to sensor data for sensor with name: GPS Accuracy
+open_mower_ros  | [INFO] [1777069874.089456]: Connected to http://192.168.0.156:2101/Lasse-RTK
+open_mower_ros  | [INFO] [1777069874.092905096]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1777069874.093450375]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+open_mower_ros  | [INFO] [1777069874.098407517]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1777069874.098476925]: Subscribing to sensor data for sensor with name: Charge State
+open_mower_ros  | [INFO] [1777069874.102955547]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1777069874.102994362]: Subscribing to sensor data for sensor with name: Right ESC Temp
+open_mower_ros  | [INFO] [1777069874.106583297]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1777069874.106620001]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+open_mower_ros  | [INFO] [1777069874.110192065]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1777069874.110229880]: Subscribing to sensor data for sensor with name: V Battery
+open_mower_ros  | [INFO] [1777069874.114264371]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1777069874.114301520]: Subscribing to sensor data for sensor with name: Mow Motor Current
+open_mower_ros  | [INFO] [1777069874.181212482]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1777069874.181255111]: Subscribing to sensor data for sensor with name: V Charge
+open_mower_ros  | [WARN] [1777069878.867440745]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100265 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069883.888920855]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100588 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069888.905510692]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100126 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069893.920759393]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100361 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069898.941399217]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100613 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069903.961944261]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100388 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069908.984196621]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100411 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069914.006713518]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100296 timeout was 0.1.
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+open_mower_ros  |     mbf_drc = Client("move_base_flex", timeout=10)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+open_mower_ros  |     self._set_service = self._get_service_proxy('set_parameters', timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+open_mower_ros  |     rospy.wait_for_service(service_name, timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+open_mower_ros  |     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+open_mower_ros  | rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+open_mower_ros  | [move_base_legacy_relay-5] process has died [pid 71, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/4c807328-402d-11f1-b2a7-2ccf67c33cd0/move_base_legacy_relay-5.log].
+open_mower_ros  | log file: /data/ros/log/4c807328-402d-11f1-b2a7-2ccf67c33cd0/move_base_legacy_relay-5*.log
+open_mower_ros  | [WARN] [1777069919.019870722]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100345 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069924.036002006]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100315 timeout was 0.1.
+open_mower_ros  | [move_base_legacy_relay-5] restarting process
+open_mower_ros  | process[move_base_legacy_relay-5]: started with pid [180]
+open_mower_ros  | [WARN] [1777069929.047661165]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100087 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069934.066880712]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100233 timeout was 0.1.
+open_mower_ros  | [WARN] [1777069939.085197587]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100302 timeout was 0.1.
+^C
+openmower@openmower:~ $ openmower update-firmware
+ℹ Info: Fetching latest firmware release from GitHub ...
+Downloaded firmware archive: /tmp/tmpa11vkckf/fw-openmower-v2-v0.0.3.zip
+Extracting firmware archive ...
+Uploading firmware via docker ...
+latest: Pulling from xtech/fw-xcore-boot
+Digest: sha256:1c2ea57d351a49a255d6d33672d5f6685031df38f27de1cc4dbb099e64290024
+Status: Image is up to date for ghcr.io/xtech/fw-xcore-boot:latest
+ghcr.io/xtech/fw-xcore-boot:latest
+Using interface eth0 with IP 172.16.78.1
+Timeout (1/25)
+Timeout (2/25)
+Timeout (3/25)
+Timeout (4/25)
+Timeout (5/25)
+Timeout (6/25)
+Timeout (7/25)
+Timeout (8/25)
+Timeout (9/25)
+Timeout (10/25)
+Timeout (11/25)
+Timeout (12/25)
+Timeout (13/25)
+Timeout (14/25)
+Timeout (15/25)
+Timeout (16/25)
+Timeout (17/25)
+Timeout (18/25)
+Timeout (19/25)
+Timeout (20/25)
+Timeout (21/25)
+Timeout (22/25)
+Timeout (23/25)
+Timeout (24/25)
+Timeout (25/25)
+No boards found
+❌ Error: Error uploading firmware.
+openmower@openmower:~ $ 

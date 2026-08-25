@@ -1,0 +1,63 @@
+No custom default environment file in: ~/mower_params/default_environment.sh
+... logging to /root/.ros/log/78fa30e2-57f0-11ee-a734-dca6320f8521/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+started roslaunch server http://192.168.1.130:44463/
+ros_comm version 1.16.0
+SUMMARY
+========
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+NODES
+auto-starting new master
+process[master]: started with pid [51]
+ROS_MASTER_URI=http://192.168.1.130:11311/
+]2;roscore http://192.168.1.130:11311/
+setting /run_id to 78fa30e2-57f0-11ee-a734-dca6320f8521
+process[rosout-1]: started with pid [65]
+started core service [/rosout]
+No custom default environment file in: ~/mower_params/default_environment.sh
+... logging to /root/.ros/log/9c894b56-57f0-11ee-aca4-dca6320f8521/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+started roslaunch server http://192.168.1.130:44629/
+ros_comm version 1.16.0
+SUMMARY
+========
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+NODES
+auto-starting new master
+process[master]: started with pid [51]
+ROS_MASTER_URI=http://192.168.1.130:11311/
+]2;roscore http://192.168.1.130:11311/
+RLException: run_id on parameter server does not match declared run_id: 9cc7f69e-57f0-11ee-aa82-dca6320f8521 vs 9c894b56-57f0-11ee-aca4-dca6320f8521
+The traceback for the exception was written to the log file
+[master] killing on exit
+No custom default environment file in: ~/mower_params/default_environment.sh
+... logging to /root/.ros/log/e50d494a-57f0-11ee-a974-dca6320f8521/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+started roslaunch server http://192.168.1.130:36877/
+ros_comm version 1.16.0
+SUMMARY
+========
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+NODES
+auto-starting new master
+process[master]: started with pid [52]
+ROS_MASTER_URI=http://192.168.1.130:11311/
+]2;roscore http://192.168.1.130:11311/
+setting /run_id to e50d494a-57f0-11ee-a974-dca6320f8521
+process[rosout-1]: started with pid [65]
+started core service [/rosout]

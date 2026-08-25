@@ -1,0 +1,43 @@
+ll:
+  services:
+    gps:
+      protocol: UBX
+      datum_lat: 48.CHANGEME
+      datum_long: 11.CHANGEME
+
+    power:
+      battery_empty_voltage: 24.0
+      battery_full_voltage: 28.5
+
+ntrip_client:
+  host: 192.168.178.55
+  port: 2101
+  mountpoint: BASE1
+  username: gps
+  password: gps
+  reconnect_attempt_wait_seconds: 5
+  reconnect_attempt_max: 99999
+
+mower_logic:
+  automatic_mode: 0
+  docking_distance: 1.0
+  docking_extra_time: 0.0
+  docking_retry_count: 4
+  docking_redock: false
+  undock_distance: 2.0
+  tool_width: 0.13
+  enable_mower: true
+  outline_count: 4
+  outline_overlap_count: 0
+  outline_offset: 0.05
+  mow_angle_offset: 0
+  mow_angle_offset_is_absolute: false
+  mow_angle_increment: 0
+  motor_hot_temperature: 80.0
+  motor_cold_temperature: 40.0
+  gps_wait_time: 10.0
+  gps_timeout: 5.0
+  rain_mode: 0
+  rain_delay_minutes: 30
+  docking_waiting_time: 0.0
+  undocking_waiting_time: 0.0

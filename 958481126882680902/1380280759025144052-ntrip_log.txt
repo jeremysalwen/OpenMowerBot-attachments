@@ -1,0 +1,41 @@
+[rosout][ERROR] 2025-06-05 20:21:55,522: Unable to connect to NTRIP server
+[rospy.core][INFO] 2025-06-05 20:21:55,527: signal_shutdown [atexit]
+[rosout][INFO] 2025-06-05 20:21:55,528: Stopping RTCM publisher
+[rosout][INFO] 2025-06-05 20:21:55,534: Disconnecting NTRIP client
+[rospy.internal][INFO] 2025-06-05 20:21:55,549: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2025-06-05 20:21:55,549: topic[/ll/position/gps/rtcm] removing connection to /xbot_driver_gps
+[rospy.impl.masterslave][INFO] 2025-06-05 20:21:55,552: atexit
+[rospy.client][INFO] 2025-06-05 20:22:07,685: init_node, name[/ntrip_client], pid[553]
+[xmlrpc][INFO] 2025-06-05 20:22:07,686: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2025-06-05 20:22:07,687: Started XML-RPC server [http://openmower:46473/]
+[rospy.init][INFO] 2025-06-05 20:22:07,688: ROS Slave URI: [http://openmower:46473/]
+[rospy.impl.masterslave][INFO] 2025-06-05 20:22:07,688: _ready: http://openmower:46473/
+[rospy.registration][INFO] 2025-06-05 20:22:07,693: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2025-06-05 20:22:07,693: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2025-06-05 20:22:07,789: registered with master
+[rospy.rosout][INFO] 2025-06-05 20:22:07,790: initializing /rosout core topic
+[rospy.rosout][INFO] 2025-06-05 20:22:07,802: connected to core topic /rosout
+[rospy.simtime][INFO] 2025-06-05 20:22:07,805: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2025-06-05 20:22:08,082: topic[/ll/position/gps/rtcm] adding connection to [/xbot_driver_gps], count 0
+[rospy.internal][INFO] 2025-06-05 20:22:08,084: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][WARNING] 2025-06-05 20:22:08,125: Received unauthorized response from the server. Check your username, password, and mountpoint to make sure they are correct.
+[rosout][ERROR] 2025-06-05 20:22:08,136: Invalid response received from http://192.106.234.17:2101/ZIM200CHE0
+[rosout][ERROR] 2025-06-05 20:22:08,145: Response: HTTP/1.1 401 Unauthorized
+Date: Thu, 05 Jun 2025 20:22:07 GMT
+WWW-Authenticate: Basic realm="/ZIM200CHE0"
+Content-Type: text/html
+Connection: close
+
+<!DOCTYPE html>
+<html><head><title>401 Unauthorized</title></head><body style="background-color:white; color:black;">
+<h1 style="text-align:center;">The server does not recognize your privileges to the requested entity/stream</h1>
+</body></html>
+
+
+[rosout][ERROR] 2025-06-05 20:22:08,153: Unable to connect to NTRIP server
+[rospy.core][INFO] 2025-06-05 20:22:08,157: signal_shutdown [atexit]
+[rosout][INFO] 2025-06-05 20:22:08,157: Stopping RTCM publisher
+[rosout][INFO] 2025-06-05 20:22:08,162: Disconnecting NTRIP client
+[rospy.internal][INFO] 2025-06-05 20:22:08,174: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2025-06-05 20:22:08,175: topic[/ll/position/gps/rtcm] removing connection to /xbot_driver_gps
+[rospy.impl.masterslave][INFO] 2025-06-05 20:22:08,176: atexit

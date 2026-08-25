@@ -1,0 +1,445 @@
+openmower@openmower:~ $ openmower restart && openmower logs
+ℹ Info: Stopping compose stack from /opt/stacks/openmower/compose.yaml ...
+[+] Running 4/4
+ ✔ Container OpenMowerApp     Removed                                                                                                                                                                                                                                                                                                                                                                           0.6s 
+ ✔ Container open_mower_ros   Removed                                                                                                                                                                                                                                                                                                                                                                          10.3s 
+ ✔ Container Mosquitto        Removed                                                                                                                                                                                                                                                                                                                                                                           0.5s 
+ ✔ Network openmower_default  Removed                                                                                                                                                                                                                                                                                                                                                                           0.3s 
+ℹ Info: Starting compose stack from /opt/stacks/openmower/compose.yaml ...
+[+] Running 4/4
+ ✔ Network openmower_default  Created                                                                                                                                                                                                                                                                                                                                                                           0.1s 
+ ✔ Container OpenMowerApp     Started                                                                                                                                                                                                                                                                                                                                                                           1.0s 
+ ✔ Container Mosquitto        Started                                                                                                                                                                                                                                                                                                                                                                           1.1s 
+ ✔ Container open_mower_ros   Started                                                                                                                                                                                                                                                                                                                                                                           1.0s 
+Mosquitto  | 1776621898: Info: running mosquitto as user: mosquitto.
+Mosquitto  | 1776621898: New connection from 172.19.0.1:60714 on port 9001.
+Mosquitto  | 1776621898: New client connected from 172.19.0.1:60714 as om-client-93075 (p5, c0, k0).
+Mosquitto  | 1776621898: New connection from 192.168.188.72:52411 on port 9001.
+open_mower_ros  | ... logging to /data/ros/log/4833d89e-3c1a-11f1-adf5-2ccf67fe1d1c/roslaunch-openmower-1.log
+open_mower_ros  | Checking log directory for disk usage. This may take a while.
+open_mower_ros  | Press Ctrl-C to interrupt
+open_mower_ros  | Done checking log file disk usage. Usage is <1GB.
+open_mower_ros  | 
+open_mower_ros  | started roslaunch server http://openmower:44453/
+open_mower_ros  | 
+open_mower_ros  | SUMMARY
+open_mower_ros  | ========
+open_mower_ros  | 
+open_mower_ros  | PARAMETERS
+open_mower_ros  |  * /joy/autorepeat_rate: 10.0
+open_mower_ros  |  * /joy/coalesce_interval: 0.06
+open_mower_ros  |  * /joy_teleop/enable_turbo_button: 4
+open_mower_ros  |  * /joy_teleop/scale_angular: 1.5
+open_mower_ros  |  * /joy_teleop/scale_angular_turbo: 3.0
+open_mower_ros  |  * /joy_teleop/scale_linear: 0.5
+open_mower_ros  |  * /joy_teleop/scale_linear_turbo: 1.0
+open_mower_ros  |  * /ll/bind_ip: 172.16.78.1
+open_mower_ros  |  * /ll/services/diff_drive/ticks_per_m: 1600.0
+open_mower_ros  |  * /ll/services/diff_drive/wheel_distance_m: 0.325
+open_mower_ros  |  * /ll/services/gps/absolute_coords: True
+open_mower_ros  |  * /ll/services/gps/baud_rate: 921600
+open_mower_ros  |  * /ll/services/gps/datum_height: 0
+open_mower_ros  |  * /ll/services/gps/datum_lat: 52.00000
+open_mower_ros  |  * /ll/services/gps/datum_long: 9.000
+open_mower_ros  |  * /ll/services/gps/protocol: UBX
+open_mower_ros  |  * /ll/services/imu/axis_config: +X-Y-Z
+open_mower_ros  |  * /ll/services/power/battery_critical_high_voltage: 29.0
+open_mower_ros  |  * /ll/services/power/battery_critical_voltage: 23.0
+open_mower_ros  |  * /ll/services/power/battery_empty_voltage: 24.0
+open_mower_ros  |  * /ll/services/power/battery_full_voltage: 28.5
+open_mower_ros  |  * /ll/services/power/charge_critical_high_current: 1.5
+open_mower_ros  |  * /ll/services/power/charge_critical_high_voltage: 30.0
+open_mower_ros  |  * /ll/services/sound/language: en
+open_mower_ros  |  * /ll/services/sound/volume: -1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/forward_only: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+open_mower_ros  |  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/acceleration: 0.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/check_obstacles: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/debug_pid: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/forward_only: True
+open_mower_ros  |  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+open_mower_ros  |  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/restore_defaults: False
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+open_mower_ros  |  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+open_mower_ros  |  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+open_mower_ros  |  * /move_base_flex/controller_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/controller_patience: 30.0
+open_mower_ros  |  * /move_base_flex/controllers: [{'name': 'FTCPla...
+open_mower_ros  |  * /move_base_flex/global_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/global_costmap/publish_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/global_costmap/resolution: 0.1
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/global_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/global_costmap/rolling_window: False
+open_mower_ros  |  * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/global_costmap/update_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/global_frame: map
+open_mower_ros  |  * /move_base_flex/local_costmap/height: 1.5
+open_mower_ros  |  * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+open_mower_ros  |  * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+open_mower_ros  |  * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+open_mower_ros  |  * /move_base_flex/local_costmap/publish_frequency: 2.0
+open_mower_ros  |  * /move_base_flex/local_costmap/resolution: 0.15
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_base_frame: base_link
+open_mower_ros  |  * /move_base_flex/local_costmap/robot_radius: 0.0
+open_mower_ros  |  * /move_base_flex/local_costmap/rolling_window: True
+open_mower_ros  |  * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+open_mower_ros  |  * /move_base_flex/local_costmap/update_frequency: 5.0
+open_mower_ros  |  * /move_base_flex/local_costmap/width: 1.5
+open_mower_ros  |  * /move_base_flex/oscillation_distance: 0.2
+open_mower_ros  |  * /move_base_flex/oscillation_timeout: 10.0
+open_mower_ros  |  * /move_base_flex/planner_frequency: 1.0
+open_mower_ros  |  * /move_base_flex/planner_patience: 5.0
+open_mower_ros  |  * /move_base_flex/planners: [{'name': 'Global...
+open_mower_ros  |  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+open_mower_ros  |  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+open_mower_ros  |  * /mower_logic/automatic_mode: 0
+open_mower_ros  |  * /mower_logic/cu_rain_threshold: -1
+open_mower_ros  |  * /mower_logic/docking_approach_distance: 1.0
+open_mower_ros  |  * /mower_logic/docking_extra_time: 1.0
+open_mower_ros  |  * /mower_logic/docking_redock: False
+open_mower_ros  |  * /mower_logic/docking_retry_count: 3
+open_mower_ros  |  * /mower_logic/emergency_lift_period: -1
+open_mower_ros  |  * /mower_logic/emergency_tilt_period: -1
+open_mower_ros  |  * /mower_logic/enable_mower: False
+open_mower_ros  |  * /mower_logic/gps_timeout: 5.0
+open_mower_ros  |  * /mower_logic/gps_wait_time: 5.0
+open_mower_ros  |  * /mower_logic/ignore_charging_current: False
+open_mower_ros  |  * /mower_logic/mow_angle_increment: 110
+open_mower_ros  |  * /mower_logic/mow_angle_offset: 0
+open_mower_ros  |  * /mower_logic/mow_angle_offset_is_absolute: False
+open_mower_ros  |  * /mower_logic/outline_overlap_count: 1
+open_mower_ros  |  * /mower_logic/rain_check_seconds: 20
+open_mower_ros  |  * /mower_logic/rain_delay_minutes: 30
+open_mower_ros  |  * /mower_logic/rain_mode: 0
+open_mower_ros  |  * /mower_logic/undock_angle: 45.0
+open_mower_ros  |  * /mower_logic/undock_angled_distance: 2.0
+open_mower_ros  |  * /mower_logic/undock_distance: 1.0
+open_mower_ros  |  * /mower_logic/undock_fixed_angle: False
+open_mower_ros  |  * /mower_logic/undock_use_curve: True
+open_mower_ros  |  * /ntrip_client/authenticate: True
+open_mower_ros  |  * /ntrip_client/ca_cert: 
+open_mower_ros  |  * /ntrip_client/cert: 
+open_mower_ros  |  * /ntrip_client/host: www.XXXXXXXXX...
+open_mower_ros  |  * /ntrip_client/key: 
+open_mower_ros  |  * /ntrip_client/mountpoint: xxxxxxxx
+open_mower_ros  |  * /ntrip_client/nmea_max_length: 82
+open_mower_ros  |  * /ntrip_client/nmea_min_length: 3
+open_mower_ros  |  * /ntrip_client/ntrip_version: 
+open_mower_ros  |  * /ntrip_client/password: xxxxxxxxx
+open_mower_ros  |  * /ntrip_client/port: 2101
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_max: 5
+open_mower_ros  |  * /ntrip_client/reconnect_attempt_wait_seconds: 99999
+open_mower_ros  |  * /ntrip_client/rtcm_frame_id: odom
+open_mower_ros  |  * /ntrip_client/rtcm_message_package: rtcm_msgs
+open_mower_ros  |  * /ntrip_client/rtcm_timeout_seconds: 30
+open_mower_ros  |  * /ntrip_client/ssl: False
+open_mower_ros  |  * /ntrip_client/username: xxxxxxxxx
+open_mower_ros  |  * /rosdistro: noetic
+open_mower_ros  |  * /rosversion: 1.17.4
+open_mower_ros  |  * /twist_mux/topics: [{'name': 'naviga...
+open_mower_ros  |  * /xbot_monitoring/external_mqtt_enable: False
+open_mower_ros  |  * /xbot_positioning/antenna_offset_x: 0.3
+open_mower_ros  |  * /xbot_positioning/antenna_offset_y: 0.0
+open_mower_ros  |  * /xbot_positioning/debug: False
+open_mower_ros  |  * /xbot_positioning/max_gps_accuracy: 0.2
+open_mower_ros  | 
+open_mower_ros  | NODES
+open_mower_ros  |   /
+open_mower_ros  |     joy (joy/joy_node)
+open_mower_ros  |     joy_teleop (teleop_twist_joy/teleop_node)
+open_mower_ros  |     map_service (mower_map/mower_map_service)
+open_mower_ros  |     monitoring (mower_logic/monitoring)
+open_mower_ros  |     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+open_mower_ros  |     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+open_mower_ros  |     mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+open_mower_ros  |     mower_logic (mower_logic/mower_logic)
+open_mower_ros  |     ntrip_client (ntrip_client/ntrip_ros.py)
+open_mower_ros  |     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+open_mower_ros  |     twist_mux (twist_mux/twist_mux)
+open_mower_ros  |     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+open_mower_ros  |     xbot_positioning (xbot_positioning/xbot_positioning)
+open_mower_ros  |     xbot_remote (xbot_remote/xbot_remote)
+open_mower_ros  | 
+open_mower_ros  | auto-starting new master
+open_mower_ros  | process[master]: started with pid [50]
+open_mower_ros  | ROS_MASTER_URI=http://localhost:11311
+open_mower_ros  | 
+open_mower_ros  | setting /run_id to 4833d89e-3c1a-11f1-adf5-2ccf67fe1d1c
+open_mower_ros  | process[rosout-1]: started with pid [60]
+open_mower_ros  | started core service [/rosout]
+open_mower_ros  | process[mower_comms_v2-2]: started with pid [67]
+open_mower_ros  | process[ntrip_client-3]: started with pid [68]
+open_mower_ros  | process[move_base_flex-4]: started with pid [73]
+open_mower_ros  | process[move_base_legacy_relay-5]: started with pid [75]
+open_mower_ros  | [INFO] [1776621902.681903995]: Bind IP (Robot Internal): 172.16.78.1
+open_mower_ros  | process[xbot_positioning-6]: started with pid [77]
+open_mower_ros  | [INFO] [1776621902.719951569]: Wheel ticks [1/m]: 1600
+open_mower_ros  | [INFO] [1776621902.720092108]: Wheel distance [m]: 0.325
+open_mower_ros  | [INFO] [1776621902.735691782]: GPS protocol: UBX, baud rate: 921600, gps port index:0
+open_mower_ros  | process[joy-7]: started with pid [85]
+open_mower_ros  | [INFO] [1776621902.745942660]: IMU axis config: +X-Y-Z
+open_mower_ros  | process[joy_teleop-8]: started with pid [91]
+open_mower_ros  | process[map_service-9]: started with pid [96]
+open_mower_ros  | [INFO] [1776621902.852204766]: Datum: 52.3404, 9.35237, 0
+open_mower_ros  | process[mower_logic-10]: started with pid [101]
+open_mower_ros  | process[slic3r_coverage_planner-11]: started with pid [105]
+open_mower_ros  | process[twist_mux-12]: started with pid [108]
+open_mower_ros  | process[xbot_monitoring-13]: started with pid [113]
+open_mower_ros  | [INFO] [1776621903.017302574]: Antenna offset: 0.3, 0
+open_mower_ros  | process[xbot_remote-14]: started with pid [115]
+open_mower_ros  | [INFO] [1776621903.076380952]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [INFO] [1776621903.086211876]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621903.086387768]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1776621903.103964914]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | process[monitoring-15]: started with pid [123]
+open_mower_ros  | [INFO] [1776621903.172644897]: Teleop enable button 0.
+open_mower_ros  | [INFO] [1776621903.216542540]: Turbo on button 4.
+open_mower_ros  | [INFO] [1776621903.216704468]: Linear axis x on 1 at scale 0.500000.
+open_mower_ros  | [INFO] [1776621903.216797044]: Turbo for linear axis x is scale 1.000000.
+open_mower_ros  | [INFO] [1776621903.216857360]: Angular axis yaw on 0 at scale 1.500000.
+open_mower_ros  | [INFO] [1776621903.216901972]: Turbo for angular axis yaw is scale 3.000000.
+open_mower_ros  | [INFO] [1776621903.288247629]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+open_mower_ros  | [INFO] [1776621903.427971227]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+open_mower_ros  | [INFO] [1776621903.482580382]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+open_mower_ros  | [INFO] [1776621903.518962436]: MQTT Connected
+Mosquitto       | 1776621903: New connection from 172.19.0.1:39690 on port 1883.
+open_mower_ros  | [INFO] [1776621903.544522938]: Found new service (Type: MowerService, ID: 3, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621903.544843925]: Found matching service, registering callbacks
+open_mower_ros  | [FATAL] [1776621903.619121465]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+open_mower_ros  | [INFO] [1776621903.718237939]: [ID=3] Sending Service Claim
+Mosquitto       | 1776621903: New client connected from 172.19.0.1:39690 as xbot_monitoring (p4, c1, k1000).
+Mosquitto       | 1776621903: Client 192.168.188.72 [192.168.188.72:52411] disconnected: connection closed by client.
+open_mower_ros  | [INFO] [1776621903.719024211]: >>> [ID=3] Received claim message
+open_mower_ros  | [INFO] [1776621903.719201029]: >>> [ID=3] service claimed successfully.
+open_mower_ros  | [INFO] [1776621903.719600776]: >>> [ID=3] Service started without requiring configuration
+open_mower_ros  | [INFO] [1776621903.719731390]: [ID=3] Successfully claimed service
+open_mower_ros  | [INFO] [1776621903.719786742]: PJB: Service Connected! ID: 3
+open_mower_ros  | [INFO] [1776621903.824752203]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+open_mower_ros  | [INFO] [1776621903.882787360]: waitForService: Service [/xbot/rpc/register] is now available.
+open_mower_ros  | [INFO] [1776621903.899753237]: new methods registered: mower_map_service registered 1 methods.
+open_mower_ros  | [WARN] [1776621903.901386875]: Could not open map file: map.json
+open_mower_ros  | [INFO] [1776621903.902553802]: Map Position: x=0, y=0
+open_mower_ros  | [INFO] [1776621903.905123123]: Map Size: x=10, y=10
+open_mower_ros  | [INFO] [1776621904.076242468]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [INFO] [1776621904.082212770]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621904.083150378]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1776621904.228415695]: om_mower_logic: Setting mower_logic config
+open_mower_ros  | [INFO] [1776621904.393384263]: new methods registered: xbot_monitoring registered 2 methods.
+open_mower_ros  | [INFO] [1776621904.398979411]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1776621904.404512428]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1776621904.434339159]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1776621904.454519584]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1776621904.472412434]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.491670066]: Monitoring received new mower_logic config
+open_mower_ros  | [INFO] [1776621904.494757654]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.515366178]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1776621904.534703848]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1776621904.554917589]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1776621904.573515210]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.588121987]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1776621904.604113658]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1776621904.609354133]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+open_mower_ros  | [INFO] [1776621904.609594804]: Subscribing to sensor data for sensor with name: Charge Current
+open_mower_ros  | [INFO] [1776621904.655322075]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+open_mower_ros  | [INFO] [1776621904.655435503]: Subscribing to sensor data for sensor with name: GPS Accuracy
+open_mower_ros  | [INFO] [1776621904.678954]: Connected to http://www.sapos-ni-ntrip.de:2101/VRS_3_4G_NI
+open_mower_ros  | [INFO] [1776621904.691907288]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+open_mower_ros  | [INFO] [1776621904.692025883]: Subscribing to sensor data for sensor with name: Charge State
+open_mower_ros  | [INFO] [1776621904.716547101]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.716657529]: Subscribing to sensor data for sensor with name: Left ESC Temp
+open_mower_ros  | [INFO] [1776621904.742987425]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.743087242]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+open_mower_ros  | [INFO] [1776621904.762216131]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+open_mower_ros  | [INFO] [1776621904.762331521]: Subscribing to sensor data for sensor with name: Mow Motor Current
+open_mower_ros  | [INFO] [1776621904.776017099]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+open_mower_ros  | [INFO] [1776621904.776124971]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+open_mower_ros  | [INFO] [1776621904.791568781]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+open_mower_ros  | [INFO] [1776621904.791725042]: Subscribing to sensor data for sensor with name: V Battery
+open_mower_ros  | [INFO] [1776621904.802154658]: Waiting for emergency message
+open_mower_ros  | [INFO] [1776621904.804599884]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+open_mower_ros  | [INFO] [1776621904.804728756]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+open_mower_ros  | [INFO] [1776621904.814215913]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+open_mower_ros  | [INFO] [1776621904.814329655]: Subscribing to sensor data for sensor with name: Right ESC Temp
+open_mower_ros  | [INFO] [1776621904.901588295]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+open_mower_ros  | [INFO] [1776621904.901675371]: Subscribing to sensor data for sensor with name: V Charge
+open_mower_ros  | [INFO] [1776621905.038111627]: Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.038332000]: Found matching service, registering callbacks
+open_mower_ros  | [INFO] [1776621905.042532383]: Found new service (Type: InputService, ID: 7, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.045883901]: Found new service (Type: EmergencyService, ID: 1, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.046010847]: Found matching service, registering callbacks
+open_mower_ros  | [INFO] [1776621905.046839009]: Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.046938047]: Found matching service, registering callbacks
+open_mower_ros  | [INFO] [1776621905.049397735]: Found new service (Type: HighLevelService, ID: 8, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.054723358]: Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.054870027]: Found matching service, registering callbacks
+open_mower_ros  | [INFO] [1776621905.076002962]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [INFO] [1776621905.081984355]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621905.083057558]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1776621905.125740342]: Found new service (Type: DiffDriveService, ID: 2, endpoint: 172.16.78.150:49153)
+open_mower_ros  | [INFO] [1776621905.125871807]: Found matching service, registering callbacks
+open_mower_ros  | [ERROR] [1776621905.179866236]: >>> [ID=1] Invalid data size
+open_mower_ros  | [ERROR] [1776621905.679856961]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621906.076011430]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [INFO] [1776621906.081999044]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621906.083074876]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1776621906.107199075]: [ID=1] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.107469246]: [ID=2] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.107815455]: [ID=4] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.108029588]: [ID=5] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.108235055]: >>> [ID=1] Received claim message
+open_mower_ros  | [INFO] [1776621906.108325852]: >>> [ID=1] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.108374501]: >>> [ID=1] Service started without requiring configuration
+open_mower_ros  | [INFO] [1776621906.108447614]: >>> [ID=2] Received claim message
+open_mower_ros  | [INFO] [1776621906.108490985]: >>> [ID=2] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.108533115]: >>> [ID=4] Received claim message
+open_mower_ros  | [INFO] [1776621906.108572467]: >>> [ID=4] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.108619653]: >>> [ID=5] Received claim message
+open_mower_ros  | [INFO] [1776621906.108668839]: >>> [ID=5] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.108966011]: [ID=6] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.109141069]: [ID=7] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.109232663]: [ID=8] Sending Service Claim
+open_mower_ros  | [INFO] [1776621906.109311479]: [ID=1] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.109352183]: PJB: Service Connected! ID: 1
+open_mower_ros  | [INFO] [1776621906.109454667]: [ID=2] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.109496297]: PJB: Service Connected! ID: 2
+open_mower_ros  | [INFO] [1776621906.109536927]: [ID=4] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.109572668]: PJB: Service Connected! ID: 4
+open_mower_ros  | [INFO] [1776621906.109627929]: [ID=5] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.109667540]: PJB: Service Connected! ID: 5
+open_mower_ros  | [INFO] [1776621906.109786264]: [ID=6] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.109982638]: PJB: Service Connected! ID: 6
+open_mower_ros  | [INFO] [1776621906.110182919]: [ID=7] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.110314773]: PJB: Service Connected! ID: 7
+open_mower_ros  | [INFO] [1776621906.110457979]: [ID=8] Successfully claimed service
+open_mower_ros  | [INFO] [1776621906.110585796]: PJB: Service Connected! ID: 8
+open_mower_ros  | [INFO] [1776621906.110756539]: >>> [ID=6] Received claim message
+open_mower_ros  | [INFO] [1776621906.111645701]: >>> [ID=6] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.111715832]: >>> [ID=7] Received claim message
+open_mower_ros  | [INFO] [1776621906.111758296]: >>> [ID=7] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.111796556]: >>> [ID=8] Received claim message
+open_mower_ros  | [INFO] [1776621906.111841390]: >>> [ID=8] service claimed successfully.
+open_mower_ros  | [INFO] [1776621906.111887409]: >>> [ID=8] Service started without requiring configuration
+open_mower_ros  | [INFO] [1776621906.121169612]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621906.179895603]: >>> [ID=1] Invalid data size
+open_mower_ros  | [ERROR] [1776621906.679880326]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621906.802169848]: Waiting for a power message
+open_mower_ros  | [INFO] [1776621906.900008350]: >>> [ID=6] Requesting Configuration
+open_mower_ros  | [INFO] [1776621906.900434524]: >>> [ID=6] Received Configuration
+open_mower_ros  | [INFO] [1776621906.900722491]: >>> [ID=6] Service started after successful configuration
+open_mower_ros  | [INFO] [1776621907.076064766]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [WARN] [1776621907.076212305]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [ERROR] [1776621907.081156494]: Invalid data size
+open_mower_ros  | [INFO] [1776621907.082054008]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621907.083045227]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1776621907.083186230]: >>> [ID=5] Configuration message did not contain all required registers
+open_mower_ros  | [INFO] [1776621907.083132507]: >>> [ID=5] Received Configuration
+open_mower_ros  | [INFO] [1776621907.103059004]: >>> [ID=4] Requesting Configuration
+open_mower_ros  | [INFO] [1776621907.103231136]: >>> [ID=4] Received Configuration
+open_mower_ros  | [INFO] [1776621907.103337138]: >>> [ID=4] Service started after successful configuration
+open_mower_ros  | [INFO] [1776621907.104041353]: >>> [ID=2] Requesting Configuration
+open_mower_ros  | [INFO] [1776621907.104188596]: >>> [ID=2] Received Configuration
+open_mower_ros  | [INFO] [1776621907.104247745]: >>> [ID=2] Service started after successful configuration
+open_mower_ros  | [INFO] [1776621907.104711623]: Started gyro calibration
+open_mower_ros  | [ERROR] [1776621907.179833837]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621907.220773497]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621907.679933008]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621908.076333296]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [WARN] [1776621908.076123885]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [ERROR] [1776621908.081389800]: Invalid data size
+open_mower_ros  | [INFO] [1776621908.082386167]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [INFO] [1776621908.083405794]: >>> [ID=5] Received Configuration
+open_mower_ros  | [ERROR] [1776621908.083216883]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1776621908.083762558]: >>> [ID=5] Configuration message did not contain all required registers
+open_mower_ros  | [ERROR] [1776621908.179922282]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621908.224809104]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621908.679997755]: >>> [ID=1] Invalid data size
+open_mower_ros  | [WARN] [1776621909.076315889]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [INFO] [1776621909.076115497]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621909.081315835]: Invalid data size
+open_mower_ros  | [INFO] [1776621909.082239683]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621909.083189012]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1776621909.084332789]: >>> [ID=5] Configuration message did not contain all required registers
+open_mower_ros  | [INFO] [1776621909.083901375]: >>> [ID=5] Received Configuration
+open_mower_ros  | [ERROR] [1776621909.179991575]: >>> [ID=1] Invalid data size
+open_mower_ros  | [WARN] [1776621909.217559886]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.101034 timeout was 0.1.
+open_mower_ros  | [INFO] [1776621909.236287467]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621909.679967149]: >>> [ID=1] Invalid data size
+open_mower_ros  | [WARN] [1776621910.076104148]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [INFO] [1776621910.076715213]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621910.081752326]: Invalid data size
+open_mower_ros  | [INFO] [1776621910.082850527]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621910.083827227]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [INFO] [1776621910.084312123]: >>> [ID=5] Received Configuration
+open_mower_ros  | [ERROR] [1776621910.084474996]: >>> [ID=5] Configuration message did not contain all required registers
+open_mower_ros  | [ERROR] [1776621910.179934498]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621910.339794407]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621910.679995902]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621911.076867525]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [WARN] [1776621911.077141955]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [ERROR] [1776621911.081906191]: Invalid data size
+open_mower_ros  | [INFO] [1776621911.083093264]: >>> [ID=5] Requesting Configuration
+open_mower_ros  | [INFO] [1776621911.083892387]: >>> [ID=5] Received Configuration
+open_mower_ros  | [ERROR] [1776621911.083734848]: >>> [ID=5] Unable to Configure Charger
+open_mower_ros  | [ERROR] [1776621911.084016222]: >>> [ID=5] Configuration message did not contain all required registers
+open_mower_ros  | [ERROR] [1776621911.179940209]: >>> [ID=1] Invalid data size
+open_mower_ros  | [INFO] [1776621911.345445573]: Dropped GPS update, since it's not RTK Fixed
+open_mower_ros  | [ERROR] [1776621911.679990520]: >>> [ID=1] Invalid data size
+open_mower_ros  | [WARN] [1776621912.076788146]: [ID=7] service requires configuration, but no handler provided any configuration. The service won't start.
+open_mower_ros  | [INFO] [1776621912.076981463]: >>> [ID=7] Requesting Configuration
+open_mower_ros  | [ERROR] [1776621912.081929572]: Invalid data size

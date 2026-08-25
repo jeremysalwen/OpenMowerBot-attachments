@@ -1,0 +1,107 @@
+Attaching to watchtower-1, mowgli-mqtt, mowgli-openmower, mowgli-roscore, mowgli-rosserial, mowgli-web, openmower-gui
+mowgli-web        | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+mowgli-web        | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+mowgli-web        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+mowgli-web        | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+mowgli-web        | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+mowgli-web        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+mowgli-web        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+mowgli-web        | /docker-entrypoint.sh: Configuration complete; ready for start up
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: using the "epoll" event method
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: nginx/1.27.4
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14)
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: OS: Linux 6.6.74+rpt-rpi-v8
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: start worker processes
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: start worker process 22
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: start worker process 23
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: start worker process 24
+mowgli-mqtt       | chown: /mosquitto/config/mosquitto.conf: Read-only file system
+mowgli-web        | 2025/04/07 08:09:20 [notice] 1#1: start worker process 25
+mowgli-mqtt       | 1744013360: mosquitto version 2.0.21 starting
+mowgli-mqtt       | 1744013360: Config loaded from /mosquitto/config/mosquitto.conf.
+mowgli-mqtt       | 1744013360: Opening ipv4 listen socket on port 1883.
+mowgli-mqtt       | 1744013360: Opening ipv6 listen socket on port 1883.
+mowgli-mqtt       | 1744013360: Opening websockets listen socket on port 9001.
+mowgli-mqtt       | 1744013360: mosquitto version 2.0.21 running
+openmower-gui     | time="2025-04-07T08:09:20Z" level=error msg="Post \"http://192.168.38.146:11311/RPC2\": dial tcp 192.168.38.146:11311: connect: connection refused"
+mowgli-roscore    | No custom default environment file in: ~/mower_params/default_environment.sh
+watchtower-1      | time="2025-04-07T08:09:21Z" level=info msg="Watchtower 1.7.1"
+watchtower-1      | time="2025-04-07T08:09:21Z" level=info msg="Using no notifications"
+watchtower-1      | time="2025-04-07T08:09:21Z" level=info msg="Only checking containers using enable label"
+watchtower-1      | time="2025-04-07T08:09:21Z" level=info msg="Scheduling first run: 2025-04-07 12:09:21 +0000 UTC"
+watchtower-1      | time="2025-04-07T08:09:21Z" level=info msg="Note that the first check will be performed in 3 hours, 59 minutes, 59 seconds"
+mowgli-rosserial  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | Starting OpenMower
+mowgli-roscore    | ... logging to /root/.ros/log/9d100b9c-1387-11f0-ab2e-d03745cdb361/roslaunch-eSchaf-1.log
+mowgli-roscore    | Checking log directory for disk usage. This may take a while.
+mowgli-roscore    | Press Ctrl-C to interrupt
+mowgli-roscore    | Done checking log file disk usage. Usage is <1GB.
+mowgli-roscore    |
+mowgli-roscore    | started roslaunch server http://192.168.38.146:34163/
+mowgli-roscore    | ros_comm version 1.16.0
+mowgli-roscore    |
+mowgli-roscore    |
+mowgli-roscore    | SUMMARY
+mowgli-roscore    | ========
+mowgli-roscore    |
+mowgli-roscore    | PARAMETERS
+mowgli-roscore    |  * /rosdistro: noetic
+mowgli-roscore    |  * /rosversion: 1.16.0
+mowgli-roscore    |
+mowgli-roscore    | NODES
+mowgli-roscore    |
+mowgli-roscore    | auto-starting new master
+mowgli-roscore    | process[master]: started with pid [51]
+mowgli-openmower  | ... logging to /root/.ros/log/9d8c178c-1387-11f0-bff2-d03745cdb361/roslaunch-eSchaf-43.log
+mowgli-openmower  | Checking log directory for disk usage. This may take a while.
+mowgli-openmower  | Press Ctrl-C to interrupt
+mowgli-openmower  | Done checking log file disk usage. Usage is <1GB.
+mowgli-openmower  |
+mowgli-openmower  | RLException: error loading <rosparam> tag:
+mowgli-openmower  |     file does not exist [/root/mower_params/comms_params.yaml]
+mowgli-openmower  | XML is <rosparam if="$(eval env('OM_MOWER')=='CUSTOM')" file="$(env HOME)/mower_params/comms_params.yaml"/>
+mowgli-openmower  | The traceback for the exception was written to the log file
+mowgli-roscore    | ROS_MASTER_URI=http://192.168.38.146:11311/
+mowgli-roscore    |
+mowgli-roscore    | setting /run_id to 9d100b9c-1387-11f0-ab2e-d03745cdb361
+mowgli-roscore    | process[rosout-1]: started with pid [62]
+mowgli-roscore    | started core service [/rosout]
+mowgli-openmower exited with code 0
+mowgli-openmower  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | Starting OpenMower
+mowgli-openmower  | ... logging to /root/.ros/log/9d100b9c-1387-11f0-ab2e-d03745cdb361/roslaunch-eSchaf-44.log
+mowgli-openmower  | Checking log directory for disk usage. This may take a while.
+mowgli-openmower  | Press Ctrl-C to interrupt
+mowgli-openmower  | Done checking log file disk usage. Usage is <1GB.
+mowgli-openmower  |
+mowgli-openmower  | RLException: error loading <rosparam> tag:
+mowgli-openmower  |     file does not exist [/root/mower_params/comms_params.yaml]
+mowgli-openmower  | XML is <rosparam if="$(eval env('OM_MOWER')=='CUSTOM')" file="$(env HOME)/mower_params/comms_params.yaml"/>
+mowgli-openmower  | The traceback for the exception was written to the log file
+mowgli-openmower exited with code 1
+mowgli-openmower  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | Starting OpenMower
+mowgli-openmower  | ... logging to /root/.ros/log/9d100b9c-1387-11f0-ab2e-d03745cdb361/roslaunch-eSchaf-45.log
+mowgli-openmower  | Checking log directory for disk usage. This may take a while.
+mowgli-openmower  | Press Ctrl-C to interrupt
+mowgli-openmower  | Done checking log file disk usage. Usage is <1GB.
+mowgli-openmower  |
+mowgli-openmower  | RLException: error loading <rosparam> tag:
+mowgli-openmower  |     file does not exist [/root/mower_params/comms_params.yaml]
+mowgli-openmower  | XML is <rosparam if="$(eval env('OM_MOWER')=='CUSTOM')" file="$(env HOME)/mower_params/comms_params.yaml"/>
+mowgli-openmower  | The traceback for the exception was written to the log file
+mowgli-openmower exited with code 1
+mowgli-openmower  | No custom default environment file in: ~/mower_params/default_environment.sh
+mowgli-openmower  | Starting OpenMower
+mowgli-openmower  | ... logging to /root/.ros/log/9d100b9c-1387-11f0-ab2e-d03745cdb361/roslaunch-eSchaf-44.log
+mowgli-openmower  | Checking log directory for disk usage. This may take a while.
+mowgli-openmower  | Press Ctrl-C to interrupt
+mowgli-openmower  | Done checking log file disk usage. Usage is <1GB.
+mowgli-openmower  |
+mowgli-openmower  | RLException: error loading <rosparam> tag:
+mowgli-openmower  |     file does not exist [/root/mower_params/comms_params.yaml]
+mowgli-openmower  | XML is <rosparam if="$(eval env('OM_MOWER')=='CUSTOM')" file="$(env HOME)/mower_params/comms_params.yaml"/>
+mowgli-openmower  | The traceback for the exception was written to the log file
+mowgli-openmower exited with code 1

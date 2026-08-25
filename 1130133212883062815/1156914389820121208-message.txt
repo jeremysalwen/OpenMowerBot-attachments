@@ -1,0 +1,22 @@
+Noticed that today GUI stopped sending MQTT messages to the broker. At the time it stopped I see the following messages in the logs:
+```
+ERRO[0000] Failed to subscribe to /mower_logic/current_state: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /mower/status: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /xbot_positioning/xb_pose: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /xbot_driver_gps/xb_pose: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /imu/data_raw: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /mower/wheel_ticks: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /xbot_monitoring/map: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /slic3r_coverage_planner/path_marker_array: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /move_base_flex/FTCPlanner/global_plan: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+ERRO[0000] Failed to subscribe to /mowing_path: Post "http://127.0.0.1:11311/RPC2": dial tcp 127.0.0.1:11311: connect: connection refused
+INFO[0147] Subscribed to /mower/status
+INFO[0147] Subscribed to /mower_logic/current_state
+INFO[0147] Subscribed to /xbot_driver_gps/xb_pose
+INFO[0147] Subscribed to /xbot_positioning/xb_pose
+INFO[0148] Subscribed to /imu/data_raw
+INFO[0148] Subscribed to /mower/wheel_ticks
+INFO[0148] Subscribed to /xbot_monitoring/map
+INFO[0148] Subscribed to /slic3r_coverage_planner/path_marker_array
+INFO[0148] Subscribed to /move_base_flex/FTCPlanner/global_plan
+```

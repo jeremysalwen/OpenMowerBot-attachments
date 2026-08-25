@@ -1,0 +1,276 @@
+openmower@openmower:~ $ sudo podman logs -t openmower
+2025-04-27T15:52:25.570222269+02:00  * Starting nginx nginx              [ OK ]
+2025-04-27T15:52:25.615073358+02:00  * Starting network daemon: mosquitto[ OK ]
+2025-04-27T15:52:26.761428641+02:00 ... logging to /root/.ros/log/da6711a6-236e-11f0-88ce-dca632c5d92d/roslaunch-openmower-91.log
+2025-04-27T15:52:26.761985141+02:00 Checking log directory for disk usage. This may take a while.
+2025-04-27T15:52:26.761985141+02:00 Press Ctrl-C to interrupt
+2025-04-27T15:52:26.772918199+02:00 Done checking log file disk usage. Usage is <1GB.
+2025-04-27T15:52:26.774047857+02:00
+2025-04-27T15:52:27.609902611+02:00 started roslaunch server http://openmower:34107/
+2025-04-27T15:52:27.616080328+02:00
+2025-04-27T15:52:27.616080328+02:00 SUMMARY
+2025-04-27T15:52:27.616080328+02:00 ========
+2025-04-27T15:52:27.616080328+02:00
+2025-04-27T15:52:27.616080328+02:00 CLEAR PARAMETERS
+2025-04-27T15:52:27.616080328+02:00  * /xbot_driver_gps/
+2025-04-27T15:52:27.616080328+02:00
+2025-04-27T15:52:27.616080328+02:00 PARAMETERS
+2025-04-27T15:52:27.616179100+02:00  * /joy/autorepeat_rate: 10.0
+2025-04-27T15:52:27.616179100+02:00  * /joy/coalesce_interval: 0.06
+2025-04-27T15:52:27.616179100+02:00  * /joy_teleop/enable_turbo_button: 4
+2025-04-27T15:52:27.616179100+02:00  * /joy_teleop/scale_angular: 1.5
+2025-04-27T15:52:27.616224549+02:00  * /joy_teleop/scale_angular_turbo: 3.0
+2025-04-27T15:52:27.616224549+02:00  * /joy_teleop/scale_linear: 0.5
+2025-04-27T15:52:27.616267533+02:00  * /joy_teleop/scale_linear_turbo: 1.0
+2025-04-27T15:52:27.616267533+02:00  * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+2025-04-27T15:52:27.616309313+02:00  * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+2025-04-27T15:52:27.616309313+02:00  * /move_base_flex/DockingFTCPlanner/debug_pid: False
+2025-04-27T15:52:27.616350649+02:00  * /move_base_flex/DockingFTCPlanner/forward_only: False
+2025-04-27T15:52:27.616391947+02:00  * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+2025-04-27T15:52:27.616391947+02:00  * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+2025-04-27T15:52:27.616433116+02:00  * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+2025-04-27T15:52:27.616474470+02:00  * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+2025-04-27T15:52:27.616474470+02:00  * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+2025-04-27T15:52:27.616516306+02:00  * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+2025-04-27T15:52:27.616516306+02:00  * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+2025-04-27T15:52:27.616629029+02:00  * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+2025-04-27T15:52:27.616629029+02:00  * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+2025-04-27T15:52:27.616670309+02:00  * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+2025-04-27T15:52:27.616670309+02:00  * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+2025-04-27T15:52:27.616759242+02:00  * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+2025-04-27T15:52:27.616759242+02:00  * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+2025-04-27T15:52:27.616759242+02:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+2025-04-27T15:52:27.616803412+02:00  * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+2025-04-27T15:52:27.616803412+02:00  * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+2025-04-27T15:52:27.616845452+02:00  * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+2025-04-27T15:52:27.616845452+02:00  * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+2025-04-27T15:52:27.616886435+02:00  * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+2025-04-27T15:52:27.616927678+02:00  * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+2025-04-27T15:52:27.616927678+02:00  * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+2025-04-27T15:52:27.616969606+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+2025-04-27T15:52:27.616969606+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+2025-04-27T15:52:27.617010831+02:00  * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+2025-04-27T15:52:27.617051684+02:00  * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+2025-04-27T15:52:27.617051684+02:00  * /move_base_flex/FTCPlanner/acceleration: 0.1
+2025-04-27T15:52:27.617093909+02:00  * /move_base_flex/FTCPlanner/check_obstacles: False
+2025-04-27T15:52:27.617134948+02:00  * /move_base_flex/FTCPlanner/debug_pid: True
+2025-04-27T15:52:27.617134948+02:00  * /move_base_flex/FTCPlanner/forward_only: True
+2025-04-27T15:52:27.617176173+02:00  * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+2025-04-27T15:52:27.617176173+02:00  * /move_base_flex/FTCPlanner/kd_ang: 0.5
+2025-04-27T15:52:27.617216785+02:00  * /move_base_flex/FTCPlanner/kd_lat: 1.23
+2025-04-27T15:52:27.617257639+02:00  * /move_base_flex/FTCPlanner/kd_lon: 0.0
+2025-04-27T15:52:27.617257639+02:00  * /move_base_flex/FTCPlanner/ki_ang: 0.0
+2025-04-27T15:52:27.617298864+02:00  * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+2025-04-27T15:52:27.617298864+02:00  * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+2025-04-27T15:52:27.617339643+02:00  * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+2025-04-27T15:52:27.617380497+02:00  * /move_base_flex/FTCPlanner/ki_lon: 0.0
+2025-04-27T15:52:27.617380497+02:00  * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+2025-04-27T15:52:27.617421851+02:00  * /move_base_flex/FTCPlanner/kp_ang: 3.0
+2025-04-27T15:52:27.617421851+02:00  * /move_base_flex/FTCPlanner/kp_lat: 25.0
+2025-04-27T15:52:27.617462594+02:00  * /move_base_flex/FTCPlanner/kp_lon: 4.0
+2025-04-27T15:52:27.617503318+02:00  * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+2025-04-27T15:52:27.617503318+02:00  * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+2025-04-27T15:52:27.617544097+02:00  * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+2025-04-27T15:52:27.617544097+02:00  * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+2025-04-27T15:52:27.617584914+02:00  * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+2025-04-27T15:52:27.617625545+02:00  * /move_base_flex/FTCPlanner/oscillation_recovery: False
+2025-04-27T15:52:27.617625545+02:00  * /move_base_flex/FTCPlanner/restore_defaults: False
+2025-04-27T15:52:27.617677960+02:00  * /move_base_flex/FTCPlanner/speed_angular: 45.0
+2025-04-27T15:52:27.617677960+02:00  * /move_base_flex/FTCPlanner/speed_fast: 0.4
+2025-04-27T15:52:27.617719259+02:00  * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+2025-04-27T15:52:27.617719259+02:00  * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+2025-04-27T15:52:27.617760316+02:00  * /move_base_flex/FTCPlanner/speed_slow: 0.15
+2025-04-27T15:52:27.617801337+02:00  * /move_base_flex/GlobalPlanner/orientation_mode: 1
+2025-04-27T15:52:27.617801337+02:00  * /move_base_flex/controller_frequency: 1.0
+2025-04-27T15:52:27.617842320+02:00  * /move_base_flex/controller_patience: 30.0
+2025-04-27T15:52:27.617842320+02:00  * /move_base_flex/controllers: [{'name': 'FTCPla...
+2025-04-27T15:52:27.617883007+02:00  * /move_base_flex/global_costmap/global_frame: map
+2025-04-27T15:52:27.617924046+02:00  * /move_base_flex/global_costmap/inflation_radius: 1.0
+2025-04-27T15:52:27.617924046+02:00  * /move_base_flex/global_costmap/map_topic: mower_map_service...
+2025-04-27T15:52:27.617965771+02:00  * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+2025-04-27T15:52:27.617965771+02:00  * /move_base_flex/global_costmap/obstacle_range: 3.0
+2025-04-27T15:52:27.618006532+02:00  * /move_base_flex/global_costmap/publish_frequency: 1.0
+2025-04-27T15:52:27.618047793+02:00  * /move_base_flex/global_costmap/raytrace_range: 4.0
+2025-04-27T15:52:27.618047793+02:00  * /move_base_flex/global_costmap/resolution: 0.1
+2025-04-27T15:52:27.618089574+02:00  * /move_base_flex/global_costmap/robot_base_frame: base_link
+2025-04-27T15:52:27.618130798+02:00  * /move_base_flex/global_costmap/robot_radius: 0.0
+2025-04-27T15:52:27.618130798+02:00  * /move_base_flex/global_costmap/rolling_window: False
+2025-04-27T15:52:27.618171781+02:00  * /move_base_flex/global_costmap/static_map: True
+2025-04-27T15:52:27.618171781+02:00  * /move_base_flex/global_costmap/update_frequency: 1.0
+2025-04-27T15:52:27.618212617+02:00  * /move_base_flex/local_costmap/global_frame: map
+2025-04-27T15:52:27.618253304+02:00  * /move_base_flex/local_costmap/height: 1.5
+2025-04-27T15:52:27.618253304+02:00  * /move_base_flex/local_costmap/inflation_radius: 0.0
+2025-04-27T15:52:27.618293916+02:00  * /move_base_flex/local_costmap/map_topic: mower_map_service...
+2025-04-27T15:52:27.618293916+02:00  * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+2025-04-27T15:52:27.618334641+02:00  * /move_base_flex/local_costmap/obstacle_range: 3.0
+2025-04-27T15:52:27.618375643+02:00  * /move_base_flex/local_costmap/publish_frequency: 2.0
+2025-04-27T15:52:27.618375643+02:00  * /move_base_flex/local_costmap/raytrace_range: 4.0
+2025-04-27T15:52:27.618417256+02:00  * /move_base_flex/local_costmap/resolution: 0.15
+2025-04-27T15:52:27.618417256+02:00  * /move_base_flex/local_costmap/robot_base_frame: base_link
+2025-04-27T15:52:27.618457795+02:00  * /move_base_flex/local_costmap/robot_radius: 0.0
+2025-04-27T15:52:27.618498723+02:00  * /move_base_flex/local_costmap/rolling_window: True
+2025-04-27T15:52:27.618498723+02:00  * /move_base_flex/local_costmap/static_map: True
+2025-04-27T15:52:27.618539762+02:00  * /move_base_flex/local_costmap/update_frequency: 5.0
+2025-04-27T15:52:27.618539762+02:00  * /move_base_flex/local_costmap/width: 1.5
+2025-04-27T15:52:27.618596105+02:00  * /move_base_flex/oscillation_distance: 0.2
+2025-04-27T15:52:27.618596105+02:00  * /move_base_flex/oscillation_timeout: 10.0
+2025-04-27T15:52:27.618637236+02:00  * /move_base_flex/planner_frequency: 1.0
+2025-04-27T15:52:27.618637236+02:00  * /move_base_flex/planner_patience: 5.0
+2025-04-27T15:52:27.618677886+02:00  * /move_base_flex/planners: [{'name': 'Global...
+2025-04-27T15:52:27.618718555+02:00  * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+2025-04-27T15:52:27.618718555+02:00  * /move_base_legacy_relay/base_local_planner: FTCPlanner
+2025-04-27T15:52:27.618759464+02:00  * /mower_comms/background_sounds: False
+2025-04-27T15:52:27.618759464+02:00  * /mower_comms/dfp_is_5v: False
+2025-04-27T15:52:27.618800077+02:00  * /mower_comms/language: en
+2025-04-27T15:52:27.618840838+02:00  * /mower_comms/left_xesc/has_motor_temp: False
+2025-04-27T15:52:27.618840838+02:00  * /mower_comms/left_xesc/motor_pole_pairs: 4
+2025-04-27T15:52:27.618881599+02:00  * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+2025-04-27T15:52:27.618881599+02:00  * /mower_comms/left_xesc/xesc_type: xesc_mini
+2025-04-27T15:52:27.618922268+02:00  * /mower_comms/ll_serial_port: /dev/ttyAMA0
+2025-04-27T15:52:27.618962992+02:00  * /mower_comms/mower_xesc/has_motor_temp: True
+2025-04-27T15:52:27.618962992+02:00  * /mower_comms/mower_xesc/max_motor_rpm: 3800
+2025-04-27T15:52:27.619003642+02:00  * /mower_comms/mower_xesc/min_motor_rpm: 2800
+2025-04-27T15:52:27.619003642+02:00  * /mower_comms/mower_xesc/min_motor_rpm_critical: 2300
+2025-04-27T15:52:27.619044106+02:00  * /mower_comms/mower_xesc/motor_pole_pairs: 4
+2025-04-27T15:52:27.619085164+02:00  * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+2025-04-27T15:52:27.619085164+02:00  * /mower_comms/mower_xesc/xesc_type: xesc_mini
+2025-04-27T15:52:27.619126240+02:00  * /mower_comms/right_xesc/has_motor_temp: False
+2025-04-27T15:52:27.619166705+02:00  * /mower_comms/right_xesc/motor_pole_pairs: 4
+2025-04-27T15:52:27.619166705+02:00  * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+2025-04-27T15:52:27.619207577+02:00  * /mower_comms/right_xesc/xesc_type: xesc_mini
+2025-04-27T15:52:27.619248208+02:00  * /mower_comms/volume: -1
+2025-04-27T15:52:27.619248208+02:00  * /mower_comms/wheel_distance_m: 0.325
+2025-04-27T15:52:27.619288895+02:00  * /mower_comms/wheel_ticks_per_m: 1600.0
+2025-04-27T15:52:27.619288895+02:00  * /mower_logic/automatic_mode: 0
+2025-04-27T15:52:27.619329249+02:00  * /mower_logic/battery_critical_high_voltage: -1
+2025-04-27T15:52:27.619370306+02:00  * /mower_logic/battery_critical_voltage: 25.0
+2025-04-27T15:52:27.619370306+02:00  * /mower_logic/battery_empty_voltage: 25.0
+2025-04-27T15:52:27.619411105+02:00  * /mower_logic/battery_full_voltage: 28.5
+2025-04-27T15:52:27.619411105+02:00  * /mower_logic/charge_critical_high_current: -1
+2025-04-27T15:52:27.619451421+02:00  * /mower_logic/charge_critical_high_voltage: -1
+2025-04-27T15:52:27.619492312+02:00  * /mower_logic/cu_rain_threshold: -1
+2025-04-27T15:52:27.619492312+02:00  * /mower_logic/docking_approach_distance: 1.5
+2025-04-27T15:52:27.619532758+02:00  * /mower_logic/docking_distance: 1.0
+2025-04-27T15:52:27.619532758+02:00  * /mower_logic/docking_extra_time: 0
+2025-04-27T15:52:27.619588564+02:00  * /mower_logic/docking_redock: False
+2025-04-27T15:52:27.619588564+02:00  * /mower_logic/docking_retry_count: 4
+2025-04-27T15:52:27.619629454+02:00  * /mower_logic/emergency_input_config:
+2025-04-27T15:52:27.619629454+02:00  * /mower_logic/emergency_lift_period: -1
+2025-04-27T15:52:27.619670142+02:00  * /mower_logic/emergency_tilt_period: -1
+2025-04-27T15:52:27.619711069+02:00  * /mower_logic/enable_mower: True
+2025-04-27T15:52:27.619711069+02:00  * /mower_logic/gps_timeout: 5.0
+2025-04-27T15:52:27.619751719+02:00  * /mower_logic/gps_wait_time: 10.0
+2025-04-27T15:52:27.619751719+02:00  * /mower_logic/ignore_charging_current: False
+2025-04-27T15:52:27.619792517+02:00  * /mower_logic/motor_cold_temperature: 40.0
+2025-04-27T15:52:27.619833242+02:00  * /mower_logic/motor_hot_temperature: 80.0
+2025-04-27T15:52:27.619833242+02:00  * /mower_logic/mow_angle_increment: 0
+2025-04-27T15:52:27.619874225+02:00  * /mower_logic/mow_angle_offset: 0
+2025-04-27T15:52:27.619874225+02:00  * /mower_logic/mow_angle_offset_is_absolute: False
+2025-04-27T15:52:27.619914931+02:00  * /mower_logic/outline_count: 4
+2025-04-27T15:52:27.619956303+02:00  * /mower_logic/outline_offset: 0.05
+2025-04-27T15:52:27.619956303+02:00  * /mower_logic/outline_overlap_count: 0
+2025-04-27T15:52:27.619998139+02:00  * /mower_logic/perimeter_signal:
+2025-04-27T15:52:27.619998139+02:00  * /mower_logic/rain_check_seconds: 20
+2025-04-27T15:52:27.620038974+02:00  * /mower_logic/rain_delay_minutes: 30
+2025-04-27T15:52:27.620079995+02:00  * /mower_logic/rain_mode: 0
+2025-04-27T15:52:27.620079995+02:00  * /mower_logic/tool_width: 0.13
+2025-04-27T15:52:27.620121534+02:00  * /mower_logic/undock_angle: 0.0
+2025-04-27T15:52:27.620121534+02:00  * /mower_logic/undock_angled_distance: 0.0
+2025-04-27T15:52:27.620162499+02:00  * /mower_logic/undock_distance: 2.0
+2025-04-27T15:52:27.620162499+02:00  * /mower_logic/undock_fixed_angle: True
+2025-04-27T15:52:27.620203167+02:00  * /mower_logic/undock_use_curve: True
+2025-04-27T15:52:27.620244132+02:00  * /ntrip_client/ntrip_client_node/authenticate: True
+2025-04-27T15:52:27.620244132+02:00  * /ntrip_client/ntrip_client_node/ca_cert:
+2025-04-27T15:52:27.620285060+02:00  * /ntrip_client/ntrip_client_node/cert:
+2025-04-27T15:52:27.620285060+02:00  * /ntrip_client/ntrip_client_node/host: 88.44.106.194
+2025-04-27T15:52:27.620325747+02:00  * /ntrip_client/ntrip_client_node/key:
+2025-04-27T15:52:27.620366916+02:00  * /ntrip_client/ntrip_client_node/mountpoint: near_MSM
+2025-04-27T15:52:27.620407343+02:00  * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+2025-04-27T15:52:27.620407343+02:00  * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+2025-04-27T15:52:27.620448475+02:00  * /ntrip_client/ntrip_client_node/ntrip_version:
+2025-04-27T15:52:27.620448475+02:00  * /ntrip_client/ntrip_client_node/password: MQZ@b9KyYK@XbPY
+2025-04-27T15:52:27.620489106+02:00  * /ntrip_client/ntrip_client_node/port: 2101
+2025-04-27T15:52:27.620543856+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+2025-04-27T15:52:27.620543856+02:00  * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+2025-04-27T15:52:27.620606684+02:00  * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+2025-04-27T15:52:27.620606684+02:00  * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+2025-04-27T15:52:27.620606684+02:00  * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+2025-04-27T15:52:27.620648946+02:00  * /ntrip_client/ntrip_client_node/ssl: False
+2025-04-27T15:52:27.620689781+02:00  * /ntrip_client/ntrip_client_node/username: vinpel
+2025-04-27T15:52:27.620689781+02:00  * /rosdistro: noetic
+2025-04-27T15:52:27.620730672+02:00  * /rosversion: 1.17.0
+2025-04-27T15:52:27.620730672+02:00  * /twist_mux/topics: [{'name': 'naviga...
+2025-04-27T15:52:27.620771229+02:00  * /xbot_driver_gps/baudrate: 921600
+2025-04-27T15:52:27.620811972+02:00  * /xbot_driver_gps/datum_height: 0
+2025-04-27T15:52:27.620811972+02:00  * /xbot_driver_gps/datum_lat: 42.38147909
+2025-04-27T15:52:27.620852844+02:00  * /xbot_driver_gps/datum_long: 12.26681161
+2025-04-27T15:52:27.620852844+02:00  * /xbot_driver_gps/device_type: serial
+2025-04-27T15:52:27.620893383+02:00  * /xbot_driver_gps/mode: absolute
+2025-04-27T15:52:27.620934700+02:00  * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+2025-04-27T15:52:27.620934700+02:00  * /xbot_driver_gps/ubx_mode: True
+2025-04-27T15:52:27.620975553+02:00  * /xbot_monitoring/external_mqtt_enable: False
+2025-04-27T15:52:27.620975553+02:00  * /xbot_monitoring/external_mqtt_hostname:
+2025-04-27T15:52:27.621016129+02:00  * /xbot_monitoring/external_mqtt_password:
+2025-04-27T15:52:27.621056983+02:00  * /xbot_monitoring/external_mqtt_port:
+2025-04-27T15:52:27.621056983+02:00  * /xbot_monitoring/external_mqtt_topic_prefix:
+2025-04-27T15:52:27.621097577+02:00  * /xbot_monitoring/external_mqtt_username:
+2025-04-27T15:52:27.621097577+02:00  * /xbot_monitoring/software_version: 9f65b12
+2025-04-27T15:52:27.621138098+02:00  * /xbot_positioning/antenna_offset_x: 0.3
+2025-04-27T15:52:27.621178710+02:00  * /xbot_positioning/antenna_offset_y: 0.0
+2025-04-27T15:52:27.621178710+02:00  * /xbot_positioning/max_gps_accuracy: 0.2
+2025-04-27T15:52:27.621219027+02:00
+2025-04-27T15:52:27.621219027+02:00 NODES
+2025-04-27T15:52:27.621260548+02:00   /
+2025-04-27T15:52:27.621260548+02:00     joy (joy/joy_node)
+2025-04-27T15:52:27.621301494+02:00     joy_teleop (teleop_twist_joy/teleop_node)
+2025-04-27T15:52:27.621301494+02:00     map_service (mower_map/mower_map_service)
+2025-04-27T15:52:27.621342348+02:00     monitoring (mower_logic/monitoring)
+2025-04-27T15:52:27.621383053+02:00     move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+2025-04-27T15:52:27.621383053+02:00     move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+2025-04-27T15:52:27.621424000+02:00     mower_comms (mower_comms/mower_comms)
+2025-04-27T15:52:27.621424000+02:00     mower_logic (mower_logic/mower_logic)
+2025-04-27T15:52:27.621464946+02:00     slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+2025-04-27T15:52:27.621505707+02:00     twist_mux (twist_mux/twist_mux)
+2025-04-27T15:52:27.621546709+02:00     xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+2025-04-27T15:52:27.621546709+02:00     xbot_monitoring (xbot_monitoring/xbot_monitoring)
+2025-04-27T15:52:27.621587526+02:00     xbot_positioning (xbot_positioning/xbot_positioning)
+2025-04-27T15:52:27.621587526+02:00     xbot_remote (xbot_remote/xbot_remote)
+2025-04-27T15:52:27.621643276+02:00   /ntrip_client/
+2025-04-27T15:52:27.621643276+02:00     ntrip_client_node (ntrip_client/ntrip_ros.py)
+2025-04-27T15:52:27.621697155+02:00
+2025-04-27T15:52:27.624382645+02:00 auto-starting new master
+2025-04-27T15:52:27.638239832+02:00 process[master]: started with pid [99]
+2025-04-27T15:52:28.567739873+02:00 ROS_MASTER_URI=http://localhost:11311
+2025-04-27T15:52:28.567825045+02:00
+2025-04-27T15:52:28.571846852+02:00 setting /run_id to da6711a6-236e-11f0-88ce-dca632c5d92d
+2025-04-27T15:52:28.778035813+02:00 process[rosout-1]: started with pid [111]
+2025-04-27T15:52:28.778424767+02:00 started core service [/rosout]
+2025-04-27T15:52:28.975213918+02:00 process[mower_comms-2]: started with pid [115]
+2025-04-27T15:52:28.995591623+02:00 process[ntrip_client/ntrip_client_node-3]: started with pid [116]
+2025-04-27T15:52:29.017040215+02:00 process[xbot_driver_gps-4]: started with pid [117]
+2025-04-27T15:52:29.039729001+02:00 process[move_base_flex-5]: started with pid [118]
+2025-04-27T15:52:29.062695018+02:00 process[move_base_legacy_relay-6]: started with pid [119]
+2025-04-27T15:52:29.091381173+02:00 process[xbot_positioning-7]: started with pid [120]
+2025-04-27T15:52:29.128683523+02:00 process[joy-8]: started with pid [121]
+2025-04-27T15:52:29.167338309+02:00 process[joy_teleop-9]: started with pid [122]
+2025-04-27T15:52:29.192187398+02:00 process[map_service-10]: started with pid [123]
+2025-04-27T15:52:29.217280441+02:00 process[mower_logic-11]: started with pid [124]
+2025-04-27T15:52:29.267425026+02:00 process[slic3r_coverage_planner-12]: started with pid [125]
+2025-04-27T15:52:29.324673143+02:00 process[twist_mux-13]: started with pid [126]
+2025-04-27T15:52:29.362715882+02:00 process[xbot_monitoring-14]: started with pid [127]
+2025-04-27T15:52:29.410733237+02:00 process[xbot_remote-15]: started with pid [128]
+2025-04-27T15:52:29.453791428+02:00 process[monitoring-16]: started with pid [129]
+2025-04-27T15:52:32.328711833+02:00 the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+2025-04-27T15:52:32.344303960+02:00 [INFO] [1745761952.344109]: Connected to http://88.44.106.194:2101/near_MSM
+2025-04-27T15:53:13.555053737+02:00 Traceback (most recent call last):
+2025-04-27T15:53:13.555323165+02:00   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+2025-04-27T15:53:13.556200791+02:00     mbf_drc = Client("move_base_flex", timeout=10)
+2025-04-27T15:53:13.556200791+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+2025-04-27T15:53:13.556850574+02:00     self._set_service = self._get_service_proxy('set_parameters', timeout)
+2025-04-27T15:53:13.556850574+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+2025-04-27T15:53:13.557633731+02:00     rospy.wait_for_service(service_name, timeout)
+2025-04-27T15:53:13.557633731+02:00   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+2025-04-27T15:53:13.558308310+02:00     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+2025-04-27T15:53:13.558421178+02:00 rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+2025-04-27T15:53:14.405524668+02:00 [move_base_legacy_relay-6] process has died [pid 119, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/da6711a6-236e-11f0-88ce-dca632c5d92d/move_base_legacy_relay-6.log].
+2025-04-27T15:53:14.405524668+02:00 log file: /root/.ros/log/da6711a6-236e-11f0-88ce-dca632c5d92d/move_base_legacy_relay-6*.log

@@ -1,0 +1,26 @@
+Apr 22 21:36:23 openmower systemd[1]: comitup.service: Scheduled restart job, restart counter is at 42.
+Apr 22 21:36:23 openmower systemd[1]: Stopped Comitup Wifi Management.
+Apr 22 21:36:23 openmower systemd[1]: Starting Comitup Wifi Management...
+Apr 22 21:36:24 openmower comitup[1087]: Traceback (most recent call last):
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/sbin/comitup", line 8, in <module>
+Apr 22 21:36:24 openmower comitup[1087]:     sys.exit(main())
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/share/comitup/comitup/comitup.py", line 123, in main
+Apr 22 21:36:24 openmower comitup[1087]:     (conf, data) = config.load_data()
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/share/comitup/comitup/config.py", line 92, in load_data
+Apr 22 21:36:24 openmower comitup[1087]:     data = persist.persist(
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/share/comitup/comitup/persist.py", line 37, in __init__
+Apr 22 21:36:24 openmower comitup[1087]:     self._load()
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/share/comitup/comitup/persist.py", line 47, in _load
+Apr 22 21:36:24 openmower comitup[1087]:     dct = json.load(fp)
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/lib/python3.9/json/__init__.py", line 293, in load
+Apr 22 21:36:24 openmower comitup[1087]:     return loads(fp.read(),
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/lib/python3.9/json/__init__.py", line 346, in loads
+Apr 22 21:36:24 openmower comitup[1087]:     return _default_decoder.decode(s)
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/lib/python3.9/json/decoder.py", line 337, in decode
+Apr 22 21:36:24 openmower comitup[1087]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+Apr 22 21:36:24 openmower comitup[1087]:   File "/usr/lib/python3.9/json/decoder.py", line 355, in raw_decode
+Apr 22 21:36:24 openmower comitup[1087]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+Apr 22 21:36:24 openmower comitup[1087]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Apr 22 21:36:24 openmower systemd[1]: comitup.service: Main process exited, code=exited, status=1/FAILURE
+Apr 22 21:36:24 openmower systemd[1]: comitup.service: Failed with result 'exit-code'.
+Apr 22 21:36:24 openmower systemd[1]: Failed to start Comitup Wifi Management.

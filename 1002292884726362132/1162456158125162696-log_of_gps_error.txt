@@ -1,0 +1,254 @@
+mowgli-openmower            | [ INFO] [1697220763.694423234]: COMMAND_START
+mowgli-openmower            | [ INFO] [1697220763.698848230]: Currently inside the docking station, we set the robot's pose to the docks pose.
+mowgli-openmower            | [ INFO] [1697220763.712270475]: new actions registered: mower_logic:idle registered 2 actions.
+mowgli-openmower            | [ INFO] [1697220763.715028510]: successfully registered actions for mower_logic:idle
+mowgli-openmower            | [ INFO] [1697220763.715403213]:
+mowgli-openmower            | [ INFO] [1697220763.717480989]:
+mowgli-openmower            | [ INFO] [1697220763.717830785]: --------------------------------------
+mowgli-openmower            | [ INFO] [1697220763.717933266]: - Entered state: UNDOCKING
+mowgli-openmower            | [ INFO] [1697220763.718080377]: --------------------------------------
+mowgli-openmower            | [ INFO] [1697220763.724788963]: Getting Docking Point
+mowgli-openmower            | [ INFO] [1697220763.726000147]: Currently inside the docking station, we set the robot's pose to the docks pose.
+mowgli-openmower            | [ INFO] [1697220763.756668134]: FTCLocalPlannerROS: Got new global plan with 10 points.
+mowgli-openmower            | [ INFO] [1697220763.770781842]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower            | [ INFO] [1697220763.770979398]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower            | [ INFO] [1697220764.159739635]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower            | [ WARN] [1697220764.208619104]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220764.208793881]: GPS timeout
+mowgli-openmower            | [ WARN] [1697220765.208736224]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220765.208854613]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220766.155594805]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower            | [ WARN] [1697220766.708621765]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220766.709242228]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220768.169178272]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower            | [ WARN] [1697220768.208608121]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220768.209595954]: GPS timeout
+mowgli-openmower            | [ WARN] [1697220769.208623019]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220769.708612459]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220770.160274633]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower            | [ WARN] [1697220770.708638987]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220770.708748820]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220771.163352343]: dropping GPS update, since gps_enabled = false.
+mowgli-openmower            | [ WARN] [1697220772.208613028]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220772.208723176]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220772.798565396]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower            | [ INFO] [1697220772.799004729]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower            | [ INFO] [1697220772.848330401]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower            | [ INFO] [1697220772.848835956]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower            | [ INFO] [1697220772.898674239]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower            | [ INFO] [1697220772.899031331]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower            | [ INFO] [1697220772.948663170]: Undock success. Waiting for GPS.
+mowgli-openmower            | [ INFO] [1697220772.952603500]: successfully set GPS to 1
+mowgli-openmower            | [ INFO] [1697220772.952867610]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220773.163029472]: Last GPS was 1693.03 seconds ago.
+mowgli-openmower            | [ WARN] [1697220773.208616130]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220773.208728537]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220773.952974064]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220774.208678139]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220774.209014083]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220774.953052943]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220775.208673222]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220775.209683073]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220775.953036045]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220776.208692083]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220776.708697949]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220776.953035888]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220777.208711019]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220777.708911236]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220777.953174286]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220778.708691949]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220778.710137022]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220778.953024295]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ INFO] [1697220779.953094638]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220780.208766880]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220780.209070768]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220780.953024610]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220781.708700681]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220781.708942254]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220781.953020175]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ INFO] [1697220782.953025184]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ WARN] [1697220783.208673685]: Low quality GPS
+mowgli-openmower            | [ WARN] [1697220783.208823611]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220783.953874748]: waiting for gps. current accuracy: 999
+mowgli-openmower            | [ INFO] [1697220784.156357359]: GPS data now valid
+mowgli-openmower            | [ INFO] [1697220784.156756803]: First GPS data, moving kalman filter to -2.37309, 6.53291
+mowgli-openmower            | [ INFO] [1697220784.208856176]: GPS quality: 0.913977
+mowgli-openmower            | [ WARN] [1697220784.209048361]: GPS timeout
+mowgli-openmower            | [ INFO] [1697220784.953009833]: Got good gps, let's go
+mowgli-openmower            | [ INFO] [1697220794.708733618]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220794.953398094]:
+mowgli-openmower            | [ INFO] [1697220794.953553334]:
+mowgli-openmower            | [ INFO] [1697220794.953810612]: --------------------------------------
+mowgli-openmower            | [ INFO] [1697220794.955164166]: - Entered state: MOWING
+mowgli-openmower            | [ INFO] [1697220794.955365240]: --------------------------------------
+mowgli-openmower            | [ INFO] [1697220794.961171327]: new actions registered: mower_logic:mowing registered 4 actions.
+mowgli-openmower            | [ INFO] [1697220794.964121898]: successfully registered actions for mower_logic:mowing
+mowgli-openmower            | [ INFO] [1697220794.964662693]: MowingBehavior: Creating mowing plan for area: 0
+mowgli-openmower            | [ INFO] [1697220794.971974649]: Got getMowingArea call with index: 0
+mowgli-openmower            | [ INFO] [1697220794.974043203]: MowingBehavior: Detected mow angle: 2.41266
+mowgli-openmower            | [ INFO] [1697220794.974429535]: MowingBehavior: mowing angle offset: 0
+mowgli-openmower            | [ INFO] [1697220794.975419368]: MowingBehavior: Auto-detected mowing angle + mowing angle offset: 2.41266
+mowgli-openmower            | [ INFO] [1697220794.982593953]: generating 3 outlines
+mowgli-openmower            | [ INFO] [1697220795.022245932]: Starting Fill. Poly size:205
+mowgli-openmower            | [ INFO] [1697220795.032660180]: Fill Complete. Polyline count: 3
+mowgli-openmower            | [ INFO] [1697220795.032933254]: Polyline 0 has point count: 317
+mowgli-openmower            | [ INFO] [1697220795.033179680]: Polyline 1 has point count: 48
+mowgli-openmower            | [ INFO] [1697220795.033396735]: Polyline 2 has point count: 123
+mowgli-openmower            | [ INFO] [1697220795.034723530]: Got 254 points
+mowgli-openmower            | [ INFO] [1697220795.035491733]: Got 263 points
+mowgli-openmower            | [ INFO] [1697220795.036657491]: Got 272 points
+mowgli-openmower            | [ INFO] [1697220795.038518304]: Got 1437 points
+mowgli-openmower            | [ INFO] [1697220795.042106689]: Got 74 points
+mowgli-openmower            | [ INFO] [1697220795.042714244]: Got 287 points
+mowgli-openmower            | [ INFO] [1697220795.043614799]: Got 142 points
+mowgli-openmower            | [ INFO] [1697220795.044395557]: Got 134 points
+mowgli-openmower            | [ INFO] [1697220795.045053464]: Got 125 points
+mowgli-openmower            | [ INFO] [1697220795.055789861]: MowingBehavior: Executing mowing plan
+mowgli-openmower            | [ INFO] [1697220795.056234305]: MowingBehavior: Path segment length: 789 poses.
+mowgli-openmower            | [ INFO] [1697220795.056303027]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+mowgli-openmower            | [ INFO] [1697220795.114473635]: FTCLocalPlannerROS: Got new global plan with 202 points.
+mowgli-openmower            | [ INFO] [1697220796.557199920]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower            | [ INFO] [1697220796.557442679]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower            | [ INFO] [1697220804.708835900]: GPS quality: 0.910978
+mowgli-openmower            | [ INFO] [1697220814.358196963]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower            | [ INFO] [1697220814.358406056]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower            | [ INFO] [1697220814.407405469]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower            | [ INFO] [1697220814.408055672]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower            | [ INFO] [1697220815.208747605]: GPS quality: 0.910978
+mowgli-openmower            | [ INFO] [1697220816.557490986]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower            | [ INFO] [1697220816.557914671]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower            | [ INFO] [1697220816.607214362]: Action "move_base" succeeded!
+mowgli-openmower            | [ INFO] [1697220816.615091557]: Clearing Nav Point
+mowgli-openmower            | [ INFO] [1697220816.616946852]: Map Position: x=-25.6016, y=0.614128
+mowgli-openmower            | [ INFO] [1697220816.617104463]: Map Size: x=53.2031, y=39.6388
+mowgli-openmower            | [ INFO] [1697220818.643632512]: docking pose: position:
+mowgli-openmower            |   x: -2.10117
+mowgli-openmower            |   y: 6.30919
+mowgli-openmower            |   z: 0
+mowgli-openmower            | orientation:
+mowgli-openmower            |   x: 0
+mowgli-openmower            |   y: 0
+mowgli-openmower            |   z: -0.20292
+mowgli-openmower            |   w: 0.979195
+mowgli-openmower            |
+mowgli-openmower            | [ INFO] [1697220818.654389853]: MowingBehavior: (MOW) First point reached - Executing mow path with 789 poses
+mowgli-openmower            | [ INFO] [1697220818.681336325]: MowingBehavior: (MOW) Progress: 201/789
+mowgli-openmower            | [ INFO] [1697220818.687698912]: FTCLocalPlannerROS: Got new global plan with 789 points.
+mowgli-openmower            | [ INFO] [1697220818.689299040]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower            | [ INFO] [1697220818.689454243]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower            | [ WARN] [1697220818.708723113]: #### om_mower_logic: setMowerEnabled(1, 0) call
+mowgli-openmower            | [ INFO] [1697220818.723659524]: successfully set mower enabled to 1 (direction 0)
+mowgli-openmower            | [ WARN] [1697220818.723803449]: #### om_mower_logic: setMowerEnabled(1, 0) call completed within 0.0151251s
+mowgli-openmower            | [ INFO] [1697220823.661466025]: MowingBehavior: (MOW) Progress: 7/789
+mowgli-openmower            | [ INFO] [1697220825.709103053]: GPS quality: 0.907805
+mowgli-openmower            | [ INFO] [1697220828.662028353]: MowingBehavior: (MOW) Progress: 17/789
+mowgli-openmower            | [ INFO] [1697220833.759972583]: MowingBehavior: (MOW) Progress: 31/789
+mowgli-openmower            | [ INFO] [1697220836.208701207]: GPS quality: 0.904475
+mowgli-openmower            | [ INFO] [1697220838.767052262]: MowingBehavior: (MOW) Progress: 41/789
+mowgli-openmower            | [ INFO] [1697220843.861541017]: MowingBehavior: (MOW) Progress: 51/789
+mowgli-openmower            | [ INFO] [1697220846.208713263]: GPS quality: 0.901005
+mowgli-openmower            | [ INFO] [1697220848.862597149]: MowingBehavior: (MOW) Progress: 56/789
+mowgli-openmower            | [ INFO] [1697220853.960656468]: MowingBehavior: (MOW) Progress: 63/789
+mowgli-openmower            | [ INFO] [1697220856.708640787]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220858.962324144]: MowingBehavior: (MOW) Progress: 71/789
+mowgli-openmower            | [ INFO] [1697220864.059893328]: MowingBehavior: (MOW) Progress: 79/789
+mowgli-openmower            | [ INFO] [1697220866.708729966]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220869.061877994]: MowingBehavior: (MOW) Progress: 87/789
+mowgli-openmower            | [ INFO] [1697220874.162920028]: MowingBehavior: (MOW) Progress: 95/789
+mowgli-openmower            | [ INFO] [1697220877.208778417]: GPS quality: 0.907805
+mowgli-openmower            | [ INFO] [1697220879.163854864]: MowingBehavior: (MOW) Progress: 104/789
+mowgli-openmower            | [ INFO] [1697220884.261982636]: MowingBehavior: (MOW) Progress: 112/789
+mowgli-openmower            | [ INFO] [1697220887.209273919]: GPS quality: 0.910978
+mowgli-openmower            | [ INFO] [1697220889.362054261]: MowingBehavior: (MOW) Progress: 120/789
+mowgli-openmower            | [ INFO] [1697220894.460078712]: MowingBehavior: (MOW) Progress: 127/789
+mowgli-openmower            | [ INFO] [1697220897.708702799]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220899.463405440]: MowingBehavior: (MOW) Progress: 139/789
+mowgli-openmower            | [ INFO] [1697220904.464154476]: MowingBehavior: (MOW) Progress: 152/789
+mowgli-openmower            | [ INFO] [1697220907.708720800]: GPS quality: 0.910978
+mowgli-openmower            | [ INFO] [1697220909.561641286]: MowingBehavior: (MOW) Progress: 160/789
+mowgli-openmower            | [ INFO] [1697220914.563198521]: MowingBehavior: (MOW) Progress: 168/789
+mowgli-openmower            | [ INFO] [1697220917.708882422]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220919.662700663]: MowingBehavior: (MOW) Progress: 182/789
+mowgli-openmower            | [ WARN] [1697220924.386064572]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220924.485396155]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220924.584782935]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220924.684122388]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ INFO] [1697220924.759926863]: MowingBehavior: (MOW) Progress: 192/789
+mowgli-openmower            | [ WARN] [1697220924.783500818]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220924.882891856]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220924.982220551]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ WARN] [1697220925.081609089]: [driver_gps] not all data has been written to serial. tx_buffer size: 24, written: 0
+mowgli-openmower            | [ERROR] [1697220925.152143863]: [driver_gps] waited 759 ms to write to the tx buffer, serial port is probably congested!
+mowgli-openmower            | [ INFO] [1697220928.208830525]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220929.762836115]: MowingBehavior: (MOW) Progress: 201/789
+mowgli-openmower            | [ INFO] [1697220934.763173932]: MowingBehavior: (MOW) Progress: 216/789
+mowgli-openmower            | [ INFO] [1697220938.708882870]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220939.865872354]: MowingBehavior: (MOW) Progress: 228/789
+mowgli-openmower            | [ INFO] [1697220944.961779124]: MowingBehavior: (MOW) Progress: 239/789
+mowgli-openmower            | [ INFO] [1697220949.208716162]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220949.963623194]: MowingBehavior: (MOW) Progress: 248/789
+mowgli-openmower            | [ INFO] [1697220955.060086429]: MowingBehavior: (MOW) Progress: 256/789
+mowgli-openmower            | [ INFO] [1697220959.708711958]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220960.062876911]: MowingBehavior: (MOW) Progress: 264/789
+mowgli-openmower            | [ INFO] [1697220965.062246144]: MowingBehavior: (MOW) Progress: 276/789
+mowgli-openmower            | [ INFO] [1697220969.708716602]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220970.063180943]: MowingBehavior: (MOW) Progress: 285/789
+mowgli-openmower            | [ INFO] [1697220975.162907542]: MowingBehavior: (MOW) Progress: 294/789
+mowgli-openmower            | [ INFO] [1697220979.708736335]: GPS quality: 0.907805
+mowgli-openmower            | [ INFO] [1697220980.264915023]: MowingBehavior: (MOW) Progress: 304/789
+mowgli-openmower            | [ INFO] [1697220985.361762930]: MowingBehavior: (MOW) Progress: 310/789
+mowgli-openmower            | [ INFO] [1697220990.209388549]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697220990.363580239]: MowingBehavior: (MOW) Progress: 318/789
+mowgli-openmower            | [ INFO] [1697220995.462860813]: MowingBehavior: (MOW) Progress: 325/789
+mowgli-openmower            | [ INFO] [1697221000.563187273]: MowingBehavior: (MOW) Progress: 333/789
+mowgli-openmower            | [ INFO] [1697221000.708731789]: GPS quality: 0.910978
+mowgli-openmower            | [ERROR] [1697221002.280647987]: FTCLocalPlannerROS: Robot is far away from global plan. distance (1.07246) > config.max_follow_distanc
+mowgli-openmower            | [ INFO] [1697221002.281278505]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower            | [ WARN] [1697221002.283281249]: No velocity command received from controller!
+mowgli-openmower            | [ WARN] [1697221005.329561083]: No velocity command received from controller!
+mowgli-openmower            | [ INFO] [1697221005.564163196]: MowingBehavior: (MOW) Progress: 336/789
+mowgli-openmower            | [ WARN] [1697221007.279943157]: The controller has been aborted after it exceeded the patience time
+mowgli-openmower            | [ INFO] [1697221007.356422445]: MowingBehavior: (MOW)  Got status 5 from MBF/FTCPlanner -> Stopping path execution.
+mowgli-openmower            | [ INFO] [1697221007.363323207]: >> MowingBehavior: (MOW) PlannerGetProgress currentIndex = 336 of 789
+mowgli-openmower            | [ INFO] [1697221007.363504315]: >>> State: Aborted <<<
+mowgli-openmower            | [ INFO] [1697221007.364820771]: MowingBehavior (ErrorCatch): Poses before trim:789
+mowgli-openmower            | [ INFO] [1697221007.364961532]: MowingBehavior (ErrorCatch): Trimming 336 points.
+mowgli-openmower            | [ INFO] [1697221007.365803285]: MowingBehavior (ErrorCatch): Poses after trim:453
+mowgli-openmower            | [ INFO] [1697221007.366332908]: MowingBehavior: (MOW) PAUSED due to MBF Error
+mowgli-openmower            | [ INFO] [1697221007.372923965]: new actions registered: mower_logic:mowing registered 4 actions.
+mowgli-openmower            | [ INFO] [1697221007.375641515]: successfully registered actions for mower_logic:mowing
+mowgli-openmower            | [ INFO] [1697221007.376068872]: MowingBehavior: CONTINUING
+mowgli-openmower            | [ INFO] [1697221007.381596573]: new actions registered: mower_logic:mowing registered 4 actions.
+mowgli-openmower            | [ INFO] [1697221007.384256037]: successfully registered actions for mower_logic:mowing
+mowgli-openmower            | [ INFO] [1697221007.385665482]: MowingBehavior: Path segment length: 453 poses.
+mowgli-openmower            | [ INFO] [1697221007.385816872]: MowingBehavior: (FIRST POINT)  Moving to path segment starting point
+mowgli-openmower            | [ INFO] [1697221007.453139239]: FTCLocalPlannerROS: Got new global plan with 9 points.
+mowgli-openmower            | [ INFO] [1697221008.697350579]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower            | [ INFO] [1697221008.697653562]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower            | [ INFO] [1697221010.447737239]: FTCLocalPlannerROS: switching planner to position mode
+mowgli-openmower            | [ INFO] [1697221010.447890814]: FTCLocalPlannerROS: Switching to state 2
+mowgli-openmower            | [ INFO] [1697221010.497865900]: FTCLocalPlannerROS: Reached goal position.
+mowgli-openmower            | [ INFO] [1697221010.498043046]: FTCLocalPlannerROS: Switching to state 3
+mowgli-openmower            | [ INFO] [1697221011.208684114]: GPS quality: 0.913977
+mowgli-openmower            | [ INFO] [1697221012.297295021]: FTCLocalPlannerROS: POST_ROTATE finished.
+mowgli-openmower            | [ INFO] [1697221012.297446133]: FTCLocalPlannerROS: Switching to state 4
+mowgli-openmower            | [ INFO] [1697221012.346902557]: Action "move_base" succeeded!
+mowgli-openmower            | [ INFO] [1697221012.351691775]: Clearing Nav Point
+mowgli-openmower            | [ INFO] [1697221012.351895289]: Map Position: x=-25.6016, y=0.614128
+mowgli-openmower            | [ INFO] [1697221012.351970576]: Map Size: x=53.2031, y=39.6388
+mowgli-openmower            | [ INFO] [1697221014.446475682]: docking pose: position:
+mowgli-openmower            |   x: -2.10117
+mowgli-openmower            |   y: 6.30919
+mowgli-openmower            |   z: 0
+mowgli-openmower            | orientation:
+mowgli-openmower            |   x: 0
+mowgli-openmower            |   y: 0
+mowgli-openmower            |   z: -0.20292
+mowgli-openmower            |   w: 0.979195
+mowgli-openmower            |
+mowgli-openmower            | [ INFO] [1697221014.447707835]: MowingBehavior: (MOW) First point reached - Executing mow path with 453 poses
+mowgli-openmower            | [ INFO] [1697221014.480412674]: MowingBehavior: (MOW) Progress: 8/453
+mowgli-openmower            | [ INFO] [1697221014.487886118]: FTCLocalPlannerROS: Got new global plan with 453 points.
+mowgli-openmower            | [ INFO] [1697221014.489434104]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+mowgli-openmower            | [ INFO] [1697221014.489826262]: FTCLocalPlannerROS: Switching to state 1
+mowgli-openmower            | [ INFO] [1697221019.453815020]: MowingBehavior: (MOW) Progress: 7/453

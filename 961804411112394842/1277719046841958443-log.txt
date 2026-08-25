@@ -1,0 +1,401 @@
+sudo podman logs openmower
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/cc05e7da-63df-11ef-b681-344b50000000/roslaunch-ope                                                                                                                                   nmower-81.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:39403/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/dfp_is_5v: False
+ * /mower_comms/language: en
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/volume: -1
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_mode: 2
+ * /mower_logic/battery_critical_voltage: 25.0
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/docking_extra_time: 0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 4
+ * /mower_logic/enable_mower: True
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 10.0
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/outline_overlap_count: 0
+ * /mower_logic/perimeter_signal:
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: caster.centipede.fr
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: PGUI45
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: centipede
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: centipede
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 48.069566
+ * /xbot_driver_gps/datum_long: 2.095298
+ * /xbot_driver_gps/device_type: serial
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_monitoring/external_mqtt_enable: False
+ * /xbot_monitoring/external_mqtt_hostname:
+ * /xbot_monitoring/external_mqtt_password:
+ * /xbot_monitoring/external_mqtt_port:
+ * /xbot_monitoring/external_mqtt_topic_prefix:
+ * /xbot_monitoring/external_mqtt_username:
+ * /xbot_monitoring/software_version: 62c4f97
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [91]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to cc05e7da-63df-11ef-b681-344b50000000
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [105]
+process[ntrip_client/ntrip_client_node-3]: started with pid [106]
+process[xbot_driver_gps-4]: started with pid [111]
+process[move_base_flex-5]: started with pid [112]
+process[move_base_legacy_relay-6]: started with pid [117]
+process[xbot_positioning-7]: started with pid [121]
+process[joy-8]: started with pid [130]
+process[joy_teleop-9]: started with pid [134]
+process[map_service-10]: started with pid [137]
+process[mower_logic-11]: started with pid [153]
+process[slic3r_coverage_planner-12]: started with pid [161]
+process[twist_mux-13]: started with pid [162]
+process[xbot_monitoring-14]: started with pid [164]
+process[xbot_remote-15]: started with pid [175]
+process[monitoring-16]: started with pid [177]
+[INFO] [1724699840.044356]: Connected to http://caster.centipede.fr:2101/PGUI45
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ERROR] [1724701659.414586]: RTCM data not received for 30 seconds, reconnecting
+[INFO] [1724701659.632948]: Connected to http://caster.centipede.fr:2101/PGUI45
+[WARN] [1724701660.237978]: Found packet, but checksums didn't match
+[WARN] [1724701660.241984]: Expected Checksum: 0x7AC
+[WARN] [1724701660.246442]: Actual Checksum:   0xEA8169
+[WARN] [1724701660.337987]: Found packet, but checksums didn't match
+[WARN] [1724701660.341939]: Expected Checksum: 0x7AC
+[WARN] [1724701660.345877]: Actual Checksum:   0xEA8169
+[WARN] [1724701664.938294]: Found packet, but checksums didn't match
+[WARN] [1724701664.942152]: Expected Checksum: 0xC802E0
+[WARN] [1724701664.946546]: Actual Checksum:   0xE6F5D8
+[WARN] [1724701668.638419]: Found packet, but checksums didn't match
+[WARN] [1724701668.643524]: Expected Checksum: 0x5C8FB8
+[WARN] [1724701668.648100]: Actual Checksum:   0xB0EBFE
+[WARN] [1724701671.239428]: Found packet, but checksums didn't match
+[WARN] [1724701671.245500]: Expected Checksum: 0x75709C
+[WARN] [1724701671.251182]: Actual Checksum:   0x75AD2C
+[2024-08-26 19:47:54] [connect] WebSocket Connection [::ffff:192.168.0.117]:5907                                                                                                                                   1 v13 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like                                                                                                                                    Gecko) Chrome/127.0.0.0 Safari/537.36" / 101
+[WARN] [1724701678.437946]: Found packet, but checksums didn't match
+[WARN] [1724701678.442224]: Expected Checksum: 0x32800C
+[WARN] [1724701678.446584]: Actual Checksum:   0xF2C2F2
+[WARN] [1724701687.337843]: Found packet, but checksums didn't match
+[WARN] [1724701687.341783]: Expected Checksum: 0x7D8255
+[WARN] [1724701687.345727]: Actual Checksum:   0xE9AF21
+[WARN] [1724701688.438468]: Found packet, but checksums didn't match
+[WARN] [1724701688.442694]: Expected Checksum: 0xFE3100
+[WARN] [1724701688.447062]: Actual Checksum:   0xEC9392
+[WARN] [1724701688.538350]: Found packet, but checksums didn't match
+[WARN] [1724701688.543273]: Expected Checksum: 0x1F6445
+[WARN] [1724701688.548358]: Actual Checksum:   0x20363D
+[WARN] [1724701688.555046]: Found packet, but checksums didn't match
+[WARN] [1724701688.559091]: Expected Checksum: 0x0
+[WARN] [1724701688.563200]: Actual Checksum:   0xB1564A
+[WARN] [1724701688.567662]: Found packet, but checksums didn't match
+[WARN] [1724701688.572576]: Expected Checksum: 0xA858E0
+[WARN] [1724701688.577110]: Actual Checksum:   0xFC9079
+[WARN] [1724701731.538262]: Found packet, but checksums didn't match
+[WARN] [1724701731.542565]: Expected Checksum: 0x97512
+[WARN] [1724701731.546401]: Actual Checksum:   0xFA1115
+[WARN] [1724701737.638252]: Found packet, but checksums didn't match
+[WARN] [1724701737.643313]: Expected Checksum: 0xFB9428
+[WARN] [1724701737.648844]: Actual Checksum:   0xE3AF46
+[WARN] [1724701744.639182]: Found packet, but checksums didn't match
+[WARN] [1724701744.646314]: Expected Checksum: 0xE41523
+[WARN] [1724701744.652989]: Actual Checksum:   0x35183A
+[WARN] [1724701744.660908]: Found packet, but checksums didn't match
+[WARN] [1724701744.667857]: Expected Checksum: 0x7C6500
+[WARN] [1724701744.675366]: Actual Checksum:   0x6150A5
+[WARN] [1724701752.638242]: Found packet, but checksums didn't match
+[WARN] [1724701752.643266]: Expected Checksum: 0x45D300
+[WARN] [1724701752.647786]: Actual Checksum:   0xBEF6A9
+[WARN] [1724701763.638407]: Found packet, but checksums didn't match
+[WARN] [1724701763.642801]: Expected Checksum: 0x9DC678
+[WARN] [1724701763.647470]: Actual Checksum:   0xE6ABCD
+[WARN] [1724701764.638252]: Found packet, but checksums didn't match
+[WARN] [1724701764.642580]: Expected Checksum: 0x2C49E8
+[WARN] [1724701764.646807]: Actual Checksum:   0x17C421
+[WARN] [1724701764.651905]: Found packet, but checksums didn't match
+[WARN] [1724701764.656782]: Expected Checksum: 0x5C190
+[WARN] [1724701764.661179]: Actual Checksum:   0x3E9C6F
+[WARN] [1724701770.839112]: Found packet, but checksums didn't match
+[WARN] [1724701770.845986]: Expected Checksum: 0xFB9450
+[WARN] [1724701770.853356]: Actual Checksum:   0xEBCAC5
+[WARN] [1724701778.838028]: Found packet, but checksums didn't match
+[WARN] [1724701778.842847]: Expected Checksum: 0xE02AD1
+[WARN] [1724701778.846662]: Actual Checksum:   0x6BB00
+[WARN] [1724701778.850870]: Found packet, but checksums didn't match
+[WARN] [1724701778.855095]: Expected Checksum: 0xBC88C0
+[WARN] [1724701778.859416]: Actual Checksum:   0x2B6882
+[WARN] [1724701785.638272]: Found packet, but checksums didn't match
+[WARN] [1724701785.642753]: Expected Checksum: 0x440EE0
+[WARN] [1724701785.646670]: Actual Checksum:   0x8952B4
+[WARN] [1724701787.538251]: Found packet, but checksums didn't match
+[WARN] [1724701787.542145]: Expected Checksum: 0x2322AC
+[WARN] [1724701787.546154]: Actual Checksum:   0xF1BDFF
+[WARN] [1724701787.637934]: Found packet, but checksums didn't match
+[WARN] [1724701787.641787]: Expected Checksum: 0xFA1F8C
+[WARN] [1724701787.646324]: Actual Checksum:   0x7B3B59
+[WARN] [1724701787.650574]: Found packet, but checksums didn't match
+[WARN] [1724701787.655926]: Expected Checksum: 0x184BA8
+[WARN] [1724701787.660021]: Actual Checksum:   0x607342
+[WARN] [1724701788.538121]: Found packet, but checksums didn't match
+[WARN] [1724701788.542119]: Expected Checksum: 0x9FB6C2
+[WARN] [1724701788.545990]: Actual Checksum:   0x79141B
+[WARN] [1724701800.838055]: Found packet, but checksums didn't match
+[WARN] [1724701800.842589]: Expected Checksum: 0xE0E00
+[WARN] [1724701800.847081]: Actual Checksum:   0x5E4E8E
+[WARN] [1724701800.851928]: Found packet, but checksums didn't match
+[WARN] [1724701800.856312]: Expected Checksum: 0xCA4AC0
+[WARN] [1724701800.860399]: Actual Checksum:   0xD82B27
+[WARN] [1724701800.865414]: Found packet, but checksums didn't match
+[WARN] [1724701800.869831]: Expected Checksum: 0x2C8498
+[WARN] [1724701800.874589]: Actual Checksum:   0x5DA8A4
+[WARN] [1724701809.838132]: Found packet, but checksums didn't match
+[WARN] [1724701809.842852]: Expected Checksum: 0x582E2D
+[WARN] [1724701809.846780]: Actual Checksum:   0xC0BAEF
+[WARN] [1724701830.738215]: Found packet, but checksums didn't match
+[WARN] [1724701830.742716]: Expected Checksum: 0x128
+[WARN] [1724701830.746624]: Actual Checksum:   0x50A16A
+[WARN] [1724701837.438420]: Found packet, but checksums didn't match
+[WARN] [1724701837.442841]: Expected Checksum: 0xB4350C
+[WARN] [1724701837.446924]: Actual Checksum:   0x3F6D0F
+[WARN] [1724701846.237852]: Found packet, but checksums didn't match
+[WARN] [1724701846.241847]: Expected Checksum: 0xFE9D58
+[WARN] [1724701846.246052]: Actual Checksum:   0x1CC0DB
+[WARN] [1724701873.437946]: Found packet, but checksums didn't match
+[WARN] [1724701873.442205]: Expected Checksum: 0xC5D477
+[WARN] [1724701873.446849]: Actual Checksum:   0x9FC007
+[WARN] [1724701898.538080]: Found packet, but checksums didn't match
+[WARN] [1724701898.542694]: Expected Checksum: 0x2289CF
+[WARN] [1724701898.546691]: Actual Checksum:   0x50AE45
+[WARN] [1724701898.550821]: Found packet, but checksums didn't match
+[WARN] [1724701898.555300]: Expected Checksum: 0xC19056
+[WARN] [1724701898.559317]: Actual Checksum:   0x7781B0
+[WARN] [1724701904.438040]: Found packet, but checksums didn't match
+[WARN] [1724701904.442152]: Expected Checksum: 0xEA1400
+[WARN] [1724701904.446889]: Actual Checksum:   0xA4A5D7
+[WARN] [1724701904.451055]: Found packet, but checksums didn't match
+[WARN] [1724701904.456131]: Expected Checksum: 0x2DF810
+[WARN] [1724701904.461737]: Actual Checksum:   0xAD1E73
+[WARN] [1724701904.538061]: Found packet, but checksums didn't match
+[WARN] [1724701904.542373]: Expected Checksum: 0x2DF810
+[WARN] [1724701904.547392]: Actual Checksum:   0xAD1E73
+[WARN] [1724701909.638747]: Found packet, but checksums didn't match
+[WARN] [1724701909.644049]: Expected Checksum: 0x568BAD
+[WARN] [1724701909.648946]: Actual Checksum:   0x86284B
+[WARN] [1724701909.738250]: Found packet, but checksums didn't match
+[WARN] [1724701909.742420]: Expected Checksum: 0xD53DD3
+[WARN] [1724701909.746776]: Actual Checksum:   0x8D6402
+[WARN] [1724701928.638445]: Found packet, but checksums didn't match
+[WARN] [1724701928.642723]: Expected Checksum: 0x170621
+[WARN] [1724701928.646853]: Actual Checksum:   0x914D90
+[WARN] [1724701929.638171]: Found packet, but checksums didn't match
+[WARN] [1724701929.642107]: Expected Checksum: 0xF80000
+[WARN] [1724701929.646155]: Actual Checksum:   0xD2C4B0
+[WARN] [1724701932.538239]: Found packet, but checksums didn't match
+[WARN] [1724701932.542645]: Expected Checksum: 0xFCEDA1
+[WARN] [1724701932.546689]: Actual Checksum:   0x5C6837
+[WARN] [1724701944.638370]: Found packet, but checksums didn't match
+[WARN] [1724701944.642791]: Expected Checksum: 0x25A9
+[WARN] [1724701944.646918]: Actual Checksum:   0xFDBC93
+[WARN] [1724701955.638283]: Found packet, but checksums didn't match
+[WARN] [1724701955.642340]: Expected Checksum: 0x9E797C
+[WARN] [1724701955.646457]: Actual Checksum:   0xB29138
+[WARN] [1724701971.738061]: Found packet, but checksums didn't match
+[WARN] [1724701971.742323]: Expected Checksum: 0xE66F24
+[WARN] [1724701971.746681]: Actual Checksum:   0xC26255
+[WARN] [1724701971.751227]: Found packet, but checksums didn't match
+[WARN] [1724701971.755486]: Expected Checksum: 0xCB1F85
+[WARN] [1724701971.759965]: Actual Checksum:   0x4FE276
+[WARN] [1724701972.637985]: Found packet, but checksums didn't match
+[WARN] [1724701972.642816]: Expected Checksum: 0x7D700E
+[WARN] [1724701972.646856]: Actual Checksum:   0xC889D6
+[WARN] [1724702021.438085]: Found packet, but checksums didn't match
+[WARN] [1724702021.443001]: Expected Checksum: 0xADEF62
+[WARN] [1724702021.447115]: Actual Checksum:   0x1DBB3E
+[WARN] [1724702022.438232]: Found packet, but checksums didn't match
+[WARN] [1724702022.443014]: Expected Checksum: 0x600FFC
+[WARN] [1724702022.447884]: Actual Checksum:   0xEDB4B9
+[WARN] [1724702024.938007]: Found packet, but checksums didn't match
+[WARN] [1724702024.942078]: Expected Checksum: 0x779E1D
+[WARN] [1724702024.946664]: Actual Checksum:   0xA1C95
+[WARN] [1724702024.951041]: Found packet, but checksums didn't match
+[WARN] [1724702024.955899]: Expected Checksum: 0xA00016
+[WARN] [1724702024.959878]: Actual Checksum:   0xE25DA3

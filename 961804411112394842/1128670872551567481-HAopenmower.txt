@@ -1,0 +1,82 @@
+  - title: Openmower
+    path: openmower
+    badges: []
+    cards:
+      - type: horizontal-stack
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_abort_mowing
+            icon: mdi:stop
+            name: Stop
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_continue_mowing
+            icon: mdi:play-pause
+            name: Continue
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_pause_mowing
+            icon: mdi:pause
+            name: Pause
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_skip_area
+            icon: mdi:skip-next
+            name: Skip area
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: button.openmower_start_mowing
+            icon: mdi:play
+            name: Start
+      - type: entities
+        entities:
+          - entity: sensor.openmower_current_state
+          - entity: sensor.openmower_battery
+          - entity: binary_sensor.openmower_is_charging
+          - entity: binary_sensor.openmower_emergency
+        title: State
+      - type: entities
+        entities:
+          - entity: sensor.openmower_gps
+          - entity: sensor.openmower_mow_motor_current
+        title: Mowing data
+      - type: entities
+        entities:
+          - entity: sensor.openmower_left_esc_temp
+          - entity: sensor.openmower_right_esc_temp
+          - entity: sensor.openmower_mow_esc_temp
+          - entity: sensor.openmower_mow_motor_temp
+          - entity: sensor.openmower_pi_cpu_temperature
+          - entity: sensor.openmower_pi_cpu_frequency
+        title: Temp
+      - type: entities
+        entities:
+          - entity: sensor.openmower_v_battery
+          - entity: sensor.openmower_charge_current
+          - entity: sensor.openmowerv_charge
+        title: Battery
+      - type: iframe
+        url: http://192.168.1.65:8080/#/
+        aspect_ratio: 100%
+      - type: entities
+        entities:
+          - entity: sensor.clemenselflein_open_mower_ros_latest_commit
+          - entity: sensor.clemenselflein_openmower_latest_commit
+          - entity: sensor.clemenselflein_openmoweros_latest_commit
+        title: GIT - latest commits

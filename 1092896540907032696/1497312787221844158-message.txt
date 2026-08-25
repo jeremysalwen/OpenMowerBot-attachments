@@ -1,0 +1,940 @@
+auto-starting new master
+process[master]: started with pid [50]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to c43b67f6-400f-11f1-a77e-2ccf67ca22af
+process[rosout-1]: started with pid [60]
+started core service [/rosout]
+process[mower_comms_v2-2]: started with pid [67]
+process[ntrip_client-3]: started with pid [68]
+process[move_base_flex-4]: started with pid [69]
+process[move_base_legacy_relay-5]: started with pid [74]
+process[xbot_positioning-6]: started with pid [76][INFO] [1777057189.335575177]: Bind IP (Robot Internal): 172.16.78.1
+
+[INFO] [1777057189.342725968]: Found new service (Type: EmergencyService, ID: 1, endpoint: 172.16.78.150:49153)
+[INFO] [1777057189.343493130]: Found matching service, registering callbacks
+process[joy-7]: started with pid [79]
+[INFO] [1777057189.354644657]: Wheel ticks [1/m]: 1600
+[INFO] [1777057189.354701120]: Wheel distance [m]: 0.43
+process[joy_teleop-8]: started with pid [83]
+[INFO] [1777057189.364662060]: GPS protocol: UBX, baud rate: 921600, gps port index:1
+process[map_service-9]: started with pid [92]
+process[mower_logic-10]: started with pid [96]
+[INFO] [1777057189.397370922]: IMU axis config: +X-Y-Z
+process[slic3r_coverage_planner-11]: started with pid [98]
+process[twist_mux-12]: started with pid [104]
+process[xbot_monitoring-13]: started with pid [107]
+process[xbot_remote-14]: started with pid [109]
+[INFO] [1777057189.446292391]: Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)
+process[monitoring-15]: started with pid [114]
+[INFO] [1777057189.461079933]: Found matching service, registering callbacks
+[INFO] [1777057189.464119471]: Antenna offset: 0, 0
+[INFO] [1777057189.480504707]: Datum: 49.951, 6.08251, 0
+[ERROR] [1777057189.515139687]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1777057189.522357255]: Teleop enable button 0.
+[INFO] [1777057189.541244013]: Turbo on button 4.
+[INFO] [1777057189.541497864]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1777057189.541556493]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1777057189.541650103]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1777057189.541724399]: Turbo for angular axis yaw is scale 3.000000.
+[INFO] [1777057189.554271362]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1777057189.583990704]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1777057189.603878808]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1777057189.632084697]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+[INFO] [1777057189.662951810]: waitForService: Service [/xbot/rpc/register] is now available.
+[INFO] [1777057189.668266130]: MQTT Connected
+[INFO] [1777057189.678660272]: new methods registered: mower_map_service registered 1 methods.
+[INFO] [1777057189.679192640]: Loaded 0 areas from: map.json
+[INFO] [1777057189.679269861]: Map Position: x=0, y=0
+[INFO] [1777057189.679284250]: Map Size: x=10, y=10
+[INFO] [1777057189.690392721]: new methods registered: xbot_monitoring registered 2 methods.
+[INFO] [1777057189.691052662]: docking pose: position: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+orientation: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+  w: 1
+
+[INFO] [1777057189.698516062]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057189.709844736]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057189.789122025]: om_mower_logic: Setting mower_logic config
+[INFO] [1777057189.796756294]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057189.808525854]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057189.814096154]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057189.821079502]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057189.828432162]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057189.834300794]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057189.842957483]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057189.847869972]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057189.849038280]: Monitoring received new mower_logic config
+[INFO] [1777057189.853332736]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057189.853370088]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1777057189.858565613]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057189.869384475]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057189.869576344]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1777057189.873019397]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057189.876470192]: Monitoring received new mower_logic config
+[INFO] [1777057189.878420162]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057189.878462365]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057189.910740303]: Waiting for emergency message
+[INFO] [1777057189.963299621]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057189.963389047]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1777057189.966850193]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057189.967149154]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1777057189.969414363]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057189.969682232]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1777057189.971627646]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057189.971678572]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1777057189.973991243]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057189.974021650]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1777057189.976408173]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057189.976642487]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1777057189.977597]: Connected to http://stream.spslux.lu:5005/VRS_GREC_MSM5
+[INFO] [1777057189.980326946]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057189.980381131]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1777057190.067420893]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057190.067673780]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1777057190.074309185]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057190.074395314]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1777057190.359705659]: [ID=1] Sending Service Claim
+[INFO] [1777057190.359833455]: [ID=5] Sending Service Claim
+[INFO] [1777057190.360022880]: >>> [ID=1] Received claim message
+[INFO] [1777057190.360126638]: [ID=1] Successfully claimed service
+[INFO] [1777057190.360179768]: >>> [ID=1] service claimed successfully.
+[INFO] [1777057190.360198879]: >>> [ID=1] Service started without requiring configuration
+[INFO] [1777057190.360212823]: >>> [ID=5] Received claim message
+[INFO] [1777057190.360226971]: >>> [ID=5] service claimed successfully.
+[INFO] [1777057190.360265619]: PJB: Service Connected! ID: 1
+[INFO] [1777057190.360405859]: [ID=5] Successfully claimed service
+[INFO] [1777057190.360457081]: PJB: Service Connected! ID: 5
+[INFO] [1777057190.910804595]: Waiting for a power message
+[INFO] [1777057191.147515283]: >>> [ID=5] Requesting Configuration
+[INFO] [1777057191.147856763]: >>> [ID=5] Received Configuration
+[INFO] [1777057191.147889022]: >>> [ID=5] Service started after successful configuration
+[INFO] [1777057191.636676179]: >>> [ID=5] Successfully Configured Charger
+[INFO] [1777057191.910791590]: Waiting for a status message
+[WARN] [1777057194.770135320]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100313 timeout was 0.1.
+[INFO] [1777057198.320035920]: Found new service (Type: InputService, ID: 7, endpoint: 172.16.78.150:49153)
+[INFO] [1777057198.320084956]: Found matching service, registering callbacks
+[INFO] [1777057198.350455647]: Found new service (Type: MowerService, ID: 3, endpoint: 172.16.78.150:49153)
+[INFO] [1777057198.350496054]: Found matching service, registering callbacks
+[INFO] [1777057199.149167615]: [ID=3] Sending Service Claim
+[INFO] [1777057199.149394392]: [ID=7] Sending Service Claim
+[INFO] [1777057199.149594316]: [ID=3] Successfully claimed service
+[INFO] [1777057199.149725315]: PJB: Service Connected! ID: 3
+[INFO] [1777057199.149843333]: [ID=7] Successfully claimed service
+[INFO] [1777057199.149864000]: PJB: Service Connected! ID: 7
+[INFO] [1777057199.149911185]: >>> [ID=3] Received claim message
+[INFO] [1777057199.149941518]: >>> [ID=3] service claimed successfully.
+[INFO] [1777057199.149958425]: >>> [ID=3] Service started without requiring configuration
+[INFO] [1777057199.149970314]: >>> [ID=7] Received claim message
+[INFO] [1777057199.149980925]: >>> [ID=7] service claimed successfully.
+[INFO] [1777057199.318816628]: Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)
+[INFO] [1777057199.318863553]: Found matching service, registering callbacks
+[INFO] [1777057199.319705456]: Found new service (Type: HighLevelService, ID: 8, endpoint: 172.16.78.150:49153)
+[INFO] [1777057199.319728937]: Found matching service, registering callbacks
+[INFO] [1777057199.320544488]: Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)
+[INFO] [1777057199.320566766]: Found matching service, registering callbacks
+[WARN] [1777057199.792153692]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100354 timeout was 0.1.
+[INFO] [1777057199.910788192]: Waiting for a pose message
+[INFO] [1777057199.910828933]: Waiting for left ESC status message
+[INFO] [1777057200.147996508]: >>> [ID=7] Requesting Configuration
+[ERROR] [1777057200.148073748]: Input config file not specified
+[INFO] [1777057200.148167785]: Input config JSON has 2 bytes, compressed to 3 bytes
+[INFO] [1777057200.148468487]: >>> [ID=7] Received Configuration
+[INFO] [1777057200.148531561]: >>> [ID=7] Service started after successful configuration
+[INFO] [1777057200.151273674]: [ID=4] Sending Service Claim
+[INFO] [1777057200.151353248]: [ID=6] Sending Service Claim
+[INFO] [1777057200.151434043]: [ID=8] Sending Service Claim
+[INFO] [1777057200.151508710]: [ID=4] Successfully claimed service
+[INFO] [1777057200.151543524]: PJB: Service Connected! ID: 4
+[INFO] [1777057200.151593894]: [ID=6] Successfully claimed service
+[INFO] [1777057200.151616690]: PJB: Service Connected! ID: 6
+[INFO] [1777057200.151701857]: [ID=8] Successfully claimed service
+[INFO] [1777057200.151740949]: PJB: Service Connected! ID: 8
+[INFO] [1777057200.151781115]: >>> [ID=4] Received claim message
+[INFO] [1777057200.151824504]: >>> [ID=4] service claimed successfully.
+[INFO] [1777057200.151981411]: >>> [ID=6] service claimed successfully.
+[INFO] [1777057200.152001559]: >>> [ID=8] Received claim message
+[INFO] [1777057200.152014114]: >>> [ID=8] service claimed successfully.
+[INFO] [1777057200.152061058]: >>> [ID=8] Service started without requiring configuration
+[INFO] [1777057201.078497640]: >>> [ID=6] Requesting Configuration
+[INFO] [1777057201.078726435]: >>> [ID=6] Received Configuration
+[INFO] [1777057201.078859749]: >>> [ID=6] Service started after successful configuration
+[INFO] [1777057201.145003875]: >>> [ID=4] Requesting Configuration
+[INFO] [1777057201.145153745]: >>> [ID=4] Received Configuration
+[INFO] [1777057201.145185559]: >>> [ID=4] Service started after successful configuration
+[INFO] [1777057201.145620131]: Started gyro calibration
+[WARN] [1777057204.811169661]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100481 timeout was 0.1.
+[INFO] [1777057206.146397987]: Calibrated gyro offset: 0.000277999
+[INFO] [1777057206.422432703]: local_costmap: Using plugin "static_layer"
+[INFO] [1777057206.431462724]: Requesting the map...
+[INFO] [1777057206.634180244]: Resizing static layer to 200 X 200 at 0.050000 m/pix
+[INFO] [1777057206.734119763]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1777057206.738821124]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1777057206.741691070]:     Subscribed to Topics: 
+[INFO] [1777057206.748862620]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1777057206.784338651]: global_costmap: Using plugin "static_layer"
+[INFO] [1777057206.789030863]: Requesting the map...
+[INFO] [1777057206.790842668]: Resizing costmap to 200 X 200 at 0.050000 m/pix
+[INFO] [1777057206.890879315]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1777057206.893967093]: global_costmap: Using plugin "obstacle_layer"
+[INFO] [1777057206.895803027]:     Subscribed to Topics: 
+[INFO] [1777057206.900653628]: global_costmap: Using plugin "inflation_layer"
+[INFO] [1777057206.948026310]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1777057206.979169033]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1777057206.979220051]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1777057207.009610297]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1777057207.009659759]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+[WARN] [1777057207.010290774]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+[WARN] [1777057280.687446]: Reconnecting because we received 0 bytes from the socket even though it said there was data available 5 times
+[ERROR] [1777057280.689731]: Reconnecting in 9.0 seconds
+[INFO] [1777057289.732656]: Connected to http://stream.spslux.lu:5005/VRS_GREC_MSM5
+[monitoring-15] killing on exit
+[xbot_remote-14] killing on exit
+[slic3r_coverage_planner-11] killing on exit
+[twist_mux-12] killing on exit
+[map_service-9] killing on exit
+[xbot_monitoring-13] killing on exit
+[mower_logic-10] killing on exit
+[joy_teleop-8] killing on exit
+[joy-7] killing on exit
+[xbot_positioning-6] killing on exit
+[WARN] [1777057398.573885990]: Costmap2DROS transform timeout. Current time: 1777057398.5738, global_pose stamp: 1777057398.2328, tolerance: 0.3000
+[move_base_legacy_relay-5] killing on exit
+[mower_comms_v2-2] killing on exit
+[move_base_flex-4] killing on exit
+[ntrip_client-3] killing on exit
+[INFO] [1777057398.641404463]: Shutting Down
+[INFO] [1777057398.641440444]: Shutting down ServiceDiscovery
+[INFO] [1777057398.641690313]: Shutdown costmap navigation server.
+[INFO] [1777057398.641818479]: Cancel all goals for "get_path".
+[INFO] [1777057398.641934534]: Cancel all goals for "exe_path".
+[INFO] [1777057398.642004218]: Cancel all goals for "recovery".
+[INFO] [1777057398.642094403]: Stopping local and global costmap for shutdown
+[INFO] [1777057398.642783]: Stopping RTCM publisher
+[INFO] [1777057398.734988]: Disconnecting NTRIP client
+[INFO] [1777057399.318984005]: ServiceDiscovery Stopped.
+[INFO] [1777057399.319032061]: Shutting down ServiceIO
+[INFO] [1777057399.322482040]: ServiceIO Stopped.
+[INFO] [1777057399.322516040]: Shutting down RemoteLoggingReceiver
+[INFO] [1777057399.799715505]: RemoteLoggingReceiver Stopped.
+... logging to /data/ros/log/478b9cac-4010-11f1-b7cf-2ccf67ca22af/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:38809/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/bind_ip: 172.16.78.1
+ * /ll/services/diff_drive/ticks_per_m: 1600.0
+ * /ll/services/diff_drive/wheel_distance_m: 0.43
+ * /ll/services/gps/baud_rate: 921600
+ * /ll/services/gps/datum_height: 0.0
+ * /ll/services/gps/datum_lat: 49.950987
+ * /ll/services/gps/datum_long: 6.082513
+ * /ll/services/gps/port_index: 1
+ * /ll/services/gps/protocol: UBX
+ * /ll/services/gps/uart_index: 1
+ * /ll/services/imu/axis_config: +X-Y-Z
+ * /ll/services/power/battery_critical_high_voltage: 21.5
+ * /ll/services/power/battery_critical_voltage: 16.5
+ * /ll/services/power/battery_empty_voltage: 17.0
+ * /ll/services/power/battery_full_voltage: 21.0
+ * /ll/services/sound/language: en
+ * /ll/services/sound/volume: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/docking_approach_distance: 1.0
+ * /mower_logic/docking_extra_time: 1.0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 3
+ * /mower_logic/enable_mower: False
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 5.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 2.0
+ * /mower_logic/undock_distance: 1.0
+ * /mower_logic/undock_fixed_angle: False
+ * /mower_logic/undock_use_curve: True
+ * /ntrip_client/authenticate: True
+ * /ntrip_client/ca_cert: 
+ * /ntrip_client/cert: 
+ * /ntrip_client/host: stream.spslux.lu
+ * /ntrip_client/key: 
+ * /ntrip_client/mountpoint: VRS_GREC_MSM5
+ * /ntrip_client/nmea_max_length: 82
+ * /ntrip_client/nmea_min_length: 3
+ * /ntrip_client/ntrip_version: 
+ * /ntrip_client/password: voxKog-9sewwa-denvec
+ * /ntrip_client/port: 5005
+ * /ntrip_client/rtcm_frame_id: odom
+ * /ntrip_client/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/rtcm_timeout_seconds: 30
+ * /ntrip_client/ssl: False
+ * /ntrip_client/username: Lytchy2023
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /twist_mux/locks: []
+ * /twist_mux/topics: [{'name': 'naviga...
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ntrip_client/ntrip_ros.py)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+process[master]: started with pid [50]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 478b9cac-4010-11f1-b7cf-2ccf67ca22af
+process[rosout-1]: started with pid [60]
+started core service [/rosout]
+process[mower_comms_v2-2]: started with pid [67]
+process[ntrip_client-3]: started with pid [68]
+process[move_base_flex-4]: started with pid [69]
+process[move_base_legacy_relay-5]: started with pid [74]
+process[xbot_positioning-6]: started with pid [76]
+[INFO] [1777057409.648383365]: Bind IP (Robot Internal): 172.16.78.1
+process[joy-7]: started with pid [85]
+process[joy_teleop-8]: started with pid [87]
+[INFO] [1777057409.670900936]: Wheel ticks [1/m]: 1600
+[INFO] [1777057409.670968528]: Wheel distance [m]: 0.43
+process[map_service-9]: started with pid [91]
+[INFO] [1777057409.678882018]: GPS protocol: UBX, baud rate: 921600, gps port index:1
+process[mower_logic-10]: started with pid [95]
+[INFO] [1777057409.688258537]: IMU axis config: +X-Y-Z
+process[slic3r_coverage_planner-11]: started with pid [101]
+process[twist_mux-12]: started with pid [106]
+process[xbot_monitoring-13]: started with pid [109]
+[INFO] [1777057409.744675056]: Datum: 49.951, 6.08251, 0
+process[xbot_remote-14]: started with pid [110]
+process[monitoring-15]: started with pid [119]
+[INFO] [1777057409.772423096]: Antenna offset: 0, 0
+[ERROR] [1777057409.826379760]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1777057409.830758364]: Teleop enable button 0.
+[INFO] [1777057409.846808084]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1777057409.851361131]: Turbo on button 4.
+[INFO] [1777057409.851413335]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1777057409.851432260]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1777057409.851447260]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1777057409.851461242]: Turbo for angular axis yaw is scale 3.000000.
+[INFO] [1777057409.869358562]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1777057409.881246529]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1777057409.931970156]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+[INFO] [1777057409.974148926]: waitForService: Service [/xbot/rpc/register] is now available.
+[INFO] [1777057409.977129020]: MQTT Connected
+[INFO] [1777057409.995837817]: new methods registered: mower_map_service registered 1 methods.
+[INFO] [1777057409.997155272]: Loaded 0 areas from: map.json
+[INFO] [1777057409.997254531]: Map Position: x=0, y=0
+[INFO] [1777057409.997275216]: Map Size: x=10, y=10
+[INFO] [1777057410.006855622]: docking pose: position: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+orientation: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+  w: 1
+
+[INFO] [1777057410.032197399]: new methods registered: xbot_monitoring registered 2 methods.
+[INFO] [1777057410.036599299]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057410.046732943]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057410.085924527]: om_mower_logic: Setting mower_logic config
+[INFO] [1777057410.133845059]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057410.142417638]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057410.148332455]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057410.149908205]: Monitoring received new mower_logic config
+[INFO] [1777057410.156869553]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057410.162795351]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057410.167343065]: Monitoring received new mower_logic config
+[INFO] [1777057410.168529392]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057410.168629206]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1777057410.169246980]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057410.176902528]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057410.180764709]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057410.184102985]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057410.187471039]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057410.209136412]: Waiting for emergency message
+[INFO] [1777057410.287199]: Connected to http://stream.spslux.lu:5005/VRS_GREC_MSM5
+[INFO] [1777057410.294529149]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057410.294570723]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1777057410.298223331]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057410.298264053]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1777057410.302373603]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057410.302410695]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1777057410.304734496]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057410.304765978]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1777057410.307117094]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057410.307149242]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1777057410.399662770]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057410.399715492]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1777057410.403878190]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057410.403915616]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1777057410.406432045]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057410.406462508]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1777057410.408905327]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057410.408936975]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1777057410.411617089]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057410.411660348]: Subscribing to sensor data for sensor with name: V Charge
+[monitoring-15] killing on exit
+[xbot_remote-14] killing on exit
+[xbot_monitoring-13] killing on exit
+[twist_mux-12] killing on exit
+[slic3r_coverage_planner-11] killing on exit[map_service-9] killing on exit
+
+[mower_logic-10] killing on exit
+[joy-7] killing on exit
+[xbot_positioning-6] killing on exit
+[joy_teleop-8] killing on exit
+[move_base_legacy_relay-5] killing on exit
+[move_base_flex-4] killing on exit
+[INFO] [1777057414.308303441]: Shutdown costmap navigation server.
+[ntrip_client-3] killing on exit
+[INFO] [1777057414.312029]: Stopping RTCM publisher
+[INFO] [1777057414.391465]: Disconnecting NTRIP client
+[mower_comms_v2-2] killing on exit
+[INFO] [1777057414.402942827]: Shutting Down
+[INFO] [1777057414.403016253]: Shutting down ServiceDiscovery
+[INFO] [1777057414.775745334]: ServiceDiscovery Stopped.
+[INFO] [1777057414.775788334]: Shutting down ServiceIO
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 146, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown
+[INFO] [1777057415.799705189]: ServiceIO Stopped.
+[INFO] [1777057415.799767782]: Shutting down RemoteLoggingReceiver
+[INFO] [1777057415.803688610]: RemoteLoggingReceiver Stopped.
+... logging to /data/ros/log/50e86eba-4010-11f1-ab18-2ccf67ca22af/roslaunch-openmower-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:35853/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /ll/bind_ip: 172.16.78.1
+ * /ll/services/diff_drive/ticks_per_m: 1600.0
+ * /ll/services/diff_drive/wheel_distance_m: 0.43
+ * /ll/services/gps/baud_rate: 921600
+ * /ll/services/gps/datum_height: 0.0
+ * /ll/services/gps/datum_lat: 49.950987
+ * /ll/services/gps/datum_long: 6.082513
+ * /ll/services/gps/port_index: 1
+ * /ll/services/gps/protocol: UBX
+ * /ll/services/gps/uart_index: 1
+ * /ll/services/imu/axis_config: +X-Y-Z
+ * /ll/services/power/battery_critical_high_voltage: 21.5
+ * /ll/services/power/battery_critical_voltage: 16.5
+ * /ll/services/power/battery_empty_voltage: 17.0
+ * /ll/services/power/battery_full_voltage: 21.0
+ * /ll/services/sound/language: en
+ * /ll/services/sound/volume: -1
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/oscillation_recovery: False
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/oscillation_recovery: False
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_layer/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_layer/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/obstacle_layer/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/plugins: [{'name': 'static...
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_layer/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_logic/automatic_mode: 0
+ * /mower_logic/docking_approach_distance: 1.0
+ * /mower_logic/docking_extra_time: 1.0
+ * /mower_logic/docking_redock: False
+ * /mower_logic/docking_retry_count: 3
+ * /mower_logic/enable_mower: False
+ * /mower_logic/gps_timeout: 5.0
+ * /mower_logic/gps_wait_time: 5.0
+ * /mower_logic/mow_angle_increment: 0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_overlap_count: 1
+ * /mower_logic/rain_check_seconds: 20
+ * /mower_logic/rain_delay_minutes: 30
+ * /mower_logic/rain_mode: 0
+ * /mower_logic/undock_angle: 0.0
+ * /mower_logic/undock_angled_distance: 2.0
+ * /mower_logic/undock_distance: 1.0
+ * /mower_logic/undock_fixed_angle: False
+ * /mower_logic/undock_use_curve: True
+ * /ntrip_client/authenticate: True
+ * /ntrip_client/ca_cert: 
+ * /ntrip_client/cert: 
+ * /ntrip_client/host: stream.spslux.lu
+ * /ntrip_client/key: 
+ * /ntrip_client/mountpoint: VRS_GREC_MSM5
+ * /ntrip_client/nmea_max_length: 82
+ * /ntrip_client/nmea_min_length: 3
+ * /ntrip_client/ntrip_version: 
+ * /ntrip_client/password: voxKog-9sewwa-denvec
+ * /ntrip_client/port: 5005
+ * /ntrip_client/rtcm_frame_id: odom
+ * /ntrip_client/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/rtcm_timeout_seconds: 30
+ * /ntrip_client/ssl: False
+ * /ntrip_client/username: Lytchy2023
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /twist_mux/locks: []
+ * /twist_mux/topics: [{'name': 'naviga...
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms_v2 (mower_comms_v2/mower_comms_v2)
+    mower_logic (mower_logic/mower_logic)
+    ntrip_client (ntrip_client/ntrip_ros.py)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+
+auto-starting new master
+process[master]: started with pid [50]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 50e86eba-4010-11f1-ab18-2ccf67ca22af
+process[rosout-1]: started with pid [60]
+started core service [/rosout]
+process[mower_comms_v2-2]: started with pid [67]
+process[ntrip_client-3]: started with pid [68]
+process[move_base_flex-4]: started with pid [69]
+process[move_base_legacy_relay-5]: started with pid [74]
+process[xbot_positioning-6]: started with pid [76]
+[INFO] [1777057425.352021575]: Bind IP (Robot Internal): 172.16.78.1
+process[joy-7]: started with pid [79]
+process[joy_teleop-8]: started with pid [86]
+[INFO] [1777057425.380311075]: Wheel ticks [1/m]: 1600
+[INFO] [1777057425.380360131]: Wheel distance [m]: 0.43
+[INFO] [1777057425.383359520]: GPS protocol: UBX, baud rate: 921600, gps port index:1
+process[map_service-9]: started with pid [90]
+process[mower_logic-10]: started with pid [97]
+[INFO] [1777057425.401024713]: IMU axis config: +X-Y-Z
+process[slic3r_coverage_planner-11]: started with pid [102]
+process[twist_mux-12]: started with pid [105]
+process[xbot_monitoring-13]: started with pid [106]
+process[xbot_remote-14]: started with pid [108]
+process[monitoring-15]: started with pid [109]
+[INFO] [1777057425.497330349]: Datum: 49.951, 6.08251, 0
+[INFO] [1777057425.498895118]: Antenna offset: 0, 0
+[ERROR] [1777057425.535145422]: Couldn't open joystick /dev/input/js0. Will retry every second.
+[INFO] [1777057425.556333335]: Teleop enable button 0.
+[INFO] [1777057425.557512050]: Topic handler 'navigation' subscribed to topic 'nav_vel': timeout = 0.500000s, priority = 10
+[INFO] [1777057425.587758538]: Turbo on button 4.
+[INFO] [1777057425.587797649]: Linear axis x on 1 at scale 0.500000.
+[INFO] [1777057425.587954945]: Turbo for linear axis x is scale 1.000000.
+[INFO] [1777057425.587987241]: Angular axis yaw on 0 at scale 1.500000.
+[INFO] [1777057425.588003500]: Turbo for angular axis yaw is scale 3.000000.
+[INFO] [1777057425.600455593]: Topic handler 'logic' subscribed to topic 'logic_vel': timeout = 0.500000s, priority = 50
+[INFO] [1777057425.616385574]: Topic handler 'logic' subscribed to topic 'override_vel': timeout = 0.500000s, priority = 100
+[INFO] [1777057425.679930755]: MQTT Connected
+[INFO] [1777057425.688304039]: waitForService: Service [/xbot/rpc/register] has not been advertised, waiting...
+[INFO] [1777057425.725094915]: waitForService: Service [/xbot/rpc/register] is now available.
+[INFO] [1777057425.732088170]: new methods registered: mower_map_service registered 1 methods.
+[INFO] [1777057425.733166404]: Loaded 0 areas from: map.json
+[INFO] [1777057425.733391995]: Map Position: x=0, y=0
+[INFO] [1777057425.733422865]: Map Size: x=10, y=10
+[INFO] [1777057425.742285036]: new methods registered: xbot_monitoring registered 2 methods.
+[INFO] [1777057425.749032699]: docking pose: position: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+orientation: 
+  x: 0
+
+  y: 0
+
+  z: 0
+
+  w: 1
+
+[INFO] [1777057425.750394617]: Found new sensor topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057425.769222303]: Found new sensor topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057425.791230951]: Found new sensor topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057425.799414051]: Found new sensor topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057425.810754984]: Found new sensor topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057425.819285286]: om_mower_logic: Setting mower_logic config
+[INFO] [1777057425.844149213]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057425.851517466]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057425.858828219]: Found new sensor topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057425.863110490]: Monitoring received new mower_logic config
+[INFO] [1777057425.864592611]: Found new sensor topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057425.870670687]: Found new sensor topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057425.875502547]: Found new sensor topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057425.879549875]: Monitoring received new mower_logic config
+[INFO] [1777057425.890475311]: Got sensor info for sensor on topic Charge Current on topic /xbot_monitoring/sensors/om_charge_current/info
+[INFO] [1777057425.890520144]: Subscribing to sensor data for sensor with name: Charge Current
+[INFO] [1777057425.911873629]: Waiting for emergency message
+[INFO] [1777057425.993987256]: Got sensor info for sensor on topic Mow ESC Temp on topic /xbot_monitoring/sensors/om_mow_esc_temp/info
+[INFO] [1777057425.994025812]: Subscribing to sensor data for sensor with name: Mow ESC Temp
+[INFO] [1777057426.001590]: Connected to http://stream.spslux.lu:5005/VRS_GREC_MSM5
+[INFO] [1777057426.004242992]: Got sensor info for sensor on topic GPS Accuracy on topic /xbot_monitoring/sensors/om_gps_accuracy/info
+[INFO] [1777057426.004310603]: Subscribing to sensor data for sensor with name: GPS Accuracy
+[INFO] [1777057426.008283987]: Got sensor info for sensor on topic Mow Motor Current on topic /xbot_monitoring/sensors/om_mow_motor_current/info
+[INFO] [1777057426.008323598]: Subscribing to sensor data for sensor with name: Mow Motor Current
+[INFO] [1777057426.011737337]: Got sensor info for sensor on topic Mow Motor Temp on topic /xbot_monitoring/sensors/om_mow_motor_temp/info
+[INFO] [1777057426.011901521]: Subscribing to sensor data for sensor with name: Mow Motor Temp
+[INFO] [1777057426.014728208]: Got sensor info for sensor on topic Left ESC Temp on topic /xbot_monitoring/sensors/om_left_esc_temp/info
+[INFO] [1777057426.015020892]: Subscribing to sensor data for sensor with name: Left ESC Temp
+[INFO] [1777057426.017250267]: Got sensor info for sensor on topic Charge State on topic /xbot_monitoring/sensors/om_charge_state/info
+[INFO] [1777057426.017586543]: Subscribing to sensor data for sensor with name: Charge State
+[INFO] [1777057426.019617291]: Got sensor info for sensor on topic Right ESC Temp on topic /xbot_monitoring/sensors/om_right_esc_temp/info
+[INFO] [1777057426.019917567]: Subscribing to sensor data for sensor with name: Right ESC Temp
+[INFO] [1777057426.022288608]: Got sensor info for sensor on topic Mow Motor Revolutions on topic /xbot_monitoring/sensors/om_mow_motor_rpm/info
+[INFO] [1777057426.022455311]: Subscribing to sensor data for sensor with name: Mow Motor Revolutions
+[INFO] [1777057426.024814278]: Got sensor info for sensor on topic V Battery on topic /xbot_monitoring/sensors/om_v_battery/info
+[INFO] [1777057426.024980370]: Subscribing to sensor data for sensor with name: V Battery
+[INFO] [1777057426.027413411]: Got sensor info for sensor on topic V Charge on topic /xbot_monitoring/sensors/om_v_charge/info
+[INFO] [1777057426.027522929]: Subscribing to sensor data for sensor with name: V Charge
+[INFO] [1777057428.319549001]: Found new service (Type: InputService, ID: 7, endpoint: 172.16.78.150:49153)
+[INFO] [1777057428.319670408]: Found matching service, registering callbacks
+[INFO] [1777057428.351854051]: Found new service (Type: MowerService, ID: 3, endpoint: 172.16.78.150:49153)
+[INFO] [1777057428.351934903]: Found matching service, registering callbacks
+[INFO] [1777057428.407703741]: [ID=3] Sending Service Claim
+[INFO] [1777057428.407794963]: [ID=7] Sending Service Claim
+[INFO] [1777057428.407995276]: >>> [ID=3] Received claim message
+[INFO] [1777057428.408022869]: >>> [ID=3] service claimed successfully.
+[INFO] [1777057428.408165109]: [ID=3] Successfully claimed service
+[INFO] [1777057428.408297126]: PJB: Service Connected! ID: 3
+[INFO] [1777057428.408397422]: [ID=7] Successfully claimed service
+[INFO] [1777057428.408418700]: PJB: Service Connected! ID: 7
+[INFO] [1777057428.408546440]: >>> [ID=3] Service started without requiring configuration
+[INFO] [1777057428.408567143]: >>> [ID=7] Received claim message
+[INFO] [1777057428.408583551]: >>> [ID=7] service claimed successfully.
+[INFO] [1777057429.319284797]: Found new service (Type: ImuService, ID: 4, endpoint: 172.16.78.150:49153)
+[INFO] [1777057429.319349186]: Found matching service, registering callbacks
+[INFO] [1777057429.320801492]: Found new service (Type: HighLevelService, ID: 8, endpoint: 172.16.78.150:49153)
+[INFO] [1777057429.320949491]: Found matching service, registering callbacks
+[INFO] [1777057429.322305557]: Found new service (Type: GpsService, ID: 6, endpoint: 172.16.78.150:49153)
+[INFO] [1777057429.322342149]: Found matching service, registering callbacks
+[INFO] [1777057429.341271667]: Found new service (Type: EmergencyService, ID: 1, endpoint: 172.16.78.150:49153)
+[INFO] [1777057429.341331019]: Found matching service, registering callbacks
+[INFO] [1777057429.393399231]: >>> [ID=7] Requesting Configuration
+[INFO] [1777057429.393588748]: Input config JSON has 2 bytes, compressed to 3 bytes
+[ERROR] [1777057429.393520600]: Input config file not specified
+[INFO] [1777057429.393823951]: >>> [ID=7] Received Configuration
+[INFO] [1777057429.393862191]: >>> [ID=7] Service started after successful configuration
+[INFO] [1777057429.443845063]: Found new service (Type: PowerService, ID: 5, endpoint: 172.16.78.150:49153)
+[INFO] [1777057429.444013544]: Found matching service, registering callbacks
+[INFO] [1777057429.448506314]: [ID=1] Sending Service Claim
+[INFO] [1777057429.448565517]: [ID=4] Sending Service Claim
+[INFO] [1777057429.448612646]: [ID=5] Sending Service Claim
+[INFO] [1777057429.448654016]: [ID=6] Sending Service Claim
+[INFO] [1777057429.448692368]: [ID=8] Sending Service Claim
+[INFO] [1777057429.448735275]: [ID=1] Successfully claimed service
+[INFO] [1777057429.448754553]: PJB: Service Connected! ID: 1
+[INFO] [1777057429.448836201]: >>> [ID=1] Received claim message
+[INFO] [1777057429.448864367]: >>> [ID=1] service claimed successfully.
+[INFO] [1777057429.448885645]: >>> [ID=1] Service started without requiring configuration
+[INFO] [1777057429.448906848]: >>> [ID=4] Received claim message
+[INFO] [1777057429.448925959]: >>> [ID=4] service claimed successfully.
+[INFO] [1777057429.448947181]: >>> [ID=5] Received claim message
+[INFO] [1777057429.449033570]: >>> [ID=5] service claimed successfully.
+[INFO] [1777057429.449058514]: >>> [ID=6] Received claim message
+[INFO] [1777057429.449133662]: [ID=4] Successfully claimed service
+[INFO] [1777057429.449158680]: PJB: Service Connected! ID: 4
+[INFO] [1777057429.449179032]: [ID=5] Successfully claimed service
+[INFO] [1777057429.449229550]: >>> [ID=6] service claimed successfully.
+[INFO] [1777057429.449252272]: >>> [ID=8] Received claim message
+[INFO] [1777057429.449297253]: PJB: Service Connected! ID: 5
+[INFO] [1777057429.449505419]: [ID=6] Successfully claimed service
+[INFO] [1777057429.449537196]: >>> [ID=8] service claimed successfully.
+[INFO] [1777057429.449560344]: >>> [ID=8] Service started without requiring configuration
+[INFO] [1777057429.449591103]: PJB: Service Connected! ID: 6
+[INFO] [1777057429.449615233]: [ID=8] Successfully claimed service
+[INFO] [1777057429.449702973]: PJB: Service Connected! ID: 8
+[INFO] [1777057429.911938917]: Waiting for a power message
+[INFO] [1777057430.319000519]: >>> [ID=6] Requesting Configuration
+[INFO] [1777057430.319267499]: >>> [ID=6] Received Configuration
+[INFO] [1777057430.319308610]: >>> [ID=6] Service started after successful configuration
+[INFO] [1777057430.441793870]: >>> [ID=5] Requesting Configuration
+[INFO] [1777057430.442314385]: >>> [ID=5] Received Configuration
+[INFO] [1777057430.442358348]: >>> [ID=5] Service started after successful configuration
+[INFO] [1777057430.445999012]: >>> [ID=4] Requesting Configuration
+[INFO] [1777057430.446257325]: >>> [ID=4] Received Configuration
+[INFO] [1777057430.446399306]: >>> [ID=4] Service started after successful configuration
+[INFO] [1777057430.446713767]: Started gyro calibration
+[INFO] [1777057430.660655525]: >>> [ID=5] Successfully Configured Charger
+[WARN] [1777057430.812966832]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100489 timeout was 0.1.
+[INFO] [1777057430.911943749]: Waiting for a status message
+[INFO] [1777057430.911996471]: Waiting for a pose message
+[INFO] [1777057430.912024748]: Waiting for left ESC status message
+[INFO] [1777057435.451898119]: Calibrated gyro offset: 0.000358472
+[INFO] [1777057435.725828505]: local_costmap: Using plugin "static_layer"
+[INFO] [1777057435.735008544]: Requesting the map...
+[INFO] [1777057435.937727072]: Resizing static layer to 200 X 200 at 0.050000 m/pix
+[INFO] [1777057436.037669409]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1777057436.042079809]: local_costmap: Using plugin "obstacle_layer"
+[INFO] [1777057436.045419197]:     Subscribed to Topics: 
+[INFO] [1777057436.052757154]: local_costmap: Using plugin "inflation_layer"
+[INFO] [1777057436.086854675]: global_costmap: Using plugin "static_layer"
+[INFO] [1777057436.091179650]: Requesting the map...
+[INFO] [1777057436.093237304]: Resizing costmap to 200 X 200 at 0.050000 m/pix
+[INFO] [1777057436.193279437]: Received a 200 X 200 map at 0.050000 m/pix
+[INFO] [1777057436.196513196]: global_costmap: Using plugin "obstacle_layer"
+[INFO] [1777057436.198732553]:     Subscribed to Topics: 
+[INFO] [1777057436.204654926]: global_costmap: Using plugin "inflation_layer"
+[INFO] [1777057436.264620424]: The plugin with the type "global_planner/GlobalPlanner" has been loaded successfully under the name "GlobalPlanner".
+[INFO] [1777057436.305705053]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1777057436.305766589]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "FTCPlanner".
+[INFO] [1777057436.337806993]: FTCLocalPlannerROS: Version 2 Init.
+[INFO] [1777057436.337857771]: The plugin with the type "ftc_local_planner/FTCPlanner" has been loaded successfully under the name "DockingFTCPlanner".
+[WARN] [1777057436.338311305]: No recovery_behaviors plugins configured! - Use the param "recovery_behaviors", which must be a list of tuples with a name and a type.
+openmower@openmower:~ $ 

@@ -1,0 +1,150 @@
+[ INFO] [1694704904.691543882]: MowingBehavior: (MOW) Progress: 253/260
+[ INFO] [1694704907.759292771]: GPS quality: 0.907805
+[ INFO] [1694704908.553549163]: FTCLocalPlannerROS: switching planner to position mode
+[ INFO] [1694704908.553692422]: FTCLocalPlannerROS: Switching to state 2
+[ INFO] [1694704908.603158931]: FTCLocalPlannerROS: Reached goal position.
+[ INFO] [1694704908.603303746]: FTCLocalPlannerROS: Switching to state 3
+[ INFO] [1694704908.653594738]: FTCLocalPlannerROS: POST_ROTATE finished.
+[ INFO] [1694704908.653736108]: FTCLocalPlannerROS: Switching to state 4
+[ INFO] [1694704908.788227815]: MowingBehavior: (MOW)  Got status 6 from MBF/FTCPlanner -> Stopping path execution.
+[ INFO] [1694704908.791971469]: >> MowingBehavior: (MOW) PlannerGetProgress currentIndex = 259 of 260
+[ INFO] [1694704908.792073155]: >>> State: Succeeded <<<
+[ INFO] [1694704908.792130599]: MowingBehavior: (MOW) Mow path finished, skipping to next mow path.
+[ INFO] [1694704908.792225914]: MowingBehavior: Executing mowing plan - finished
+[ INFO] [1694704908.842211109]: MowingBehavior: Creating mowing plan for area: 1
+[ INFO] [1694704908.847970322]: Got getMowingArea call with index: 1
+[ERROR] [1694704908.848103082]: No mowing area with index: 1
+[ERROR] [1694704908.848578953]: MowingBehavior: Error loading mowing area
+[ INFO] [1694704908.849097917]: MowingBehavior: Could not create mowing plan, docking
+[ INFO] [1694704908.897139108]: new actions registered: mower_logic:mowing registered 4 actions.
+[ INFO] [1694704908.898556314]: successfully registered actions for mower_logic:mowing
+[ INFO] [1694704908.898856482]:
+[ INFO] [1694704908.899018204]:
+[ INFO] [1694704908.899154167]: --------------------------------------
+[ INFO] [1694704908.899295834]: - Entered state: DOCKING
+[ INFO] [1694704908.899429834]: --------------------------------------
+[ INFO] [1694704908.904358694]: Getting Docking Point
+[ WARN] [1694704908.905324066]: Waiting for good GPS
+[ WARN] [1694704909.259271948]: #### om_mower_logic: setMowerEnabled(0, 1) call
+[ INFO] [1694704909.263553640]: Setting mow enabled to 0
+[ INFO] [1694704909.264368808]: successfully set mower enabled to 0 (direction 1)
+[ WARN] [1694704909.264718568]: #### om_mower_logic: setMowerEnabled(0, 1) call completed within 0.00546132s
+[ERROR] [1694704909.483154242]: Motor controller fault code: 1
+[ERROR] [1694704909.762983555]: Setting emergency!!
+[ INFO] [1694704909.763648149]: successfully set emergency enabled to 1
+[ERROR] [1694704909.763914260]: EMERGENCY: at least one motor control errored. errors left: status: 100
+current: 0
+tacho: 8295878
+temperature_motor: -90.8
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -82.6
+temperature_pcb: 48.4
+
+[ERROR] [1694704909.783129625]: Low Level Emergency. Bitmask was: 1
+[ INFO] [1694704909.905669753]: Calculating approach path
+[ INFO] [1694704909.970077599]: FTCLocalPlannerROS: Got new global plan with 1019 points.
+[ INFO] [1694704910.259271216]: - Behaviour.h: abort() called
+[ERROR] [1694704910.263858150]: Setting emergency!!
+[ INFO] [1694704910.264460354]: successfully set emergency enabled to 1
+[ERROR] [1694704910.264669558]: EMERGENCY: at least one motor control errored. errors left: status: 100
+current: 0
+tacho: 8295878
+temperature_motor: -82.3
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -84.7
+temperature_pcb: 48.4
+
+[ERROR] [1694704910.483169764]: Motor controller fault code: 1
+[ERROR] [1694704910.762686290]: Setting emergency!!
+[ INFO] [1694704910.763231180]: successfully set emergency enabled to 1
+[ERROR] [1694704910.763527588]: EMERGENCY: at least one motor control errored. errors left: status: 100
+current: 0
+tacho: 8295879
+temperature_motor: -81.8
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -81.8
+temperature_pcb: 48.5
+
+[ERROR] [1694704910.803125800]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704911.263223018]: Setting emergency!!
+[ INFO] [1694704911.264071686]: successfully set emergency enabled to 1
+[ERROR] [1694704911.264246261]: EMERGENCY: at least one motor control errored. errors left: status: 100
+current: 0
+tacho: 8295879
+temperature_motor: -81
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -83.1
+temperature_pcb: 48.4
+
+[ERROR] [1694704911.503105992]: Motor controller fault code: 1
+[ERROR] [1694704911.803324618]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704912.263239971]: Setting emergency!!
+[ INFO] [1694704912.264062343]: successfully set emergency enabled to 1
+[ERROR] [1694704912.264219658]: EMERGENCY: at least one motor control errored. errors left: status: 200
+current: 0
+tacho: 8295879
+temperature_motor: -79
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -86.2
+temperature_pcb: 48.5
+
+[ERROR] [1694704912.543160408]: Motor controller fault code: 1
+[ERROR] [1694704912.764487476]: Setting emergency!!
+[ INFO] [1694704912.765076662]: successfully set emergency enabled to 1
+[ERROR] [1694704912.765225088]: EMERGENCY: at least one motor control errored. errors left: status: 100
+current: 0
+tacho: 8295879
+temperature_motor: -81.6
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -84.7
+temperature_pcb: 48.4
+
+[ERROR] [1694704912.823150994]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704913.263230081]: Setting emergency!!
+[ INFO] [1694704913.263734415]: successfully set emergency enabled to 1
+[ERROR] [1694704913.263945805]: EMERGENCY: at least one motor control errored. errors left: status: 200
+current: 0
+tacho: 8295879
+temperature_motor: -77
+temperature_pcb: 42.3
+, status right: status: 100
+current: 0
+tacho: 4286846211
+temperature_motor: -91.8
+temperature_pcb: 48.3
+
+[ERROR] [1694704913.563149189]: Motor controller fault code: 1
+[ERROR] [1694704913.823179681]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704914.843099129]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704915.843136834]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704916.843486512]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704917.863145504]: Low Level Emergency. Bitmask was: 1
+[ INFO] [1694704918.259291709]: GPS quality: 0.885982
+[ERROR] [1694704918.863199941]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704919.883111802]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704920.883124498]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704921.883262462]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704922.903136684]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704923.903213500]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704924.923098647]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704925.923124668]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704926.923237698]: Low Level Emergency. Bitmask was: 1
+[ERROR] [1694704927.943158743]: Low Level Emergency. Bitmask was: 1

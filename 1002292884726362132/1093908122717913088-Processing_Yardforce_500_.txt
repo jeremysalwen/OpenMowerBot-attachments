@@ -1,0 +1,149 @@
+Processing Yardforce 500 (STM32F103 VCT6) (platform: ststm32; board: genericSTM32F401CC; framework: stm32cube)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/genericSTM32F401CC.html
+PLATFORM: ST STM32 (15.6.0) > STM32F401CC (64k RAM. 256k Flash)
+HARDWARE: STM32F401CCU6 84MHz, 64KB RAM, 256KB Flash
+DEBUG: Current (blackmagic) External (blackmagic, jlink, stlink)
+PACKAGES:
+ - framework-stm32cubef4 @ 1.26.2
+ - tool-ldscripts-ststm32 @ 0.2.0
+ - toolchain-gccarmnoneeabi @ 1.70201.0 (7.2.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 52 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- STM32_USB_Device_Library-CDC
+|   |-- STM32_USB_Device_Library-Core
+|-- STM32_USB_Device_Library-Core
+Building in release mode
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_adc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_adc_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_can.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_cec.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_crc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_cryp.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_cryp_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_dac.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_dac_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_dcmi.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_hcd.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_i2c.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_i2c_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_i2s.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_i2s_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_irda.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_iwdg.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_lptim.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_ltdc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_ltdc_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_mmc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_nand.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_nor.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_pccard.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_pcd.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_pcd_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_pwr.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_qspi.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_rcc_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_rng.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_rtc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_rtc_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_sai.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_sai_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_sdram.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_smartcard.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_smbus.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_spdifrx.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_sram.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_tim.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_tim_ex.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_usart.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_hal_wwdg.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_adc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_crc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_dac.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_dma.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_dma2d.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_exti.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_fmc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_fmpi2c.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_fsmc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_gpio.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_i2c.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_lptim.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_pwr.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_rcc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_rng.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_rtc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_spi.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_tim.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_usart.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_usb.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\FrameworkHALDriver\Src\stm32f4xx_ll_utils.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\src\blademotor.o
+Compiling .pio\build\Yardforce 500 (STM32F103 VCT6)\src\drivemotor.o
+In file included from src\blademotor.c:24:0:
+src\blademotor.c: In function 'BLADEMOTOR_Init':
+include/board.h:222:53: warning: implicit declaration of function '__HAL_RCC_USART3_CLK_ENABLE'; did you mean '__HAL_RCC_USART2_CLK_ENABLE'? [-Wimplicit-function-declaration]
+         #define BLADEMOTOR_USART_USART_CLK_ENABLE() __HAL_RCC_USART3_CLK_ENABLE()
+                                                     ^
+src\blademotor.c:93:5: note: in expansion of macro 'BLADEMOTOR_USART_USART_CLK_ENABLE'
+     BLADEMOTOR_USART_USART_CLK_ENABLE();
+     ^
+src\blademotor.c:97:28: error: 'GPIO_MODE_AF_INPUT' undeclared (first use in this function); did you mean 'GPIO_MODE_INPUT'?
+     GPIO_InitStruct.Mode = GPIO_MODE_AF_INPUT;
+                            ^~~~~~~~~~~~~~~~~~
+                            GPIO_MODE_INPUT
+src\blademotor.c:97:28: note: each undeclared identifier is reported only once for each function it appears in
+In file included from src\blademotor.c:24:0:
+include/board.h:213:43: error: 'USART3' undeclared (first use in this function); did you mean 'USART6'?
+         #define BLADEMOTOR_USART_INSTANCE USART3
+                                           ^
+src\blademotor.c:108:41: note: in expansion of macro 'BLADEMOTOR_USART_INSTANCE'
+     BLADEMOTOR_USART_Handler.Instance = BLADEMOTOR_USART_INSTANCE;// USART3
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+src\blademotor.c:120:30: error: 'DMA1_Channel3' undeclared (first use in this function)
+     hdma_uart3_rx.Instance = DMA1_Channel3;
+                              ^~~~~~~~~~~~~
+src\blademotor.c:137:30: error: 'DMA1_Channel2' undeclared (first use in this function); did you mean 'DMA1_Channel3'?
+     hdma_uart3_tx.Instance = DMA1_Channel2;
+                              ^~~~~~~~~~~~~
+                              DMA1_Channel3
+src\blademotor.c:153:26: error: 'USART3_IRQn' undeclared (first use in this function); did you mean 'USART6_IRQn'?
+     HAL_NVIC_SetPriority(USART3_IRQn, 0, 0);
+                          ^~~~~~~~~~~
+                          USART6_IRQn
+*** [.pio\build\Yardforce 500 (STM32F103 VCT6)\src\blademotor.o] Error 1
+src\drivemotor.c: In function 'DRIVEMOTOR_Init':
+src\drivemotor.c:136:28: error: 'GPIO_MODE_AF_INPUT' undeclared (first use in this function); did you mean 'GPIO_MODE_INPUT'?
+     GPIO_InitStruct.Mode = GPIO_MODE_AF_INPUT;
+                            ^~~~~~~~~~~~~~~~~~
+                            GPIO_MODE_INPUT
+src\drivemotor.c:136:28: note: each undeclared identifier is reported only once for each function it appears in
+src\drivemotor.c:149:5: warning: implicit declaration of function '__HAL_AFIO_REMAP_USART2_ENABLE'; did you mean '__HAL_USART_ENABLE'? [-Wimplicit-function-declaration]
+     __HAL_AFIO_REMAP_USART2_ENABLE();
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     __HAL_USART_ENABLE
+src\drivemotor.c:163:31: error: 'DMA1_Channel6' undeclared (first use in this function)
+     hdma_usart2_rx.Instance = DMA1_Channel6;
+                               ^~~~~~~~~~~~~
+src\drivemotor.c:179:31: error: 'DMA1_Channel7' undeclared (first use in this function); did you mean 'DMA1_Channel6'?
+     hdma_usart2_tx.Instance = DMA1_Channel7;
+                               ^~~~~~~~~~~~~
+                               DMA1_Channel6
+*** [.pio\build\Yardforce 500 (STM32F103 VCT6)\src\drivemotor.o] Error 1
+========================================================================== [FAILED] Took 28.15 seconds ==========================================================================
+
+Environment                     Status    Duration
+------------------------------  --------  ------------
+Yardforce 500 (STM32F103 VCT6)  FAILED    00:00:28.148

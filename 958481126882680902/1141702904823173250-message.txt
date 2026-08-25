@@ -1,0 +1,275 @@
+openmower@openmower:~ $ sudo podman logs -f openmower
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/0424a66a-3ad3-11ee-b014-d83add228c5f/roslaunch-ope                                                                  nmower-81.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:35075/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/coalesce_interval: 0.06
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/check_obstacles: False
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/check_obstacles: False
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_comms/wheel_distance_m: 0.325
+ * /mower_comms/wheel_ticks_per_m: 1600.0
+ * /mower_logic/automatic_start: 1
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/motor_cold_temperature: 40.0
+ * /mower_logic/motor_hot_temperature: 80.0
+ * /mower_logic/mow_angle_offset: 0
+ * /mower_logic/mow_angle_offset_is_absolute: False
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 0.05
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: 156.63.133.115
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: ODOT_G_R_E_C_RTX_...
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: Bc6D59##8!UywaMVw5
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: JSB139
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /teleop/move/axis_mappings: [{'axis': 1, 'tar...
+ * /teleop/move/deadman_buttons: [0]
+ * /teleop/move/message_type: geometry_msgs/Twist
+ * /teleop/move/topic_name: joy_vel
+ * /teleop/move/type: topic
+ * /teleop/record_dock/deadman_buttons: [2]
+ * /teleop/record_dock/message_type: std_msgs/Bool
+ * /teleop/record_dock/message_value: [{'target': 'data...
+ * /teleop/record_dock/topic_name: record_dock
+ * /teleop/record_dock/type: topic
+ * /teleop/record_mowing/deadman_buttons: [3, 14]
+ * /teleop/record_mowing/message_type: std_msgs/Bool
+ * /teleop/record_mowing/message_value: [{'target': 'data...
+ * /teleop/record_mowing/topic_name: record_mowing
+ * /teleop/record_mowing/type: topic
+ * /teleop/record_navigation/deadman_buttons: [3, 13]
+ * /teleop/record_navigation/message_type: std_msgs/Bool
+ * /teleop/record_navigation/message_value: [{'target': 'data...
+ * /teleop/record_navigation/topic_name: record_navigation
+ * /teleop/record_navigation/type: topic
+ * /teleop/record_polygon/deadman_buttons: [1]
+ * /teleop/record_polygon/message_type: std_msgs/Bool
+ * /teleop/record_polygon/message_value: [{'target': 'data...
+ * /teleop/record_polygon/topic_name: record_polygon
+ * /teleop/record_polygon/type: topic
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 41.3605882814
+ * /xbot_driver_gps/datum_long: -81.47280170281032
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_driver_gps/ubx_mode: True
+ * /xbot_positioning/antenna_offset_x: 0.3
+ * /xbot_positioning/antenna_offset_y: 0.0
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (joy_teleop/joy_teleop.py)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [89]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 0424a66a-3ad3-11ee-b014-d83add228c5f
+process[rosout-1]: started with pid [101]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [109]
+process[ntrip_client/ntrip_client_node-3]: started with pid [110]
+process[xbot_driver_gps-4]: started with pid [111]
+process[move_base_flex-5]: started with pid [117]
+process[move_base_legacy_relay-6]: started with pid [125]
+process[xbot_positioning-7]: started with pid [130]
+process[joy-8]: started with pid [133]
+process[joy_teleop-9]: started with pid [139]
+process[map_service-10]: started with pid [144]
+process[mower_logic-11]: started with pid [155]
+process[slic3r_coverage_planner-12]: started with pid [157]
+process[twist_mux-13]: started with pid [159]
+process[xbot_monitoring-14]: started with pid [164]
+process[xbot_remote-15]: started with pid [167]
+process[monitoring-16]: started with pid [179]
+INFO: cannot create a symlink to latest log directory: [Errno 2] No such file or                                                                   directory: '/root/.ros/log/latest'
+[INFO] [1692038854.828455]: Connected to http://156.63.133.115:2101/ODOT_G_R_E_C                                                                  _RTX_RTCM3
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ERROR] [1692049438.280034]: RTCM data not received for 30 seconds, reconnecting
+[WARN] [1692049442.121457]: NMEA sent before client was connected, discarding NM                                                                  EA
+[ERROR] [1692049443.289141]: Unable to connect socket to server at http://156.63                                                                  .133.115:2101
+[ERROR] [1692049443.295567]: Exception: timed out
+[ERROR] [1692049443.300829]: Reconnect to http://156.63.133.115:2101 failed. Ret                                                                  rying in 5 seconds
+[INFO] [1692049448.448285]: Connected to http://156.63.133.115:2101/ODOT_G_R_E_C                                                                  _RTX_RTCM3
+[WARN] [1692049483.253280]: Found packet, but checksums didn't match
+[WARN] [1692049483.257343]: Expected Checksum: 0xF1890F
+[WARN] [1692049483.262087]: Actual Checksum:   0x697B00
+[WARN] [1692049499.253781]: Found packet, but checksums didn't match
+[WARN] [1692049499.258184]: Expected Checksum: 0xB6876C
+[WARN] [1692049499.265551]: Actual Checksum:   0xD61CC0
+[WARN] [1692049510.053691]: Found packet, but checksums didn't match
+[WARN] [1692049510.059441]: Expected Checksum: 0x60000
+[WARN] [1692049510.070180]: Actual Checksum:   0xD17F32
+[2023-08-14 22:45:38] [connect] WebSocket Connection [fe80::ff:ebdd:2781:e10f%wl                                                                  an0]:60405 v13 "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.                                                                  15 (KHTML, like Gecko) CriOS/115.0.5790.160 Mobile/15E148 Safari/604.1" / 101
+[WARN] [1692138273.078430]: Found packet, but checksums didn't match
+[WARN] [1692138273.082578]: Expected Checksum: 0xB9C892
+[WARN] [1692138273.086421]: Actual Checksum:   0x53C455
+[WARN] [1692138603.678685]: Found packet, but checksums didn't match
+[WARN] [1692138603.684048]: Expected Checksum: 0xBFF80
+[WARN] [1692138603.689799]: Actual Checksum:   0xF9495E
+[WARN] [1692138903.578481]: Found packet, but checksums didn't match
+[WARN] [1692138903.583041]: Expected Checksum: 0xDB468D
+[WARN] [1692138903.587552]: Actual Checksum:   0x7D6532
+[WARN] [1692138904.878429]: Found packet, but checksums didn't match
+[WARN] [1692138904.882528]: Expected Checksum: 0xE85E8E
+[WARN] [1692138904.888009]: Actual Checksum:   0x8FAB28
+[ERROR] [1692140616.678155]: RTCM data not received for 30 seconds, reconnecting
+[INFO] [1692140616.855840]: Connected to http://156.63.133.115:2101/ODOT_G_R_E_C                                                                  _RTX_RTCM3
+[ERROR] [1692144064.278154]: RTCM data not received for 30 seconds, reconnecting
+[INFO] [1692144069.223790]: Connected to http://156.63.133.115:2101/ODOT_G_R_E_C                                                                  _RTX_RTCM3
+[ERROR] [1692230466.284960]: RTCM data not received for 30 seconds, reconnecting
+[WARN] [1692230468.106315]: NMEA sent before client was connected, discarding NM                                                                  EA
+[ERROR] [1692230471.315781]: Unable to read response from server at http://156.6                                                                  3.133.115:2101
+[ERROR] [1692230471.321736]: Exception: timed out
+[ERROR] [1692230471.325787]: Reconnect to http://156.63.133.115:2101 failed. Ret                                                                  rying in 5 seconds
+[WARN] [1692230479.074068]: NMEA sent before client was connected, discarding NM                                                                  EA
+[INFO] [1692230479.240571]: Connected to http://156.63.133.115:2101/ODOT_G_R_E_C                                                                  _RTX_RTCM3

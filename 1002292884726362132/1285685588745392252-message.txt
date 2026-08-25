@@ -1,0 +1,182 @@
+process[rosout-1]: started with pid [225580]
+[WARN] [1726601130.138304]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225593]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225610]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225627]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225642]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225655]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225672]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225689]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225706]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225719]
+[WARN] [1726601141.183493]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225734]
+[WARN] [1726601142.481143]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[WARN] [1726601142.481143]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225747]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225759]
+[WARN] [1726601144.770184]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225772]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225789]
+[WARN] [1726601147.209851]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225802]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225819]
+[WARN] [1726601149.533337]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225834]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225846]
+[WARN] [1726601151.852399]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[WARN] [1726601151.853274]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225859]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225871]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225883]
+[WARN] [1726601155.177856]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225896]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225908]
+[WARN] [1726601157.200591]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225923]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225935]
+[WARN] [1726601159.628729]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225948]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225961]
+[WARN] [1726601161.890184]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225976]
+[WARN] [1726601163.107401]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [225991]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226008]
+[WARN] [1726601165.661250]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226021]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226038]
+[WARN] [1726601168.131979]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226053]
+[WARN] [1726601169.352629]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226066]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226079]
+[WARN] [1726601171.651985]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[WARN] [1726601171.652514]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226092]
+[WARN] [1726601172.723413]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[WARN] [1726601172.724146]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226105]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226117]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226130]
+[rosout-1] process has finished cleanly
+log file: /root/.ros/log/aadab640-74ff-11ef-982f-d03745cdb361/rosout-1*.log
+[rosout-1] restarting process
+process[rosout-1]: started with pid [226142]

@@ -1,0 +1,78 @@
+```cpp
+// TODO: Move this to DMA.
+uint8_t data;
+while (AuxiliaryUart::receive(std::span(&data, sizeof(data)), 2) == HAL_OK)
+{
+    control.buffer[0] = control.buffer[1];
+    control.buffer[1] = control.buffer[2];
+    control.buffer[2] = control.buffer[3];
+    control.buffer[3] = control.buffer[4];
+    control.buffer[4] = control.buffer[5];
+    control.buffer[5] = control.buffer[6];
+    control.buffer[6] = control.buffer[7];
+    control.buffer[7] = data;
+
+    if (control.data.header == 0xDEAD && control.data.footer == 0xBEEF)
+    {
+        // Invalidate the message, so we don't receive it again.
+        control.data.header = {};
+        control.data.footer = {};
+
+        // apply control
+        left_speed = control.data.left;
+        right_speed = control.data.right;
+        if (left_speed <= -2800) left_speed = -(2800 - 1);
+        if (left_speed >= 2800) left_speed = 2800 - 1;
+        if (right_speed <= -2800) right_speed = -(2800 - 1);
+        if (right_speed >= 2800) right_speed = 2800 - 1;
+        last_motor_tick = osKernelGetTickCount();
+    }
+}
+
+if (osKernelGetTickCount() - last_motor_tick > 500)
+{
+    left_speed = 0;
+    right_speed = 0;
+}
+
+if (left_speed != 0 || control.data.right != 0)
+{
+    __HAL_TIM_MOE_ENABLE(&htim1);
+}
+else
+{
+    __HAL_TIM_MOE_DISABLE(&htim1);
+}
+
+if (left_speed == 0)
+{
+    // Apply brake.
+    HAL_GPIO_WritePin(LEFT_BRAKE_GPIO_Port, LEFT_BRAKE_Pin, GPIO_PIN_RESET);
+    HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
+}
+else
+{
+    // Release brake.
+    HAL_GPIO_WritePin(LEFT_BRAKE_GPIO_Port, LEFT_BRAKE_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LEFT_DIR_GPIO_Port, LEFT_DIR_Pin,
+                      left_speed < 0 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, 2800 - abs(left_speed));
+}
+
+if (right_speed == 0)
+{
+    // Apply brake.
+    HAL_GPIO_WritePin(RIGHT_BRAKE_GPIO_Port, RIGHT_BRAKE_Pin, GPIO_PIN_RESET);
+    HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+}
+else
+{
+    // Release brake.
+    HAL_GPIO_WritePin(RIGHT_BRAKE_GPIO_Port, RIGHT_BRAKE_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(RIGHT_DIR_GPIO_Port, RIGHT_DIR_Pin,
+                      right_speed < 0 ? GPIO_PIN_RESET : GPIO_PIN_SET);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 2800 - abs(right_speed));
+}
+```

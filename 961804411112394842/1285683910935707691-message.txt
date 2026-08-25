@@ -1,0 +1,338 @@
+openmower@openmower:~ $ sudo -i
+root@openmower:~# podman ps -a
+CONTAINER ID  IMAGE                                                COMMAND                                                 CREATED        STATUS            PORTS   NAMES
+d03d79fa897a  ghcr.io/clemenselflein/open_mower_ros:releases-beta  bash -c servi                                  ce n...  6 minutes ago  Up 6 minutes ago          openmower
+root@openmower:~# podman logs d03d79fa897a
+ * Starting nginx nginx                                                  [ OK ]
+ * Starting network daemon: mosquitto                                    [ OK ]
+... logging to /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/roslaunch-ope                                  nmower-80.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://openmower:33429/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /xbot_driver_gps/
+
+PARAMETERS
+ * /joy/autorepeat_rate: 10.0
+ * /joy/coalesce_interval: 0.06
+ * /joy_teleop/enable_turbo_button: 4
+ * /joy_teleop/scale_angular: 1.5
+ * /joy_teleop/scale_angular_turbo: 3.0
+ * /joy_teleop/scale_linear: 0.5
+ * /joy_teleop/scale_linear_turbo: 1.0
+ * /move_base_flex/DockingFTCPlanner/acceleration: 1.0
+ * /move_base_flex/DockingFTCPlanner/debug_pid: False
+ * /move_base_flex/DockingFTCPlanner/forward_only: False
+ * /move_base_flex/DockingFTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/DockingFTCPlanner/kd_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/kd_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_ang_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lat_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon: 0.0
+ * /move_base_flex/DockingFTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/DockingFTCPlanner/kp_ang: 1.0
+ * /move_base_flex/DockingFTCPlanner/kp_lat: 6.15
+ * /move_base_flex/DockingFTCPlanner/kp_lon: 4.0
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/DockingFTCPlanner/max_cmd_vel_speed: 0.6
+ * /move_base_flex/DockingFTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/DockingFTCPlanner/max_goal_distance_error: 0.1
+ * /move_base_flex/DockingFTCPlanner/restore_defaults: False
+ * /move_base_flex/DockingFTCPlanner/speed_angular: 40.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast: 0.1
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_fast_threshold_angle: 5.0
+ * /move_base_flex/DockingFTCPlanner/speed_slow: 0.1
+ * /move_base_flex/FTCPlanner/acceleration: 0.1
+ * /move_base_flex/FTCPlanner/debug_pid: True
+ * /move_base_flex/FTCPlanner/forward_only: True
+ * /move_base_flex/FTCPlanner/goal_timeout: 20.0
+ * /move_base_flex/FTCPlanner/kd_ang: 0.5
+ * /move_base_flex/FTCPlanner/kd_lat: 1.23
+ * /move_base_flex/FTCPlanner/kd_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang: 0.0
+ * /move_base_flex/FTCPlanner/ki_ang_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lat: 0.06153
+ * /move_base_flex/FTCPlanner/ki_lat_max: 62.0
+ * /move_base_flex/FTCPlanner/ki_lon: 0.0
+ * /move_base_flex/FTCPlanner/ki_lon_max: 10.0
+ * /move_base_flex/FTCPlanner/kp_ang: 3.0
+ * /move_base_flex/FTCPlanner/kp_lat: 25.0
+ * /move_base_flex/FTCPlanner/kp_lon: 4.0
+ * /move_base_flex/FTCPlanner/max_cmd_vel_ang: 3.1
+ * /move_base_flex/FTCPlanner/max_cmd_vel_speed: 1.0
+ * /move_base_flex/FTCPlanner/max_follow_distance: 1.0
+ * /move_base_flex/FTCPlanner/max_goal_angle_error: 20.0
+ * /move_base_flex/FTCPlanner/max_goal_distance_error: 0.2
+ * /move_base_flex/FTCPlanner/restore_defaults: False
+ * /move_base_flex/FTCPlanner/speed_angular: 45.0
+ * /move_base_flex/FTCPlanner/speed_fast: 0.4
+ * /move_base_flex/FTCPlanner/speed_fast_threshold: 1.0
+ * /move_base_flex/FTCPlanner/speed_fast_threshold_angle: 20.0
+ * /move_base_flex/FTCPlanner/speed_slow: 0.15
+ * /move_base_flex/GlobalPlanner/orientation_mode: 1
+ * /move_base_flex/controller_frequency: 1.0
+ * /move_base_flex/controller_patience: 30.0
+ * /move_base_flex/controllers: [{'name': 'FTCPla...
+ * /move_base_flex/global_costmap/global_frame: map
+ * /move_base_flex/global_costmap/inflation_radius: 1.0
+ * /move_base_flex/global_costmap/map_topic: mower_map_service...
+ * /move_base_flex/global_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/global_costmap/obstacle_range: 3.0
+ * /move_base_flex/global_costmap/publish_frequency: 1.0
+ * /move_base_flex/global_costmap/raytrace_range: 4.0
+ * /move_base_flex/global_costmap/resolution: 0.1
+ * /move_base_flex/global_costmap/robot_base_frame: base_link
+ * /move_base_flex/global_costmap/robot_radius: 0.0
+ * /move_base_flex/global_costmap/rolling_window: False
+ * /move_base_flex/global_costmap/static_map: True
+ * /move_base_flex/global_costmap/update_frequency: 1.0
+ * /move_base_flex/local_costmap/global_frame: map
+ * /move_base_flex/local_costmap/height: 1.5
+ * /move_base_flex/local_costmap/inflation_radius: 0.0
+ * /move_base_flex/local_costmap/map_topic: mower_map_service...
+ * /move_base_flex/local_costmap/max_obstacle_height: 1.0
+ * /move_base_flex/local_costmap/obstacle_range: 3.0
+ * /move_base_flex/local_costmap/publish_frequency: 2.0
+ * /move_base_flex/local_costmap/raytrace_range: 4.0
+ * /move_base_flex/local_costmap/resolution: 0.15
+ * /move_base_flex/local_costmap/robot_base_frame: base_link
+ * /move_base_flex/local_costmap/robot_radius: 0.0
+ * /move_base_flex/local_costmap/rolling_window: True
+ * /move_base_flex/local_costmap/static_map: True
+ * /move_base_flex/local_costmap/update_frequency: 5.0
+ * /move_base_flex/local_costmap/width: 1.5
+ * /move_base_flex/oscillation_distance: 0.2
+ * /move_base_flex/oscillation_timeout: 10.0
+ * /move_base_flex/planner_frequency: 1.0
+ * /move_base_flex/planner_patience: 5.0
+ * /move_base_flex/planners: [{'name': 'Global...
+ * /move_base_legacy_relay/base_global_planner: GlobalPlanner
+ * /move_base_legacy_relay/base_local_planner: FTCPlanner
+ * /mower_comms/left_xesc/serial_port: /dev/ttyAMA4
+ * /mower_comms/left_xesc/xesc_type: xesc_mini
+ * /mower_comms/ll_serial_port: /dev/ttyAMA0
+ * /mower_comms/mower_xesc/serial_port: /dev/ttyAMA3
+ * /mower_comms/mower_xesc/xesc_type: xesc_mini
+ * /mower_comms/right_xesc/serial_port: /dev/ttyAMA2
+ * /mower_comms/right_xesc/xesc_type: xesc_mini
+ * /mower_logic/automatic_start: False
+ * /mower_logic/battery_empty_voltage: 25.0
+ * /mower_logic/battery_full_voltage: 28.5
+ * /mower_logic/docking_distance: 1.0
+ * /mower_logic/enable_mower: True
+ * /mower_logic/outline_count: 4
+ * /mower_logic/outline_offset: 1.5
+ * /mower_logic/tool_width: 0.13
+ * /mower_logic/undock_distance: 2.0
+ * /ntrip_client/ntrip_client_node/authenticate: True
+ * /ntrip_client/ntrip_client_node/ca_cert:
+ * /ntrip_client/ntrip_client_node/cert:
+ * /ntrip_client/ntrip_client_node/host: sapos.geonord-od.de
+ * /ntrip_client/ntrip_client_node/key:
+ * /ntrip_client/ntrip_client_node/mountpoint: RTCM4G
+ * /ntrip_client/ntrip_client_node/nmea_max_length: 82
+ * /ntrip_client/ntrip_client_node/nmea_min_length: 3
+ * /ntrip_client/ntrip_client_node/ntrip_version:
+ * /ntrip_client/ntrip_client_node/password: gast
+ * /ntrip_client/ntrip_client_node/port: 2101
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_max: 99999
+ * /ntrip_client/ntrip_client_node/reconnect_attempt_wait_seconds: 5
+ * /ntrip_client/ntrip_client_node/rtcm_frame_id: odom
+ * /ntrip_client/ntrip_client_node/rtcm_message_package: rtcm_msgs
+ * /ntrip_client/ntrip_client_node/rtcm_timeout_seconds: 30
+ * /ntrip_client/ntrip_client_node/ssl: False
+ * /ntrip_client/ntrip_client_node/username: gast
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /twist_mux/topics: [{'name': 'naviga...
+ * /xbot_driver_gps/baudrate: 921600
+ * /xbot_driver_gps/datum_height: 0
+ * /xbot_driver_gps/datum_lat: 53.733263
+ * /xbot_driver_gps/datum_long: 10.046821
+ * /xbot_driver_gps/mode: absolute
+ * /xbot_driver_gps/serial_port: /dev/ttyAMA1
+ * /xbot_positioning/max_gps_accuracy: 0.2
+
+NODES
+  /
+    joy (joy/joy_node)
+    joy_teleop (teleop_twist_joy/teleop_node)
+    map_service (mower_map/mower_map_service)
+    monitoring (mower_logic/monitoring)
+    move_base_flex (mbf_costmap_nav/mbf_costmap_nav)
+    move_base_legacy_relay (mbf_costmap_nav/move_base_legacy_relay.py)
+    mower_comms (mower_comms/mower_comms)
+    mower_logic (mower_logic/mower_logic)
+    slic3r_coverage_planner (slic3r_coverage_planner/slic3r_coverage_planner)
+    twist_mux (twist_mux/twist_mux)
+    xbot_driver_gps (xbot_driver_gps/driver_gps_node)
+    xbot_monitoring (xbot_monitoring/xbot_monitoring)
+    xbot_positioning (xbot_positioning/xbot_positioning)
+    xbot_remote (xbot_remote/xbot_remote)
+  /ntrip_client/
+    ntrip_client_node (ntrip_client/ntrip_ros.py)
+
+auto-starting new master
+process[master]: started with pid [90]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to d1c865d4-7529-11ef-9ede-d83add66446d
+process[rosout-1]: started with pid [100]
+started core service [/rosout]
+process[mower_comms-2]: started with pid [104]
+process[ntrip_client/ntrip_client_node-3]: started with pid [105]
+process[xbot_driver_gps-4]: started with pid [106]
+process[move_base_flex-5]: started with pid [115]
+process[move_base_legacy_relay-6]: started with pid [121]
+process[xbot_positioning-7]: started with pid [128]
+process[joy-8]: started with pid [132]
+process[joy_teleop-9]: started with pid [135]
+process[map_service-10]: started with pid [136]
+process[mower_logic-11]: started with pid [147]
+process[slic3r_coverage_planner-12]: started with pid [153]
+process[twist_mux-13]: started with pid [159]
+process[xbot_monitoring-14]: started with pid [163]
+process[xbot_remote-15]: started with pid [172]
+process[monitoring-16]: started with pid [174]
+[ERROR] [1726600801.460695]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600801.467490]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600801.492735]: Unable to connect to NTRIP server
+[INFO] [1726600801.506191]: Stopping RTCM publisher
+[INFO] [1726600801.516136]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 105, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [230]
+[ERROR] [1726600804.742980]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600804.748388]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600804.755613]: Unable to connect to NTRIP server
+[INFO] [1726600804.760429]: Stopping RTCM publisher
+[INFO] [1726600804.764698]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 230, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [238]
+[ERROR] [1726600808.129313]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600808.133417]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600808.136924]: Unable to connect to NTRIP server
+[INFO] [1726600808.140932]: Stopping RTCM publisher
+[INFO] [1726600808.144764]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 238, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [274]
+[ERROR] [1726600811.631833]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600811.637141]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600811.640717]: Unable to connect to NTRIP server
+[INFO] [1726600811.644711]: Stopping RTCM publisher
+[INFO] [1726600811.648640]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 274, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [287]
+[ERROR] [1726600814.946094]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600814.952867]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600814.957170]: Unable to connect to NTRIP server
+[INFO] [1726600814.961792]: Stopping RTCM publisher
+[INFO] [1726600814.965997]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 287, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [295]
+[ERROR] [1726600818.291184]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600818.297582]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600818.301251]: Unable to connect to NTRIP server
+[INFO] [1726600818.305930]: Stopping RTCM publisher
+[INFO] [1726600818.309536]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 295, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [302]
+[ERROR] [1726600821.600585]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600821.605826]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600821.610531]: Unable to connect to NTRIP server
+[INFO] [1726600821.615507]: Stopping RTCM publisher
+[INFO] [1726600821.619300]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 302, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [310]
+[ERROR] [1726600825.816130]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600825.820055]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600825.823791]: Unable to connect to NTRIP server
+[INFO] [1726600825.830125]: Stopping RTCM publisher
+[INFO] [1726600825.834404]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 310, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [318]
+[ERROR] [1726600828.970201]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600828.974000]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600828.977673]: Unable to connect to NTRIP server
+[INFO] [1726600828.982772]: Stopping RTCM publisher
+[INFO] [1726600828.986808]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 318, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [325]
+[ERROR] [1726600832.257383]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600832.261533]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600832.266119]: Unable to connect to NTRIP server
+[INFO] [1726600832.270316]: Stopping RTCM publisher
+[INFO] [1726600832.274004]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 325, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [332]
+[ERROR] [1726600835.463789]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600835.468242]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600835.473196]: Unable to connect to NTRIP server
+[INFO] [1726600835.477868]: Stopping RTCM publisher
+[INFO] [1726600835.481759]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 332, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [339]
+[ERROR] [1726600838.774715]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600838.778963]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600838.783400]: Unable to connect to NTRIP server
+[INFO] [1726600838.789832]: Stopping RTCM publisher
+[INFO] [1726600838.796651]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 339, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [347]
+[ERROR] [1726600842.071556]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600842.076565]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600842.080188]: Unable to connect to NTRIP server
+[INFO] [1726600842.085598]: Stopping RTCM publisher
+[INFO] [1726600842.089678]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 347, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [355]
+[ERROR] [1726600845.386582]: Unable to connect socket to server at http://sapos.                                  geonord-od.de:2101
+[ERROR] [1726600845.390749]: Exception: [Errno -3] Temporary failure in name res                                  olution
+[ERROR] [1726600845.396966]: Unable to connect to NTRIP server
+[INFO] [1726600845.401778]: Stopping RTCM publisher
+[INFO] [1726600845.407011]: Disconnecting NTRIP client
+[ntrip_client/ntrip_client_node-3] process has died [pid 355, exit code 1, cmd /                                  opt/open_mower_ros/devel/lib/ntrip_client/ntrip_ros.py /ntrip_client/nmea:=/nmea                                   __name:=ntrip_client_node __log:=/root/.ros/log/d1c865d4-7529-11ef-9ede-d83add6                                  6446d/ntrip_client-ntrip_client_node-3.log].
+log file: /root/.ros/log/d1c865d4-7529-11ef-9ede-d83add66446d/ntrip_client-ntrip                                  _client_node-3*.log
+[ntrip_client/ntrip_client_node-3] restarting process
+process[ntrip_client/ntrip_client_node-3]: started with pid [363]
+[INFO] [1726600849.345252]: Connected to http://sapos.geonord-od.de:2101/RTCM4G
+[ERROR] [1726601129.292189]: RTCM data not received for 30 seconds, reconnecting
+[INFO] [1726601129.412232]: Connected to http://sapos.geonord-od.de:2101/RTCM4G
+root@openmower:~#

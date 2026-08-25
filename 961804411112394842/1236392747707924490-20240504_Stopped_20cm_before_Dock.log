@@ -1,0 +1,33 @@
+May 04 16:47:11 Dolly openmower_launch[2789341]: [ INFO] [1714834031.154461850]: Calculating approach path
+May 04 16:47:11 Dolly openmower_launch[2789308]: [ INFO] [1714834031.205259605]: FTCLocalPlannerROS: Got new global plan with 203 points.
+May 04 16:47:11 Dolly openmower_launch[2789308]: [ INFO] [1714834031.698675546]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+May 04 16:47:11 Dolly openmower_launch[2789308]: [ INFO] [1714834031.698972986]: FTCLocalPlannerROS: Switching to state 1
+May 04 16:47:20 Dolly openmower_launch[2789341]: [ INFO] [1714834040.909579323]: GPS quality: 0.9
+May 04 16:47:27 Dolly openmower_launch[2789308]: [ INFO] [1714834047.698752687]: FTCLocalPlannerROS: switching planner to position mode
+May 04 16:47:27 Dolly openmower_launch[2789308]: [ INFO] [1714834047.698950444]: FTCLocalPlannerROS: Switching to state 2
+May 04 16:47:27 Dolly openmower_launch[2789308]: [ INFO] [1714834047.748369346]: FTCLocalPlannerROS: Reached goal position.
+May 04 16:47:27 Dolly openmower_launch[2789308]: [ INFO] [1714834047.748509344]: FTCLocalPlannerROS: Switching to state 3
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.198394383]: FTCLocalPlannerROS: POST_ROTATE finished.
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.198543807]: FTCLocalPlannerROS: Switching to state 4
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.248113151]: Action "move_base" succeeded!
+May 04 16:47:29 Dolly openmower_launch[2789341]: [ INFO] [1714834049.249386542]: Executing Docking Approach
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.263239988]: FTCLocalPlannerROS: Got new global plan with 16 points.
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.264045959]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+May 04 16:47:29 Dolly openmower_launch[2789308]: [ INFO] [1714834049.264163865]: FTCLocalPlannerROS: Switching to state 1
+May 04 16:47:30 Dolly openmower_launch[2789341]: [ INFO] [1714834050.909578927]: GPS quality: 0.90566
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.659076410]: FTCLocalPlannerROS: switching planner to position mode
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.659220908]: FTCLocalPlannerROS: Switching to state 2
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ WARN] [1714834056.659336796]: FTCLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.708737049]: FTCLocalPlannerROS: Reached goal position.
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.708875362]: FTCLocalPlannerROS: Switching to state 3
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.758763868]: FTCLocalPlannerROS: POST_ROTATE finished.
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.758962699]: FTCLocalPlannerROS: Switching to state 4
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ INFO] [1714834056.812648988]: successfully set GPS to 0
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.826044459]: FTCLocalPlannerROS: Got new global plan with 10 points.
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.826819282]: FTCLocalPlannerROS: PRE_ROTATE finished. Starting following
+May 04 16:47:36 Dolly openmower_launch[2789308]: [ INFO] [1714834056.827017317]: FTCLocalPlannerROS: Switching to state 1
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ INFO] [1714834056.913116992]: Docking aborted.
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ERROR] [1714834056.913444339]: Error during docking.
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ERROR] [1714834056.913523153]: Giving up on docking
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ INFO] [1714834056.913572745]: 
+May 04 16:47:36 Dolly openmower_launch[2789341]: [ INFO] [1714834056.913636318]: 

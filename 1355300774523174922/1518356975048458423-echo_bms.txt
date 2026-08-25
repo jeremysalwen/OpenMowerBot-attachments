@@ -1,0 +1,98 @@
+🚜 openmower@jd:~$ rostopic echo /ll/bms
+stamp: 
+  secs: 1782074826
+  nsecs: 491240159
+voltage: 27.854000091552734
+current: -0.23999999463558197
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.979,3.980,3.983,3.976,3.980,3.973,3.980]}"
+---
+stamp: 
+  secs: 1782074827
+  nsecs: 492381583
+voltage: 27.851999282836914
+current: -0.23999999463558197
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.977,3.980,3.983,3.976,3.980,3.973,3.980]}"
+---
+stamp: 
+  secs: 1782074828
+  nsecs: 493151391
+voltage: 27.849000930786133
+current: -0.23000000417232513
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.977,3.979,3.982,3.976,3.980,3.973,3.980]}"
+---
+stamp: 
+  secs: 1782074829
+  nsecs: 493622800
+voltage: 27.850000381469727
+current: -0.23999999463558197
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.977,3.980,3.982,3.976,3.980,3.973,3.980]}"
+---
+stamp: 
+  secs: 1782074830
+  nsecs: 494530790
+voltage: 27.847999572753906
+current: -0.23999999463558197
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.976,3.979,3.982,3.976,3.980,3.973,3.980]}"
+---
+stamp: 
+  secs: 1782074831
+  nsecs: 494750262
+voltage: 27.849000930786133
+current: -0.23999999463558197
+relative_state_of_charge: 0.9900000095367432
+remaining_capacity: 4.269000053405762
+full_charge_capacity: 4.289999961853027
+cycle_count: 518
+temperature: 20.050010681152344
+battery_status: "Fully charged, Discharging"
+extra_data: "{\"mfr_name\":\"FSM-BMZ\",\"mfr_date\":\"2017-10-04\",\"dev_name\":\"30710\",\"dev_version\"\
+  :\"V2.00\",\"dev_chemistry\":\"LION\",\"serial_number\":3993,\"design_capacity_ah\"\
+  :3.900,\"design_voltage_v\":25.200,\"status\":92,\"cell_count\":7,\"cell_voltage_v\"\
+  : [3.976,3.980,3.982,3.976,3.980,3.973,3.980]}"
+---
+^C🚜 openmower@jd:~$ 

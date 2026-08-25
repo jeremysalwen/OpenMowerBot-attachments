@@ -1,0 +1,483 @@
+{
+  "modelId": "000002qcnu",
+  "services": [
+    {
+      "actions": [],
+      "code": "",
+      "description": "",
+      "events": [],
+      "name": "默认服务",
+      "properties": [
+        {
+          "abilityId": 6,
+          "accessMode": "rw",
+          "code": "battery_percentage",
+          "description": "电量只需要上报，不需要下发",
+          "extensions": {
+            "attribute": "128"
+          },
+          "name": "剩余电量",
+          "typeSpec": {
+            "type": "value",
+            "max": 100,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "%"
+          }
+        },
+        {
+          "abilityId": 101,
+          "accessMode": "ro",
+          "code": "MachineStatus",
+          "description": "\"\"\"待机、充电、割草、暂停、回站、升级、定点割草、错误、自检、充电带工作、急停（增加提示语：请在机器上解除急停）、锁屏\n\n注意：只有待机和充电状态下可以修改APP对应的预约、分区、设置参数，其他状态都不允许修改参数\n\"\"\n\"\n",
+          "name": "机器状态",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "STANDBY",
+              "CHARGING",
+              "MOWING",
+              "PAUSED",
+              "PARK",
+              "UPDATA",
+              "FIXED_MOWING",
+              "ERROR",
+              "SELF_TEST",
+              "CHARGING_WITH_TASK_SUSPEND",
+              "EMERGENCY",
+              "LOCKED"
+            ]
+          }
+        },
+        {
+          "abilityId": 102,
+          "accessMode": "ro",
+          "code": "MachineError",
+          "description": "\"倾斜小于24、倾斜大于35、无边界信号、左电机堵转、右电机堵转、电池电压高、电池温度异常、放电错误、充电过温、电池损坏、电池电压低、放电过流、放电过温、充电电压低、电池异常需重启，IMU失效、边界传感器失效、雨水失效、霍尔失效、机器倾斜、机器出界、机器提升、机器受困、割草电机故障、机器倾覆、电机过流、电机霍尔错误、电机板通信异常、边界检测通讯异常、电机错误\n\"\n",
+          "extensions": {
+            "scope": "fault"
+          },
+          "name": "机器错误",
+          "typeSpec": {
+            "type": "bitmap",
+            "label": [
+              "FAULT_LEAN",
+              "FAULT_TOO_STEEP",
+              "NO_SIGNAL",
+              "L_MOTOR_ERROR",
+              "R_MOTOR_ERROR",
+              "BATTERY_VOL_HIG",
+              "B_TEMP_ERROR",
+              "DISCHAR_ERROR",
+              "CHARGE_OVERTEMP",
+              "BATTERY_DAMAGE",
+              "BATTERY_LOWDIS",
+              "CHARGE_CURDIS",
+              "CHARGE_TEMP",
+              "UNEXCEPECT_LOW",
+              "B_ERROR_RESET",
+              "IMU_INVALID",
+              "EMS_INVALID",
+              "RAIN_INVALID",
+              "HALL_INVALID",
+              "STEEP_OVER_3S",
+              "OUTSIDE_AREA",
+              "LIFTED",
+              "TRAPPED",
+              "B_MOTOR_ERROR",
+              "OVERTURN",
+              "MOTOR_OVERCUR",
+              "MOTOR_HALL",
+              "MOTOR_DISCON",
+              "EMS_DISCONNECT",
+              "MOTOR_ERROR"
+            ],
+            "maxlen": 30
+          }
+        },
+        {
+          "abilityId": 103,
+          "accessMode": "ro",
+          "code": "MachineWarning",
+          "description": "\"\"\"机器倾斜，请注意机器工作区域、机器倾斜角度偏大，及时关注、正在返回基站避雨中、电量不足，即将开始充电、无信号，请检查边界线是否正常、请关闭盖子，等待机器工作、机器再基站，请把机器移出基站、机器不在基站，请把机器搬到基站、请把机器搬到界内，再次尝试、定点割草工作结束、充电不稳定，请查看充电极是否正常、充电待工作被打断，请查看基站供电是否正常、工作中断，请重新启动工作\n、当前工作终止，请查看周边环境是否正常、请打开物理开关，再次尝试,请按start按键开始，预约时间大于30分钟，预约时间不合法，充电电流低，避雨中，升级失败，继续工作弹框，机器急停，锁屏，放电异常，电池包温度异常\"\"\n\"\n",
+          "name": "机器警告",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "MOWER_LEAN",
+              "MOWER_STEEP",
+              "RAIN_PARK",
+              "BATTERY_NOT_ENOUGH",
+              "NO_LOOP_SIGNAL",
+              "CLOSE_TOPCOVER",
+              "MOWER_IN_STATION",
+              "MOWER_OUT_STATION",
+              "PLACE_INSIDE_STATION",
+              "FIXED_END",
+              "CHARGING_DISCONNECT",
+              "CHARGING_PAUSE",
+              "WORK_INTERRUPT",
+              "FIXED_MOWING_INTERUPT",
+              "TURN_ON_BUTTON",
+              "PRESS_START_KEY",
+              "TIMESET_30MIN",
+              "TIMESET_UNLEGAL",
+              "CHARGR_CURRENT_LOW",
+              "RAIN_OUT_STATION",
+              "UPDATA_FAIL",
+              "CONTINUE_TOOLTIP",
+              "MOWER_EMERGENCY",
+              "MOWER_UI_LOCKED",
+              "DISCHARGE_ERROR",
+              "CHARGE_TEMP_ERROR"
+            ]
+          }
+        },
+        {
+          "abilityId": 104,
+          "accessMode": "rw",
+          "code": "MachineRainMode",
+          "description": "",
+          "name": "雨水开关",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 105,
+          "accessMode": "rw",
+          "code": "MachineWorktime",
+          "description": "",
+          "name": "工作时长",
+          "typeSpec": {
+            "type": "value",
+            "max": 99,
+            "min": 1,
+            "scale": 0,
+            "step": 1,
+            "unit": "小时"
+          }
+        },
+        {
+          "abilityId": 106,
+          "accessMode": "ro",
+          "code": "MachinePassword",
+          "description": "",
+          "name": "机器密码",
+          "typeSpec": {
+            "type": "value",
+            "max": 4444,
+            "min": 1111,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 107,
+          "accessMode": "wr",
+          "code": "ClearAppointment",
+          "description": "",
+          "name": "清空机器预约时间",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 108,
+          "accessMode": "wr",
+          "code": "QueryAppointment",
+          "description": "",
+          "name": "查询机器预约",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 109,
+          "accessMode": "wr",
+          "code": "QueryPartition",
+          "description": "",
+          "name": "查询分区参数",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 110,
+          "accessMode": "rw",
+          "code": "MachineAppointment",
+          "description": "\"\"\"数据内容格式\n星期(0-6)（u8）+ 开始小时(00-23)（u8） + 开始分钟(00-59)(u8) + 结束小时(00-23)（u8）+结束分钟(00-59)（u8）\n共7组数据，每组数据格式如上，共35个字节，预约从周日开始，周日、周一...周六\"\"\n\"\n",
+          "name": "上报机器预约",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 111,
+          "accessMode": "ro",
+          "code": "MachineErrorLog",
+          "description": "\"\"\"机器错误日志*10条，每条5个字节，数据共50个字节\n起始时间：1970.1.1 00：00：00\n数据类型：\n错误产生时间(uint32_t)(秒) + 错误序号（uint8_t）（见错误列表）\"\"\n\"\n",
+          "name": "错误日志",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 112,
+          "accessMode": "ro",
+          "code": "MachineWorkLog",
+          "description": "\"\"\"机器工作日志*10条，每条9个字节，数据共90个字节（只读）\n起始时间：1970.1.1 00：00：00\n开始工作时间（uint32_t)(秒)+工作时长（uint32_t）(秒)+工作状态（ uint8_t 0x01自动割草、 0x02定点割草）\"\"\n\"\n",
+          "name": "工作日志",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 113,
+          "accessMode": "rw",
+          "code": "MachinePartition",
+          "description": "\"\"\"分区参数：每条5个字节，共25个字节（5个分区面积占比之和小于等于100）\n分区入口长度（0-500m）(uint32) + 分区面积占比（0-100）（uint8） \n注意：客户设置分区入口场长度必须大于0，五个分区面积占比之和小于等于100%\"\"\n\"\n",
+          "name": "MachinePartition",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 114,
+          "accessMode": "rw",
+          "code": "boolreserved01",
+          "description": "",
+          "name": "boolreserved01",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 115,
+          "accessMode": "wr",
+          "code": "MachineControlCmd",
+          "description": "\"\"\"1.暂停工作\n2.取消工作\n3.继续工作\n4.开始割草\n5.开始定点割草\n6.开始回站充电\n控制事项\n1.待机状态下：可以下发割草、回站、定点割草指令\n2.充电状态下：只能发割草指令，不能发回站、定点割草指令\n3.割草状态下：可以下发暂停\n4.暂停状态下：可以下发取消工作和继续工作\n5.回站、定点割草状态下：不能暂停，只可以下发取消工作指令\n6.其他状态下不可以下发任何控制指令\"\"\n\"\n",
+          "name": "机器控制指令",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "PauseWork",
+              "CancelWork",
+              "ContinueWork",
+              "StartMowing",
+              "StartFixedMowing",
+              "StartReturnStation"
+            ]
+          }
+        },
+        {
+          "abilityId": 116,
+          "accessMode": "ro",
+          "code": "MachineCover",
+          "description": "",
+          "name": "机器盖子",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 117,
+          "accessMode": "rw",
+          "code": "boolreserved02",
+          "description": "",
+          "name": "boolreserved02",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 118,
+          "accessMode": "rw",
+          "code": "boolreserved03",
+          "description": "",
+          "name": "boolreserved03",
+          "typeSpec": {
+            "type": "bool"
+          }
+        },
+        {
+          "abilityId": 121,
+          "accessMode": "rw",
+          "code": "valuereserved01",
+          "description": "",
+          "name": "valuereserved01",
+          "typeSpec": {
+            "type": "value",
+            "max": 9999,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 122,
+          "accessMode": "rw",
+          "code": "valuereserved02",
+          "description": "",
+          "name": "valuereserved02",
+          "typeSpec": {
+            "type": "value",
+            "max": 9999,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 123,
+          "accessMode": "rw",
+          "code": "valuereserved03",
+          "description": "",
+          "name": "valuereserved03",
+          "typeSpec": {
+            "type": "value",
+            "max": 9999,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 124,
+          "accessMode": "rw",
+          "code": "enumreserved01",
+          "description": "",
+          "name": "enumreserved01",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "abilityId": 125,
+          "accessMode": "rw",
+          "code": "enumreserved02",
+          "description": "",
+          "name": "enumreserved02",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "1"
+            ]
+          }
+        },
+        {
+          "abilityId": 126,
+          "accessMode": "rw",
+          "code": "enumreserved03",
+          "description": "",
+          "name": "enumreserved03",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "1"
+            ]
+          }
+        },
+        {
+          "abilityId": 131,
+          "accessMode": "ro",
+          "code": "faultreserved01",
+          "description": "",
+          "extensions": {
+            "scope": "fault"
+          },
+          "name": "faultreserved01",
+          "typeSpec": {
+            "type": "bitmap",
+            "label": [
+              "1"
+            ],
+            "maxlen": 1
+          }
+        },
+        {
+          "abilityId": 134,
+          "accessMode": "rw",
+          "code": "strreserved01",
+          "description": "",
+          "name": "strreserved01",
+          "typeSpec": {
+            "type": "string",
+            "maxlen": 255
+          }
+        },
+        {
+          "abilityId": 135,
+          "accessMode": "rw",
+          "code": "strreserved02",
+          "description": "",
+          "name": "strreserved02",
+          "typeSpec": {
+            "type": "string",
+            "maxlen": 255
+          }
+        },
+        {
+          "abilityId": 136,
+          "accessMode": "rw",
+          "code": "strreserved03",
+          "description": "",
+          "name": "strreserved03",
+          "typeSpec": {
+            "type": "string",
+            "maxlen": 255
+          }
+        },
+        {
+          "abilityId": 139,
+          "accessMode": "rw",
+          "code": "rawreserved01",
+          "description": "透传第一个字节代表雨水补时开关，第二个字节表示雨水补时时长",
+          "name": "rawreserved01",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 140,
+          "accessMode": "rw",
+          "code": "rawreserved02",
+          "description": "",
+          "name": "rawreserved02",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        },
+        {
+          "abilityId": 141,
+          "accessMode": "rw",
+          "code": "rawreserved03",
+          "description": "",
+          "name": "rawreserved03",
+          "typeSpec": {
+            "type": "raw",
+            "maxlen": 128
+          }
+        }
+      ]
+    }
+  ]
+}

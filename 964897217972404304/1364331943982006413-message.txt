@@ -1,0 +1,41 @@
+```openmower@openmower:~ $ sudo systemctl status comitup comitup-web
+● comitup.service - Comitup Wifi Management
+     Loaded: loaded (/lib/systemd/system/comitup.service; enabled; vendor preset: enabled)
+     Active: activating (auto-restart) (Result: exit-code) since Tue 2025-04-22 21:06:34 BST; 3s ago
+       Docs: man:comitup(8)
+    Process: 945 ExecStart=/usr/sbin/comitup (code=exited, status=1/FAILURE)
+   Main PID: 945 (code=exited, status=1/FAILURE)
+        CPU: 661ms
+
+Apr 22 21:06:39 openmower systemd[1]: comitup.service: Scheduled restart job, restart counter is at 42.
+Apr 22 21:06:39 openmower systemd[1]: Stopped Comitup Wifi Management.
+Apr 22 21:06:39 openmower systemd[1]: Starting Comitup Wifi Management...
+Apr 22 21:06:40 openmower comitup[983]: Traceback (most recent call last):
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/sbin/comitup", line 8, in <module>
+Apr 22 21:06:40 openmower comitup[983]:     sys.exit(main())
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/share/comitup/comitup/comitup.py", line 123, in main
+Apr 22 21:06:40 openmower comitup[983]:     (conf, data) = config.load_data()
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/share/comitup/comitup/config.py", line 92, in load_data
+Apr 22 21:06:40 openmower comitup[983]:     data = persist.persist(
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/share/comitup/comitup/persist.py", line 37, in __init__
+Apr 22 21:06:40 openmower comitup[983]:     self._load()
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/share/comitup/comitup/persist.py", line 47, in _load
+Apr 22 21:06:40 openmower comitup[983]:     dct = json.load(fp)
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/lib/python3.9/json/__init__.py", line 293, in load
+Apr 22 21:06:40 openmower comitup[983]:     return loads(fp.read(),
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/lib/python3.9/json/__init__.py", line 346, in loads
+Apr 22 21:06:40 openmower comitup[983]:     return _default_decoder.decode(s)
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/lib/python3.9/json/decoder.py", line 337, in decode
+Apr 22 21:06:40 openmower comitup[983]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+Apr 22 21:06:40 openmower comitup[983]:   File "/usr/lib/python3.9/json/decoder.py", line 355, in raw_decode
+Apr 22 21:06:40 openmower comitup[983]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+Apr 22 21:06:40 openmower comitup[983]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Apr 22 21:06:40 openmower systemd[1]: comitup.service: Main process exited, code=exited, status=1/FAILURE
+Apr 22 21:06:40 openmower systemd[1]: comitup.service: Failed with result 'exit-code'.
+Apr 22 21:06:40 openmower systemd[1]: Failed to start Comitup Wifi Management.
+
+● comitup-web.service - Comitup Web Service
+     Loaded: loaded (/lib/systemd/system/comitup-web.service; static)
+     Active: inactive (dead)
+       Docs: man:comitup-web(8)
+```

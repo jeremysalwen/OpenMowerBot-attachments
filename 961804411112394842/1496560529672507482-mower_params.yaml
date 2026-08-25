@@ -1,0 +1,82 @@
+ll:
+  # eth0 IP of your CM4
+  bind_ip: "172.16.78.1"
+  services:
+    sound:
+      language: "en"
+      volume: -1
+    gps:
+      baud_rate: 921600
+      # GPS protocol. Use UBX for u-blox chipsets (e.g. Ardusimple) and NMEA for everything else
+      protocol: "NMEA"
+      # Set to coordinates near your docking station, this will be your map origin
+      datum_lat: 53.xxxxxx
+      datum_long: 10.xxxxxx
+    diff_drive:
+      ticks_per_m: 1600.0
+      wheel_distance_m: 0.325
+    power:
+      battery_empty_voltage: 22.0
+      battery_full_voltage: 28.7
+      battery_critical_high_voltage: 28.8
+      charge_critical_high_voltage: 30.0
+      charge_critical_high_current: 1.5
+ntrip_client:
+  host: "192.168.178.254"
+  port: 2101
+  username: "gps"
+  password: "gps"
+  mountpoint: "rtk"
+  reconnect_attempt_max: 5
+  reconnect_attempt_wait_seconds: 99999
+mower_logic:
+  automatic_mode: 1
+  add_fake_obstacle: true
+  emergency_input_config: "!L, !L, !S, !S"
+  emergency_lift_period: 4000
+  emergency_tilt_period: 10000
+  docking_approach_distance: 0.50
+  docking_extra_time: 0
+  docking_retry_count: 3
+  docking_redock: false
+  outline_count: 4
+  outline_overlap_count: 1
+  outline_offset: 0.02
+  mow_angle_offset: 0
+  mow_angle_offset_is_absolute: false
+  mow_angle_increment: 0
+  gps_wait_time: 10.0
+  gps_timeout: 5.0
+  rain_mode: 1
+  rain_delay_minutes: 60
+  rain_check_seconds: 20
+  cu_rain_threshold: -1
+  undock_distance: 1.80
+  undock_angled_distance: 2.0
+  undock_angle: 45.0
+  undock_fixed_angle: true
+  undock_use_curve: false
+  # Once you validated the functionality of your emergency sensors,
+  # set this to true to enable the mow-motor
+  enable_mower: true
+  shutdown_esc_max_pitch: 50
+  perimeter_signal: 0
+  motor_hot_temperature: 80
+  motor_cold_temperature: 40
+  max_position_accuracy: 0.30
+  tool_width: 0.11
+xbot_positioning:
+  max_gps_accuracy: 0.3
+  antenna_offset_x: 0.3
+  antenna_offset_y: 0
+  debug: false
+xbot_monitoring:
+  external_mqtt_enable: true
+  external_mqtt_hostname: "192.168.178.65"
+  external_mqtt_port: 1883
+  external_mqtt_username: openmower
+  external_mqtt_password: openmower
+  external_mqtt_topic_prefix: openmower
+move_base_flex:
+  FTCPlanner:
+    speed_fast: 0.30

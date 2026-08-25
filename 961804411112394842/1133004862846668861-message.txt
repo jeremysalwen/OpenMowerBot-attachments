@@ -1,0 +1,19 @@
+I've found something interesting into
+`tail -f /root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/roslaunch-openmower-80.log`
+some process seem to bootloop
+[roslaunch][INFO] 2023-07-24 11:55:54,035: [xbot_driver_gps-4] restarting process
+[roslaunch][INFO] 2023-07-24 11:55:54,036: process[xbot_driver_gps-4]: restarting os process
+[roslaunch][INFO] 2023-07-24 11:55:54,039: process[xbot_driver_gps-4]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node', '/rtcm:=/ntrip_client/rtcm', '~wheel_ticks:=/mower/wheel_ticks', '__name:=xbot_driver_gps', '__log:=/root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4.log']]
+[roslaunch][INFO] 2023-07-24 11:55:54,040: process[xbot_driver_gps-4]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-07-24 11:55:54,059: process[xbot_driver_gps-4]: started with pid [944]
+[roslaunch][ERROR] 2023-07-24 11:55:54,464: [xbot_driver_gps-4] process has died [pid 944, exit code 2, cmd /opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node /rtcm:=/ntrip_client/rtcm ~wheel_ticks:=/mower/wheel_ticks __name:=xbot_driver_gps __log:=/root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4.log].
+log file: /root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4*.log
+
+
+[roslaunch][INFO] 2023-07-24 11:55:59,496: [xbot_driver_gps-4] restarting process
+[roslaunch][INFO] 2023-07-24 11:55:59,498: process[xbot_driver_gps-4]: restarting os process
+[roslaunch][INFO] 2023-07-24 11:55:59,499: process[xbot_driver_gps-4]: start w/ args [['/opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node', '/rtcm:=/ntrip_client/rtcm', '~wheel_ticks:=/mower/wheel_ticks', '__name:=xbot_driver_gps', '__log:=/root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4.log']]
+[roslaunch][INFO] 2023-07-24 11:55:59,500: process[xbot_driver_gps-4]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2023-07-24 11:55:59,513: process[xbot_driver_gps-4]: started with pid [950]
+[roslaunch][ERROR] 2023-07-24 11:55:59,917: [xbot_driver_gps-4] process has died [pid 950, exit code 2, cmd /opt/open_mower_ros/devel/lib/xbot_driver_gps/driver_gps_node /rtcm:=/ntrip_client/rtcm ~wheel_ticks:=/mower/wheel_ticks __name:=xbot_driver_gps __log:=/root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4.log].
+log file: /root/.ros/log/ea2142e0-2a16-11ee-9dd8-09ff4d6fd859/xbot_driver_gps-4*.log

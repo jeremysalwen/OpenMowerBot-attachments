@@ -1,0 +1,36 @@
+Can anyone help me with an error - Ive not made any cahanges and now get this error and can not start my mower. 
+any help or hints most appreciated! 
+
+
+ROS_MASTER_URI=http://192.168.80.106:11311
+
+process[ntrip_client/ntrip_client_node-1]: started with pid [52]
+process[xbot_driver_gps-2]: started with pid [53]
+process[move_base_flex-3]: started with pid [54]
+process[move_base_legacy_relay-4]: started with pid [55]
+process[xbot_positioning-5]: started with pid [59]
+process[joy-6]: started with pid [61]
+process[joy_teleop-7]: started with pid [64]
+process[map_service-8]: started with pid [65]
+process[mower_logic-9]: started with pid [73]
+process[slic3r_coverage_planner-10]: started with pid [79]
+process[twist_mux-11]: started with pid [86]
+process[xbot_monitoring-12]: started with pid [87]
+process[heatmap_generator-13]: started with pid [92]
+process[xbot_remote-14]: started with pid [99]
+process[monitoring-15]: started with pid [104]
+
+[INFO] Connected to http://positionz-rt.linz.govt.nz:2101/WRPA00NZL0
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in 
+    mbf_drc = Client("move_base_flex", timeout=10)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 85, in __init__
+    self._set_service = self._get_service_proxy('set_parameters', timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 310, in _get_service_proxy
+    rospy.wait_for_service(service_name, timeout)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+    raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+
+[move_base_legacy_relay-4] process has died [pid 55, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/root/.ros/log/4135b666-634a-11ef-8c67-dca63250d2a0/move_base_legacy_relay-4.log].

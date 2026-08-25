@@ -1,0 +1,1800 @@
+t counter is at 26.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:30:41 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2417 and the job result is done.
+Sep 17 20:30:41 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2417.
+Sep 17 20:30:41 openmower podman[2074]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:30:41 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:30:41 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:30:41 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2417 and the job result is failed.
+Sep 17 20:30:56 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 27.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:30:56 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2483 and the job result is done.
+Sep 17 20:30:56 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2483.
+Sep 17 20:30:57 openmower podman[2105]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:30:57 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:30:57 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:30:57 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2483 and the job result is failed.
+Sep 17 20:31:12 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 28.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:31:12 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2549 and the job result is done.
+Sep 17 20:31:12 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2549.
+Sep 17 20:31:12 openmower podman[2138]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:31:12 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:31:12 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:31:12 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2549 and the job result is failed.
+Sep 17 20:31:27 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 29.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:31:27 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2615 and the job result is done.
+Sep 17 20:31:27 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2615.
+Sep 17 20:31:27 openmower podman[2169]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:31:27 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:31:27 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:31:27 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2615 and the job result is failed.
+Sep 17 20:31:42 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 30.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:31:42 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2681 and the job result is done.
+Sep 17 20:31:42 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2681.
+Sep 17 20:31:43 openmower podman[2200]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:31:43 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:31:43 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:31:43 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2681 and the job result is failed.
+Sep 17 20:31:58 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 31.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:31:58 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2747 and the job result is done.
+Sep 17 20:31:58 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2747.
+Sep 17 20:31:58 openmower podman[2229]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:31:58 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:31:58 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:31:58 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2747 and the job result is failed.
+Sep 17 20:32:13 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 32.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:32:13 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2813 and the job result is done.
+Sep 17 20:32:13 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2813.
+Sep 17 20:32:13 openmower podman[2260]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:32:13 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:32:13 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:32:13 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2813 and the job result is failed.
+Sep 17 20:32:29 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 33.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:32:29 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2879 and the job result is done.
+Sep 17 20:32:29 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2879.
+Sep 17 20:32:29 openmower podman[2290]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:32:29 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:32:29 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:32:29 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2879 and the job result is failed.
+Sep 17 20:32:43 openmower dnsmasq-dhcp[750]: DHCPREQUEST(wlan0) 10.41.0.143 82:c1:64:e5:43:89
+Sep 17 20:32:43 openmower dnsmasq-dhcp[750]: DHCPNAK(wlan0) 10.41.0.143 82:c1:64:e5:43:89 lease not found
+Sep 17 20:32:44 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 34.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:32:44 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 2945 and the job result is done.
+Sep 17 20:32:44 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 2945.
+Sep 17 20:32:44 openmower podman[2320]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:32:44 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:32:44 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:32:44 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 2945 and the job result is failed.
+Sep 17 20:32:46 openmower dnsmasq-dhcp[750]: DHCPDISCOVER(wlan0) 82:c1:64:e5:43:89
+Sep 17 20:32:46 openmower dnsmasq-dhcp[750]: DHCPOFFER(wlan0) 10.41.0.143 82:c1:64:e5:43:89
+Sep 17 20:32:46 openmower dnsmasq-dhcp[750]: DHCPDISCOVER(wlan0) 82:c1:64:e5:43:89
+Sep 17 20:32:46 openmower dnsmasq-dhcp[750]: DHCPOFFER(wlan0) 10.41.0.143 82:c1:64:e5:43:89
+Sep 17 20:32:47 openmower dnsmasq-dhcp[750]: DHCPREQUEST(wlan0) 10.41.0.143 82:c1:64:e5:43:89
+Sep 17 20:32:47 openmower dnsmasq-dhcp[750]: DHCPACK(wlan0) 10.41.0.143 82:c1:64:e5:43:89
+Sep 17 20:32:59 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 35.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:32:59 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3011 and the job result is done.
+Sep 17 20:32:59 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3011.
+Sep 17 20:32:59 openmower podman[2349]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:32:59 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:32:59 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:32:59 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3011 and the job result is failed.
+Sep 17 20:33:14 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 36.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:33:14 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3077 and the job result is done.
+Sep 17 20:33:14 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3077.
+Sep 17 20:33:15 openmower podman[2379]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:33:15 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:33:15 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:33:15 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3077 and the job result is failed.
+Sep 17 20:33:30 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 37.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:33:30 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3143 and the job result is done.
+Sep 17 20:33:30 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3143.
+Sep 17 20:33:30 openmower podman[2410]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:33:30 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:33:30 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:33:30 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3143 and the job result is failed.
+Sep 17 20:33:45 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 38.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:33:45 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3209 and the job result is done.
+Sep 17 20:33:45 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3209.
+Sep 17 20:33:46 openmower podman[2442]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:33:46 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:33:46 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:33:46 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3209 and the job result is failed.
+Sep 17 20:33:59 openmower wpa_supplicant[411]: wlan0: interface state ENABLED->DISABLED
+Sep 17 20:33:59 openmower wpa_supplicant[411]: wlan0: AP-STA-DISCONNECTED 82:c1:64:e5:43:89
+Sep 17 20:33:59 openmower wpa_supplicant[411]: wlan0: AP-DISABLED
+Sep 17 20:33:59 openmower kernel: ieee80211 phy0: brcmf_vif_set_mgmt_ie: vndr ie set error : -52
+Sep 17 20:33:59 openmower kernel: ieee80211 phy0: brcmf_vif_set_mgmt_ie: vndr ie set error : -52
+Sep 17 20:33:59 openmower wpa_supplicant[411]: wlan0: CTRL-EVENT-DISCONNECTED bssid=d8:3a:dd:66:44:6d reason=3 locally_generated=1
+Sep 17 20:33:59 openmower comitup[2472]: OK
+Sep 17 20:33:59 openmower NetworkManager[373]: <info>  [1726601639.9761] device (wlan0): supplicant interface state: completed -> disconnected
+Sep 17 20:33:59 openmower NetworkManager[373]: <info>  [1726601639.9763] device (p2p-dev-wlan0): supplicant management interface state: completed -> disconnected
+Sep 17 20:33:59 openmower wpa_supplicant[411]: wlan0: CTRL-EVENT-REGDOM-CHANGE init=CORE type=WORLD
+Sep 17 20:33:59 openmower comitup[2473]: OK
+Sep 17 20:33:59 openmower wpa_supplicant[411]: Using interface wlan0 with hwaddr d8:3a:dd:66:44:6d and ssid "openmower-63"
+Sep 17 20:34:00 openmower wpa_supplicant[411]: wlan0: interface state UNINITIALIZED->ENABLED
+Sep 17 20:34:00 openmower wpa_supplicant[411]: wlan0: AP-ENABLED
+Sep 17 20:34:00 openmower wpa_supplicant[411]: wlan0: CTRL-EVENT-CONNECTED - Connection to d8:3a:dd:66:44:6d completed [id=0 id_str=]
+Sep 17 20:34:00 openmower NetworkManager[373]: <info>  [1726601640.0698] device (wlan0): supplicant interface state: disconnected -> completed
+Sep 17 20:34:00 openmower NetworkManager[373]: <info>  [1726601640.0699] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> completed
+Sep 17 20:34:01 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 39.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:34:01 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3275 and the job result is done.
+Sep 17 20:34:01 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3275.
+Sep 17 20:34:01 openmower podman[2476]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:34:01 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:34:01 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:34:01 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3275 and the job result is failed.
+Sep 17 20:34:01 openmower wpa_supplicant[411]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+Sep 17 20:34:01 openmower wpa_supplicant[411]: wlan0: AP-STA-CONNECTED 82:c1:64:e5:43:89
+Sep 17 20:34:16 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 40.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:34:16 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3341 and the job result is done.
+Sep 17 20:34:16 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3341.
+Sep 17 20:34:16 openmower podman[2507]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:34:16 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:34:16 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:34:16 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3341 and the job result is failed.
+Sep 17 20:34:31 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 41.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:34:31 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3407 and the job result is done.
+Sep 17 20:34:31 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3407.
+Sep 17 20:34:32 openmower podman[2537]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:34:32 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:34:32 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:34:32 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3407 and the job result is failed.
+Sep 17 20:34:47 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 42.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:34:47 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3473 and the job result is done.
+Sep 17 20:34:47 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3473.
+Sep 17 20:34:47 openmower podman[2568]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:34:47 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:34:47 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:34:47 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3473 and the job result is failed.
+Sep 17 20:35:02 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 43.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:35:02 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3539 and the job result is done.
+Sep 17 20:35:02 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3539.
+Sep 17 20:35:02 openmower podman[2599]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:35:02 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:35:02 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:35:02 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3539 and the job result is failed.
+Sep 17 20:35:18 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 44.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:35:18 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3605 and the job result is done.
+Sep 17 20:35:18 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3605.
+Sep 17 20:35:18 openmower podman[2630]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:35:18 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:35:18 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:35:18 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3605 and the job result is failed.
+Sep 17 20:35:33 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 45.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:35:33 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3671 and the job result is done.
+Sep 17 20:35:33 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3671.
+Sep 17 20:35:33 openmower podman[2661]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:35:33 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:35:33 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:35:33 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3671 and the job result is failed.
+Sep 17 20:35:48 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 46.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:35:48 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3737 and the job result is done.
+Sep 17 20:35:48 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3737.
+Sep 17 20:35:49 openmower podman[2693]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:35:49 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:35:49 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:35:49 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3737 and the job result is failed.
+Sep 17 20:36:04 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 47.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:36:04 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3803 and the job result is done.
+Sep 17 20:36:04 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3803.
+Sep 17 20:36:04 openmower podman[2725]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:36:04 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:36:04 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:36:04 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3803 and the job result is failed.
+Sep 17 20:36:19 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 48.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:36:19 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3869 and the job result is done.
+Sep 17 20:36:19 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3869.
+Sep 17 20:36:20 openmower podman[2754]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:36:20 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:36:20 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:36:20 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3869 and the job result is failed.
+Sep 17 20:36:35 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 49.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:36:35 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 3935 and the job result is done.
+Sep 17 20:36:35 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 3935.
+Sep 17 20:36:35 openmower podman[2783]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:36:35 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:36:35 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:36:35 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 3935 and the job result is failed.
+Sep 17 20:36:50 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 50.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:36:50 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 4001 and the job result is done.
+Sep 17 20:36:50 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 4001.
+Sep 17 20:36:51 openmower podman[2815]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:36:51 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:36:51 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:36:51 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 4001 and the job result is failed.
+Sep 17 20:37:06 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 51.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:37:06 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 4067 and the job result is done.
+Sep 17 20:37:06 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 4067.
+Sep 17 20:37:06 openmower podman[2846]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:37:06 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:37:06 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:37:06 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 4067 and the job result is failed.
+Sep 17 20:37:21 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 52.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:37:21 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 4133 and the job result is done.
+Sep 17 20:37:21 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 4133.
+Sep 17 20:37:22 openmower podman[2877]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:37:22 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:37:22 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:37:22 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 4133 and the job result is failed.
+Sep 17 20:37:37 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 53.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:37:37 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 4199 and the job result is done.
+Sep 17 20:37:37 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 4199.
+Sep 17 20:37:37 openmower podman[2907]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:37:37 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:37:37 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:37:37 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 4199 and the job result is failed.
+Sep 17 20:37:47 openmower sshd[2003]: pam_unix(sshd:session): session closed for user openmower
+Sep 17 20:37:47 openmower systemd[1]: session-3.scope: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit session-3.scope has successfully entered the 'dead' state.
+Sep 17 20:37:47 openmower systemd-logind[398]: Session 3 logged out. Waiting for processes to exit.
+Sep 17 20:37:47 openmower systemd-logind[398]: Removed session 3.
+░░ Subject: Session 3 has been terminated
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░ Documentation: sd-login(3)
+░░
+░░ A session with the ID 3 has been terminated.
+Sep 17 20:37:52 openmower systemd[1]: gui.service: Scheduled restart job, restart counter is at 54.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ Automatic restarting of the unit gui.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 17 20:37:52 openmower systemd[1]: Stopped Podman container - gui.service.
+░░ Subject: A stop job for unit gui.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit gui.service has finished.
+░░
+░░ The job identifier is 4265 and the job result is done.
+Sep 17 20:37:52 openmower systemd[1]: Starting Podman container - gui.service...
+░░ Subject: A start job for unit gui.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has begun execution.
+░░
+░░ The job identifier is 4265.
+Sep 17 20:37:53 openmower podman[2938]: Error: readlink /var/lib/containers/storage/overlay/l: invalid argument
+Sep 17 20:37:53 openmower systemd[1]: gui.service: Control process exited, code=exited, status=125/n/a
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ An ExecStart= process belonging to unit gui.service has exited.
+░░
+░░ The process' exit code is 'exited' and its exit status is 125.
+Sep 17 20:37:53 openmower systemd[1]: gui.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit gui.service has entered the 'failed' state with result 'exit-code'.
+Sep 17 20:37:53 openmower systemd[1]: Failed to start Podman container - gui.service.
+░░ Subject: A start job for unit gui.service has failed
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit gui.service has finished with a failure.
+░░
+░░ The job identifier is 4265 and the job result is failed.
+Sep 17 20:37:57 openmower systemd[1]: Stopping User Manager for UID 1000...
+░░ Subject: A stop job for unit user@1000.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit user@1000.service has begun execution.
+░░
+░░ The job identifier is 4331.
+Sep 17 20:37:57 openmower systemd[2008]: Stopped target Main User Target.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 23 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Stopped target Basic System.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 36 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Stopped target Paths.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 35 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Stopped target Sockets.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 22 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Stopped target Timers.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 24 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: dbus.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed D-Bus User Message Bus Socket.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 27 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: dirmngr.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed GnuPG network certificate management daemon.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 29 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: gpg-agent-browser.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 25 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: gpg-agent-extra.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 34 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: gpg-agent-ssh.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 32 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: gpg-agent.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed GnuPG cryptographic agent and passphrase cache.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 33 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: podman.socket: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Closed Podman API Socket.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 20 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Removed slice User Application Slice.
+░░ Subject: A stop job for unit UNIT has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit UNIT has finished.
+░░
+░░ The job identifier is 30 and the job result is done.
+Sep 17 20:37:57 openmower systemd[2008]: Reached target Shutdown.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 19.
+Sep 17 20:37:57 openmower systemd[2008]: systemd-exit.service: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit UNIT has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[2008]: Finished Exit the Session.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 17.
+Sep 17 20:37:57 openmower systemd[2008]: Reached target Exit the Session.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 16.
+Sep 17 20:37:57 openmower systemd[1]: user@1000.service: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit user@1000.service has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[1]: Stopped User Manager for UID 1000.
+░░ Subject: A stop job for unit user@1000.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit user@1000.service has finished.
+░░
+░░ The job identifier is 4331 and the job result is done.
+Sep 17 20:37:57 openmower systemd[1]: Stopping User Runtime Directory /run/user/1000...
+░░ Subject: A stop job for unit user-runtime-dir@1000.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit user-runtime-dir@1000.service has begun execution.
+░░
+░░ The job identifier is 4332.
+Sep 17 20:37:57 openmower systemd[1]: run-user-1000.mount: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit run-user-1000.mount has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[1]: user-runtime-dir@1000.service: Succeeded.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit user-runtime-dir@1000.service has successfully entered the 'dead' state.
+Sep 17 20:37:57 openmower systemd[1]: Stopped User Runtime Directory /run/user/1000.
+░░ Subject: A stop job for unit user-runtime-dir@1000.service has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit user-runtime-dir@1000.service has finished.
+░░
+░░ The job identifier is 4332 and the job result is done.
+Sep 17 20:37:57 openmower systemd[1]: Removed slice User Slice of UID 1000.
+░░ Subject: A stop job for unit user-1000.slice has finished
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A stop job for unit user-1000.slice has finished.
+░░
+░░ The job identifier is 4333 and the job result is done.
+Sep 17 20:37:57 openmower systemd[1]: user-1000.slice: Consumed 1.260s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The unit user-1000.slice completed and consumed the indicated resources.
+Sep 17 20:37:59 openmower sshd[2967]: Accepted password for openmower from 192.168.178.21 port 57444 ssh2
+Sep 17 20:37:59 openmower sshd[2967]: pam_unix(sshd:session): session opened for user openmower(uid=1000) by (uid=0)
+Sep 17 20:37:59 openmower systemd[1]: Created slice User Slice of UID 1000.
+░░ Subject: A start job for unit user-1000.slice has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit user-1000.slice has finished successfully.
+░░
+░░ The job identifier is 4399.
+Sep 17 20:37:59 openmower systemd[1]: Starting User Runtime Directory /run/user/1000...
+░░ Subject: A start job for unit user-runtime-dir@1000.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit user-runtime-dir@1000.service has begun execution.
+░░
+░░ The job identifier is 4401.
+Sep 17 20:37:59 openmower systemd-logind[398]: New session 5 of user openmower.
+░░ Subject: A new session 5 has been created for user openmower
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░ Documentation: sd-login(3)
+░░
+░░ A new session with the ID 5 has been created for the user openmower.
+░░
+░░ The leading process of the session is 2967.
+Sep 17 20:37:59 openmower systemd[1]: Finished User Runtime Directory /run/user/1000.
+░░ Subject: A start job for unit user-runtime-dir@1000.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit user-runtime-dir@1000.service has finished successfully.
+░░
+░░ The job identifier is 4401.
+Sep 17 20:37:59 openmower systemd[1]: Starting User Manager for UID 1000...
+░░ Subject: A start job for unit user@1000.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit user@1000.service has begun execution.
+░░
+░░ The job identifier is 4334.
+Sep 17 20:37:59 openmower systemd[2972]: pam_unix(systemd-user:session): session opened for user openmower(uid=1000) by (uid=0)
+Sep 17 20:38:00 openmower systemd[2972]: Queued start job for default target Main User Target.
+Sep 17 20:38:00 openmower systemd[2972]: Created slice User Application Slice.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 7.
+Sep 17 20:38:00 openmower systemd[2972]: Reached target Paths.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 15.
+Sep 17 20:38:00 openmower systemd[2972]: Reached target Timers.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 3.
+Sep 17 20:38:00 openmower systemd[2972]: Starting D-Bus User Message Bus Socket.
+░░ Subject: A start job for unit UNIT has begun execution
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has begun execution.
+░░
+░░ The job identifier is 14.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on GnuPG network certificate management daemon.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 11.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 10.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 13.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 12.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on GnuPG cryptographic agent and passphrase cache.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 6.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on Podman API Socket.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 9.
+Sep 17 20:38:00 openmower systemd[2972]: Listening on D-Bus User Message Bus Socket.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 14.
+Sep 17 20:38:00 openmower systemd[2972]: Reached target Sockets.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 5.
+Sep 17 20:38:00 openmower systemd[2972]: Reached target Basic System.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 2.
+Sep 17 20:38:00 openmower systemd[2972]: Reached target Main User Target.
+░░ Subject: A start job for unit UNIT has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit UNIT has finished successfully.
+░░
+░░ The job identifier is 1.
+Sep 17 20:38:00 openmower systemd[2972]: Startup finished in 303ms.
+░░ Subject: User manager start-up is now complete
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ The user manager instance for user 1000 has been started. All services queued
+░░ for starting have been started. Note that other services might still be starting
+░░ up or be started at any later time.
+░░
+░░ Startup of the manager took 303518 microseconds.
+Sep 17 20:38:00 openmower systemd[1]: Started User Manager for UID 1000.
+░░ Subject: A start job for unit user@1000.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit user@1000.service has finished successfully.
+░░
+░░ The job identifier is 4334.
+Sep 17 20:38:00 openmower systemd[1]: Started Session 5 of user openmower.
+░░ Subject: A start job for unit session-5.scope has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://www.debian.org/support
+░░
+░░ A start job for unit session-5.scope has finished successfully.
+░░
+░░ The job identifier is 4402.
+openmower@openmower:~ $

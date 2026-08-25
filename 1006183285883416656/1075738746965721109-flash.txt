@@ -1,0 +1,38 @@
+daniel@ubuntu2204-vm:~/RTK1010Board/esp32_fw$ idf.py dfu-flash
+Executing action: dfu-flash
+Running ninja in directory /home/daniel/RTK1010Board/esp32_fw/build
+Executing "ninja dfu-flash"...
+[0/1] cd /home/daniel/RTK1010Board/esp32_fw/build && /usr/bin/cmake -D ESP_DFU_BIN="/home/daniel/RTK1010Board/esp32_fw/build/dfu.bin" -D ESP_DFU_PID="2" -P /home/daniel/esp/esp-idf/tools/cmake/run_dfu_util.cmake
+Command list: dfu-util;-d;303a:2;-D;/home/daniel/RTK1010Board/esp32_fw/build/dfu.bin
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 303a:0002
+Run-time device DFU version 0110
+Claiming USB DFU Runtime Interface...
+Determining device status: state = appIDLE, status = 0
+Device really in Runtime Mode, send DFU detach request...
+Device will detach and reattach...
+Opening DFU USB Device...
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 64
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesdfu-util: Error during download get_status
+CMake Error at /home/daniel/esp/esp-idf/tools/cmake/run_dfu_util.cmake:27 (message):
+  dfu-util failed
+
+
+FAILED: CMakeFiles/dfu-flash /home/daniel/RTK1010Board/esp32_fw/build/CMakeFiles/dfu-flash 
+cd /home/daniel/RTK1010Board/esp32_fw/build && /usr/bin/cmake -D ESP_DFU_BIN="/home/daniel/RTK1010Board/esp32_fw/build/dfu.bin" -D ESP_DFU_PID="2" -P /home/daniel/esp/esp-idf/tools/cmake/run_dfu_util.cmake
+ninja: build stopped: subcommand failed.
+Please have a look at the "Device Firmware Upgrade through USB" chapter in API Guides of the ESP-IDF documentation for solving common dfu-util issues.
+ninja failed with exit code 1
