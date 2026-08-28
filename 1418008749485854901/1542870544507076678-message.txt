@@ -1,0 +1,270 @@
+#!/usr/bin/env python3
+"""Repair map areas that the app's GeoJSON conversion cannot represent.
+
+`mapToFeatures()` (src/utils/area-converter.ts) hands every area outline to turf's
+`polygon()`, which rejects a linear ring that has fewer than 4 positions or whose
+first and last positions differ. A single bad area makes the whole /map route throw.
+
+This script reads the retained `map/json` over MQTT, applies the same dedupe the app
+does, and then:
+
+  * drops an area whose deduped ring cannot form a triangle,
+  * closes an area whose ring is otherwise valid but left open,
+  * leaves every other area byte-identical.
+
+Dry-run by default. Pass --apply to publish the repaired map via the `map.replace` RPC.
+
+Usage:
+    scripts/fix-degenerate-areas.py --host 192.168.3.116
+    scripts/fix-degenerate-areas.py --host 192.168.3.116 --apply
+
+Needs only the standard library; speaks MQTT 3.1.1 over plain TCP (port 1883).
+"""
+
+import argparse
+import json
+import math
+import socket
+import struct
+import sys
+import time
+
+# Matches DEDUPE_EPSILON in src/utils/area-converter.ts.
+DEDUPE_EPSILON = 0.003  # metres
+# A closed ring needs 3 distinct vertices plus the repeated first one.
+MIN_RING_POINTS = 4
+
+
+########################################################################################
+# Minimal MQTT 3.1.1 client
+########################################################################################
+
+
+def _encode_length(n):
+    out = b""
+    while True:
+        digit = n % 128
+        n //= 128
+        if n > 0:
+            digit |= 0x80
+        out += bytes([digit])
+        if n == 0:
+            return out
+
+
+def _encode_string(s):
+    raw = s.encode()
+    return struct.pack("!H", len(raw)) + raw
+
+
+class MqttClient:
+    def __init__(self, host, port, timeout=10):
+        self._sock = socket.create_connection((host, port), timeout=timeout)
+        self._buf = b""
+        client_id = "fix-areas-%d" % (int(time.time()) % 100000)
+        variable_header = _encode_string("MQTT") + bytes([4, 0x02]) + struct.pack("!H", 60)
+        payload = _encode_string(client_id)
+        self._send(0x10, variable_header + payload)
+        kind, body = self._read_packet()
+        if kind >> 4 != 2:
+            raise RuntimeError("expected CONNACK, got packet type %d" % (kind >> 4))
+        if body[1] != 0:
+            raise RuntimeError("broker refused connection, return code %d" % body[1])
+        self._packet_id = 0
+
+    def _send(self, header, body):
+        self._sock.sendall(bytes([header]) + _encode_length(len(body)) + body)
+
+    def _read_exact(self, n):
+        while len(self._buf) < n:
+            chunk = self._sock.recv(65536)
+            if not chunk:
+                raise EOFError("connection closed by broker")
+            self._buf += chunk
+        out, self._buf = self._buf[:n], self._buf[n:]
+        return out
+
+    def _read_packet(self):
+        header = self._read_exact(1)[0]
+        multiplier = 1
+        length = 0
+        while True:
+            digit = self._read_exact(1)[0]
+            length += (digit & 127) * multiplier
+            if not digit & 128:
+                break
+            multiplier *= 128
+        return header, self._read_exact(length)
+
+    def subscribe(self, topics):
+        self._packet_id += 1
+        body = struct.pack("!H", self._packet_id)
+        for topic in topics:
+            body += _encode_string(topic) + bytes([0])
+        self._send(0x82, body)
+
+    def publish(self, topic, payload):
+        self._send(0x30, _encode_string(topic) + payload)
+
+    def wait_for(self, topic, timeout):
+        """Return the next payload published to `topic`, or None on timeout."""
+        deadline = time.time() + timeout
+        while time.time() < deadline:
+            self._sock.settimeout(max(0.1, deadline - time.time()))
+            try:
+                header, body = self._read_packet()
+            except (socket.timeout, EOFError):
+                return None
+            if header >> 4 != 3:
+                continue
+            topic_len = struct.unpack("!H", body[:2])[0]
+            received = body[2 : 2 + topic_len].decode()
+            offset = 2 + topic_len
+            if (header >> 1) & 3:  # QoS > 0 carries a packet identifier
+                offset += 2
+            if received == topic:
+                return body[offset:]
+        return None
+
+    def close(self):
+        try:
+            self._send(0xE0, b"")
+        except OSError:
+            pass
+        self._sock.close()
+
+
+########################################################################################
+# Repair
+########################################################################################
+
+
+def dedupe(points):
+    """Drop consecutive near-duplicate points, exactly as the app does."""
+    kept = []
+    for p in points:
+        prev = kept[-1] if kept else None
+        if prev is None or abs(p["x"] - prev["x"]) >= DEDUPE_EPSILON or abs(p["y"] - prev["y"]) >= DEDUPE_EPSILON:
+            kept.append(p)
+    return kept
+
+
+def is_closed(ring):
+    first, last = ring[0], ring[-1]
+    return abs(first["x"] - last["x"]) < DEDUPE_EPSILON and abs(first["y"] - last["y"]) < DEDUPE_EPSILON
+
+
+def has_finite_coords(points):
+    return all(math.isfinite(p.get("x", float("nan"))) and math.isfinite(p.get("y", float("nan"))) for p in points)
+
+
+def inspect(area):
+    """Return (action, repaired_outline, reason). Action is 'keep', 'close' or 'drop'."""
+    outline = area.get("outline") or []
+    if not outline:
+        return "drop", None, "empty outline"
+    if not has_finite_coords(outline):
+        return "drop", None, "non-finite coordinates"
+
+    deduped = dedupe(outline)
+    closed = is_closed(deduped)
+    ring = deduped if closed else deduped + [deduped[0]]
+    if len(ring) < MIN_RING_POINTS:
+        return "drop", None, "%d point(s) after dedupe, cannot form a ring" % len(deduped)
+    if not closed:
+        # Close the original outline; leave its point density untouched.
+        return "close", outline + [outline[0]], "ring left open"
+    return "keep", outline, ""
+
+
+def repair(map_data):
+    areas = map_data.get("areas") or []
+    repaired = []
+    report = []
+    for index, area in enumerate(areas):
+        action, outline, reason = inspect(area)
+        label = area.get("properties", {}).get("name") or area.get("properties", {}).get("type", "?")
+        report.append((index, area.get("id"), label, action, reason))
+        if action == "drop":
+            continue
+        if action == "close":
+            area = dict(area, outline=outline)
+        repaired.append(area)
+    return dict(map_data, areas=repaired), report
+
+
+########################################################################################
+# Entry point
+########################################################################################
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--host", required=True, help="mower hostname or IP running the MQTT broker")
+    parser.add_argument("--port", type=int, default=1883, help="MQTT port (default: 1883)")
+    parser.add_argument("--prefix", default="", help="mqtt_prefix from the app config (default: empty)")
+    parser.add_argument("--apply", action="store_true", help="publish the repaired map instead of only reporting")
+    parser.add_argument("--backup", metavar="FILE", help="write the current map to FILE before changing anything")
+    args = parser.parse_args()
+
+    map_topic = args.prefix + "map/json"
+    request_topic = args.prefix + "rpc/request"
+    response_topic = args.prefix + "rpc/response"
+
+    client = MqttClient(args.host, args.port)
+    try:
+        client.subscribe([map_topic, response_topic])
+        payload = client.wait_for(map_topic, timeout=10)
+        if payload is None:
+            sys.exit("no retained message on %s -- is the mower publishing a map?" % map_topic)
+        map_data = json.loads(payload)
+
+        if "areas" not in map_data:
+            sys.exit("this looks like a legacy map (no 'areas' key); this script only handles the new format")
+
+        if args.backup:
+            with open(args.backup, "w") as handle:
+                json.dump(map_data, handle, indent=2)
+            print("backed up current map to %s" % args.backup)
+
+        repaired, report = repair(map_data)
+        problems = [row for row in report if row[3] != "keep"]
+
+        print("%d area(s) in the current map" % len(map_data["areas"]))
+        for index, area_id, label, action, reason in problems:
+            print("  %-5s area[%d] %s (%s): %s" % (action.upper(), index, area_id, label, reason))
+
+        if not problems:
+            print("nothing to repair -- every area already converts cleanly")
+            return
+
+        print("result: %d area(s) -> %d area(s)" % (len(map_data["areas"]), len(repaired["areas"])))
+
+        if not args.apply:
+            print("\ndry run; re-run with --apply to publish the repaired map")
+            return
+
+        request_id = "fix-areas-%d" % int(time.time())
+        request = json.dumps({"jsonrpc": "2.0", "method": "map.replace", "params": [repaired], "id": request_id})
+        client.publish(request_topic, request.encode())
+        print("\npublished map.replace (id=%s), waiting for a response..." % request_id)
+
+        deadline = time.time() + 15
+        while time.time() < deadline:
+            response = client.wait_for(response_topic, timeout=max(1, deadline - time.time()))
+            if response is None:
+                sys.exit("no response within 15s -- check the mower's RPC service")
+            parsed = json.loads(response)
+            if parsed.get("id") != request_id:
+                continue
+            if "error" in parsed:
+                sys.exit("map.replace failed: %s" % parsed["error"].get("message", parsed["error"]))
+            print("map replaced successfully")
+            return
+        sys.exit("no matching response within 15s")
+    finally:
+        client.close()
+
+
+if __name__ == "__main__":
+    main()
