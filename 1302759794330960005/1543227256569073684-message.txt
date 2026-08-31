@@ -1,0 +1,51 @@
+Hey colleagues, I just ran *openmower update-self* command - looks like it was a bad idea.
+Now the ROS container is restarting.
+I`m pulling images from EDGE, usual YardForce config:
+
+ghcr.io/clemenselflein/open_mower_ros:edge
+eclipse-mosquitto:2
+ghcr.io/clemenselflein/openmowerapp:latest
+ghcr.io/xtech/openmower-app:edge
+
+Any ideas? Appreciate.
+
+
+open_mower_ros  | [ERROR] [1788003603.733620653]: Couldn't open joystick /dev/input/js0. Will retry every second.
+open_mower_ros  | [FATAL] [1788003603.853143481]: Error parsing params: could not load parameter 'locks'. (namespace: /twist_mux)
+Mosquitto       | 1788003603: New client connected from 172.19.0.1:50630 as xbot_monitoring (p4, c1, k1000).
+open_mower_ros  | [WARN] [1788003609.546309802]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100764 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003614.586378407]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100734 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003619.621907742]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100718 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003624.656920764]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100786 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003629.693133931]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100865 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003634.729829481]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100358 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003639.767927262]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.10085 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003644.808786091]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100703 timeout was 0.1.
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+open_mower_ros  |     mbf_drc = Client("move_base_flex", timeout=10)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+open_mower_ros  |     self._set_service = self._get_service_proxy('set_parameters', timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+open_mower_ros  |     rospy.wait_for_service(service_name, timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+open_mower_ros  |     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+open_mower_ros  | rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
+open_mower_ros  | [move_base_legacy_relay-5] process has died [pid 74, exit code 1, cmd /opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py __name:=move_base_legacy_relay __log:=/data/ros/log/5e36831c-a39e-11f1-aada-88a29ef7befa/move_base_legacy_relay-5.log].
+open_mower_ros  | log file: /data/ros/log/5e36831c-a39e-11f1-aada-88a29ef7befa/move_base_legacy_relay-5*.log
+open_mower_ros  | [WARN] [1788003649.845616946]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100683 timeout was 0.1.
+open_mower_ros  | [WARN] [1788003654.880837025]: Timed out waiting for transform from base_link to map to become available before running costmap, tf error: canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.. canTransform returned after 0.100705 timeout was 0.1.
+open_mower_ros  | [move_base_legacy_relay-5] restarting process
+open_mower_ros  | process[move_base_legacy_relay-5]: started with pid [180]
+
+
+open_mower_ros  | Traceback (most recent call last):
+open_mower_ros  |   File "/opt/ros/noetic/lib/mbf_costmap_nav/move_base_legacy_relay.py", line 130, in <module>
+open_mower_ros  |     mbf_drc = Client("move_base_flex", timeout=10)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 81, in __init__
+open_mower_ros  |     self._set_service = self._get_service_proxy('set_parameters', timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/client.py", line 306, in _get_service_proxy
+open_mower_ros  |     rospy.wait_for_service(service_name, timeout)
+open_mower_ros  |   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 148, in wait_for_service
+open_mower_ros  |     raise ROSException("timeout exceeded while waiting for service %s"%resolved_name)
+open_mower_ros  | rospy.exceptions.ROSException: timeout exceeded while waiting for service /move_base_flex/set_parameters
