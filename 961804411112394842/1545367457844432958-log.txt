@@ -1,0 +1,17 @@
+2026-09-04T08:00:00.159249000Z [INFO] [1788508800.157964645]: --------------------------------------
+2026-09-04T08:00:00.159383000Z [INFO] [1788508800.158187863]: - Entered state: UNDOCKING
+2026-09-04T08:00:00.159556000Z [INFO] [1788508800.158363434]: --------------------------------------
+2026-09-04T08:00:00.163543000Z [INFO] [1788508800.163134074]: Getting Docking Point
+2026-09-04T08:00:00.164382000Z [INFO] [1788508800.164080873]: Currently inside the docking station, we set the robot's pose to the docks pose.
+2026-09-04T08:00:00.171903000Z [INFO] [1788508800.171341877]: new actions registered: mower_logic:undocking registered 0 actions.
+2026-09-04T08:00:00.173224000Z [INFO] [1788508800.172407081]: successfully registered actions for mower_logic:undocking
+2026-09-04T08:00:00.173480000Z [INFO] [1788508800.172602392]: Fixed angle undock: 60
+2026-09-04T08:00:00.189869000Z [INFO] [1788508800.189425288]: FTCLocalPlannerROS: Got new global plan with 14 points.
+2026-09-04T08:00:20.233806000Z [ERROR] [1788508820.232606818]: FTCLocalPlannerROS: Error reaching goal. config.goal_timeout (20) reached - Timeout in PRE_ROTATE phase.
+2026-09-04T08:00:20.234774000Z [INFO] [1788508820.232773204]: FTCLocalPlannerROS: Switching to state 4
+2026-09-04T08:00:20.235438000Z [WARN] [1788508820.233622264]: No velocity command received from controller!
+2026-09-04T08:00:23.283564000Z [WARN] [1788508823.282816445]: No velocity command received from controller!
+2026-09-04T08:00:25.184295000Z [WARN] [1788508825.182957701]: The controller has been aborted after it exceeded the patience time
+2026-09-04T08:00:25.273659000Z [ERROR] [1788508825.272880077]: Error during undock
+2026-09-04T08:00:25.281331000Z [INFO] [1788508825.280566778]: new actions registered: mower_logic:undocking registered 0 actions.
+2026-09-04T08:00:25.285586000Z [INFO] [1788508825.282367969]: successfully registered actions for mower_logic:undocking
