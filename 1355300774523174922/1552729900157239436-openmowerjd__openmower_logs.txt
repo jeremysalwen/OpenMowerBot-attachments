@@ -1,0 +1,443 @@
+openmower@jd:~ $ openmower logs
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET / HTTP/1.1" 200 654 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /flutter_bootstrap.js HTTP/1.1" 200 3804 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /main.dart.js HTTP/1.1" 200 848524 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /manifest.json HTTP/1.1" 200 309 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /assets/FontManifest.json HTTP/1.1" 200 226 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /favicon.png HTTP/1.1" 200 917 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /assets/fonts/MaterialIcons-Regular.otf HTTP/1.1" 200 9780 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /assets/assets/google_fonts/Roboto-Regular.ttf HTTP/1.1" 200 168260 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /assets/packages/cupertino_icons/assets/CupertinoIcons.ttf HTTP/1.1" 200 1472 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:27 +0000] "GET /assets/packages/geekyants_flutter_gauges/assets/fonts/Roboto-Regular.ttf HTTP/1.1" 200 168260 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+Mosquitto  | 1790266736: Info: running mosquitto as user: mosquitto.
+OpenMowerApp  | 192.168.0.114 - - [24/Sep/2026:16:22:28 +0000] "GET /assets/packages/flutter_material_design_icons/assets/materialdesignicons-webfont.ttf HTTP/1.1" 200 1056428 "http://jd.local:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+Mosquitto  | 1790266743: New connection from 172.19.0.1:55154 on port 1883.
+Mosquitto  | 1790266743: New client connected from 172.19.0.1:55154 as xbot_monitoring (p4, c1, k1000).
+Mosquitto  | 1790266949: New connection from 192.168.0.114:52310 on port 9001.
+Mosquitto  | 1790266949: New client connected from 192.168.0.114:52310 as om-client-7744 (p5, c0, k0).
+open_mower_ros  | [INFO] [1790268212.997843477]: >>> EmergencyService stack:  832/1400 used,  568 free
+open_mower_ros  | [INFO] [1790268212.997939587]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268212.998280451]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268212.998513743]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268212.998624982]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268212.999304933]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268212.999438042]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268212.999538929]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268212.999811424]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268213.000040198]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268213.000192455]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268213.000534930]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268213.378505981]: >>> I2C1 txn=41083 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268332.998782846]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268332.998938139]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268332.999018693]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790268332.999103118]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268332.999261708]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268332.999394631]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268332.999627794]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268332.999993639]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268333.000089582]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268333.000359096]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268333.001952401]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268333.002122824]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268333.002222341]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268333.002298154]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268333.002374023]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268333.002454114]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268333.002526743]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268333.002602723]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268333.002678573]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268333.004169269]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268333.004288971]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268333.004363729]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268333.004443450]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268333.004515226]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268333.004593484]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268333.004668261]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268333.004752407]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268333.004839202]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268333.413180955]: >>> I2C1 txn=43963 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268453.002821487]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268453.003001854]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268453.003117852]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790268453.003227702]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268453.003320756]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268453.004074576]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268453.004249776]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268453.004338923]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268453.004422495]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268453.004503457]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268453.004608344]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268453.005299591]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268453.005411033]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268453.005504939]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268453.005595697]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268453.005676640]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268453.005774897]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268453.005864414]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268453.006932358]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268453.007108503]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268453.007195280]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268453.007272741]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268453.007351388]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268453.007445275]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268453.007533848]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268453.007740122]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268453.007841342]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268453.008112504]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268453.449692636]: >>> I2C1 txn=46843 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268573.006430695]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268573.006591081]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268573.006678339]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790268573.006804411]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268573.006981519]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268573.007177645]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268573.007320791]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268573.007598341]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268573.007815300]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268573.008019130]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268573.008206275]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268573.008303699]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268573.008494066]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268573.008591027]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268573.008868226]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268573.009106888]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268573.009387661]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268573.009517733]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268573.009599435]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268573.009852634]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268573.010342515]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268573.010636972]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268573.011129630]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268573.011513012]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268573.011881209]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268573.012084539]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268573.012176649]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268573.012257980]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268573.483620576]: >>> I2C1 txn=49723 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268693.010047398]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268693.010228506]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268693.010326800]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790268693.010411095]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268693.010905327]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268693.011796366]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268693.011925957]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268693.012151619]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268693.012287561]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268693.012389134]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268693.012490761]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268693.012765016]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268693.013284007]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268693.014187694]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268693.014302285]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268693.014706444]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268693.015048030]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268693.015175750]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268693.015276600]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268693.015362284]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268693.015441949]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268693.015521281]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268693.015601613]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268693.015684204]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268693.015766481]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268693.015857183]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268693.015937811]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268693.016075771]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268693.518892230]: >>> I2C1 txn=52603 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268813.013676861]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268813.014060650]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268813.014420570]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790268813.014864710]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268813.015185111]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268813.015593141]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268813.015857322]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268813.016331776]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268813.016435330]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268813.016529402]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268813.016614789]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268813.016700418]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268813.016782509]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268813.016868340]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268813.016967487]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268813.017060096]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268813.017150095]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268813.017242315]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268813.017324814]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268813.017406738]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268813.017875304]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268813.018297296]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268813.018707418]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268813.019292186]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268813.019954470]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268813.020368240]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268813.020984748]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268813.022032174]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268813.550378143]: >>> I2C1 txn=55483 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790268933.017704333]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790268933.018557077]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790268933.018894905]: >>> idle         stack:  256/ 440 used,  184 free
+open_mower_ros  | [INFO] [1790268933.019103530]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790268933.019293620]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790268933.019454506]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790268933.019616280]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790268933.019775000]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790268933.019896794]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268933.019995125]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268933.020167345]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268933.020360119]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268933.020549486]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790268933.020886258]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790268933.021170345]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790268933.021347805]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790268933.021448618]: >>> EmergencyService stack:  764/1400 used,  636 free
+open_mower_ros  | [INFO] [1790268933.021534801]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790268933.021617078]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790268933.021784204]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268933.021958220]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268933.022167642]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790268933.022317787]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790268933.022424563]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790268933.022591968]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790268933.022821926]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790268933.022916406]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790268933.023003701]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790268933.581451103]: >>> I2C1 txn=58363 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269053.021473762]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269053.021735776]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269053.021889310]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269053.022040900]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269053.022200267]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269053.022304729]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269053.022470466]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269053.022648111]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269053.022853052]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269053.023053956]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269053.023236286]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269053.023481096]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269053.023591705]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269053.025284175]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269053.026495949]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269053.027391303]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269053.027609170]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269053.027719723]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269053.027811999]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269053.027925738]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269053.028016255]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269053.028095383]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269053.028198289]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269053.029343657]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269053.029800797]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269053.030544265]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790269053.030950091]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790269053.031476674]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269053.614269504]: >>> I2C1 txn=61243 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269173.025310345]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269173.025589191]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269173.025753596]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269173.025916593]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269173.026079460]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269173.026251920]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269173.026358048]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269173.026655283]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269173.026889538]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269173.027008888]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269173.027617525]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269173.027825021]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269173.027912298]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269173.028082720]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269173.028164960]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269173.028444177]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269173.028631896]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269173.029283699]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269173.029381567]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269173.029550175]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269173.030607323]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269173.030711006]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269173.030848837]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269173.030955613]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269173.031038519]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269173.031116054]: >>> VescDriver   stack:  940/1400 used,  460 free
+open_mower_ros  | [INFO] [1790269173.031191053]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790269173.031272607]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269173.645641793]: >>> I2C1 txn=64123 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269293.030060750]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269293.030544815]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269293.030955622]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269293.031192674]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269293.031352226]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269293.031490502]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269293.031596481]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269293.031741164]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269293.031821218]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269293.031972160]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269293.032796811]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269293.033034363]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269293.034278210]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269293.034457818]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269293.034613556]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269293.034869996]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269293.034997864]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269293.035083881]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269293.035164509]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269293.035256285]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269293.035334376]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269293.035407894]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269293.035480318]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269293.035554335]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269293.035639426]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269293.035716629]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269293.035791905]: >>> VescDriver   stack:  568/1400 used,  832 free
+open_mower_ros  | [INFO] [1790269293.035867941]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269293.679750337]: >>> I2C1 txn=67003 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269413.033607633]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269413.033795574]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269413.033891424]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269413.034007292]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269413.034447303]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269413.034546394]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269413.034633096]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269413.035526450]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269413.035669892]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269413.035760520]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269413.035851518]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269413.035939794]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269413.036020923]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269413.036103940]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269413.036186327]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269413.036267603]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269413.036581764]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269413.036708651]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269413.036799020]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269413.036993368]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269413.037189624]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269413.037586542]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269413.037726818]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269413.037816631]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269413.037972202]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269413.038133662]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269413.038328714]: >>> VescDriver   stack:  600/1400 used,  800 free
+open_mower_ros  | [INFO] [1790269413.038447545]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269413.712061946]: >>> I2C1 txn=69883 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269533.038991766]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269533.039205911]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269533.039308131]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269533.039400685]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269533.039486017]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269533.039584978]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269533.039677476]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269533.039776641]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269533.039864547]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269533.039962471]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269533.040045673]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269533.040138060]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269533.040216744]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269533.040294891]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269533.040387593]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269533.040471258]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269533.040553831]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269533.040639681]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269533.040721124]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269533.040814826]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269533.040901880]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269533.041053636]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269533.041142690]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269533.041716087]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269533.042013063]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269533.042256837]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269533.042483351]: >>> VescDriver   stack:  600/1400 used,  800 free
+open_mower_ros  | [INFO] [1790269533.042709125]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269533.746945349]: >>> I2C1 txn=72763 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269653.040934896]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269653.041125892]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269653.041596031]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269653.042136206]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269653.042448403]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269653.042681195]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269653.042924875]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269653.043141667]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269653.043250165]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269653.043390070]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269653.043580825]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269653.043817135]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269653.043938707]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269653.044027224]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269653.044117278]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269653.045547027]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269653.046207662]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269653.046317197]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269653.046394029]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269653.047001072]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269653.047388843]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269653.047955572]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269653.048244196]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269653.048377804]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269653.048464655]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269653.048548783]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269653.048630225]: >>> VescDriver   stack:  600/1400 used,  800 free
+open_mower_ros  | [INFO] [1790269653.048708705]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269653.783875359]: >>> I2C1 txn=75643 fail=0 retry=0 recover=0 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [WARN] [1790269766.858651277]: >>> Charger I2C1 failed addr=0x6B reg=0x33 read len=1/2 msg=-2 errs=0x01 (BERR) SCL/SDA=1/1
+open_mower_ros  | [WARN] [1790269766.861427131]: >>> Charger I2C1 failed addr=0x6B reg=0x33 read len=1/2 msg=-2 errs=0x01 (BERR) SCL/SDA=0/1
+open_mower_ros  | [WARN] [1790269766.913756757]: >>> Charger I2C1 failed addr=0x6B reg=0x33 read len=1/2 msg=-1 errs=0x00 (OK) SCL/SDA=0/1
+open_mower_ros  | [WARN] [1790269766.939214335]: >>> [ID=5] Error Reading Battery Voltage
+open_mower_ros  | [WARN] [1790269766.942015632]: >>> [ID=5] Charger comms failed 1 time(s) in a row - keeping config (re-init at 3)
+open_mower_ros  | [INFO] [1790269773.044708632]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269773.044938887]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269773.045048200]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269773.045141661]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269773.045241511]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269773.045336342]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269773.045421489]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269773.046378174]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269773.046547430]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269773.046638724]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269773.046779685]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269773.047248527]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269773.047412968]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269773.047512041]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269773.047602039]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269773.047690148]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269773.047784295]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269773.047875145]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269773.047961939]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269773.048047123]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269773.048133973]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269773.048789645]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269773.048936105]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269773.049241396]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269773.049363116]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269773.049452929]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269773.049542779]: >>> VescDriver   stack:  600/1400 used,  800 free
+open_mower_ros  | [INFO] [1790269773.049686850]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269773.820350932]: >>> I2C1 txn=78525 fail=1 retry=2 recover=1 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269773.820498226]: >>> I2C1 errors nack=0 berr=2 arlo=0 ovr=0 hw_timeout=0 sw_timeout=1 other=0
+open_mower_ros  | [INFO] [1790269893.047996194]: >>> === Thread stack watermark ===
+open_mower_ros  | [INFO] [1790269893.048481369]: >>> main         stack: 67166228/67167080 used,  852 free
+open_mower_ros  | [INFO] [1790269893.048654292]: >>> idle         stack:  212/ 440 used,  228 free
+open_mower_ros  | [INFO] [1790269893.048747661]: >>> lwipthread   stack:  552/1048 used,  496 free
+open_mower_ros  | [INFO] [1790269893.048849251]: >>> tcpip_thread stack:  864/1400 used,  536 free
+open_mower_ros  | [INFO] [1790269893.049494887]: >>> ServiceDiscovery stack:  580/ 888 used,  308 free
+open_mower_ros  | [INFO] [1790269893.049638143]: >>> watermark    stack:  764/ 888 used,  124 free
+open_mower_ros  | [INFO] [1790269893.049723419]: >>> xbot-io      stack:  588/2376 used, 1788 free
+open_mower_ros  | [INFO] [1790269893.049815547]: >>> MetaService  stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269893.049895305]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269893.049969841]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269893.050065320]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269893.050869138]: >>> GpsDriver    stack:  992/1400 used,  408 free
+open_mower_ros  | [INFO] [1790269893.051263149]: >>> DebugTCPInterface stack:  476/1400 used,  924 free
+open_mower_ros  | [INFO] [1790269893.051459812]: >>> SaboCoverUICtrl stack: 4312/5496 used, 1184 free
+open_mower_ros  | [INFO] [1790269893.051553532]: >>> BmsService   stack: 1128/2424 used, 1296 free
+open_mower_ros  | [INFO] [1790269893.051628790]: >>> EmergencyService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269893.052676918]: >>> ImuService   stack:  856/1376 used,  520 free
+open_mower_ros  | [INFO] [1790269893.052889507]: >>> PowerService stack: 1152/1872 used,  720 free
+open_mower_ros  | [INFO] [1790269893.052972542]: >>> DiffDriveService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269893.053080299]: >>> MowerService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269893.053162779]: >>> GpsService   stack:  840/3448 used, 2608 free
+open_mower_ros  | [INFO] [1790269893.053236852]: >>> InputService stack: 2760/3448 used,  688 free
+open_mower_ros  | [INFO] [1790269893.053309443]: >>> HighLevelService stack:  856/1400 used,  544 free
+open_mower_ros  | [INFO] [1790269893.053386830]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269893.053457033]: >>> VescDriver   stack: 1032/1400 used,  368 free
+open_mower_ros  | [INFO] [1790269893.053534679]: >>> VescDriver   stack:  600/1400 used,  800 free
+open_mower_ros  | [INFO] [1790269893.053607271]: >>> SaboCoverUIDisp stack:  728/1016 used,  288 free
+open_mower_ros  | [INFO] [1790269893.864712713]: >>> I2C1 txn=81405 fail=1 retry=2 recover=1 restartfail=0 busheld=0 skipped=0 SCL/SDA=1/1
+open_mower_ros  | [INFO] [1790269893.865063188]: >>> I2C1 errors nack=0 berr=2 arlo=0 ovr=0 hw_timeout=0 sw_timeout=1 other=0
